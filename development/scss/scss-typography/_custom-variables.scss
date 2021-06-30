@@ -1,0 +1,75 @@
+/* CUSTOM VARIABLES */
+
+$maroon:			#8D0034;
+$brick:       #5d0024;
+$gold:				#febc18;
+$patina:			#0096a0;
+$terracotta:  #b68967;
+$opus:				#f98e2b;
+$gray:				#888888;
+$copper:      #b4af95;
+$black:       #000000;
+$white:	      #ffffff;
+$bg-overlay:	rgba(0,0,0,.5);
+
+$bg-overlay: $bg-overlay;
+$bg-overlay-dark: rgba($bg-overlay, .7);
+$bg-overlay-extra-dark: rgba($bg-overlay, .9);
+$bg-overlay-light: rgba($bg-overlay, .3);
+$bg-overlay-extra-light: rgba($bg-overlay, .1);
+
+/* MAROON */
+$maroon: lighten($maroon, 0%);
+$maroon-dark: darken($maroon, 20%);
+$maroon-extra-dark: darken($maroon, 40%);
+$maroon-light: lighten($maroon, 20%);
+$maroon-extra-light: lighten($maroon, 40%);
+
+/* BRICK */
+$brick: lighten($brick, 0%);
+$brick-dark: darken($brick, 20%);
+$brick-extra-dark: darken($brick, 40%);
+$brick-light: lighten($brick, 20%);
+$brick-extra-light: lighten($brick, 40%);
+
+/* GOLD */
+$gold: lighten($gold, 0%);
+$gold-dark: darken($gold, 20%);
+$gold-extra-dark: darken($gold, 40%);
+$gold-light: lighten($gold, 20%);
+$gold-extra-light: lighten($gold, 40%);
+
+/* PATINA */
+$patina: lighten($patina, 0%);
+$patina-dark: darken($patina, 20%);
+$patina-extra-dark: darken($patina, 40%);
+$patina-light: lighten($patina, 20%);
+$patina-extra-light: lighten($patina, 40%);
+
+/* TERRACOTTA */
+$terracotta: lighten($terracotta, 0%);
+$terracotta-dark: darken($terracotta, 20%);
+$terracotta-extra-dark: darken($terracotta, 40%);
+$terracotta-light: lighten($terracotta, 25%);
+$terracotta-extra-light: lighten($terracotta, 35%);
+
+/* OPUS */
+$opus: lighten($opus, 0%);
+$opus-dark: darken($opus, 20%);
+$opus-extra-dark: darken( $opus, 40% );
+$opus-light: lighten( $opus, 20% );
+$opus-extra-light: lighten( $opus, 40% );
+
+/* GRAY */
+$gray: lighten($gray, 0%);
+$gray-dark: darken($gray, 20%);
+$gray-extra-dark: darken($gray, 40%);
+$gray-light: lighten($gray, 20%);
+$gray-extra-light: lighten($gray, 40%);
+
+/* COPPER */
+$copper: lighten($copper, 0%);
+$copper-dark: darken($copper, 20%);
+$copper-extra-dark: darken($copper, 40%);
+$copper-light: lighten($copper, 20%);
+$copper-extra-light: lighten($copper, 40%);

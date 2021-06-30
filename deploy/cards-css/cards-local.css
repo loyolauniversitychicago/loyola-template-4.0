@@ -1,0 +1,36 @@
+/* overview */
+
+#overview .container .container {
+  margin: 2rem 0;
+  padding: 0;
+  width: 100%;
+}
+
+#overview .container .container p {
+  margin: 0 0 .25rem;
+  padding: 0;
+  width: 100%;
+}
+
+/* label card-pattern */
+
+h5.label.card-pattern {
+  color: #0096A0;
+  text-align: center;
+  border-bottom: solid 1px #cccccc;
+}
+
+/* color */
+
+.terracotta-light { background-color: #eceae1 !important; }
+
+/* panel spacers */
+
+.divider-sm { display: block; margin: 0; padding: 1rem 0; width: 100%; }
+
+.divider-xsm { display: block; margin: 0; padding: .5rem 0; width: 100%; }
+
+.grid-wrapper-min-max.number {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 2rem;
+}

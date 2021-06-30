@@ -1,0 +1,290 @@
+/* FORMS */
+
+form {
+  display: block;
+  margin: 0 0 2rem 0;
+  padding: 2em;
+  width: 100%;
+  font-size: 1rem;
+  font-family: 'Antenna Bold', sans-serif;
+  font-weight: 400;
+  line-height: rvr(2.25);
+  letter-spacing: -.0125em;
+  border-radius: .75rem;
+  background: $gray-extra-light;
+  &:focus {
+    outline-color: $patina;
+    outline-width: 2px;
+  }
+}
+
+fieldset {
+  margin: 0 0 2rem 0;
+  padding: 2rem;
+  border: solid 1px $gray-light;
+  border-radius: .5rem;
+  background: $gray-extra-light;
+  p {
+    margin: 0;
+    width: 100%;
+    font-family: 'Antenna', sans-serif;
+    font-size: 1rem;
+    text-transform: none;
+  }
+  li {
+    text-indent: 0 !important;
+    list-style: none;
+    margin: .5rem 0 !important;
+  }
+}
+
+/* target only ul in form */
+#main-content-wrapper form fieldset ul {
+  margin-left: 0;
+}
+
+legend {
+  margin: 0;
+  margin-bottom: 0 !important;
+  padding: 0 1rem;
+  display: block;
+  margin-bottom: rvr(.5);
+  font-size: 1.275rem;
+  line-height: rvr(1.125);
+  text-transform: uppercase;
+}
+
+label {
+  margin: 0;
+  display: block;
+  line-height: rvr(1.35);
+  text-transform: uppercase;
+  span {
+    font-family: 'Antenna', sans-serif;
+    text-transform: none;
+  }
+}
+
+input, textarea, select {
+  margin: .75rem 0 1rem;
+  padding: .75rem;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  font-weight: 100;
+  text-transform: none;
+  border: solid 1px $gray-light;
+  border-radius: .25rem;
+  resize: vertical;
+  &:focus {
+    outline-color: $gold;
+    border-color: $gold;
+    border-width: .25em;
+  }
+}
+
+#panel-form form fieldset ul li label {
+  font-size: 1rem;
+  h6 {
+    margin: 0 0 .25rem 0;
+  }
+}
+
+textarea {
+  min-height: 10rem;
+}
+
+select {
+  margin: 1rem 0 !important;
+}
+
+::placeholder {
+  font-size: .875rem;
+  line-height: .875rem;
+  color: lighten($gray, 15%);
+  text-transform: uppercase;
+}
+
+.select-css {
+  box-sizing: border-box;
+	display: block;
+  padding: .5rem 1.5rem .5rem 1rem;
+  width: 100%;
+  max-width: 100%;
+  font-family: 'Antenna Bold', sans-serif;
+	font-size: 1rem;
+	line-height: 1.3;
+	border: 1px solid $gray-light;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+  background: white url('data:image/gif;base64,R0lGODlhBgAGAKEDAFVVVX9/f9TU1CgmNyH5BAEKAAMALAAAAAAGAAYAAAIODA4hCDKWxlhNvmCnGwUAOw==') right center no-repeat !important;
+  background-position: calc(100% - 1rem) center !important;
+}
+
+.select-css::-ms-expand {
+	display: none;
+}
+
+.select-css:hover {
+	border-color: $gray-dark;
+}
+
+.select-css:focus {
+	color: $gray;
+	border-color: $gold;
+	box-shadow: none;
+	outline: $gold;
+}
+
+.select-css option {
+	font-weight: normal;
+}
+
+select option {
+  font-weight: normal;
+}
+
+input[type=text],
+input[type=email],
+input[type=address],
+input[type=city],
+input[type=zip],
+input[type=phone],
+input[type=text],
+select, textarea {
+  width: 100%;
+  background: $white;
+}
+
+form > input {
+  &:invalid {
+    border-color: $maroon;
+  }
+}
+
+span.required,
+span.error-message {
+  color: $maroon;
+  font-family: 'Arial', sans-serif;
+  font-style: italic;
+}
+
+legend span.required,
+legend span.error-message {
+  font-size: 1rem;
+  text-transform: none;
+}
+
+> input {
+  &:valid {
+    border-color: $gold;
+  }
+}
+
+input:-internal-autofill-selected {
+  background-color: $gray-extra-light;
+  color: $gray-light;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: .5rem;
+  display: inline;
+  width: 18px;
+  height: 18px;
+}
+
+/* button */
+
+form button {
+  display: block;
+  font-family: "Antenna Bold", sans-serif;
+  text-transform: uppercase;
+  &:hover {
+    background: $maroon;
+    color: $gray-extra-light !important;
+  }
+}
+
+/* disabled styles */
+
+select:disabled,
+select[aria-disabled=true] {
+  color: $gray;
+}
+
+select:disabled:hover,
+select[aria-disabled=true] {
+  border-color: #aaa;
+}
+
+/* support for rtl text, explicit support for Arabic and Hebrew */
+
+*[dir="rtl"] select,
+:root:lang(ar) select,
+:root:lang(iw) select {
+  background-position: left 0.7em top 50%, 0 0;
+  padding: 0.6em 0.8em 0.5em 1.4em;
+}
+
+.checkbox, .radiobox {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+  cursor: pointer;
+}
+
+.checkbox > span, .radiobox > span {
+  color: #34495E;
+  padding: 0;
+}
+
+.checkbox > input, .radiobox > input {
+  margin-top: .025rem;
+  width: 18px;
+  height: 18px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 1px solid $gray;
+  border-radius: .25rem;
+  outline: none;
+  transition-duration: 0.3s;
+  background-color: $white;
+  cursor: pointer;
+  h6 {
+    width: 100% !important;
+  }
+}
+
+.radiobox > input {
+  border-radius: .5rem;
+}
+
+.radiobox > input:checked  {
+  background-color: $maroon;
+}
+
+.checkbox > input:checked {
+  background-color: $maroon;
+  color: $white;
+}
+
+.checkbox > input:checked::before {
+    content: '\2714';
+    display: block;
+    font-size: .125rem;
+    text-align: center;
+    color: $white;
+    position: absolute;
+    left: .25rem;
+    top: .25rem;
+}
+
+.checkbox > input:active {
+    border: 2px solid #34495E;
+}

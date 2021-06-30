@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	@@include('./partials/framework/luc-head.html')
+	<!-- inject:css -->
+	<!-- endinject -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body id="pattern-library">
+	<header>
+		<!-- @@include('./partials/luc-template-header.html') -->
+	</header>
+	<main id="main-content-start" alt="This is the beginning of the main content of the page">
+		<aside id="social-icon-bar">
+			<!-- sidebar content here -->
+		</aside>
+		<!-- main content here
+		by ID
+		span9 (main-content-wrapper)
+		span12 (main-content-wrapper-full-width) -->
+		<div id="main-content-wrapper-full-width">
+			<section id="main-section-wrapper">
+				@@include('./partials/framework/luc-index.html')
+			</section>
+	</main>
+	<!-- inject:js -->
+	<!-- endinject -->
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+/* FRAMEWORK */
+
+/* ALSO!!! - main-section styling is located in the side-navigation.scss  */
+
+* {
+    box-sizing: border-box;
+}
+
+.visibility-hidden { visibility: hidden;}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  content:"";
+  width:100%;
+  height:100%;
+  min-height: 100%;
+  display:block;
+}
+
+:hover {
+  cursor: default;
+}
+
+/* skips to main content on page - main-section-wrapper */
+
+a.skip-main,
+a.skip-main:focus,
+a.skip-main:active  {
+  position: absolute;
+  left: 25vw;
+  /* left: 35%; */
+  top: auto;
+  margin: 0 auto;
+  padding: .75rem;
+  width: 50vw;
+  height: auto;
+  font-family: 'Antenna Bold', sans-serif;
+  font-size: .75rem;
+  color: $gray-extra-light;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 0 0 .25rem .25rem;
+  box-shadow: 0 0 10px rgba(0,0,0,.35);
+  background: $maroon;
+  overflow: hidden;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  z-index: 10000;
+//  display: none;
+  @include phone-landscape {
+    width: 70vw;
+  }
+}
+
+a.skip-main:focus, a.skip-main:active {
+  transform: translateY(0%);
+  outline-color: $gold;
+  outline-width: 2px;
+}
+
+/* header */
+
+header {
+  position: relative;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: 0 none;
+  border-radius: 0;
+  background: $bg-overlay-extra-dark;
+  box-shadow: 0px 2px 5px rgba(0,0,0,.35);
+  z-index: 2;
+}
+
+header #site-brand-wrapper {
+  padding: 20px 10px;
+  background: $gray-extra-dark;
+}
+
+header span {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  img {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 45px;
+    @include tablet-landscape {
+      display: block;
+      height: 40px;
+    }
+  }
+}
+
+/* site name */
+
+header #site-name,
+header #loyola-university-chicago {
+  position: relative;
+  display: block;
+  float: left;
+  bottom: -5px;
+  margin: 0 5px;
+  padding: 0;
+  width: 80%;
+  height: auto;
+  font-family: 'Antenna', sans-serif !important;
+  font-size: 2.25em;
+  color: $gray-light;
+  line-height: 1.25;
+  letter-spacing: 0;
+  text-align: left;
+  text-transform: none;
+  background: none;
+  a {
+    color: $gray-light;
+    text-decoration: none;
+    transition: color .2s;
+    &:hover {
+      color: $white;
+    }
+  }
+  @include desktop-small {
+		font-size: 1.65em;
+    margin: 0;
+	}
+  @include phone-portrait {
+    margin: 0;
+    width: 80%;
+    font-size: 1.5em;
+    line-height: 1.35;
+  }
+}
+
+header #loyola-university-chicago {
+  display: none;
+  bottom: auto;
+  float: left;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: .95em;
+  letter-spacing: .035em;
+  line-height: 1;
+  text-transform: uppercase;
+  background: none;
+  @include tablet-portrait {
+    display: inline-block;
+		font-size: .75em;
+	}
+}
+
+header #brand {
+  float: right;
+  margin: 0 5px;
+  background: none;
+  a {
+    display: inline-block;
+  }
+  @include desktop-small {
+    margin: 0;
+	}
+  img {
+    float: right;
+    opacity: .8;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+/* containers */
+
+.container-fluid { width: 100%; }
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  @include tablet-portrait {
+    width: 90%;
+  }
+  @include phone-portrait {
+    width: 100%;
+  }
+}
+
+.container.container-100 { width: 100%; }
+
+.container.container-80 { width: 80%; }
+
+.container.container-50 { width: 50%; }
+
+/* standards - color-palette */
+
+.grid-square { padding: .75rem; }
+
+/* wrappers */
+
+#main-content-wrapper-full-width {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+#main-content-wrapper-full-width aside {
+  display: none;
+}
+
+#main-wrapper {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  z-index: 1;
+}
+
+#main-content-wrapper {
+  overflow: visible;
+  display: grid;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 4rem;
+  min-height: 800px;
+  /* margin: 250px auto 200px; */
+  grid-template-columns: minmax(0, 3fr) 250px;
+  grid-template-areas: "main-section-wrapper main-aside-wrapper";
+  grid-gap: 60px;
+  @include tablet-portrait {
+    grid-template-columns: minmax(0, 2fr) 250px;
+    grid-gap: 30px;
+  }
+  @include phone-landscape {
+    grid-template-areas: "main-aside-wrapper main-section-wrapper";
+    grid-template-columns: 100%;
+    margin: 150px auto;
+    padding-top: 50px;
+  }
+}
+
+#main-content-start {
+  overflow: auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#main-section-wrapper {
+  grid-area: main-section-wrapper;
+  min-height: 500px;
+  @include phone-landscape {
+    display: block;
+    margin: 0 0 30px;
+  }
+}
+
+#main-aside-wrapper {
+  grid-area: main-aside-wrapper;
+  @include phone-landscape {
+    display: block;
+    margin: 0 0 30px;
+  }
+}
+
+/* footer */
+
+footer#footer-fixed { display: block; position: fixed; bottom: 0; padding-bottom: 2em; }
+footer#footer-not-fixed { position: relative; display: block; float: left; padding-bottom: 2em; }
+footer#footer-fixed img, footer#footer-not-fixed img { margin: 0; }
+footer#footer-fixed img { margin-top: 0; }
+footer#footer-fixed.footer-fixed-show { display: block; }
+footer#footer-fixed.footer-fixed-hide { display: none; }
+
+footer {
+  display: grid;
+  float: left;
+  margin: 0;
+  padding: 10px 20px 15px;
+  width: 100%;
+  background: darken($gray,20%);
+  z-index: 10003;
+  @include tablet-portrait {
+    padding: 15px 10px;
+    height: 75px;
+  }
+  a {
+  color: $gray-extra-light;
+    &:hover {
+      display: block;
+      color: $gold-light;
+    }
+  }
+}
+
+footer .container-fluid {
+  background: none;
+  display: block;
+}
+
+footer span, footer p {
+  font-family: 'Arial', sans-serif;
+  font-size: .925em;
+  line-height: 1.5;
+  letter-spacing: -.015em;
+  color: lighten($gray-extra-light,5%);
+  margin-bottom: 0;
+}
+
+footer span#brand img {
+  a {
+    display: inline-block;
+    float: right;
+  }
+  height: 45px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+footer p {
+  @include tablet-portrait {
+    display: none;
+  }
+}
+
+#footer-address {
+  margin-top: 10px;
+  @include tablet-portrait {
+    display: none;
+  }
+}
+
+#footercard,
+#footercard a,
+#footercard #street-address,
+#footercard #locality,
+#footercard .region,
+#footercard .postal-code {
+  font-size: 1em;
+  color: lighten($gray-extra-light,5%);
+}

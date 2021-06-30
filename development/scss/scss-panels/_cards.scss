@@ -1,0 +1,225 @@
+/* cards */
+
+.content-grid-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* cards horizontal */
+
+.grid-wrapper-min-max.card-horizontal {
+  display: block;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.grid-wrapper-min-max.card-horizontal .grid-item {
+  display: -ms-grid;
+  display: grid;
+  margin: 2rem 0;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: auto;
+  grid-gap: 0;
+  background: #e1e1e1;
+}
+
+.grid-wrapper-min-max.card-horizontal .grid-item .image-wrapper {
+  margin: 0;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+  background-image: url('http://via.placeholder.com/1000x560');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.grid-wrapper-min-max.card-horizontal .grid-item .image-wrapper a {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-wrapper-min-max.card-horizontal .grid-item img {
+  display: none;
+}
+
+/* card horizontal - refer */
+
+#panel-refer .grid-wrapper-min-max.card-horizontal .grid-item {
+  grid-template-columns: 300px auto !important;
+}
+
+#panel-refer .grid-wrapper-min-max.card-horizontal .grid-item h5,
+#panel-refer .grid-wrapper-min-max.card-horizontal .grid-item .explainer,
+#panel-refer .grid-wrapper-min-max.card-horizontal .grid-item button,
+#panel-refer .grid-wrapper-min-max.card-horizontal .grid-item h6 {
+  display: none;
+}
+
+
+/* typography card specific */
+
+.card .image-wrapper img {
+  margin: 0;
+}
+
+.card .content-grid-wrapper {
+  padding: 2rem !important;
+  background: #e1e1e1;
+}
+
+.card .content-grid-wrapper.bg-terracotta-light {
+  background: #f0e7e0;
+}
+
+.card .content-grid-wrapper.bg-gold {
+  background: #febc18 !important;
+}
+
+.card a.cta { margin-bottom: 1.5rem; }
+
+.card h1 { line-height: 1.125; }
+.card h2 { line-height: 1.125; }
+.card h4 { line-height: 1.15; }
+.card h5 { font-family: 'Antenna Bold', sans-serif; text-transform: uppercase; }
+.card h6 { font-family: 'Antenna', sans-serif; font-weight: normal; text-transform: uppercase; }
+.card p { font-family: 'Arial', sans-serif; }
+.card p.explainer { font-style: italic; }
+
+/* buttons */
+
+button {
+  display: block;
+  margin: 1rem 0;
+  padding: .625rem 1rem .5rem;
+  width: 100%;
+  height: auto;
+  font-family: 'Antenna Bold', 'Arial', sans-serif;
+  font-size: .925rem;
+  line-height: 1.45;
+  color: #8D0034;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: solid 1px #8D0034;
+  border-radius: .33rem;
+  background: rgba(0,0,0,.1);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+button:hover {
+  color: #f1f1f1;
+  background: #8D0034;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 3px solid #f2b724;
+  outline-offset: -3px;
+  border-radius: .33rem;
+  -moz-outline-border: .33rem;
+}
+
+/* button text color */
+
+.button-maroon button, .button-patina button {
+  color: #f1f1f1;
+  border: none;
+}
+
+.button-gold button {
+  color: #ffffff;
+}
+
+.button-gold button:hover {
+  color: #ffffff;
+}
+
+/* button background color */
+
+.button-maroon button { background: #8D0034; }
+.button-patina button { background: #0096A0; }
+.button-gold button { background: #f2b724; }
+
+.button-maroon button:hover { background: #5D0024 !important; }
+.button-patina button:hover { background: #00495C !important; }
+.button-gold button:hover { background: #F98E2B !important; }
+
+/* cards numbers */
+
+.grid-wrapper-min-max.number h6,
+.grid-wrapper-min-max.number h4,
+.grid-wrapper-min-max.number h5,
+.grid-wrapper-min-max.number p,
+.grid-wrapper-min-max.number a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.grid-wrapper-min-max.number .image-wrapper,
+.grid-wrapper-min-max.number img,
+.grid-wrapper-min-max.number p,
+.grid-wrapper-min-max.number button,
+.grid-wrapper-min-max.number h6 {
+  display: none;
+}
+
+/* numbers large */
+
+.grid-wrapper-min-max.number h4 {
+  margin: 0;
+  font-family: 'Antenna COndensed Bold', sans-serif !important;
+  font-size: 4.75rem;
+  line-height: 1.25;
+}
+
+.grid-wrapper-min-max.number h5 {
+  font-family: 'Antenna', sans-serif !important;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* numbers medium */
+
+.grid-wrapper-min-max.number.numbers-md h4 {
+  font-size: 3.5rem !important;
+}
+
+/* numbers small */
+
+.grid-wrapper-min-max.number.numbers-sm h4 {
+  font-size: 2.5rem !important;
+}
+
+/* media queries ==================
+=================================*/
+
+/* 1200 */
+
+/* 992 */
+
+/* 768 */
+@media only screen and (max-width: 768px) {
+.grid-wrapper-min-max.card-horizontal .grid-item {
+  display: block;
+  width: 100%;
+}
+.grid-wrapper-min-max.card-horizontal .grid-item img {
+  display: block;
+}
+}
+/* 736 */
+
+/* 580 */
+
+@media only screen and (max-width: 580px) {
+  .container { width: 90%; }
+  .content-columns-varied .grid-wrapper-min-max { display: block; }
+}

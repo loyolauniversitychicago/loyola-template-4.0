@@ -1,0 +1,67 @@
+/* SECONDARY NAV */
+
+nav#secondary {
+	margin: 0 0 2rem 0;
+	padding: 2em;
+	border-radius: .75rem 0 0 .75rem;
+	background: darken($gray-extra-light, 5%) !important;
+	a, h4 {
+		display: block;
+		margin: 0;
+		padding: 1.125rem .5rem 1rem;
+		width: 100%;
+		font-family: 'Antenna', sans-serif;
+		font-size: .85rem;
+		color: $black;
+		text-indent: 0 !important;
+		text-transform: uppercase;
+		text-decoration: none;
+		border-bottom: solid 1px $gray;
+		transition: .2s;
+		&:hover {
+			background: darken($gray-extra-light, 15%) !important;
+		}
+	}
+	h4 {
+		padding: 0;
+		border: none;
+		button.minimalist-accordion__header,
+		button.minimalist-noanim-accordion__header,
+		button.minimalist-css-accordion__header {
+			padding: 1.125rem .5rem 1rem;
+			font-size: .85rem;
+			border: none;
+			&:hover {
+				color: $black !important;
+				background: darken($gray-extra-light, 10%) !important;
+			}
+		}
+	}
+}
+
+nav#secondary a.current,
+nav#secondary h4.current {
+	color: $gray-extra-light;
+	background: $maroon;
+	&:hover {
+		color: $black;
+	}
+}
+
+nav#secondary .minimalist-accordion__header::after,
+nav#secondary .minimalist-noanim-accordion__header::after,
+nav#secondary .minimalist-css-accordion__header::after {
+	margin-top: .075rem;
+}
+
+nav#secondary .minimalist-accordion__panel {
+	margin: 0;
+	background: $gray-light;
+	a, h4 {
+		&:hover {
+			background: darken($gray-light, 10%) !important;
+		}
+	}
+}
+
+/* CSS - END */

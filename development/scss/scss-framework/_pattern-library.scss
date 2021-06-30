@@ -1,0 +1,43 @@
+body#pattern-library {
+  background-color: $gray-light;
+  background-image: url('/images/texture-transparent-750.png');
+}
+
+#chapter-top {
+  padding: 3em;
+  color: $gray-light;
+  background: $maroon !important;
+  ul {
+    list-style: none;
+    li {
+      margin: 1.5em 0;
+      font-family: 'Arial', sans-serif;
+      font-size: 1.275em;
+    }
+    li a {
+      font-weight: 100;
+      color: $gray-light;
+      text-decoration: none;
+      transition: .2s;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+#panel-top {
+  padding: 0;
+  margin: 5em 0;
+  height: 1.975rem;
+  border-bottom: 1px solid #a2a2a2;
+  background: $gray;
+  .container {
+    padding: 0;
+    background: $white;
+  }
+  h5 {
+    margin: 0;
+    text-align: center;
+  }
+}

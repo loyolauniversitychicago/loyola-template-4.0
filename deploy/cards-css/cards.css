@@ -1,0 +1,245 @@
+/* base */
+
+/* image */
+
+img {
+  display: block;
+}
+
+.image-wrapper a {
+  display: block;
+  width: 100%;
+}
+
+.image-wrapper img {
+  margin: 0 0 2.25rem;
+  width: 100%;
+  height: auto;
+}
+
+/* typography general - typography cards */
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  width: 100%;
+  font-family: 'Antenna Bold', sans-serif;
+  line-height: 1.35;
+  letter-spacing: -.015rem;
+  word-spacing: .05rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 3.75rem;
+  line-height: 1.5;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin-bottom: 1.65rem;
+  font-family: 'Antenna', sans-serif;
+  font-size: 2.25rem;
+}
+
+h3.uppercase {
+  text-transform: uppercase;
+}
+
+h4 {
+  margin-bottom: 1.65rem;
+  font-size: 1.625rem;
+  line-height: 1.5;
+}
+
+h4.uppercase {
+  text-transform: uppercase;
+}
+
+h5 {
+  margin-bottom: .5rem;
+  font-size: 1.125rem;
+  line-height: 1.65;
+  text-transform: uppercase;
+}
+
+h6, .flex-item h6 {
+  margin-bottom: .5rem;
+  font-family: 'Antenna', sans-serif;
+  font-size: .95rem;
+  font-weight: normal;
+  line-height: 1.65;
+  text-transform: uppercase;
+}
+
+.flex-item.content h6 {
+  margin-bottom: 2rem;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.85;
+}
+
+p.explainer {
+  font-style: italic;
+}
+
+/* inline links - ctas - base */
+
+a {
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+a {
+  display: inline;
+  font-family: inherit;
+  font-weight: 700;
+  color: #8D0034;
+}
+
+a:focus {
+  outline: 3px solid #febc18;
+  outline-offset: -3px;
+}
+
+p a {
+  font-size: .975em;
+}
+
+a.cta {
+  display: block;
+  width: 100%;
+  font-family: 'Antenna Bold', sans-serif;
+  font-size: .925rem;
+  text-transform: uppercase;
+}
+
+/* typography card specific */
+
+.card .image-wrapper img {
+  margin: 0;
+}
+
+.card .content-grid-wrapper {
+  padding: 2rem !important;
+  background: #e1e1e1;
+}
+
+.card .content-grid-wrapper.bg-terracotta-light {
+  background: #f0e7e0;
+}
+
+.card .content-grid-wrapper.bg-gold {
+  background: #febc18 !important;
+}
+
+.card a.cta { margin-bottom: 1.5rem; }
+
+.card h1 { line-height: 1.125; }
+.card h2 { line-height: 1.125; }
+.card h4 { line-height: 1.15; }
+.card h5 { font-family: 'Antenna Bold', sans-serif; text-transform: uppercase; }
+.card h6 { font-family: 'Antenna', sans-serif; font-weight: normal; text-transform: uppercase; }
+.card p { font-family: 'Arial', sans-serif; }
+.card p.explainer { font-style: italic; }
+
+/* buttons */
+
+button {
+  display: block;
+  margin: 1rem 0;
+  padding: .625rem 1rem .5rem;
+  width: 100%;
+  height: auto;
+  font-family: 'Antenna Bold', 'Arial', sans-serif;
+  font-size: .925rem;
+  line-height: 1.45;
+  color: #8D0034;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: solid 1px #8D0034;
+  border-radius: .33rem;
+  background: rgba(0,0,0,.1);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+button:hover {
+  color: #f1f1f1;
+  background: #8D0034;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 3px solid #f2b724;
+  outline-offset: -3px;
+  border-radius: .33rem;
+  -moz-outline-border: .33rem;
+}
+
+/* button text color */
+
+.button-maroon button, .button-patina button {
+  color: #f1f1f1;
+  border: none;
+}
+
+.button-gold button {
+  color: #ffffff;
+}
+
+.button-gold button:hover {
+  color: #ffffff;
+}
+
+/* button background color */
+
+.button-maroon button { background: #8D0034; }
+.button-patina button { background: #0096A0; }
+.button-gold button { background: #f2b724; }
+
+.button-maroon button:hover { background: #5D0024 !important; }
+.button-patina button:hover { background: #00495C !important; }
+.button-gold button:hover { background: #F98E2B !important; }
+
+/* cards numbers */
+
+.grid-wrapper-min-max.number h6,
+.grid-wrapper-min-max.number h4,
+.grid-wrapper-min-max.number h5,
+.grid-wrapper-min-max.number p,
+.grid-wrapper-min-max.number a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.grid-wrapper-min-max.number img,
+.grid-wrapper-min-max.number p,
+.grid-wrapper-min-max.number button,
+.grid-wrapper-min-max.number h6 {
+  display: none;
+}
+
+.grid-wrapper-min-max.number h4 {
+  margin: 0;
+  font-family: 'Antenna Comp Bold', sans-serif !important;
+  font-size: 5.5rem;
+  line-height: 1.25;
+}
+
+.grid-wrapper-min-max.number h5 {
+  font-family: 'Antenna', sans-serif !important;
+  font-weight: normal;
+}

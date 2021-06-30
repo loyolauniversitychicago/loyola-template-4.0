@@ -1,0 +1,522 @@
+/* NAME: image-resize-2020.css */
+/* LOCATION: http://luc.edu/luc-template-2020/css/ - */
+
+/* IMAGE RESIZE ------------------------------------ */
+
+/* LOCALIZED DEV - image-resize-focal-point-base.css */
+
+/* BASE ---------------------------------------------*/
+/* hero-wrapper               wrapper  semantic image - background-image
+/* hero-wrapper-0000          height   background-image - height default - 450px - 800px - 1000px
+/* horizontal-00-vertical-00  position semantic image - background-image
+
+/* 415px!!! ---------------------------------------- */
+/* enlarge-000                scale    semantic image - background-image
+/* hero-wrapper-height-100    height   background-image -  height override - 450px - 800px - 1000px
+
+/* SEMANTIC IMAGE BASE --------------------------------
+---------------------------------------------------- */
+.hero-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: $black;
+}
+.hero-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* BACKGROUND IMAGE BASE ------------------------------
+---------------------------------------------------- */
+#image-resize-background-image.hero-wrapper {
+  display: table;
+  width: 100% !important;
+  content: "";
+  background-color: $gray-dark;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#image-resize-background-image.hero-wrapper.hero-wrapper-450 {
+  background-image: url('http://via.placeholder.com/1800x450');
+  padding-top: 25%;
+}
+#image-resize-background-image.hero-wrapper.hero-wrapper-800 {
+  background-image: url('http://via.placeholder.com/1800x800');
+  padding-top: 44.444%;
+}
+#image-resize-background-image.hero-wrapper.hero-wrapper-1000 {
+  background-image: url('http://via.placeholder.com/1800x1000');
+  padding-top: 55.555%;
+}
+
+@media only screen and (max-width: 415px) {
+
+/* SEMANTIC IMAGE -------------------------------------
+---------------------------------------------------- */
+
+/* SEMANTIC IMAGE WRAPPER HEIGHT ------------------- */
+/* 10% increments */
+.hero-wrapper.height-150 { height: 150px; }
+.hero-wrapper.height-160 { height: 160px; }
+.hero-wrapper.height-170 { height: 170px; }
+.hero-wrapper.height-180 { height: 180px; }
+.hero-wrapper.height-190 { height: 190px; }
+.hero-wrapper.height-200 { height: 200px; }
+.hero-wrapper.height-210 { height: 210px; }
+.hero-wrapper.height-220 { height: 220px; }
+.hero-wrapper.height-230 { height: 230px; }
+.hero-wrapper.height-240 { height: 240px; }
+.hero-wrapper.height-250 { height: 250px; }
+.hero-wrapper.height-260 { height: 260px; }
+.hero-wrapper.height-270 { height: 270px; }
+.hero-wrapper.height-280 { height: 280px; }
+.hero-wrapper.height-290 { height: 290px; }
+.hero-wrapper.height-300 { height: 300px; }
+.hero-wrapper.height-310 { height: 310px; }
+.hero-wrapper.height-320 { height: 320px; }
+.hero-wrapper.height-330 { height: 330px; }
+.hero-wrapper.height-340 { height: 340px; }
+.hero-wrapper.height-350 { height: 350px; }
+/* 25% increments */
+.hero-wrapper.height-400 { height: 400px; }
+.hero-wrapper.height-425 { height: 425px; }
+.hero-wrapper.height-450 { height: 450px; }
+.hero-wrapper.height-475 { height: 475px; }
+.hero-wrapper.height-500 { height: 500px; }
+.hero-wrapper.height-525 { height: 525px; }
+.hero-wrapper.height-550 { height: 550px; }
+.hero-wrapper.height-575 { height: 575px; }
+.hero-wrapper.height-600 { height: 600px; }
+
+/* SEMANTIC IMAGE SCALE ---------------------------- */
+/* 25% increments */
+img.enlarge-100 { width: 100%; height: auto; }
+img.enlarge-125 { width: 125%; height: auto; }
+img.enlarge-150 { width: 150%; height: auto; }
+img.enlarge-175 { width: 175%; height: auto; }
+img.enlarge-200 { width: 200%; height: auto; }
+img.enlarge-225 { width: 225%; height: auto; }
+img.enlarge-250 { width: 250%; height: auto; }
+img.enlarge-275 { width: 275%; height: auto; }
+img.enlarge-300 { width: 300%; height: auto; }
+img.enlarge-320 { width: 325%; height: auto; }
+img.enlarge-350 { width: 350%; height: auto; }
+img.enlarge-375 { width: 375%; height: auto; }
+img.enlarge-400 { width: 400%; height: auto; }
+img.enlarge-425 { width: 425%; height: auto; }
+img.enlarge-450 { width: 450%; height: auto; }
+img.enlarge-475 { width: 475%; height: auto; }
+img.enlarge-500 { width: 500%; height: auto; }
+img.enlarge-525 { width: 525%; height: auto; }
+img.enlarge-550 { width: 550%; height: auto; }
+img.enlarge-575 { width: 575%; height: auto; }
+img.enlarge-600 { width: 600%; height: auto; }
+img.enlarge-625 { width: 625%; height: auto; }
+img.enlarge-650 { width: 650%; height: auto; }
+img.enlarge-675 { width: 675%; height: auto; }
+img.enlarge-700 { width: 700%; height: auto; }
+img.enlarge-725 { width: 725%; height: auto; }
+img.enlarge-750 { width: 750%; height: auto; }
+img.enlarge-775 { width: 775%; height: auto; }
+img.enlarge-800 { width: 800%; height: auto; }
+img.enlarge-825 { width: 825%; height: auto; }
+img.enlarge-850 { width: 850%; height: auto; }
+img.enlarge-875 { width: 875%; height: auto; }
+img.enlarge-900 { width: 900%; height: auto; }
+img.enlarge-925 { width: 925%; height: auto; }
+img.enlarge-950 { width: 950%; height: auto; }
+img.enlarge-975 { width: 975%; height: auto; }
+img.enlarge-1000 { width: 1000%; height: auto; }
+
+/* SEMANTIC IMAGE POSITIONING ---------------------- */
+/* semantic vertical-00 */
+img.horizontal-00-vertical-00 { margin-top: 0; margin-left: 0; }
+img.horizontal-01-vertical-00 { margin-top: 0; margin-left: -6.25%; }
+img.horizontal-02-vertical-00 { margin-top: 0; margin-left: -12.5%; }
+img.horizontal-03-vertical-00 { margin-top: 0; margin-left: -18.75%0; }
+img.horizontal-04-vertical-00 { margin-top: 0; margin-left: -25%; }
+img.horizontal-05-vertical-00 { margin-top: 0; margin-left: -31.25%; }
+img.horizontal-06-vertical-00 { margin-top: 0; margin-left: -37.5%; }
+img.horizontal-07-vertical-00 { margin-top: 0; margin-left: -43.75%; }
+img.horizontal-08-vertical-00 { margin-top: 0; margin-left: -50%; }
+img.horizontal-09-vertical-00 { margin-top: 0; margin-left: -56.25%; }
+img.horizontal-10-vertical-00 { margin-top: 0; margin-left: -62.5%; }
+img.horizontal-11-vertical-00 { margin-top: 0; margin-left: -68.75%; }
+img.horizontal-12-vertical-00 { margin-top: 0; margin-left: -75%; }
+img.horizontal-13-vertical-00 { margin-top: 0; margin-left: -81.25%; }
+img.horizontal-14-vertical-00 { margin-top: 0; margin-left: -87.5%; }
+img.horizontal-15-vertical-00 { margin-top: 0; margin-left: -93.75%; }
+img.horizontal-16-vertical-00 { margin-top: 0; margin-left: -100%; }
+/* semantic vertical-01 */
+img.horizontal-00-vertical-01 { margin-top: -12.5%; margin-left: 0; }
+img.horizontal-01-vertical-01 { margin-top: -12.5%; margin-left: -6.25%; }
+img.horizontal-02-vertical-01 { margin-top: -12.5%; margin-left: -12.5%; }
+img.horizontal-03-vertical-01 { margin-top: -12.5%; margin-left: -18.75%0; }
+img.horizontal-04-vertical-01 { margin-top: -12.5%; margin-left: -25%; }
+img.horizontal-05-vertical-01 { margin-top: -12.5%; margin-left: -31.25%; }
+img.horizontal-06-vertical-01 { margin-top: -12.5%; margin-left: -37.5%; }
+img.horizontal-07-vertical-01 { margin-top: -12.5%; margin-left: -43.75%; }
+img.horizontal-08-vertical-01 { margin-top: -12.5%; margin-left: -50%; }
+img.horizontal-09-vertical-01 { margin-top: -12.5%; margin-left: -56.25%; }
+img.horizontal-10-vertical-01 { margin-top: -12.5%; margin-left: -62.5%; }
+img.horizontal-11-vertical-01 { margin-top: -12.5%; margin-left: -68.75%; }
+img.horizontal-12-vertical-01 { margin-top: -12.5%; margin-left: -75%; }
+img.horizontal-13-vertical-01 { margin-top: -12.5%; margin-left: -81.25%; }
+img.horizontal-14-vertical-01 { margin-top: -12.5%; margin-left: -87.5%; }
+img.horizontal-15-vertical-01 { margin-top: -12.5%; margin-left: -93.75%; }
+img.horizontal-16-vertical-01 { margin-top: -12.5%; margin-left: -100%; }
+/* semantic vertical-02 */
+img.horizontal-00-vertical-02 { margin-top: -25%; margin-left: 0; }
+img.horizontal-01-vertical-02 { margin-top: -25%; margin-left: -6.25%; }
+img.horizontal-02-vertical-02 { margin-top: -25%; margin-left: -12.5%; }
+img.horizontal-03-vertical-02 { margin-top: -25%; margin-left: -18.75%0; }
+img.horizontal-04-vertical-02 { margin-top: -25%; margin-left: -25%; }
+img.horizontal-05-vertical-02 { margin-top: -25%; margin-left: -31.25%; }
+img.horizontal-06-vertical-02 { margin-top: -25%; margin-left: -37.5%; }
+img.horizontal-07-vertical-02 { margin-top: -25%; margin-left: -43.75%; }
+img.horizontal-08-vertical-02 { margin-top: -25%; margin-left: -50%; }
+img.horizontal-09-vertical-02 { margin-top: -25%; margin-left: -56.25%; }
+img.horizontal-10-vertical-02 { margin-top: -25%; margin-left: -62.5%; }
+img.horizontal-11-vertical-02 { margin-top: -25%; margin-left: -68.75%; }
+img.horizontal-12-vertical-02 { margin-top: -25%; margin-left: -75%; }
+img.horizontal-13-vertical-02 { margin-top: -25%; margin-left: -81.25%; }
+img.horizontal-14-vertical-02 { margin-top: -25%; margin-left: -87.5%; }
+img.horizontal-15-vertical-02 { margin-top: -25%; margin-left: -93.75%; }
+img.horizontal-16-vertical-02 { margin-top: -25%; margin-left: -100%; }
+/* semantic vertical-03 */
+img.horizontal-00-vertical-03 { margin-top: -37.5%; margin-left: 0; }
+img.horizontal-01-vertical-03 { margin-top: -37.5%; margin-left: -6.25%; }
+img.horizontal-02-vertical-03 { margin-top: -37.5%; margin-left: -12.5%; }
+img.horizontal-03-vertical-03 { margin-top: -37.5%; margin-left: -18.75%0; }
+img.horizontal-04-vertical-03 { margin-top: -37.5%; margin-left: -25%; }
+img.horizontal-05-vertical-03 { margin-top: -37.5%; margin-left: -31.25%; }
+img.horizontal-06-vertical-03 { margin-top: -37.5%; margin-left: -37.5%; }
+img.horizontal-07-vertical-03 { margin-top: -37.5%; margin-left: -43.75%; }
+img.horizontal-08-vertical-03 { margin-top: -37.5%; margin-left: -50%; }
+img.horizontal-09-vertical-03 { margin-top: -37.5%; margin-left: -56.25%; }
+img.horizontal-10-vertical-03 { margin-top: -37.5%; margin-left: -62.5%; }
+img.horizontal-11-vertical-03 { margin-top: -37.5%; margin-left: -68.75%; }
+img.horizontal-12-vertical-03 { margin-top: -37.5%; margin-left: -75%; }
+img.horizontal-13-vertical-03 { margin-top: -37.5%; margin-left: -81.25%; }
+img.horizontal-14-vertical-03 { margin-top: -37.5%; margin-left: -87.5%; }
+img.horizontal-15-vertical-03 { margin-top: -37.5%; margin-left: -93.75%; }
+img.horizontal-16-vertical-03 { margin-top: -37.5%; margin-left: -100%; }
+/* semantic vertical-04 */
+img.horizontal-00-vertical-04 { margin-top: -50%; margin-left: 0; }
+img.horizontal-01-vertical-04 { margin-top: -50%; margin-left: -6.25%; }
+img.horizontal-02-vertical-04 { margin-top: -50%; margin-left: -12.5%; }
+img.horizontal-03-vertical-04 { margin-top: -50%; margin-left: -18.75%0; }
+img.horizontal-04-vertical-04 { margin-top: -50%; margin-left: -25%; }
+img.horizontal-05-vertical-04 { margin-top: -50%; margin-left: -31.25%; }
+img.horizontal-06-vertical-04 { margin-top: -50%; margin-left: -37.5%; }
+img.horizontal-07-vertical-04 { margin-top: -50%; margin-left: -43.75%; }
+img.horizontal-08-vertical-04 { margin-top: -50%; margin-left: -50%; }
+img.horizontal-09-vertical-04 { margin-top: -50%; margin-left: -56.25%; }
+img.horizontal-10-vertical-04 { margin-top: -50%; margin-left: -62.5%; }
+img.horizontal-11-vertical-04 { margin-top: -50%; margin-left: -68.75%; }
+img.horizontal-12-vertical-04 { margin-top: -50%; margin-left: -75%; }
+img.horizontal-13-vertical-04 { margin-top: -50%; margin-left: -81.25%; }
+img.horizontal-14-vertical-04 { margin-top: -50%; margin-left: -87.5%; }
+img.horizontal-15-vertical-04 { margin-top: -50%; margin-left: -93.75%; }
+img.horizontal-16-vertical-04 { margin-top: -50%; margin-left: -100%; }
+/* semantic vertical-05 */
+img.horizontal-00-vertical-05 { margin-top: -62.5%; margin-left: 0; }
+img.horizontal-01-vertical-05 { margin-top: -62.5%; margin-left: -6.25%; }
+img.horizontal-02-vertical-05 { margin-top: -62.5%; margin-left: -12.5%; }
+img.horizontal-03-vertical-05 { margin-top: -62.5%; margin-left: -18.75%0; }
+img.horizontal-04-vertical-05 { margin-top: -62.5%; margin-left: -25%; }
+img.horizontal-05-vertical-05 { margin-top: -62.5%; margin-left: -31.25%; }
+img.horizontal-06-vertical-05 { margin-top: -62.5%; margin-left: -37.5%; }
+img.horizontal-07-vertical-05 { margin-top: -62.5%; margin-left: -43.75%; }
+img.horizontal-08-vertical-05 { margin-top: -62.5%; margin-left: -50%; }
+img.horizontal-09-vertical-05 { margin-top: -62.5%; margin-left: -56.25%; }
+img.horizontal-10-vertical-05 { margin-top: -62.5%; margin-left: -62.5%; }
+img.horizontal-11-vertical-05 { margin-top: -62.5%; margin-left: -68.75%; }
+img.horizontal-12-vertical-05 { margin-top: -62.5%; margin-left: -75%; }
+img.horizontal-13-vertical-05 { margin-top: -62.5%; margin-left: -81.25%; }
+img.horizontal-14-vertical-05 { margin-top: -62.5%; margin-left: -87.5%; }
+img.horizontal-15-vertical-05 { margin-top: -62.5%; margin-left: -93.75%; }
+img.horizontal-16-vertical-05 { margin-top: -62.5%; margin-left: -100%; }
+/* semantic vertical-06 */
+img.horizontal-00-vertical-06 { margin-top: -75%; margin-left: 0; }
+img.horizontal-01-vertical-06 { margin-top: -75%; margin-left: -6.25%; }
+img.horizontal-02-vertical-06 { margin-top: -75%; margin-left: -12.5%; }
+img.horizontal-03-vertical-06 { margin-top: -75%; margin-left: -18.75%0; }
+img.horizontal-04-vertical-06 { margin-top: -75%; margin-left: -25%; }
+img.horizontal-05-vertical-06 { margin-top: -75%; margin-left: -31.25%; }
+img.horizontal-06-vertical-06 { margin-top: -75%; margin-left: -37.5%; }
+img.horizontal-07-vertical-06 { margin-top: -75%; margin-left: -43.75%; }
+img.horizontal-08-vertical-06 { margin-top: -75%; margin-left: -50%; }
+img.horizontal-09-vertical-06 { margin-top: -75%; margin-left: -56.25%; }
+img.horizontal-10-vertical-06 { margin-top: -75%; margin-left: -62.5%; }
+img.horizontal-11-vertical-06 { margin-top: -75%; margin-left: -68.75%; }
+img.horizontal-12-vertical-06 { margin-top: -75%; margin-left: -75%; }
+img.horizontal-13-vertical-06 { margin-top: -75%; margin-left: -81.25%; }
+img.horizontal-14-vertical-06 { margin-top: -75%; margin-left: -87.5%; }
+img.horizontal-15-vertical-06 { margin-top: -75%; margin-left: -93.75%; }
+img.horizontal-16-vertical-06 { margin-top: -75%; margin-left: -100%; }
+/* semantic vertical-07 */
+img.horizontal-00-vertical-07 { margin-top: -87.5%; margin-left: 0; }
+img.horizontal-01-vertical-07 { margin-top: -87.5%; margin-left: -6.25%; }
+img.horizontal-02-vertical-07 { margin-top: -87.5%; margin-left: -12.5%; }
+img.horizontal-03-vertical-07 { margin-top: -87.5%; margin-left: -18.75%0; }
+img.horizontal-04-vertical-07 { margin-top: -87.5%; margin-left: -25%; }
+img.horizontal-05-vertical-07 { margin-top: -87.5%; margin-left: -31.25%; }
+img.horizontal-06-vertical-07 { margin-top: -87.5%; margin-left: -37.5%; }
+img.horizontal-07-vertical-07 { margin-top: -87.5%; margin-left: -43.75%; }
+img.horizontal-08-vertical-07 { margin-top: -87.5%; margin-left: -50%; }
+img.horizontal-09-vertical-07 { margin-top: -87.5%; margin-left: -56.25%; }
+img.horizontal-10-vertical-07 { margin-top: -87.5%; margin-left: -62.5%; }
+img.horizontal-11-vertical-07 { margin-top: -87.5%; margin-left: -68.75%; }
+img.horizontal-12-vertical-07 { margin-top: -87.5%; margin-left: -75%; }
+img.horizontal-13-vertical-07 { margin-top: -87.5%; margin-left: -81.25%; }
+img.horizontal-14-vertical-07 { margin-top: -87.5%; margin-left: -87.5%; }
+img.horizontal-15-vertical-07 { margin-top: -87.5%; margin-left: -93.75%; }
+img.horizontal-16-vertical-07 { margin-top: -87.5%; margin-left: -100%; }
+/* semantic vertical-08 */
+img.horizontal-00-vertical-08 { margin-top: -100%; margin-left: 0; }
+img.horizontal-01-vertical-08 { margin-top: -100%; margin-left: -6.25%; }
+img.horizontal-02-vertical-08 { margin-top: -100%; margin-left: -12.5%; }
+img.horizontal-03-vertical-08 { margin-top: -100%; margin-left: -18.75%0; }
+img.horizontal-04-vertical-08 { margin-top: -100%; margin-left: -25%; }
+img.horizontal-05-vertical-08 { margin-top: -100%; margin-left: -31.25%; }
+img.horizontal-06-vertical-08 { margin-top: -100%; margin-left: -37.5%; }
+img.horizontal-07-vertical-08 { margin-top: -100%; margin-left: -43.75%; }
+img.horizontal-08-vertical-08 { margin-top: -100%; margin-left: -50%; }
+img.horizontal-09-vertical-08 { margin-top: -100%; margin-left: -56.25%; }
+img.horizontal-10-vertical-08 { margin-top: -100%; margin-left: -62.5%; }
+img.horizontal-11-vertical-08 { margin-top: -100%; margin-left: -68.75%; }
+img.horizontal-12-vertical-08 { margin-top: -100%; margin-left: -75%; }
+img.horizontal-13-vertical-08 { margin-top: -100%; margin-left: -81.25%; }
+img.horizontal-14-vertical-08 { margin-top: -100%; margin-left: -87.5%; }
+img.horizontal-15-vertical-08 { margin-top: -100%; margin-left: -93.75%; }
+img.horizontal-16-vertical-08 { margin-top: -100%; margin-left: -100%; }
+
+/* BACKGROUND IMAGE -----------------------------------
+---------------------------------------------------- */
+/* BACKGROUND IMAGE HEIGHT ------------------------- */
+#image-resize-background-image.hero-wrapper-height-25  { padding-top: 25% !important; }
+#image-resize-background-image.hero-wrapper-height-50  { padding-top: 50% !important; }
+#image-resize-background-image.hero-wrapper-height-75  { padding-top: 75% !important; }
+#image-resize-background-image.hero-wrapper-height-100 { padding-top: 100% !important; }
+#image-resize-background-image.hero-wrapper-height-125 { padding-top: 125% !important; }
+#image-resize-background-image.hero-wrapper-height-150 { padding-top: 150% !important; }
+#image-resize-background-image.hero-wrapper-height-175 { padding-top: 175% !important; }
+#image-resize-background-image.hero-wrapper-height-200 { padding-top: 200% !important; }
+#image-resize-background-image.hero-wrapper-height-225 { padding-top: 225% !important; }
+#image-resize-background-image.hero-wrapper-height-250 { padding-top: 250% !important; }
+#image-resize-background-image.hero-wrapper-height-275 { padding-top: 275% !important; }
+#image-resize-background-image.hero-wrapper-height-300 { padding-top: 300% !important; }
+
+/* BACKGROUND IMAGE SCALE -------------------------- */
+/* 25% increments */
+.enlarge-100 { background-size: 100% !important; background-repeat: no-repeat; }
+.enlarge-125 { background-size: 125% !important; background-repeat: no-repeat; }
+.enlarge-150 { background-size: 150% !important; background-repeat: no-repeat; }
+.enlarge-175 { background-size: 175% !important; background-repeat: no-repeat; }
+.enlarge-200 { background-size: 200% !important; background-repeat: no-repeat; }
+.enlarge-225 { background-size: 225% !important; background-repeat: no-repeat; }
+.enlarge-250 { background-size: 250% !important; background-repeat: no-repeat; }
+.enlarge-275 { background-size: 275% !important; background-repeat: no-repeat; }
+.enlarge-300 { background-size: 300% !important; background-repeat: no-repeat; }
+.enlarge-320 { background-size: 325% !important; background-repeat: no-repeat; }
+.enlarge-350 { background-size: 350% !important; background-repeat: no-repeat; }
+.enlarge-375 { background-size: 375% !important; background-repeat: no-repeat; }
+.enlarge-400 { background-size: 400% !important; background-repeat: no-repeat; }
+.enlarge-425 { background-size: 425% !important; background-repeat: no-repeat; }
+.enlarge-450 { background-size: 450% !important; background-repeat: no-repeat; }
+.enlarge-475 { background-size: 475% !important; background-repeat: no-repeat; }
+.enlarge-500 { background-size: 500% !important; background-repeat: no-repeat; }
+.enlarge-525 { background-size: 525% !important; background-repeat: no-repeat; }
+.enlarge-550 { background-size: 550% !important; background-repeat: no-repeat; }
+.enlarge-575 { background-size: 575% !important; background-repeat: no-repeat; }
+.enlarge-600 { background-size: 600% !important; background-repeat: no-repeat; }
+.enlarge-625 { background-size: 625% !important; background-repeat: no-repeat; }
+.enlarge-650 { background-size: 650% !important; background-repeat: no-repeat; }
+.enlarge-675 { background-size: 675% !important; background-repeat: no-repeat; }
+.enlarge-700 { background-size: 700% !important; background-repeat: no-repeat; }
+.enlarge-725 { background-size: 725% !important; background-repeat: no-repeat; }
+.enlarge-750 { background-size: 750% !important; background-repeat: no-repeat; }
+.enlarge-775 { background-size: 775% !important; background-repeat: no-repeat; }
+.enlarge-800 { background-size: 800% !important; background-repeat: no-repeat; }
+.enlarge-825 { background-size: 825% !important; background-repeat: no-repeat; }
+.enlarge-850 { background-size: 850% !important; background-repeat: no-repeat; }
+.enlarge-875 { background-size: 875% !important; background-repeat: no-repeat; }
+.enlarge-900 { background-size: 900% !important; background-repeat: no-repeat; }
+.enlarge-925 { background-size: 925% !important; background-repeat: no-repeat; }
+.enlarge-950 { background-size: 950% !important; background-repeat: no-repeat; }
+.enlarge-975 { background-size: 975% !important; background-repeat: no-repeat; }
+.enlarge-1000 { background-size: 1000% !important; background-repeat: no-repeat; }
+
+/* BACKGROUND IMAGE POSITIONING -------------------- */
+/* background vertical-00 */
+.horizontal-00-vertical-00 { background-position: 0 0; }
+.horizontal-01-vertical-00 { background-position: 6.25% 0; }
+.horizontal-02-vertical-00 { background-position: 12.5% 0; }
+.horizontal-03-vertical-00 { background-position: 18.75% 0; }
+.horizontal-04-vertical-00 { background-position: 25% 0; }
+.horizontal-05-vertical-00 { background-position: 31.25% 0; }
+.horizontal-06-vertical-00 { background-position: 37.5% 0; }
+.horizontal-07-vertical-00 { background-position: 43.75% 0; }
+.horizontal-08-vertical-00 { background-position: 50% 0; }
+.horizontal-09-vertical-00 { background-position: 56.25% 0; }
+.horizontal-10-vertical-00 { background-position: 62.5% 0; }
+.horizontal-11-vertical-00 { background-position: 68.75% 0; }
+.horizontal-12-vertical-00 { background-position: 75% 0; }
+.horizontal-13-vertical-00 { background-position: 81.25% 0; }
+.horizontal-14-vertical-00 { background-position: 87.5% 0; }
+.horizontal-15-vertical-00 { background-position: 93.75% 0; }
+.horizontal-16-vertical-00 { background-position: 100% 0; }
+/* background vertical-01 */
+.horizontal-00-vertical-01 { background-position: 0 12.5%; }
+.horizontal-01-vertical-01 { background-position: 6.25% 12.5%; }
+.horizontal-02-vertical-01 { background-position: 12.5% 12.5%; }
+.horizontal-03-vertical-01 { background-position: 18.75% 12.5%; }
+.horizontal-04-vertical-01 { background-position: 25% 12.5%; }
+.horizontal-05-vertical-01 { background-position: 31.25% 12.5%; }
+.horizontal-06-vertical-01 { background-position: 37.5% 12.5%; }
+.horizontal-07-vertical-01 { background-position: 43.75% 12.5%; }
+.horizontal-08-vertical-01 { background-position: 50% 12.5%; }
+.horizontal-09-vertical-01 { background-position: 56.25% 12.5%; }
+.horizontal-10-vertical-01 { background-position: 62.5% 12.5%; }
+.horizontal-11-vertical-01 { background-position: 68.75% 12.5%; }
+.horizontal-12-vertical-01 { background-position: 75% 12.5%; }
+.horizontal-13-vertical-01 { background-position: 81.25% 12.5%; }
+.horizontal-14-vertical-01 { background-position: 87.5% 12.5%; }
+.horizontal-15-vertical-01 { background-position: 93.75% 12.5%; }
+.horizontal-16-vertical-01 { background-position: 100% 12.5%; }
+/* background vertical-02 */
+.horizontal-00-vertical-02 { background-position: 0 25%; }
+.horizontal-01-vertical-02 { background-position: 6.25% 25%; }
+.horizontal-02-vertical-02 { background-position: 12.5% 25%; }
+.horizontal-03-vertical-02 { background-position: 18.75% 25%; }
+.horizontal-04-vertical-02 { background-position: 25% 25%; }
+.horizontal-05-vertical-02 { background-position: 31.25% 25%; }
+.horizontal-06-vertical-02 { background-position: 37.5% 25%; }
+.horizontal-07-vertical-02 { background-position: 43.75% 25%; }
+.horizontal-08-vertical-02 { background-position: 50% 25%; }
+.horizontal-09-vertical-02 { background-position: 56.25% 25%; }
+.horizontal-10-vertical-02 { background-position: 62.5% 25%; }
+.horizontal-11-vertical-02 { background-position: 68.75% 25%; }
+.horizontal-12-vertical-02 { background-position: 75% 25%; }
+.horizontal-13-vertical-02 { background-position: 81.25% 25%; }
+.horizontal-14-vertical-02 { background-position: 87.5% 25%; }
+.horizontal-15-vertical-02 { background-position: 93.75% 25%; }
+.horizontal-16-vertical-02 { background-position: 100% 25%; }
+/* background vertical-03 */
+.horizontal-00-vertical-03 { background-position: 0 37.5%; }
+.horizontal-01-vertical-03 { background-position: 6.25% 37.5%; }
+.horizontal-02-vertical-03 { background-position: 12.5% 37.5%; }
+.horizontal-03-vertical-03 { background-position: 18.75% 37.5%; }
+.horizontal-04-vertical-03 { background-position: 25% 37.5%; }
+.horizontal-05-vertical-03 { background-position: 31.25% 37.5%; }
+.horizontal-06-vertical-03 { background-position: 37.5% 37.5%; }
+.horizontal-07-vertical-03 { background-position: 43.75% 37.5%; }
+.horizontal-08-vertical-03 { background-position: 50% 37.5%; }
+.horizontal-09-vertical-03 { background-position: 56.25% 37.5%; }
+.horizontal-10-vertical-03 { background-position: 62.5% 37.5%; }
+.horizontal-11-vertical-03 { background-position: 68.75% 37.5%; }
+.horizontal-12-vertical-03 { background-position: 75% 37.5%; }
+.horizontal-13-vertical-03 { background-position: 81.25% 37.5%; }
+.horizontal-14-vertical-03 { background-position: 87.5% 37.5%; }
+.horizontal-15-vertical-03 { background-position: 93.75% 37.5%; }
+.horizontal-16-vertical-03 { background-position: 100% 37.5%; }
+/* background vertical-04 */
+.horizontal-00-vertical-04 { background-position: 0 50%; }
+.horizontal-01-vertical-04 { background-position: 6.25% 50%; }
+.horizontal-02-vertical-04 { background-position: 12.5% 50%; }
+.horizontal-03-vertical-04 { background-position: 18.75% 50%; }
+.horizontal-04-vertical-04 { background-position: 25% 50%; }
+.horizontal-05-vertical-04 { background-position: 31.25% 50%; }
+.horizontal-06-vertical-04 { background-position: 37.5% 50%; }
+.horizontal-07-vertical-04 { background-position: 43.75% 50%; }
+.horizontal-08-vertical-04 { background-position: 50% 50%; }
+.horizontal-09-vertical-04 { background-position: 56.25% 50%; }
+.horizontal-10-vertical-04 { background-position: 62.5% 50%; }
+.horizontal-11-vertical-04 { background-position: 68.75% 50%; }
+.horizontal-12-vertical-04 { background-position: 75% 50%; }
+.horizontal-13-vertical-04 { background-position: 81.25% 50%; }
+.horizontal-14-vertical-04 { background-position: 87.5% 50%; }
+.horizontal-15-vertical-04 { background-position: 93.75% 50%; }
+.horizontal-16-vertical-04 { background-position: 100% 50%; }
+/* background vertical-05 */
+.horizontal-00-vertical-05 { background-position: 0 62.5%; }
+.horizontal-01-vertical-05 { background-position: 6.25% 62.5%; }
+.horizontal-02-vertical-05 { background-position: 12.5% 62.5%; }
+.horizontal-03-vertical-05 { background-position: 18.75% 62.5%; }
+.horizontal-04-vertical-05 { background-position: 25% 62.5%; }
+.horizontal-05-vertical-05 { background-position: 31.25% 62.5%; }
+.horizontal-06-vertical-05 { background-position: 37.5% 62.5%; }
+.horizontal-07-vertical-05 { background-position: 43.75% 62.5%; }
+.horizontal-08-vertical-05 { background-position: 50% 62.5%; }
+.horizontal-09-vertical-05 { background-position: 56.25% 62.5%; }
+.horizontal-10-vertical-05 { background-position: 62.5% 62.5%; }
+.horizontal-11-vertical-05 { background-position: 68.75% 62.5%; }
+.horizontal-12-vertical-05 { background-position: 75% 62.5%; }
+.horizontal-13-vertical-05 { background-position: 81.25% 62.5%; }
+.horizontal-14-vertical-05 { background-position: 87.5% 62.5%; }
+.horizontal-15-vertical-05 { background-position: 93.75% 62.5%; }
+.horizontal-16-vertical-05 { background-position: 100% 62.5%; }
+/* background vertical-06 */
+.horizontal-00-vertical-06 { background-position: 0 75%; }
+.horizontal-01-vertical-06 { background-position: 6.25% 75%; }
+.horizontal-02-vertical-06 { background-position: 12.5% 75%; }
+.horizontal-03-vertical-06 { background-position: 18.75% 75%; }
+.horizontal-04-vertical-06 { background-position: 25% 75%; }
+.horizontal-05-vertical-06 { background-position: 31.25% 75%; }
+.horizontal-06-vertical-06 { background-position: 37.5% 75%; }
+.horizontal-07-vertical-06 { background-position: 43.75% 75%; }
+.horizontal-08-vertical-06 { background-position: 50% 75%; }
+.horizontal-09-vertical-06 { background-position: 56.25% 75%; }
+.horizontal-10-vertical-06 { background-position: 62.5% 75%; }
+.horizontal-11-vertical-06 { background-position: 68.75% 75%; }
+.horizontal-12-vertical-06 { background-position: 75% 75%; }
+.horizontal-13-vertical-06 { background-position: 81.25% 75%; }
+.horizontal-14-vertical-06 { background-position: 87.5% 75%; }
+.horizontal-15-vertical-06 { background-position: 93.75% 75%; }
+.horizontal-16-vertical-06 { background-position: 100% 75%; }
+/* background vertical-07 */
+.horizontal-00-vertical-07 { background-position: 0 87.5%; }
+.horizontal-01-vertical-07 { background-position: 6.25% 87.5%; }
+.horizontal-02-vertical-07 { background-position: 12.5% 87.7%; }
+.horizontal-03-vertical-07 { background-position: 18.75% 87.5%; }
+.horizontal-04-vertical-07 { background-position: 25% 87.5%; }
+.horizontal-05-vertical-07 { background-position: 31.25% 87.5%; }
+.horizontal-06-vertical-07 { background-position: 37.5% 87.5%; }
+.horizontal-07-vertical-07 { background-position: 43.75% 87.5%; }
+.horizontal-08-vertical-07 { background-position: 50% 87.5%; }
+.horizontal-09-vertical-07 { background-position: 56.25% 87.5%; }
+.horizontal-10-vertical-07 { background-position: 62.5% 87.5%; }
+.horizontal-11-vertical-07 { background-position: 68.75% 87.5%; }
+.horizontal-12-vertical-07 { background-position: 75% 87.5%; }
+.horizontal-13-vertical-07 { background-position: 81.25% 87.5%; }
+.horizontal-14-vertical-07 { background-position: 87.5% 87.5%; }
+.horizontal-15-vertical-07 { background-position: 93.75% 87.5%; }
+.horizontal-16-vertical-07 { background-position: 100% 87.5%; }
+/* background vertical-08 */
+.horizontal-00-vertical-08 { background-position: 0 100%; }
+.horizontal-01-vertical-08 { background-position: 6.25% 100%; }
+.horizontal-02-vertical-08 { background-position: 12.5% 100%; }
+.horizontal-03-vertical-08 { background-position: 18.75% 100%; }
+.horizontal-04-vertical-08 { background-position: 25% 100%; }
+.horizontal-05-vertical-08 { background-position: 31.25% 100%; }
+.horizontal-06-vertical-08 { background-position: 37.5% 100%; }
+.horizontal-07-vertical-08 { background-position: 43.75% 100%; }
+.horizontal-08-vertical-08 { background-position: 50% 100%; }
+.horizontal-09-vertical-08 { background-position: 56.25% 100%; }
+.horizontal-10-vertical-08 { background-position: 62.5% 100%; }
+.horizontal-11-vertical-08 { background-position: 68.75% 100%; }
+.horizontal-12-vertical-08 { background-position: 75% 100%; }
+.horizontal-13-vertical-08 { background-position: 81.25% 100%; }
+.horizontal-14-vertical-08 { background-position: 87.5% 100%; }
+.horizontal-15-vertical-08 { background-position: 93.75% 100%; }
+.horizontal-16-vertical-08 { background-position: 100% 100%; }
+
+}
+
+/* CSS - END */

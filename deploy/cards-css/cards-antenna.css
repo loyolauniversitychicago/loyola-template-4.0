@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Antenna";
+  src: url("../fonts/antenna_regular/476def8b-6379-4133-9503-ca290c126397-4.svg");
+  src: url("../fonts/antenna_regular/476def8b-6379-4133-9503-ca290c126397-2.eot") format("embedded-opentype"), url("../fonts/antenna_regular/476def8b-6379-4133-9503-ca290c126397-3.woff") format("woff"), url("../fonts/antenna_regular/476def8b-6379-4133-9503-ca290c126397-1.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Antenna Bold";
+  src: url("../fonts/antenna_bold/692e9d98-a1c5-4d26-9831-b7f258241cdf-4.svg");
+  src: url("../fonts/antenna_bold/692e9d98-a1c5-4d26-9831-b7f258241cdf-2.eot") format("embedded-opentype"), url("../fonts/antenna_bold/692e9d98-a1c5-4d26-9831-b7f258241cdf-3.woff") format("woff"), url("../fonts/antenna_bold/692e9d98-a1c5-4d26-9831-b7f258241cdf-1.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold; }
+
+@font-face {
+  font-family: "Antenna Black";
+  src: url("../fonts/antenna_black/6620971b-19a1-4157-9796-83671a1c7836-4.svg");
+  src: url("../fonts/antenna_black/6620971b-19a1-4157-9796-83671a1c7836-2.eot") format("embedded-opentype"), url("../fonts/antenna_black/6620971b-19a1-4157-9796-83671a1c7836-3.woff") format("woff"), url("../fonts/antenna_black/6620971b-19a1-4157-9796-83671a1c7836-1.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Antenna Comp Bold";
+  src: url("../fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-2.eot") format("embedded-opentype"), url("../fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-3.woff") format("woff"), url("../fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-1.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Antenna Comp Black";
+  src: url("../fonts/antenna_comp_black/antenna-compressed-black.eot") format("embedded-opentype"), url("../fonts/antenna_comp_black/antenna-compressed-black.woff") format("woff");
+  font-style: normal;
+  font-weight: normal; }

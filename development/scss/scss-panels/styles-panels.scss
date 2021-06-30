@@ -1,0 +1,19 @@
+/* styles panels */
+
+//@import 'variables';
+//@import 'mixins';
+@import 'mixins/breakpoints';
+@import '../scss-typography/custom-variables';
+@import '../scss-typography/vertical-rhythm';
+@import 'accessible-accordion-aria';
+@import 'accessible-carrousel-aria';
+@import 'accessible-tabs-aria';
+@import 'accessible-modaal-aria';
+@import 'accordion';
+@import 'aos';
+@import 'audio';
+@import 'cards';
+@import 'forms';
+@import 'tables';
+@import 'panels';
+@import 'carousel-scroll';

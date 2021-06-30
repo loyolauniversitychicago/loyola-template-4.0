@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	@@include('./partials/framework/luc-head.html')
+	<!-- inject:css -->
+	<!-- endinject -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--Javascript file > js-aos > aos.js - carousel scroll-->
+	<script src="js-aos/aos.js"></script>
+</head>
+
+<body>
+	<div id="main-wrapper">
+		@@include('./partials/framework/luc-search-overlay.html')
+		@@include('./partials/framework/luc-sliding-menu.html')
+		<!-- HEADER -->
+		<header id="luc-header">
+			@@include('./partials/framework/luc-header.html')
+		</header>
+		@@include('./partials/framework/luc-nav-desktop-accessible.html')
+		<main id="main-content-start" alt="This is the beginning of the main content of the page">
+			<aside id="social-icon-bar">
+				<!-- sidebar content here -->
+			</aside>
+			<!-- main content here
+			by ID
+			span9 (main-content-wrapper)
+			span12 (main-content-wrapper-full-width) -->
+			<div id="main-content-wrapper-full-width">
+				<section id="main-section-wrapper">
+					<div class="container-fluid">
+						<div class="container">
+							<div class="padding-md"></div>
+							<h2>Panels</h2>
+							<h5>Image combinations</h5>
+							<div class="padding-md"></div>
+						</div>
+					</div>
+					<!-- image lead panel -->
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Image Lead</h5></div>
+					</div>
+					@@include('./partials/panels/panel-image-lead.html')
+					<div class="container">
+						<hr class="padding-divider"></hr>
+						<footnote>Documentation for panel here. Must include for each panel.</footnote>
+					</div>
+					<!-- image caption panel -->
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Image and Caption</h5></div>
+					</div>
+					@@include('./partials/panels/panel-image-caption.html')
+					<!-- image text panel -->
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Image Text</h5></div>
+					</div>
+					@@include('./partials/panels/panel-image-text.html')
+					<!-- image highlights panel -->
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Image Highlights</h5></div>
+					</div>
+					@@include('./partials/panels/panel-image-highlights.html')
+					<!-- image grid -->
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Image Grid</h5></div>
+					</div>
+					@@include('./partials/panels/panel-image-grid.html')
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Image Grid Area</h5></div>
+					</div>
+					@@include('./partials/panels/panel-image-grid-area.html')
+					<!-- image overlay panel -->
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Image Overlay</h5></div>
+					</div>
+					@@include('./partials/panels/panel-image-overlay.html')
+					<!-- video embed panel -->
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Video Embed</h5></div>
+					</div>
+					@@include('./partials/panels/panel-video-embed.html')
+					<!-- image scroll panel -->
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Carousel Scroll</h5></div>
+					</div>
+					@@include('./partials/panels/panel-carousel-scroll.html')
+				</section>
+				<aside id="main-aside-wrapper">
+					<h3>Aside</h3>
+					<!-- sidebar content here -->
+				</aside>
+			</div>
+			<aside id="social-icon-bar" class="social-not-fixed">
+				@@include('./partials/framework/luc-social-media-bar.html')
+			</aside>
+			<footer id="footer-not-fixed">
+				@@include('./partials/framework/luc-footer.html')
+			</footer>
+			<footer id="footer-fixed">
+				@@include('./partials/framework/luc-footer.html')
+			</footer>
+		</main>
+		<!-- inject:js -->
+		<!-- endinject -->
+	</div>
+</body>
+
+</html>

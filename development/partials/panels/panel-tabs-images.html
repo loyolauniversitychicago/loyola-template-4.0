@@ -1,0 +1,77 @@
+<!-- image tabs -->
+<section id="panel-tabs-images" class="container-fluid">
+	<div class="container">
+		<div id="tabs-images">
+			<div class="grid-wrapper-min-max three-column">
+				<div class="grid-item">
+					<div class="tab">
+						<div class="tablinks" onclick="openTab(event, 'tabImageOne')">
+							<!-- <h6>Recipe for success</h6> -->
+							<img src="http://via.placeholder.com/1000x1000">
+						</div>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="tab">
+						<div class="tablinks" onclick="openTab(event, 'tabImageTwo')">
+							<!-- <h6>Creating solutions</h6> -->
+							<img src="http://via.placeholder.com/1000x1000">
+						</div>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="tab">
+						<div class="tablinks" onclick="openTab(event, 'tabImageThree')">
+							<!-- <h6>Right skills, right time</h6> -->
+							<img src="http://via.placeholder.com/1000x1000">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-wrapper-min-max">
+			<div class="grid-item">
+				<div id="tabImageOne" class="tabcontent">
+					<h5 style="text-align: center !important;">Recipe for success</h5>
+					<blockquote>Marketers have an important role to play in plastic waste clean-up.
+						<cite>Professor Cliff Shultz</cite>
+					</blockquote>
+				</div>
+				<div id="tabImageTwo" class="tabcontent">
+					<h5 style="text-align: center !important;">Creating solutions</h5>
+					<blockquote>I couldn’t have asked for a better start to her HR career.
+						<cite>Jessica Holden (MSHR ’15)</cite>
+					</blockquote>
+				</div>
+				<div id="tabImageThree" class="tabcontent">
+					<h5 style="text-align: center !important;">Right skills, right time</h5>
+					<blockquote>Choose Quinlan for its balance of technical and business-oriented skills.
+						<cite>Bianca Marjalino (MSBDA ’19)</cite>
+					</blockquote>
+				</div>
+			</div>
+			<script>
+				openTab(event, "Tab")
+				function openTab(evt, tabName) {
+					var i, tabcontent, tablinks;
+					tabcontent = document.getElementsByClassName("tabcontent");
+					for (i = 0; i < tabcontent.length; i++) {
+						tabcontent[i].style.display = "none";
+					}
+					tablinks = document.getElementsByClassName("tablinks");
+					for (i = 0; i < tabcontent.length; i++) {
+						tablinks[i].classList.remove("active");
+					}
+					document.getElementById(tabName).style.display = "block";
+					if (evt) {
+						evt.currentTarget.classList.add("active");
+					}
+				}
+			</script>
+			<script>
+				var tabButton = document.getElementsByClassName("tablinks")[1];
+				tabButton.click();
+			</script>
+		</div>
+	</div>
+</section>

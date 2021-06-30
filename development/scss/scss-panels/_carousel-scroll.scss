@@ -1,0 +1,231 @@
+/* grid-wrapper */
+
+#panel-carousel-scroll .grid-wrapper-min-max {
+  grid-gap: 0;
+  .grid-item {
+    margin: 0;
+    width: 50%
+  }
+}
+
+/* typography */
+
+#panel-carousel-scroll p {
+  font-size: 1.25em;
+  line-height: 1.85;
+}
+
+#panel-carousel-scroll h1 {
+  padding: 0;
+  font-size: 5rem;
+  line-height: 1.2;
+}
+
+#panel-carousel-scroll h5 {
+  margin-bottom: 2em;
+}
+
+#panel-carousel-scroll h6 {
+  line-height: 1.5;
+  letter-spacing: .5px;
+}
+
+#panel-carousel-scroll blockquote {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  cite {
+    text-align: left;
+  }
+}
+
+/* intro and closing slides */
+
+/* this is the image for the intro slide */
+#intro-slide.item--main {
+  position: absolute;
+  margin-bottom: 0;
+  top: 0;
+  right: 0;
+  width: calc(50% + 1px);
+  height: 100vh;
+  background-color: $gray;
+  background-image: url("../images/images-carousel-scroll/carousel-scroll-01.jpg");
+}
+
+/* this is the item - holds the text - for the opening slide */
+#intro-slide.item {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100;
+  height: 100vh;
+  color: $gray-light;
+  background: $maroon;
+  .item-content {
+    margin: 0 auto;
+    width: 100%;
+    h1 {
+      padding-top: 0;
+    }
+  }
+}
+
+/* this is the item for the last slide */
+#closing-slide.item {
+  background-color: $gold;
+}
+/* SEE BELOW */
+/* mixin for --items */
+/*
+@mixin center-v () {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: calc(50% + 1px);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*/
+
+/* PRESIDENTS MEDALLION - mixin for --items */
+@mixin center-v () {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: calc(50% + 1px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* content - text items */
+
+.item-content {
+  display: flex;
+  margin: 0;
+  padding: 0 15%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-content-box {
+  align-self: right;
+}
+
+/* all items */
+.item {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: $black;
+  height:100vh;
+  background-color: $gray-extra-light;
+
+  span {
+    display: block;
+    font-size: 1rem;
+  }
+
+  &--main {
+    width: 50%;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  &--first {
+    @include center-v;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-02.jpg");
+  }
+
+  &--second {
+    @include center-v;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-03.jpg");
+  }
+
+  &--third {
+    @include center-v;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-04.jpg");
+  }
+
+  &--fourth {
+    @include center-v;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-05.jpg");
+  }
+
+  &--fifth {
+    @include center-v;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-06.jpg");
+  }
+
+  &--sixth {
+    @include center-v;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-07.jpg");
+  }
+
+  &--seventh {
+    @include center-v;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-08.jpg");
+  }
+
+  &--eighth {
+    @include center-v;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-09.jpg");
+  }
+
+  &--ninth {
+    @include center-v;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-10.jpg");
+  }
+
+  &--tenth {
+    @include center-v;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-11.jpg");
+  }
+
+  &--eleventh {
+    @include center-v;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-12.jpg");
+  }
+
+  &--twelveth {
+    @include center-v;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-12.jpg");
+  }
+
+}
+/* DELETE - ONLY FOR PRESIDENTS MEDALLION ====
+============================================ */
+
+#main-content-wrapper-full-width { margin-top: 0 !important; }
+
+#presidents-medallion-wrapper #panel-carousel-scroll {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#presidents-medallion-wrapper #panel-carousel-scroll .item {
+  &--main {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: calc(50% + 1px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+}

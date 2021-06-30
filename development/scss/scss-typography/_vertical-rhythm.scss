@@ -1,0 +1,36 @@
+/* font-size - reset - document level adjustments */
+
+/* responsive modular typography scales */
+/* type scale 1.333 - perfect fourth - IN USE */
+/* type scale 1.414 - augmented fourth */
+/*
+:root {
+  --step-up-5: 4.209rem;
+  --step-up-4: 3.157rem;
+  --step-up-3: 2.369rem;
+  --step-up-2: 1.777rem;
+  --step-up-1: 1.333rem;
+*/
+  /* baseline: 1em */
+/*
+  --step-down-1: 0.85rem;
+  --step-down-2: 0.75rem;
+}
+*/
+/* line-height baseline */
+:root body {
+  --baseline: 1.2;
+  line-height: calc(var(--baseline);
+}
+
+:root body header, :root body footer {
+  --baseline: 1;
+  line-height: calc(var(--baseline);
+}
+
+/* rvr stands for responsive vertical rhythm */
+@function rvr($multiple) {
+  @return calc(var(--baseline) * #{$multiple} * 1rem;
+}
+
+/* vertical rhythm */

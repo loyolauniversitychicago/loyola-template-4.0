@@ -1,0 +1,374 @@
+/* TYPOGRAPHY */
+
+/* base typography */
+
+html { font-size: 100%; } /* matches browsers default */
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: $black;
+  background-color: none;
+}
+
+a {
+  cursor: hand !important;
+}
+
+/* cursor - global */
+button, button:hover,
+button a, button a:hover {
+  cursor: pointer !important;
+}
+
+h1, h2, h3, h4, h5, h6, .light h6 {
+  display: block;
+  margin: 0;
+  margin-bottom: rvr(1);
+  width: 100%;
+  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-weight: 400;
+  letter-spacing: -.02rem;
+  a {
+    cursor: pointer;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: rvr(.65);
+}
+
+h1 {
+  font-size: 3.75rem;
+  line-height: rvr(3.75);
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: rvr(2.5);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Antenna Condensed Light', sans-serif;
+  font-size: 2.5rem;
+  line-height: rvr(2.5);
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: rvr(2);
+}
+
+.content-columns-varied.four-column-build h4,
+.content-columns-varied.one-column-build.media-cards h4 {
+  font-size: 1.65rem;
+  line-height: rvr(1.85);
+}
+
+.uppercase h2, .uppercase h3, .uppercase h4 {
+  text-transform: uppercase;
+}
+
+h5 {
+  margin-bottom: rvr(.5);
+  font-size: 1.425rem;
+  line-height: rvr(1.6);
+  text-transform: uppercase;
+}
+
+h6 {
+  margin-bottom: rvr(.5);
+  font-size: 1.125rem;
+  line-height: rvr(1.35);
+  letter-spacing: 0rem;
+  text-transform: uppercase;
+}
+
+.category-light h6 {
+  font-family: 'Antenna Condensed Light', sans-serif;
+}
+
+p, .explainer p {
+  margin: 0;
+  margin-bottom: rvr(1);
+  font-size: 1.125rem;
+  line-height: rvr(1.75);
+}
+
+.explainer p {
+  font-style: italic;
+}
+
+.intro-paragraph > p {
+  margin: 0;
+  margin-bottom: rvr(1);
+  font-family: 'Antenna Condensed Light', sans-serif;
+  font-size: 1.4rem;
+  line-height: rvr(2);
+  word-spacing: .075rem;
+}
+
+.intro-paragraph p:first-child::first-letter {
+  display: inline !important;
+  float: left;
+  margin-top: .125rem;
+  margin-right: .5rem;
+  color: $maroon;
+  font-family: 'Antenna Condensed Black', sans-serif;
+  font-size: 4.25rem;
+  line-height: rvr(3.5);
+}
+
+.caption p {
+  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-size: 1rem;
+  line-height: rvr(1.25);
+  letter-spacing: .0125rem;
+  word-spacing: .025rem;
+  a { cursor: pointer;
+  }
+}
+
+.leadin {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-weight: 700;
+}
+
+.caption .leadin {
+  font-family: 'Antenna Condensed Bold';
+}
+
+/* inline links - ctas */
+
+a {
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+a {
+  display: inline;
+  font-family: inherit;
+  font-weight: 700;
+  color: $maroon;
+}
+
+p a {
+  font-size: 1rem;
+}
+
+a.cta {
+  display: block;
+  width: 100%;
+  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.card a.cta {
+  margin-bottom: rvr(1.5);
+}
+
+small { font-size: 0.7rem; }
+
+footnote { font-style: italic; }
+
+/* typographic specific */
+
+#home h1 {
+  font-size: 4.5rem;
+  line-height: rvr(4.5);
+}
+
+.panel-label {
+  margin-bottom: rvr(2);
+}
+
+.sans-serif, .sans-serif p {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.125rem;
+}
+
+.sans-serif {
+  font-size: 1.015rem;
+}
+
+.line-height-tight p {
+  line-height: rvr(1.5);
+}
+
+#main-content-wrapper ol,
+#main-content-wrapper ul {
+  margin: 0 0 1rem 1.5rem;
+  font-size: 1.125rem;
+  line-height: rvr(1.5);
+  list-style-position: inside;
+}
+
+#main-content-wrapper ol li,
+#main-content-wrapper ul li {
+  margin: 0 0 .5rem;
+}
+
+#main-content-wrapper ol li {
+  text-indent: -1.5rem;
+}
+
+#main-content-wrapper ul li {
+  text-indent: -1.35rem;
+}
+
+/* ol circle numbers */
+
+ol {
+  list-style: none;
+  counter-reset: circle-numbers;
+}
+
+ol li {
+  counter-increment: circle-numbers;
+}
+
+ol li::before {
+  content: counter(circle-numbers) '.';
+  margin: 0 .5em 0 0;
+  font-weight: bold;
+  font-weight: 700;
+}
+
+#main-content-wrapper img {
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* unique typographic patterns */
+
+#main-content-wrapper .circle-number ol,
+#main-section-wrapper .circle-number ol {
+  list-style: none;
+  counter-reset: circle-numbers;
+  margin: 0 0 1rem 0;
+}
+
+#main-content-wrapper .circle-number ol li,
+#main-section-wrapper .circle-number ol li {
+  counter-increment: circle-numbers;
+  margin: 0 0 1.25rem 2.25rem;
+  text-indent: 0;
+  line-height: rvr(1.35);
+}
+
+#main-content-wrapper .circle-number ol li::before,
+#main-section-wrapper .circle-number ol li::before {
+  content: counter(circle-numbers);
+  display: inline-block;
+  float: left;
+  margin: 2px .5rem 0 -2.25rem;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-size: .85rem;
+  line-height: rvr(1.25);
+  text-align: center;
+  color: #ffffff;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+/* blockquote */
+
+.blockquote-wrapper {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+blockquote {
+  display: block;
+  margin: 2em auto;
+  padding: 2em 0;
+  width: 80%;
+  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-size: 1.85rem;
+  font-weight: 400;
+  line-height: rvr(2.85);
+  letter-spacing: -.0125em;
+  text-align: center;
+  border-top: solid 1px $gray;
+  border-bottom: solid 1px $gray;
+}
+
+div.uppercase > blockquote {
+  width: 80%;
+  text-transform: uppercase;
+}
+
+blockquote cite {
+  display: block;
+  margin: 1em auto;
+  padding: 0;
+  width: 100%;
+  font-family: 'Antenna Condensed Light', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: rvr(1.35);
+  letter-spacing: -.0125em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* numbers */
+
+.number-display h1,
+.number-lg h1,
+.number-md h2,
+.number-sm h3 {
+  margin: 0 0 .125em 0;
+  font-family: 'Antenna Condensed Bold', sans-serif !important;
+  letter-spacing: -.0125em;
+  text-transform: uppercase;
+}
+
+.number-lg h1 {
+  font-size: 4.75rem;
+}
+
+.number-md h2 {
+  font-size: 3.5rem;
+}
+
+.number-sm h3 {
+  font-size: 2.5rem;
+}
+
+.number-display h1 {
+  font-size: 7rem;
+  line-height: 1 !important;
+  letter-spacing: -.025em;
+}
+
+/* infobox */
+
+.infobox {
+  padding: 2em;
+  background-color: lighten($gray-light,15%);
+}
+
+.infobox p:last-of-type {
+  margin-bottom: rvr(0);
+}
+
+/* hightlights */
+
+p span.highlight {
+  padding: .25rem;
+  border-radius: .25rem;
+}
+p span.highlight.bg-info { background: lighten($gold,20%) }
+p span.highlight.bg-success { color: $white; background: lighten($patina,5%); }
+p span.highlight.bg-warning { color: $white; background: lighten($opus,5%); }
+p span.highlight.bg-danger { color: $white; background: $maroon; }
+
+/* END - TYPOGRAPHY - CSS */

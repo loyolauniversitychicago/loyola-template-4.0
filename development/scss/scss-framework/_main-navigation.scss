@@ -1,0 +1,529 @@
+/* MAIN NAV */
+
+nav#main,
+nav#audience-directory,
+#site-brand-wrapper #brand {
+	@include tablet-portrait {
+		display: none;
+	}
+}
+
+:focus {
+	outline: 3px solid $gold;
+	outline-offset: -3px;
+}
+
+nav,
+#site-brand-wrapper,
+#audience-navigation,
+#directory-navigation {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: $maroon;
+}
+
+#site-brand-wrapper {
+	background-color: $gray-dark;
+}
+
+nav#main {
+	position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+	background-color: $gray-dark;
+	z-index: 10000;
+}
+
+nav ul#directory-nav[role="menubar"],
+nav#main ul#cta-nav[role="menubar"] {
+	float: right;
+}
+
+/* W3C - disclosure nav */
+
+ul[role="menubar"] {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+	border: 0 none;
+	background: none;
+	button  {
+		margin: 0;
+		padding: 20px 20px 15px;
+		font-family: 'Antenna', sans-serif;
+		font-size: .8em;
+		color: $gray-extra-light !important;
+		border: none !important;
+		border-radius: 0;
+		&:hover, &:focus {
+			background-color: darken($gray,30%) !important;
+		}
+		&::after {
+			display: inline-block;
+			margin-left: 0.25rem;
+			width: 0.5rem;
+			height: 0.5rem;
+			content: "\02C5";
+			line-height: 0;
+			color: $gray-extra-light !important;
+			transform-origin: center center;
+			transform: rotate(0deg);
+		}
+	}
+	li  {
+		float: left;
+		position: relative;
+		display: inline;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		border-left: solid 1px darken($gray,35%);
+		&:last-child {
+			border-right: solid 1px darken($gray,35%);
+		}
+		a[role="menuitem"], a {
+			float: left;
+			margin: 0;
+			padding: 0;
+			width: auto;
+			font-family: 'Antenna', sans-serif;
+			font-size: .8em;
+			letter-spacing: .025em;
+			color: $gray-extra-light;
+			text-transform: uppercase;
+			text-decoration: none;
+			border: 0 none;
+			background-color: darken($gray,20%);
+			transition: background-color .3s;
+			&:hover, &:focus {
+				background-color: darken($gray,30%);
+			}
+		}
+	}
+}
+
+/* rotate menu item caret
+nav#main ul#site-nav button[aria-expanded="true"]::after {
+	line-height: 0;
+	transform-origin: center;
+	transform: rotate(90deg);
+}
+*/
+
+nav#main ul[role="menubar"] li[role="none"] a[role="menuitem"] { padding: 22px 20px 17px; }
+
+ul#audience-nav[role="menubar"] li,
+ul#directory-nav[role="menubar"] li {
+	background-color: none;
+	border-left: 0 none;
+	a[role="menuitem"],
+	button {
+    padding: 12px 20px 8px;
+		font-family: 'Antenna Bold', sans-serif;
+		font-size: .65em;
+		color: $gray-light;
+		border: 0 none;
+		background-color: $maroon;
+		&:hover, &:focus {
+			color: $gray-extra-light;
+			background-color: darken($maroon,10%) !important;
+		}
+	}
+}
+
+ul#audience-nav[role="menubar"] button::after,
+ul#cta-nav[role="menubar"] button::after,
+ul#directory-nav[role="menubar"] button::after  {
+	display: none;
+}
+
+ul#site-nav[role="menubar"] ul li:last-child,
+ul#audience-nav[role="menubar"] li:last-child,
+ul#directory-nav[role="menubar"] li:last-child,
+ul#information-nav[role="menu"] li:last-child {
+	border-right:	0 none;
+}
+
+ul[role="menubar"] [role="menuitem"]:focus,
+ul[role="menubar"] [role="menuitem"]:hover,
+ul[role="menubar"] [role="separator"]:focus,
+ul[role="menubar"] [role="separator"]:hover {
+  color: $gray-extra-light;
+}
+
+/* for accessibility */
+ul[role="menubar"] button:focus,
+ul[role="menubar"] li:focus,
+ul[role="menubar"] li a:focus,
+ul[role="menubar"] [role="menuitem"]:focus,
+ul[role="menubar"] li#search [role="menuitem"]:focus {
+	outline: 3px solid $gold;
+	outline-offset: -3px;
+}
+
+nav#main ul[role="menubar"] [role="menuitem"]:focus {
+	outline: 3px solid $gold;
+	outline-offset: -3px;
+}
+
+/* menu separator */
+ul[role="menubar"] [role="separator"] {
+	margin: 0;
+	padding: 0;
+	height: 1px;
+}
+
+ul[role="menubar"] ul[role="menu"] {
+  display: none;
+  position: absolute;
+	top: 0px;
+  left: -1px;
+  margin: 0;
+  padding: 0;
+	li {
+		border-left: 0 none;
+	}
+}
+
+ul[role="menubar"] ul#information-nav[role="menu"] {
+	left: auto !important;
+	right: 0 !important;
+}
+
+ul[role="menubar"] ul[role="menu"][style] {
+	top: 53px !important;
+	outline: none;
+	z-index: 0;
+}
+
+ul[role="menubar"] ul[role="menu"] ul[role="menu"][style] {
+	top: 0px !important;
+	outline: none;
+	z-index: 0;
+}
+
+ul[role="menubar"] ul[role="menu"] li a {
+  display: block;
+	padding: 16px 20px 15px;
+	width: 20em;
+	text-transform: none;
+	border-bottom: solid 1px $gray;
+	&:hover {
+		background: darken($gray,30%);
+	}
+}
+
+ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]::after {
+  content: '>';
+  float: right;
+	font-size: 1em;
+	font-weight: bold;
+	font-weight: 700;
+	color: $gray-extra-light;
+}
+
+#directory-nav li {
+	float: left;
+	&:hover, &:focus {
+		background: $maroon-dark;
+	}
+}
+
+/* cta-nav - information - search */
+
+#information, #search {
+	margin: 0;
+	padding: 0;
+	width: 52px;
+	height: 52px;
+	background: darken($gray,20%);
+	&:hover, &:focus {
+		background: darken($gray,30%);
+	}
+	transition: background-color .2s;
+}
+
+#information-button,
+#search-button {
+	display: block;
+	position: relative;
+	top: 15%;
+	margin: 0 auto;
+	width: 70%;
+	height: 70%;
+	padding: 22%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background: darken($bg-overlay-light,12%);
+	&:hover {
+		background: darken($bg-overlay,10%) !important;
+	}
+}
+
+#information-button {
+	font-family: 'Georgia', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1rem;
+  color: darken($gray-extra-light,10%);
+  text-align: center;
+  text-transform: none;
+}
+
+#information #information-button span,
+#search #search-button span {
+ position: absolute;
+ left: 25%;
+ top: 25%;
+ width: 50%;
+ height: 50%;
+ font-family: 'Georgia', serif;
+ font-size: 1.25rem;
+ font-weight: 600;
+ font-style: italic;
+ line-height: 1.25rem;
+ color: darken($gray-extra-light,10%);
+ text-align: center;
+ text-transform: none;
+}
+
+#search #search-button span {
+	font-size: 1.35em;
+	top: 25%;
+}
+
+i.fa.fa-search {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: darken($gray-extra-light,10%);
+}
+
+.fa-search:before {
+  position: absolute;
+  content: "\f002";
+  left: 20%;
+  top: 25%;
+  width: 60%;
+  height: 60%;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+#search-overlay-wrapper {
+	max-height: 0px;
+	overflow: hidden;
+}
+
+#search-overlay-wrapper.open {
+	max-height: 100vh;
+	overflow: visible;;
+}
+
+#search-overlay-wrapper #search-overlay.overlay {
+	padding: 0;
+  opacity: 0;
+  height: 0;
+  transition-timing-function: linear, step-end;
+}
+
+#search-overlay-wrapper #search-overlay.overlay.open {
+	margin: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 150px 10% 0;
+  width: 100%;
+  height: 100%;
+	z-index: 10002;
+	opacity: 1;
+  background-color: rgba(0,0,0,1);
+  background-color: rgba(0,0,0,.9);
+  transition: opacity .5s linear, height .5s step-start;
+}
+
+/* search overlay close button */
+#search-overlay.overlay #search-close {
+  position: relative;
+  top: 10rem;
+	left: 50%;
+  right: 50%;
+  font-size: 4em;
+	line-height: 1;
+  cursor: pointer;
+  color: $gray-extra-light;
+}
+
+#search-overlay.overlay #search-close:hover {
+  color: $white;
+}
+
+/* search form */
+#search-overlay form {
+	font-family: 'Antenna', sans-serif;
+  font-size: 1em;
+  line-height: 0;
+  color: $white;
+	-webkit-text-stroke: 0 none !important;
+}
+
+#search-overlay-wrapper .form-group {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	border-radius: 0 10px 10px 0;
+}
+
+#search-overlay form .form-group:focus,
+#search-overlay form .form-group:active,
+#search-overlay form .form-group input {
+  background: none;
+  box-shadow: none;
+	outline: 3px solid $gold;
+	outline-offset: -3px;
+}
+
+#search-overlay form .form-group,
+#search-overlay form .form-group:hover {
+  background-color: lighten($gray, 20%);
+  box-shadow: 0px 3px 3px rgba(0,0,0,.5);
+}
+
+#search-overlay form input#global-search-input {
+	position: relative;
+	float: left;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 20px;
+  width: 80%;
+  height: 70px;
+	font-family: 'Antenna', sans-serif;
+  font-size: 1.5rem;
+	color: $gray-dark;
+	text-transform: none;
+  border: 0;
+	border-radius: 10px 0 0 10px !important;
+	background: $gray-light;
+	transition: 0.1s linear all;
+	@include tablet-landscape {
+		height: 50px;
+		font-size: 1.15em;
+	}
+	@include phone-landscape {
+		width: 65%;
+		height: 40px;
+		font-size: 1em;
+	}
+}
+
+#search-overlay form input#global-search-input:hover {
+	background: $gray-extra-light;
+}
+
+#search-overlay form input#global-search-input::placeholder {
+	font-family: 'Antenna', sans-serif;
+  font-size: 1rem;
+	color: $maroon;
+	text-transform: uppercase;
+}
+
+#search-overlay form button {
+	position: relative;
+  float: right;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 8px 12px;
+  width: 20%;
+	height: 70px;
+	font-family: 'Antenna Bold', sans-serif;
+  font-size: 1.5em;
+	color: $gray-light !important;
+	outline: 0 none;
+	border-radius: 0 10px 10px 0;
+	background-color: $maroon;
+	cursor: pointer;
+	transition: all .2s;
+		&:hover {
+			color: darken($gray-light, 10%);
+			background-color: darken($maroon, 10%);
+		}
+	@include tablet-landscape {
+		height: 50px;
+		font-size: 1.15em;
+	}
+	@include phone-landscape {
+		width: 35%;
+		height: 40px;
+		font-size: 1em;
+	}
+}
+
+#search-label { font-size: .015em; }
+
+/* SEARCH BUTTON */
+
+footer span#SideNavOpen,
+footer span#search-button-wrapper {
+	display: inline-block;
+	width: auto;
+	height: auto;
+	background: none;
+}
+
+footer span#search-button-wrapper {
+	float: right;
+}
+
+footer #search-button {
+	position: relative;
+	top: 0;
+	left: calc(100% - 35px);
+	right: 0;
+	padding: 0;
+	width: 35px;
+	height: 35px;
+	background-color: lighten($gray-extra-dark,15%);
+}
+
+footer #search-button i.fa.fa-search {
+	position: relative;
+	font-size: 1.15em;
+	float: left;
+	top: 22%;
+	left: 27%;
+	padding: 0;
+	margin: 0;
+	width: 25%;
+	height: 25%;
+	color: darken($gray-light,10%);
+}
+
+footer span#brand {
+  float: right;
+	width: 250px;
+  background: none;
+  img {
+    float: right;
+    opacity: .8;
+  }
+	@include tablet-portrait {
+		width: 200px;
+	}
+}
+
+nav#main,
+nav#audience-directory,
+#site-brand-wrapper #brand {
+	@include tablet-portrait {
+		display: none;
+	}
+}
+
+/* CSS - END */

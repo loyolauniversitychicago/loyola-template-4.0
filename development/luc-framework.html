@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	@@include('./partials/framework/luc-head.html')
+	<!-- inject:css -->
+	<!-- endinject -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div id="main-wrapper">
+		@@include('./partials/framework/luc-search-overlay.html')
+		@@include('./partials/framework/luc-sliding-menu.html')
+		<header id="luc-header">
+			@@include('./partials/framework/luc-header.html')
+		</header>
+		@@include('./partials/framework/luc-nav-desktop-accessible.html')
+		<main id="main-content-start" alt="This is the beginning of the main content of the page">
+			<aside id="social-icon-bar">
+				@@include('./partials/framework/luc-social-media-bar.html')
+			</aside>
+			<!-- main content here
+			by ID
+			span9 (main-content-wrapper)
+			span12 (main-content-wrapper-full-width) -->
+			<div id="main-content-wrapper">
+				<section id="main-section-wrapper" style="background: #e1e1e1;">
+					<h2>Main content</h2>
+				</section>
+				<aside id="main-aside-wrapper" style="background: #e1e1e1;">
+					<h2>Aside</h2>
+					<!-- sidebar content here -->
+				</aside>
+			</div>
+			<aside id="social-icon-bar" class="social-not-fixed">
+				@@include('./partials/framework/luc-social-media-bar.html')
+			</aside>
+			<footer id="footer-not-fixed">
+				@@include('./partials/framework/luc-footer.html')
+			</footer>
+			<footer id="footer-fixed">
+				@@include('./partials/framework/luc-footer.html')
+			</footer>
+		</main>
+		<!-- inject:js -->
+		<!-- endinject -->
+	</div>
+</body>
+
+</html>

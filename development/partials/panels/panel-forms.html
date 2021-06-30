@@ -1,0 +1,267 @@
+<!-- forms -->
+<section id="panel-form" class="container-fluid">
+	<div class="container">
+		<div class="grid-wrapper-min-max">
+			<div class="grid-item">
+	      <form class="form" method="post">
+	        <fieldset>
+	          <legend>Personal Information</legend>
+	          <label for="full-name">
+	            Full Name
+	            <span class="required">
+	              (required)
+	            </span>
+	            <span class="error-message">
+	                You must input a real name.
+	            </span>
+	            <input id="full-name" name="full-name" required="" type="text" placeholder="Full name">
+	          </label>
+	          <label for="email">
+	            Email
+	            <span class="required">
+	              (required)
+	            </span>
+	            <span class="error-message">
+	              The email address you entered is not valid.
+	            </span>
+	            <input id="email" name="email" required="" type="email" placeholder="Email">
+	          </label>
+	        </fieldset>
+	        <fieldset>
+	          <legend>Credit Card Information</legend>
+	          <label for="cc">
+	            Credit Card Number
+	            <span class="required">
+	              (required)
+	            </span>
+	            <span class="error-message">
+	                Your credit card number should be all numbers.
+	            </span>
+	            <input id="cc" name="cc" required="" type="text" minlength='13' maxlength='20' pattern='\s*[0-9]+-?\s*[0-9]+-?\s*[0-9]+-?\s*[0-9]+-?\s*' placeholder="Credit card number">
+	          </label>
+	        </fieldset>
+	        <fieldset>
+	          <legend for='text-comments'>Please leave your comments or questions</legend>
+	          <p>Give us a little more information about your inquiry.</p>
+	          <textarea id='text-comments' required=''></textarea>
+	        </fieldset>
+	        <fieldset>
+	          <legend id='legend-1'>Can we add you to our email mailing list? <span class="required">(required)</span></legend>
+	          <p>Please choose one of the following options.</p>
+	          <ul aria-labelledby='legend-1' role='radiogroup'>
+	            <li>
+	              <label for="yes" class="radiobox">
+	                <input id="yes" required="" type="radio" name="answers" value="yes">
+	                <h6>Yes</h6>
+	              </label>
+	            </li>
+	            <li>
+	              <label for="no" class="radiobox">
+	                <input id="no" type="radio" name="answers" value="no">
+	                <h6>No</h6>
+	              </label>
+	            </li>
+	            <li>
+	              <label for="not-applicable" class="radiobox">
+	                <input id="not-applicable" type="radio" name="answers" value="not-applicable">
+	                <h6>Not applicable</h6>
+	              </label>
+	            </li>
+	          </ul>
+	        </fieldset>
+	        <fieldset>
+	          <legend id='legend-2'>Which topics interest you? <span class="required">(required)</span></legend>
+	          <p>Please choose one of the following options.</p>
+	          <ul aria-labelledby='legend-2' role='group'>
+	            <li>
+	              <label for="science" class="checkbox">
+	                <input id="science" required="" type="checkbox" name="categories" value="science">
+	                <h6>Option 01</h6>
+	              </label>
+	            </li>
+	            <li>
+	              <label for="children-programs" class="checkbox">
+	                <input id="children-programs" required="" type="checkbox" name="categories" value="children-programs">
+	                <h6>Option 02</h6>
+	              </label>
+	            </li>
+	            <li>
+	              <label for="new-events" class="checkbox">
+	                <input id="new-events" required="" type="checkbox" name="categories" value="new-events">
+	                <h6>Option 03</h6>
+	              </label>
+	            </li>
+	          </ul>
+	        </fieldset>
+	        <fieldset>
+	          <legend for="options">Choose from the following: <span class="required">(required)</span></legend>
+	          <p>Please choose one of the following options.</p>
+	          <select class="select-css" name="options" id="options" required='*'>
+	            <optgroup label="Option Group 1">
+	              <option value="value1">Option A</option>
+	              <option value="value2">Option B</option>
+	              <option value="value3">Option C</option>
+	            </optgroup>
+	            <optgroup label="Option Group 2">
+	              <option value="value1">Option A</option>
+	              <option value="value2">Option B</option>
+	              <option value="value3">Option C</option>
+	            </optgroup>
+	          </select>
+	        </fieldset>
+	        <button class='form-example-submit' type="submit">Submit Form</button>
+	      </form>
+	    </div>
+	  </div>
+	</div>
+	<div class="container">
+    <form class="form" method="post">
+      <fieldset>
+      <legend>Fieldset four-column headline</legend>
+    		<div class="grid-wrapper-min-max four-column">
+    			<div class="grid-item">
+            <label for="input-one">
+              Input 01
+              <span class="required">
+                (required)
+              </span>
+              <span class="error-message">
+                This is an error message
+              </span>
+              <input id="input-one" name="namehere-one" required="" type="text" placeholder="Input 01">
+            </label>
+          </div>
+          <div class="grid-item">
+            <label for="input-two">
+              Input 02
+              <span class="required">
+                (required)
+              </span>
+              <span class="error-message">
+                This is an error message
+              </span>
+              <input id="input-two" name="namehere-two" required="" type="text" placeholder="Input 02">
+            </label>
+          </div>
+          <div class="grid-item">
+            <label for="input-three">
+              Input 03
+              <span class="required">
+                (required)
+              </span>
+              <span class="error-message">
+                This is an error message
+              </span>
+              <input id="input-three" name="namehere-three" required="" type="text" placeholder="Input 03">
+            </label>
+          </div>
+          <div class="grid-item">
+            <label for="input-one">
+              Input 04
+              <span class="required">
+                (required)
+              </span>
+              <span class="error-message">
+                This is an error message
+              </span>
+              <input id="input-one" name="namehere-one" required="" type="text" placeholder="Input 04">
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+      <legend>Fieldset three-column headline</legend>
+        <div class="grid-wrapper-min-max three-column">
+          <div class="grid-item">
+            <label for="input-one">
+              Input 01
+              <span class="required">
+                (required)
+              </span>
+              <span class="error-message">
+                This is an error message
+              </span>
+              <input id="input-one" name="namehere-one" required="" type="text" placeholder="Input 01">
+            </label>
+          </div>
+          <div class="grid-item">
+            <label for="input-two">
+              Input 02
+              <span class="required">
+                (required)
+              </span>
+              <span class="error-message">
+                This is an error message
+              </span>
+              <input id="input-two" name="namehere-two" required="" type="text" placeholder="Input 02">
+            </label>
+          </div>
+          <div class="grid-item">
+            <label for="input-three">
+              Input 03
+              <span class="required">
+                (required)
+              </span>
+              <span class="error-message">
+                This is an error message
+              </span>
+              <input id="input-three" name="namehere-three" required="" type="text" placeholder="Input 03">
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+      <legend>Fieldset two-column headline</legend>
+        <div class="grid-wrapper-min-max two-column">
+          <div class="grid-item">
+            <label for="input-one">
+              Input 01
+              <span class="required">
+                (required)
+              </span>
+              <span class="error-message">
+                This is an error message
+              </span>
+              <input id="input-one" name="namehere-one" required="" type="text" placeholder="Input 01">
+            </label>
+          </div>
+          <div class="grid-item">
+            <label for="input-two">
+              Input 02
+              <span class="required">
+                (required)
+              </span>
+              <span class="error-message">
+                This is an error message
+              </span>
+              <input id="input-two" name="namehere-two" required="" type="text" placeholder="Input 02">
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+      <legend>Fieldset one-column headline</legend>
+        <div class="grid-wrapper-min-max one-column">
+          <div class="grid-item">
+            <label for="input-one">
+              Input 01
+              <span class="required">
+                (required)
+              </span>
+              <span class="error-message">
+                This is an error message
+              </span>
+              <input id="input-one" name="namehere-one" required="" type="text" placeholder="Input 01">
+            </label>
+          </div>
+        </div>
+      </fieldset>
+			<div class="button-maroon">
+      	<button>CTA label here</button>
+			</div>
+			<div>
+      	<button>Button as a link</button>
+			</div>
+    </form>
+	</div>
+</section>

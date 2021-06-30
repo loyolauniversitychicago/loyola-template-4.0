@@ -1,0 +1,178 @@
+/* table - reset */
+
+table {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100% !important;
+}
+
+tbody, th, tr {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: auto;
+}
+
+table, tbody, th, tr, td, tr.column, .column {
+  border: none;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-spacing: 0;
+  background: none;
+  background-color: none;
+}
+
+/* table - style */
+
+table {
+  margin: 2em 0;
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: solid 1px $gray;
+  border-collapse: collapse;
+  padding: 0.75rem;
+  font-family: 'Antenna', sans-serif;
+  text-align: left;
+}
+
+th {
+  font-family: 'Antenna Bold', sans-serif;
+}
+
+th {
+  color: $gray-extra-light;
+  text-transform: uppercase;
+  background: $gray-dark;
+}
+
+th.span.sub-category,
+tr:first-child th.span.sub-category {
+  color: $gray-extra-light !important;
+  background: darken($gray,1%) !important;
+}
+
+tr:first-child th:first-child {
+  color: $gray-extra-light !important;
+  background: $gray-dark !important;
+}
+
+tr:first-child th:not(:last-child) {
+  border-right-color: $white;
+}
+
+tr:first-child th:first-child,
+tr:not(:first-child):not(:last-child) th {
+  border-bottom-color: $gray !important;
+}
+
+tr:first-child th:first-child,
+tr:not(:first-child) th {
+  color: $black;
+  background: $gray-light;
+  text-transform: none;
+}
+
+caption {
+  margin-bottom: 1rem;
+  width: 100%;
+  font-style: italic;
+  text-align: left;
+}
+
+/* table stack */
+
+@media only screen and (max-width: 600px) {
+
+	/* force table to display block - stack */
+	table, thead, tbody, th, td, tr {
+		display: block;
+    position: relative;
+	}
+
+	/* hides table headers (but not display: none; for accessibility) */
+	th {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+  tr th:first-child {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  tr:first-child {
+    margin-bottom: 0;
+  }
+
+  tr:first-child td:first-child {
+    display: none;
+  }
+
+  tr:first-child th:first-child {
+    display: none;
+  }
+
+  th.sub-category,
+  th.span.sub-category,
+  tr:first-child th.span.sub-category {
+    display: block;
+    position: relative !important;
+    margin: 0;
+    font-size: 1.25rem;
+    color: $black !important;
+    border: none;
+    background: $gray-light !important;
+  }
+
+	tr {
+    margin: 2rem 0;
+    border: 1px solid $gray-light; }
+
+	td {
+		/* make a row */
+    position: relative;
+    padding: 1rem;
+  	padding-left: 50%;
+    text-align: right !important;
+		border: none;
+		border-bottom: 1px solid $gray-light;
+    &:last-of-type {
+      border-bottom: none;
+    }
+	}
+
+	td:before {
+		position: absolute;
+		/* top and left values mimic padding of td */
+		top: 0;
+		left: 0;
+		padding: 1rem;
+    width: 50%;
+    color: $gray-extra-light;
+    text-align: left;
+    text-transform: uppercase;
+		white-space: nowrap;
+    background: $gray-dark;
+	}
+
+	/* Label the data */
+
+	td:nth-of-type(1):before { content: "Header 01"; }
+	td:nth-of-type(2):before { content: "Header 02"; }
+	td:nth-of-type(3):before { content: "Header 03"; }
+	td:nth-of-type(4):before { content: "Header 04"; }
+	td:nth-of-type(5):before { content: "Header 06"; }
+	td:nth-of-type(6):before { content: "Header 07"; }
+	td:nth-of-type(7):before { content: "Header 08"; }
+	td:nth-of-type(8):before { content: "Header 09"; }
+	td:nth-of-type(9):before { content: "Header 10"; }
+
+  caption { display: block; }
+}

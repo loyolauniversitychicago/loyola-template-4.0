@@ -1,0 +1,204 @@
+/* audio */
+
+audio {
+  margin: 1em 0;
+  width: 100%;
+  height: 40px
+}
+audio::-webkit-media-controls,
+video::-webkit-media-controls {
+  width: inherit;
+  height: inherit;
+  position: relative;
+  direction: ltr;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background: rgba(206,203,176,.35);
+  border-radius: .5em;
+}
+audio::-webkit-media-controls-enclosure, video::-webkit-media-controls-enclosure {
+  width: 100%;
+  max-width: 100%;
+  height: 40px;
+  flex-shrink: 0;
+  bottom: 0;
+  text-indent: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: none;
+  border-radius: .5em;
+}
+audio::-webkit-media-controls-panel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  -webkit-user-select: none;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+  text-align: right;
+  bottom: auto;
+  height: 40px;
+  background-color: rgba(20, 20, 20, 0.8);
+  border-radius: .5em;
+  transition: opacity 0.3s;
+}
+audio:-webkit-full-page-media {
+  max-height: 100%;
+  max-width: 100%;
+}
+audio:-webkit-full-page-media::-webkit-media-controls-panel {
+  bottom: 0px;
+}
+audio::-webkit-media-controls-mute-button {
+  -webkit-appearance: media-mute-button;
+  box-sizing: border-box;
+  display: flex;
+  flex: none;
+  border: none;
+  box-sizing: border-box;
+  top: -5px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin: 6px 6px 0 0;
+  padding: 0;
+  background-color: rgba(255,255,255,.2);
+  border-radius: 10px;
+  color: #cecbb0;
+}
+audio::-webkit-media-controls-overlay-enclosure {
+  display: none;
+}
+audio::-webkit-media-controls-play-button {
+  -webkit-appearance: media-play-button;
+  box-sizing: border-box;
+  display: flex;
+  flex: none;
+  border: none;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin-left: 9px;
+  margin-right: 9px;
+  padding: 0;
+  background-color: rgba(255,255,255,.2);
+  border-radius: 10px;
+  color: #cecbb0;
+}
+audio::-webkit-media-controls-timeline-container {
+  -webkit-appearance: media-controls-background;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1 1;
+  -webkit-user-select: none;
+  height: 100%;
+  min-width: 0;
+}
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  -webkit-appearance: media-current-time-display;
+  -webkit-user-select: none;
+  flex: none;
+  display: flex;
+  border: none;
+  cursor: default;
+  height: 30px;
+  margin: 0 9px 0 0;
+  padding: 0;
+  line-height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  color: #cecbb0;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0;
+  text-shadow: none;
+  text-decoration: none;
+}
+audio::-webkit-media-controls-timeline {
+  -webkit-appearance: media-slider;
+  display: flex;
+  flex: 1 1 auto;
+  height: 100%;
+  margin: 0 15px 0 0;
+  padding: 0;
+  background-color: $bg-overlay-light;
+  min-width: 25px;
+  border: initial;
+  color: #cecbb0;
+}
+audio::-webkit-media-controls-volume-slider {
+  -webkit-appearance: media-volume-slider;
+  display: flex;
+  flex: 1 1.9 auto;
+  height: 100%;
+  max-width: 70px;
+  margin: 0 15px 0 0;
+  padding: 0;
+  min-width: 15px;
+  border: initial;
+}
+/* FIX - These shouldn't use special pseudoShadowIds, but nicer rules.
+ https://code.google.com/p/chromium/issues/detail?id=112508
+ https://bugs.webkit.org/show_bug.cgi?id=62218
+*/
+input[type="range" i]::-webkit-media-slider-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row; /* This property is updated by C++ code. */
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgba(230, 230, 230, 0.35);
+  border-radius: 4px;
+  background-color: transparent; /* Background drawing is managed by C++ code to draw ranges. */
+}
+/* The negative right margin causes the track to overflow its container. */
+input[type="range" i]::-webkit-media-slider-container > div {
+  margin-right: -14px;
+}
+input[type="range" i]::-webkit-media-slider-thumb {
+  margin-left: -7px;
+  margin-right: -7px;
+}
+audio::-webkit-media-controls-fullscreen-button {
+  -webkit-appearance: media-enter-fullscreen-button;
+  display: flex;
+  flex: none;
+  border: none;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin-left: -5px;
+  margin-right: 9px;
+  padding: 0;
+  background-color: rgba(255,255,255,.2);
+  color: #cecbb0;
+}
+audio::-webkit-media-controls-timeline {
+  display: none;
+}
+audio::-webkit-media-controls-toggle-closed-captions-button {
+  display: none;
+}
+audio::-webkit-media-controls-fullscreen-volume-slider {
+  display: none;
+}
+audio::-webkit-media-controls-fullscreen-volume-min-button {
+  display: none;
+}
+audio::-webkit-media-controls-fullscreen-volume-max-button {
+  display: none;
+}

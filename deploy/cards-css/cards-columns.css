@@ -1,0 +1,107 @@
+/* containers */
+
+body { margin: 0; padding: 0; }
+
+div { display: block; }
+
+.container-fluid { width: 100%; }
+
+.container { margin: 5rem auto; width: 80%; }
+
+.container.container-100 { margin: 0; padding: 0; width: 100%; }
+
+.container.container-50 { width: 50%; }
+
+/* grid wrapper */
+
+.grid-wrapper-min-max {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: auto;
+  grid-gap: 2rem;
+  width: 100%;
+}
+
+/* no gap - use for image grids */
+
+.grid-wrapper-no-gap {
+  grid-gap: 0px; }
+
+/* cards */
+
+.content-grid-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* cards horizontal */
+
+.grid-wrapper-min-max.card-horizontal {
+  display: block;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.grid-wrapper-min-max.card-horizontal .grid-item {
+  display: -ms-grid;
+  display: grid;
+  margin: 2rem 0;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  grid-auto-rows: auto;
+  grid-gap: 0;
+  background: #e1e1e1;
+}
+
+.grid-wrapper-min-max.card-horizontal .grid-item .image-wrapper {
+  margin: 0;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+  background-image: url('http://via.placeholder.com/1000x560');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.grid-wrapper-min-max.card-horizontal .grid-item .image-wrapper a {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-wrapper-min-max.card-horizontal .grid-item img {
+  display: none;
+}
+
+
+/* media queries ==================
+=================================*/
+
+/* 1200 */
+
+/* 992 */
+
+/* 768 */
+@media only screen and (max-width: 768px) {
+.grid-wrapper-min-max.card-horizontal .grid-item {
+  display: block;
+  width: 100%;
+}
+.grid-wrapper-min-max.card-horizontal .grid-item img {
+  display: block;
+}
+/* 736 */
+
+/* 580 */
+
+@media only screen and (max-width: 580px) {
+  .container { width: 90%; }
+  .content-columns-varied .grid-wrapper-min-max { display: block; }
+}

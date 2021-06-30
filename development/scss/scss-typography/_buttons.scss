@@ -1,0 +1,129 @@
+/* BUTTONS */
+
+/* covers symantic button and div .button a */
+
+/* buttons */
+/* this might need to be edited for card specific only IMPORTANT !!! */
+
+/* button */
+
+button, .button,
+.content-columns-varied .col-flex .card-body .button,
+.content-columns-varied .col-flex .card-body .button a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  font-family: 'Antenna Condensed Bold', 'Arial', sans-serif;
+  font-size: 1rem;
+  line-height: 1.35;
+  letter-spacing: .0125rem;
+  word-spacing: .125rem;
+  color: $maroon !important;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  border: solid 1px $maroon !important;
+  border-radius: .33rem;
+  background: none;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+button {
+  margin: .75rem 0;
+  padding: .625rem 1rem .5rem;
+}
+
+.content-columns-varied .col-flex .card-body .button {
+  margin: .75rem 0;
+}
+
+.content-columns-varied .col-flex .card-body .button a {
+  box-sizing: border-box;
+  padding: .625rem 1rem .5rem;
+  border: none !important;
+}
+
+button:hover, .button:hover,
+.content-columns-varied .col-flex .card-body .button:hover,
+.content-columns-varied .col-flex .card-body .button a:hover {
+  cursor: pointer;
+}
+
+button, button a, .button, .button a,
+.content-columns-varied .col-flex .button,
+.content-columns-varied .col-flex .button a,
+.content-columns-varied .col-flex button  {
+  width: 100%;
+  color: $maroon;
+  text-decoration: none;
+}
+
+button:focus, button a:focus, .button a:focus {
+  outline: 3px solid $white;
+  outline-offset: -3px;
+  border-radius: .33rem !important;
+  -moz-outline-border: .33rem;
+}
+
+.button a:focus {
+  outline-offset: 0;
+}
+
+button:hover, button a:hover, .button:hover, .button a:hover,
+.content-columns-varied .col-flex .button:hover,
+.content-columns-varied .col-flex .button a:hover,
+.content-columns-varied .col-flex button:hover {
+  color: #f1f1f1 !important;
+  background-color: $maroon;
+}
+
+button.maroon,
+button.patina,
+.button-maroon button,
+.button-patina button,
+.button-gold button,
+.button-maroon .button,
+.button-patina .button,
+.button-maroon .button a,
+.button-patina .button a,
+.content-columns-varied .col-flex .card-body .button-maroon .button,
+.content-columns-varied .col-flex .card-body .button-patina .button,
+.content-columns-varied .col-flex .card-body .button-gold .button,
+.content-columns-varied .col-flex .card-body .button-maroon .button a,
+.content-columns-varied .col-flex .card-body .button-patina .button a,
+.content-columns-varied .col-flex .card-body .button-gold .button a {
+  color: $white !important;
+  border: none !important;
+}
+
+button.gold button,
+button.gold .button,
+.content-columns-varied .col-flex .card-body .button-gold button,
+.content-columns-varied .col-flex .card-body .button-gold .button,
+.content-columns-varied .col-flex .card-body .button-gold .button a {
+  color: $white !important;
+}
+
+button.gold .button:hover,
+button.gold button:hover {
+  color: $white;
+}
+
+.button-maroon button, .button-maroon .button, .button-maroon .button a, .content-columns-varied .col-flex .card-body .button-maroon .button a { background-color: $maroon; }
+.button-patina button, .button-patina .button, .button-patina .button a, .content-columns-varied .col-flex .card-body .button-patina .button a { background-color: $patina; }
+.button-gold button, .button-gold .button, .button-gold .button a, .content-columns-varied .col-flex .card-body .button-gold .button a { background-color: desaturate($gold,10%); }
+
+.button-maroon button:hover, .button-maroon .button:hover, .button-maroon .button a:hover { background-color: $brick !important; }
+.button-patina button:hover, .button-patina .button:hover, .button-patina .button a:hover { background-color: $patina-dark !important; }
+.button-gold button:hover, .button-gold .button:hover, .button-gold .button a:hover  { background-color: $opus !important; }
+
+.media-cards.media-cards-horizontal .card-body .col-flex button {
+  width: auto;
+  @include phone-landscape {
+    width: 100%;
+  }
+}

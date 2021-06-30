@@ -1,0 +1,176 @@
+/* --------------- styles for accordion -----------------------*/
+
+
+/* accordion */
+
+
+/* just for example as nested accordion */
+[data-accordion-prefix-classes="minimalist-css"] {
+  margin-top: 1em;
+  width: 100%;
+}
+
+h4.minimalist-accordion__title,
+h4.minimalist-noanim-accordion__title,
+h4.minimalist-css-accordion__title,
+h3.minimalist-accordion__title,
+h3.minimalist-noanim-accordion__title,
+h3.minimalist-css-accordion__title {
+  margin: 0 !important;
+  padding: 0;
+  width: 100%;
+  line-height: 0;
+}
+
+button.minimalist-accordion__header,
+button.minimalist-noanim-accordion__header,
+button.minimalist-css-accordion__header {
+  margin: 0;
+  padding: 1.3em 1rem 1em;
+  color: $black !important;
+  border-radius: 0;
+  border: none !important;
+  border-bottom: solid 1px $gray !important;
+  outline: none;
+}
+
+.minimalist-accordion__header,
+.minimalist-noanim-accordion__header,
+.minimalist-css-accordion__header {
+  display: block;
+  margin: 0;
+  padding: .25em 0;
+  width: 100%;
+  min-width: 100%;
+  /** fix typo inputs **/
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: left;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.minimalist-css-accordion__header {
+  font-size: 1.5em;
+}
+
+button.minimalist-accordion__header:hover,
+button.minimalist-noanim-accordion__header:hover,
+button.minimalist-css-accordion__header:hover {
+  background: $gray !important;
+}
+
+button.minimalist-accordion__header:focus,
+button.minimalist-noanim-accordion__header:focus,
+button.minimalist-css-accordion__header:focus {
+  outline: solid 2px $gold;
+  color: #ffffff;
+}
+
+.minimalist-accordion__header::after,
+.minimalist-noanim-accordion__header::after,
+.minimalist-css-accordion__header::after,
+#panel-table-accordion h4.table-accordion-header::after {
+  float: right;
+  display: inline-block;
+  margin: -2px .25em 0 0;
+  width: 1.125em;
+  height: 1.125em;
+  content: '';
+  background-image: url(../images/ui-arrow-carrousel-next-dark@2x.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 80%;
+  transform: rotate(0deg);
+}
+
+#panel-table-accordion h4.table-accordion-header::after {
+  background-image: none;
+}
+
+[aria-expanded="true"].minimalist-accordion__header::after,
+[aria-expanded="true"].minimalist-noanim-accordion__header::after,
+[aria-expanded="true"].minimalist-css-accordion__header::after {
+  margin: -2px .25em 0 0;
+  transform: rotate(90deg);
+  transform-origin: 50% 50%;
+}
+
+/* accordion panel - content */
+
+.minimalist-accordion__panel {
+  display: block;
+  margin: 2em;
+  padding: 0;
+  max-height: 100em;
+  visibility: visible;
+  overflow: hidden;
+  opacity: 1;
+  /* animation */
+  -webkit-transition: visibility 0s ease, max-height 1s ease, opacity 1s ease;
+  transition: visibility 0s ease, max-height 1s ease, opacity 1s ease;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  /* padding: 2em; - use this panel with background color $gray-extra-light */
+}
+
+/* This is the hidden state */
+
+[aria-hidden=true].minimalist-accordion__panel {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: padding 1s ease-out;
+  transition: padding 1s ease-out;
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
+}
+
+.minimalist-css-accordion__panel {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-height: 40em;
+  /* magic number for max-height = enough height */
+  opacity: 1;
+  visibility: visible;
+  overflow: hidden;
+  -webkit-transition: visibility 0s ease, max-height 1s ease, transform 1s ease, opacity 1s ease;
+  transition: visibility 0s ease, max-height 1s ease, transform 1s ease, opacity 1s ease;
+  transform: scaleY(1);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.js-accordion__panel.minimalist-accordion__panel p:last-of-type {
+  margin-bottom: 0 !important;
+}
+
+
+/* This is the hidden state */
+
+[aria-hidden=true].minimalist-css-accordion__panel {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: scaleY(0);
+  -webkit-transition-delay: 1s, 0s, 0s, 0s;
+  transition-delay: 1s, 0s, 0s, 0s;
+}
+
+.minimalist-noanim-accordion__panel {
+  display: block;
+}
+
+[aria-hidden=true].minimalist-noanim-accordion__panel {
+  display: none;
+}

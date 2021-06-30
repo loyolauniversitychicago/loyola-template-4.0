@@ -1,0 +1,193 @@
+/* tabs - STANDARD - IMAGE TABS */
+
+.tabs {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-wrapper-min-max .grid-item .tabs button {
+  display: inline;
+  margin: 0 .35rem;
+  padding: .75em 1em .6em;
+  width: auto;
+  font-family: 'Antenna Bold', sans-serif !important;
+  font-size: 1rem;
+  color: $maroon;
+  border: solid 1px $maroon;
+  border-bottom: 0 !important;
+  border-radius: .5rem .5rem 0 0 !important;
+  background: $white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .2s;
+  @include phone-portrait {
+    display: block;
+    width: 100%;
+  }
+}
+
+.grid-wrapper-min-max .grid-item .tabs button:hover {
+  background: $gray-light;
+}
+
+.grid-wrapper-min-max .grid-item .tabs button:focus {
+  outline: none;
+  box-shadow: 0 0 2px 2px $gold;
+}
+
+.tabs button[aria-selected="true"] {
+  background: $maroon !important;
+  color: $gray-extra-light !important;
+  transition: .2s;
+}
+
+.tabs button:hover[aria-selected="true"] {
+  background: $brick !important;
+  color: $white !important;
+}
+
+.tab-panel {
+  background: #f2f2f2;
+  padding: 2em;
+  img {
+    margin: 0 0 2rem 0 !important;
+  }
+  h4 {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: .5rem !important;
+    width: 100%;
+    font-size: 1.65rem !important;
+  }
+  p {
+    margin: .5rem 0 1rem;
+    font-size: 1.125rem !important;
+    line-height: 1.65;
+  }
+  a {
+    font-size: .85em !important;
+  }
+}
+
+/* tabs - image-tabs */
+
+#tabs-images .tabcontent { display: none; animation: tabFadeEffect 2s; }
+
+@keyframes tabFadeEffect { from {opacity: 0;} to {opacity: 1;} }
+
+#tabs-images .tab { position: relative; background: #0096A0; }
+
+#tabs-images .tab img { margin: 0; }
+
+#tabs-images .tab .active img { padding: 0 0 2.35em 0; border: solid .35em #0096A0; }
+#tabs-images .tab .active::before,
+#tabs-images .tab .active::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: calc(50% - 1.15em);
+    border-bottom: 2.35em solid $white;
+    border-right: 2em solid transparent;
+}
+
+#tabs-images .tab .active::before, #tabs-images .tab .active::after {
+   border-bottom-color: $white;
+}
+
+#tabs-images .tab .active::after {
+    left: calc(50% - 1.15em);
+    border-left: 2.35em solid transparent;
+    border-right: 0;
+}
+
+#tabs-images .tabcontent h5 { margin: 0; margin-top: rvr(2); margin-bottom: rvr(0); width: 100%; }
+
+#tabs-images .tabcontent blockquote { margin: 0; padding: 1em 0 2em; width: 100%; border: none; }
+
+/* 768PX - override */
+
+@media only screen and (max-width: 768px) {
+
+/* maintain grid on tabs - image-tabs */
+
+#tabs-images .grid-wrapper-min-max,
+#tabs-images #tabs-images .grid-wrapper-min-max.three-column .grid-item {
+  display: grid !important;
+  grid-gap: 1em !important;
+}
+
+#tabs-images .grid-wrapper-min-max .grid-item {
+  margin: 0;
+}
+
+/* four-column-build */
+
+#tabs-images .grid-wrapper-min-max.four-column .grid-item {
+  grid-column: span 3 !important;
+  -ms-grid-column-span: 3 !important;
+}
+/* four-column-build - ms support */
+#tabs-images .grid-wrapper-min-max.four-column .grid-item:nth-child(1) {
+  -ms-grid-column: 1 !important;
+  -ms-grid-column-span: 3 !important;
+}
+#tabs-images .grid-wrapper-min-max.four-column .grid-item:nth-child(2) {
+  -ms-grid-column: 4 !important;
+  -ms-grid-column-span: 3 !important;
+}
+#tabs-images .grid-wrapper-min-max.four-column .grid-item:nth-child(3) {
+  -ms-grid-column: 7 !important;
+  -ms-grid-column-span: 3 !important;
+}
+#tabs-images .grid-wrapper-min-max.four-column .grid-item:nth-child(4) {
+  -ms-grid-column: 10 !important;
+  -ms-grid-column-span: 3 !important;
+}
+
+/* three-column-build */
+
+#tabs-images .grid-wrapper-min-max.three-column .grid-item {
+  grid-column: span 4 !important;
+  -ms-grid-column-span: 4 !important;
+}
+/* three-column-build - ms support */
+#tabs-images .grid-wrapper-min-max.three-column .grid-item:nth-child(1) {
+  -ms-grid-column: 1 !important;
+  -ms-grid-column-span: 4 !important;
+}
+#tabs-images .grid-wrapper-min-max.three-column .grid-item:nth-child(2) {
+  -ms-grid-column: 5 !important;
+  -ms-grid-column-span: 4 !important;
+}
+#tabs-images .grid-wrapper-min-max.three-column .grid-item:nth-child(3) {
+  -ms-grid-column: 9 !important;
+  -ms-grid-column-span: 4 !important;
+}
+#tabs-images .grid-wrapper-min-max.three-column .grid-item:nth-child(4) {
+  display: none !important;
+}
+
+/* two-column-build */
+
+#tabs-images .grid-wrapper-min-max.two-column .grid-item {
+  grid-column: span 6 !important;
+  -ms-grid-column-span: 6 !important;
+}
+/* two-column-build - ms support */
+#tabs-images .grid-wrapper-min-max.two-column .grid-item:nth-child(1) {
+  -ms-grid-column: 1 !important;
+  -ms-grid-column-span: 6 !important;
+}
+#tabs-images .grid-wrapper-min-max.two-column .grid-item:nth-child(2) {
+  -ms-grid-column: 7 !important;
+  -ms-grid-column-span: 6 !important;
+}
+#tabs-images .grid-wrapper-min-max.two-column .grid-item:nth-child(3),
+#tabs-images .grid-wrapper-min-max.two-column .grid-item:nth-child(4) {
+  display: none !important;
+}
+
+}
+
+/* CSS - END */
