@@ -51,9 +51,9 @@ ul[role="menubar"] {
 	background: none;
 	button  {
 		margin: 0;
-		padding: 20px 20px 15px;
+		padding: 1.25rem 1.25rem 1rem;
 		font-family: 'Antenna', sans-serif;
-		font-size: .8em;
+		font-size: .8rem;
 		color: $gray-extra-light !important;
 		border: none !important;
 		border-radius: 0;
@@ -89,8 +89,8 @@ ul[role="menubar"] {
 			padding: 0;
 			width: auto;
 			font-family: 'Antenna', sans-serif;
-			font-size: .8em;
-			letter-spacing: .025em;
+			font-size: .8rem;
+			letter-spacing: .025rem;
 			color: $gray-extra-light;
 			text-transform: uppercase;
 			text-decoration: none;
@@ -524,6 +524,59 @@ nav#audience-directory,
 	@include tablet-portrait {
 		display: none;
 	}
+}
+
+/* added for t4 nav */
+
+header #brand {
+  margin: .75rem 5px;
+}
+ul.multilevel-linkul-0 button a {
+  padding: 0;
+}
+ul.multilevel-linkul-0 {
+	float: left;
+  display: none;
+  position: absolute;
+  top: 53px;
+  left: -1px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  z-index: 0;
+}
+ul.multilevel-linkul-0 li {
+	float: left;
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-left: solid 1px #2f2f2f;
+}
+ul.multilevel-linkul-0 li a {
+  float: left;
+	display: block;
+  margin: 0;
+	padding: 1rem 1.25rem 1rem;
+	width: 20rem;
+  font-family: 'Antenna', sans-serif;
+  font-size: .8rem;
+  letter-spacing: .025rem;
+  color: #eeeeee;
+	text-align: left;
+  text-transform: none;
+  text-decoration: none;
+  border: 0 none;
+	border-bottom: solid 1px #888888;
+  transition: background-color .3s;
+}
+#site-nav > li > button:hover > a,
+#site-nav > li > button:focus > a {
+	background: none !important;
+}
+#pagecontentonlyHtml {
+  display: none;
 }
 
 /* CSS - END */
