@@ -47,6 +47,97 @@
   display: none;
 }
 
+/* card overlay */
+
+#card-image-overlay .grid-wrapper-min-max .grid-item {
+  grid-template-columns: 300px auto !important;
+}
+
+#card-image-overlay .image-wrapper img {
+  margin: 0;
+}
+
+#card-image-overlay .content-grid-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  a, h5, h4, p, h6 {
+    flex-shrink: 0;
+    color: $gray-extra-light;
+    text-align: center;
+  }
+  h4 {
+    font-size: 1.65rem;
+  }
+}
+
+#card-image-overlay .content-grid-wrapper .flex-item {
+  padding: 2rem;
+  width: 100%;
+  background: $gray-light;
+  z-index: +1;
+  button {
+    margin-top: 0;
+    color: $white !important;
+    background: $maroon;
+    &:hover {
+      background: $brick;
+    }
+  }
+  h6 {
+    display: none;
+  }
+  h5 {
+    display: block;
+    margin: 0 0 .125rem;
+    font-size: 1.125rem;
+    color: $black !important;
+    text-align: left;
+    text-transform: none;
+  }
+  p {
+    margin: 0;
+    color: $black !important;
+    text-align: left;
+  }
+  p a {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-weight: 100;
+    line-height: 1.65;
+    color: $black !important;
+    text-align: left;
+  }
+}
+
+#card-image-overlay .flex-item.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem !important;
+  width: 100%;
+  background: $bg-overlay !important;
+  z-index: 0;
+  h4, p {
+    color: $gray-extra-light !important;
+    text-align: center;
+  }
+  a, h5, h6, .explainer p {
+    display: none;
+  }
+}
+
+#card-image-overlay .content-grid-wrapper .flex-item:last-of-type {
+  margin-top: auto;
+}
+
 /* card horizontal - refer */
 
 #panel-refer .grid-wrapper-min-max.card-horizontal .grid-item {
@@ -85,8 +176,7 @@
 .card h1 { line-height: 1.125; }
 .card h2 { line-height: 1.125; }
 .card h4 { line-height: 1.15; }
-.card h5 { font-family: 'Antenna Bold', sans-serif; text-transform: uppercase; }
-.card h6 { font-family: 'Antenna', sans-serif; font-weight: normal; text-transform: uppercase; }
+.card h6 { font-family: 'Antenna Condensed Light', sans-serif; }
 .card p { font-family: 'Arial', sans-serif; }
 .card p.explainer { font-style: italic; }
 
@@ -98,7 +188,7 @@ button {
   padding: .625rem 1rem .5rem;
   width: 100%;
   height: auto;
-  font-family: 'Antenna Bold', 'Arial', sans-serif;
+  font-family: 'Antenna Condensed Bold', 'Arial', sans-serif;
   font-size: .925rem;
   line-height: 1.45;
   color: #8D0034;
