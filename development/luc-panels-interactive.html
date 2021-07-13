@@ -6,6 +6,7 @@
 	<!-- inject:css -->
 	<!-- endinject -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -34,6 +35,15 @@
 							<h5>Interactive</h5>
 							<div class="padding-md"></div>
 						</div>
+					</div>
+					<!-- carousel -->
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Audio</h5></div>
+					</div>
+					@@include('./partials/panels/panel-carousel.html')
+					<div class="container">
+						<hr class="padding-divider"></hr>
+						<footnote>Documentation for panel here. Must include for each panel.</footnote>
 					</div>
 					<!-- audio panel -->
 					<div id="panel-top" class="container-fluid">
@@ -93,6 +103,7 @@
 				@@include('./partials/framework/luc-footer.html')
 			</footer>
 		</main>
+		<script src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
 		<!-- inject:js -->
 		<!-- endinject -->
 	</div>
