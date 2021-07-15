@@ -1,5 +1,13 @@
 /* PANELS */
 
+/* backgrounds */
+
+.container-fluid.bg-gray-extra-light { background: $gray-extra-light; }
+.container-fluid.bg-terracotta-extra-light { background: $terracotta-extra-light; }
+.container-fluid.bg-maroon { background: $maroon; }
+.container-fluid.bg-gold { background: $gold; }
+.container-fluid.bg-none { background: none; }
+
 a {
   transition: color .3s ease-in-out;
 }

@@ -118,11 +118,6 @@
   z-index: +1;
   button {
     margin-top: 0;
-    color: $white !important;
-    background: $maroon;
-    &:hover {
-      background: $brick;
-    }
   }
   h6 {
     display: none;
@@ -279,14 +274,16 @@ button:focus {
 
 /* numbers large */
 
-.grid-wrapper-min-max.number h4 {
+.grid-wrapper-min-max.number h4,
+.grid-wrapper-min-max.number-lg h4 {
   margin: 0;
-  font-family: 'Antenna COndensed Bold', sans-serif !important;
+  font-family: 'Antenna Condensed Bold', sans-serif !important;
   font-size: 4.75rem;
   line-height: 1.25;
 }
 
-.grid-wrapper-min-max.number h5 {
+.grid-wrapper-min-max.number h5,
+.grid-wrapper-min-max.number-l h5 {
   font-family: 'Antenna', sans-serif !important;
   font-size: 1rem;
   font-weight: normal;

@@ -10,6 +10,10 @@ body {
   background-color: none;
 }
 
+p, ul, ol {
+  color: $gray-dark;
+}
+
 a {
   cursor: hand !important;
 }
@@ -93,6 +97,7 @@ p, .explainer p {
   margin-bottom: rvr(1);
   font-size: 1.125rem;
   line-height: rvr(1.75);
+  line-height: 1.9;
 }
 
 .explainer p {
@@ -153,7 +158,7 @@ a {
 }
 
 p a {
-  font-size: 1rem;
+  font-size: inherit;
 }
 
 a.cta {
