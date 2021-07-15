@@ -81,7 +81,7 @@ button.slick-next, button.slick-prev {
 button.slick-prev {
   right: 3.5rem;
   border-radius: .25rem 0 0 .25rem !important;
-  background-image: url('/images/ui-arrow-carrousel-previous@2x.png');
+  background-image: url('../images/ui-arrow-carrousel-previous@2x.png');
   &:hover, &:focus {
     border-radius: .25rem 0 0 .25rem !important;
     background-color: #febc18;
@@ -90,7 +90,7 @@ button.slick-prev {
 button.slick-next {
   right: 0;
   border-radius: 0 !important;
-  background-image: url('/images/ui-arrow-carrousel-next@2x.png');
+  background-image: url('../images/ui-arrow-carrousel-next@2x.png');
   &:hover, &:focus {
     border-radius: 0 !important;
     background-color: #febc18;
