@@ -1,8 +1,11 @@
 <!-- cards -->
 <section id="panel-cards" class="container-fluid">
 	<div class="container">
+
+<!-- card - standard - vertical - without class added -->
+
 		<h5>
-			Card - <span style="font-family: 'Antenna Light', sans-serif;">Standard vertical card</span>
+			Card - <span style="font-family: 'Antenna Light', sans-serif;">Standard vertical - no class added</span>
 		</h5>
 		<div class="padding-xsm"></div>
 		<!-- card -->
@@ -11,23 +14,34 @@
 		      <div class="grid-wrapper-min-max">
 		      <div class="grid-item">
 		        <div class="image-wrapper">
+							<div class="image-wrapper-overlay">
+								<div class="image-wrapper-overlay-content">
+			            <h4>The headline is lorem ipsum</h4>
+			            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet.</p>
+									<a class="cta" href="#####">CTA here</a>
+								</div>
+							</div>
 		          <a href="###" target="_blank" title="Title goes here">
 		            <img src="http://via.placeholder.com/1000x560" alt="Alternate description goes here" title="Title goes here">
 		          </a>
 		        </div>
 		        <div class="content-grid-wrapper">
-		          <div class="flex-item content">
-		            <h6>0/0/0000: 0:00PM-0:00PM</h6>
-		            <h4>The headline is lorem ipsum</h4>
-		            <h5>Somebody Namehere</h5>
-		            <div class="explainer"><p>Lorem ipsum dolor sit amet</p></div>
-		            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non.</p>
-		            <a class="cta" href="#####">CTA here</a>
-		          </div>
-		          <div class="flex-item">
-		            <button onclick="window.open('###','_blank')">CTA here</button>
-		            <h6 style="text-align: center;">Lorem ipsum unum</h6>
-		          </div>
+							<div class="flex-item content">
+								<h6>0/0/0000: 0:00PM-0:00PM</h6>
+								<h4>The headline is lorem ipsum</h4>
+								<h5>Somebody Namehere</h5>
+								<div class="explainer"><p>Lorem ipsum dolor sit amet</p></div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet.</p>
+								<a class="cta" href="#####">CTA here</a>
+							</div>
+							<div class="flex-item links">
+								<button onclick="window.open('###')">CTA here</button>
+								<h6 style="text-align: center;">Lorem ipsum unum</h6>
+								<h5>Also see:</h5>
+								<p><a href="#####">Link to related resource</a></p>
+								<p><a href="#####">Link to related resource</a></p>
+								<p><a href="#####">Link to related resource</a></p>
+							</div>
 		        </div>
 		      </div>
 		    </div>
@@ -36,151 +50,144 @@
 
 	  <div class="padding-lg"></div>
 
-		<div class="container">
-			<h5>
-				Card - <span style="font-family: 'Antenna Light', sans-serif;">Image overlay</span>
-			</h5>
-			<div class="padding-xsm"></div>
-			<!-- card -->
-			<div id="card-image-overlay" class="container-fluid">
-			    <div class="container container-100">
-			      <div class="grid-wrapper-min-max">
-			      <div class="grid-item">
-			        <div class="image-wrapper">
-								<div class="image-wrapper-overlay">
-									<div class="image-wrapper-overlay-content">
-				            <h4>The headline is lorem ipsum</h4>
-				            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet.</p>
-										<a class="cta" href="#####">CTA here</a>
-									</div>
-								</div>
-			          <a href="###" target="_blank" title="Title goes here">
-			            <img src="http://via.placeholder.com/1000x560" alt="Alternate description goes here" title="Title goes here">
-			          </a>
-			        </div>
-			        <div class="content-grid-wrapper">
-			          <div class="flex-item content">
-			            <h6>0/0/0000: 0:00PM-0:00PM</h6>
+<!-- card - standard - vertical - card class added -->
+
+		<h5>
+			Card - <span style="font-family: 'Antenna Light', sans-serif;">Standard vertical - .card class added</span>
+		</h5>
+		<div class="padding-xsm"></div>
+		<!-- card -->
+		<div class="container-fluid">
+		  <div class="container container-100">
+		    <div class="grid-wrapper-min-max card">
+		      <div class="grid-item">
+		        <div class="image-wrapper">
+							<div class="image-wrapper-overlay">
+								<div class="image-wrapper-overlay-content">
 			            <h4>The headline is lorem ipsum</h4>
-			            <h5>Somebody Namehere</h5>
-			            <div class="explainer"><p>Lorem ipsum dolor sit amet</p></div>
 			            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet.</p>
-			            <a class="cta" href="#####">CTA here</a>
-			          </div>
-			          <div class="flex-item">
-			            <button onclick="window.open('###')">CTA here</button>
-			            <h6 style="text-align: center;">Lorem ipsum unum</h6>
-									<h5>Also see:</h5>
-									<p><a href="#####">Link to related resource</a></p>
-									<p><a href="#####">Link to related resource</a></p>
-									<p><a href="#####">Link to related resource</a></p>
-			          </div>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-			</div>
+									<a class="cta" href="#####">CTA here</a>
+								</div>
+							</div>
+		          <a href="###" target="_blank" title="Title goes here">
+		            <img src="http://via.placeholder.com/1000x560" alt="Alternate description goes here" title="Title goes here">
+		          </a>
+		        </div>
+		        <div class="content-grid-wrapper">
+							<div class="flex-item content">
+								<h6>0/0/0000: 0:00PM-0:00PM</h6>
+								<h4>The headline is lorem ipsum</h4>
+								<h5>Somebody Namehere</h5>
+								<div class="explainer"><p>Lorem ipsum dolor sit amet</p></div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet.</p>
+								<a class="cta" href="#####">CTA here</a>
+							</div>
+							<div class="flex-item links">
+								<button onclick="window.open('###')">CTA here</button>
+								<h6 style="text-align: center;">Lorem ipsum unum</h6>
+								<h5>Also see:</h5>
+								<p><a href="#####">Link to related resource</a></p>
+								<p><a href="#####">Link to related resource</a></p>
+								<p><a href="#####">Link to related resource</a></p>
+							</div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
-	    <div class="padding-lg"></div>
+    <div class="padding-lg"></div>
 
-			<h5>
-				Card - <span style="font-family: 'Antenna Light', sans-serif;">Standard vertical card - .card class added</span>
-			</h5>
-			<div class="padding-xsm"></div>
-			<!-- card -->
-			<div class="container-fluid">
-			  <div class="container container-100">
-			    <div class="grid-wrapper-min-max card">
-			      <div class="grid-item">
-			        <div class="image-wrapper">
-			          <a href="###" target="_blank" title="Title goes here">
-			            <img src="http://via.placeholder.com/1000x560" alt="Alternate description goes here" title="Title goes here">
-			          </a>
-			        </div>
-			        <div class="content-grid-wrapper">
-			          <div class="flex-item content">
-			            <h6>0/0/0000: 0:00PM-0:00PM</h6>
+<!-- card - standard - vertical - card-horizontal class added -->
+
+		<h5>
+			Card - <span style="font-family: 'Antenna Light', sans-serif;">Horizontal - .card-horizontal class added</span>
+		</h5>
+		<div class="padding-xsm"></div>
+		<div class="container-fluid">
+		  <div class="container container-100">
+		    <div class="grid-wrapper-min-max card card-horizontal">
+		      <!-- card -->
+		      <div class="grid-item">
+		        <div class="image-wrapper">
+							<div class="image-wrapper-overlay">
+								<div class="image-wrapper-overlay-content">
 			            <h4>The headline is lorem ipsum</h4>
-			            <h5>Somebody Namehere</h5>
-			            <div class="explainer"><p>Lorem ipsum dolor sit amet</p></div>
-			            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non.</p>
-			            <a class="cta" href="#####">CTA here</a>
-			          </div>
-			          <div class="flex-item">
-			            <button onclick="window.open('###','_blank')">CTA here</button>
-			            <h6 style="text-align: center;">Lorem ipsum unum</h6>
-			          </div>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-
-	    <div class="padding-lg"></div>
-
-			<h5>
-				Card - <span style="font-family: 'Antenna Light', sans-serif;">Horizontal Card -  .card-horizontal class added</span>
-			</h5>
-			<div class="padding-xsm"></div>
-			<div class="container-fluid">
-			  <div class="container container-100">
-			    <div class="grid-wrapper-min-max card card-horizontal">
-			      <!-- card -->
-			      <div class="grid-item">
-			        <div class="image-wrapper">
-			          <a href="###" target="_blank" title="Title goes here">
-			            <img src="http://via.placeholder.com/1000x560" alt="Alternate description goes here" title="Title goes here">
-			          </a>
-			        </div>
-			        <div class="content-grid-wrapper">
-			          <div class="flex-item content">
-			            <h6>0/0/0000: 0:00PM-0:00PM</h6>
+			            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet.</p>
+									<a class="cta" href="#####">CTA here</a>
+								</div>
+							</div>
+		          <a href="###" target="_blank" title="Title goes here">
+		            <img src="http://via.placeholder.com/1000x560" alt="Alternate description goes here" title="Title goes here">
+		          </a>
+		        </div>
+		        <div class="content-grid-wrapper">
+							<div class="flex-item content">
+								<h6>0/0/0000: 0:00PM-0:00PM</h6>
+								<h4>The headline is lorem ipsum</h4>
+								<h5>Somebody Namehere</h5>
+								<div class="explainer"><p>Lorem ipsum dolor sit amet</p></div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet.</p>
+								<a class="cta" href="#####">CTA here</a>
+							</div>
+							<div class="flex-item links">
+								<button onclick="window.open('###')">CTA here</button>
+								<h6 style="text-align: center;">Lorem ipsum unum</h6>
+								<h5>Also see:</h5>
+								<p><a href="#####">Link to related resource</a></p>
+								<p><a href="#####">Link to related resource</a></p>
+								<p><a href="#####">Link to related resource</a></p>
+							</div>
+		        </div>
+		      </div>
+		      <!-- card -->
+		      <div class="grid-item">
+		        <div class="image-wrapper">
+							<div class="image-wrapper-overlay">
+								<div class="image-wrapper-overlay-content">
 			            <h4>The headline is lorem ipsum</h4>
-			            <h5>Somebody Namehere</h5>
-			            <div class="explainer"><p>Lorem ipsum dolor sit amet</p></div>
-			            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non.</p>
-			            <a class="cta" href="#####">CTA here</a>
-			          </div>
-			          <div class="flex-item">
-			            <button onclick="window.open('###','_blank')">CTA here</button>
-			            <h6 style="text-align: center;">Lorem ipsum unum</h6>
-			          </div>
-			        </div>
-			      </div>
-			      <!-- card -->
-			      <div class="grid-item">
-			        <div class="image-wrapper">
-			          <a href="###" target="_blank" title="Title goes here">
-			            <img src="http://via.placeholder.com/1000x560" alt="Alternate description goes here" title="Title goes here">
-			          </a>
-			        </div>
-			        <div class="content-grid-wrapper">
-			          <div class="flex-item content">
-			            <h6>0/0/0000: 0:00PM-0:00PM</h6>
-			            <h4>The headline is lorem ipsum</h4>
-			            <h5>Somebody Namehere</h5>
-			            <div class="explainer"><p>Lorem ipsum dolor sit amet</p></div>
-			            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non.</p>
-			            <a class="cta" href="#####">CTA here</a>
-			          </div>
-			          <div class="flex-item">
-			            <button onclick="window.open('###','_blank')">CTA here</button>
-			            <h6 style="text-align: center;">Lorem ipsum unum</h6>
-			          </div>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-			</div>
+			            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet.</p>
+									<a class="cta" href="#####">CTA here</a>
+								</div>
+							</div>
+		          <a href="###" target="_blank" title="Title goes here">
+		            <img src="http://via.placeholder.com/1000x560" alt="Alternate description goes here" title="Title goes here">
+		          </a>
+		        </div>
+		        <div class="content-grid-wrapper">
+							<div class="flex-item content">
+								<h6>0/0/0000: 0:00PM-0:00PM</h6>
+								<h4>The headline is lorem ipsum</h4>
+								<h5>Somebody Namehere</h5>
+								<div class="explainer"><p>Lorem ipsum dolor sit amet</p></div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet.</p>
+								<a class="cta" href="#####">CTA here</a>
+							</div>
+							<div class="flex-item links">
+								<button onclick="window.open('###')">CTA here</button>
+								<h6 style="text-align: center;">Lorem ipsum unum</h6>
+								<h5>Also see:</h5>
+								<p><a href="#####">Link to related resource</a></p>
+								<p><a href="#####">Link to related resource</a></p>
+								<p><a href="#####">Link to related resource</a></p>
+							</div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
-			<div class="padding-lg"></div>
+		<div class="padding-lg"></div>
 
-			<h5>
-				Card - <span style="font-family: 'Antenna Light', sans-serif;">Overlay</span>
-			</h5>
-			<div class="padding-xsm"></div>
-			<div class="container-fluid">
-		    <div id="card-image-overlay" class="container container-100">
+<!-- card - image overlay - card-image-overlay ID added -->
+
+		<h5>
+			Card - <span style="font-family: 'Antenna Light', sans-serif;">Image overlay - .card-image-overlay ID added</span>
+		</h5>
+		<div class="padding-xsm"></div>
+		<!-- card -->
+		<div id="card-image-overlay" class="container-fluid">
+		    <div class="container container-100">
 		      <div class="grid-wrapper-min-max">
 		      <div class="grid-item">
 		        <div class="image-wrapper">
@@ -196,38 +203,6 @@
 		          </a>
 		        </div>
 		        <div class="content-grid-wrapper">
-		          <div class="flex-item content">
-		            <h6>0/0/0000: 0:00PM-0:00PM</h6>
-		            <h4>The headline is lorem ipsum</h4>
-		            <h5>Somebody Namehere</h5>
-		            <div class="explainer"><p>Lorem ipsum dolor sit amet</p></div>
-		            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet.</p>
-		            <a class="cta" href="#####">CTA here</a>
-		          </div>
-		          <div class="flex-item">
-		            <button onclick="window.open('###')">CTA here</button>
-		            <h6 style="text-align: center;">Lorem ipsum unum</h6>
-								<h5>Also see:</h5>
-								<p><a href="#####">Link to related resource</a></p>
-								<p><a href="#####">Link to related resource</a></p>
-								<p><a href="#####">Link to related resource</a></p>
-		          </div>
-		        </div>
-					</div>
-					<div class="grid-item">
-						<div class="image-wrapper">
-							<div class="image-wrapper-overlay">
-								<div class="image-wrapper-overlay-content">
-			            <h4>The headline is lorem ipsum</h4>
-			            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet.</p>
-									<a class="cta" href="#####">CTA here</a>
-								</div>
-							</div>
-							<a href="###" target="_blank" title="Title goes here">
-								<img src="http://via.placeholder.com/1000x560" alt="Alternate description goes here" title="Title goes here">
-							</a>
-						</div>
-						<div class="content-grid-wrapper">
 							<div class="flex-item content">
 								<h6>0/0/0000: 0:00PM-0:00PM</h6>
 								<h4>The headline is lorem ipsum</h4>
@@ -236,7 +211,7 @@
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet.</p>
 								<a class="cta" href="#####">CTA here</a>
 							</div>
-							<div class="flex-item">
+							<div class="flex-item links">
 								<button onclick="window.open('###')">CTA here</button>
 								<h6 style="text-align: center;">Lorem ipsum unum</h6>
 								<h5>Also see:</h5>
@@ -244,11 +219,87 @@
 								<p><a href="#####">Link to related resource</a></p>
 								<p><a href="#####">Link to related resource</a></p>
 							</div>
-						</div>
-					</div>
+		        </div>
 		      </div>
 		    </div>
-			</div>
+		  </div>
+		</div>
+
+    <div class="padding-lg"></div>
+
+		<h5>
+			Card - <span style="font-family: 'Antenna Light', sans-serif;">Overlay</span>
+		</h5>
+		<div class="padding-xsm"></div>
+		<div class="container-fluid">
+	    <div id="card-image-overlay" class="container container-100">
+	      <div class="grid-wrapper-min-max">
+	      <div class="grid-item">
+	        <div class="image-wrapper">
+						<div class="image-wrapper-overlay">
+							<div class="image-wrapper-overlay-content">
+		            <h4>The headline is lorem ipsum</h4>
+		            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet.</p>
+								<a class="cta" href="#####">CTA here</a>
+							</div>
+						</div>
+	          <a href="###" target="_blank" title="Title goes here">
+	            <img src="http://via.placeholder.com/1000x560" alt="Alternate description goes here" title="Title goes here">
+	          </a>
+	        </div>
+	        <div class="content-grid-wrapper">
+	          <div class="flex-item content">
+	            <h6>0/0/0000: 0:00PM-0:00PM</h6>
+	            <h4>The headline is lorem ipsum</h4>
+	            <h5>Somebody Namehere</h5>
+	            <div class="explainer"><p>Lorem ipsum dolor sit amet</p></div>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet.</p>
+	            <a class="cta" href="#####">CTA here</a>
+	          </div>
+	          <div class="flex-item links">
+	            <button onclick="window.open('###')">CTA here</button>
+	            <h6 style="text-align: center;">Lorem ipsum unum</h6>
+							<h5>Also see:</h5>
+							<p><a href="#####">Link to related resource</a></p>
+							<p><a href="#####">Link to related resource</a></p>
+							<p><a href="#####">Link to related resource</a></p>
+	          </div>
+	        </div>
+				</div>
+				<div class="grid-item">
+					<div class="image-wrapper">
+						<div class="image-wrapper-overlay">
+							<div class="image-wrapper-overlay-content">
+		            <h4>The headline is lorem ipsum</h4>
+		            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet.</p>
+								<a class="cta" href="#####">CTA here</a>
+							</div>
+						</div>
+						<a href="###" target="_blank" title="Title goes here">
+							<img src="http://via.placeholder.com/1000x560" alt="Alternate description goes here" title="Title goes here">
+						</a>
+					</div>
+					<div class="content-grid-wrapper">
+						<div class="flex-item content">
+							<h6>0/0/0000: 0:00PM-0:00PM</h6>
+							<h4>The headline is lorem ipsum</h4>
+							<h5>Somebody Namehere</h5>
+							<div class="explainer"><p>Lorem ipsum dolor sit amet</p></div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet.</p>
+							<a class="cta" href="#####">CTA here</a>
+						</div>
+						<div class="flex-item links">
+							<button onclick="window.open('###')">CTA here</button>
+							<h6 style="text-align: center;">Lorem ipsum unum</h6>
+							<h5>Also see:</h5>
+							<p><a href="#####">Link to related resource</a></p>
+							<p><a href="#####">Link to related resource</a></p>
+							<p><a href="#####">Link to related resource</a></p>
+						</div>
+					</div>
+				</div>
+	      </div>
+	    </div>
 		</div>
 	</div>
 </section>
