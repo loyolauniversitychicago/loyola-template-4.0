@@ -1,7 +1,5 @@
 /* CAROUSEL - REPO */
 
-
-
 .slick-initialized .slick-slide {
   display: block;
 }
@@ -40,13 +38,15 @@
   height: auto;
   font-size: 3rem;
   color: #ffffff;
-  background: none;
+  background: $gray-dark;
   outline: 0 !important;
 }
 .slide img {
   margin: 0 auto;
   width: auto;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 /* previous - next */
@@ -135,7 +135,7 @@ button.slick-next {
   font-size: 1rem;
   line-height: 1.75;
   outline: 0 !important;
-  background: none;
+  background: $bg-overlay;
 }
 .controls .slick-slider .slick-list,
 .controls .slick-slider .slick-track {
@@ -180,24 +180,29 @@ button.slick-next {
 .slick-dots li {
   position: relative;
   display: inline-block;
-  margin: 0 .35rem;
+  margin: 0 .35rem 0 .35rem;
   padding: 0;
-  width: 1rem;
-  height: 1rem;
+  width: .85rem;
+  height: .85rem;
 }
 .slick-dots li button {
-  display: block;
-  margin: 0;
+  display: inline-block;
+  float: left;
+  margin: 0 auto;
   padding: 0;
   width: .85rem;
   height: .85rem;
   font-size: 0;
   line-height: 0;
+  text-align: center;
   color: transparent;
   border: 0 !important;
   border-radius: 50%;
   background: #ffffff;
   cursor: pointer;
+}
+.slick-dots li button:after {
+  clear: both;
 }
 .slick-dots li button:hover {
   background: #febc18;
