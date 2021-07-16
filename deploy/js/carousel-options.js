@@ -3,5 +3,6 @@ $(".slides").slick({
   infinite: true,
   fade: true,
   speed: 500,
-  arrows: true
+  arrows: true,
+  adaptiveHeight: true
 })
