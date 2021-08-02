@@ -385,119 +385,237 @@
 			by ID
 			span9 (main-content-wrapper)
 			span12 (main-content-wrapper-full-width) -->
-			<div id="main-content-wrapper">
+			<div id="main-content-wrapper-full-width">
 				<section id="main-section-wrapper">
-					<h2>Standards</h2>
-					<section id="color-palette">
-	<h5>Color palette</h5>
-	<div class="padding-md"></div>
-	<div class="grid-wrapper-min-max" style="grid-template-columns: repeat(auto-fit, minmax(16%, 1fr)); grid-gap: 1rem;">
-	<!-- MAROON -->
-		<div class="grid-item grid-square" data-id="Maroon Extra Dark"></div>
-		<div class="grid-item grid-square maroon-dark" data-id="Maroon Dark"></div>
-		<div class="grid-item grid-square maroon" data-id="Maroon"></div>
-		<div class="grid-item grid-square" data-id="Maroon Light"></div>
-		<div class="grid-item grid-square" data-id="Maroon Extra Light"></div>
-	<!-- BRICK -->
-		<div class="grid-item grid-square" data-id="Brick Extra Dark"></div>
-		<div class="grid-item grid-square" data-id="Brick Dark"></div>
-		<div class="grid-item grid-square brick" data-id="Brick"></div>
-		<div class="grid-item grid-square" data-id="Brick Light"></div>
-		<div class="grid-item grid-square" data-id="Brick Extra Light"></div>
-	<!-- GOLD -->
-		<div class="grid-item grid-square gold-extra-dark" data-id="Gold Extra Dark"></div>
-		<div class="grid-item grid-square gold-dark" data-id="Gold Dark"></div>
-		<div class="grid-item grid-square gold" data-id="Gold"></div>
-		<div class="grid-item grid-square gold-light" data-id="Gold Light"></div>
-		<div class="grid-item grid-square gold-extra-light" data-id="Gold Extra Light"></div>
-	<!-- PATINA -->
-		<div class="grid-item grid-square" data-id="Patina Extra Dark"></div>
-		<div class="grid-item grid-square patina-dark" data-id="Patina Dark"></div>
-		<div class="grid-item grid-square patina" data-id="Patina"></div>
-		<div class="grid-item grid-square" data-id="Patina Light"></div>
-		<div class="grid-item grid-square" data-id="Patina Extra Light"></div>
-		<!-- OPUS -->
-		<div class="grid-item grid-square terracotta-extra-dark" data-id="Terracotta Extra Dark"></div>
-		<div class="grid-item grid-square terracotta-dark" data-id="Terracotta Dark"></div>
-		<div class="grid-item grid-square terracotta" data-id="Terracotta"></div>
-		<div class="grid-item grid-square terracotta-light" data-id="Terracotta Light"></div>
-		<div class="grid-item grid-square terracotta-extra-light" data-id="Terracotta Extra Light"></div>
-	<!-- OPUS -->
-		<div class="grid-item grid-square opus-extra-dark" data-id="Opus Extra Dark"></div>
-		<div class="grid-item grid-square opus-dark" data-id="Opus Dark"></div>
-		<div class="grid-item grid-square opus" data-id="Opus"></div>
-		<div class="grid-item grid-square" data-id="Opus Light"></div>
-		<div class="grid-item grid-square" data-id="Opus Extra Light"></div>
-	<!-- GRAY -->
-		<div class="grid-item grid-square gray-extra-dark" data-id="Gray Extra Dark"></div>
-		<div class="grid-item grid-square gray-dark" data-id="Gray Dark"></div>
-		<div class="grid-item grid-square gray" data-id="Gray"></div>
-		<div class="grid-item grid-square gray-light" data-id="Gray Light"></div>
-		<div class="grid-item grid-square gray-extra-light" data-id="Gray Extra Light"></div>
-	<!-- COPPER -->
-		<div class="grid-item grid-square copper-extra-dark" data-id="Copper Extra Dark"></div>
-		<div class="grid-item grid-square copper-dark" data-id="Copper Dark"></div>
-		<div class="grid-item grid-square copper" data-id="Copper"></div>
-		<div class="grid-item grid-square copper-light" data-id="Copper Light"></div>
-		<div class="grid-item grid-square" data-id="Copper Extra Light"></div>
-	<!-- BG-OVERLAY -->
-		<div class="grid-item grid-square bg-overlay-extra-dark" data-id="Overlay Extra Dark"><p class="bg">rgba(0,0,0,.85)</p></div>
-		<div class="grid-item grid-square bg-overlay-dark" data-id="Overlay Dark"><p class="bg">rgba(0,0,0,.7)</p></div>
-		<div class="grid-item grid-square bg-overlay" data-id="Overlay"><p class="bg">rgba(0,0,0,.5)</p></div>
-		<div class="grid-item grid-square bg-overlay-light" data-id="Overlay Light"><p class="bg">rgba(0,0,0,.35)</p></div>
-		<div class="grid-item grid-square bg-overlay-extra-light" data-id="Overlay Extra Light"><p class="bg">rgba(0,0,0,.2)</p></div>
+					<div class="padding-md"></div>
+					<div class="container">
+						<h2>T4 Variables</h2>
+					</div>
+					<div class="padding-md"></div>
+					<!-- container - variables -->
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Container Variables</h5></div>
+					</div>
+					<!-- variables - container -->
+<!-- image-caption - container - 100 -->
+<section id="panel-image-caption" class="container-fluid">
+  <div class="container container-100">
+  	<img src="http://via.placeholder.com/1800x435"/>
+  	<div class="grid-wrapper-min-max">
+  		<div class="grid-item">
+  			<div class="content-caption sans-serif">
+  				<h4>Subhead here lorem ipsum unum</h4>
+  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non.</p>
+  				<a class="cta" href="###">CTA here here</a>
+  			</div>
+  		</div>
+  	</div>
+    <hr class="padding-divider"></hr>
+    <footnote>Container option 100%. Applied to "container". Must add additional class container-100 - "container container-100"</footnote>
+  </div>
+</section>
+
+<div class="padding-md"></div>
+
+<!-- image-caption - container - standard -->
+<section id="panel-image-caption" class="container-fluid">
+  <div class="container">
+  	<img src="http://via.placeholder.com/1800x435"/>
+  	<div class="grid-wrapper-min-max">
+  		<div class="grid-item">
+  			<div class="content-caption sans-serif">
+  				<h4>Subhead here lorem ipsum unum</h4>
+  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non.</p>
+  				<a class="cta" href="###">CTA here here</a>
+  			</div>
+  		</div>
+  	</div>
+    <hr class="padding-divider"></hr>
+    <footnote>Container option defaut - container. No class added.</footnote>
+  </div>
+</section>
+
+<div class="padding-md"></div>
+
+<!-- image-caption - container - 50 -->
+<section id="panel-image-caption" class="container-fluid">
+  <div class="container container-50">
+  	<img src="http://via.placeholder.com/1800x435"/>
+  	<div class="grid-wrapper-min-max">
+  		<div class="grid-item">
+  			<div class="content-caption sans-serif">
+  				<h4>Subhead here lorem ipsum unum</h4>
+  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non.</p>
+  				<a class="cta" href="###">CTA here here</a>
+  			</div>
+  		</div>
+  	</div>
+  <hr class="padding-divider"></hr>
+  <footnote>Container option 50%. Applied to "container". Must add additional class container-50 - "container container-50"</footnote>
+  </div>
+</section>
+
+					<div class="padding-md"></div>
+					<!-- background - variables -->
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Background Variables</h5></div>
+					</div>
+					<!-- variables - background -->
+<section class="container-fluid">
+	<div class="container">
+		<div class="padding-md"></div>
+		<h5>Gray Extra Light</h5>
+		<div style="height: 10rem;" class="container-fluid bg-gray-extra-light"></div>
+		<hr class="padding-divider">
+		</hr>
+		<footnote>Background option. Applied to "container-fluid". Must add class "bg-gray-extra-light"</footnote>
+		<div class="padding-md"></div>
+		<h5>Terracotta Light</h5>
+		<div style="height: 10rem;" class="container-fluid bg-terracotta-extra-light"></div>
+		<hr class="padding-divider">
+		</hr>
+		<footnote>Background option. Applied to "container-fluid". Must add class "bg-terracotta-extra-light"</footnote>
+		<div class="padding-md"></div>
+		<h5>Maroon</h5>
+		<div style="height: 10rem;" class="container-fluid bg-maroon"></div>
+		<hr class="padding-divider">
+		</hr>
+		<footnote>Background option. Applied to "container-fluid". Must add class "bg-maroon"</footnote>
+		<div class="padding-md"></div>
+		<h5>Gold</h5>
+		<div style="height: 10rem;" class="container-fluid bg-gold"></div>
+		<hr class="padding-divider">
+		</hr>
+		<footnote>Background option. Applied to "container-fluid". Must add class "bg-gold"</footnote>
+		<div class="padding-md"></div>
+		<h5>Overlay</h5>
+		<div style="height: 10rem;" class="container-fluid bg-overlay"></div>
+		<hr class="padding-divider">
+		</hr>
+		<footnote>Background option. Applied to "container-fluid". Must add class "bg-overlay"</footnote>
+		<div class="padding-md"></div>
+		<h5>No Background</h5>
+		<div style="height: 10rem; border: dashed 1px #cccccc;" class="container-fluid bg-none"></div>
+		<hr class="padding-divider">
+		</hr>
+		<footnote>Background option. Applied to "container-fluid". Must add class "bg-none"</footnote>
 	</div>
 </section>
 
-<div class="padding-lg"></div>
-
-<section>
-	<h5>
-		Backgrounds - <span style="font-family: 'Antenna Light', sans-serif;">Panels only</span>
-	</h5>
-	<div class="padding-md"></div>
-	<h5>Gray Extra Light</h5>
-	<div style="height: 10rem;" class="container-fluid bg-gray-extra-light"></div>
-	<hr class="padding-divider">
-	</hr>
-	<footnote>Background option. Applied to "container-fluid". Must add class "bg-gray-extra-light"</footnote>
-	<div class="padding-md"></div>
-	<h5>Terracotta Light</h5>
-	<div style="height: 10rem;" class="container-fluid bg-terracotta-extra-light"></div>
-	<hr class="padding-divider">
-	</hr>
-	<footnote>Background option. Applied to "container-fluid". Must add class "bg-terracotta-extra-light"</footnote>
-	<div class="padding-md"></div>
-	<h5>Maroon</h5>
-	<div style="height: 10rem;" class="container-fluid bg-maroon"></div>
-	<hr class="padding-divider">
-	</hr>
-	<footnote>Background option. Applied to "container-fluid". Must add class "bg-maroon"</footnote>
-	<div class="padding-md"></div>
-	<h5>Gold</h5>
-	<div style="height: 10rem;" class="container-fluid bg-gold"></div>
-	<hr class="padding-divider">
-	</hr>
-	<footnote>Background option. Applied to "container-fluid". Must add class "bg-gold"</footnote>
-	<div class="padding-md"></div>
-	<h5>Overlay</h5>
-	<div style="height: 10rem;" class="container-fluid bg-overlay"></div>
-	<hr class="padding-divider">
-	</hr>
-	<footnote>Background option. Applied to "container-fluid". Must add class "bg-overlay"</footnote>
-	<div class="padding-md"></div>
-	<h5>No Background</h5>
-	<div style="height: 10rem; border: dashed 1px #cccccc;" class="container-fluid bg-none"></div>
-	<hr class="padding-divider">
-	</hr>
-	<footnote>Background option. Applied to "container-fluid". Must add class "bg-none"</footnote>
+					<div class="padding-md"></div>
+					<!-- container - variables -->
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Button Variables</h5></div>
+					</div>
+					<!-- variables - buttons -->
+<section class="container-fluid">
+  <div class="container container-50">
+  	<div class="grid-wrapper-min-max one-column">
+  		<div class="grid-item">
+        <h5>Button maroon</h5>
+  			<div class="button-maroon">
+  				<button>Test</button>
+  			</div>
+        <div class="padding-md"></div>
+        <div>
+          <h5>Button default</h5>
+  				<button>Test</button>
+  			</div>
+        <div class="padding-md"></div>
+  			<div class="button-gold">
+          <h5>Button gold</h5>
+  				<button>Test</button>
+  			</div>
+        <div class="padding-md"></div>
+  			<div class="button-patina">
+          <h5>Button patina</h5>
+  				<button>Test</button>
+  			</div>
+  		</div>
+  	</div>
+    <hr class="padding-divider"></hr>
+    <footnote>Add class to wrapper. Classes are button-maroon, button-gold, button-patina.</footnote>
+  </div>
 </section>
 
+					<div class="padding-md"></div>
+					<!-- padding - variables -->
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Padding Variables</h5></div>
+					</div>
+					<!-- variables - padding -->
+<section class="container-fluid">
+  <div class="container">
+  	<div class="grid-wrapper-min-max four-column">
+  		<div class="grid-item">
+        <h5>Padding large</h5>
+  			<div class="padding-lg bg-maroon" style="display: block; height: 10rem;">
+  				<div class="bg-gold" style="display: block; width: 100%; height: 100%;"></div>
+  			</div>
+        <hr class="padding-divider"></hr>
+        <footnote>Add class .padding-lg to wrapper.</footnote>
+      </div>
+      <div class="grid-item">
+        <h5>Padding medium</h5>
+  			<div class="padding-md bg-maroon" style="display: block; height: 10rem;">
+  				<div class="bg-gold" style="display: block; width: 100%; height: 100%;"></div>
+  			</div>
+        <hr class="padding-divider"></hr>
+        <footnote>Add class .padding-md to wrapper.</footnote>
+      </div>
+      <div class="grid-item">
+        <h5>Padding small</h5>
+  			<div class="padding-sm bg-maroon" style="display: block; height: 10rem;">
+  				<div class="bg-gold" style="display: block; width: 100%; height: 100%;"></div>
+  			</div>
+        <hr class="padding-divider"></hr>
+        <footnote>Add class .padding-sm to wrapper.</footnote>
+      </div>
+      <div class="grid-item">
+        <h5>Padding extra small</h5>
+  			<div class="padding-xsm bg-maroon" style="display: block; height: 10rem;">
+  				<div class="bg-gold" style="display: block; width: 100%; height: 100%;"></div>
+  			</div>
+        <hr class="padding-divider"></hr>
+        <footnote>Add class .padding-lg to wrapper.</footnote>
+      </div>
+    </div>
+  </div>
+</section>
+
+					<div class="padding-md"></div>
+					<!-- padding - variables -->
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Grid Gap Variables</h5></div>
+					</div>
+					<!-- variables - grid gap large -->
+<section class="container-fluid">
+  <div class="container">
+    <h5>Grid gap large</h5>
+  	<div class="grid-wrapper-min-max four-column grid-gap-lg">
+  		<div class="grid-item">
+  			<div class="bg-gray-extra-light" style="display: block; height: 10rem;"></div>
+      </div>
+      <div class="grid-item">
+  			<div class="bg-gray-extra-light" style="display: block; height: 10rem;"></div>
+      </div>
+      <div class="grid-item">
+  			<div class="bg-gray-extra-light" style="display: block; height: 10rem;"></div>
+      </div>
+      <div class="grid-item">
+  			<div class="bg-gray-extra-light" style="display: block; height: 10rem;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+					<div class="padding-md"></div>
 				</section>
+				<!--
 				<aside id="main-aside-wrapper">
 					<h2>Aside</h2>
-					<!-- sidebar content here -->
 				</aside>
+				-->
 			</div>
 			<aside id="social-icon-bar" class="social-not-fixed">
 				<!-- social-media-bar -->

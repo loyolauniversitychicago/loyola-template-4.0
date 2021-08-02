@@ -14,10 +14,17 @@
   width: 100%;
 }
 
+.grid-wrapper-min-max.grid-gap-lg { grid-gap: 3rem !important; }
+
+.grid-wrapper-min-max.grid-gap-md { grid-gap: 2rem !important; }
+
+.grid-wrapper-min-max.grid-gap-sm { grid-gap: 1rem !important; }
+
+.grid-wrapper-min-max.grid-gap-none { grid-gap: 0rem !important; }
+
 /* no gap - use for image grids */
 
-.grid-wrapper-no-gap {
-  grid-gap: 0px; }
+.grid-wrapper-no-gap { grid-gap: 0px; }
 
 /* grid columns */
 

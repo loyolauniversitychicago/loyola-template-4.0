@@ -24,15 +24,49 @@
 			by ID
 			span9 (main-content-wrapper)
 			span12 (main-content-wrapper-full-width) -->
-			<div id="main-content-wrapper">
+			<div id="main-content-wrapper-full-width">
 				<section id="main-section-wrapper">
-					<h2>Standards</h2>
-					@@include('./partials/standards/luc-color-palette.html')
+					<div class="padding-md"></div>
+					<div class="container">
+						<h2>T4 Variables</h2>
+					</div>
+					<div class="padding-md"></div>
+					<!-- container - variables -->
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Container Variables</h5></div>
+					</div>
+					@@include('./partials/t4-variables/t4-variables-container.html')
+					<div class="padding-md"></div>
+					<!-- background - variables -->
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Background Variables</h5></div>
+					</div>
+					@@include('./partials/t4-variables/t4-variables-background.html')
+					<div class="padding-md"></div>
+					<!-- container - variables -->
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Button Variables</h5></div>
+					</div>
+					@@include('./partials/t4-variables/t4-variables-buttons.html')
+					<div class="padding-md"></div>
+					<!-- padding - variables -->
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Padding Variables</h5></div>
+					</div>
+					@@include('./partials/t4-variables/t4-variables-padding.html')
+					<div class="padding-md"></div>
+					<!-- padding - variables -->
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Grid Gap Variables</h5></div>
+					</div>
+					@@include('./partials/t4-variables/t4-variables-grid-gap.html')
+					<div class="padding-md"></div>
 				</section>
+				<!--
 				<aside id="main-aside-wrapper">
 					<h2>Aside</h2>
-					<!-- sidebar content here -->
 				</aside>
+				-->
 			</div>
 			<aside id="social-icon-bar" class="social-not-fixed">
 				@@include('./partials/framework/luc-social-media-bar.html')
