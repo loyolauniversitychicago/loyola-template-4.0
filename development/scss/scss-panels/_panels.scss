@@ -8,11 +8,47 @@
 .container-fluid.bg-gold { background: $gold; }
 .container-fluid.bg-none { background: none; }
 
-.bg-gray-extra-light { background: $gray-extra-light; }
-.bg-terracotta-extra-light { background: $terracotta-extra-light; }
-.bg-maroon { background: $maroon; }
-.bg-gold { background: $gold; }
-.bg-none { background: none; }
+.bg-gray-extra-light { background: $gray-extra-light !important; }
+.bg-terracotta-extra-light { background: $terracotta-extra-light !important; }
+.bg-maroon { background: $maroon !important; }
+.bg-gold { background: $gold !important; }
+.bg-none { background: none !important; }
+
+/* bg-maroon added - nested elements */
+
+.bg-maroon h6, .bg-maroon h5, .bg-maroon h4, .bg-maroon p { color: $gray-extra-light !important; }
+
+.bg-maroon a.cta {
+  color: $gold !important;
+  &:hover {
+    color: $opus !important;
+  }
+}
+
+/* card-image-overlay bg-maroon added */
+
+#card-image-overlay .content-grid-wrapper.bg-maroon .flex-item.links { background: $maroon !important; }
+
+#card-image-overlay .content-grid-wrapper.bg-maroon .flex-item.links h6,
+#card-image-overlay .content-grid-wrapper.bg-maroon .flex-item.links h5,
+#card-image-overlay .content-grid-wrapper.bg-maroon .flex-item.links p,
+#card-image-overlay .content-grid-wrapper.bg-maroon .flex-item.links p a {
+  color: $gray-extra-light !important;
+}
+
+#card-image-overlay .content-grid-wrapper.bg-maroon .flex-item.links p a {
+  &:hover {
+    color: $gold !important;
+  }
+}
+
+#card-image-overlay .content-grid-wrapper.bg-maroon .flex-item.links button {
+  background: $gold !important;
+  color: black;
+  &:hover {
+    background: $opus !important;
+  }
+}
 
 
 a {

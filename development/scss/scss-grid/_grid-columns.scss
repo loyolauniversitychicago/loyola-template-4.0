@@ -14,18 +14,6 @@
   width: 100%;
 }
 
-.grid-wrapper-min-max.grid-gap-lg { grid-gap: 3rem !important; }
-
-.grid-wrapper-min-max.grid-gap-md { grid-gap: 2rem !important; }
-
-.grid-wrapper-min-max.grid-gap-sm { grid-gap: 1rem !important; }
-
-.grid-wrapper-min-max.grid-gap-none { grid-gap: 0rem !important; }
-
-/* no gap - use for image grids */
-
-.grid-wrapper-no-gap { grid-gap: 0px; }
-
 /* grid columns */
 
 .grid-wrapper-min-max.one-column {
@@ -49,51 +37,6 @@
 .grid-wrapper-min-max.three-column-nine-column { grid-template-columns: 25% auto; }
 .grid-wrapper-min-max.nine-column-three-column { grid-template-columns: auto 25%; }
 
-/* grid gap */
-
-.grid-gap-none {
-  grid-gap: 0;
-}
-.grid-gap-sm {
-  grid-gap: 1rem;
-}
-.grid-gap-md {
-  grid-gap: 2rem;
-}
-.grid-gap-lg {
-  grid-gap: 3rem;
-}
-
-/* grid column gap */
-
-.grid-column-gap-none {
-  grid-gap: 0;
-}
-.grid-column-gap-sm {
-  grid-gap: 1rem;
-}
-.grid-column-gap-md {
-  grid-gap: 2rem;
-}
-.grid-column-gap-lg {
-  grid-gap: 3rem;
-}
-
-/* grid row gap */
-
-.grid-row-gap-none {
-  grid-gap: 0;
-}
-.grid-row-gap-sm {
-  grid-gap: 1rem;
-}
-.grid-row-gap-md {
-  grid-gap: 2rem;
-}
-.grid-row-gap-lg {
-  grid-gap: 3rem;
-}
-
 @media only screen and (max-width: 768px) {
 .grid-wrapper-min-max.two-column,
 .grid-wrapper-min-max.three-column,
@@ -108,3 +51,34 @@
   width: 100%;
 }
 }
+
+/* grid gap */
+
+.grid-wrapper-min-max.grid-gap-lg { grid-gap: 3rem; }
+
+.grid-wrapper-min-max.grid-gap-md { grid-gap: 2rem; }
+
+.grid-wrapper-min-max.grid-gap-sm { grid-gap: 1rem; }
+
+.grid-wrapper-min-max.grid-gap-none { grid-gap: 0rem; }
+
+/* no gap - optional - use for image grids */
+
+.grid-wrapper-no-gap { grid-gap: 0px; }
+
+/* grid row gap */
+
+.grid-wrapper-min-max.grid-gap-lg.grid-row-gap-lg,
+.grid-wrapper-min-max.grid-gap-md.grid-row-gap-lg,
+.grid-wrapper-min-max.grid-gap-sm.grid-row-gap-lg,
+.grid-wrapper-min-max.grid-gap-none.grid-row-gap-lg { grid-row-gap: 3rem; }
+
+.grid-wrapper-min-max.grid-gap-lg.grid-row-gap-md,
+.grid-wrapper-min-max.grid-gap-md.grid-row-gap-md,
+.grid-wrapper-min-max.grid-gap-sm.grid-row-gap-md,
+.grid-wrapper-min-max.grid-gap-none.grid-row-gap-md { grid-row-gap: 2rem; }
+
+.grid-wrapper-min-max.grid-gap-lg.grid-row-gap-sm,
+.grid-wrapper-min-max.grid-gap-md.grid-row-gap-sm,
+.grid-wrapper-min-max.grid-gap-sm.grid-row-gap-sm,
+.grid-wrapper-min-max.grid-gap-none.grid-row-gap-sm { grid-row-gap: 1rem; }
