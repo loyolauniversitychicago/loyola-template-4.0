@@ -52,6 +52,54 @@
   display: none;
 }
 
+/* card image-wrapper-circle */
+
+.grid-wrapper-min-max .grid-item .image-wrapper.image-wrapper-circle {
+  margin: 0 auto;
+  width: 55%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.grid-wrapper-min-max .grid-item .image-wrapper.image-wrapper-circle a {
+  outline: none;
+  outline-offset: 0;
+}
+
+.grid-wrapper-min-max .grid-item .image-wrapper.image-wrapper-circle a img {
+  margin: 0;
+}
+
+.content-grid-wrapper.image-wrapper-circle {
+  padding: 2rem 2rem 3rem;
+  .flex-item.content {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    h4 {
+      margin: 0 0 .5rem;
+    }
+    p {
+      margin-bottom: .5rem;
+    }
+    h6, h5, .explainer p, a.cta {
+      display: none;
+    }
+  }
+}
+
+.grid-wrapper-min-max .grid-item .content-grid-wrapper.image-wrapper-circle .flex-item.links {
+  display: block;
+  .button-maroon {
+    margin: 0 auto;
+    width: 50%;
+  }
+  h6, h5, p, p a {
+    display: none;
+  }
+}
+
+
 /* card overlay */
 
 #card-image-overlay .image-wrapper {
@@ -140,7 +188,7 @@
     font-family: 'Arial', sans-serif;
     font-weight: 100;
     line-height: 1.65;
-    color: $black !important;
+    color: $gray-dark !important;
     text-align: left;
   }
 }
@@ -284,9 +332,10 @@ button:focus {
 
 .grid-wrapper-min-max.number h5,
 .grid-wrapper-min-max.number-l h5 {
-  font-family: 'Antenna', sans-serif !important;
+  font-family: 'Antenna Condensed Light', sans-serif !important;
   font-size: 1rem;
   font-weight: normal;
+  letter-spacing: .05rem;
 }
 
 /* numbers medium */

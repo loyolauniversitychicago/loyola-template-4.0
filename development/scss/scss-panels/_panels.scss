@@ -845,6 +845,11 @@ li#previous-pages, li#next-pages {
 #panel-events-news .content-columns-varied .grid-wrapper-min-max .grid-item:first-of-type {
   border-left: none !important;
 }
+#panel-events-news {
+  h4 {
+    font-size: 1.75rem;
+  }
+}
 
 .calendar-card {
   grid-column: col 2 / span 2;
