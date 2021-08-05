@@ -27,7 +27,20 @@ nav#secondary {
 		border: none;
 		button.minimalist-accordion__header,
 		button.minimalist-noanim-accordion__header,
-		button.minimalist-css-accordion__header {
+		button.minimalist-css-accordion__header, {
+			padding: 1.125rem .5rem 1rem;
+			font-size: .85rem;
+			border: none;
+			&:hover {
+				color: $black !important;
+				background: darken($gray-extra-light, 10%) !important;
+			}
+		}
+	}
+	a {
+		.minimalist-accordion__header,
+		.minimalist-noanim-accordion__header,
+		.minimalist-css-accordion__header, {
 			padding: 1.125rem .5rem 1rem;
 			font-size: .85rem;
 			border: none;

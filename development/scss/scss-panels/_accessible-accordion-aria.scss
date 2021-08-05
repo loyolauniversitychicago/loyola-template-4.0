@@ -101,6 +101,8 @@ button.minimalist-css-accordion__header:focus {
 
 /* accordion panel - content */
 
+
+nav#secondary .minimalist-accordion__panel,
 .minimalist-accordion__panel {
   display: block;
   margin: 2em;
@@ -119,7 +121,8 @@ button.minimalist-css-accordion__header:focus {
 
 /* This is the hidden state */
 
-[aria-hidden=true].minimalist-accordion__panel {
+[aria-hidden=true].minimalist-accordion__panel,
+nav#secondary [aria-hidden=true].minimalist-accordion__panel {
   display: block;
   margin: 0;
   padding: 0;

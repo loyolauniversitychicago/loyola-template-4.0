@@ -4,31 +4,31 @@
   background: none;
 }
 .padding-lg {
-  padding: 3rem;
+  padding: 3rem !important;
   @include tablet-portrait {
-    padding: 2rem;
+    padding: 2rem !important;
   }
   @include phone-portrait {
-    padding: 1rem;
+    padding: 1rem !important;
   }
 }
 
 .padding-md {
-  padding: 2rem;
+  padding: 2rem !important;
   @include tablet-portrait {
-    padding: 1rem;
+    padding: 1rem !important;
   }
   @include phone-portrait {
-    padding: 1rem;
+    padding: 1rem !important;
   }
 }
 
 .padding-sm {
-  padding: 1rem;
+  padding: 1rem !important;
 }
 
 .padding-xsm {
-  padding: .5rem;
+  padding: .5rem !important;
 }
 
 hr .padding-divider{
