@@ -20,17 +20,17 @@
 /* line-height baseline */
 :root body {
   --baseline: 1.2;
-  line-height: calc(var(--baseline);
+  line-height: calc(var(--baseline));
 }
 
 :root body header, :root body footer {
   --baseline: 1;
-  line-height: calc(var(--baseline);
+  line-height: calc(var(--baseline));
 }
 
 /* rvr stands for responsive vertical rhythm */
 @function rvr($multiple) {
-  @return calc(var(--baseline) * #{$multiple} * 1rem;
+  @return calc(var(--baseline) * #{$multiple} * 1rem);
 }
 
 /* vertical rhythm */
