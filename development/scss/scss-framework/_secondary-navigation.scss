@@ -8,7 +8,7 @@ nav#secondary {
 	a, h4 {
 		display: block;
 		margin: 0;
-		padding: 1.125rem .5rem 1rem;
+		padding: 1.25rem .5rem 1rem;
 		width: 100%;
 		font-family: 'Antenna', sans-serif;
 		font-size: .85rem;
@@ -77,4 +77,63 @@ nav#secondary .minimalist-accordion__panel {
 	}
 }
 
+/* update */
+nav#secondary a {
+	&:hover {
+		color: $maroon !important;
+	}
+	button {
+		&:hover {
+			color: $maroon !important;
+		}
+	}
+}
+nav#secondary a {
+	button {
+		padding: 0;
+		margin: 0;
+		font-family: 'Antenna', sans-serif;
+		font-size: .85rem;
+		text-align: left;
+		color: $black !important;
+		border: 0 !important;
+		&:hover {
+			color: $maroon;
+			background: none;
+			outline: none;
+		}
+		&:focus {
+			outline: none;
+		}
+		::after {
+			margin-top: -2rem;
+		}
+	}
+}
+nav#secondary .minimalist-accordion__header::after,
+nav#secondary .minimalist-noanim-accordion__header::after,
+nav#secondary .minimalist-css-accordion__header::after {
+	margin-top: -1.125rem;
+	transform: rotate(0deg);
+}
+nav#secondary .minimalist-accordion__header[aria-expanded="true"],
+nav#secondary .minimalist-noanim-accordion__header::after,
+nav#secondary .minimalist-css-accordion__header::after {
+	transform: rotate(90deg) !important;
+	background-image: none;
+}
+nav#secondary .minimalist-accordion__panel {
+	margin: 0 !important;
+	background: darken($gray-light,10%) !important;
+}
+// nav#secondary .minimalist-accordion__header,
+// nav#secondary .minimalist-noanim-accordion__header,
+// nav#secondary .minimalist-css-accordion__header {
+// 	&[aria-expanded="true"] {
+//         &:before,
+//         &:after {
+// 		transform: rotate(90deg) !important;
+// }
+// }
+// }
 /* CSS - END */
