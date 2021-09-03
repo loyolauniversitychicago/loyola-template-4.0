@@ -1,5 +1,11 @@
 /* TYPOGRAPHY */
 
+/* overrides */
+
+.center { text-align: center; }
+
+.uppercase { text-transform: uppercase; }
+
 /* base typography */
 
 html { font-size: 100%; } /* matches browsers default */
@@ -41,15 +47,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: rvr(.65);
 }
 
-h1 {
+h1,h2 {
   font-size: 3.75rem;
   line-height: rvr(3.75);
-}
-
-h2 {
-  font-size: 2.5rem;
-  line-height: rvr(2.5);
-  text-transform: uppercase;
 }
 
 h3 {
@@ -82,13 +82,13 @@ h5 {
 
 h6 {
   margin-bottom: rvr(.5);
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: rvr(1.35);
   letter-spacing: 0rem;
   text-transform: uppercase;
 }
 
-.category-light h6 {
+h6.category-light {
   font-family: 'Antenna Condensed Light', sans-serif;
 }
 

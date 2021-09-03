@@ -33,6 +33,7 @@ nav#main {
   position: sticky;
   top: 0px;
 	background-color: $gray-dark;
+	box-shadow: 0 0 .35rem rgba(0,0,0,.35);
 	z-index: 10000;
 }
 
@@ -57,8 +58,9 @@ ul[role="menubar"] {
 		color: $gray-extra-light !important;
 		border: none !important;
 		border-radius: 0;
+		background: $gray-dark;
 		&:hover, &:focus {
-			background-color: darken($gray,30%) !important;
+			background: darken($gray,30%) !important;
 		}
 		&::after {
 			display: inline-block;

@@ -56,9 +56,9 @@ function sassGrid() {
 function sassTypography() {
     return gulp
     .src(config.devDir + '/scss/scss-typography/**/*.scss')
-    //.pipe(sourcemaps.init())  // Process the original sources
+    .pipe(sourcemaps.init())  // Process the original sources
 		.pipe(sass())
-		//.pipe(sourcemaps.write()) // Add the map to modified source.
+		.pipe(sourcemaps.write()) // Add the map to modified source.
     .pipe(gulp.dest(config.deployDir + '/css'));
     cb();
 };
