@@ -113,17 +113,6 @@ p, .explainer p {
   word-spacing: .075rem;
 }
 
-.intro-paragraph p:first-child::first-letter {
-  display: inline !important;
-  float: left;
-  margin-top: .125rem;
-  margin-right: .5rem;
-  color: $maroon;
-  font-family: 'Antenna Condensed Black', sans-serif;
-  font-size: 4.25rem;
-  line-height: rvr(3.5);
-}
-
 .caption p {
   font-family: 'Antenna Condensed Bold', sans-serif;
   font-size: 1rem;

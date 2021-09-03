@@ -283,17 +283,6 @@ p, .explainer p {
   word-spacing: 0.075rem;
 }
 
-.intro-paragraph p:first-child::first-letter {
-  display: inline !important;
-  float: left;
-  margin-top: 0.125rem;
-  margin-right: 0.5rem;
-  color: #8d0034;
-  font-family: "Antenna Condensed Black", sans-serif;
-  font-size: 4.25rem;
-  line-height: calc(var(--baseline) * 3.5 * 1rem);
-}
-
 .caption p {
   font-family: "Antenna Condensed Bold", sans-serif;
   font-size: 1rem;

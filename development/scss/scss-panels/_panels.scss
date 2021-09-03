@@ -28,7 +28,6 @@
 /* card-image-overlay bg-maroon added */
 
 #card-image-overlay .content-grid-wrapper.bg-maroon .flex-item.links { background: $maroon !important; }
-
 #card-image-overlay .content-grid-wrapper.bg-maroon .flex-item.links h6,
 #card-image-overlay .content-grid-wrapper.bg-maroon .flex-item.links h5,
 #card-image-overlay .content-grid-wrapper.bg-maroon .flex-item.links p,
@@ -49,7 +48,6 @@
     background: $opus !important;
   }
 }
-
 
 a {
   transition: color .3s ease-in-out;
@@ -205,20 +203,12 @@ tr:nth-child(odd) { background: $gray-extra-light; }
       margin-bottom: 0;
       font-size: 1.5rem;
       line-height: rvr(2);
+      color: $gray-light;
       @include tablet-portrait {
         margin-bottom: .5rem;
         font-size: 1.125rem;
         line-height: 1.85rem;
       }
-    }
-    .intro-paragraph p:first-child::first-letter {
-      display: inline !important;
-      margin: 0;
-      padding: 0;
-      font-family: inherit;
-      font-size: inherit;
-      line-height: inherit;
-      color: inherit;
     }
     a.cta {
       display: inline;
@@ -352,8 +342,8 @@ button.content-activate-symbol {
   right: 2rem;
   bottom: 1.25rem;
   padding: 0;
-  width: 2.75rem !important;
-  height: 2.75rem !important;
+  width: 2.5rem !important;
+  height: 2.5rem !important;
   font-family: 'Arial', sans-serif;
   font-weight: normal;
   font-size: 2rem;
@@ -364,8 +354,8 @@ button.content-activate-symbol {
   background-color: $bg-overlay;
   background-image: url('../images/ui-arrow-up@2x.png');
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 20px;
+  background-position: .5rem .5rem;
+  background-size: 1.125rem;
   a {
     color: $gray-extra-light;
   }
@@ -376,8 +366,8 @@ button.content-activate-symbol {
     background-color: $bg-overlay-dark !important;
     background-image: url('../images/ui-arrow-up@2x.png');
     background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 20px;
+    background-position: .5rem .5rem;
+    background-size: 1.125rem;
     cursor: default;
   }
   &:focus {
@@ -388,7 +378,8 @@ button.content-activate-symbol {
 button#content-activate-symbol-overlay.content-activate-symbol.active {
     transform: rotate(180deg) !important;
     background-image: url('../images/ui-arrow-up@2x.png') !important;
-    background-position: 0% 0%;
+    background-position: .5rem .5rem;
+    background-size: 1.125rem;
   }
   // &:active {
   //   border-radius: 1.5em !important;
@@ -413,10 +404,10 @@ button#content-activate-symbol-overlay.content-activate-symbol.active {
 /* specifically for content-image-overlay - ACTIVE - symbol is arrow down - rotate 0 */
 .content-image-overlay.active button.content-activate-symbol.active {
   background-repeat: no-repeat;
-  background-position: -50% -50%;
-  background-size: 20px;
+  background-position: .5rem .5rem;
+  background-size: 1.125rem;
   transition: transform .5s;
-  transform: rotate(0deg);
+  transform: rotate(180deg);
 }
 button.content-activate-symbol:focus, button.content-activate-symbol.active:focus {
   outline: 3px solid #febc18;
@@ -426,10 +417,10 @@ button.content-activate-symbol.active {
   transition: transform .5s;
   transform: rotate(180deg);
   background-color: rgba(0,0,0,.85);
-  background-image: url(/media/luc-template-2020/images/ui-arrow-up@2x.png);
+  background-image: url('../images/ui-arrow-up@2x.png');
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 20px;
+  background-position: .5rem .5rem;
+  background-size: 1.125rem;
   cursor: pointer;
 }
 /* specifically for + plus symbol */
@@ -680,20 +671,30 @@ button.modaal-close {
 
 /* video embed */
 
+#panel-video-embed {
+  background: $gray-dark;
+}
+
 #panel-video-embed .content-caption {
   padding: 2rem;
-  background: $gray-extra-light;
+  background: $gray-extra-dark;
   h4 {
     margin-bottom: rvr(.5);
     font-size: 1.65rem;
     line-height: rvr(1.65);
+  }
+  h4, p {
+    color: $gray-light;
+  }
+  a {
+    color: #febc18;
   }
 }
 
 .video-wrapper {
     position: relative;
     display: block;
-    margin: 0 0 2rem;
+    margin: 0;
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
