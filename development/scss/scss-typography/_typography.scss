@@ -17,7 +17,7 @@ body {
 }
 
 p, ul, ol {
-  color: $gray-dark;
+  color: lighten($gray-extra-dark,5%);
 }
 
 a {
@@ -230,7 +230,7 @@ ol li::before {
 }
 
 #main-content-wrapper img {
-  margin: 0;
+  margin: 0 0 1.5rem;
   width: 100%;
   height: auto;
 }

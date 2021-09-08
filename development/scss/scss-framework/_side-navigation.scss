@@ -38,6 +38,7 @@ nav#main-mobile .menu-bar {
   width: 40px;
   height: 45px;
   border: none !important;
+  background: none;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -157,7 +158,6 @@ span.menu-text {
 }
 
 #side-nav {
-  background-color: #333;
 	position: fixed;
   top: 0;
 	bottom: 0;
@@ -194,6 +194,16 @@ body.active #side-nav {
 	padding: 20px 20px 150px 20px;
 }
 
+#global-ctas > button {
+  width: 100%;
+  &:hover {
+    color: darken($brick,5%);
+    outline-style: solid;
+    outline-offset: -3px;
+    outline: 3px solid #febc18;
+  }
+}
+
 /* The navigation menu links */
 #side-nav a,
 #side-nav h4.minimalist-accordion__title {
@@ -211,6 +221,7 @@ body.active #side-nav {
     font-size: .95rem !important;
     color: $gray-light !important;
     border-bottom: none !important;
+    width: 100%;
   }
   &:focus {
     outline-style: solid;
@@ -219,18 +230,31 @@ body.active #side-nav {
   }
   &:hover {
     background: rgba(128, 128, 128, 0.3);
+    background: darken($gray-extra-dark,6%) !important;
   }
+}
+
+#side-nav button.minimalist-accordion__header:hover,
+#side-nav button.minimalist-noanim-accordion__header:hover,
+#side-nav button.minimalist-css-accordion__header:hover,
+#side-nav button.minimalist-accordion__header:focus,
+#side-nav button.minimalist-noanim-accordion__header:focus,
+#side-nav button.minimalist-css-accordion__header:focus {
+  background: darken($gray-extra-dark,3%) !important;
 }
 
 #side-nav h4.minimalist-accordion__title {
   padding: 0;
   :after {
-    margin-top: .75rem;
+    margin-top: 1.25rem;
+    margin-bottom: -.25rem;
     width: 0.5rem;
     height: 0.5rem;
     content: "\02C5";
     line-height: 0;
-    color: #eeeeee !important;
+    font-size: 2rem;
+    font-family: 'Antenna';
+    color: $gray-light !important;
     transform-origin: center center;
     transform: rotate(0deg);
     background-image: none;
@@ -243,8 +267,9 @@ body.active #side-nav {
   font-size: 1rem !important;
   a {
     text-transform: none;
+    background: darken($gray-extra-dark,3%);
     &:hover {
-      background: rgba(128, 128, 128, 0.3);
+      background: darken($gray-extra-dark,9%) !important;
     }
   }
 }
@@ -351,6 +376,13 @@ change the style of the sidenav (less padding and a smaller font size) */
 	font-size: 1.15em;
 	text-transform: uppercase;
   border-radius: .33rem 0 0 .33rem;
+  ::placeholder {
+    color: red !important;
+  }
+}
+
+#side-nav form input::placeholder {
+  color: $gray-dark;
 }
 
 #side-nav-search-wrapper form button {

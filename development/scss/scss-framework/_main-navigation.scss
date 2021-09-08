@@ -63,13 +63,18 @@ ul[role="menubar"] {
 			background: darken($gray,30%) !important;
 		}
 		&::after {
+			position: relative;
+			top: .45rem;
 			display: inline-block;
 			margin-left: 0.25rem;
-			width: 0.5rem;
+			width: 0.75rem;
 			height: 0.5rem;
 			content: "\02C5";
+			font-family: 'Antenna Bold', sans-serif !important;
+			font-size: 1.5rem;
+			font-weight: 600;
 			line-height: 0;
-			color: $gray-extra-light !important;
+			color: $gray-light !important;
 			transform-origin: center center;
 			transform: rotate(0deg);
 		}

@@ -208,6 +208,7 @@ tr:nth-child(odd) { background: $gray-extra-light; }
         margin-bottom: .5rem;
         font-size: 1.125rem;
         line-height: 1.85rem;
+        color: lighten($gray-extra-dark,5%);
       }
     }
     a.cta {
@@ -322,8 +323,14 @@ tr:nth-child(odd) { background: $gray-extra-light; }
   opacity: 0;
   transition: .35s ease;
   overflow: hidden;
+  @include tablet-portrait {
+    h4 {
+      font-size: 1.75rem;
+    }
+  }
   p {
     font-family: 'Arial', sans-serif;
+    color: $gray-light;
   }
   a.cta {
     color: $gold;
@@ -424,14 +431,19 @@ button.content-activate-symbol.active {
   cursor: pointer;
 }
 /* specifically for + plus symbol */
+button.content-activate-symbol.active.activate-symbol-plus {
+  transform: rotate(0deg);
+}
 button.content-activate-symbol.activate-symbol-plus {
   background-image: url('../images/ui-plus@2x.png');
-  background-position: 50% 50%;
+  background-position: .5rem .5rem;
+  background-size: 1.125rem;
 }
 /* specifically for x close symbol */
 button.content-activate-symbol.activate-symbol-close {
   background-image: url('../images/ui-plus@2x.png');
-  background-position: 50% 50%;
+  background-position: .5rem .5rem;
+  background-size: 1.125rem;
 }
 
 /* image - overlay */
@@ -440,7 +452,7 @@ button.content-activate-symbol.activate-symbol-close {
   margin: 0;
 }
 
-#panel-image-overlay, #panel-image-overlay-resize  {
+#panel-image-overlay, #panel-image-overlay-resize {
   img {
     object-fit: cover;
   }
@@ -462,8 +474,32 @@ button.content-activate-symbol.activate-symbol-close {
   }
 }
 
+#panel-image-overlay {
+  img {
+    object-fit: cover;
+    @include tablet-portrait {
+      margin-left: -50%;
+      width: 200%;
+    }
+    @include phone-portrait {
+      margin-left: -100%;
+      width: 300%;
+    }
+  }
+  blockquote {
+    @include tablet-portrait {
+      margin: 1rem auto;
+    }
+    @include phone-portrait {
+      margin: 0 auto;
+      font-size: 1.25rem;
+      line-height: 2;
+    }
+  }
+}
+
 #panel-image-overlay-resize .content-image-overlay {
-  padding: 3em;
+  padding: 3rem;
 }
 
 #panel-image-overlay-resize {
@@ -516,7 +552,7 @@ button.content-activate-symbol.activate-symbol-close {
     width: 100%;
     color: $gray-extra-light;
     background: $maroon;
-    h4 {
+    h6 {
       text-align: center;
       margin:0 0 1rem 0;
     }
@@ -632,13 +668,54 @@ button.content-activate-symbol.activate-symbol-close {
     img {
       margin: 0 !important;
     }
+    @include phone-portrait {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
   }
 }
-.grid-area-one { grid-area: 1 / 1 / span 2 / span 3; }
-.grid-area-two { grid-area: 1 / 4 / span 1 / span 1; }
-.grid-area-three { grid-area: 2 / 4 / span 1 / span 1; }
-.grid-area-four { grid-area: 3 / 1 / span 1 / span 1; }
-.grid-area-five { grid-area: 3 / 2 / span 1 / span 3; }
+.grid-area-one {
+  grid-area: 1 / 1 / span 2 / span 3;
+  @include tablet-portrait {
+    grid-area: 1 / 1 / span 3 / span 4;
+  }
+}
+.grid-area-two {
+  grid-area: 1 / 4 / span 1 / span 1;
+  @include tablet-portrait {
+    grid-area: 4 / 1 / span 2 / span 2;
+  }
+}
+.grid-area-three {
+  grid-area: 2 / 4 / span 1 / span 1;
+  @include tablet-portrait {
+    grid-area: 4 / 3 / span 2 / span 2;
+  }
+}
+.grid-area-four {
+  grid-area: 3 / 1 / span 3 / span 1;
+  @include tablet-portrait {
+    grid-area: 6 / 1 / span 1 / span 1;
+  }
+}
+.grid-area-five {
+  grid-area: 3 / 2 / span 2 / span 3;
+  @include tablet-portrait {
+    grid-area: 6 / 2 / span 1 / span 3;
+  }
+}
+.grid-area-one,
+.grid-area-two,
+.grid-area-three,
+.grid-area-four,
+.grid-area-five {
+  @include phone-portrait {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
 
 /* modaal - most styles are in _accessible-modaal-aria.scss */
 /* adjustments */
