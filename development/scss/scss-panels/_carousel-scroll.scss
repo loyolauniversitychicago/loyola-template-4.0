@@ -4,7 +4,10 @@
   grid-gap: 0;
   .grid-item {
     margin: 0;
-    width: 50%
+    width: 50%;
+    @include phone-portrait {
+      width: 100%;
+    }
   }
 }
 
@@ -18,7 +21,11 @@
 #panel-carousel-scroll h1 {
   padding: 0;
   font-size: 5rem;
-  line-height: 1.2;
+  line-height: rvr(4.5);
+  @include phone-portrait {
+    font-size: 2.75rem;
+    line-height: rvr(3);
+  }
 }
 
 #panel-carousel-scroll h5 {
@@ -26,7 +33,8 @@
 }
 
 #panel-carousel-scroll h6 {
-  line-height: 1.5;
+  font-family: 'Antenna Condensed Light', sans-serif;
+  line-height: rvr(1.25);
   letter-spacing: .5px;
 }
 
@@ -36,8 +44,24 @@
   width: 100%;
   text-align: left;
   border: 0;
+  @include phone-portrait {
+    font-size: 1.65rem;
+    line-height: rvr(2.45);
+  }
   cite {
+    margin: 1rem 0 0;
     text-align: left;
+  }
+}
+
+.item.mobile-image {
+  display: none;
+  img {
+    margin: 0;
+  }
+  @include phone-portrait {
+    display: block;
+    width: 100%;
   }
 }
 
@@ -53,6 +77,9 @@
   height: 100vh;
   background-color: $gray;
   background-image: url("../images/images-carousel-scroll/carousel-scroll-01.jpg");
+  @include phone-portrait {
+    display: none;
+  }
 }
 
 /* this is the item - holds the text - for the opening slide */
@@ -64,11 +91,17 @@
   height: 100vh;
   color: $gray-light;
   background: $maroon;
+  @include phone-portrait {
+    height: auto;
+  }
   .item-content {
     margin: 0 auto;
     width: 100%;
     h1 {
       padding-top: 0;
+    }
+    p {
+      color: $gray-light;
     }
   }
 }
@@ -110,14 +143,34 @@
 .item-content {
   display: flex;
   margin: 0;
-  padding: 0 15%;
+  padding: 0 rvr(5);
   height: 100%;
   align-items: center;
   justify-content: center;
+  @include phone-portrait {
+    padding: rvr(2);
+  }
 }
 
 .item-content-box {
   align-self: right;
+}
+
+.item.item--first,
+.item.item--second,
+.item.item--third,
+.item.item--fourth,
+.item.item--fifth,
+.item.item--sixth,
+.item.item--seventh,
+.item.item--eighth,
+.item.item--ninth,
+.item.item--tenth,
+.item.item--eleventh,
+.item.item--twelevth {
+  @include phone-portrait {
+    display: none;
+  }
 }
 
 /* all items */
@@ -128,7 +181,9 @@
   color: $black;
   height:100vh;
   background-color: $gray-extra-light;
-
+  @include phone-portrait {
+    height: auto;
+  }
   span {
     display: block;
     font-size: 1rem;

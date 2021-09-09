@@ -338,6 +338,13 @@ tr:nth-child(odd) { background: $gray-extra-light; }
       color: $gold-light;
     }
   }
+  @include phone-portrait {
+    blockquote {
+      margin: 0;
+      padding: 1rem 0;
+      border: 0;
+    }
+  }
 }
 
 /* image - overlay - symbol is arrow up */
@@ -383,11 +390,11 @@ button.content-activate-symbol {
     outline-offset: -3px;
   }
 button#content-activate-symbol-overlay.content-activate-symbol.active {
-    transform: rotate(180deg) !important;
-    background-image: url('../images/ui-arrow-up@2x.png') !important;
-    background-position: .5rem .5rem;
-    background-size: 1.125rem;
-  }
+  transform: rotate(180deg) !important;
+  background-image: url('../images/ui-arrow-up@2x.png') !important;
+  background-position: .5rem .5rem;
+  background-size: 1.125rem;
+}
   // &:active {
   //   border-radius: 1.5em !important;
   //   outline: none !important;
@@ -435,15 +442,32 @@ button.content-activate-symbol.active.activate-symbol-plus {
   transform: rotate(0deg);
 }
 button.content-activate-symbol.activate-symbol-plus {
+  width: 2rem !important;
+  height: 2rem !important;
   background-image: url('../images/ui-plus@2x.png');
   background-position: .5rem .5rem;
-  background-size: 1.125rem;
+  background-size: 1rem;
+  background-color: $maroon;
+  border: none !important;
 }
 /* specifically for x close symbol */
 button.content-activate-symbol.activate-symbol-close {
   background-image: url('../images/ui-plus@2x.png');
   background-position: .5rem .5rem;
-  background-size: 1.125rem;
+  background-size: 1rem;
+}
+
+/* center alignment of symbol */
+
+#panel-image-highlights .content-activate-symbol {
+  left: calc(50% - 1.125rem);
+  cursor: default;
+}
+
+#panel-image-highlights .content-activate-symbol.activate-symbol-plus {
+  margin-bottom: .75rem;
+  left: calc(50% - 1rem);
+  cursor: default;
 }
 
 /* image - overlay */
@@ -533,6 +557,7 @@ button.content-activate-symbol.activate-symbol-close {
     grid-row-gap: .25em;
     width: 100%;
     grid-gap: 0;
+    background: $maroon;
   }
   .grid-item {
     position: relative;
@@ -545,6 +570,11 @@ button.content-activate-symbol.activate-symbol-close {
   .image-highlight-wrapper {
     padding: 0;
     position: relative;
+    h4 {
+      font-family: 'Antenna Condensed Light', sans-serif;
+      color: lighten($patina,10%);
+      text-shadow: 0 0 .5rem rgba(0,0,0,.5);
+    }
   }
   .image-highlight-teaser-panel {
     margin: 0;
@@ -554,7 +584,7 @@ button.content-activate-symbol.activate-symbol-close {
     background: $maroon;
     h6 {
       text-align: center;
-      margin:0 0 1rem 0;
+      margin: 0;
     }
   }
 }
@@ -570,9 +600,11 @@ button.content-activate-symbol.activate-symbol-close {
 #panel-image-highlights h2 {
   position: absolute;
   top: 4rem;
+  font-size: 2.5rem;
   color: $gray-extra-light;
   text-align: center;
   text-shadow: 0 0 .5rem rgba(0,0,0,.35);
+  text-transform: uppercase;
   @include tablet-portrait {
     font-size: 1.85rem;
   }
@@ -582,13 +614,6 @@ button.content-activate-symbol.activate-symbol-close {
   @include phone-portrait {
     font-size: 2rem;
   }
-}
-
-/* center alignment of symbol */
-
-#panel-image-highlights .content-activate-symbol {
-  left: calc(50% - 1.175rem);
-  cursor: default;
 }
 
 /* image - grid */
@@ -750,6 +775,11 @@ button.modaal-close {
 
 #panel-video-embed {
   background: $gray-dark;
+  @include phone-portrait {
+    .container {
+      width: 100%;
+    }
+  }
 }
 
 #panel-video-embed .content-caption {

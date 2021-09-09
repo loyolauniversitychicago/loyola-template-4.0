@@ -264,7 +264,7 @@ header #brand {
   min-height: 500px;
   @include phone-landscape {
     display: block;
-    margin: 0 0 30px;
+    margin: 0;
   }
 }
 
@@ -272,7 +272,7 @@ header #brand {
   grid-area: main-aside-wrapper;
   @include phone-landscape {
     display: block;
-    margin: 0 0 30px;
+    margin: 0;
   }
 }
 
