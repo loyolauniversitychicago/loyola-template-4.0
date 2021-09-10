@@ -17,7 +17,7 @@ body {
 }
 
 p, ul, ol {
-  color: lighten($gray-extra-dark,5%);
+  color: lighten($gray-extra-dark,3%);
 }
 
 a {
@@ -75,14 +75,14 @@ h4 {
 
 h5 {
   margin-bottom: rvr(.5);
-  font-size: 1.425rem;
+  font-size: 1.25rem;
   line-height: rvr(1.6);
   text-transform: uppercase;
 }
 
 h6 {
   margin-bottom: rvr(.5);
-  font-size: 1rem;
+  font-size: 1.05rem;
   line-height: rvr(1.35);
   letter-spacing: 0rem;
   text-transform: uppercase;
@@ -95,16 +95,23 @@ h6.category-light {
 p, .explainer p {
   margin: 0;
   margin-bottom: rvr(1);
-  font-size: 1.125rem;
+  font-family: 'Antenna Condensed Light', sans-serif;
+  font-size: 1.25rem;
   line-height: rvr(1.75);
   line-height: 1.9;
+}
+
+#panel-intro p,
+#panel-table-accordion p {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.125rem;
 }
 
 .explainer p {
   font-style: italic;
 }
 
-.intro-paragraph > p {
+#panel-intro .intro-paragraph > p {
   margin: 0;
   margin-bottom: rvr(1);
   font-family: 'Antenna Condensed Light', sans-serif;
@@ -114,7 +121,7 @@ p, .explainer p {
 }
 
 .caption p {
-  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-family: 'Antenna Condensed Light', sans-serif;
   font-size: 1rem;
   line-height: rvr(1.25);
   letter-spacing: .0125rem;

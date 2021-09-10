@@ -59,6 +59,9 @@
 	background: transparent;
 	padding: 0;
 	-webkit-appearance: none;
+	@include phone-portrait {
+		background: #febc18;
+	}
 }
 
 .modaal-wrapper.modaal-start_none {
@@ -91,12 +94,12 @@
 
 .modaal-inner-wrapper {
 	display: table-cell;
+	padding: 0;
 	width: 0%;
 	height: 100%;
 	position: relative;
 	vertical-align: middle;
 	text-align: center;
-	padding: 80px 25px;
 }
 
 .modaal-fullscreen .modaal-inner-wrapper {
@@ -205,6 +208,9 @@
 
 .modaal-content-container {
 	padding: 30px;
+	.grid-wrapper-min-max .grid-item .image-wrapper.image-wrapper-circle {
+		margin: 0 auto 1.5rem;
+	}
 }
 
 .modaal-confirm-wrap {
@@ -694,8 +700,7 @@
 @media screen and (max-height: 1000px) {
 
 .modaal-inner-wrapper {
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding: 60px 0;
 }
 
 .modaal-instagram iframe {

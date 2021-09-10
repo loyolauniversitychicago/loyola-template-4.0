@@ -6,7 +6,7 @@ form {
   padding: 2em;
   width: 100%;
   font-size: 1rem;
-  font-family: 'Antenna Bold', sans-serif;
+  font-family: 'Antenna Condensed Bold', sans-serif;
   font-weight: 400;
   line-height: rvr(2.25);
   letter-spacing: -.0125em;
@@ -27,7 +27,7 @@ fieldset {
   p {
     margin: 0;
     width: 100%;
-    font-family: 'Antenna', sans-serif;
+    font-family: 'Antenna Condensed Light', sans-serif;
     font-size: 1rem;
     text-transform: none;
   }
@@ -44,23 +44,24 @@ fieldset {
 }
 
 legend {
-  margin: 0;
+  margin: 0 -1rem;
   margin-bottom: 0 !important;
   padding: 0 1rem;
   display: block;
   margin-bottom: rvr(.5);
   font-size: 1.275rem;
-  line-height: rvr(1.125);
+  line-height: rvr(1.5);
   text-transform: uppercase;
 }
 
 label {
   margin: 0;
   display: block;
+  font-family: 'Antenna Condensed Bold', sans-serif;
   line-height: rvr(1.35);
   text-transform: uppercase;
   span {
-    font-family: 'Antenna', sans-serif;
+    font-family: 'Antenna Condensed Bold', sans-serif;
     text-transform: none;
   }
 }
@@ -110,7 +111,7 @@ select {
   padding: .5rem 1.5rem .5rem 1rem;
   width: 100%;
   max-width: 100%;
-  font-family: 'Antenna Bold', sans-serif;
+  font-family: 'Antenna Condensed Bold', sans-serif;
 	font-size: 1rem;
 	line-height: 1.3;
 	border: 1px solid $gray-light;
@@ -201,7 +202,7 @@ input[type="checkbox"] {
 
 form button {
   display: block;
-  font-family: "Antenna Bold", sans-serif;
+  font-family: "Antenna Condensed Bold", sans-serif;
   text-transform: uppercase;
   &:hover {
     background: $maroon;

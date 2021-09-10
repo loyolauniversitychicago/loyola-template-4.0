@@ -19,6 +19,7 @@ h3.minimalist-css-accordion__title {
   margin: 0 !important;
   padding: 0;
   width: 100%;
+  font-family: 'Antenna Condensed Light', sans-serif;
   line-height: 0;
 }
 
@@ -26,7 +27,7 @@ button.minimalist-accordion__header,
 button.minimalist-noanim-accordion__header,
 button.minimalist-css-accordion__header {
   margin: 0;
-  padding: 1.3em 1rem 1em;
+  padding: 1.25rem 2rem 1rem 1rem;
   color: $black !important;
   border-radius: 0;
   border: none !important;
@@ -44,7 +45,7 @@ button.minimalist-css-accordion__header {
   min-width: 100%;
   /** fix typo inputs **/
   font-family: inherit;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: normal;
   line-height: 1.5;
   text-align: left;
@@ -54,13 +55,13 @@ button.minimalist-css-accordion__header {
 }
 
 .minimalist-css-accordion__header {
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 
 button.minimalist-accordion__header:hover,
 button.minimalist-noanim-accordion__header:hover,
 button.minimalist-css-accordion__header:hover {
-  background: $gray !important;
+  background: $gray-extra-light !important;
 }
 
 button.minimalist-accordion__header:focus,
@@ -76,7 +77,7 @@ button.minimalist-css-accordion__header:focus {
 #panel-table-accordion h4.table-accordion-header::after {
   float: right;
   display: inline-block;
-  margin: -2px .25em 0 0;
+  margin: .1rem -1rem 0 0;
   width: 1.125em;
   height: 1.125em;
   content: '';
@@ -94,7 +95,7 @@ button.minimalist-css-accordion__header:focus {
 [aria-expanded="true"].minimalist-accordion__header::after,
 [aria-expanded="true"].minimalist-noanim-accordion__header::after,
 [aria-expanded="true"].minimalist-css-accordion__header::after {
-  margin: -2px .25em 0 0;
+  margin: .1rem -1.35rem 0 0;
   transform: rotate(90deg);
   transform-origin: 50% 50%;
 }
@@ -139,7 +140,7 @@ nav#secondary [aria-hidden=true].minimalist-accordion__panel {
   display: block;
   margin: 0;
   padding: 0;
-  max-height: 40em;
+  max-height: 400rem;
   /* magic number for max-height = enough height */
   opacity: 1;
   visibility: visible;
