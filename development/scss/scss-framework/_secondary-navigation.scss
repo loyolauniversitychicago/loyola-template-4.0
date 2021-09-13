@@ -112,15 +112,16 @@ nav#secondary a {
 		}
 	}
 }
-nav#secondary .minimalist-accordion__header::after,
 nav#secondary .minimalist-noanim-accordion__header::after,
 nav#secondary .minimalist-css-accordion__header::after {
+	margin-left: -1.125rem !important;
 	margin-top: -1.125rem;
 	transform: rotate(0deg);
 }
-nav#secondary .minimalist-accordion__header[aria-expanded="true"],
 nav#secondary .minimalist-noanim-accordion__header::after,
 nav#secondary .minimalist-css-accordion__header::after {
+	margin-left: -1.125rem !important;
+	margin-top: -1.125rem;
 	transform: rotate(90deg) !important;
 	background-image: none;
 }
