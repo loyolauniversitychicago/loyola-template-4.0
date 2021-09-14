@@ -454,8 +454,8 @@
 					<!-- intro -->
 <section id="panel-intro" class="container-fluid">
 	<div class="container">
-		<div class="grid-wrapper-min-max nine-column-three-column"><!-- column-build -->
-			<div class="grid-item">
+		<div class="grid-wrapper-min-max"><!-- column-build -->
+			<div class="grid-area-one">
 				<div class="content-intro">
 					<h6>Category label</h6>
 					<div id="home">
@@ -470,31 +470,32 @@
 				</div>
 			</div>
 			<!-- t4 version - aside nav -->
-			<div class="grid-item">
+			<div class="grid-area-two">
 				<nav id="secondary">
 					<div class="js-accordion">
-						<!-- added currentbranch0 to a instead of div -->
+						<div class="js-accordion currentbranch0" data-accordion-prefix-classes="minimalist" data-accordion-cool-selectors="1">
+					    <h4 class="js-accordion__header">Item 01</h4>
+					    <div class="js-accordion__panel">
+								<a href="https://cms4.luc.edu/terminalfour/preview/8/en/161246">Item 01 - 1A</a>
+								<a href="https://cms4.luc.edu/terminalfour/preview/8/en/161422">Item 01 - 2A</a>
+							</div>
+						</div>
+						<a href="https://cms4.luc.edu/terminalfour/preview/8/en/161245">Item 02</a>
+						<a href="https://cms4.luc.edu/terminalfour/preview/8/en/161393">Item 03</a>
+
 						<div class="js-accordion" data-accordion-prefix-classes="minimalist" data-accordion-cool-selectors="1">
 					    <h4 class="js-accordion__header">Item 04</h4>
 					    <div class="js-accordion__panel">
-								<a href="https://cms4.luc.edu/terminalfour/preview/8/en/161246">Interior Page 1A</a>
-								<a href="https://cms4.luc.edu/terminalfour/preview/8/en/161422">Interior Page 2</a>
-							</div>
-						</div>
-						<a href="https://cms4.luc.edu/terminalfour/preview/8/en/161245">Typography</a>
-						<a href="https://cms4.luc.edu/terminalfour/preview/8/en/161393">Forms</a>
-
-						<div class="js-accordion" data-accordion-prefix-classes="minimalist" data-accordion-cool-selectors="1">
-					    <h4 class="js-accordion__header">Panels</h4>
-					    <div class="js-accordion__panel">
-							<a href="https://cms4.luc.edu/terminalfour/preview/8/en/161394">Panels - General</a>
-							<a href="https://cms4.luc.edu/terminalfour/preview/8/en/161395">Panels - Image Combinations</a>
-							<a href="https://cms4.luc.edu/terminalfour/preview/8/en/161417">Panels - Interactive</a>
-							<a href="https://cms4.luc.edu/terminalfour/preview/8/en/161423">Panels - Images Responsive Resize</a>
+							<a href="https://cms4.luc.edu/terminalfour/preview/8/en/161394">Item 04 - 4A</a>
+							<a href="https://cms4.luc.edu/terminalfour/preview/8/en/161395">Item 04 - 4B</a>
+							<a href="https://cms4.luc.edu/terminalfour/preview/8/en/161417">Item 04 - 4C</a>
+							<a href="https://cms4.luc.edu/terminalfour/preview/8/en/161423">Item 04 - 4D</a>
 						</div>
 					</div>
 				</nav>
-
+			</div>
+			<!-- t4 version - aside nav - close -->
+			<div class="grid-area-three">
 				<h6>Category label</h6>
 				<img src="http://via.placeholder.com/1000x560"/>
 				<div class="caption">
@@ -503,10 +504,12 @@
 				<hr class="padding-divider">
 				</hr>
 				<footnote>Image with caption - p tag with parent div class of "caption"</footnote>
-				<div class="padding-xsm"></div>
+				<div class="padding-sm"></div>
 				<blockquote>
-
-				<blockquote>
+					Lorem ipsum lorem ipsum dolor sit amet consectetur adipiscing elit.
+					<cite>Someone Namehere</cite>
+				</blockquote>
+				<div class="padding-sm"></div>
 				<div class="number-lg">
 					<h1>010</h1>
 					<div class="category-light">

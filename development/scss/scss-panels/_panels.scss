@@ -196,7 +196,7 @@ tr:nth-child(odd) { background: $gray-extra-light; }
         margin-bottom: .5rem;
         font-family: 'Antenna Condensed Bold', sans-serif;
         font-size: 1.75rem;
-        line-height: 2rem;
+        line-height: rvr(2);
       }
     }
     p {
@@ -208,7 +208,7 @@ tr:nth-child(odd) { background: $gray-extra-light; }
       @include tablet-portrait {
         margin-bottom: .5rem;
         font-size: 1.125rem;
-        line-height: 1.85rem;
+        line-height: rvr(1.85);
         color: lighten($gray-extra-dark,5%);
       }
     }
@@ -956,7 +956,7 @@ li#previous-pages, li#next-pages {
 }
 #panel-events-news {
   h4 {
-    font-size: 1.75rem;
+    font-size: 1.45rem;
   }
 }
 

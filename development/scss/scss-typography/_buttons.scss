@@ -30,7 +30,7 @@ button, .button {
   transition: .3s;
   &:hover {
     color: $white;
-    background-color: $maroon;
+    background-color: $brick;
   }
   :focus {
     outline: 3px solid $white;

@@ -50,23 +50,39 @@ h1, h2, h3, h4, h5, h6 {
 h1,h2 {
   font-size: 3.75rem;
   line-height: rvr(3.75);
+  @include phone-portrait {
+    font-size: 3rem;
+    line-height: rvr(3);
+  }
 }
 
 h3 {
   font-family: 'Antenna Condensed Light', sans-serif;
   font-size: 2.5rem;
   line-height: rvr(2.5);
+  @include phone-portrait {
+    font-size: 2rem;
+    line-height: rvr(2);
+  }
 }
 
 h4 {
   font-size: 2rem;
   line-height: rvr(2);
+  @include phone-portrait {
+    font-size: 1.6rem;
+    line-height: rvr(1.6);
+  }
 }
 
 .content-columns-varied.four-column-build h4,
 .content-columns-varied.one-column-build.media-cards h4 {
   font-size: 1.65rem;
   line-height: rvr(1.85);
+  @include phone-portrait {
+    font-size: 1.35rem;
+    line-height: rvr(1.5);
+  }
 }
 
 .uppercase h2, .uppercase h3, .uppercase h4 {
@@ -78,6 +94,10 @@ h5 {
   font-size: 1.25rem;
   line-height: rvr(1.6);
   text-transform: uppercase;
+  @include phone-portrait {
+    font-size: 1rem;
+    line-height: rvr(1.3);
+  }
 }
 
 h6 {
@@ -86,6 +106,10 @@ h6 {
   line-height: rvr(1.35);
   letter-spacing: 0rem;
   text-transform: uppercase;
+  @include phone-portrait {
+    font-size: .85rem;
+    line-height: rvr(1);
+  }
 }
 
 h6.category-light {
@@ -97,18 +121,28 @@ p, .explainer p {
   margin-bottom: rvr(1);
   font-family: 'Antenna Condensed Light', sans-serif;
   font-size: 1.25rem;
-  line-height: rvr(1.75);
-  line-height: 1.9;
+  line-height: rvr(1.65);
+  @include phone-portrait {
+    font-size: 1rem;
+    line-height: rvr(1.4);
+  }
 }
 
 #panel-intro p,
 #panel-table-accordion p {
   font-family: 'Arial', sans-serif;
   font-size: 1.125rem;
+  @include phone-portrait {
+    margin-bottom: rvr(1.25);
+    font-size: 1rem;
+  }
 }
 
 .explainer p {
   font-style: italic;
+  @include phone-portrait {
+    margin-bottom: rvr(.5);
+  }
 }
 
 #panel-intro .intro-paragraph > p {
@@ -118,12 +152,26 @@ p, .explainer p {
   font-size: 1.4rem;
   line-height: rvr(2);
   word-spacing: .075rem;
+  @include phone-portrait {
+    font-size: 1.25rem;
+    line-height: rvr(1.65);
+  }
+}
+
+#panel-intro .caption p {
+  font-family: 'Antenna Condensed Light', sans-serif;
+  font-size: 1rem;
+  line-height: rvr(1.35);
+  letter-spacing: .0125rem;
+  word-spacing: .025rem;
+  a { cursor: pointer;
+  }
 }
 
 .caption p {
   font-family: 'Antenna Condensed Light', sans-serif;
   font-size: 1rem;
-  line-height: rvr(1.25);
+  line-height: rvr(1.35);
   letter-spacing: .0125rem;
   word-spacing: .025rem;
   a { cursor: pointer;
@@ -163,6 +211,10 @@ a.cta {
   font-family: 'Antenna Condensed Bold', sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
+  @include phone-portrait {
+    font-size: .85rem;
+    line-height: rvr(1.125);
+  }
 }
 
 .card a.cta {
@@ -187,27 +239,34 @@ footnote { font-style: italic; }
 .sans-serif, .sans-serif p {
   font-family: 'Arial', sans-serif;
   font-size: 1.125rem;
+  line-height: rvr(1.65);
+  @include phone-portrait {
+    font-size: 1rem;
+  }
 }
 
 .sans-serif {
-  font-size: 1.015rem;
+  font-size: 1.125rem;
+  @include phone-portrait {
+    font-size: 1rem;
+  }
 }
 
 .line-height-tight p {
-  line-height: rvr(1.5);
+  line-height: rvr(1.45);
 }
 
 #main-content-wrapper ol,
 #main-content-wrapper ul {
   margin: 0 0 1rem 1.5rem;
   font-size: 1.125rem;
-  line-height: rvr(1.5);
+  line-height: rvr(1.65);
   list-style-position: inside;
 }
 
 #main-content-wrapper ol li,
 #main-content-wrapper ul li {
-  margin: 0 0 .5rem;
+  margin: 0 0 .65rem;
 }
 
 #main-content-wrapper ol li {
@@ -299,6 +358,13 @@ blockquote {
   text-align: center;
   border-top: solid 1px $gray;
   border-bottom: solid 1px $gray;
+  @include phone-portrait {
+    margin: 1em auto;
+    padding: 0;
+    font-size: 1.45rem;
+    line-height: rvr(2.25);
+    border: 0;
+  }
 }
 
 div.uppercase > blockquote {
@@ -320,6 +386,30 @@ blockquote cite {
   text-transform: uppercase;
 }
 
+blockquote cite:before {
+  content: "— ";
+}
+
+#panel-intro .grid-area-three blockquote {
+  margin: 0;
+  padding: 0;
+  font-size: 1.235rem;
+  line-height: rvr(1.85);
+  text-align: left;
+  border: 0;
+  @include phone-portrait {
+    font-size: 1.75rem;
+    line-height: rvr(2.125);
+  }
+  cite {
+    font-size: .975rem;
+    text-align: left;
+    @include phone-portrait {
+      font-size: 1rem;
+    }
+  }
+}
+
 /* numbers */
 
 .number-display h1,
@@ -332,22 +422,13 @@ blockquote cite {
   text-transform: uppercase;
 }
 
-.number-lg h1 {
-  font-size: 4.75rem;
-}
-
-.number-md h2 {
-  font-size: 3.5rem;
-}
-
-.number-sm h3 {
-  font-size: 2.5rem;
-}
-
 .number-display h1 {
   font-size: 7rem;
   line-height: 1 !important;
   letter-spacing: -.025em;
+  @include phone-portrait {
+    font-size: 3.5rem;
+  }
 }
 
 /* infobox */

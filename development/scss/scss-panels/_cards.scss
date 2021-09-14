@@ -328,10 +328,13 @@ button:focus {
   font-family: 'Antenna Condensed Bold', sans-serif !important;
   font-size: 4.75rem;
   line-height: 1.25;
+  @include phone-portrait {
+    font-size: 3.5rem !important;
+  }
 }
 
 .grid-wrapper-min-max.number h5,
-.grid-wrapper-min-max.number-l h5 {
+.grid-wrapper-min-max.number-lg h5 {
   font-family: 'Antenna Condensed Light', sans-serif !important;
   font-size: 1rem;
   font-weight: normal;
@@ -341,13 +344,19 @@ button:focus {
 /* numbers medium */
 
 .grid-wrapper-min-max.number.numbers-md h4 {
-  font-size: 3.5rem !important;
+  font-size: 3.5rem;
+  @include phone-portrait {
+    font-size: 3.5rem !important;
+  }
 }
 
 /* numbers small */
 
 .grid-wrapper-min-max.number.numbers-sm h4 {
-  font-size: 2.5rem !important;
+  font-size: 2.5rem;
+  @include phone-portrait {
+    font-size: 3.5rem !important;
+  }
 }
 
 /* media queries ==================

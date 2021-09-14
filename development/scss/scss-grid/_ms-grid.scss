@@ -219,6 +219,12 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
   }
+  @include phone-portrait {
+    .grid-item {
+      display: block;
+      margin: 1rem 0;
+    }
+  }
 }
 
 /* strategic plan - grid specific */

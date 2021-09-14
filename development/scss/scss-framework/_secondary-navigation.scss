@@ -12,12 +12,13 @@ nav#secondary {
 		padding: 1.25rem .5rem 1rem;
 		width: 100%;
 		font-family: 'Antenna', sans-serif;
-		font-size: .85rem;
+		font-size: .725rem;
+		line-height: 1.45;
 		color: $black;
 		text-indent: 0 !important;
 		text-transform: uppercase;
 		text-decoration: none;
-		border-bottom: solid 1px $gray;
+		border-bottom: solid 1px $gray-light;
 		transition: .2s;
 		&:hover {
 			background: darken($gray-extra-light, 15%) !important;
@@ -30,11 +31,12 @@ nav#secondary {
 		button.minimalist-noanim-accordion__header,
 		button.minimalist-css-accordion__header, {
 			padding: 1.125rem .5rem 1rem;
-			font-size: .85rem;
+			font-size: .75rem;
 			border: none;
+			border-bottom-color: $gray-light !important;
 			&:hover {
 				color: $black !important;
-				background: darken($gray-extra-light, 10%) !important;
+				background: darken($gray-extra-light, 15%) !important;
 			}
 		}
 	}
@@ -47,25 +49,32 @@ nav#secondary {
 			border: none;
 			&:hover {
 				color: $black !important;
-				background: darken($gray-extra-light, 10%) !important;
+				background: darken($gray-extra-light, 15%) !important;
 			}
 		}
 	}
 }
 
-nav#secondary a.current,
-nav#secondary h4.current {
-	color: $gray-extra-light;
+nav#secondary .currentbranch0 {
 	background: $maroon;
-	&:hover {
-		color: $black;
+	button.minimalist-accordion__header,
+	button.minimalist-noanim-accordion__header,
+	button.minimalist-css-accordion__header {
+	color: $gray-extra-light !important;
+		&:hover {
+			color: $gray-extra-light !important;
+			background: $brick !important;
+		}
+		&:after {
+			background-image: url(../images/ui-arrow-carrousel-next@2x.png);
+		}
 	}
 }
 
 nav#secondary .minimalist-accordion__header::after,
 nav#secondary .minimalist-noanim-accordion__header::after,
 nav#secondary .minimalist-css-accordion__header::after {
-	margin-top: .075rem;
+	margin: .075rem;
 }
 
 nav#secondary .minimalist-accordion__panel {
@@ -73,7 +82,7 @@ nav#secondary .minimalist-accordion__panel {
 	background: $gray-light;
 	a, h4 {
 		&:hover {
-			background: darken($gray-light, 10%) !important;
+			background: darken($gray-extra-light, 15%) !important;
 		}
 	}
 }
@@ -114,20 +123,21 @@ nav#secondary a {
 }
 nav#secondary .minimalist-noanim-accordion__header::after,
 nav#secondary .minimalist-css-accordion__header::after {
-	margin-left: -1.125rem !important;
-	margin-top: -1.125rem;
+	margin: 0.1rem 0 0 0 !important;
 	transform: rotate(0deg);
 }
 nav#secondary .minimalist-noanim-accordion__header::after,
 nav#secondary .minimalist-css-accordion__header::after {
-	margin-left: -1.125rem !important;
-	margin-top: -1.125rem;
+	margin: 0.1rem 0 0 0 !important;
 	transform: rotate(90deg) !important;
 	background-image: none;
 }
 nav#secondary .minimalist-accordion__panel {
 	margin: 0 !important;
-	background: darken($gray-light,10%) !important;
+	background: darken($gray-extra-light,10%) !important;
+	a {
+		color: $black !important;
+	}
 }
 // nav#secondary .minimalist-accordion__header,
 // nav#secondary .minimalist-noanim-accordion__header,
