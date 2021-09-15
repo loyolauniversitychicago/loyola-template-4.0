@@ -41,6 +41,7 @@ th, td {
 }
 
 th {
+  border: none;
   font-family: 'Antenna Condensed Bold', sans-serif;
 }
 
@@ -89,7 +90,7 @@ caption {
 @media only screen and (max-width: 600px) {
 
 	/* force table to display block - stack */
-	table, thead, tbody, th, td, tr {
+	table, thead, tbody, th, td, tr, h4.table-accordion-header span {
 		display: block;
     position: relative;
 	}
@@ -153,6 +154,7 @@ caption {
 		/* top and left values mimic padding of td */
 		top: 0;
 		left: 0;
+    box-sizing: border-box;
 		padding: 1rem;
     width: 50%;
     color: $gray-extra-light;
@@ -175,4 +177,166 @@ caption {
 	td:nth-of-type(9):before, #panel-table-accordion h4 span:nth-of-type(9):before { content: "Header 10"; }
 
   caption { display: block; }
+}
+
+/* table accordion */
+
+#panel-table-accordion {
+  @include phone-portrait {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+#panel-table-accordion .caption > p {
+  margin-bottom: 1rem;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: rvr(1.25);
+  text-align: left;
+}
+
+#panel-table-accordion button.minimalist-accordion__header,
+#panel-table-accordion button.minimalist-noanim-accordion__header,
+#panel-table-accordion button.minimalist-css-accordion__header {
+  padding: 0;
+  border-right: solid 1px $gray !important;
+  @include phone-portrait {
+    border-left: solid 1px $gray !important;
+  }
+}
+
+#panel-table-accordion h4 button,
+#panel-table-accordion h4.table-accordion-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr !important;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  padding: 0;
+  &:after {
+    float: right;
+  }
+  @include phone-portrait {
+    display: block !important;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+#panel-table-accordion h4 button span:first-of-type {
+  border-left: solid 1px $gray;
+  @include phone-portrait {
+    padding: .75rem 1rem .5rem;
+    text-align: left;
+    border-left: 0;
+    border-top: solid 1px $gray;
+    border-right: 0;
+  }
+  &:before {
+    display: none;
+  }
+}
+
+#panel-table-accordion h4 button span {
+  @include phone-portrait {
+    display: block;
+    position: relative;
+    padding-left: 50%;
+    padding: 1rem 2.25rem .75rem 50%;
+    width: 100%;
+    text-align: right;
+    border-bottom: solid 1px $gray;
+    border-right: 0;
+    &:before {
+      display: none;
+    }
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+}
+
+#panel-table-accordion h4.table-accordion-header {
+  margin: 0;
+  font-size: inherit;
+  color: $gray-extra-light;
+  text-transform: uppercase;
+  background: $maroon;
+}
+
+#panel-table-accordion h4.table-accordion-header::after {
+  /* see accessible-accordion-aria.scss */
+}
+
+#panel-table-accordion h4 span,
+#panel-table-accordion h4.table-accordion-header span,
+#panel-table-accordion .minimalist-accordion__header::after,
+#panel-table-accordion .minimalist-noanim-accordion__header::after,
+#panel-table-accordion .minimalist-css-accordion__header::after {
+  display: inline-block;
+  margin: 0 !important;
+  padding: .5em 1em;
+  height: 100%;
+  font-family: 'Antenna Condensed Light', sans-serif;
+  font-size: 1rem;
+  text-transform: none;
+  border-right: solid 1px $gray;
+  @include phone-portrait {
+    padding: 1rem;
+  }
+}
+
+ #panel-table-accordion .minimalist-accordion__header::after {
+   @include phone-portrait {
+     display: block !important;
+     margin-top: -2.575rem !important;
+     padding: 1rem;
+     height: 2rem;
+   }
+ }
+
+
+#panel-table-accordion h4.table-accordion-header span {
+  font-family: 'Antenna Condensed Bold', sans-serif;
+  text-transform: uppercase;
+  border-right: solid 1px $gray-extra-light;
+  @include phone-portrait {
+    display: none !important;
+  }
+}
+
+#panel-table-accordion h4 button span:before {
+  @include phone-portrait {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    padding: 1rem 1rem .75rem;
+    width: 50%;
+    color: #eeeeee;
+    text-align: left;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border-bottom: solid 1px $gray-light;
+    background: #555555;
+  }
+}
+
+#panel-table-accordion .minimalist-accordion__header::after,
+#panel-table-accordion .minimalist-noanim-accordion__header::after,
+#panel-table-accordion .minimalist-css-accordion__header::after {
+  padding: 0 1rem 0 0 !important;
+  justify-self: right;
+  background-size: 40%;
+  background-position: 50% 50%;
+  border-right: none;
+}
+
+#panel-table-accordion h4 span.table-accordion-row-header {
+  font-family: 'Antenna Condensed Bold', sans-serif;
+  background: $gray-light;
 }
