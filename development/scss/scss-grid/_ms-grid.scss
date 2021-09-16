@@ -4,6 +4,7 @@
 .grid-wrapper-min-max {
   display: -ms-grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
 }
 
 /* column variations - grid-gap */
@@ -18,14 +19,18 @@
 .grid-wrapper-min-max.eight-column-four-column,
 .grid-wrapper-min-max.three-column-nine-column,
 .grid-wrapper-min-max.nine-column-three-column {
-  grid: 1rem;
+  .grid-item {
+    margin: 1rem;
+  }
 }
 }
 
 /* one-column-build - ms support */
 
+.grid-wrapper-min-max .grid-item,
 .grid-wrapper-min-max.one-column .grid-item {
   -ms-grid-column-span: 12;
+  -ms-grid-row-span: 0;
 }
 .grid-wrapper-min-max.one-column .grid-item:nth-child(1) {
   -ms-grid-column: 1;
