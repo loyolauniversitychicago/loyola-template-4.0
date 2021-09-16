@@ -23,8 +23,7 @@
     "sass": "^1.38.1"
   },
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "autoprefixer": "^9.0.0"
+    "gulp": "^4.0.2"
   },
   "keywords": [],
   "description": ""
