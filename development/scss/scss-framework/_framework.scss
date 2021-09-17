@@ -235,20 +235,22 @@ header #brand {
   box-sizing: border-box;
   margin: 0;
   padding: 4rem;
-  min-height: 800px;
+  height: auto;
   /* margin: 250px auto 200px; */
   grid-template-columns: minmax(0, 3fr) 250px;
   grid-template-areas: "main-section-wrapper main-aside-wrapper";
-  grid-gap: 60px;
+  grid-gap: 5rem;
   @include tablet-portrait {
     grid-template-columns: minmax(0, 2fr) 250px;
-    grid-gap: 30px;
+    grid-gap: 2rem;
   }
   @include phone-landscape {
-    grid-template-areas: "main-aside-wrapper main-section-wrapper";
+    grid-template-areas:
+    "main-aside-wrapper"
+    "main-section-wrapper";
     grid-template-columns: 100%;
-    margin: 150px auto;
-    padding-top: 50px;
+    margin: 0 auto;
+    padding-top: 4rem;
   }
 }
 
@@ -278,7 +280,11 @@ header #brand {
 
 /* footer */
 
-footer#footer-fixed { display: block; position: fixed; bottom: 0; padding-bottom: 2em; }
+footer#footer-fixed { display: block; position: fixed; bottom: 0; padding-bottom: 2em;
+  @include phone-portrait {
+    display: none;
+  }
+}
 footer#footer-not-fixed { position: relative; display: block; float: left; padding-bottom: 2em; }
 footer#footer-fixed img, footer#footer-not-fixed img { margin: 0; }
 footer#footer-fixed img { margin-top: 0; }

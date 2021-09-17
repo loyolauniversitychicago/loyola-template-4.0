@@ -199,6 +199,9 @@ tr:nth-child(odd) { background: $gray-extra-light; }
     grid-gap: 0;
     .grid-item {
       margin: 0;
+      @include phone-portrait {
+        margin: 0 !important;
+      }
     }
   }
   .content-image-text-image {
