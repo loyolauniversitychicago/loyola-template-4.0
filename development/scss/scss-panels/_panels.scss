@@ -740,32 +740,31 @@ button.modaal-close {
 /* pagination */
 
 #panel-pagination #content-pagination {
-  padding: 2rem 0;
+  padding: 0;
 }
 
 #panel-pagination {
   nav {
-  display: inline-block;
-  background: none;
-//    ul {
-//      display: inline;
-//      width: calc(100% - 10rem;);
-      ul.grid-wrapper-min-max {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr !important;
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-        grid-template-rows: auto;
-        grid-auto-flow: row;
-        -ms-grid-rows: auto;
-        grid-auto-rows: auto;
-        grid-row-gap: .25em;
-        width: 100%;
-        grid-gap: 0;
-      }
+    float: none;
+    background: none;
+    ul.grid-wrapper-min-max {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr !important;
+      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)) !important;
+      grid-template-rows: auto;
+      grid-auto-flow: row;
+      -ms-grid-rows: auto;
+      grid-auto-rows: auto;
+      grid-row-gap: 0;
+      grid-gap: 0;
+      margin: 0 auto;
+      width: calc(100% - 10rem);
       li {
-        float: left;
+        position: relative;
+        display: block;
         padding: 0;
+        height: 3rem;
         list-style: none;
         border: none;
         border-left: 1px solid $white;
@@ -773,9 +772,10 @@ button.modaal-close {
         background: $gray-extra-light;
         transition: .2s;
         a {
-          display: block;
+          position: absolute;
           padding: 1rem;
           height: 100%;
+          width: 100%;
           font-family: 'Antenna Condensed Light', sans-serif;
           color: $gray-extra-dark;
           text-align: center;
@@ -795,15 +795,16 @@ button.modaal-close {
           }
         }
       }
-//    }
+    }
   }
 }
 
 li#previous-pages, li#next-pages {
   display: inline-block;
   padding: 0;
-  width: 100%;
+  width: auto;
   a {
+    display: inline;
     padding: 1rem 1.5rem;
     height: 100%;
     font-size: .85rem;
@@ -830,7 +831,7 @@ li#previous-pages, li#next-pages {
 }
 
 #panel-pagination #content-pagination-breadcrumbs nav ul li {
-  display: block;
+  display: inline;
   border: none;
   background: none;
   &::before {
@@ -838,6 +839,7 @@ li#previous-pages, li#next-pages {
     padding: 0;
     color: $gray;
     content: "/\00a0";
+    text-indent: 0;
   }
   a {
     display: inline;
