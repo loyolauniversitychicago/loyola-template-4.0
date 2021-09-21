@@ -246,17 +246,20 @@ body.active #side-nav {
 #side-nav h4.minimalist-accordion__title {
   padding: 0;
   :after {
-    margin-top: 1.25rem;
-    margin-bottom: -.25rem;
+    position: relative;
+    left: -1.5rem;
+    margin-top: .25rem;
+    margin-bottom: 0rem;
+    margin-left: -1rem;
     width: 0.5rem;
     height: 0.5rem;
-    content: "\02C5";
+    content: ">";
     line-height: 0;
-    font-size: 2rem;
-    font-family: 'Antenna';
+    font-size: 1rem;
+    font-family: 'Antenna Bold';
     color: $gray-light !important;
     transform-origin: center center;
-    transform: rotate(0deg);
+    transform: rotate(90deg);
     background-image: none;
   }
 }

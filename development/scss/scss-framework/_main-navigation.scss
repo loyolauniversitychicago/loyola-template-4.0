@@ -64,19 +64,19 @@ ul[role="menubar"] {
 		}
 		&::after {
 			position: relative;
-			top: .45rem;
+			top: -.25rem;
 			display: inline-block;
-			margin-left: 0.25rem;
+			margin-left: 0.1rem;
 			width: 0.75rem;
 			height: 0.5rem;
-			content: "\02C5";
+			content: ">";
 			font-family: 'Antenna Bold', sans-serif !important;
-			font-size: 1.5rem;
+			font-size: 1rem;
 			font-weight: 600;
 			line-height: 0;
 			color: $gray-light !important;
 			transform-origin: center center;
-			transform: rotate(0deg);
+			transform: rotate(90deg);
 		}
 	}
 	li  {
