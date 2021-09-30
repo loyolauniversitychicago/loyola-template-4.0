@@ -187,9 +187,6 @@ header #brand {
   @include tablet-portrait {
     width: 90%;
   }
-  @include phone-portrait {
-    width: 95%;
-  }
 }
 
 .container.container-100 { width: 100%; }
@@ -200,7 +197,27 @@ header #brand {
 
 /* standards - color-palette */
 
-.grid-square { padding: .75rem; }
+#color-palette {
+  .grid-wrapper-min-max {
+    grid-template-columns: repeat(auto-fit, minmax(16%, 1fr));
+    grid-gap: 1rem;
+    @include phone-landscape {
+      display: block;
+    }
+    .grid-square {
+      padding: .75rem;
+      @include phone-landscape {
+        padding: 2rem;
+      }
+    }
+  }
+}
+
+.grid-item.grid-square.grid-square-hide {
+  @include phone-landscape {
+    display: none;
+  }
+}
 
 /* wrappers */
 
@@ -234,7 +251,7 @@ header #brand {
   display: grid;
   box-sizing: border-box;
   margin: 0;
-  padding: 4rem;
+  padding: 4rem 10%;
   height: auto;
   /* margin: 250px auto 200px; */
   grid-template-columns: minmax(0, 3fr) 250px;
@@ -250,7 +267,7 @@ header #brand {
     "main-section-wrapper";
     grid-template-columns: 100%;
     margin: 0 auto;
-    padding-top: 4rem;
+    padding: 4rem 2rem 2rem;
   }
 }
 

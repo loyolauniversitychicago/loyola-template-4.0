@@ -4,31 +4,31 @@
   background: none;
 }
 .padding-lg {
-  padding: 3rem !important;
+  padding: 3rem;
   @include tablet-portrait {
-    padding: 2rem !important;
+    padding: 2rem;
   }
   @include phone-portrait {
-    padding: 1rem !important;
+    padding: 1rem;
   }
 }
 
 .padding-md {
-  padding: 2rem !important;
+  padding: 2rem;
   @include tablet-portrait {
-    padding: 1rem !important;
+    padding: 1rem;
   }
   @include phone-portrait {
-    padding: 1rem !important;
+    padding: 1rem;
   }
 }
 
 .padding-sm {
-  padding: 1rem !important;
+  padding: 1rem;
 }
 
 .padding-xsm {
-  padding: .5rem !important;
+  padding: .5rem;
 }
 
 hr .padding-divider{
@@ -37,10 +37,10 @@ hr .padding-divider{
 }
 
 /* 580 */
+/*
 @media only screen and (max-width: 580px) {
-  .container { width: 90%; }
-  .content-columns-varied .grid-wrapper { display: block; }
   .divider-sm { padding: 1em 0; }
   .divider-xsm { padding: .5em 0; }
   .divider-xsm-collapse { padding: 0; }
 }
+*/

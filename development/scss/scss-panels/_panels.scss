@@ -176,6 +176,9 @@ tr:nth-child(odd) { background: $gray-extra-light; }
     font-size: 1.65rem;
     line-height: rvr(1.65);
     }
+    p {
+      font-family: 'Antenna Condensed Light', sans-serif;
+    }
     @include tablet-portrait {
       h4 {
         font-size: 1.75rem;
@@ -243,6 +246,12 @@ tr:nth-child(odd) { background: $gray-extra-light; }
   opacity: 0;
   transition: .35s ease;
   overflow: hidden;
+  h3.teaser {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.85rem;
+  }
   @include tablet-portrait {
     h4 {
       font-size: 1.75rem;
@@ -492,7 +501,6 @@ button.content-activate-symbol.activate-symbol-close {
     position: relative;
     h4 {
       font-family: 'Antenna Condensed Light', sans-serif;
-      color: lighten($patina,10%);
       text-shadow: 0 0 .5rem rgba(0,0,0,.5);
     }
   }
@@ -512,7 +520,7 @@ button.content-activate-symbol.activate-symbol-close {
 /* gradient overlay */
 
 #panel-image-highlights .grid-item .content-image-overlay {
-  padding: 55% 2em 0;
+  padding: 40% 2em 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.7)));
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
 }
@@ -582,6 +590,7 @@ button.content-activate-symbol.activate-symbol-close {
     span {
       display: block;
       width: 100%;
+      font-family: 'Arial', sans-serif;
       line-height: 1.75;
     }
     span.caption-overlay-name {

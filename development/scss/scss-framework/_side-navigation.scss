@@ -247,10 +247,8 @@ body.active #side-nav {
   padding: 0;
   :after {
     position: relative;
-    left: -1.5rem;
-    margin-top: .25rem;
-    margin-bottom: 0rem;
-    margin-left: -1rem;
+    top: .25rem;
+    right: 1.5rem;
     width: 0.5rem;
     height: 0.5rem;
     content: ">";
@@ -260,8 +258,13 @@ body.active #side-nav {
     color: $gray-light !important;
     transform-origin: center center;
     transform: rotate(90deg);
-    background-image: none;
+    background-image: none !important;
   }
+}
+
+#side-nav [aria-expanded="true"].minimalist-accordion__header::after {
+  top: .25rem;
+  right: 1.85rem;
 }
 
 #side-nav .minimalist-accordion__panel {

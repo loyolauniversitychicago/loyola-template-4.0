@@ -12,6 +12,11 @@
   grid-auto-rows: auto;
   grid-gap: 2rem;
   width: 100%;
+  .grid-item {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+  }
 }
 
 /* grid columns */
@@ -61,7 +66,7 @@
   .grid-area-three {
     grid-area: sidebar;
   }
-  @include phone-portrait {
+  @include tablet-portrait {
     grid-template-areas:
       "navigation navigation navigation navigation"
       "intro intro intro intro"

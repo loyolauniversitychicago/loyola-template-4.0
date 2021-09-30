@@ -132,29 +132,32 @@ h6.category-light {
   font-family: 'Antenna Condensed Light', sans-serif;
 }
 
-p, .explainer p {
+/* paragraph styling - grouping */
+
+p, .explainer p .standard-paragraph p, .sans-serif, .sans-serif p {
+  font-family: 'Arial', sans-serif;
+}
+
+p, .explainer p .standard-paragraph p {
   margin: 0;
   margin: 0 0 1rem;
   margin-bottom: rvr(1);
-  font-family: 'Antenna Condensed Light', sans-serif;
   font-size: 1.125rem;
   line-height: 1.65;
   line-height: rvr(1.65);
   @include phone-portrait {
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 1.4;
     line-height: rvr(1.4);
   }
 }
 
-#panel-intro p,
-#panel-table-accordion p {
-  font-family: 'Arial', sans-serif;
+.sans-serif, .sans-serif p {
   font-size: 1.125rem;
+  line-height: 1.65;
+  line-height: rvr(1.65);
   @include phone-portrait {
-    margin-bottom: 1.25rem;
-    margin-bottom: rvr(1.25);
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -166,10 +169,10 @@ p, .explainer p {
   }
 }
 
-#panel-intro .intro-paragraph > p {
+#panel-intro .intro-paragraph > p,
+.intro-paragraph > p {
   margin: 0;
-  margin-bottom: 1rem;
-  margin-bottom: rvr(1);
+  margin-bottom: rvr(1.5);
   font-family: 'Antenna Condensed Light', sans-serif;
   font-size: 1.4rem;
   line-height: 2;
@@ -204,6 +207,23 @@ p, .explainer p {
   }
 }
 
+.line-height-tight p {
+  line-height: 1.45;
+  line-height: rvr(1.45);
+}
+
+#panel-table-accordion p {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.125rem;
+  @include phone-portrait {
+    margin-bottom: 1.25rem;
+    margin-bottom: rvr(1.25);
+    font-size: 1rem;
+  }
+}
+
+/* end paragraph styling */
+
 .leadin {
   text-transform: uppercase;
   font-weight: bold;
@@ -233,6 +253,7 @@ p a {
 
 a.cta {
   display: block;
+  margin-bottom: 1.5rem;
   width: 100%;
   font-family: 'Antenna Condensed Bold', sans-serif;
   font-size: 1rem;
@@ -264,28 +285,6 @@ footnote { font-style: italic; }
 .panel-label {
   margin-bottom: 2rem;
   margin-bottom: rvr(2);
-}
-
-.sans-serif, .sans-serif p {
-  font-family: 'Arial', sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.65;
-  line-height: rvr(1.65);
-  @include phone-portrait {
-    font-size: 1rem;
-  }
-}
-
-.sans-serif {
-  font-size: 1.125rem;
-  @include phone-portrait {
-    font-size: 1rem;
-  }
-}
-
-.line-height-tight p {
-  line-height: 1.45;
-  line-height: rvr(1.45);
 }
 
 #main-content-wrapper ol,
