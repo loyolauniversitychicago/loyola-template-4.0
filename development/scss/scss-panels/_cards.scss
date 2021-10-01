@@ -1,8 +1,14 @@
 /* cards */
 
+.grid-wrapper-min-max.card .grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
 .content-grid-wrapper {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 /* cards horizontal */
@@ -80,6 +86,7 @@
       margin: 0 0 .5rem;
     }
     p {
+      font-family: 'Antenna Condensed Light', sans-serif !important; font-size: 1.25rem;
       margin-bottom: .5rem;
     }
     h6, h5, .explainer p, a.cta {
@@ -135,6 +142,9 @@
     width: 100%;
     color: $gray-extra-light !important;
     text-align: center;
+  }
+  p {
+    font-family: 'Antenna Condensed Light', sans-serif !important; font-size: 1.25rem;
   }
 }
 
@@ -234,9 +244,10 @@
 
 .card h1 { line-height: 1.125; }
 .card h2 { line-height: 1.125; }
-.card h4 { line-height: 1.15; }
+.card h4 { font-size: 1.85rem; line-height: 1.15; }
+.card h5 { font-size: 1.125rem; }
 .card h6 { font-family: 'Antenna Condensed Light', sans-serif; }
-.card p { font-family: 'Arial', sans-serif; }
+.card p { font-family: 'Antenna Condensed Light', sans-serif !important; font-size: 1.25rem; }
 .card p.explainer { font-style: italic; }
 
 /* buttons */
