@@ -253,6 +253,7 @@ header #brand {
   margin: 0;
   padding: 4rem 10%;
   height: auto;
+  min-height: 95vh;
   /* margin: 250px auto 200px; */
   grid-template-columns: minmax(0, 3fr) 250px;
   grid-template-areas: "main-section-wrapper main-aside-wrapper";
@@ -315,7 +316,7 @@ footer {
   padding: 10px 20px 15px;
   width: 100%;
   background: darken($gray,20%);
-  z-index: 10003;
+  z-index: 10000;
   @include tablet-portrait {
     padding: 15px 10px;
     height: 75px;

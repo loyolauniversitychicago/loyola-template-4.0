@@ -172,12 +172,13 @@ tr:nth-child(odd) { background: $gray-extra-light; }
     padding: 2rem;
     background: $gray-extra-light;
     h4 {
-    margin-bottom: .35rem;
+    margin-bottom: .65rem;
     font-size: 1.65rem;
     line-height: rvr(1.65);
     }
     p {
       font-family: 'Antenna Condensed Light', sans-serif;
+      font-size: 1.25rem;
     }
     @include tablet-portrait {
       h4 {
@@ -223,6 +224,10 @@ tr:nth-child(odd) { background: $gray-extra-light; }
     padding: 4rem;
     height: 100%;
     background: $gray-light;
+  }
+  p {
+    font-family: 'Antenna Condensed Light', sans-serif;
+    font-size: 1.25rem;
   }
 }
 
@@ -722,8 +727,15 @@ button.modaal-close {
   h4, p {
     color: $gray-light;
   }
+  p {
+    font-family: 'Antenna Condensed Light', sans-serif;
+    font-size: 1.135rem;
+  }
   a {
-    color: #febc18;
+    color: $gold;
+    &:hover {
+      color: lighten($gold,10%);
+    }
   }
 }
 

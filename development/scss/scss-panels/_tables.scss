@@ -39,16 +39,20 @@ th, td {
   font-family: 'Antenna Condensed Light', sans-serif;
   text-align: left;
 }
-
 th {
-  border: none;
   font-family: 'Antenna Condensed Bold', sans-serif;
-}
-
-th {
   color: $gray-extra-light;
   text-transform: uppercase;
   background: $gray-dark;
+  &:nth-child(2),
+  &:nth-child(3),
+  &:nth-child(4),
+  &:nth-child(5),
+  &:nth-child(6),
+  &:nth-child(7) {
+    border-left: none;
+    border-left: solid 1px $gray-extra-light;
+  }
 }
 
 th.span.sub-category,
@@ -60,10 +64,6 @@ tr:first-child th.span.sub-category {
 tr:first-child th:first-child {
   color: $gray-extra-light !important;
   background: $gray-dark !important;
-}
-
-tr:first-child th:not(:last-child) {
-  border-right-color: $white;
 }
 
 tr:first-child th:first-child,
@@ -83,6 +83,23 @@ caption {
   width: 100%;
   font-style: italic;
   text-align: left;
+}
+
+td, td p, td ul li {
+  font-size: 1.065rem !important;
+  text-align: left;
+  line-height: rvr(1.35);
+}
+
+td p, td ul li {
+  margin: .5rem 0 !important;
+}
+
+td ul li {
+  margin-left: 1.5rem !important;
+  text-indent: -1.5rem;
+  list-style-type: square;
+  list-style-position: inside;
 }
 
 /* table stack */
@@ -140,8 +157,7 @@ caption {
 		/* make a row */
     position: relative;
     padding: 1rem;
-  	padding-left: 50%;
-    text-align: right !important;
+    line-height: rvr(1.65);
 		border: none;
 		border-bottom: 1px solid $gray-light;
     &:last-of-type {
@@ -149,20 +165,21 @@ caption {
     }
 	}
 
-	td:before {
-		position: absolute;
-		/* top and left values mimic padding of td */
-		top: 0;
-		left: 0;
+  td:before {
+    position: relative;
+    display: block;
     box-sizing: border-box;
-		padding: 1rem;
-    width: 50%;
+    top: -1rem;
+    left: -1rem;
+    padding: 1rem;
+    width: calc(100% + 2rem);
+    height: 100%;
     color: $gray-extra-light;
     text-align: left;
     text-transform: uppercase;
 		white-space: nowrap;
     background: $gray-dark;
-	}
+  }
 
 	/* Label the data */
 

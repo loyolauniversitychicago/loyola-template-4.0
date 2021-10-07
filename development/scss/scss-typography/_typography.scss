@@ -143,12 +143,12 @@ p, .explainer p .standard-paragraph p {
   margin: 0 0 1rem;
   margin-bottom: rvr(1);
   font-size: 1.125rem;
-  line-height: 1.65;
-  line-height: rvr(1.65);
+  line-height: 1.75;
+  line-height: rvr(1.75);
   @include phone-portrait {
     font-size: 1.125rem;
-    line-height: 1.4;
-    line-height: rvr(1.4);
+    line-height: 1.65;
+    line-height: rvr(1.65);
   }
 }
 
