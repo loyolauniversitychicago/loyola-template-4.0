@@ -11,7 +11,7 @@
 html { font-size: 100%; } /* matches browsers default */
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Antenna Condensed Light', sans-serif;
   color: $black;
   background-color: none;
 }
@@ -135,7 +135,7 @@ h6.category-light {
 /* paragraph styling - grouping */
 
 p, .explainer p .standard-paragraph p, .sans-serif, .sans-serif p {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Antenna Condensed Light', sans-serif;
 }
 
 p, .explainer p .standard-paragraph p {
@@ -145,6 +145,8 @@ p, .explainer p .standard-paragraph p {
   font-size: 1.125rem;
   line-height: 1.75;
   line-height: rvr(1.75);
+  word-spacing: .05rem;
+  letter-spacing: -.0125rem;
   @include phone-portrait {
     font-size: 1.125rem;
     line-height: 1.65;
