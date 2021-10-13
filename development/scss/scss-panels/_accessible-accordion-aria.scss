@@ -3,7 +3,6 @@
 
 /* accordion */
 
-
 /* just for example as nested accordion */
 [data-accordion-prefix-classes="minimalist-css"] {
   margin-top: 1em;
@@ -78,8 +77,8 @@ button.minimalist-css-accordion__header:focus {
   float: right;
   display: inline-block;
   margin: .1rem -1rem 0 0;
-  width: 1.125em;
-  height: 1.125em;
+  width: 1.125rem;
+  height: 1.125rem;
   content: '';
   background-image: url(../images/ui-arrow-carrousel-next-dark@2x.png);
   background-repeat: no-repeat;
@@ -95,7 +94,7 @@ button.minimalist-css-accordion__header:focus {
 [aria-expanded="true"].minimalist-accordion__header::after,
 [aria-expanded="true"].minimalist-noanim-accordion__header::after,
 [aria-expanded="true"].minimalist-css-accordion__header::after {
-  margin: .1rem -1.35rem 0 0;
+  margin: .1rem -1.25rem 0 0;
   transform: rotate(90deg);
   transform-origin: 50% 50%;
 }

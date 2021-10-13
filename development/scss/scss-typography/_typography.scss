@@ -61,11 +61,13 @@ h1,h2 {
 }
 
 h3 {
+  margin-top: rvr(1.75);
   font-family: 'Antenna Condensed Light', sans-serif;
   font-size: 2.5rem;
   line-height: 2.5;
   line-height: rvr(2.5);
   @include phone-portrait {
+    margin-top: rvr(1.5);
     font-size: 2rem;
     line-height: 2;
     line-height: rvr(2);
