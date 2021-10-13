@@ -21,7 +21,7 @@ p, ul, ol {
 }
 
 a {
-  cursor: hand !important;
+  cursor: pointer !important;
 }
 
 /* cursor - global */
@@ -154,6 +154,10 @@ p, .explainer p .standard-paragraph p {
   }
 }
 
+p strong, .standard-paragraph p strong {
+  font-family: 'Antenna Condensed Bold', sans-serif !important;
+}
+
 .sans-serif, .sans-serif p {
   font-size: 1.125rem;
   line-height: 1.65;
@@ -251,6 +255,7 @@ a {
 
 p a {
   font-size: inherit;
+  font-family: 'Antenna Condensed Bold', sans-serif;
 }
 
 a.cta {
