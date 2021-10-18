@@ -183,17 +183,32 @@ header #brand {
 .container {
   margin: 0 auto;
   padding: 0;
+  width: 90%;
+  @include tablet-portrait {
+    width: 90%;
+  }
+}
+
+.container.container-100 {
+  width: 100%;
+  @include tablet-portrait {
+    width: 90%;
+  }
+}
+
+.container.container-80 {
   width: 80%;
   @include tablet-portrait {
     width: 90%;
   }
 }
 
-.container.container-100 { width: 100%; }
-
-.container.container-80 { width: 80%; }
-
-.container.container-50 { width: 50%; }
+.container.container-50 {
+  width: 50%;
+  @include tablet-portrait {
+    width: 90%;
+  }
+}
 
 /* standards - color-palette */
 
@@ -253,11 +268,11 @@ header #brand {
   margin: 0;
   padding: 4rem 10%;
   height: auto;
-  min-height: 95vh;
+  min-height: 100vh;
   /* margin: 250px auto 200px; */
   grid-template-columns: minmax(0, 3fr) 250px;
   grid-template-areas: "main-section-wrapper main-aside-wrapper";
-  grid-gap: 5rem;
+  grid-gap: 3rem;
   @include tablet-portrait {
     grid-template-columns: minmax(0, 2fr) 250px;
     grid-gap: 2rem;

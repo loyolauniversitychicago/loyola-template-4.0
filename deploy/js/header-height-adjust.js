@@ -19,3 +19,8 @@ $(window).resize(function(){
   var height = $("#luc-header").height();
 	$("#main-content-wrapper-full-width").css("margin-top",height);
 });
+
+$(document).ready(function(){
+  var height = $("#content-pagination-breadcrumbs" + "h1").height();
+	$("nav#secondary").css("margin-top",height);
+});

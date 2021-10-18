@@ -85,17 +85,21 @@ caption {
   text-align: left;
 }
 
-td, td p, td ul li {
+td ul, #panel-table-accordion ul {
+  margin: 1rem 0;
+}
+
+td, td p, td ul li, #panel-table-accordion ul li {
   font-size: 1.065rem !important;
   text-align: left;
   line-height: rvr(1.35);
 }
 
-td p, td ul li {
+td p, td ul li, #panel-table-accordion ul li {
   margin: .5rem 0 !important;
 }
 
-td ul li {
+td ul li, #panel-table-accordion ul li {
   margin-left: 1.5rem !important;
   text-indent: -1.5rem;
   list-style-type: square;
@@ -143,7 +147,7 @@ td ul li {
     display: block;
     position: relative !important;
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     color: $black !important;
     border: none;
     background: $gray-light !important;
@@ -174,6 +178,7 @@ td ul li {
     padding: 1rem;
     width: calc(100% + 2rem);
     height: 100%;
+    font-family: 'Antenna Condensed Bold', sans-serif;
     color: $gray-extra-light;
     text-align: left;
     text-transform: uppercase;

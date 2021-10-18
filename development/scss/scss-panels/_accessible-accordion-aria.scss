@@ -22,6 +22,7 @@ h3.minimalist-css-accordion__title {
   line-height: 0;
 }
 
+h4.js-accordion-no-panel,
 button.minimalist-accordion__header,
 button.minimalist-noanim-accordion__header,
 button.minimalist-css-accordion__header {
@@ -34,6 +35,18 @@ button.minimalist-css-accordion__header {
   outline: none;
 }
 
+h4.js-accordion-no-panel {
+  padding: 1.25rem 2rem 1rem 1rem !important;
+  text-transform: uppercase;
+  a.cta {
+    display: inline;
+    margin: 0 0 0 .25rem;
+    font-family: 'Antenna Condensed Light', sans-serif;
+    font-size: inherit;
+  }
+}
+
+h4.js-accordion-no-panel,
 .minimalist-accordion__header,
 .minimalist-noanim-accordion__header,
 .minimalist-css-accordion__header {

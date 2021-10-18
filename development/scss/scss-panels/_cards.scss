@@ -86,7 +86,8 @@
       margin: 0 0 .5rem;
     }
     p {
-      font-family: 'Antenna Condensed Light', sans-serif !important; font-size: 1.25rem;
+      font-family: 'Antenna Condensed Light', sans-serif !important;
+      font-size: 1.125rem;
       margin-bottom: .5rem;
     }
     h6, h5, .explainer p, a.cta {
@@ -144,7 +145,8 @@
     text-align: center;
   }
   p {
-    font-family: 'Antenna Condensed Light', sans-serif !important; font-size: 1.25rem;
+    font-family: 'Antenna Condensed Light', sans-serif !important;
+    font-size: 1.125rem;
   }
 }
 
@@ -160,7 +162,7 @@
     text-align: center;
   }
   h4 {
-    font-size: 1.65rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -223,12 +225,13 @@
 
 /* typography card specific */
 
+#main-content-wrapper .card .image-wrapper img,
 .card .image-wrapper img {
   margin: 0;
 }
 
 .card .content-grid-wrapper {
-  padding: 2rem !important;
+  padding: 1.5rem !important;
   background: #e1e1e1;
 }
 
@@ -244,10 +247,10 @@
 
 .card h1 { line-height: 1.125; }
 .card h2 { line-height: 1.125; }
-.card h4 { font-size: 1.625rem; line-height: 1.25; }
+.card h4 { font-size: 1.75rem; }
 .card h5 { font-size: 1.125rem; }
 .card h6 { font-family: 'Antenna Condensed Light', sans-serif; }
-.card p { font-family: 'Antenna Condensed Light', sans-serif !important; font-size: 1.25rem; }
+.card p { font-family: 'Antenna Condensed Light', sans-serif !important; font-size: 1.125rem; }
 .card p.explainer { font-style: italic; }
 
 /* buttons */
@@ -346,6 +349,7 @@ button:focus {
 
 .grid-wrapper-min-max.number h5,
 .grid-wrapper-min-max.number-lg h5 {
+  
   font-family: 'Antenna Condensed Light', sans-serif !important;
   font-size: 1rem;
   font-weight: normal;

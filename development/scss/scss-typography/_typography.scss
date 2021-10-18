@@ -30,7 +30,7 @@ button a, button a:hover {
   cursor: pointer !important;
 }
 
-h1, h2, h3, h4, h5, h6, .light h6 {
+h1, h2, h3, h4, h5, h6 {
   display: block;
   margin: 0;
   margin: 0 0 1rem;
@@ -75,25 +75,25 @@ h3 {
 }
 
 h4 {
-  font-size: 2rem;
-  line-height: 1.35;
-  line-height: rvr(2);
+  font-size: 1.75rem;
+  line-height: 1.75;
+  line-height: rvr(1.75);
   @include phone-portrait {
     font-size: 1.6rem;
-    line-height: 1.35;
-    line-height: rvr(1.6);
+    line-height: 1.7;
+    line-height: rvr(1.7);
   }
 }
 
 .content-columns-varied.four-column-build h4,
 .content-columns-varied.one-column-build.media-cards h4 {
-  font-size: 1.65rem;
-  line-height: 1.35;
-  line-height: rvr(1.85);
+  font-size: 1.75rem;
+  line-height: 1.75;
+  line-height: rvr(1.75);
   @include phone-portrait {
-    font-size: 1.35rem;
-    line-height: 1.35;
-    line-height: rvr(1.5);
+    font-size: 1.6rem;
+    line-height: 1.7;
+    line-height: rvr(1.7);
   }
 }
 
@@ -102,9 +102,8 @@ h4 {
 }
 
 h5 {
-  margin-bottom: .5rem;
-  margin-bottom: rvr(.5);
-  font-size: 1.25rem;
+  margin-bottom: rvr(.35);
+  font-size: 1.125rem;
   line-height: 1.6;
   line-height: rvr(1.6);
   text-transform: uppercase;
@@ -117,21 +116,22 @@ h5 {
 
 h6 {
   margin-bottom: .5rem;
-  margin-bottom: rvr(.5);
-  font-size: 1.05rem;
+  margin-bottom: rvr(.75);
+  font-family: 'Antenna Condensed Light', sans-serif;
+  font-size: 1rem;
   line-height: 1.35;
   line-height: rvr(1.35);
   letter-spacing: 0rem;
   text-transform: uppercase;
   @include phone-portrait {
-    font-size: .85rem;
+    font-size: 1rem;
     line-height: 1;
     line-height: rvr(1);
   }
 }
 
-h6.category-light {
-  font-family: 'Antenna Condensed Light', sans-serif;
+h6.category-bold {
+  font-family: 'Antenna Condensed Bold', sans-serif;
 }
 
 /* paragraph styling - grouping */
@@ -160,13 +160,9 @@ p strong, .standard-paragraph p strong {
   font-family: 'Antenna Condensed Bold', sans-serif !important;
 }
 
-.sans-serif, .sans-serif p {
-  font-size: 1.125rem;
-  line-height: 1.65;
-  line-height: rvr(1.65);
-  @include phone-portrait {
-    font-size: 1.125rem;
-  }
+p em, .standard-paragraph p em {
+  font-style: italic !important;
+  margin: 0 .125rem 0 0;
 }
 
 .explainer p {
@@ -221,12 +217,12 @@ p strong, .standard-paragraph p strong {
 }
 
 #panel-table-accordion p {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Antenna Condensed Light', sans-serif;
   font-size: 1.125rem;
   @include phone-portrait {
     margin-bottom: 1.25rem;
     margin-bottom: rvr(1.25);
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -318,6 +314,10 @@ footnote { font-style: italic; }
   text-indent: -1.35rem;
 }
 
+#main-content-wrapper #content-pagination-breadcrumbs ul {
+  margin: 0;
+}
+
 /* ol circle numbers */
 
 ol {
@@ -355,6 +355,7 @@ ol li::before {
 #main-section-wrapper .circle-number ol li {
   counter-increment: circle-numbers;
   margin: 0 0 1.25rem 2.25rem;
+  font-size: 1.1rem;
   text-indent: 0;
   line-height: 1.35;
   line-height: rvr(1.35);
