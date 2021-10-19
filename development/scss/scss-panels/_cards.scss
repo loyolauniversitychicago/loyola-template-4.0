@@ -243,15 +243,15 @@
   background: #febc18 !important;
 }
 
-.card a.cta { margin-bottom: 1.5rem; }
+.card a.cta { margin-bottom: rvr(1.5); }
 
-.card h1 { line-height: 1.125; }
-.card h2 { line-height: 1.125; }
-.card h4 { font-size: 1.75rem; }
-.card h5 { font-size: 1.125rem; }
-.card h6 { font-family: 'Antenna Condensed Light', sans-serif; }
-.card p { font-family: 'Antenna Condensed Light', sans-serif !important; font-size: 1.125rem; }
-.card p.explainer { font-style: italic; }
+.flex-item-content h1 { margin-bottom: rvr(.75); line-height: 1.125; }
+.flex-item-content h2 { line-height: 1.125; }
+.flex-item-content h4 { margin-top: rvr(.75); margin-bottom: rvr(.75); font-size: 1.75rem; }
+.flex-item-content h5 { margin-top: rvr(.75); margin-bottom: rvr(.75); font-size: 1.125rem; }
+.flex-item-content h6 { font-family: 'Antenna Condensed Light', sans-serif; }
+.flex-item-content p { font-family: 'Antenna Condensed Light', sans-serif !important; font-size: 1.125rem; }
+.flex-item-content p.explainer { font-style: italic; }
 
 /* buttons */
 
@@ -349,7 +349,7 @@ button:focus {
 
 .grid-wrapper-min-max.number h5,
 .grid-wrapper-min-max.number-lg h5 {
-  
+
   font-family: 'Antenna Condensed Light', sans-serif !important;
   font-size: 1rem;
   font-weight: normal;

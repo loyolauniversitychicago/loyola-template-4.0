@@ -20,7 +20,7 @@ $(window).resize(function(){
 	$("#main-content-wrapper-full-width").css("margin-top",height);
 });
 
-$(document).ready(function(){
-  var height = $("#content-pagination-breadcrumbs" + "h1").height();
-	$("nav#secondary").css("margin-top",height);
+$(window).resize(function(){
+  var firstparagraph = $("#luc-header").height();
+	$(".grid-area-two").css("margin-top",firstparagraph);
 });

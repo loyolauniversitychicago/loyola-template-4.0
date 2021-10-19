@@ -75,9 +75,10 @@ h3 {
 }
 
 h4 {
+  margin-top: rvr(1.5);
   font-size: 1.75rem;
-  line-height: 1.75;
-  line-height: rvr(1.75);
+  line-height: 2;
+  line-height: rvr(2);
   @include phone-portrait {
     font-size: 1.6rem;
     line-height: 1.7;
@@ -102,6 +103,7 @@ h4 {
 }
 
 h5 {
+  margin-top: rvr(1.25);
   margin-bottom: rvr(.35);
   font-size: 1.125rem;
   line-height: 1.6;
@@ -156,11 +158,13 @@ p, .explainer p .standard-paragraph p {
   }
 }
 
-p strong, .standard-paragraph p strong {
+p strong, .standard-paragraph p strong,
+li strong, li a strong {
   font-family: 'Antenna Condensed Bold', sans-serif !important;
 }
 
-p em, .standard-paragraph p em {
+p em, .standard-paragraph p em,
+li em, li em a, li a em, {
   font-style: italic !important;
   margin: 0 .125rem 0 0;
 }
@@ -264,7 +268,7 @@ a.cta {
   font-size: 1rem;
   text-transform: uppercase;
   @include phone-portrait {
-    font-size: .85rem;
+    font-size: .95rem;
     line-height: 1.125;
     line-height: rvr(1.125);
   }
@@ -478,6 +482,51 @@ blockquote cite:before {
   @include phone-portrait {
     font-size: 3.5rem;
   }
+}
+
+/* cards */
+
+.flex-item.content h1 {
+  margin-bottom: rvr(.5);
+  line-height: 1.125;
+}
+
+.flex-item.content h2 {
+  line-height: 1.125;
+}
+
+.flex-item.content h4 {
+  margin-top: rvr(.5);
+  margin-bottom: rvr(.5);
+  font-size: 1.75rem;
+}
+
+.flex-item.content h5 {
+  margin-top: rvr(.5);
+  margin-bottom: rvr(.5);
+  font-size: 1.125rem;
+}
+
+.flex-item.content h6 {
+  font-family: 'Antenna Condensed Light', sans-serif;
+}
+
+.flex-item.content p, .flex-item.content p.explainer {
+  margin-top: rvr(0) !important;
+  margin-bottom: rvr(.25) !important;
+  font-family: 'Antenna Condensed Light', sans-serif !important;
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+
+.flex-item.content p.explainer {
+  font-style: italic;
+}
+
+.card a.cta,
+.flex-item.content a.cta {
+  margin-top: rvr(.75) !important;
+  margin-bottom: rvr(1.5);
 }
 
 /* infobox */
