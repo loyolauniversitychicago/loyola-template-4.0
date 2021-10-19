@@ -1,0 +1,42 @@
+#main-content-wrapper-t4 {
+  margin: 4rem auto;
+  width: 80%;
+}
+
+#main-wrapper {
+  grid-column: 1/6;
+  height: auto;
+}
+
+#main-content-wrapper-t4.grid-wrapper-min-max {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 250px;
+  grid-template-areas:
+    "main-header main-header main-header main-header"
+    "main main main aside-two"
+    "main main main aside-one";
+  grid-row: auto-flow;
+  grid-column-gap: 4rem;
+  grid-row-gap: 0;
+}
+
+#section-header-wrapper {
+  grid-area: main-header;
+  margin-bottom: 4rem;
+  background: yellow;
+}
+
+#section-content-wrapper {
+  grid-area: main;
+  background: pink;
+}
+
+#aside-nav-wrapper {
+  grid-area: aside-one;
+  background: lime;
+}
+
+#aside-content-wrapper {
+  grid-area: aside-two;
+  background: lightblue;
+}

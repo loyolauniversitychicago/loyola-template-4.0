@@ -19,8 +19,3 @@ $(window).resize(function(){
   var height = $("#luc-header").height();
 	$("#main-content-wrapper-full-width").css("margin-top",height);
 });
-
-$(window).resize(function(){
-  var firstparagraph = $("#luc-header").height();
-	$(".grid-area-two").css("margin-top",firstparagraph);
-});
