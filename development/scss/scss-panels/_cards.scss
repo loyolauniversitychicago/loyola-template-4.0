@@ -325,6 +325,10 @@ button:focus {
 
 /* cards - overlay */
 
+#panel-numbers.container-fluid.bg-overlay .grid-wrapper-min-max {
+  grid-gap: 3rem;
+}
+
 #panel-numbers.container-fluid.bg-overlay {
   background-color: $gray-dark;
   background-image: url('../images/images-resize/resize-cudahy-rainbow-1800-800.jpg');
@@ -335,7 +339,7 @@ button:focus {
 
 #panel-numbers.container-fluid.bg-overlay .container {
   margin: 0;
-  padding: 3rem;
+  padding: 4rem 3rem;
   width: 100%;
   background-color: $bg-overlay;
 }
@@ -344,6 +348,10 @@ button:focus {
 #panel-numbers.container-fluid.bg-overlay .grid-wrapper-min-max.number .flex-item.content h5,
 #panel-numbers.container-fluid.bg-overlay .grid-wrapper-min-max.number .flex-item.content p {
   color: $gray-extra-light;
+}
+
+#panel-numbers.container-fluid.bg-overlay .grid-wrapper-min-max.number .flex-item.content a.cta {
+  margin-bottom: 0;
 }
 
 #panel-numbers.container-fluid.bg-overlay .grid-wrapper-min-max.number .flex-item.content a.cta {
@@ -373,9 +381,17 @@ button:focus {
   letter-spacing: .05rem;
 }
 
+/* numbers large */
+
+.grid-wrapper-min-max.number.numbers-lg .flex-item.content h4,
+.bg-overlay .grid-wrapper-min-max.number.numbers-lg .flex-item.content h4 {
+  font-size: 4.75rem;
+}
+
 /* numbers medium */
 
-.grid-wrapper-min-max.number.numbers-md .flex-item.content h4 {
+.grid-wrapper-min-max.number.numbers-md .flex-item.content h4,
+.bg-overlay .grid-wrapper-min-max.number.numbers-md .flex-item.content h4 {
   font-size: 3.5rem;
   @include phone-portrait {
     font-size: 3.5rem !important;
@@ -384,7 +400,8 @@ button:focus {
 
 /* numbers small */
 
-.grid-wrapper-min-max.number.numbers-sm .flex-item.content h4 {
+.grid-wrapper-min-max.number.numbers-sm .flex-item.content h4,
+.bg-overlay .grid-wrapper-min-max.number.numbers-sm .flex-item.content h4 {
   font-size: 2.5rem;
   @include phone-portrait {
     font-size: 3.5rem !important;

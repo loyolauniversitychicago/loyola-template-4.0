@@ -902,21 +902,37 @@ li#previous-pages, li#next-pages {
 
 /* calendar card */
 
-#panel-events-news .content-columns-varied .grid-wrapper-min-max {
+#panel-events-news .grid-wrapper-min-max {
   grid-gap: 0;
 }
 
-#panel-events-news .content-columns-varied .grid-wrapper-min-max .grid-item {
+#panel-events-news .grid-wrapper-min-max .grid-item {
   margin: 0 !important;
   padding: 0 2em;
   border-left: solid 1px $gray;
 }
-#panel-events-news .content-columns-varied .grid-wrapper-min-max .grid-item:first-of-type {
+#panel-events-news .grid-wrapper-min-max .grid-item:first-of-type {
   border-left: none !important;
 }
 #panel-events-news {
+  h6 {
+    margin-bottom: .25rem;
+  }
   h4 {
+    margin: 0 0 .25rem;
     font-size: 1.45rem;
+    a {
+      text-decoration: none;
+    }
+  }
+  h5 {
+    font-size: 1.45rem;
+  }
+  .grid-wrapper-min-max .grid-item h5:first-of-type {
+    margin-top: 0;
+  }
+  .grid-wrapper-min-max .grid-item .cta:last-of-type {
+    margin-bottom: 0;
   }
 }
 
@@ -924,36 +940,46 @@ li#previous-pages, li#next-pages {
   grid-column: col 2 / span 2;
   grid-row: row 1;
   display: grid;
-  grid-gap: 1em;
+  grid-gap: 0;
   grid-template-columns: 70px 1fr;
 }
 
 .calendar-card-date {
+  margin: 0 1.25rem 0 0;
   grid-column: 1;
   grid-row: 1;
-  border-radius: .33em .33em 0 0;
+  border-radius: .25rem;
   background: none;
   h6 {
     margin: 0;
-    padding: .25em 0;
-    font-family: 'Antenna Condensed Bold', sans-serif;
+    font-family: 'Antenna Condensed Light', sans-serif;
     text-align: center;
   }
+  h6 small {
+    font-size: 1rem;
+  }
   .calendar-card-date-day {
+    padding: .25rem 0 .125rem;
     color: $gray-extra-light;
     text-transform: uppercase;
-    border-radius: .33em .33em 0 0;
+    border-radius: .25rem .25rem 0 0;
     background: $maroon;
   }
   .calendar-card-date-number {
-    border-radius: 0;
-    background: $gray-light;
+    padding: .125rem 0 .125rem;
+    border-radius: 0 0 .25rem .25rem;
+    background: lighten($gray-light,10%);
   }
 }
 
 .calendar-card-content {
   grid-column: 2;
   grid-row: 1;
+}
+
+.calendar-card-content > div > p {
+  margin: 0 0 .5rem !important;
+  margin-bottom: calc(var(--baseline) * .25 * 1rem);
 }
 
 /* END - CSS */
