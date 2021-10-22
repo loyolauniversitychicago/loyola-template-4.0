@@ -317,17 +317,40 @@ button:focus {
 }
 
 .grid-wrapper-min-max.number .image-wrapper,
-.grid-wrapper-min-max.number img,
 .grid-wrapper-min-max.number p,
 .grid-wrapper-min-max.number button,
 .grid-wrapper-min-max.number h6 {
   display: none;
 }
 
+/* cards - overlay */
+
+#panel-numbers.container-fluid.bg-overlay {
+  background-image: url('http://via.placeholder.com/1800x1000');
+}
+
+#panel-numbers.container-fluid.bg-overlay .container {
+  margin: 0;
+  padding: 3rem;
+  width: 100%;
+  background-color: $bg-overlay;
+}
+
+#panel-numbers.container-fluid.bg-overlay .grid-wrapper-min-max.number .flex-item.content h4,
+#panel-numbers.container-fluid.bg-overlay .grid-wrapper-min-max.number .flex-item.content h5,
+#panel-numbers.container-fluid.bg-overlay .grid-wrapper-min-max.number .flex-item.content p {
+  color: $gray-extra-light;
+}
+
+#panel-numbers.container-fluid.bg-overlay .grid-wrapper-min-max.number .flex-item.content a.cta {
+  color: $gold;
+}
+
+
 /* numbers large */
 
-.grid-wrapper-min-max.number h4,
-.grid-wrapper-min-max.number-lg h4 {
+.grid-wrapper-min-max.number .flex-item.content h4,
+.grid-wrapper-min-max.number-lg .flex-item.content h4 {
   margin: 0;
   font-family: 'Antenna Condensed Bold', sans-serif !important;
   font-size: 4.75rem;
