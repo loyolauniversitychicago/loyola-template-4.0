@@ -326,7 +326,10 @@ button:focus {
 /* cards - overlay */
 
 #panel-numbers.container-fluid.bg-overlay {
-  background-image: url('http://via.placeholder.com/1800x1000');
+  background-image: url('../images/images-resize/resize-cudahy-rainbow-1800-800.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #panel-numbers.container-fluid.bg-overlay .container {
