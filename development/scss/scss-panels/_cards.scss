@@ -326,6 +326,7 @@ button:focus {
 /* cards - overlay */
 
 #panel-numbers.container-fluid.bg-overlay {
+  background-color: $gray-dark;
   background-image: url('../images/images-resize/resize-cudahy-rainbow-1800-800.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -374,7 +375,7 @@ button:focus {
 
 /* numbers medium */
 
-.grid-wrapper-min-max.number.numbers-md h4 {
+.grid-wrapper-min-max.number.numbers-md .flex-item.content h4 {
   font-size: 3.5rem;
   @include phone-portrait {
     font-size: 3.5rem !important;
@@ -383,7 +384,7 @@ button:focus {
 
 /* numbers small */
 
-.grid-wrapper-min-max.number.numbers-sm h4 {
+.grid-wrapper-min-max.number.numbers-sm .flex-item.content h4 {
   font-size: 2.5rem;
   @include phone-portrait {
     font-size: 3.5rem !important;
