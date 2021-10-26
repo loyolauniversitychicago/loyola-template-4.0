@@ -113,13 +113,14 @@ tr:nth-child(odd) { background: $gray-extra-light; }
       color: $black;
       background: $gray-extra-light;
     }
-    h1 {
+    h1, h2 {
       margin-bottom: 0;
       @include tablet-portrait {
         margin-bottom: .5rem;
         font-family: 'Antenna Condensed Bold', sans-serif;
         font-size: 1.75rem;
         line-height: rvr(2);
+        color: $white;
       }
     }
     p {
@@ -132,7 +133,7 @@ tr:nth-child(odd) { background: $gray-extra-light; }
         margin-bottom: .5rem;
         font-size: 1.125rem;
         line-height: rvr(1.85);
-        color: lighten($gray-extra-dark,5%);
+        color: $white;
       }
     }
     a.cta {

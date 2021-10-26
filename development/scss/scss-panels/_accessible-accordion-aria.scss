@@ -79,7 +79,7 @@ button.minimalist-css-accordion__header:hover {
 button.minimalist-accordion__header:focus,
 button.minimalist-noanim-accordion__header:focus,
 button.minimalist-css-accordion__header:focus {
-  outline: solid 2px $gold;
+  outline: solid $maroon;
   color: #ffffff;
 }
 
@@ -131,6 +131,12 @@ nav#secondary .minimalist-accordion__panel,
   -webkit-transition-delay: 0;
   transition-delay: 0;
   /* padding: 2em; - use this panel with background color $gray-extra-light */
+}
+
+.minimalist-accordion__panel {
+  margin: 0;
+  padding: 2rem;
+  background: $gray-extra-light;
 }
 
 /* This is the hidden state */

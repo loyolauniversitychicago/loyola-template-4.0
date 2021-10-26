@@ -17,6 +17,9 @@
   display: block;
   margin: 0;
   padding-bottom: 0;
+  @include phone-portrait {
+    min-height: auto;
+  }
 }
 
 .grid-wrapper-min-max.card-horizontal .grid-item {
@@ -37,11 +40,15 @@
   margin: 0;
   width: auto;
   height: 100%;
+  min-height: 350px;
   overflow: hidden;
   background-image: url('http://via.placeholder.com/1000x560');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  @include phone-portrait {
+    min-height: auto;
+  }
 }
 
 .grid-wrapper-min-max .grid-item .image-wrapper .image-wrapper-overlay,
