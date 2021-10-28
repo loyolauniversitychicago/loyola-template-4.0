@@ -175,6 +175,13 @@ nav#secondary [aria-hidden=true].minimalist-accordion__panel {
   margin-bottom: 0 !important;
 }
 
+.js-accordion__panel.minimalist-accordion__panel p:first-of-type {
+  margin-bottom: 1rem !important;
+}
+
+.js-accordion__panel.minimalist-accordion__panel h5:first-of-type {
+  margin-top: 0rem !important;
+}
 
 /* This is the hidden state */
 

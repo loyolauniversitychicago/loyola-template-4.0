@@ -47,6 +47,13 @@
 .grid-wrapper-min-max.three-column-nine-column { grid-template-columns: 25% auto; }
 .grid-wrapper-min-max.nine-column-three-column { grid-template-columns: auto 25%; }
 
+@media only screen and (max-width: 1200px) {
+  #panel-cards .grid-wrapper-min-max.four-column,
+  #panel-numbers .grid-wrapper-min-max.four-column {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+
 #panel-intro .grid-wrapper-min-max {
   display: -ms-grid;
   display: grid;

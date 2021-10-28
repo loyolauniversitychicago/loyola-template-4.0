@@ -188,21 +188,21 @@ header #brand {
     width: 90%;
   }
 }
-
+.grid-item.container.container-100,
 .container.container-100 {
   width: 100%;
   @include tablet-portrait {
     width: 90%;
   }
 }
-
+.grid-item.container.container-80,
 .container.container-80 {
   width: 80%;
   @include tablet-portrait {
     width: 90%;
   }
 }
-
+.grid-item.container.container-50,
 .container.container-50 {
   width: 50%;
   @include tablet-portrait {
