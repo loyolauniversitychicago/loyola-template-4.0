@@ -54,6 +54,30 @@
   }
 }
 
+#panel-cards .container.portrait .grid-wrapper-min-max.four-column {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  @include tablet-portrait {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  @include phone-portrait {
+    display: block !important;
+    width: 100%;
+  }
+}
+
+#panel-cards .container.portrait,
+#panel-cards .container.container-100.portrait,
+#panel-cards .container.container-80.portrait,
+#panel-cards .container.container-50.portrait {
+  @include tablet-portrait {
+    width: 80%;
+  }
+  @include phone-portrait {
+    width: 70%;
+  }
+}
+
 #panel-intro .grid-wrapper-min-max {
   display: -ms-grid;
   display: grid;

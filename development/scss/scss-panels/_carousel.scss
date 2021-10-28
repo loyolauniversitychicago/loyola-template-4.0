@@ -167,10 +167,11 @@ button.slick-next {
 
 .slick-dots {
   display: block;
+  box-sizing: border-box;
   position: absolute;
   bottom: 1.75rem;
   left: 1.125rem;
-  margin: 0;
+  margin: 0 !important;
   padding: 0;
   width: 100%;
   list-style: none;
@@ -180,7 +181,7 @@ button.slick-next {
 .slick-dots li {
   position: relative;
   display: inline-block;
-  margin: 0 .35rem 0 .35rem;
+  margin: 0 .35rem 0 .35rem !important;
   padding: 0;
   width: .85rem;
   height: .85rem;

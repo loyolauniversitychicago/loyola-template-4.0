@@ -25,6 +25,13 @@
   }
 }
 
+/* cards */
+
+#panel-cards .grid-wrapper-min-max .grid-item,
+#panel-numbers .grid-wrapper-min-max .grid-item {
+  margin: .75rem 0;
+}
+
 /* card-image-overlay bg-maroon added */
 
 #card-image-overlay .content-grid-wrapper.bg-maroon .flex-item.links { background: $maroon !important; }
