@@ -4,7 +4,7 @@
 .grid-wrapper-min-max {
   display: -ms-grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  /* -ms-grid-rows: auto; */
+  -ms-grid-rows: auto;
 }
 
 /* column variations - grid-gap */
@@ -12,13 +12,15 @@
 .grid-wrapper-min-max.one-column {
   grid: 0;
 }
+.grid-wrapper-min-max.one-column,
 .grid-wrapper-min-max.two-column,
 .grid-wrapper-min-max.three-column,
 .grid-wrapper-min-max.four-column,
 .grid-wrapper-min-max.four-column-eight-column,
 .grid-wrapper-min-max.eight-column-four-column,
 .grid-wrapper-min-max.three-column-nine-column,
-.grid-wrapper-min-max.nine-column-three-column {
+.grid-wrapper-min-max.nine-column-three-column,
+#panel-cards .grid-wrapper-min-max.card-horizontal {
   .grid-item {
     padding: 1rem;
   }
@@ -31,13 +33,15 @@
   .grid-wrapper-min-max.one-column {
     grid: 0;
   }
+  .grid-wrapper-min-max.one-column,
   .grid-wrapper-min-max.two-column,
   .grid-wrapper-min-max.three-column,
   .grid-wrapper-min-max.four-column,
   .grid-wrapper-min-max.four-column-eight-column,
   .grid-wrapper-min-max.eight-column-four-column,
   .grid-wrapper-min-max.three-column-nine-column,
-  .grid-wrapper-min-max.nine-column-three-column {
+  .grid-wrapper-min-max.nine-column-three-column,
+  #panel-cards .grid-wrapper-min-max.card-horizontal {
     .grid-item {
       padding: 1rem;
     }
@@ -89,7 +93,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 6;
 }
-.grid-wrapper-min-max.two-column .grid-item:nth-child(1) {
+.grid-wrapper-min-max.two-column .grid-item:nth-child(2) {
   -ms-grid-column: 7;
   -ms-grid-column-span: 6;
 }
@@ -170,11 +174,11 @@
 
 .grid-wrapper-min-max.nine-column-three-column .grid-item:nth-child(1) {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 9;
 }
 .grid-wrapper-min-max.nine-column-three-column .grid-item:nth-child(2) {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 9;
+  -ms-grid-column: 10;
+  -ms-grid-column-span: 3;
 }
 .grid-wrapper-min-max.nine-column-three-column .grid-item:nth-child(3),
 .grid-wrapper-min-max.nine-column-three-column .grid-item:nth-child(4) {

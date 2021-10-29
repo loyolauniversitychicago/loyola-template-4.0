@@ -25,7 +25,7 @@
 .grid-wrapper-min-max.card-horizontal .grid-item {
   display: -ms-grid;
   display: grid;
-  margin: 2rem 0;
+  margin: 2rem 0 !important;
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   -ms-grid-rows: auto;
@@ -141,6 +141,12 @@
   height: 100%;
   background: $bg-overlay !important;
   z-index: 0;
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  #card-image-overlay .image-wrapper-overlay {
+    bottom: 0;
+  }
 }
 
 #card-image-overlay .image-wrapper-overlay-content {
