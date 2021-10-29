@@ -149,6 +149,12 @@
   }
 }
 
+@supports (-ms-ime-align:auto) {
+  #card-image-overlay .image-wrapper-overlay {
+    bottom: 0;
+  }
+}
+
 #card-image-overlay .image-wrapper-overlay-content {
   display: table-cell;
   vertical-align: middle;
