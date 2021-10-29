@@ -20,9 +20,28 @@
 .grid-wrapper-min-max.three-column-nine-column,
 .grid-wrapper-min-max.nine-column-three-column {
   .grid-item {
-    margin: 1rem;
+    padding: 1rem;
   }
 }
+}
+
+/* Microsoft Edge Browser 12+ (All) - @supports method */
+
+@supports (-ms-ime-align:auto) {
+  .grid-wrapper-min-max.one-column {
+    grid: 0;
+  }
+  .grid-wrapper-min-max.two-column,
+  .grid-wrapper-min-max.three-column,
+  .grid-wrapper-min-max.four-column,
+  .grid-wrapper-min-max.four-column-eight-column,
+  .grid-wrapper-min-max.eight-column-four-column,
+  .grid-wrapper-min-max.three-column-nine-column,
+  .grid-wrapper-min-max.nine-column-three-column {
+    .grid-item {
+      padding: 1rem;
+    }
+  }
 }
 
 /* one-column-build - ms support */
