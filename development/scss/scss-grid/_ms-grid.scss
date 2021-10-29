@@ -9,22 +9,31 @@
 
 /* column variations - grid-gap */
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-.grid-wrapper-min-max.one-column {
-  grid: 0;
-}
-.grid-wrapper-min-max.one-column,
-.grid-wrapper-min-max.two-column,
-.grid-wrapper-min-max.three-column,
-.grid-wrapper-min-max.four-column,
-.grid-wrapper-min-max.four-column-eight-column,
-.grid-wrapper-min-max.eight-column-four-column,
-.grid-wrapper-min-max.three-column-nine-column,
-.grid-wrapper-min-max.nine-column-three-column,
-#panel-cards .grid-wrapper-min-max.card-horizontal {
-  .grid-item {
-    padding: 1rem;
+  .grid-wrapper-min-max.one-column {
+    grid: 0;
   }
-}
+  .grid-wrapper-min-max.one-column,
+  .grid-wrapper-min-max.two-column,
+  .grid-wrapper-min-max.three-column,
+  .grid-wrapper-min-max.four-column,
+  .grid-wrapper-min-max.four-column-eight-column,
+  .grid-wrapper-min-max.eight-column-four-column,
+  .grid-wrapper-min-max.three-column-nine-column,
+  .grid-wrapper-min-max.nine-column-three-column,
+  #panel-cards .grid-wrapper-min-max.card-horizontal {
+    .grid-item {
+      padding: 1rem;
+    }
+  }
+  #panel-audio .grid-wrapper-min-max :nth-child(1),
+  #panel-accordion .grid-wrapper-min-max :nth-child(1),
+  #panel-form .grid-wrapper-min-max :nth-child(1),
+  #panel-tabs .grid-wrapper-min-max :nth-child(1),
+  #panel-tabs .grid-wrapper-min-max :nth-child(1) {
+    .grid-item {
+      -ms-grid-column-span: 12;
+    }
+  }
 }
 
 /* Microsoft Edge Browser 12+ (All) - @supports method */
@@ -44,6 +53,15 @@
   #panel-cards .grid-wrapper-min-max.card-horizontal {
     .grid-item {
       padding: 1rem;
+    }
+  }
+  #panel-audio .grid-wrapper-min-max :nth-child(1),
+  #panel-accordion .grid-wrapper-min-max :nth-child(1),
+  #panel-form .grid-wrapper-min-max :nth-child(1),
+  #panel-tabs .grid-wrapper-min-max :nth-child(1),
+  #panel-tabs .grid-wrapper-min-max :nth-child(1) {
+    .grid-item {
+      -ms-grid-column-span: 12;
     }
   }
 }
