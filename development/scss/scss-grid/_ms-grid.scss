@@ -44,6 +44,25 @@
   }
 }
 
+/* grid-wrapper-min-max - default - ms support */
+
+.grid-wrapper-min-max .grid-item:nth-child(1) {
+-ms-grid-column: 1;
+-ms-grid-column-span: 3;
+}
+.grid-wrapper-min-max .grid-item:nth-child(2) {
+-ms-grid-column: 4;
+-ms-grid-column-span: 3;
+}
+.grid-wrapper-min-max .grid-item:nth-child(3) {
+-ms-grid-column: 7;
+-ms-grid-column-span: 3;
+}
+.grid-wrapper-min-max .grid-item:nth-child(4) {
+-ms-grid-column: 10;
+-ms-grid-column-span: 3;
+}
+
 /* one-column-build - ms support */
 
 .grid-wrapper-min-max .grid-item,
