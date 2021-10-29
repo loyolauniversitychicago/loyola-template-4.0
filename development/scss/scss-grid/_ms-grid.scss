@@ -4,7 +4,7 @@
 .grid-wrapper-min-max {
   display: -ms-grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: auto;
+  /* -ms-grid-rows: auto; */
 }
 
 /* column variations - grid-gap */

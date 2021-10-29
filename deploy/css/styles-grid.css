@@ -248,7 +248,6 @@
   }
 }
 /* one-column-build - ms support */
-.grid-wrapper-min-max .grid-item,
 .grid-wrapper-min-max.one-column .grid-item {
   -ms-grid-column-span: 12;
   -ms-grid-row-span: 0;
