@@ -151,6 +151,7 @@
 
 @supports (-ms-ime-align:auto) {
   #card-image-overlay .image-wrapper-overlay {
+    display: block;
     bottom: 0;
   }
 }
