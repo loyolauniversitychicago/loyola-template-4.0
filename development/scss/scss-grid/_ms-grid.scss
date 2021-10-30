@@ -236,9 +236,7 @@
 /* media queries */
 
 /* 1400 */
-@media only screen and (max-width: 1400px) {
-.grid-wrapper-min-max.two-column { -ms-grid-columns: (1fr 1fr); }
-}
+
 /* 768 */
 @media only screen and (max-width: 768px) {
 /* *-column-build - all to span 12 - change display */
