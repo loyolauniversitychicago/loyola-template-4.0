@@ -567,4 +567,62 @@ p span.highlight.bg-success { color: $white; background: lighten($patina,5%); }
 p span.highlight.bg-warning { color: $white; background: lighten($opus,5%); }
 p span.highlight.bg-danger { color: $white; background: $maroon; }
 
+/* MS - IE11 */
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+
+h1,h2 { line-height: 1.25; }
+
+h3 { line-height: 1.125; }
+
+h4 { line-height: 1.25; }
+
+.content-columns-varied.four-column-build h4,
+.content-columns-varied.one-column-build.media-cards h4 { line-height: 1.25; }
+
+h5 { line-height: 1.25; }
+
+h6 { line-height: 1.25; }
+
+p, .explainer p .standard-paragraph p { line-height: 1.75; }
+
+#panel-intro .intro-paragraph > p,
+.intro-paragraph > p { line-height: 2; }
+
+#panel-intro .caption p, .caption p { line-height: 1.35; }
+
+.line-height-tight p { line-height: 1.45; }
+
+#home h1 { line-height: 1.25; }
+
+#main-content-wrapper ol,
+#main-content-wrapper ul,
+#main-content-wrapper-full-width ol,
+#main-content-wrapper-full-width ul { line-height: 1.65; }
+
+#main-content-wrapper .circle-number ol li,
+#main-section-wrapper .circle-number ol li { line-height: 1.35; }
+
+#main-content-wrapper .circle-number ol li::before,
+#main-section-wrapper .circle-number ol li::before { line-height: 1.25; }
+
+blockquote { line-height: 2; }
+
+blockquote cite { line-height: 1.35; }
+
+#panel-intro .grid-area-three blockquote { line-height: 1.85; }
+
+.number-display h1 { line-height: 1 !important; }
+
+.flex-item.content h1 { line-height: 1.125; }
+
+.flex-item.content h2 { line-height: 1.125; }
+
+.flex-item.content.uppercase h4 { line-height: 1.25; }
+
+.flex-item.content p, .flex-item.content p.explainer { line-height: 1.65; }
+
+}
+
+
 /* END - TYPOGRAPHY - CSS */

@@ -112,21 +112,40 @@
     -ms-grid-column-span: 3;
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
-    background-color: $gray-light;
+    margin: 0 2rem 0 0;
+    @include phone-portrait {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 4;
+      -ms-grid-row: 2;
+      -ms-grid-row-span: 1;
+    }
   }
   #panel-intro .grid-area-two {
-    -ms-grid-column: 3;
+    -ms-grid-column: 4;
     -ms-grid-column-span: 1;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
-    background-color: pink;
+    margin: 0 0 2rem 0;
+    @include phone-portrait {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 4;
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1;
+    }
   }
   #panel-intro .grid-area-three {
-    -ms-grid-column: 3;
+    -ms-grid-column: 4;
     -ms-grid-column-span: 1;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
-    background-color: yellow;
+    @include phone-portrait {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 4;
+      -ms-grid-row: 3;
+    }
+  }
+  #panel-intro #home {
+    display: block;
   }
 }
 
