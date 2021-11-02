@@ -154,6 +154,11 @@ tr:nth-child(odd) { background: $gray-extra-light; }
   }
 }
 
+#panel-image-lead .grid-wrapper-min-max .grid-item:first-of-type,
+#panel-image-lead-resize .grid-wrapper-min-max .grid-item:first-of-type {
+
+}
+
 /* image - lead - RESIZE */
 /* background images - various heights - 450 - 800 - 1000 */
 
@@ -437,6 +442,7 @@ button.content-activate-symbol.activate-symbol-close {
 #panel-image-overlay, #panel-image-overlay-resize {
   img {
     object-fit: cover;
+    height: 100%;
   }
   .content-image-overlay {
     position: absolute;
@@ -581,13 +587,10 @@ button.content-activate-symbol.activate-symbol-close {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   .grid-wrapper-min-max {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr !important;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-template-rows: auto;
     grid-auto-flow: row;
-    -ms-grid-rows: auto;
     grid-auto-rows: auto;
     grid-row-gap: .25em;
     width: 100%;

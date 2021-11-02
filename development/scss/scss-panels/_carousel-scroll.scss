@@ -181,6 +181,7 @@
   width: 100%;
   color: $black;
   height:100vh;
+  min-height: 600px;
   background-color: $gray-extra-light;
   @include phone-portrait {
     height: auto;
