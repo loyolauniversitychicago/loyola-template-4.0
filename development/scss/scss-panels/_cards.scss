@@ -439,7 +439,7 @@ button:focus {
 /* 992 */
 
 /* 768 */
-@media only screen and (max-width: 768px) {
+@include tablet-portrait {
 .grid-wrapper-min-max.card-horizontal .grid-item {
   display: block;
   width: 100%;

@@ -58,7 +58,7 @@
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   @include tablet-portrait {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
   }
   @include phone-portrait {
     display: block !important;
@@ -103,49 +103,6 @@
       "intro intro intro intro"
       "sidebar sidebar sidebar sidebar";
     grid-gap: 1rem;
-  }
-}
-
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-  #panel-intro .grid-area-one {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    margin: 0 2rem 0 0;
-    @include phone-portrait {
-      -ms-grid-column: 1;
-      -ms-grid-column-span: 4;
-      -ms-grid-row: 2;
-      -ms-grid-row-span: 1;
-    }
-  }
-  #panel-intro .grid-area-two {
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 1;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    margin: 0 0 2rem 0;
-    @include phone-portrait {
-      -ms-grid-column: 1;
-      -ms-grid-column-span: 4;
-      -ms-grid-row: 1;
-      -ms-grid-row-span: 1;
-    }
-  }
-  #panel-intro .grid-area-three {
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 1;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    @include phone-portrait {
-      -ms-grid-column: 1;
-      -ms-grid-column-span: 4;
-      -ms-grid-row: 3;
-    }
-  }
-  #panel-intro #home {
-    display: block;
   }
 }
 

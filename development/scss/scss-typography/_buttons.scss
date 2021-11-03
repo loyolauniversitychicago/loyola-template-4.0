@@ -38,6 +38,14 @@ button, .button {
     border-radius: .33rem !important;
     -moz-outline-border: .33rem;
   }
+  @include tablet-portrait {
+    &:first-of-type {
+      margin-top: 0;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }
 
 button.container-100 {
