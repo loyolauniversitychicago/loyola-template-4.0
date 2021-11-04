@@ -8,10 +8,10 @@
 .grid-wrapper-min-max .grid-item .tabs button {
   display: inline;
   margin: 0 .35rem;
-  padding: .75em 1em .6em;
+  padding: .5em 1.25rem .6em;
   width: auto;
   font-family: 'Antenna Bold', sans-serif !important;
-  font-size: 1rem;
+  font-size: .85rem;
   color: $maroon;
   border: solid 1px $maroon;
   border-bottom: 0 !important;
@@ -67,6 +67,30 @@
   a {
     font-size: .85em !important;
   }
+}
+
+/* tabs - elevated */
+
+.grid-wrapper-min-max .grid-item .tabs.tabs-elevated button {
+  box-sizing: border-box;
+  color: $maroon;
+  border-bottom: 1px;
+  border-radius: 2rem !important;
+  background: $white;
+  &:hover {
+    color: $white;
+    background: $maroon;
+  }
+}
+
+.grid-wrapper-min-max .grid-item .tabs.tabs-elevated button[aria-selected="true"] {
+  background: $maroon !important;
+}
+
+.grid-wrapper-min-max .grid-item .tabs.tabs-elevated div[role="tablist"] {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 1rem 0;
 }
 
 /* tabs - image-tabs */
