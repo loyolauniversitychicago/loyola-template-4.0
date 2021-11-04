@@ -825,6 +825,7 @@ button.modaal-close {
         color: $gray-extra-dark;
         text-align: center;
         text-decoration: none;
+        border-left: solid 1px darken($gray-light, 15%);
         background: $gray-light;
         transition: .2s;
         &:hover {

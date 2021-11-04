@@ -8,7 +8,6 @@
 .grid-wrapper-min-max .grid-item .tabs button {
   display: inline;
   margin: 0 .35rem;
-  padding: .5em 1.25rem .6em;
   width: auto;
   font-family: 'Antenna Bold', sans-serif !important;
   font-size: .85rem;
@@ -73,8 +72,9 @@
 
 .grid-wrapper-min-max .grid-item .tabs.tabs-elevated button {
   box-sizing: border-box;
+  padding: .5rem 2rem .5rem;
   color: $maroon;
-  border-bottom: 1px;
+  border-bottom: solid 1px $maroon !important;
   border-radius: 2rem !important;
   background: $white;
   &:hover {
