@@ -841,76 +841,74 @@ button.modaal-close {
   nav {
     float: none;
     background: none;
-    ul.grid-wrapper-min-max {
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr !important;
-      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)) !important;
-      grid-template-rows: auto;
-      grid-auto-flow: row;
-      -ms-grid-rows: auto;
-      grid-auto-rows: auto;
-      grid-row-gap: 0;
-      grid-gap: 0;
-      margin: 0 auto;
-      width: calc(100% - 10rem);
-      li {
-        position: relative;
-        display: block;
+  }
+  .grid-wrapper-min-max {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr !important;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr)) !important;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    -ms-grid-rows: auto;
+    grid-auto-rows: auto;
+    grid-row-gap: 0;
+    grid-gap: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 2rem;
+      .grid-item {
+        display: flex;
+        box-sizing: border-box;
         padding: 0;
-        height: 3rem;
-        list-style: none;
-        border: none;
-        border-left: 1px solid $white;
-        border-right: 1px solid $white;
-        background: $gray-extra-light;
+        margin: 0;
+      a {
+        box-sizing: border-box;
+        padding: .65rem 1rem .45rem;
+        width: 100%;
+        height: 100%;
+        font-family: 'Antenna Condensed Light', sans-serif;
+        line-height: 95%;
+        color: $gray-extra-dark;
+        text-align: center;
+        text-decoration: none;
+        border-left: solid 1px darken($gray-light, 15%);
+        background: $gray-light;
         transition: .2s;
-        a {
-          position: absolute;
-          padding: 1rem;
-          height: 100%;
-          width: 100%;
-          font-family: 'Antenna Condensed Light', sans-serif;
-          color: $gray-extra-dark;
-          text-align: center;
-          text-decoration: none;
-          transition: .2s;
-          &:hover {
-            font-family: 'Antenna Condensed Bold', sans-serif;
-            background: $gray-light;
-          }
-        }
-        a.active, a:active {
+        &:hover {
           font-family: 'Antenna Condensed Bold', sans-serif;
-          color: $white;
-          background: $maroon;
-          &:hover {
-            background: $brick;
-          }
+          background: darken($gray-light, 15%);
+        }
+      }
+      a.active, a:active {
+        font-family: 'Antenna Condensed Bold', sans-serif;
+        color: $white;
+        background: $maroon;
+        border: 1px solid $maroon;
+        &:hover {
+          background: $brick;
         }
       }
     }
   }
 }
 
-li#previous-pages, li#next-pages {
-  display: inline-block;
-  padding: 0;
-  width: auto;
-  a {
-    display: inline;
-    padding: 1rem 1.5rem;
-    height: 100%;
-    font-size: .85rem;
-    font-family: 'Antenna Condensed Bold', sans-serif !important;
-    color: $gray-extra-light !important;
-    background: $gray-dark;
-    &:hover {
-      color: $white;
-      background: $gray-extra-dark !important;
-    }
+#panel-pagination #previous-pages.grid-item a,
+#panel-pagination #next-pages.grid-item a {
+  background-color: darken($gray-light,10%);
+  &:hover {
+    background: darken($gray-light,15%);
   }
 }
+
+#panel-pagination #previous-pages.grid-item a {
+  border-radius: .25rem 0 0 .25rem;
+}
+
+#panel-pagination #next-pages.grid-item a {
+  border-radius: 0 .25rem .25rem 0;
+}
+
+#panel-pagination a:hover:not(.active) {background-color: red;}
 
 /* pagination breadcrumb */
 
@@ -918,41 +916,44 @@ li#previous-pages, li#next-pages {
   padding: 0 0 2rem 0;
 }
 
-#panel-pagination #content-pagination-breadcrumbs ul.breadcrumb {
+#panel-pagination #content-pagination-breadcrumbs .breadcrumb {
   margin: 0;
   padding: 0;
-  list-style: none;
   background-color: none;
 }
 
-#panel-pagination #content-pagination-breadcrumbs nav ul li {
-  display: inline;
-  border: none;
-  background: none;
-  &::before {
+#panel-pagination #content-pagination-breadcrumbs {
+  .grid-wrapper-min-max {
     display: inline;
-    padding: 0;
-    color: $gray;
-    content: "/";
-    text-indent: 0;
-  }
-  a {
-    display: inline;
-    margin: 0 .5rem;
-    padding: 0;
-    font-family: 'Antenna', sans-serif;
-    font-size: .75rem;
-    color: $gray;
-    text-transform: uppercase;
+    border: none;
     background: none;
-    &:hover {
-      color: $maroon;
+    a {
+      display: inline;
+      margin: 0 0 .25rem;
+      padding: 0;
+      font-family: 'Antenna', sans-serif;
+      font-size: .75rem;
+      color: $gray;
+      text-transform: uppercase;
+      border: none;
       background: none;
+      &::before {
+        display: inline;
+        margin: 0 .25rem 0 0;
+        padding: 0;
+        color: $gray;
+        content: "/";
+        text-indent: 0;
+      }
+      &:hover {
+        color: $maroon;
+        background: none;
+      }
     }
   }
 }
 
-#content-pagination-breadcrumbs nav ul li a.active {
+#content-pagination-breadcrumbs a.active {
   color: $maroon !important;
 }
 
