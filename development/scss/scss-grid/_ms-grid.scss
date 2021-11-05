@@ -427,6 +427,60 @@
   -ms-grid-row-span: 1;
 }
 /* grid areas */
+/* image - text */
+#panel-image-text .grid-wrapper-grid-area {
+  .grid-area-image {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+  @include phone-portrait {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+  }
+  }
+  .grid-area-content {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+  @include phone-portrait {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+  }
+  }
+}
+#panel-image-text .grid-wrapper-grid-area.toggle-grid-area {
+  .grid-area-image {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+  @include phone-portrait {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+  }
+  }
+  .grid-area-content {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+  @include phone-portrait {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+  }
+  }
+}
+/* image-grid */
 #panel-image-grid-area .grid-wrapper-grid-area {
   display: -ms-grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -473,7 +527,6 @@
 .calendar-card-date {
   margin: 0 0 1.125rem;
 }
-#panel-image-text .grid-wrapper-min-max.two-column,
 #panel-image-highlights .grid-wrapper-min-max.three-column {
   .grid-item {
     padding: 0;
