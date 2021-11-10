@@ -157,18 +157,26 @@
   align-self: right;
 }
 
-.item.item--first,
-.item.item--second,
-.item.item--third,
-.item.item--fourth,
-.item.item--fifth,
-.item.item--sixth,
-.item.item--seventh,
-.item.item--eighth,
-.item.item--ninth,
-.item.item--tenth,
-.item.item--eleventh,
-.item.item--twelevth {
+.item--first,
+.item--second,
+.item--third,
+.item--fourth,
+.item--fifth,
+.item--sixth,
+.item--seventh,
+.item--eighth,
+.item--ninth,
+.item--tenth,
+.item--eleventh,
+.item--twelfth,
+.item--thirteenth,
+.item--fourteenth,
+.item--fifteenth,
+.item--sixteenth,
+.item--seventeenth,
+.item--eighteenth,
+.item--ninteenth,
+.item--twentieth {
   @include phone-portrait {
     display: none;
   }
@@ -254,10 +262,52 @@
     background-image: url("../images/images-carousel-scroll/carousel-scroll-12.jpg");
   }
 
-  &--twelveth {
+  &--twelfth {
     @include center-v;
-    background-image: url("../images/images-carousel-scroll/carousel-scroll-12.jpg");
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-11.jpg");
   }
+
+  &--thirteenth {
+    @include center-v;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-10.jpg");
+  }
+
+  &--fourteenth {
+    @include center-v;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-09.jpg");
+  }
+
+  &--fifteenth {
+    @include center-v;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-08.jpg");
+  }
+
+  &--sixteenth {
+    @include center-v;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-07.jpg");
+  }
+
+  &--seventeenth {
+    @include center-v;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-06.jpg");
+  }
+
+  &--eighteenth {
+    @include center-v;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-05.jpg");
+  }
+
+  &--ninteenth {
+    @include center-v;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-04.jpg");
+  }
+
+  &--twentieth {
+    @include center-v;
+    background-image: url("../images/images-carousel-scroll/carousel-scroll-03.jpg");
+  }
+
+  /* last item must include repeated image - see --eleventh and --twelfth */
 
 }
 /* DELETE - ONLY FOR PRESIDENTS MEDALLION ====
