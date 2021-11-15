@@ -5,7 +5,7 @@
   .grid-item {
     margin: 0;
     width: 50%;
-    @include phone-portrait {
+    @include tablet-portrait {
       width: 100%;
     }
   }
@@ -23,7 +23,7 @@
   padding: 0;
   font-size: 5rem;
   line-height: rvr(4.5);
-  @include phone-portrait {
+  @include tablet-portrait {
     font-size: 2.75rem;
     line-height: rvr(3);
   }
@@ -45,7 +45,7 @@
   width: 100%;
   text-align: left;
   border: 0;
-  @include phone-portrait {
+  @include tablet-portrait {
     font-size: 1.65rem;
     line-height: rvr(2.45);
   }
@@ -60,9 +60,10 @@
   img {
     margin: 0;
   }
-  @include phone-portrait {
+  @include tablet-portrait {
     display: block;
     width: 100%;
+    min-height: auto;
   }
 }
 
@@ -78,7 +79,7 @@
   height: 100vh;
   background-color: $gray;
   background-image: url("../images/images-carousel-scroll/carousel-scroll-01.jpg");
-  @include phone-portrait {
+  @include tablet-portrait {
     display: none;
   }
 }
@@ -92,7 +93,7 @@
   height: 100vh;
   color: $gray-light;
   background: $maroon;
-  @include phone-portrait {
+  @include tablet-portrait {
     height: auto;
   }
   .item-content {
@@ -148,7 +149,7 @@
   height: 100%;
   align-items: center;
   justify-content: center;
-  @include phone-portrait {
+  @include tablet-portrait {
     padding: rvr(2);
   }
 }
@@ -177,7 +178,7 @@
 .item--eighteenth,
 .item--ninteenth,
 .item--twentieth {
-  @include phone-portrait {
+  @include tablet-portrait {
     display: none;
   }
 }
@@ -191,8 +192,9 @@
   height:100vh;
   min-height: 600px;
   background-color: $gray-extra-light;
-  @include phone-portrait {
+  @include tablet-portrait {
     height: auto;
+    min-height: auto;
   }
   span {
     display: block;
