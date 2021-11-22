@@ -236,6 +236,7 @@ li em, li em a, li a em, {
   text-transform: uppercase;
   font-weight: bold;
   font-weight: 700;
+  font-family: 'Antenna Condensed Bold';
 }
 
 .caption .leadin {
@@ -376,6 +377,27 @@ ol li::before {
   content: counter(circle-numbers);
   display: inline-block;
   float: left;
+  margin: 2px .5rem 0 -2.25rem;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-size: .85rem;
+  line-height: 1.25;
+  line-height: rvr(1.25);
+  text-align: center;
+  color: #ffffff;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+#main-content-wrapper .circle-number.circle-number-patina ol li::before,
+#main-section-wrapper .circle-number.circle-number-patina ol li::before {
+  background-color: $patina;
+}
+
+.circle-number-key {
+  position: absolute;
   margin: 2px .5rem 0 -2.25rem;
   padding: 0;
   width: 24px;

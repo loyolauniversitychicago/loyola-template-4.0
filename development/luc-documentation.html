@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	@@include('./partials/framework/luc-head.html')
+	<!-- inject:css -->
+	<!-- endinject -->
+	<link rel="stylesheet" href="###">
+	<link rel="stylesheet" href="###">
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header>
+		<!-- @@include('./partials/framework/luc-header.html') -->
+	</header>
+	<main id="main-content-start" alt="This is the beginning of the main content of the page">
+		<aside id="social-icon-bar">
+			<!-- sidebar content here -->
+		</aside>
+		<!-- main content here
+		by ID
+		span9 (main-content-wrapper)
+		span12 (main-content-wrapper-full-width) -->
+		<div id="main-content-wrapper">
+			<section id="main-section-wrapper">
+				<div class="container-fluid">
+					<h1 id="interior-header">Documentation</h1>
+					<div class="padding-md"></div>
+				</div>
+				@@include('./partials/documentation/documentation-card-elements.html')
+				<!-- @@include('./partials/documentation/doc-card-variations.html') -->
+			</section>
+			<aside id="main-aside-wrapper" class="documentation-navigation">
+				<h5>Cards</h5>
+				<div><a href="#card-anatomy">Elements</a></div>
+				<div><a href="#card-variations">Variations</a></div>
+				<!-- sidebar content here -->
+			</aside>
+		</div>
+	</main>
+	<!-- inject:js -->
+	<!-- endinject -->
+</body>
+
+</html>

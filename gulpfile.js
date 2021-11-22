@@ -74,6 +74,16 @@ function sassPanels() {
     cb();
 };
 
+function sassDocumentation() {
+    return gulp
+    .src(config.devDir + '/scss/scss-documentation/**/*.scss')
+    .pipe(sourcemaps.init())  // Process the original sources
+		.pipe(sass())
+		.pipe(sourcemaps.write()) // Add the map to modified source.
+    .pipe(gulp.dest(config.deployDir + '/css'));
+    cb();
+};
+
 function referencePaths() {
     return gulp
     .src('./development/*.html')
@@ -103,12 +113,12 @@ function watchFiles() {
     }
   });
   watch('./development/**/*.html', gulp.series('indexBuild', 'browserSyncReload'));
-  watch(config.devDir + '/scss/**/*.scss', gulp.series(parallel('sassFramework', 'sassGrid', 'sassTypography', 'sassPanels'), 'browserSyncReload'));
+  watch(config.devDir + '/scss/**/*.scss', gulp.series(parallel('sassFramework', 'sassGrid', 'sassTypography', 'sassPanels', 'sassDocumentation'), 'browserSyncReload'));
   watch(config.devDir + '/js/**/*.js', gulp.series('browserSyncReload'));
 };
 
 exports.default = series(
-  parallel(sassFramework, sassGrid, sassTypography, sassPanels),
+  parallel(sassFramework, sassGrid, sassTypography, sassPanels, sassDocumentation),
   referencePaths,
   indexBuild,
   watchFiles,
@@ -120,6 +130,7 @@ exports.sassFramework = sassFramework;
 exports.sassGrid = sassGrid;
 exports.sassTypography = sassTypography;
 exports.sassPanels = sassPanels;
+exports.sassDocumentation = sassDocumentation;
 exports.watchFiles = watchFiles;
 exports.browserSync = browserSync;
 exports.browserSyncReload = browserSyncReload;
