@@ -22,19 +22,25 @@
 		by ID
 		span9 (main-content-wrapper)
 		span12 (main-content-wrapper-full-width) -->
-		<div id="main-content-wrapper">
+		<div id="main-content-wrapper-full-width">
 			<section id="main-section-wrapper">
+				<div class="padding-lg"></div>
 				<div class="container-fluid">
-					<h1 id="interior-header">Documentation</h1>
-					<div class="padding-md"></div>
+					<div class="container">
+						<h1 id="interior-header">Documentation</h1>
+					</div>
 				</div>
+				@@include('./partials/documentation/documentation-card-variations.html')
+				<div class="padding-md"></div>
 				@@include('./partials/documentation/documentation-card-elements.html')
-				<!-- @@include('./partials/documentation/doc-card-variations.html') -->
+				@@include('./partials/documentation/documentation-card-user-interface.html')
 			</section>
-			<aside id="main-aside-wrapper" class="documentation-navigation">
+			<aside id="main-aside-wrapper">
 				<h5>Cards</h5>
-				<div><a href="#card-anatomy">Elements</a></div>
-				<div><a href="#card-variations">Variations</a></div>
+				<div id="documentation-navigation">
+					<a href="#card-elements">Elements</a>
+					<a href="#card-variations">Variations</a>
+				</div>
 				<!-- sidebar content here -->
 			</aside>
 		</div>

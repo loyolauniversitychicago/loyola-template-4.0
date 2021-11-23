@@ -1,3 +1,34 @@
+.maroon-color {
+  color: #8d0034;
+}
+
+img.terminal-four-icon {
+  display: inline;
+  margin: 0 .5rem 0 0;
+  width: 1.75rem;
+  height: auto;
+}
+
+#documentation-navigation {
+  padding: .75rem;
+  background: #e1e1e1;
+  a {
+    display: block;
+    margin: .5rem 0;
+    width: 100%;
+  }
+}
+
+.circle-number-key.circle-key-red {
+  background: red;
+}
+
+#documentation-card-elements {
+  .grid-wrapper-min-max.four-column-eight-column {
+    grid-gap: 4rem;
+  }
+}
+
 #documentation-card-elements .image-wrapper,
 #documentation-card-elements h6,
 #documentation-card-elements .flex-item.content h4,
@@ -25,7 +56,7 @@
   top: 0%;
 }
 #card-element-key-six {
-  top: 0%;
+  top: 20%;
 }
 #card-element-key-seven {
   top: 0%;
@@ -36,4 +67,17 @@
 }
 #card-element-key-nine {
   top: 0%;
+}
+
+#card-variation-key-one {
+  top: 10%;
+  left: 30%;
+}
+#card-variation-key-two {
+  top: 50%;
+  left: 0%;
+}
+#card-variation-key-three {
+  top: 50%;
+  left: 0%;
 }

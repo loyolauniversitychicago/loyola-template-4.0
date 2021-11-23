@@ -77,12 +77,12 @@ h3 {
 h4 {
   margin-top: rvr(1.5);
   font-size: 1.75rem;
-  line-height: 2;
-  line-height: rvr(2);
+  line-height: 1.75;
+  line-height: rvr(1.75);
   @include phone-portrait {
     font-size: 1.6rem;
-    line-height: 1.7;
-    line-height: rvr(1.7);
+    line-height: 1.6;
+    line-height: rvr(1.6);
   }
 }
 
@@ -106,8 +106,8 @@ h5 {
   margin-top: rvr(1.25);
   margin-bottom: rvr(.35);
   font-size: 1.125rem;
-  line-height: 1.6;
-  line-height: rvr(1.6);
+  line-height: 1.45;
+  line-height: rvr(1.45);
   text-transform: uppercase;
   @include phone-portrait {
     font-size: 1rem;
@@ -121,8 +121,8 @@ h6 {
   margin-bottom: rvr(.75);
   font-family: 'Antenna Condensed Light', sans-serif;
   font-size: 1rem;
-  line-height: 1.35;
-  line-height: rvr(1.35);
+  line-height: 1.25;
+  line-height: rvr(1.25);
   letter-spacing: 0rem;
   text-transform: uppercase;
   @include phone-portrait {
@@ -412,6 +412,12 @@ ol li::before {
   border-radius: 50%;
 }
 
+.circle-number-key.circle-number-key-inline {
+  display: inline-block;
+  position: relative;
+  margin: 0 .75rem 0 0;
+}
+
 /* blockquote */
 
 .blockquote-wrapper {
@@ -553,7 +559,7 @@ blockquote cite:before {
   margin-bottom: rvr(.25) !important;
   font-family: 'Antenna Condensed Light', sans-serif !important;
   font-size: 1.125rem;
-  line-height: 1.65;
+  line-height: 1.45;
 }
 
 .flex-item.content p.explainer {
@@ -563,7 +569,7 @@ blockquote cite:before {
 .card a.cta,
 .flex-item.content a.cta {
   margin-top: rvr(.75) !important;
-  margin-bottom: rvr(1.5);
+  margin-bottom: rvr(1.125);
 }
 
 /* infobox */

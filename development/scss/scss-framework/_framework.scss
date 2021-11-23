@@ -270,10 +270,6 @@ header #brand {
   grid-template-areas: "main-section-wrapper main-aside-wrapper";
   grid-gap: 3rem;
   @include tablet-portrait {
-    grid-template-columns: minmax(0, 2fr) 250px;
-    grid-gap: 2rem;
-  }
-  @include phone-landscape {
     grid-template-areas:
     "main-aside-wrapper"
     "main-section-wrapper";
@@ -304,6 +300,12 @@ header #brand {
   @include phone-landscape {
     display: block;
     margin: 0;
+  }
+}
+
+#main-aside-wrapper[style] {
+  @include tablet-portrait {
+    margin-top: 0 !important;
   }
 }
 

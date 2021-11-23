@@ -70,19 +70,97 @@
 		by ID
 		span9 (main-content-wrapper)
 		span12 (main-content-wrapper-full-width) -->
-		<div id="main-content-wrapper">
+		<div id="main-content-wrapper-full-width">
 			<section id="main-section-wrapper">
+				<div class="padding-lg"></div>
 				<div class="container-fluid">
-					<h1 id="interior-header">Documentation</h1>
-					<div class="padding-md"></div>
+					<div class="container">
+						<h1 id="interior-header">Documentation</h1>
+					</div>
 				</div>
+				<!-- cards -->
+<section id="documentation-card-variations" class="container-fluid">
+	<div class="container">
+
+<!-- card - standard - vertical - without class added -->
+
+		<h3>5 Card Variations</h3>
+		<div class="explainer">
+				<p>Element names in bold corrolate to Terminal Four input field labels</p>
+		</div>
+		<div class="padding-xsm"></div>
+		<!-- card - portrait -->
+		<div class="container-fluid">
+			<div class="container container-100">
+				<div class="grid-wrapper-min-max three-column">
+					<div class="grid-item">
+						<h5>
+							<span class="circle-number-key circle-number-key-inline">1</span>
+							Card <span style="font-family: 'Antenna Condensed Light', sans-serif;">Standard</span>
+						</h5>
+						<div class="explainer">
+							<p><strong class="maroon-color">T4:</strong> This is the standard display</p>
+						</div>
+						<img src="./images/images-documentation/card-standard.jpg" alt="Alternate description goes here" title="Title goes here">
+					</div>
+					<div class="grid-item">
+						<h5><span class="circle-number-key circle-number-key-inline">2</span>
+							Card <span style="font-family: 'Antenna Condensed Light', sans-serif;">With Panel</span>
+						</h5>
+						<div class="explainer">
+							<p><strong class="maroon-color">T4:</strong> Select <strong>Default Card Display</strong></p>
+						</div>
+						<img src="./images/images-documentation/card-default.jpg" alt="Alternate description goes here" title="Title goes here">
+					</div>
+					<div class="grid-item">
+						<h5>
+							<span class="circle-number-key circle-number-key-inline">3</span>
+							Card <span style="font-family: 'Antenna Condensed Light', sans-serif;">With Overlay</span>
+						</h5>
+						<div class="explainer">
+							<p><strong class="maroon-color">T4:</strong> Select <strong>Display Card Items Overlay</strong></p>
+						</div>
+						<img src="./images/images-documentation/card-image-overlay.jpg" alt="Alternate description goes here" title="Title goes here">
+					</div>
+				</div>
+				<div class="grid-wrapper-min-max eight-column-four-column">
+					<div class="grid-item">
+						<h5>
+							<span class="circle-number-key circle-number-key-inline">4</span>
+							Card <span style="font-family: 'Antenna Condensed Light', sans-serif;">Horizontal</span>
+						</h5>
+						<div class="explainer">
+							<p><strong class="maroon-color">T4:</strong> Select <strong>Display Card Items Horizontally</strong></p>
+						</div>
+						<img src="./images/images-documentation/card-horizontal.jpg" alt="Alternate description goes here" title="Title goes here">
+					</div>
+					<div class="grid-item">
+						<h5><span class="circle-number-key circle-number-key-inline">5</span>
+							Card <span style="font-family: 'Antenna Condensed Light', sans-serif;">Circle Image</span>
+						</h5>
+						<div class="explainer">
+							<p><strong class="maroon-color">T4:</strong> Select <strong>Display Circle Image</strong></p>
+						</div>
+						<img src="./images/images-documentation/card-image-circle.jpg" alt="Alternate description goes here" title="Title goes here">
+					</div>
+				</div>
+				<a class="modaal cta" href="#documentation-card-user-interface" data-modaal-type="inline" data-modaal-animation="fade">
+					<span><img class="terminal-four-icon" src="./images/images-documentation/terminal-four-icon.jpg"></span>
+					View T4 user interface
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+				<div class="padding-md"></div>
 				<!-- cards -->
 <section id="documentation-card-elements" class="container-fluid">
 	<div class="container">
 
 <!-- card - standard - vertical - without class added -->
 
-		<h3>Elements of a card</h3>
+		<h3>Using the Elements of a Card</h3>
 		<div class="explainer">
 			<p>Element names in bold corrolate to Terminal Four input field labels</p>
 		</div>
@@ -100,13 +178,12 @@
 						</div>
 						<div class="content-grid-wrapper">
 							<div class="flex-item content">
-								<h6><div id="card-element-key-two" class="circle-number-key">2</div>0/0/0000: 0:00PM-0:00PM</h6>
+								<h6><span id="card-element-key-two" class="circle-number-key">2</span>0/0/0000: 0:00PM-0:00PM</h6>
 								<h4><div id="card-element-key-three" class="circle-number-key">3</div>The headline is lorem ipsum</h4>
 								<h5><div id="card-element-key-four" class="circle-number-key">4</div>Somebody Namehere</h5>
 								<div class="explainer"><div id="card-element-key-five" class="circle-number-key">5</div><p>Lorem ipsum dolor sit amet</p></div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non.</p>
+								<p><span id="card-element-key-six" class="circle-number-key">6</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non.</p>
 								<a class="cta" href="#####"><div id="card-element-key-seven"class="circle-number-key">7</div>CTA here</a>
-								<div id="card-element-key-six" class="circle-number-key">6</div>
 							</div>
 							<div class="flex-item category-light">
 								<button onclick="window.open('###','_blank')"><div id="card-element-key-eight"class="circle-number-key">8</div>CTA here</button>
@@ -116,17 +193,19 @@
 					</div>
 					<div class="grid-item">
 						<div class="circle-number circle-number-patina">
-							<div class="padding-xsm"></div>
+							<div class="explainer">
+								<p>Following direction is best practice guidance. Word counts are strongly suggested.</p>
+							</div>
 							<ol class="sans-serif">
-								<li><span class="leadin bold">Image</span> - One of two image sizes can be used. 1000px x 560px and 1000px x 1000px. <a href="###"></br>For more information about images, see images documentation</a></li>
+								<li><span class="leadin bold">Image</span> - One of two image sizes can be used. 1000px x 560px and 1000px x 1000px. <a href="###"><br>For more information about images, see images documentation</a></li>
 								<li><span class="leadin bold">Label</span> - Short label to add context, or the date of an event</li>
-								<li><span class="leadin bold">Title</span> - Brief 5-8 word headline.</li>
-								<li><span class="leadin bold">Identifier</span> - Person or subject.</li>
-								<li><span class="leadin bold">Explainer</span> - Title or subline.</li>
-								<li><span class="leadin bold">Readout</span> - A brief 10-30 word paragraph.</li>
-								<li><span class="leadin bold">Link</span> - A brief "Call to Action" - For example, READ MORE.</li>
-								<li><span class="leadin bold">Button</span> - A brief "Call to Action" - For example, REGISTER NOW.</li>
-								<li><span class="leadin bold"></span> - A brief 3-5 word readout. For example, </li>
+								<li><span class="leadin bold">Title</span> - Brief 5-8 word headline or title</li>
+								<li><span class="leadin bold">Identifier</span> - Person or subject</li>
+								<li><span class="leadin bold">Explainer</span> - Title or subline</li>
+								<li><span class="leadin bold">Readout</span> - Brief 10-30 word paragraph.</li>
+								<li><span class="leadin bold">Link</span> - Brief "Call to Action" - For example, READ MORE.</li>
+								<li><span class="leadin bold">Button</span> - Brief "Call to Action" - For example, REGISTER NOW.</li>
+								<li><span class="leadin bold">Button Readout</span> - Brief 3-5 word readout. For example, </li>
 							</ol>
 						</div>
 					</div>
@@ -136,12 +215,30 @@
 	</div>
 </section>
 
-				
+				<section id="documentation-card-user-interface" style="display: none;">
+  <div class="container-fluid">
+    <div class="divider-sm"></div>
+      <div class="container">
+        <div class="grid-wrapper-min-max one-column">
+          <div class="grid-item">
+            <!-- content -->
+            <h3>Card Variations</h3>
+		        <img src="./images/images-documentation/card-t4-ui-elements.jpg" alt="Alternate description goes here" title="Title goes here">
+            <!-- content end -->
+          </div>
+        </div>
+      <div class="divider-sm"></div>
+      </div>
+    </div>
+</section>
+
 			</section>
-			<aside id="main-aside-wrapper" class="documentation-navigation">
+			<aside id="main-aside-wrapper">
 				<h5>Cards</h5>
-				<div><a href="#card-anatomy">Elements</a></div>
-				<div><a href="#card-variations">Variations</a></div>
+				<div id="documentation-navigation">
+					<a href="#card-elements">Elements</a>
+					<a href="#card-variations">Variations</a>
+				</div>
 				<!-- sidebar content here -->
 			</aside>
 		</div>
