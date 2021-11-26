@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .maroon-color {
   color: #8d0034;
 }
@@ -22,6 +26,9 @@
   background: #e1e1e1;
   nav {
     background: none;
+  }
+  h5 {
+    margin: 0;
   }
   a {
     display: block;
