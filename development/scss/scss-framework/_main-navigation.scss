@@ -8,7 +8,7 @@ nav#audience-directory,
 	}
 }
 
-:focus {
+:focus, :focus::not(div) {
 	outline: 3px solid $gold;
 	outline-offset: -3px;
 }

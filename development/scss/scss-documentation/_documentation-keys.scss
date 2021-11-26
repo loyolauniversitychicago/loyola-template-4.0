@@ -1,3 +1,13 @@
+html, body {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
 .maroon-color {
   color: #8d0034;
 }
@@ -14,7 +24,7 @@
 }
 
 #documentation-navigation {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   padding: .75rem;
