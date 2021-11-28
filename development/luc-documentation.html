@@ -30,19 +30,21 @@
 						<h1 id="interior-header">Documentation</h1>
 					</div>
 				</div>
+				<!-- cards -->
 				@@include('./partials/documentation/documentation-card-elements.html')
-				<div class="padding-lg"></div>
 				<!-- cards - modal link -->
-				<div class="container">
-					<a class="modaal cta" href="#documentation-card-user-interface" data-modaal-type="inline" data-modaal-animation="fade">
-						<span><img class="terminal-four-icon" src="./images/images-documentation/terminal-four-icon.jpg"></span>
-						LEARN T4 - <span style="font-family:'Antenna Condensed Light', sans-serif;">CARD - Elements, Variations, and Guidance
-					</a>
-				</div>
-				<div class="padding-sm"></div>
+				@@include('./partials/documentation/documentation-card-modal-link-variations.html')
 				@@include('./partials/documentation/documentation-card-variations.html')
+				<!-- cards - modal link -->
+				@@include('./partials/documentation/documentation-card-modal-link-variations.html')
 				<!-- cards - modal content -->
 				@@include('./partials/documentation/documentation-card-user-interface.html')
+				<!-- padding -->
+				@@include('./partials/documentation/documentation-padding.html')
+				<!-- padding - modal link -->
+				@@include('./partials/documentation/documentation-padding-modal-link.html')
+				<!-- padding - maodal content -->
+				@@include('./partials/documentation/documentation-padding-user-interface.html')
 			</section>
 			<aside id="main-aside-wrapper">
 				<!-- sidebar content here -->
