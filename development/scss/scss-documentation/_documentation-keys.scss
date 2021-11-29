@@ -1,3 +1,7 @@
+/* documentation */
+
+/* scroll */
+
 html, body {
 	scroll-behavior: smooth;
 }
@@ -7,6 +11,8 @@ html, body {
 		scroll-behavior: auto;
 	}
 }
+
+/* images */
 
 .image-50 {
 	width: 50%;
@@ -22,20 +28,30 @@ html, body {
 	}
 }
 
-.maroon-color {
-  color: #8d0034;
-}
-
-#main-content-wrapper-full-width.main-content-wrapper-documentation {
-  padding: 4rem 20% 4rem 10%;
-}
-
 #main-content-wrapper-full-width img.terminal-four-icon {
   display: inline;
   margin: 0 .5rem 0 0;
   width: 2.75rem;
   height: auto;
 }
+
+/* color */
+
+.circle-number-key.circle-key-red {
+  background: red;
+}
+
+.maroon-color {
+  color: #8d0034;
+}
+
+/* structure */
+
+#main-content-wrapper-full-width.main-content-wrapper-documentation {
+  padding: 4rem 20% 4rem 10%;
+}
+
+/* navigation */
 
 #documentation-navigation {
   position: fixed;
@@ -74,15 +90,15 @@ html, body {
   }
 }
 
-.circle-number-key.circle-key-red {
-  background: red;
-}
+/* cards */
 
 #documentation-card-elements {
   .grid-wrapper-min-max.four-column-eight-column {
     grid-gap: 4rem;
   }
 }
+
+/* card elements */
 
 #documentation-card-elements .image-wrapper,
 #documentation-card-elements h6,
@@ -95,6 +111,9 @@ html, body {
 #documentation-card-elements a.cta {
   position: relative;
 }
+
+/* card elements - key */
+
 #card-element-key-one {
   top: 50%;
 }
@@ -124,6 +143,8 @@ html, body {
   top: 0%;
 }
 
+/* card variations - key */
+
 #card-variation-key-one {
   top: 10%;
   left: 30%;
@@ -135,4 +156,28 @@ html, body {
 #card-variation-key-three {
   top: 50%;
   left: 0%;
+}
+
+/* typography */
+
+#documentation-typography h1,
+#documentation-typography h2,
+#documentation-typography h3,
+#documentation-typography h4,
+#documentation-typography h4,
+#documentation-typography h6,
+#documentation-typography .intro-paragraph {
+	position: relative;
+}
+
+/* typography - key */
+
+#typography-header-h1,
+#typography-header-h2,
+#typography-header-h3,
+#typography-header-h4,
+#typography-header-h5,
+#typography-header-h6,
+#typography-text-intro-paragraph {
+	right: 0;
 }
