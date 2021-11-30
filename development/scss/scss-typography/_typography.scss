@@ -178,7 +178,8 @@ li em, li em a, li a em, {
 }
 
 #panel-intro .intro-paragraph > p,
-.intro-paragraph > p {
+.intro-paragraph > p,
+.modaal-content-container .intro-paragraph > p {
   margin: 0;
   margin-bottom: rvr(1.5);
   font-family: 'Antenna Condensed Light', sans-serif;
@@ -321,7 +322,7 @@ footnote { font-style: italic; }
 }
 
 #main-content-wrapper ul li,
-#main-content-wrapper-full-width ul li, {
+#main-content-wrapper-full-width ul li {
   text-indent: -1.35rem;
 }
 
