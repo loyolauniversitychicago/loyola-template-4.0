@@ -50,9 +50,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1,h2 {
-  font-size: 3.75rem;
+  font-size: 3.25rem;
   line-height: 3.75;
-  line-height: rvr(3.75);
+  line-height: rvr(3.5);
   @include phone-portrait {
     font-size: 3rem;
     line-height: 3;
@@ -61,7 +61,7 @@ h1,h2 {
 }
 
 h3 {
-  margin-top: rvr(1.75);
+  margin-top: rvr(1.25);
   font-family: 'Antenna Condensed Light', sans-serif;
   font-size: 2.5rem;
   line-height: 2.5;
@@ -75,7 +75,7 @@ h3 {
 }
 
 h4 {
-  margin-top: rvr(1.5);
+  margin-top: rvr(1.25);
   font-size: 1.75rem;
   line-height: 1.75;
   line-height: rvr(1.75);
@@ -102,7 +102,7 @@ h4 {
   text-transform: uppercase;
 }
 
-h5 {
+h5, details summary {
   margin-top: rvr(1.25);
   margin-bottom: rvr(.35);
   font-size: 1.125rem;
@@ -182,9 +182,9 @@ li em, li em a, li a em, {
   margin: 0;
   margin-bottom: rvr(1.5);
   font-family: 'Antenna Condensed Light', sans-serif;
-  font-size: 1.4rem;
-  line-height: 2;
-  line-height: rvr(2);
+  font-size: 1.3rem;
+  line-height: 1.85;
+  line-height: rvr(1.85);
   word-spacing: .075rem;
   @include phone-portrait {
     font-size: 1.25rem;
@@ -418,6 +418,18 @@ ol li::before {
   margin: 0 .75rem 0 0;
 }
 
+/* details - summary */
+
+details summary {
+  font-family: 'Antenna Condensed Bold', sans-serif;
+  color: $maroon;
+  text-decoration: underline;
+  &:after {
+    margin: 0 0 0 .25rem;
+    content: ">";
+  }
+}
+
 /* blockquote */
 
 .blockquote-wrapper {
@@ -509,8 +521,26 @@ blockquote cite:before {
   text-transform: uppercase;
 }
 
+.number-lg h1 {
+  font-size: 4.5rem;
+  @include phone-portrait {
+    font-size: 3.5rem !important;
+  }
+}
+
+.number-md h2 {
+  font-size: 3.5rem;
+}
+
+.number-sm h3 {
+  font-size: 2.5rem;
+  @include phone-portrait {
+    font-size: 3.5rem !important;
+  }
+}
+
 .number-display h1 {
-  font-size: 7rem;
+  font-size: 6.25rem;
   line-height: 1 !important;
   letter-spacing: -.025em;
   @include phone-portrait {
