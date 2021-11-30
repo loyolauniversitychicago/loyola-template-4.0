@@ -135,17 +135,18 @@
       </div>
     </div>
     <div class="padding-sm"></div>
-    <div class="grid-wrapper-min-max two-column">
+    <div class="grid-wrapper-min-max three-column">
       <div class="grid-item">
-        <img class="image-50" src="./images/images-documentation/image-size-reader-lake-1000-1000.jpg" alt="" title="">
+        <img src="./images/images-documentation/image-size-reader-lake-1000-1000.jpg" alt="" title="">
         <h5>1000px x 1000px</h5>
         <p><strong>Aspect Ratio:</strong> 1:1</p>
       </div>
       <div class="grid-item">
-        <img class="image-50" src="./images/images-documentation/image-size-profile-1000-1000.jpg" alt="" title="">
+        <img src="./images/images-documentation/image-size-profile-1000-1000.jpg" alt="" title="">
         <h5>1000px x 1000px - Portrait</h5>
         <p><strong>Aspect Ratio:</strong> 1:1.<br><strong>Note:</strong> the cropped image includes the subject's head and shoulders.</p>
       </div>
+      <div class="grid-item"></div>
     </div>
   </div>
 </section>
@@ -241,7 +242,7 @@
       <div class="grid-item">
         <img src="./images/images-documentation/image-resize-grid.jpg" alt="" title="">
         <h5>Image resize <span style="font-family: 'Antenna Condensed Light', sans-serif;">Understanding the grid</span></h5>
-        <p>There are sixteen horizontal increments and eight vertical increments. The red numbers identify the horzontal grid lines 00 through 16 and the vertical grid lines 00 through 08.</p>
+        <p>There are sixteen horizontal increments and eight vertical increments. The red numbers identify the horzontal grid lines <span style="color: red;">00 through 16</span> and the vertical grid lines <span style="color: red;">00 through 08</span>.</p>
       </div>
     </div>
     <hr>
@@ -261,17 +262,20 @@
         <img class="image-50" src="./images/images-documentation/image-resize-mobile.jpg" alt="" title="">
         <h5>Image resize <span style="font-family: 'Antenna Condensed Light', sans-serif;">Adding classes for mobile display</span></h5>
         <p>Three attributes are controlled by three sets of classes. The attributes are <strong>container height, image size, and image position</strong>.</p>
+        <p>In this case, the three added classes are <strong>hero-wrapper-height-100, enlarge-200,</strong> and <strong>horizontal-10-vertical-01</strong></p>
         <h5>Wrapper class</h5>
-        <p>This group of classes <strong>control the height of the wrapper</strong> in 15% inrements from 25% to 300% and 25% increments from 400% to 600%. The class is written in the pattern of the following examples.
+        <p>This group of classes <strong>control the height of the wrapper</strong> in 15% inrements from 25% to 300% and 25% increments from 400% to 600%. The class is written in the pattern of the following examples.</p>
+        <p><strong>In the example above,</strong> using the class <strong>hero-wrapper-height-100</strong>, the height of the wrapper is 100% or 1:1.</p>
         <ul>
-          <li><strong>hero-wrapper-height-25</strong> = 25%</li>
-          <li><strong>hero-wrapper-height-50</strong> = 50%</li>
-          <li><strong>hero-wrapper-height-75</strong> = 75%</li>
-          <li><strong>hero-wrapper-height-100</strong> = 100%</li>
-          <li><strong>hero-wrapper-height-125</strong> = 125%</li>
+          <li><strong>hero-wrapper-height-25</strong> = 25% - 4:1</li>
+          <li><strong>hero-wrapper-height-50</strong> = 50% - 4:2 or 2:1</li>
+          <li><strong>hero-wrapper-height-75</strong> = 75% - 4:3</li>
+          <li><strong>hero-wrapper-height-100</strong> = 100% - 4:4 or 1:1</li>
+          <li><strong>hero-wrapper-height-125</strong> = 125% - 4:5</li>
         </ul>
         <h5>Enlarge class</h5>
-        <p>This group of classes <strong>control the size of the image</strong> in 25% inrements from 100% to 1000%. The class is written in the pattern of the following examples.
+        <p>This group of classes <strong>control the size of the image</strong> in 25% inrements from 100% to 1000%. If the image is 100%, the width of the image is equal to the width of the screen. The class is written in the pattern of the following examples.
+        <p><strong>In the example above</strong> using the class <strong>enlarge-200</strong>, the image is twice the width of the screen.
         <ul>
           <li><strong>enlarge-100</strong> = 100%</li>
           <li><strong>enlarge-125</strong> = 125%</li>
@@ -280,8 +284,9 @@
           <li><strong>enlarge-200</strong> = 200%</li>
         </ul>
         <h5>Position classes</h5>
-        <p>These two group of classes <strong>control the position of the image</strong>. The class name is derived from where the horzontal and vertical grid lines intersect. The class name always begins with the horizontal point, <strong>horizontal-10</strong> in this example, followed by the corresponding vertical point, <strong>vertical-01</strong> in this example. In this case the complete class is <strong>horizontal-10-vertical-01</strong>. Notice the hyphen between the classes.</p>
-        <p><strong>16 horzontal classes</strong> in increments of 01 - horizontal-00 through horizontal-16. The class is written in the pattern of the following examples.</p>
+        <p>These two groups of classes <strong>control the position of the image</strong>. The class name is derived from where the horzontal and vertical grid lines intersect. The class name always begins with the horizontal grid line, <strong>horizontal-10</strong> in this example, followed by the corresponding vertical grid line, <strong>vertical-01</strong> in this example.</p>
+        <p><strong>In this example,</strong> the complete class is <strong>horizontal-10-vertical-01</strong>. Notice the hyphen between the classes.</p>
+        <p>There are <strong>16 horzontal classes</strong> in increments of 01 - horizontal-00 through horizontal-16. The class is written in the pattern of the following examples.</p>
         <ul>
           <li><strong>horizontal-00</strong></li>
           <li><strong>horizontal-02</strong></li>
@@ -289,7 +294,7 @@
           <li><strong>horizontal-03</strong></li>
           <li><strong>horizontal-04</strong></li>
         </ul>
-        <p><strong>8 vertical classes</strong> in increments of 01 - vertical-00 through vertical-08. The class is written in the pattern of the following examples.</p>
+        <p>There are <strong>8 vertical classes</strong> in increments of 01 - vertical-00 through vertical-08. The class is written in the pattern of the following examples.</p>
         <ul>
           <li><strong>vertical-00</strong></li>
           <li><strong>vertical-02</strong></li>
