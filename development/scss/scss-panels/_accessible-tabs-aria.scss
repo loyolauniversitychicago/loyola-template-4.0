@@ -93,6 +93,10 @@
   margin: 0 0 1rem 0;
 }
 
+.grid-wrapper-min-max .grid-item .tabs.tabs-elevated .tab-panel {
+  background: none;
+}
+
 /* tabs - image-tabs */
 
 #tabs-images .tabcontent { display: none; animation: tabFadeEffect 2s; }
