@@ -101,6 +101,14 @@ html, body {
   }
 }
 
+nav.documentation-sub-nav {
+	margin: 0 0 .75rem 1rem;
+}
+
+.documentation-direction { margin: 0 0 0 2.5rem; }
+
+.documentation-direction .circle-number-key.circle-number-key-inline  { margin-left: -2.25rem; }
+
 /* cards */
 
 #documentation-card-elements {
