@@ -52,31 +52,15 @@ ul[role="menubar"] {
 	background: none;
 	button  {
 		margin: 0;
-		padding: 1.25rem 1.25rem 1rem;
+		padding: 1.25rem 1.25rem 1rem 1.25rem;
 		font-family: 'Antenna', sans-serif;
 		font-size: .8rem;
 		color: $gray-extra-light !important;
 		border: none !important;
 		border-radius: 0;
-		background: $gray-dark;
+		background-color: $gray-dark;
 		&:hover, &:focus {
 			background: darken($gray,30%) !important;
-		}
-		&::after {
-			position: relative;
-			top: -.25rem;
-			display: inline-block;
-			margin-left: 0.1rem;
-			width: 0.75rem;
-			height: 0.5rem;
-			content: ">";
-			font-family: 'Antenna Bold', sans-serif !important;
-			font-size: 1rem;
-			font-weight: 600;
-			line-height: 0;
-			color: $gray-light !important;
-			transform-origin: center center;
-			transform: rotate(90deg);
 		}
 	}
 	li  {
@@ -109,6 +93,16 @@ ul[role="menubar"] {
 			}
 		}
 	}
+}
+
+
+ul#site-nav button,
+ul#site-nav button:hover {
+	padding: 1.25rem 3.25rem 1rem 1.25rem;
+	background-image: url('/images/ui-arrow-down@2x.png') !important;
+	background-size: 6% !important;
+	background-position: 85% center !important;
+	background-repeat: no-repeat !important;
 }
 
 /* rotate menu item caret

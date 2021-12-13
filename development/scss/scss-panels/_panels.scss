@@ -25,170 +25,6 @@
   }
 }
 
-/* image grid gallery */
-
-#panel-image-grid-mason-gallery {
-  display: block;
-  padding: 0;
-  text-align: center;
-}
-
-#panel-image-grid-mason-gallery .grid-wrapper-grid-wrapper {
-  display: grid;
-  grid-template-columns: repeat(6,1fr);
-  grid-auto-rows: 20vw;
-  grid-gap: .5rem;
-  grid-auto-flow: dense;
-  @include tablet-portrait {
-    grid-template-columns: repeat(4,1fr);
-  }
-  @include phone-portrait {
-    grid-template-columns: repeat(1,1fr);
-  }
-}
-.gallery-item {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: $gray-extra-dark;
-  .image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    img {
-      margin: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: 50% 50%;
-      cursor: pointer;
-    }
-  }
-  .caption {
-    display: absolute;
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-family: 'Antenna Condensed Bold', sans-serif;
-    font-size: 1rem;
-    color: $gray-extra-light;
-    pointer-events: none;
-    opacity: 0;
-    z-index: +4;
-    p {
-      position: absolute;
-      top: 40%;
-      margin: 0;
-      padding: 0 1rem;
-      width: 100%;
-      font-family: 'Antenna Condensed Bold', sans-serif;
-      letter-spacing: .0125rem;
-      word-spacing: .0125rem;
-      text-align: center;
-      text-shadow: 0 0 20px rgba(0,0,0,.35);
-      color: $white;
-    }
-  }
-  /* all hover is through gallery-item */
-  &:hover {
-    opacity: 1;
-    .image {
-      img {
-        opacity: .7;
-        transform:scale(1.0125);
-        filter: none;
-        -webkit-filter: grayscale(100%);
-        -moz-filter:    grayscale(100%);
-        -ms-filter:     grayscale(100%);
-        -o-filter:      grayscale(100%);
-        cursor: pointer;
-      }
-    }
-    .caption {
-      display: block;
-      margin: 0 auto;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 1;
-      backdrop-filter: blur(3px);
-      -webkit-backdrop-filter: blur(3px);
-      p {
-        top: 40%;
-        animation: caption-fade-in .3s;
-        animation-timing-function: ease;
-      }
-    }
-  }
-}
-
-.w-1 {
-  grid-column: span 1;
-}
-.w-2 {
-  grid-column: span 2;
-}
-.w-3 {
-  grid-column: span 3;
-}
-.w-4 {
-  grid-column: span 4;
-}
-.w-5 {
-  grid-column: span 5;
-}
-.w-6 {
-  grid-column: span 6;
-}
-.w-1, .w-2, .w-3, .w-4, .w-5, .w-6 {
-  @include tablet-portrait {
-    grid-column: span 2;
-  }
-}
-.w-1, .w-2, .w-3, .w-4, .w-5, .w-6 {
-  @include phone-portrait {
-    grid-column: span 1;
-  }
-}
-
-.h-1 {
-  grid-row: span 1;
-}
-.h-2 {
-  grid-row: span 2;
-}
-.h-3 {
-  grid-row: span 3;
-}
-.h-4 {
-  grid-row: span 4;
-}
-.h-5 {
-  grid-row: span 5;
-}
-.h-6 {
-  grid-row: span 6;
-}
-
-.h-1, .h-2, .h-3, .h-4, .h-5, .h-6 {
-  @include tablet-portrait {
-    grid-row: span 2;
-  }
-}
-
-@keyframes caption-fade-in {
-  0% {
-    top: 25%;
-    opacity: 0;
-  }
-  100% {
-    top: 40%;
-    opacity: 1;
-  }
-}
-
 /* cards */
 
 #panel-cards .grid-wrapper-min-max .grid-item,
@@ -848,6 +684,74 @@ button.content-activate-symbol.activate-symbol-close {
   }
 }
 
+/* image grid - image only */
+
+/* border */
+
+#panel-image-grid.image-only .grid-item {
+  overflow: hidden;
+  height: 100%;
+  border: 0;
+  @include phone-portrait {
+    height: 20vh;
+  }
+  img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+  }
+}
+
+/* hide images */
+
+@media only screen and (max-width: 1500px) {
+  .grid-item.hide-1500 { display: none; }
+}
+@media only screen and (max-width: 1200px) {
+  .grid-item.hide-1200 { display: none; }
+}
+
+/* image-grid - image only - responsive grid-item */
+
+#panel-image-grid.image-only {
+  background-image: none;
+}
+
+#panel-image-grid.image-only .caption-overlay,
+#panel-image-grid.image-only .caption-overlay-name,
+#panel-image-grid.image-only .content-activate-symbol,
+#panel-image-grid.image-only .content-image-overlay {
+  display: none;
+}
+
+#panel-image-grid.image-only .grid-wrapper-min-max {
+  grid-gap: .5rem;
+}
+
+#panel-image-grid.image-only .grid-wrapper-min-max {
+  grid-template-columns: repeat(auto-fit, minmax(19%, 1fr));
+}
+@media only screen and (max-width: 1500px) {
+#panel-image-grid.image-only .grid-wrapper-min-max {
+  grid-template-columns: repeat(auto-fit, minmax(24%, 1fr));
+  }
+}
+@media only screen and (max-width: 1200px) {
+#panel-image-grid.image-only .grid-wrapper-min-max {
+  grid-template-columns: repeat(auto-fit, minmax(32%, 1fr));
+  }
+}
+#panel-image-grid.image-only .grid-wrapper-min-max {
+  @include phone-portrait {
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  grid-auto-rows: 20vh;
+  grid-row: span 1;
+  }
+}
+
 /* image-grid-area */
 
 #panel-image-grid-area {
@@ -916,6 +820,189 @@ button.content-activate-symbol.activate-symbol-close {
     display: block;
     width: 100%;
     height: auto;
+  }
+}
+
+/* image grid gallery */
+
+#panel-image-grid-mason-gallery {
+  display: block;
+  padding: 0;
+  text-align: center;
+}
+
+#panel-image-grid-mason-gallery .grid-wrapper-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-auto-rows: 20vw;
+  grid-gap: .5rem;
+  grid-auto-flow: dense;
+  @include tablet-portrait {
+    grid-template-columns: repeat(4,1fr);
+  }
+  @include phone-portrait {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+.gallery-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: $gray-extra-dark;
+  h5 {
+    position: absolute;
+    top: 20%;
+    margin: 0;
+    font-size: 1.75rem;
+    line-height: rvr(1.6);
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0,0,0,.35);
+    color: $white;
+  }
+  .image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    img {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+      cursor: pointer;
+    }
+  }
+  .caption {
+    display: absolute;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Antenna Condensed Bold', sans-serif;
+    font-size: 1rem;
+    color: $gray-extra-light;
+    pointer-events: none;
+    opacity: 0;
+    z-index: +4;
+    p {
+      position: absolute;
+      top: 40%;
+      margin: 0 0 .75rem;
+      padding: 0 1rem;
+      width: 100%;
+      font-family: 'Antenna Condensed Bold', sans-serif;
+      letter-spacing: .0125rem;
+      word-spacing: .0125rem;
+      text-align: center;
+      text-shadow: 0 0 20px rgba(0,0,0,.35);
+      color: $white;
+      span {
+        display: block;
+        margin: 0;
+        padding: 0 1rem;
+        width: 100%;
+        a {
+          color: $gold;
+        }
+      }
+    }
+  }
+  /* all hover is through gallery-item */
+  &:hover {
+    opacity: 1;
+    .image {
+      img {
+        opacity: .7;
+        /* transform:scale(1.0125); */
+        filter: none;
+        -webkit-filter: grayscale(100%);
+        -moz-filter:    grayscale(100%);
+        -ms-filter:     grayscale(100%);
+        -o-filter:      grayscale(100%);
+        cursor: pointer;
+      }
+    }
+    .caption {
+      display: block;
+      margin: 0 auto;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+      p {
+        top: 40%;
+        animation: caption-fade-in .3s;
+        animation-timing-function: ease;
+      }
+    }
+  }
+}
+
+.w-1 {
+  grid-column: span 1;
+}
+.w-2 {
+  grid-column: span 2;
+}
+.w-3 {
+  grid-column: span 3;
+}
+.w-4 {
+  grid-column: span 4;
+}
+.w-5 {
+  grid-column: span 5;
+}
+.w-6 {
+  grid-column: span 6;
+}
+.w-1, .w-2, .w-3, .w-4, .w-5, .w-6 {
+  @include tablet-portrait {
+    grid-column: span 2;
+  }
+}
+.w-1, .w-2, .w-3, .w-4, .w-5, .w-6 {
+  @include phone-portrait {
+    grid-column: span 1;
+  }
+}
+
+.h-1 {
+  grid-row: span 1;
+}
+.h-2 {
+  grid-row: span 2;
+}
+.h-3 {
+  grid-row: span 3;
+}
+.h-4 {
+  grid-row: span 4;
+}
+.h-5 {
+  grid-row: span 5;
+}
+.h-6 {
+  grid-row: span 6;
+}
+
+.h-1, .h-2, .h-3, .h-4, .h-5, .h-6 {
+  @include tablet-portrait {
+    grid-row: span 2;
+  }
+}
+
+@keyframes caption-fade-in {
+  0% {
+    top: 25%;
+    opacity: 0;
+  }
+  100% {
+    top: 40%;
+    opacity: 1;
   }
 }
 
