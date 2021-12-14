@@ -133,7 +133,7 @@ nav#secondary .minimalist-accordion__panel,
   height: auto;
   max-height: 100em;
   visibility: visible;
-  overflow: hidden;
+  overflow: scroll;
   opacity: 1;
   /* animation */
   -webkit-transition: visibility 0s ease, max-height 1s ease, opacity 1s ease;
