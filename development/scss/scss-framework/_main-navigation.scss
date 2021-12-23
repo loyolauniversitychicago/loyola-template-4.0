@@ -99,9 +99,14 @@ ul[role="menubar"] {
 ul#site-nav button,
 ul#site-nav button:hover {
 	padding: 1.25rem 3.25rem 1rem 1.25rem;
+	/*
 	background-image: url('/images/ui-arrow-down@2x.png') !important;
 	background-size: 6% !important;
 	background-position: 85% center !important;
+	*/
+	background-image: url('/images/ui-menu-arrow-down@2x.png') !important;
+	background-size: 26% !important;
+	background-position: 102% center !important;
 	background-repeat: no-repeat !important;
 }
 
