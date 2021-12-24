@@ -15,7 +15,6 @@
     }
   };
 
-  const $page = document.querySelector('.Page');
   const $nav = document.querySelector('.Nav');
   const $navbody = $nav.querySelector('.Nav__body');
   const $navmain = $nav.querySelector('.Nav__main');
