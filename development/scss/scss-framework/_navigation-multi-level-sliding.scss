@@ -1,3 +1,7 @@
+#multilevel-sliding-nav h5 {
+  color: $gray-extra-light;
+}
+
 :root {
   --theme-blue: 200, 80%, 38%;
   --theme-red: 350, 63%, 52%;
@@ -63,7 +67,7 @@ body {
 }
 
 .Nav {
-  background: hsla(var(--theme-dark), 0.4);
+  background: none;
   float: none;
 
   .Script & {
@@ -81,7 +85,7 @@ body {
 }
 
 .Nav__body {
-  background: hsl(var(--theme-white));
+  background: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -116,8 +120,8 @@ body {
 
 .Nav__main {
   align-items: start;
-  background: hsl(var(--theme-white));
-  box-shadow: 0 0 2rem hsla(var(--theme-dark), 0.2);
+  background: none;
+  box-shadow: none;
   display: flex;
   flex-grow: 1;
   overflow: hidden;
@@ -135,7 +139,7 @@ body {
 }
 
 .Nav__menu {
-  background: hsl(var(--theme-white));
+  background: none;
   display: block;
   height: 100%;
   left: 0;
@@ -192,6 +196,8 @@ body {
   .Icon {
     flex-grow: 0;
     margin-inline: 0.5rem 0;
+    float: right;
+    width: 2rem;
 
     &:first-child {
       margin-inline: 0 0.5rem;
