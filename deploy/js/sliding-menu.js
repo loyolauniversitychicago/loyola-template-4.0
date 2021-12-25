@@ -90,4 +90,15 @@ $(document).keydown(function(e){
   }
 });
 
+//hide sliding nav - browser window 1024px
+
+$(window).resize(function(){
+  if (screen.width > 1024) {
+    $("body.active .sidenav").hide();
+  }
+  else {
+    $("body.active .sidenav").show();
+  }
+});
+
 //END

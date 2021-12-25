@@ -160,10 +160,11 @@ span.menu-text {
 #side-nav {
 	position: fixed;
   top: 0;
-	bottom: 0;
-  left: -350px;
-	width: 300px;
-  max-width: 300px;
+  left: -70vw;
+	width: 70vw;
+  max-width: 70vw;
+  height: auto;
+  min-height: 100vh;
   overflow: auto;
 	background-color: lighten($gray-extra-dark,5%);
   overflow-x: hidden; /* Disable horizontal scroll */
@@ -172,6 +173,11 @@ span.menu-text {
   -o-transition: all 300ms;
   -webkit-transition: all 300ms;
   transition: all 300ms;
+  @include phone-portrait {
+    left: -80vw;
+    width: 80vw;
+    max-width: 80vw;
+  }
 }
 
 /* MOVE BODY
@@ -184,15 +190,25 @@ body.active {
 */
 
 body.active #side-nav {
-  -moz-transform: translateX(350px);
-  -ms-transform: translateX(350px);
-  -webkit-transform: translateX(350px);
-  transform: translateX(350px);
+  -moz-transform: translateX(70vw);
+  -ms-transform: translateX(70vw);
+  -webkit-transform: translateX(70vw);
+  transform: translateX(70vw);
+  @include phone-portrait {
+    -moz-transform: translateX(80vw);
+    -ms-transform: translateX(80vw);
+    -webkit-transform: translateX(80vw);
+    transform: translateX(80vw);
+  }
 }
 
 #sidenav-inner-wrapper {
 	padding: 20px 20px 150px 20px; /* V1 menu */
-  padding: 20px 20px 0 20px; /* V2 layered menu */
+  padding: 20px; /* V2 layered menu */
+}
+
+#global-ctas {
+  padding: 1rem;
 }
 
 #global-ctas > button {
@@ -359,7 +375,7 @@ change the style of the sidenav (less padding and a smaller font size) */
 /* side nav - search */
 
 #side-nav-search-wrapper {
-	margin: 10px 0 20px;
+	margin: 10px 1rem 20px;
 	padding: 0;
 }
 

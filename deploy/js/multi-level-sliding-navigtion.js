@@ -15,9 +15,9 @@
     }
   };
 
-  const $nav = document.querySelector('.Nav');
-  const $navbody = $nav.querySelector('.Nav__body');
-  const $navmain = $nav.querySelector('.Nav__main');
+  const $nav = document.querySelector('.multi-level-sliding-navigation');
+  const $navbody = $nav.querySelector('.multi-level-sliding-navigation-body');
+  const $navmain = $nav.querySelector('.multi-level-sliding-navigation-main');
   const $toggles = new Set([
     ...document.querySelectorAll('[href="#nav"]'),
     ...document.querySelectorAll('[aria-controls="nav"]')
@@ -35,7 +35,7 @@
   // Setup ARIA attributes and hide elements
   const resetNav = () => {
     $nav.setAttribute('aria-hidden', 'true');
-    $navmain.querySelectorAll('.Nav__menu').forEach(($list, i) => {
+    $navmain.querySelectorAll('.multi-level-sliding-navigation-menu').forEach(($list, i) => {
       $list.setAttribute('aria-hidden', String(i !== 0));
       $navmain
         .querySelectorAll(`[aria-controls="${$list.id}"]`)
@@ -53,7 +53,7 @@
   document.body.addEventListener(
     'focus',
     (ev) => {
-      if (isNavOpen && !ev.target.closest('.Nav')) {
+      if (isNavOpen && !ev.target.closest('.multi-level-sliding-navigation')) {
         $firstfocus.focus();
       }
     },
@@ -185,8 +185,8 @@
   };
 
   // Activate sub-menu links
-  $navmain.querySelectorAll('.Nav [href][aria-controls]').forEach(($link) => {
-    const $from = $link.closest('.Nav__menu');
+  $navmain.querySelectorAll('.multi-level-sliding-navigation [href][aria-controls]').forEach(($link) => {
+    const $from = $link.closest('.multi-level-sliding-navigation-menu');
     const $to = $nav.querySelector(new URL($link.href).hash);
     $link.addEventListener('click', (ev) => {
       ev.preventDefault();
@@ -198,7 +198,7 @@
 
   const tX = () => (document.dir === 'rtl' ? '-100%' : '100%');
 
-  const animateDuration = 500;
+  const animateDuration = 100;
 
   const animateNavIn = () => {
     setStyleProps($nav, {
