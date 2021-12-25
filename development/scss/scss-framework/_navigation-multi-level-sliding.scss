@@ -338,22 +338,3 @@ body {
   width: 1px !important;
   white-space: nowrap !important;
 }
-
-// Demo styles
-
-@font-face {
-  font-family: 'Raleway';
-  src: url('https://assets.codepen.io/85421/Raleway-VariableFont.woff2')
-    format('woff2');
-  font-display: swap;
-  font-weight: 1 900;
-  font-style: normal;
-  unicode-range: U+0020-007F, U+00A0-00FF, U+0100-017F, U+2000-206F;
-}
-
-@font-face {
-  font-family: 'Fallback';
-  size-adjust: 104%;
-  ascent-override: 96%;
-  src: local('Arial');
-}
