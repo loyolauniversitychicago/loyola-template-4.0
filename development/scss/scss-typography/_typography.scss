@@ -255,6 +255,11 @@ a {
   font-family: inherit;
   font-weight: 700;
   color: $maroon;
+  &:focus {
+    outline-style: solid;
+    outline-offset: -3px;
+    outline: 3px solid #febc18;
+  }
 }
 
 p a {

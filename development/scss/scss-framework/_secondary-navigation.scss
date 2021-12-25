@@ -23,6 +23,11 @@ nav#secondary {
 		&:hover {
 			background: darken($gray-extra-light, 15%) !important;
 		}
+		&:focus {
+			outline-style: solid;
+	    outline-offset: -3px;
+	    outline: 3px solid #febc18;
+		}
 	}
 	h4 {
 		padding: 0;
