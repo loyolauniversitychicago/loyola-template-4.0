@@ -58,7 +58,7 @@ nav#main-mobile .menu-bar {
 #menu-button-mobile:hover span.menu-bar-two,
 #menu-button-mobile:hover span.menu-bar-three,
 #menu-button-mobile:hover span.menu-bar-four {
-  background-color: $gray-extra-light;
+  background-color: #1db0b9;
 }
 
 #menu-button-mobile:hover span.menu-text {
@@ -128,7 +128,7 @@ nav#main-mobile .menu-bar {
 }
 
 #menu-button-mobile > span.menu-text {
-  color: darken($gray-light,10%);
+  color: #1db0b9;
 }
 
 span.menu-text, span.search-text {
