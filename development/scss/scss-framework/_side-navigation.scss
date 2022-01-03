@@ -43,22 +43,17 @@ nav#main-mobile .menu-bar {
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out opacity;
+  -moz-transition: .5s ease-in-out opacity;
+  -o-transition: .5s ease-in-out opacity;
+  transition: .5s ease-in-out opacity;
   outline: 0;
+  opacity: .8;
   cursor: pointer;
   &:hover {
     background: none;
+    opacity: 1;
   }
-}
-
-#menu-button-mobile:hover span.menu-bar-one,
-#menu-button-mobile:hover span.menu-bar-two,
-#menu-button-mobile:hover span.menu-bar-three,
-#menu-button-mobile:hover span.menu-bar-four {
-  background-color: #1db0b9;
 }
 
 #menu-button-mobile:hover span.menu-text {
@@ -74,7 +69,7 @@ nav#main-mobile .menu-bar {
   margin: 0;
   height: 5px;
   width: 100%;
-  background-color: darken($gray-light,10%);
+  background-color: $gray-light;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -128,7 +123,7 @@ nav#main-mobile .menu-bar {
 }
 
 #menu-button-mobile > span.menu-text {
-  color: #1db0b9;
+  color: $gray-light;
 }
 
 span.menu-text, span.search-text {
