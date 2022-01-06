@@ -56,8 +56,15 @@ nav#main-mobile .menu-bar {
   }
 }
 
+#menu-button-mobile:hover span.menu-bar-one,
+#menu-button-mobile:hover span.menu-bar-two,
+#menu-button-mobile:hover span.menu-bar-three,
+#menu-button-mobile:hover span.menu-bar-four {
+  background-color: $gray-light;
+}
+
 #menu-button-mobile:hover span.menu-text {
-  color: $gray-extra-light;
+  color: $gray-light;
 }
 
 #menu-button-mobile span.menu-bar-one,
