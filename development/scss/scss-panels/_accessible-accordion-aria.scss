@@ -93,6 +93,14 @@ button.minimalist-css-accordion__header:focus {
   color: #ffffff;
 }
 
+#side-nav button.minimalist-accordion__header:focus,
+#side-nav button.minimalist-noanim-accordion__header:focus,
+#side-nav button.minimalist-css-accordion__header:focus {
+  outline: solid $gold;
+}
+
+
+
 .minimalist-accordion__header::after,
 .minimalist-noanim-accordion__header::after,
 .minimalist-css-accordion__header::after,
