@@ -790,4 +790,13 @@
 
 }
 
+.modaal-content-container .grid-wrapper-min-max {
+	grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+
+.modaal-content-container .grid-wrapper-min-max .grid-item {
+	margin: 0 !important;
+	width: 100%;
+}
+
 /* CSS - END */

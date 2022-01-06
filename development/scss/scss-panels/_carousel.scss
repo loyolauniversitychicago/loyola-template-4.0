@@ -71,6 +71,11 @@ button.slick-next, button.slick-prev {
   transition: .3s;
   z-index: 1;
   cursor: pointer;
+  @include phone-portrait {
+    top: 1rem;
+    width: 2rem;
+    height: 2rem;
+  }
   &:focus {
     outline-color: none;
     outline-width: 0;
@@ -82,6 +87,9 @@ button.slick-prev {
   right: 3.5rem;
   border-radius: .25rem 0 0 .25rem !important;
   background-image: url('../images/ui-arrow-carrousel-previous@2x.png');
+  @include phone-portrait {
+    right: 2rem;
+  }
   &:hover, &:focus {
     border-radius: .25rem 0 0 .25rem !important;
     background-color: #febc18;
@@ -123,6 +131,11 @@ button.slick-next {
   line-height: 1.75;
   border-radius: 0 0 .5rem;
   background: $bg-overlay;
+  @include phone-portrait {
+    padding: .5rem .75rem .5rem .5rem;
+    line-height: 1;
+    font-size: .85rem;
+  }
 }
 
 /* captions - pagination */

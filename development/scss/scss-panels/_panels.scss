@@ -1177,7 +1177,7 @@ button.modaal-close {
   border-radius: 0 .25rem .25rem 0;
 }
 
-#panel-pagination a:hover:not(.active) {background-color: red;}
+#panel-pagination a:hover:not(.active) {background-color: $maroon;}
 
 /* pagination breadcrumb */
 
@@ -1206,6 +1206,9 @@ button.modaal-close {
       text-transform: uppercase;
       border: none;
       background: none;
+      &:last-of-type {
+        color: $maroon;
+      }
       &::before {
         display: inline;
         margin: 0 .25rem 0 0;
