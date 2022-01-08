@@ -1,0 +1,212 @@
+/* http://timpietrusky.com/advanced-checkbox-hack */
+
+@-webkit-keyframes androidbugfix {
+  from {
+      padding: 0
+  }
+  to {
+      padding: 0
+  }
+}
+nav#sliding-menu-interior {
+  margin: 1rem 0;
+  background: none;
+}
+
+#menu-wrapper {
+  display: block;
+  position: relative;
+  margin: 1rem 0;
+  width: auto;
+  height: 60vh;
+  background: none;
+  overflow: hidden;
+}
+
+/* font */
+
+#menu .sub-nav .toggle,
+#menu .toggle-sub,
+#menu li.sub-heading,
+#menu li a {
+  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-size: .75rem;
+  line-height: 1.35;
+  color: red;
+  text-transform: uppercase;
+}
+
+/* menu - sub-nav */
+
+#menu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: none;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+#menu .sub-nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: -1px;
+  width: 100%;
+  background: $white;
+  z-index: 0;
+  left: 0;
+}
+
+#menu,
+#menu .sub-nav {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: -webkit-transform .25s ease;
+  transition: transform .25s ease;
+}
+
+/* checkboxes */
+
+#main-nav-check,
+#menu .sub-nav-check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* menus - ul - li - a */
+
+#menu ul,
+#menu li a,
+#menu li.sub-heading,
+#menu .sub-heading:before,
+#menu li.sub-heading .toggle {
+  background: lighten($gray-extra-dark, 5%);
+}
+
+#menu .toggle-sub {
+  background: $gray-extra-dark;
+}
+
+#menu li a:hover,
+#menu .toggle-sub:hover {
+  background: darken($gray-extra-dark, 15%);
+}
+
+#menu ul {
+  margin: 0 !important;
+  padding: 0;
+  line-height: 2.75em;
+  list-style: none;
+  text-decoration: none;
+  border-top: 1px solid $gray-dark;
+}
+
+#menu li {
+  margin: 0 !important;
+  padding: 0;
+  text-indent: 0 !important;
+}
+
+#menu li a {
+  display: block;
+  margin: 0;
+  padding: 1rem 0 1rem 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid $gray-dark;
+}
+
+/* sub heading */
+
+#menu li.sub-heading {
+  margin: 3rem 0 0 !important;
+  padding: 0 1rem 1rem;
+  height: auto;
+  border-bottom: 1px solid $gray-dark;
+}
+
+#menu .sub-heading {
+  margin-top: calc(1.25rem + 1.75rem);
+}
+
+#menu li.sub-heading .toggle {
+  margin-bottom: 0;
+}
+
+#menu .sub-heading:before {
+  display: block;
+  margin: 0 -1rem 1rem;
+  width: calc(100% + 2rem);
+  height: 1px;
+  content: "";
+}
+
+/* this is the arrow nav */
+
+#menu .sub-nav .toggle {
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 100%;
+  top: 0;
+  text-align: left;
+}
+
+
+.toggle {
+  position: absolute;
+  left: 0;
+  margin: 0 0 1rem;
+  cursor: pointer;
+}
+
+#menu .toggle-sub {
+  float: right;
+  margin-top: -3.125rem;
+  margin-right: 0;
+  padding: 1.125rem .25rem .875rem;
+  width: 3em;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid $gray-dark;
+}
+
+#menu,
+#menu .sub-nav {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+
+/* http://davidwalsh.name/translate3d */
+
+/* #### - corrects 'unfixing' bug in Safari - uncomment if you have position:fixed elements inside .container - #### */
+
+/* @media screen and (-webkit-min-device-pixel-ratio:0) { .container { -webkit-transform:none !important } } */
+
+/* #### - define ids of animated container, menu and sub-menus here - #### */
+
+
+
+/* resets the menu to main level */
+
+#menu .sub-nav {
+  -webkit-transform: translate(100%, 0);
+  -ms-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+  transition: left .2s;
+}
+
+#main-nav-check:checked ~ .container,
+#main-nav-check:checked ~ #menu,
+#menu .sub-nav-check:checked ~ [id$="-sub"]
+/* matches all elements with id ending "-sub" */
+{
+  -webkit-transform: translate(100%, 0);
+  -ms-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+  left: -100%;
+}
