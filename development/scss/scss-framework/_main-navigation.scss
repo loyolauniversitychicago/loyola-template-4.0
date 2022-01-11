@@ -104,9 +104,12 @@ ul#site-nav button:hover {
 	background-size: 6% !important;
 	background-position: 85% center !important;
 	*/
-	background-image: url('/images/ui-menu-arrow-down@2x.png') !important;
-	background-size: 26% !important;
-	background-position: 102% center !important;
+  background-image: url('https://www.luc.edu/media/luc-template-2020/images/ui-menu-arrow-down@2x.png') !important;
+	/*
+	background-image: url('https://www.luc.edu/media/luc-template-2020/images/ui-menu-arrow-down@2x.png') !important;
+	*/
+	background-size: 2.5rem !important;
+	background-position: 101% center !important;
 	background-repeat: no-repeat !important;
 }
 

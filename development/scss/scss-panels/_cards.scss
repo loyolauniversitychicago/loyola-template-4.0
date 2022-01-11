@@ -34,6 +34,10 @@
   grid-auto-rows: auto;
   grid-gap: 0;
   background: #e1e1e1;
+  .content-grid-wrapper .flex-item button {
+    margin: .25rem 0;
+    width: auto;
+  }
 }
 
 .grid-wrapper-min-max.card-horizontal .grid-item .image-wrapper {

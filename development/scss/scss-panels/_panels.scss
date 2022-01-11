@@ -1050,12 +1050,17 @@ button.modaal-close {
 /* video embed */
 
 #panel-video-embed {
-  background: $gray-dark;
+  background: $brick;
+  overflow: hidden;
   @include phone-portrait {
     .container {
       width: 100%;
     }
   }
+}
+
+#panel-video-embed .container {
+  box-shadow: 0px 0px 15px rgba(0,0,0,.75);
 }
 
 #panel-video-embed .content-caption {
