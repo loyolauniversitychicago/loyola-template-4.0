@@ -1,5 +1,41 @@
 /* documentation */
 
+.relative-wrapper {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.focus-square {
+	width: 5%;
+	height: auto;
+	border: .25rem solid red;
+	background: rgba(0,0,0,.125);
+}
+
+.focus-square:before {
+	display: table;
+	content: ".";
+	line-height: 0;
+	width: 100% !important;
+	height: 100% !important;
+	height: auto;
+}
+
+.aspect-1-1:before {
+	padding-top: 100%;
+}
+
+.aspect-16-9:before {
+	padding-top: 56.2%;
+}
+
+.aspect-4-3:before {
+	padding-top: 75%;
+}
+
 /* scroll */
 
 html, body {
