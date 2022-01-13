@@ -182,6 +182,24 @@ tr:nth-child(odd) { background: $gray-extra-light; }
   }
 }
 
+#panel-button-cta {
+  padding: .75rem 0;
+  h5 {
+    display: inline;
+    margin: 0 1rem 0 0;
+    color: $black;
+  }
+  button {
+    display: inline;
+    width: auto;
+    color: $gray-extra-dark !important;
+  }
+  h6 {
+    display: none;
+    line-height: 1;
+  }
+}
+
 /* image - caption */
 /* image - caption - RESIZE */
 
