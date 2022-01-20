@@ -316,9 +316,7 @@ footer#footer-fixed { display: block; position: fixed; bottom: 0; padding-bottom
     display: none;
   }
 }
-footer#footer-not-fixed { position: relative; display: block; float: left; padding-bottom: 2em; }
-footer#footer-fixed img, footer#footer-not-fixed img { margin: 0; }
-footer#footer-fixed img { margin-top: 0; }
+footer#footer-fixed img { margin: 0; }
 footer#footer-fixed.footer-fixed-show { display: block; }
 footer#footer-fixed.footer-fixed-hide { display: none; }
 
@@ -376,9 +374,6 @@ footer p {
 
 #footer-address {
   margin-top: 10px;
-  @include tablet-portrait {
-    display: none;
-  }
 }
 
 #footercard,
@@ -389,4 +384,58 @@ footer p {
 #footercard .postal-code {
   font-size: 1em;
   color: lighten($gray-extra-light,5%);
+}
+
+footer#footer-not-fixed {
+  padding: 1rem 1rem 1.5rem;
+  .container-fluid {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 2rem;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    -ms-grid-rows: auto;
+    grid-auto-rows: auto;
+    grid-row-gap: 0;
+    width: 100%;
+    @include tablet-portrait {
+      grid-template-columns: 1fr;
+    }
+    .span {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+    }
+  }
+}
+
+footer#footer-not-fixed #brand {
+  grid-area: 1 / 2 / span 1 / span 1;
+  display: block;
+  width: 100%;
+  @include tablet-portrait {
+    grid-area: 3 / 1 / span 2 / span 1;
+  }
+}
+footer#footer-not-fixed #footer-address {
+  margin: 0;
+grid-area: 1 / 1 / span 1 / span 1;
+  @include tablet-portrait {
+    grid-area: 1 / 1 / span 1 / span 1;
+  }
+  #footercard {
+    display: inline-block;
+  }
+}
+footer#footer-not-fixed p {
+grid-area: 2 / 1 / span 1 / span 1;
+  @include tablet-portrait {
+    grid-area: 4 / 1 / span 1 / span 1;
+  }
+}
+footer#footer-not-fixed img {
+  float: right;
+  margin: 0;
+  width: auto;
 }
