@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Antenna Condensed Bold', sans-serif;
   font-weight: 400;
   letter-spacing: -.02rem;
+  word-spacing: .125rem;
   a {
     cursor: pointer;
   }
@@ -263,6 +264,7 @@ a {
 }
 
 p a {
+  text-decoration: none;
   font-size: inherit;
   font-family: 'Antenna Condensed Bold', sans-serif;
 }
@@ -274,6 +276,11 @@ a.cta {
   font-family: 'Antenna Condensed Bold', sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
+  background-size: 0 0;
+  &:hover {
+    background: none !important;
+    color: $brick;
+  }
   @include phone-portrait {
     font-size: .95rem;
     line-height: 1.125;
@@ -615,21 +622,39 @@ blockquote cite:before {
   background-color: lighten($gray-light,15%);
 }
 
+.infobox h4 {
+  margin-top: 0;
+}
+
 .infobox p:last-of-type {
   margin-bottom: 0;
   margin-bottom: rvr(0);
 }
 
 /* hightlights */
-
-p span.highlight {
-  padding: .25rem;
-  border-radius: .25rem;
-}
+/*
 p span.highlight.bg-info { background: lighten($gold,20%) }
 p span.highlight.bg-success { color: $white; background: lighten($patina,5%); }
 p span.highlight.bg-warning { color: $white; background: lighten($opus,5%); }
 p span.highlight.bg-danger { color: $white; background: $maroon; }
+*/
+p a,
+p span.highlight.bg-info,
+p span.highlight.bg-success,
+p span.highlight.bg-warning,
+p span.highlight.bg-danger {
+  color: $maroon;
+  font-family: 'Antenna Condensed light', sans-serif;
+  background-image: linear-gradient(120deg, $maroon 0%, $maroon 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.075rem;
+  background-position: 0 103%;
+  transition: all 0.25s ease-in;
+  &:hover {
+    color: $white;
+    background-size: 100% 106%;
+  }
+}
 
 /* MS - IE11 */
 
