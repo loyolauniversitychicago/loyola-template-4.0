@@ -1,0 +1,63 @@
+@media only screen and (max-width: 1400px) {
+
+
+
+#parallax-section-one .animation-text-wrapper {
+  top: 10vh;
+}
+#parallax-section-one .animation-text-wrapper h5 {
+  font-size: 1.125rem;
+}
+#parallax-section-one .animation-text-wrapper h1 {
+  font-size: 3.5rem;
+}
+#parallax-section-one #opener-university-logo {
+  margin: 0 auto;
+  width: 10vw;
+}
+#parallax-section-one img#img-foreground,
+#parallax-section-one img#img-middleground,
+#parallax-section-one img#img-background {
+  width: calc(100vw + 2.5rem);
+  height: auto;
+}
+.gallery-item h5 {
+  top: 84%;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+
+#parallax-section-one .animation-text-wrapper h5 {
+  font-size: 1rem;
+}
+#parallax-section-one .animation-text-wrapper h1 {
+  font-size: 2rem;
+}
+#parallax-section-one #opener-university-logo {
+  margin: 0 auto;
+  width: 30vw;
+}
+.scroll-down {
+  width: 25vw;
+}
+.scroll-down h5 {
+  margin: 0 auto 1.75rem;
+  font-size: .85rem !important;
+}
+.scroll-down h5, .scroll-down .arrow {
+  position: relative;
+  left: 0;
+  right: 0;
+  transform: translate(0%, 0);
+  width: 100% !important;
+}
+.scroll-down .arrow {
+  width: 100% !important;
+  height: 1.25rem;
+}
+.scroll-down .arrow img {
+  margin: 0 40%;
+  width: 20% !important;
+}
