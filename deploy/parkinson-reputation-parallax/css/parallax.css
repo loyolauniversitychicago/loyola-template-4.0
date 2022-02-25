@@ -1,5 +1,7 @@
 /* PILLAR ADJUST */
 
+h5 a.cta { scroll-behavior: smooth; }
+
 /* background */
 
 #parallax-section-one.panel { background: #ffffff; }
@@ -10,7 +12,7 @@
   background-size: cover;
   background-position: center center;
 }
-#parallax-section-four.panel .container-fluid { background-color: rgba(61,36,45,.8); }
+#parallax-section-four.panel .container-fluid { background-color: rgba(0,0,0,.65); }
 #panel-text, #scroll-sections,
 #panel-image-grid-mason-gallery { background: #ffffff !important; }
 
@@ -125,6 +127,9 @@ h1.school-name-three {
   color: #ffffff;
   text-align: center;
 }
+.panel h2 {
+  color: #febc18;
+}
 #panel-text h4, #media-card-wrapper h3, #closer-wrapper h4 {
   margin: 0 auto;
   width: 100%;
@@ -140,11 +145,18 @@ h1.school-name-three {
 .panel .intro-paragraph p {
   margin: 0 auto .5rem;
 }
+.flex-item.content h4 {
+  font-size: 2.25rem;
+}
 .flex-item.content .explainer p {
   margin-bottom: 1rem !important;
   font-size: 1.25rem;
   font-style: normal;
   font-family: 'Antenna Condensed Light', sans-serif !important;
+}
+.flex-item.content span.bullet {
+  margin: 0 .5rem;
+  color: #febc18;
 }
 blockquote, blockquote cite {
   color: #ffffff;
@@ -320,6 +332,9 @@ a.cta:hover {
 #parallax-section-three .animation-text-wrapper h3#message-line-three {
   margin-bottom: 45vh;
 }
+#message-line-three a {
+  line-height: 1.65;
+}
 #parallax-section-three .animation-text-wrapper h2 {
   margin: 0;
   padding: 0;
@@ -350,7 +365,7 @@ a.cta:hover {
   margin: 0 0 3rem;
   padding: 0;
   width: 100%;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   line-height: 1.45;
   text-align: left;
 }
@@ -386,6 +401,9 @@ a.cta:hover {
 .grid-wrapper-min-max.card .grid-item img {
   margin: 0;
 }
+#panel-cards-horizontal .grid-item h4 {
+  line-height: 1.125;
+}
 #panel-cards-horizontal .grid-item a {
   display: none;
 }
@@ -406,10 +424,10 @@ a.cta:hover {
 }
 .called-card .content-grid-wrapper h4 {
   font-family: 'Antenna Comp Bold', sans-serif;
-  font-size: 3rem !important;
+  font-size: 3.75rem !important;
   letter-spacing: .0125rem;
   word-spacing: .125rem;
-  line-height: calc(var(--baseline) * 2.5 * 1rem);
+  line-height: calc(var(--baseline) * 3 * 1rem) !important;
   text-transform: uppercase;
 }
 .called-card .content-grid-wrapper h4 span {
@@ -458,7 +476,27 @@ a.cta:hover {
 }
 .gallery-item .caption p span {
   display: inline-block;
+  margin: 1rem auto 0;
+}
+.gallery-item p#message-line-five span {
+  display: block;
   margin: .5rem auto 0;
+}
+.gallery-item p#message-line-five span a {
+  font-size: 1.25rem;
+  line-height: 1.35;
+  letter-spacing: .075rem;
+  word-spacing: 0.025rem;
+  color: #eeeeee;
+  text-decoration: none;
+}
+.gallery-item p#message-line-five span a:hover {
+  color: #ffffff;
+}
+#message-line-five span img {
+  margin: 0.5rem auto 0;
+  width: 1.5rem;
+  height: 20px;
 }
 .gallery-item.no-hover:hover .image img {
   opacity: 0.7;

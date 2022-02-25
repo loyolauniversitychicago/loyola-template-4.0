@@ -21,6 +21,13 @@
 //     } // End if
 //   });
 // });
+// 
+// function scrollToAnchor(aid){
+//     var aTag = $("a[name='"+ aid +"']");
+//     $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+// }
+//
+// scrollToAnchor('#scroll-sections');
 
 $(window).scroll(function(){
     $("#social-icon-bar").css("opacity", 1 - $(window).scrollTop() / 250);

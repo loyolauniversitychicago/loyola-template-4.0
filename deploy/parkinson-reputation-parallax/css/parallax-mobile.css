@@ -1,3 +1,13 @@
+/* @media only screen
+and (max-width: 1400px)
+and (-webkit-min-device-pixel-ratio : 2),
+only screen
+and (min-device-pixel-ratio : 2) {
+  #parallax-section-one #opener-university-logo {
+    display: none;
+  }
+} */
+
 @media only screen and (max-width: 1400px) {
 
     /* section one */
@@ -317,19 +327,35 @@
   }
   /* section two */
   #image-grid-one.gallery-container {
-    grid-area: 1 / 1 / span 1 / span 1 !important;
+    grid-area: 13 / 1 / span 1 / span 1 !important;
   }
   #image-grid-two.gallery-container {
-    grid-area: 3 / 1 / span 14 / span 1 !important;
+    grid-area: 1 / 1 / span 12 / span 1 !important;
   }
   #image-grid-three.gallery-container {
-    grid-area: 2 / 1 / span 1 / span 1 !important;
+    grid-area: 14 / 1 / span 1 / span 1 !important;
   }
   #image-grid-four.gallery-container {
     grid-area: 15 / 1 / span 1 / span 1 !important;
   }
   #image-grid-five.gallery-container {
     grid-area: 16 / 1 / span 1 / span 1 !important;
+  }
+  #parallax-section-two .animation-text-wrapper h3 span {
+    display: block !important;
+    width: 100%;
+  }
+  .gallery-item h5 {
+    padding: 1rem 0 !important;
+    height: auto;
+  }
+  .gallery-item p#message-line-five span a {
+    font-size: 1.125rem;
+  }
+  .gallery-item h5, .gallery-item h5.position-top {
+    padding: 1rem auto;
+    height: 100%;
+    background: rgba(0,0,0,.6);
   }
   .gallery-item:hover .caption p {
     display: none;
@@ -344,10 +370,6 @@
   #parallax-section-three .animation-text-wrapper h3#message-line-three {
     margin-bottom: 35vh;
   }
-  #parallax-section-two .animation-text-wrapper h3 span {
-    display: block !important;
-    width: 100%;
-  }
   /* section four */
   #parallax-section-four .animation-text-wrapper {
     top: 42vh;
@@ -359,7 +381,19 @@
     font-size: 1.25rem !important;
     line-height: 1.45;
   }
-
+  /* cards */
+  #panel-text h4,
+  #media-card-wrapper h3 {
+    font-size: 1.75rem;
+  }
+  .flex-item.content h4 {
+    font-size: 2rem;
+  }
+  /*called */
+  .called-card .content-grid-wrapper h4 {
+    font-size: 3.25rem !important;
+    line-height: calc(var(--baseline) * 2.5 * 1rem) !important;
+  }
   /* animation elements */
   /* wrapper */
   #cercl-animaion {

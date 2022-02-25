@@ -9,6 +9,30 @@ gsap.registerPlugin(ScrollTrigger);
 //   });
 // });
 
+// $(document).ready(function(){
+//   // Add smooth scrolling to all links
+//   $("a").on('click', function(event) {
+//
+//     // Make sure this.hash has a value before overriding default behavior
+//     if (this.hash !== "") {
+//       // Prevent default anchor click behavior
+//       event.preventDefault();
+//
+//       // Store hash
+//       var hash = this.hash;
+//
+//       // Using jQuery's animate() method to add smooth page scroll
+//       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+//       $('html, body').animate({
+//         scrollTop: $(hash).offset().top - 200
+//       }, 600, function(){
+//         // Add hash (#) to URL when done scrolling (default click behavior)
+//         // window.location.hash = hash;
+//       });
+//     } // End if
+//   });
+// });
+
 gsap.set('#parallax-section-four', { yPercent: 100 });
 gsap.set('#parallax-section-four', { yPercent: 100 });
 gsap.set('#scroll-sections', { yPercent: 0 });
@@ -127,6 +151,7 @@ tlSectionThree
   .from('#parallax-section-three .animation-text-wrapper #message-line-two', {autoAlpha: 0, y: 40, ease: "sine", delay: 0})
   .from('#parallax-section-three .animation-text-wrapper #message-line-three', {autoAlpha: 0, y: 60, ease: "sine", delay: 0})
   .from('#parallax-section-three .animation-text-wrapper #message-line-four', {autoAlpha: 0, y: 60, ease: "sine", duration: 2, delay: 1})
+  .from('#parallax-section-three .animation-text-wrapper #message-line-five', {autoAlpha: 0, y: 20, ease: "sine", duration: 1, delay: .25})
 ;
 
 const tlSectionFour = gsap.timeline({
@@ -152,7 +177,7 @@ gsap.to("#svg-line-drawing", {
   scrollTrigger: {
     trigger: "#svg-line-drawing",
     start: "top bottom",
-    end: "+=200%",
+    end: "+=0%",
     scrub: false,
     toggleActions: "restart pause resume none",
     pin: false,
@@ -191,7 +216,7 @@ const tlMediaCardWrapperOne = gsap.timeline({
   scrollTrigger: {
     trigger: '#media-card-wrapper .grid-item:nth-child(1)',
     start: "top bottom",
-    toggleActions: "play play reverse reset",
+    toggleActions: "play none none reset",
     scrub: false,
     pin: false,
     pinSpacing: true
@@ -205,7 +230,7 @@ const tlMediaCardWrapperTwo = gsap.timeline({
     trigger: '#media-card-wrapper .grid-item:nth-child(2)',
     start: "top bottom",
     end: "bottom +=0%",
-    toggleActions: "play play reverse reset",
+    toggleActions: "play none none reset",
     scrub: false,
     pin: false,
     pinSpacing: false
@@ -219,7 +244,7 @@ const tlMediaCardWrapperThree = gsap.timeline({
     trigger: '#media-card-wrapper .grid-item:nth-child(3)',
     start: "top bottom",
     end: "bottom +=0%",
-    toggleActions: "play play reverse reset",
+    toggleActions: "play none none reset",
     scrub: false,
     pin: false,
     pinSpacing: false
@@ -233,7 +258,7 @@ const tlMediaCardWrapperFour = gsap.timeline({
     trigger: '#media-card-wrapper .grid-item:nth-child(4)',
     start: "top bottom",
     end: "bottom +=100%",
-    toggleActions: "play play reverse reset",
+    toggleActions: "play none none reset",
     scrub: false,
     pin: false,
     pinSpacing: false
@@ -247,7 +272,7 @@ const tlSchoolLogo = gsap.timeline({
     trigger: '#closer-school-logo',
     start: "top bottom",
     end: "bottom +=100%",
-    toggleActions: "play play reverse reset",
+    toggleActions: "play none none reset",
     scrub: false,
     pin: false,
     pinSpacing: false
