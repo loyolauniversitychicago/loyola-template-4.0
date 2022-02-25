@@ -6,10 +6,11 @@
 #parallax-section-two.panel { background: #8d0034; }
 #parallax-section-three.panel { background: none }
 #parallax-section-four.panel {
-  background-image: url('/images/parkinson-story-intro-duotone-1800x1000.jpg');
+  background-image: url('../images/parkinson-story-intro-duotone-1800x1000.jpg');
   background-size: cover;
+  background-position: center center;
 }
-#parallax-section-four.panel .container-fluid { background: rgba(61,36,45,.8); }
+#parallax-section-four.panel .container-fluid { background-color: rgba(61,36,45,.8); }
 #panel-text, #scroll-sections,
 #panel-image-grid-mason-gallery { background: #ffffff !important; }
 
@@ -222,6 +223,7 @@ a.cta:hover {
 /* scroll down */
 
 .scroll-down {
+  box-sizing: border-box;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -316,7 +318,7 @@ a.cta:hover {
   display: block;
 }
 #parallax-section-three .animation-text-wrapper h3#message-line-three {
-  margin-bottom: 35vh;
+  margin-bottom: 45vh;
 }
 #parallax-section-three .animation-text-wrapper h2 {
   margin: 0;
