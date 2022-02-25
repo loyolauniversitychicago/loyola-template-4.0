@@ -1,0 +1,766 @@
+/* PILLAR ADJUST */
+
+/* background */
+
+#parallax-section-one.panel { background: #ffffff; }
+#parallax-section-two.panel { background: #8d0034; }
+#parallax-section-three.panel { background: none }
+#parallax-section-four.panel {
+  background-image: url('/images/parkinson-story-intro-duotone-1800x1000.jpg');
+  background-size: cover;
+}
+#parallax-section-four.panel .container-fluid { background: rgba(61,36,45,.8); }
+#panel-text, #scroll-sections,
+#panel-image-grid-mason-gallery { background: #ffffff !important; }
+
+/* template overrides */
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+nav#main {
+ z-index: 0;
+}
+#footer-fixed {
+  display: none !important;
+}
+#luc-header {
+  z-index: 10002;
+}
+#site-brand-wrapper {
+  display: none;
+}
+
+/* template panels - flex adjustment */
+
+#parallax-cards-content, #panel-cards {
+  flex-shrink: 0;
+  width: auto;
+  height: auto;
+}
+#panel-cards .card .content-grid-wrapper {
+  background: #febc18;
+}
+
+/* panels - sections */
+
+.panel,
+#parallax-section-one.panel,
+#parallax-section-two.panel,
+#parallax-section-three.panel,
+#parallax-section-four.panel {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  max-height: 100vh;
+  overflow: hidden;
+  z-index: -100000;
+}
+.animation-text-wrapper {
+  position: absolute;
+  top: 20vh;
+  height: 60vh;
+  z-index: +1;
+}
+
+/* section images */
+
+#img-overlay {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,.2);
+}
+#parallax-section-one img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  bottom: 0;
+}
+
+/* typography */
+
+h1 {
+  text-shadow: 0 0 4rem rgb(0,0,0,1) !important;
+  text-transform: uppercase;
+}
+.panel h1, .panel h5 {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-size: 6vw;
+  line-height: 1.125;
+  letter-spacing: .075rem;
+  word-spacing: .25rem;
+  text-align: center;
+  color: #ffffff;
+}
+.panel h5 {
+  margin: 0 auto 2rem;
+  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: .075rem;
+  word-spacing: .125rem;
+}
+h1.school-name-one,
+h1.school-name-two,
+h1.school-name-three {
+  opacity: 0;
+  filter: blur(5px);
+}
+.panel h2, .panel h3, .panel .intro-paragraph p {
+  margin: 0 auto 1.5rem;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+}
+#panel-text h4, #media-card-wrapper h3, #closer-wrapper h4 {
+  margin: 0 auto;
+  width: 100%;
+  font-family: "Antenna Condensed Bold", sans-serif;
+  letter-spacing: -0.02rem;
+  word-spacing: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+#media-card-wrapper h3 {
+  font-size: 2.75rem;
+}
+.panel .intro-paragraph p {
+  margin: 0 auto .5rem;
+}
+.flex-item.content .explainer p {
+  margin-bottom: 1rem !important;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-family: 'Antenna Condensed Light', sans-serif !important;
+}
+blockquote, blockquote cite {
+  color: #ffffff;
+}
+blockquote {
+  border-color: #ffffff;
+}
+a.cta {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  color: #8d0034;
+  text-align: left;
+  background: none;
+  transition: .2s;
+}
+a.cta:hover {
+  color: #5d0024;
+}
+.panel button {
+  margin: 0 auto;
+  width: auto;
+  color: #8d0034;
+  background: #febc18;
+  transition: .2s;
+}
+.panel button:hover {
+  color: #5d0024;
+  background: #f98e2b;
+}
+
+/* SECTIONS */
+
+/* section one */
+
+/* section-one - animation */
+
+#parallax-section-one img#img-foreground,
+#parallax-section-one img#img-middleground,
+#parallax-section-one img#img-background {
+  width: 100vw;
+  min-width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  object-fit: cover;
+}
+#parallax-section-one img#img-foreground {
+  bottom: -2.5rem;
+  /* height: calc(100vh + 2.5rem); */
+  filter: blur(20px);
+}
+#parallax-section-one img#img-middleground {
+  bottom: 0;
+  filter: blur(20px);
+}
+#parallax-section-one img#img-background {
+  bottom: 0;
+  /* height: calc(100vh + 10%); */
+  filter: blur(20px);
+}
+#parallax-section-one #opener-university-logo {
+  position: relative;
+  margin: 1rem auto 0;
+  padding: 0;
+  width: 20vw;
+  max-width: 150px;
+  height: auto;
+  opacity: 0;
+  filter: blur(20px);
+}
+#parallax-section-one #opener-university-logo img {
+  position: relative;
+  width: 100%;
+}
+
+/* scroll down */
+
+.scroll-down {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 0;
+  padding: 1rem;
+  height: auto;
+  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: .75rem .75rem 0 0;
+  background: rgba(141,0,52,.875);
+}
+.scroll-down h5 {
+  position: relative;
+  left: 25%;
+  right: 25%;
+  transform: translate(-50%, 0);
+  width: 50% !important;
+}
+.scroll-down h5 {
+  top: 0;
+  margin: 0 auto !important;
+  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-size: 1rem !important;
+  letter-spacing: 0;
+  line-height: 1.25;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.scroll-down .arrow {
+  position: relative;
+  left: 0;
+  right: 0;
+  transform: translate(0, 0);
+  box-sizing: border-box;
+  margin: 0;
+  width: 100% !important;
+  height: 1.5rem;
+  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.scroll-down .arrow img {
+  margin: 0 35%;
+  width: 30% !important;
+  height: auto;
+}
+
+/* section three */
+
+#parallax-section-three {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  /* filter: blur(5vw); */
+}
+#parallax-section-three #masonry-image-overlay {
+  position: relative;
+}
+#image-grid-one .caption p span a.cta,
+#image-grid-two .caption p span a.cta,
+#image-grid-three .caption p span a.cta,
+#image-grid-four .caption p span a.cta,
+#image-grid-five .caption p span a.cta {
+  color: #febc18 !important;
+}
+#parallax-section-three .animation-text-wrapper {
+  top: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 3rem;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,.35);
+}
+#parallax-section-three .animation-text-wrapper h3 {
+  margin: 0 auto 1rem;
+  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-size: 2.125rem;
+  line-height: 1.125;
+  text-shadow: 0 0 1rem rgba(0,0,0,1);
+}
+#parallax-section-three .animation-text-wrapper h3 span {
+  display: block;
+}
+#parallax-section-three .animation-text-wrapper h3#message-line-three {
+  margin-bottom: 35vh;
+}
+#parallax-section-three .animation-text-wrapper h2 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Antenna Comp Bold', sans-serif;
+  font-size: 5rem;
+  letter-spacing: .125rem;
+  word-spacing: .5rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 1rem rgba(0,0,0,1);
+}
+#panel-image-grid-mason-gallery a.cta {
+  width: 100%;
+  color: #cccccc;
+  text-align: center;
+}
+#panel-image-grid-mason-gallery a.cta:hover {
+  color: #eeeeee;
+}
+
+/* section four */
+
+#parallax-section-four .animation-text-wrapper {
+  position: absolute;
+  width: 35%;
+}
+#parallax-section-four.panel h3 {
+  box-sizing: border-box;
+  margin: 0 0 3rem;
+  padding: 0;
+  width: 100%;
+  font-size: 2.5rem;
+  line-height: 1.45;
+  text-align: left;
+}
+#svg-line-drawing {
+  width: 50vw !important;
+}
+
+/* scroll-sections - called-card */
+
+#scroll-sections {
+  position: relative;
+  margin-top: 100vh;
+}
+#panel-video-embed .content-caption.sans-serif h4 {
+  text-align: center;
+}
+#panel-video-embed .content-caption.sans-serif p {
+  font-size: 1.25rem;
+  line-height: 1.85;
+}
+#panel-text.parkinson-lgs-cta .grid-wrapper-min-max.four-column {
+  grid-gap: 1rem !important;
+}
+#panel-text.parkinson-lgs-cta .grid-item {
+  margin: 0 !important;
+}
+#media-card-wrapper h3 {
+  width: 100vw;
+  font-family: 'Antenna Condensed Bold', sans-serif;
+  text-align: center;
+}
+/* card */
+.grid-wrapper-min-max.card .grid-item img {
+  margin: 0;
+}
+#panel-cards-horizontal .grid-item a {
+  display: none;
+}
+#panel-cards-horizontal .grid-item .flex-item.content a {
+  display: block;
+}
+.flex-item.content p {
+  display: none;
+  margin: 1rem 0;
+  font-size: 1.25rem;
+}
+.flex-item.content .explainer p {
+  display: block;
+}
+/* called-card */
+.called-card .content-grid-wrapper  {
+  background: #febc18 !important;
+}
+.called-card .content-grid-wrapper h4 {
+  font-family: 'Antenna Comp Bold', sans-serif;
+  font-size: 3rem !important;
+  letter-spacing: .0125rem;
+  word-spacing: .125rem;
+  line-height: calc(var(--baseline) * 2.5 * 1rem);
+  text-transform: uppercase;
+}
+.called-card .content-grid-wrapper h4 span {
+  color: #8d0034;
+}
+
+/* masonry - gallery */
+
+.gallery-item h5 {
+  position: absolute;
+  top: calc(100% - 4.25rem);
+  margin: 0;
+  padding: 2rem 2rem 2.25rem 2rem;
+  height: 10%;
+  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-size: .875rem;
+  line-height: 1.35;
+  word-spacing: .025rem !important;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px rgba(0,0,0,.75);
+  color: #eeeeee;
+  background: rgba(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,.5) 70%, rgba(255,255,255,0) 100%);
+  opacity: 1;
+  transition: .3s;
+  z-index: 1;
+}
+.gallery-item h5.position-top {
+  top: 0;
+  padding: 1rem 2rem 3rem 2rem;
+  background: linear-gradient(180deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,.5) 70%, rgba(255,255,255,0) 100%);
+}
+.gallery-item h5:hover {
+  color: #ffffff;
+}
+.gallery-item .caption p {
+  margin: 0 10% 1rem;
+  width: 80%;
+  font-family: 'Antenna Condensed Bold', sans-serif !important;
+  font-size: 1.35rem;
+  line-height: 1.65;
+}
+.gallery-item .image a {
+  height: 100%;
+}
+.gallery-item .caption p span {
+  display: inline-block;
+  margin: .5rem auto 0;
+}
+.gallery-item.no-hover:hover .image img {
+  opacity: 0.7;
+  /* transform:scale(1.0125); */
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  opacity: 1;
+  cursor: none;
+}
+.gallery-item.no-hover:hover .caption,
+.gallery-item.no-hover:hover .caption p {
+  display: none;
+}
+#panel-image-text .grid-wrapper-grid-area {
+  height: 100vh;
+}
+#panel-image-grid-mason-gallery .grid-wrapper-grid-wrapper {
+  grid-template-columns: repeat(6,1fr);
+  grid-auto-rows: 16.66vh;
+  grid-gap: .5rem;
+  grid-auto-flow: dense;
+  width: 100vw;
+  height: 100vh;
+}
+@media only screen and (max-width: 768px) {
+  #panel-image-grid-mason-gallery .grid-wrapper-grid-wrapper {
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+/* width */
+.w-1 {
+  grid-column: span 1;
+}
+.w-2 {
+  grid-column: span 2;
+}
+.w-3 {
+  grid-column: span 3;
+}
+.w-4 {
+  grid-column: span 4;
+}
+.w-5 {
+  grid-column: span 5;
+}
+.w-6 {
+  grid-column: span 6;
+}
+@media only screen and (max-width: 768px) {
+  .w-1, .w-2, .w-3, .w-4, .w-5, .w-6 {
+    grid-column: span 2;
+  }
+}
+@media only screen and (max-width: 415px) {
+.w-1, .w-2, .w-3, .w-4, .w-5, .w-6 {
+    grid-column: span 1;
+  }
+}
+/* height */
+.h-1 {
+  grid-row: span 1;
+}
+.h-2 {
+  grid-row: span 2;
+}
+.h-3 {
+  grid-row: span 3;
+}
+.h-4 {
+  grid-row: span 4;
+}
+.h-5 {
+  grid-row: span 5;
+}
+.h-6 {
+  grid-row: span 6;
+}
+@media only screen and (max-width: 415px) {
+  .h-1, .h-2, .h-3, .h-4, .h-5, .h-6 {
+    grid-row: span 2;
+  }
+}
+
+/* SVG */
+#cercl-animation {
+  position: relative;
+  display: block;
+  float: right;
+  width: 50%;
+  height: 100vh;
+  background: none;
+}
+/* elements */
+/* swab */
+#swab {
+  position: absolute;
+  top: 0;
+  left: -12%;
+}
+#swab, #swab #svg-line-drawing svg {
+  width: 35%;
+}
+/* vial */
+#vial {
+  position: absolute;
+  top: 65%;
+  left: 15%;
+}
+#vial, #vial #svg-line-drawing svg {
+  width: 17%;
+}
+/* vials */
+#vials {
+  position: absolute;
+  top: 35%;
+  right: -5%;
+}
+#vials, #vials #svg-line-drawing svg {
+  width: 70%;
+}
+/* viruses */
+#virusOne {
+  position: absolute;
+  top: 8%;
+  left: 20%;
+}
+#virusOne, #virusOne #svg-line-drawing svg {
+  width: 30vw;
+}
+#virusTwo {
+  position: absolute;
+  top: -8%;
+  left: 30vw;
+}
+#virusTwo, #virusTwo #svg-line-drawing svg {
+  width: 30vw;
+}
+#svg-line-drawing {
+  display: block;
+  float: left;
+  margin: 1rem 0;
+  width: 100%;
+  opacity: 0;
+}
+/* line atributes */
+#svg-line-drawing.draw-lines { opacity: 1; }
+#svg-line-drawing.draw-lines #swab-left .st0,
+#svg-line-drawing.draw-lines #swab-middle .st0,
+#svg-line-drawing.draw-lines #swab-right .st0,
+#svg-line-drawing.draw-lines #vial-left .st0,
+#svg-line-drawing.draw-lines #vial-middle .st0,
+#svg-line-drawing.draw-lines #vials-right .st0,
+#svg-line-drawing.draw-lines #vials-left .st0,
+#svg-line-drawing.draw-lines #vials-middle .st0,
+#svg-line-drawing.draw-lines #vials-right .st0,
+#virusOne #svg-line-drawing.draw-lines #virus-left .st0,
+#virusOne #svg-line-drawing.draw-lines #virus-middle .st0,
+#virusOne #svg-line-drawing.draw-lines #virus-right .st0,
+#virusTwo #svg-line-drawing.draw-lines #virus-left .st0,
+#virusTwo #svg-line-drawing.draw-lines #virus-middle .st0,
+#virusTwo #svg-line-drawing.draw-lines #virus-right .st0 {
+  fill: none;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  stroke-linecap: round;
+  stroke-miterlimit:10;
+}
+/* left */
+#svg-line-drawing.draw-lines #swab-left .st0,
+#svg-line-drawing.draw-lines #vial-left .st0,
+#svg-line-drawing.draw-lines #vials-left .st0 {
+  stroke: #febc18; /* gold */
+  stroke-width: 2;
+  opacity: 1;
+}
+/* middle */
+#svg-line-drawing.draw-lines #swab-middle .st0,
+#svg-line-drawing.draw-lines #vial-middle .st0,
+#svg-line-drawing.draw-lines #vials-middle .st0 {
+  stroke: #febc18; /* gold */
+  stroke-width: 3;
+  opacity: 1;
+}
+/* right */
+#svg-line-drawing.draw-lines #swab-right .st0,
+#svg-line-drawing.draw-lines #vial-right .st0,
+#svg-line-drawing.draw-lines #vials-right .st0 {
+  stroke: #ff8400; /* opus */
+  stroke-width: 4;
+  opacity: .7;
+}
+#svg-line-drawing.draw-lines #virus-left .st0,
+#svg-line-drawing.draw-lines #virus-middle .st0,
+#svg-line-drawing.draw-lines #virus-right .st0 {
+  stroke: #5fdfe7;
+  opacity: .35;
+}
+#svg-line-drawing.draw-lines #virus-left .st0 {
+  stroke-width: 4;
+}
+#svg-line-drawing.draw-lines #virus-middle .st0 {
+  stroke-width: 5;
+}
+#svg-line-drawing.draw-lines #virus-right .st0 {
+  stroke-width: 6;
+}
+/* timing */
+/* swab */
+#svg-line-drawing.draw-lines #swab-left .st0 {
+  animation: lineDrawing 6s linear forwards;
+  animation-delay: .35s;
+}
+#svg-line-drawing.draw-lines #swab-middle .st0 {
+  animation: lineDrawing 6s linear forwards;
+  animation-delay: 1s;
+}
+#svg-line-drawing.draw-lines #swab-right .st0 {
+  animation: lineDrawing 6s linear forwards;
+  animation-delay: 1s;
+}
+/* vial */
+#svg-line-drawing.draw-lines #vial-left .st0 {
+  animation: lineDrawing 6s linear forwards;
+  animation-delay: .35s;
+}
+#svg-line-drawing.draw-lines #vial-middle .st0 {
+  animation: lineDrawing 6s linear forwards;
+  animation-delay: 1s;
+}
+#svg-line-drawing.draw-lines #vial-right .st0 {
+  animation: lineDrawing 6s linear forwards;
+  animation-delay: 1s;
+}
+/* vials */
+#svg-line-drawing.draw-lines #vials-left .st0 {
+  animation: lineDrawing 6s linear forwards;
+  animation-delay: .35s;
+}
+#svg-line-drawing.draw-lines #vials-middle .st0 {
+  animation: lineDrawing 6s linear forwards;
+  animation-delay: 1s;
+}
+#svg-line-drawing.draw-lines #vials-right .st0 {
+  animation: lineDrawing 6s linear forwards;
+  animation-delay: 1s;
+}
+/* virus */
+#virusOne #svg-line-drawing.draw-lines #virus-left .st0,
+#virusOne #svg-line-drawing.draw-lines #virus-middle .st0,
+#virusOne #svg-line-drawing.draw-lines #virus-right .st0 {
+  animation: lineDrawing 10s linear forwards;
+  animation-delay: 2s;
+  animation-duration: 6s;
+}
+#virusOne {
+  animation: virusMoveOne 6s linear forwards;
+  animation-delay: 0;
+}
+#virusTwo #svg-line-drawing.draw-lines #virus-left .st0,
+#virusTwo #svg-line-drawing.draw-lines #virus-middle .st0,
+#virusTwo #svg-line-drawing.draw-lines #virus-right .st0 {
+  animation: lineDrawing 2s linear forwards;
+  animation-delay: 1s;
+  animation-duration: 3s;
+}
+#virusTwo {
+  animation: virusMoveTwo 6s linear forwards;
+  animation-delay: 0;
+}
+/* animations */
+@keyframes lineDrawing {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes virusMoveOne {
+  0% {
+    transform: translate(2vw, 7vh);
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-11vw, -30vh);
+    opacity: 0;
+  }
+}
+@keyframes virusMoveTwo {
+  0% {
+    transform: translate(0, 7vh);
+    opacity: 0;
+  }
+  90% {
+    transform: translate(-26vw, 10vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-26vw, 10vh);
+    opacity: 1;
+  }
+}
+
+/* end - css */
