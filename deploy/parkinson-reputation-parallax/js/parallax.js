@@ -177,9 +177,9 @@ gsap.to("#svg-line-drawing", {
   scrollTrigger: {
     trigger: "#svg-line-drawing",
     start: "top bottom",
-    end: "+=0%",
+    end: "+=200%",
     scrub: false,
-    toggleActions: "restart pause resume none",
+    toggleActions: "play none none none",
     pin: false,
     pinSpacing: true,
     toggleClass: { targets: '#svg-line-drawing', className: 'draw-lines' }
