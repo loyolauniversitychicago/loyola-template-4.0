@@ -642,7 +642,7 @@ a.cta:hover {
   float: left;
   margin: 1rem 0;
   width: 100%;
-  opacity: 1;
+  opacity: 0;
 }
 /* line atributes */
 #svg-line-drawing.draw-lines { opacity: 1; }

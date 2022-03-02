@@ -39,14 +39,14 @@ gsap.set('#scroll-sections', { yPercent: 0 });
 gsap.set('#media-card-wrapper', { yPercent: 5 });
 gsap.set('#closer-wrapper', { yPercent: 25 });
 
-gsap.utils.toArray(".panel").forEach((panel, i) => {
-  ScrollTrigger.create({
-    trigger: panel,
-    start: "top top",
-    pin: true,
-    pinSpacing: false
-  });
-});
+// gsap.utils.toArray(".panel").forEach((panel, i) => {
+//   ScrollTrigger.create({
+//     trigger: panel,
+//     start: "top top",
+//     pin: true,
+//     pinSpacing: false
+//   });
+// });
 
 function animateFrom(elem, direction) {
   direction = direction | 1;
@@ -112,14 +112,27 @@ const tlHeroScroll = document.querySelector('.scroll-down')
 let tlScroll = gsap.timeline()
 tlScroll.from(tlHeroScroll, {autoAlpha: 1, y: 100, filter: 'blur(0px)', duration: 1, delay: 4.5})
 
+
+const tlSectionOne = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#parallax-section-one",
+    start: "top top",
+    end: "bottom top",
+    toggleActions: "play none none none",
+    scrub: false,
+    pin: true,
+    pinSpacing: false,
+    markers: false
+}})
+
 const tlSectionTwo = gsap.timeline({
   scrollTrigger: {
     trigger: "#parallax-section-two",
-    start: "top bottom",
-    end: "bottom center",
-    toggleActions: "restart none none none",
+    start: "top top",
+    end: "bottom top",
+    toggleActions: "play none none none",
     scrub: false,
-    pin: "top top",
+    pin: true,
     pinSpacing: false,
     markers: false
 }})
@@ -131,18 +144,19 @@ tlSectionTwo
     scale: 1.125,
     ease: "power3",
     transformOrigin:'center top'}, "0")
-  ;
+;
 
 const tlSectionThree = gsap.timeline({
   scrollTrigger: {
     trigger: '#parallax-section-three',
-    start: "top center",
-    toggleActions: "play none none none",
+    start: "top top",
+    end: "bottom top",
+    toggleActions: "play pause pause pause",
     scrub: false,
-    pin: "top top",
+    pin: true,
     pinSpacing: false,
-    markers: false},
-});
+    markers: false
+}})
 
 tlSectionThree
   .from('#masonry-image-overlay', {autoAlpha: 1, delay: 0})
@@ -158,11 +172,11 @@ const tlSectionFour = gsap.timeline({
   scrollTrigger: {
     trigger: '#parallax-section-four',
     start: "top bottom",
-    end: "+=100%",
-    toggleActions: "play none none none",
+    end: "bottom top",
+    toggleActions: "play pause reverse resume",
     scrub: false,
-    pin: "top top",
-    pinSpacing: true,
+    pin: true,
+    pinSpacing: false,
     markers: false
 }})
 
@@ -177,40 +191,38 @@ gsap.to("#svg-line-drawing", {
   scrollTrigger: {
     trigger: "#svg-line-drawing",
     start: "top bottom",
-    end: "+=200%",
+    end: "bottom top",
     scrub: false,
-    toggleActions: "play none none none",
-    pin: false,
-    pinSpacing: true,
-    toggleClass: { targets: '#svg-line-drawing', className: 'draw-lines' }
-  }
-})
+    toggleActions: "play reverse none reverse",
+    pin: true,
+    pinSpacing: false,
+    toggleClass: { targets: '#svg-line-drawing', className: 'draw-lines' },
+    markers: false
+}})
 
 gsap.to("#virusOne", {
   scrollTrigger: {
     trigger: "#parallax-section-four",
     start: "top bottom",
-    end: "+=200%",
+    end: "0%",
     scrub: false,
     toggleActions: "play none none none",
-    pin: false,
-    pinSpacing: true,
+    pin: true,
+    pinSpacing: false,
     toggleClass: { targets: '#virusOne', className: 'activate-animation' }
-  }
-})
+}})
 
 gsap.to("#virusTwo", {
   scrollTrigger: {
     trigger: "#parallax-section-four",
     start: "top bottom",
-    end: "+=200%",
+    end: "0%",
     scrub: false,
     toggleActions: "play none none none",
-    pin: false,
-    pinSpacing: true,
+    pin: true,
+    pinSpacing: false,
     toggleClass: { targets: '#virusTwo', className: 'activate-animation' }
-  }
-})
+}})
 
 const tlMediaCardWrapperOne = gsap.timeline({
   scrollTrigger: {
@@ -257,7 +269,7 @@ const tlMediaCardWrapperFour = gsap.timeline({
   scrollTrigger: {
     trigger: '#media-card-wrapper .grid-item:nth-child(4)',
     start: "top bottom",
-    end: "bottom +=100%",
+    end: "bottom +=0%",
     toggleActions: "play none none reset",
     scrub: false,
     pin: false,
@@ -271,7 +283,7 @@ const tlSchoolLogo = gsap.timeline({
   scrollTrigger: {
     trigger: '#closer-school-logo',
     start: "top bottom",
-    end: "bottom +=100%",
+    end: "bottom +=0%",
     toggleActions: "play none none reset",
     scrub: false,
     pin: false,
