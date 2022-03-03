@@ -1,0 +1,41 @@
+/*
+#parallax-section-one,
+#parallax-section-two,
+#parallax-section-three {
+  flex-direction: column;
+}
+*/
+
+
+const tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: '#parallax-section-one',
+    start: "top top",
+    toggleActions: "restart none none none",
+    pin: true,
+    pinSpacing: false
+}})
+
+tl.to("h1.school-name-one", {
+    delay: 0,
+    duration: .5,
+    yPercent:10
+    filter: "blur(0px)",
+    ease: "power4"}, "0")
+  .to("h1.school-name-two", {
+    delay: 1,
+    duration: .5,
+    yPercent: 10,
+    filter: "blur(0px)",
+    ease: "power4"}, ".25")
+  .to("h1.school-name-three", {
+    delay: 0,
+    duration: 1,
+    yPercent: 14.5,
+    filter: "blur(0px)",
+    scale: 1.125,
+    ease: "power4"}, "<0")
+  ;
+
+// .to('#img-overlay', {autoAlpha: 1, duration: 1, delay: 0})
+// .to('h1', {autoAlpha: 0, duration: .5, delay: 0})
