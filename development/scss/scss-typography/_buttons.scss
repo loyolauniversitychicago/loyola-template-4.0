@@ -58,14 +58,25 @@ button.center {
 
 .button-maroon button,
 .button-patina button,
-.button-gold button {
+.button-gold button,
+.bg-maroon button,
+.bg-brick button,
+.bg-gray button {
   color: $white !important;
   border: none !important;
 }
 
 .button-maroon button { background-color: $maroon; }
+.button-brick button { background-color: $brick; }
 .button-patina button { background-color: $patina; }
 .button-gold button { background-color: desaturate($gold,10%); }
+
+.bg-maroon button,
+.bg-brick button { background-color: $gold; }
+
+.bg-gold button,
+.bg-gray button,
+.bg-terracotta-extra-light button { background-color: $maroon; }
 
 .button-maroon button:hover { background-color: $brick !important; }
 .button-patina button:hover { background-color: $patina-dark !important; }
