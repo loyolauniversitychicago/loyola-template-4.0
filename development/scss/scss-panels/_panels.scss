@@ -280,6 +280,13 @@ tr:nth-child(odd) { background: $gray-extra-light; }
   }
 }
 
+/* text - called */
+
+#panel-text.called-banner {
+  padding: 1rem 1rem .95rem;
+  border: 0 !important;
+}
+
 /* image - text */
 #panel-image-text .grid-wrapper-grid-area {
   display: -ms-grid;

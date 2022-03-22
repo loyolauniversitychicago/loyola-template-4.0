@@ -30,6 +30,23 @@ button a, button a:hover {
   cursor: pointer !important;
 }
 
+h1.antenna-compressed-headline,
+h2.antenna-compressed-headline,
+h3.antenna-compressed-headline,
+h4.antenna-compressed-headline,
+h5.antenna-compressed-headline {
+  font-family: 'Antenna Comp Black', sans-serif !important;
+  text-transform: uppercase;
+}
+
+#panel-text h1.antenna-compressed-headline,
+#panel-text h2.antenna-compressed-headline,
+#panel-text h3.antenna-compressed-headline,
+#panel-text h4.antenna-compressed-headline,
+#panel-text h5.antenna-compressed-headline {
+  margin: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
   display: block;
   margin: 0;
