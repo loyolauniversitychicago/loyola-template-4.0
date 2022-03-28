@@ -407,6 +407,11 @@ footer#footer-not-fixed {
       box-sizing: border-box;
       width: 100%;
     }
+    a {
+      color: $gold;
+      font: inherit;
+      text-decoration: none;
+    }
   }
 }
 

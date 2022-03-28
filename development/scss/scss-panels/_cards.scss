@@ -259,15 +259,49 @@
 
 .card .content-grid-wrapper {
   padding: 1.5rem !important;
-  background: #e1e1e1;
+  background: $gray-extra-light;
+}
+
+.card .content-grid-wrapper.bg-gray-extra-light {
+  background: $gray-extra-light;
+}
+
+.card .content-grid-wrapper.bg-gray-light {
+  background: $gray-light;
+}
+
+.content-grid-wrapper.bg-gray {
+  background-color: $gray !important;
+  .flex-item.content {
+    h3, h4, h6, p {
+      color: $gray-extra-light !important;
+    }
+  }
+  .flex-item.category-light button {
+    color: $black;
+    background: $gold;
+  }
+}
+
+.content-grid-wrapper.bg-gray-dark {
+  background-color: $gray-dark !important;
+  .flex-item.content {
+    h3, h4, h6, p {
+      color: $gray-extra-light !important;
+    }
+  }
+  .flex-item.category-light button {
+    color: $black;
+    background: $gold;
+  }
 }
 
 .card .content-grid-wrapper.bg-terracotta-light {
-  background: #f0e7e0;
+  background: $terracotta-extra-light;
 }
 
 .card .content-grid-wrapper.bg-gold {
-  background: #febc18 !important;
+  background: $gold !important;
 }
 
 /* buttons */

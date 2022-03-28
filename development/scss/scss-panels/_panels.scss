@@ -3,35 +3,63 @@
 /* backgrounds */
 
 .container-fluid.bg-gray-extra-light { background: $gray-extra-light; }
+.container-fluid.bg-gray-light { background: $gray-light; }
+.container-fluid.bg-gray { background: $gray; }
+.container-fluid.bg-gray-dark { background: $gray-dark; }
 .container-fluid.bg-terracotta-extra-light { background: $terracotta-extra-light; }
 .container-fluid.bg-maroon { background: $maroon; }
 .container-fluid.bg-brick { background: $brick; }
 .container-fluid.bg-gold { background: $gold; }
+.container-fluid.bg-patina { background: $patina; }
+.container-fluid.bg-overlay { background: $bg-overlay; }
 .container-fluid.bg-none { background: none; }
 
-.bg-gray-extra-light { background: $gray-extra-light !important; }
-.bg-terracotta-extra-light { background: $terracotta-extra-light !important; }
-.bg-maroon { background: $maroon !important; }
-.bg-brick { background: $brick !important; }
-.bg-gray { background: $gray-extra-light !important; }
-.bg-gold { background: $gold !important; }
-.bg-none { background: none !important; }
+.bg-gray-extra-light { background: $gray-extra-light; }
+.bg-gray-light { background: $gray-light; }
+.bg-gray { background: $gray; }
+.bg-terracotta-extra-light { background: $terracotta-extra-light; }
+.bg-maroon { background: $maroon; }
+.bg-brick { background: $brick; }
+.bg-gold { background: $gold; }
+.bg-patina { background: $patina; }
+.bg-bg-overlay { background: $bg-overlay; }
+.bg-none { background: none; }
+
+.bg-gray-extra-light { background: $gray-extra-light; }
+.bg-gray-light { background: $gray-light; }
+.bg-gray { background: $gray; }
+.bg-terracotta-extra-light { background: $terracotta-extra-light; }
+.bg-maroon { background: $maroon; }
+.bg-brick { background: $brick; }
+.bg-gold { background: $gold; }
+.bg-patina { background: $patina; }
+.bg-bg-overlay { background: $bg-overlay; }
+.bg-none { background: none; }
 
 /* bg-maroon added - nested elements */
 
 .bg-maroon h6, .bg-maroon h5, .bg-maroon h4, .bg-maroon h3, .bg-maroon p,
-.bg-brick h6, .bg-brick h5, .bg-brick h4, .bg-brick h3, .bg-brick p { color: $gray-extra-light !important; }
-.bg-maroon a.cta, .bg-brick a.cta  {
+.bg-brick h6, .bg-brick h5, .bg-brick h4, .bg-brick h3, .bg-brick p,
+.bg-gray h6, .bg-gray h5, .bg-gray h4, .bg-gray h3, .bg-gray p,
+.bg-gray-dark h6, .bg-gray-dark h5, .bg-gray-dark h4, .bg-gray-dark h3, .bg-gray-dark p,
+.bg-patina h6, .bg-patina h6, .bg-patina h6, .bg-patina h6, .bg-patina p,
+.bg-overlay h6, .bg-overlay h6, .bg-overlay h6, .bg-overlay h6, .bg-overlay p  { color: $gray-extra-light; }
+
+.bg-maroon a.cta, .bg-brick a.cta, .bg-gray a.cta, .bg-gray-dark a.cta, .bg-patina a.cta, .bg-overlay a.cta  {
   color: $gold !important;
   &:hover {
     color: $opus !important;
   }
 }
 
-.bg-gray h6, .bg-gray h5, .bg-gray h4, .bg-gray h3, .bg-gray p,
+.bg-gray-extra-light h6, .bg-gray-extra-light h5, .bg-gray-extra-light h4,
+.bg-gray-extra-light h3, .bg-gray-extra-light p,
 .bg-gold h6, .bg-gold h5, .bg-gold h4, .bg-gold h3, .bg-gold p,
-.bg-terracotta-extra-light h6, .bg-terracotta-extra-light h5, .bg-terracotta-extra-light h4, .bg-terracotta-extra-light h3, .bg-terracotta-extra-light p { color: $black !important; }
-.bg-gray a.cta, .bg-gold a.cta, .bg-terracotta-extra-light a.cta  {
+.bg-terracotta-extra-light h6, .bg-terracotta-extra-light h5,
+.bg-terracotta-extra-light h4, .bg-terracotta-extra-light h3,
+.bg-terracotta-extra-light p { color: $black !important; }
+
+.bg-gold a.cta, .bg-terracotta-extra-light a.cta  {
   color: $maroon !important;
   &:hover {
     color: $brick !important;
