@@ -2,39 +2,28 @@
 
 /* backgrounds */
 
+.bg-gray-extra-light,
 .container-fluid.bg-gray-extra-light { background: $gray-extra-light; }
+.bg-gray-light,
 .container-fluid.bg-gray-light { background: $gray-light; }
+.bg-gray,
 .container-fluid.bg-gray { background: $gray; }
+.bg-gray-dark,
 .container-fluid.bg-gray-dark { background: $gray-dark; }
+.bg-terracotta-extra-light,
 .container-fluid.bg-terracotta-extra-light { background: $terracotta-extra-light; }
+.bg-maroon,
 .container-fluid.bg-maroon { background: $maroon; }
+.bg-brick,
 .container-fluid.bg-brick { background: $brick; }
+.bg-gold,
 .container-fluid.bg-gold { background: $gold; }
+.bg-patina,
 .container-fluid.bg-patina { background: $patina; }
+.bg-overlay,
 .container-fluid.bg-overlay { background: $bg-overlay; }
+.bg-none,
 .container-fluid.bg-none { background: none; }
-
-.bg-gray-extra-light { background: $gray-extra-light; }
-.bg-gray-light { background: $gray-light; }
-.bg-gray { background: $gray; }
-.bg-terracotta-extra-light { background: $terracotta-extra-light; }
-.bg-maroon { background: $maroon; }
-.bg-brick { background: $brick; }
-.bg-gold { background: $gold; }
-.bg-patina { background: $patina; }
-.bg-bg-overlay { background: $bg-overlay; }
-.bg-none { background: none; }
-
-.bg-gray-extra-light { background: $gray-extra-light; }
-.bg-gray-light { background: $gray-light; }
-.bg-gray { background: $gray; }
-.bg-terracotta-extra-light { background: $terracotta-extra-light; }
-.bg-maroon { background: $maroon; }
-.bg-brick { background: $brick; }
-.bg-gold { background: $gold; }
-.bg-patina { background: $patina; }
-.bg-bg-overlay { background: $bg-overlay; }
-.bg-none { background: none; }
 
 /* bg-maroon added - nested elements */
 

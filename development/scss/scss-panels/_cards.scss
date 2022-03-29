@@ -257,6 +257,8 @@
   margin: 0;
 }
 
+/* backgrounds - typography - see panels scss */
+
 .card .content-grid-wrapper {
   padding: 1.5rem !important;
   background: $gray-extra-light;
@@ -270,34 +272,32 @@
   background: $gray-light;
 }
 
-.content-grid-wrapper.bg-gray {
+.card .content-grid-wrapper.bg-gray,
+.card .content-grid-wrapper.bg-gray-dark,
+.card .content-grid-wrapper.bg-marooon,
+.card .content-grid-wrapper.bg-brick, {
   background-color: $gray !important;
   .flex-item.content {
     h3, h4, h6, p {
       color: $gray-extra-light !important;
     }
   }
-  .flex-item.category-light button {
-    color: $black;
-    background: $gold;
-  }
 }
 
-.content-grid-wrapper.bg-gray-dark {
-  background-color: $gray-dark !important;
-  .flex-item.content {
-    h3, h4, h6, p {
-      color: $gray-extra-light !important;
-    }
-  }
-  .flex-item.category-light button {
-    color: $black;
-    background: $gold;
-  }
+.card .content-grid-wrapper.bg-gray-dark {
+  background: $gray-dark !important;
 }
 
-.card .content-grid-wrapper.bg-terracotta-light {
-  background: $terracotta-extra-light;
+.card .content-grid-wrapper.bg-terracotta-extra-light {
+  background: $terracotta-extra-light !important;
+}
+
+.card .content-grid-wrapper.bg-maroon {
+  background: $maroon !important;
+}
+
+.card .content-grid-wrapper.bg-brick {
+  background: $brick !important;
 }
 
 .card .content-grid-wrapper.bg-gold {
@@ -348,22 +348,22 @@ button:focus {
 }
 
 .button-gold button {
-  color: #ffffff;
+  color: $white;
 }
 
 .button-gold button:hover {
-  color: #ffffff;
+  color: $white;
 }
 
 /* button background color */
 
-.button-maroon button { background: #8D0034; }
-.button-patina button { background: #0096A0; }
-.button-gold button { background: #f2b724; }
+.button-maroon button { background: $maroon; }
+.button-patina button { background: $patina; }
+.button-gold button { background: $gold; }
 
-.button-maroon button:hover { background: #5D0024 !important; }
-.button-patina button:hover { background: #00495C !important; }
-.button-gold button:hover { background: #F98E2B !important; }
+.button-maroon button:hover { background: $brick !important; }
+.button-patina button:hover { background: $patina-dark !important; }
+.button-gold button:hover { background: $opus !important; }
 
 /* cards numbers */
 
@@ -382,6 +382,38 @@ button:focus {
 .grid-wrapper-min-max.number button,
 .grid-wrapper-min-max.number h6 {
   display: none;
+}
+
+.card .content-grid-wrapper.bg-gray,
+.card .content-grid-wrapper.bg-gray-dark,
+.card .content-grid-wrapper.bg-marooon,
+.card .content-grid-wrapper.bg-brick, {
+  background-color: $gray !important;
+  .flex-item.content {
+    h3, h4, h6, p {
+      color: $gray-extra-light !important;
+    }
+  }
+  .flex-item.category-light button {
+    color: $maroon !important;
+    background: $gold;
+    &:hover {
+      background: $opus !important;
+    }
+  }
+}
+
+.card .content-grid-wrapper.bg-maroon .flex-item.category-light button {
+  color: $maroon !important;
+}
+
+.card .content-grid-wrapper.bg-maroon .flex-item.category-light button:hover {
+  background: $opus !important;
+}
+
+.card .content-grid-wrapper.bg-terracotta-extra-light button:hover,
+.card .content-grid-wrapper.bg-gold .flex-item.category-light button:hover {
+  background: $brick !important;
 }
 
 /* cards - overlay */
