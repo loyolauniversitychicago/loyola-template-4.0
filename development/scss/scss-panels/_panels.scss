@@ -184,10 +184,22 @@ tr:nth-child(odd) { background: $gray-extra-light; }
   }
 }
 
-#panel-image.hero-image-lead .grid-wrapper-min-max .grid-item:first-of-type,
-#panel-image-lead-resize .grid-wrapper-min-max .grid-item:first-of-type {
-
+#panel-image.hero-image-lead.full-overlay .hero-image-content {
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    text-align: center;
+  }
 }
+
+#panel-image.hero-image-lead .grid-wrapper-min-max .grid-item:first-of-type,
+#panel-image-lead-resize .grid-wrapper-min-max .grid-item:first-of-type {}
 
 /* image - lead - RESIZE */
 /* background images - various heights - 450 - 800 - 1000 */
@@ -239,6 +251,11 @@ tr:nth-child(odd) { background: $gray-extra-light; }
   .bg-terracotta-extra-light p {
     color: $black !important;
   }
+}
+#panel-button-cta.bg-maroon h5,
+#panel-button-cta.bg-maroon h3,
+#panel-button-cta.bg-maroon p {
+  color: $white !important;
 }
 #panel-button-cta.bg-gold button,
 #panel-button-cta.bg-gray button,
