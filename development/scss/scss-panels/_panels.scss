@@ -185,15 +185,16 @@ tr:nth-child(odd) { background: $gray-extra-light; }
 }
 
 #panel-image.hero-image-lead.full-overlay .hero-image-content {
-  top: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   flex: 1;
+  top: 0;
+  padding-top: 5rem !important;
   height: 100%;
-  align-items: center;
-  justify-content: center;
-  h1 {
+  align-items: start;
+  justify-content: start;
+  h1, h3, h6, p, a {
+    width: 100%;
     text-align: center;
   }
 }
