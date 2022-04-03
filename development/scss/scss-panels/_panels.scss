@@ -55,6 +55,28 @@
   }
 }
 
+/* accent bar */
+
+.accent-bar {
+  position: absolute;
+  top: -.75rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: .75rem;
+  background: $maroon;
+}
+
+.accent-bar.maroon-gold {
+  background: $maroon;
+  background: linear-gradient(90deg, $maroon 0%, $maroon 65%, $gold 100%);
+}
+
+.accent-bar.maroon-patina {
+  background: $maroon;
+  background: linear-gradient(90deg, $maroon 0%, $maroon 65%, $patina 100%);
+}
+
 /* cards */
 
 #panel-cards .grid-wrapper-min-max .grid-item,

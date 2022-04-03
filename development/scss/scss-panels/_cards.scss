@@ -1,6 +1,7 @@
 /* cards */
 
 .grid-wrapper-min-max.card .grid-item {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
