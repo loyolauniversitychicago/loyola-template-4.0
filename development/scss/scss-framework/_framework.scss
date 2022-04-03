@@ -332,10 +332,10 @@ footer {
     padding: 15px 10px;
     height: 75px;
   }
-  a {
+  a, p a {
   color: $gray-extra-light;
     &:hover {
-      display: block;
+      display: inline-block;
       color: $gold-light;
     }
   }
