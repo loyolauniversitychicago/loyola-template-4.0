@@ -1,15 +1,18 @@
 /* cards */
 
+.grid-wrapper-min-max .grid-item,
 .grid-wrapper-min-max.card .grid-item {
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-.content-grid-wrapper {
+.grid-wrapper-min-max .content-grid-wrapper {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  justify-content: space-between;
+  display: flex;
 }
 
 /* cards horizontal */
