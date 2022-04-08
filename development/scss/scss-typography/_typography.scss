@@ -11,7 +11,7 @@
 html { font-size: 100%; } /* matches browsers default */
 
 body {
-  font-family: 'Antenna Condensed Light', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: $black;
   background-color: none;
 }
@@ -128,6 +128,7 @@ h5, details summary {
   font-size: 1.125rem;
   line-height: 1.45;
   line-height: rvr(1.45);
+  letter-spacing: .0125rem;
   text-transform: uppercase;
   @include phone-portrait {
     font-size: 1rem;
@@ -156,21 +157,31 @@ h6.category-bold {
   font-family: 'Antenna Condensed Bold', sans-serif;
 }
 
-/* paragraph styling - grouping */
-
-p, .explainer p .standard-paragraph p, .sans-serif, .sans-serif p {
-  font-family: 'Antenna Condensed Light', sans-serif;
-}
-
-p, .explainer p .standard-paragraph p {
-  margin: 0;
-  margin: 0 0 1rem;
-  margin-bottom: rvr(1);
+/* paragraphs */
+p a, a.cta,
+p em, li em, li em a, li a em,
+p, .explainer p .standard-paragraph p, .sans-serif, .sans-serif p,
+p, .explainer p .standard-paragraph p, .standard-paragraph p em,
+p strong, .standard-paragraph p strong, li strong, li a strong, ol strong, ol a strong,
+/* cards */
+.flex-item.content p, .flex-item.content p.explainer,
+/* modaal */
+.modaal-content-container .intro-paragraph > p,
+/* panels */
+#main-content-wrapper ol,
+#main-content-wrapper ul,
+#main-content-wrapper-full-width ol,
+#main-content-wrapper-full-width ul,
+#panel-intro .intro-paragraph > p, .intro-paragraph > p,
+#panel-intro .intro-paragraph > p strong, .intro-paragraph > p strong,
+#panel-intro .caption p, .caption p, .leadin, .caption .leadin,
+#panel-table-accordion p {
   font-size: 1.125rem;
+  font-weight: 400;
   line-height: 1.45;
   line-height: rvr(1.45);
-  word-spacing: .05rem;
-  letter-spacing: -.0125rem;
+  letter-spacing: -.025rem;
+  word-spacing: .075rem;
   @include phone-portrait {
     font-size: 1.125rem;
     line-height: 1.65;
@@ -178,9 +189,17 @@ p, .explainer p .standard-paragraph p {
   }
 }
 
+/* paragraph styling - grouping */
+
+p, .explainer p .standard-paragraph p {
+  margin: 0;
+  margin: 0 0 1rem;
+  margin-bottom: rvr(1);
+}
+
 p strong, .standard-paragraph p strong,
 li strong, li a strong {
-  font-family: 'Antenna Condensed Bold', sans-serif !important;
+  font-weight: 800;
 }
 
 p em, .standard-paragraph p em,
@@ -202,11 +221,9 @@ li em, li em a, li a em, {
 .modaal-content-container .intro-paragraph > p {
   margin: 0;
   margin-bottom: rvr(1.5);
-  font-family: 'Antenna Condensed Light', sans-serif;
   font-size: 1.3rem;
   line-height: 1.85;
   line-height: rvr(1.85);
-  word-spacing: .075rem;
   @include phone-portrait {
     font-size: 1.25rem;
     line-height: 1.65;
@@ -215,23 +232,15 @@ li em, li em a, li a em, {
 }
 
 #panel-intro .caption p {
-  font-family: 'Antenna Condensed Light', sans-serif;
-  font-size: 1rem;
   line-height: 1.35;
   line-height: rvr(1.35);
-  letter-spacing: .0125rem;
-  word-spacing: .025rem;
   a { cursor: pointer;
   }
 }
 
 .caption p {
-  font-family: 'Antenna Condensed Light', sans-serif;
-  font-size: 1rem;
   line-height: 1.35;
   line-height: rvr(1.35);
-  letter-spacing: .0125rem;
-  word-spacing: .025rem;
   a { cursor: pointer;
   }
 }
@@ -242,8 +251,6 @@ li em, li em a, li a em, {
 }
 
 #panel-table-accordion p {
-  font-family: 'Antenna Condensed Light', sans-serif;
-  font-size: 1.125rem;
   @include phone-portrait {
     margin-bottom: 1.25rem;
     margin-bottom: rvr(1.25);
@@ -253,15 +260,10 @@ li em, li em a, li a em, {
 
 /* end paragraph styling */
 
-.leadin {
-  text-transform: uppercase;
-  font-weight: bold;
+.leadin, .caption .leadin {
   font-weight: 700;
-  font-family: 'Antenna Condensed Bold';
-}
-
-.caption .leadin {
-  font-family: 'Antenna Condensed Bold';
+  letter-spacing: -.05rem;
+  text-transform: uppercase;
 }
 
 /* inline links - ctas */
@@ -285,15 +287,14 @@ a {
 p a {
   text-decoration: none;
   font-size: inherit;
-  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-weight: 700;
 }
 
 a.cta {
   display: block;
-  margin-bottom: 1.5rem;
+  margin: .25rem auto 1.5rem;
   width: 100%;
-  font-family: 'Antenna Condensed Bold', sans-serif;
-  font-size: 1rem;
+  font-weight: 800;
   text-transform: uppercase;
   background-size: 0 0;
   &:hover {
@@ -301,7 +302,6 @@ a.cta {
     color: $brick;
   }
   @include phone-portrait {
-    font-size: .95rem;
     line-height: 1.125;
     line-height: rvr(1.125);
   }
@@ -314,7 +314,11 @@ a.cta {
 
 small { font-size: 0.7rem; }
 
-footnote { font-style: italic; }
+footnote {
+  font-style: italic;
+  line-height: 1.45;
+  line-height: rvr(1.45);
+}
 
 /* typographic specific */
 
@@ -334,7 +338,6 @@ footnote { font-style: italic; }
 #main-content-wrapper-full-width ol,
 #main-content-wrapper-full-width ul {
   margin: 0 0 1rem 1.5rem;
-  font-size: 1.125rem;
   line-height: 1.65;
   line-height: rvr(1.65);
   list-style-position: inside;
@@ -453,7 +456,8 @@ ol li::before {
 /* details - summary */
 
 details summary {
-  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
   color: $maroon;
   text-decoration: underline;
   &:after {
@@ -476,12 +480,12 @@ blockquote, blockquote p {
   margin: 2em auto;
   padding: 2em 0;
   width: 80%;
-  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.85rem;
-  font-weight: 400;
+  font-weight: 700 !important;
   line-height: 2.85;
   line-height: rvr(2.85);
-  letter-spacing: -.0125em;
+  letter-spacing: -.05em;
   text-align: center;
   border-top: solid 1px $gray;
   border-bottom: solid 1px $gray;
@@ -514,7 +518,7 @@ blockquote p cite {
   margin: 1em auto;
   padding: 0;
   width: 100%;
-  font-family: 'Antenna Condensed Light', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.35;
@@ -629,8 +633,6 @@ blockquote p cite:before {
 .flex-item.content p, .flex-item.content p.explainer {
   margin-top: rvr(0) !important;
   margin-bottom: rvr(.25) !important;
-  font-family: 'Antenna Condensed Light', sans-serif !important;
-  font-size: 1.125rem;
   line-height: 1.45;
 }
 
@@ -673,7 +675,7 @@ p span.highlight.bg-success,
 p span.highlight.bg-warning,
 p span.highlight.bg-danger {
   color: $maroon;
-  font-family: 'Antenna Condensed light', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-image: linear-gradient(120deg, $maroon 0%, $maroon 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.075rem;

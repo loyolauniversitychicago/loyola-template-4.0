@@ -31,7 +31,7 @@ button.minimalist-css-accordion__header {
 /* padding: .85rem 2rem 1rem 1rem; Sentence Case */
   color: $black !important;
   font-size: 1.25rem;
-  text-transform: uppercase;
+  text-transform: none;
   border-radius: 0;
   border: none !important;
   border-bottom: solid 1px $gray !important;
@@ -44,11 +44,12 @@ button.minimalist-css-accordion__header {
 h4.js-accordion-no-panel {
   padding: 1.125rem 2rem 1rem 1rem !important;
 /*  padding: 1rem 2rem 1rem 1rem !important; Sentence Case */
-  text-transform: uppercase;
+  text-transform: none;
   a.cta {
     display: inline;
     margin: 0 0 0 .25rem;
-    font-family: 'Antenna Condensed Light', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     font-size: inherit;
   }
 }
