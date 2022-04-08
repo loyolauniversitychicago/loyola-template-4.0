@@ -62,6 +62,11 @@ tr:first-child th.span.sub-category {
   background: darken($gray,1%) !important;
 }
 
+tr:first-child th:first-child,
+#panel-table-accordion h4 span.table-accordion-row-header {
+  letter-spacing: -.025rem;
+}
+
 tr:first-child th:first-child {
   color: $gray-extra-light !important;
   background: $gray-dark !important;

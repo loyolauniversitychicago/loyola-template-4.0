@@ -1,16 +1,17 @@
 /* CUSTOM VARIABLES */
 
-$maroon:			#8D0034;
-$brick:       #5d0024;
-$gold:				#febc18;
-$patina:			#0096a0;
-$terracotta:  #b68967;
-$opus:				#f98e2b;
-$gray:				#888888;
-$copper:      #b4af95;
-$black:       #000000;
-$white:	      #ffffff;
-$bg-overlay:	rgba(0,0,0,.5);
+$maroon:        #8D0034;
+$brick:         #5d0024;
+$gold:				  #febc18;
+$gold-premiere:	#cba052;
+$patina:        #0096a0;
+$terracotta:    #b68967;
+$opus:				  #f98e2b;
+$gray:				  #888888;
+$copper:        #b4af95;
+$black:         #000000;
+$white:	        #ffffff;
+$bg-overlay:    rgba(0,0,0,.5);
 
 $bg-overlay: $bg-overlay;
 $bg-overlay-dark: rgba($bg-overlay, .6);
@@ -38,6 +39,13 @@ $gold-dark: darken($gold, 20%);
 $gold-extra-dark: darken($gold, 40%);
 $gold-light: lighten($gold, 20%);
 $gold-extra-light: lighten($gold, 40%);
+
+/* GOLD - PREMIERE */
+$gold-premiere: lighten($gold-premiere, 0%);
+$gold-premiere-dark: darken($gold-premiere, 20%);
+$gold-premiere-extra-dark: darken($gold-premiere, 40%);
+$gold-premiere-light: lighten($gold-premiere, 15%);
+$gold-premiere-extra-light: lighten($gold-premiere, 30%);
 
 /* PATINA */
 $patina: lighten($patina, 0%);
