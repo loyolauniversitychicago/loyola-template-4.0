@@ -163,6 +163,7 @@ h6.category-bold {
 
 /* paragraphs */
 p a, a.cta,
+p.open-sans,
 p em, li em, li em a, li a em,
 p, .explainer p .standard-paragraph p, .sans-serif, .sans-serif p,
 p, .explainer p .standard-paragraph p, .standard-paragraph p em,
@@ -180,6 +181,7 @@ p strong, .standard-paragraph p strong, li strong, li a strong, ol strong, ol a 
 #panel-intro .intro-paragraph > p strong, .intro-paragraph > p strong,
 #panel-intro .caption p, .caption p, .leadin, .caption .leadin,
 #panel-table-accordion p {
+  font-family: 'Open Sans', sans-serif !important;
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.45;
@@ -492,7 +494,7 @@ blockquote, blockquote p {
   font-weight: 700 !important;
   line-height: 2.85;
   line-height: rvr(2.85);
-  letter-spacing: -.05em;
+  letter-spacing: -0.0125rem;
   text-align: center;
   border-top: solid 1px $gray;
   border-bottom: solid 1px $gray;
@@ -751,6 +753,52 @@ blockquote cite { line-height: 1.35; }
 
 .flex-item.content p, .flex-item.content p.explainer { line-height: 1.65; }
 
+}
+
+/* main-aside-wrapper */
+
+#main-aside-wrapper blockquote {
+  margin: 0 auto;
+  padding: 0 auto;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  line-height: calc(var(--baseline) * 1.5 * 1rem);
+  letter-spacing: -0.05rem;
+  border: none !important;
+}
+
+
+#main-aside-wrapper blockquote p,
+#main-aside-wrapper blockquote cite,
+#main-aside-wrapper blockquote p cite,
+#main-aside-wrapper .grid-wrapper-min-max.number h5,
+#main-aside-wrapper .grid-wrapper-min-max.number-lg h5,
+#main-aside-wrapper h6,
+#main-aside-wrapper a.cta,
+#main-aside-wrapper .card a.cta,
+.flex-item.content a.cta {
+  font-size: 0.825rem !important;
+}
+
+#main-aside-wrapper a.cta,
+#main-aside-wrapper .card a.cta,
+.flex-item.content a.cta {
+  margin-bottom: 0;
+}
+
+
+#main-aside-wrapper {
+  p a, a.cta, p.open-sans, p em, p,
+  .explainer p .standard-paragraph p, .sans-serif, .sans-serif p,
+  .standard-paragraph p em, p strong, .standard-paragraph p strong,
+  ol, ul, ol li, ul li, li em, li em a, li a em,
+  li strong, li a strong, ol strong, ol a strong,
+  .flex-item.content p, .flex-item.content p.explainer,
+  .caption p, .leadin, .caption .leadin {
+    font-size: .95rem;
+    line-height: 1.125;
+    line-height: calc(var(--baseline) * 1.125 * 1rem);
+  }
 }
 
 

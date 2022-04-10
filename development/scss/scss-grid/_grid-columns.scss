@@ -19,6 +19,12 @@
   }
 }
 
+#main-aside-wrapper .grid-wrapper-min-max {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)) !important;
+}
+
 /* grid columns */
 
 .grid-wrapper-min-max.one-column {
