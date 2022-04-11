@@ -25,6 +25,36 @@
   grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)) !important;
 }
 
+/* main-content-wrapper grid areas */
+
+#main-content-wrapper.grid-wrapper-min-max {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "main main main navigation"
+    "main main main sidebar";
+  width: 100%;
+  grid-gap: 3rem;
+  .layout-grid-area-one {
+    grid-area: main;
+  }
+  .layout-grid-area-two {
+    grid-area: navigation;
+  }
+  .layout-grid-area-three {
+    grid-area: sidebar;
+  }
+  @include tablet-portrait {
+    grid-template-areas:
+      "navigation navigation navigation navigation"
+      "main main main main"
+      "sidebar sidebar sidebar sidebar";
+    grid-gap: 1rem;
+  }
+}
+
 /* grid columns */
 
 .grid-wrapper-min-max.one-column {
