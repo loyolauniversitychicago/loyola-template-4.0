@@ -39,12 +39,15 @@
   grid-gap: 3rem;
   .layout-grid-area-one {
     grid-area: main;
+    background: pink;
   }
   .layout-grid-area-two {
     grid-area: navigation;
+    background: yellow;
   }
   .layout-grid-area-three {
     grid-area: sidebar;
+    background: lime;
   }
   @include tablet-portrait {
     grid-template-areas:
