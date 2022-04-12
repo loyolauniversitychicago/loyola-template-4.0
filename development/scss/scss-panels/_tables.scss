@@ -77,11 +77,9 @@ tr:not(:first-child):not(:last-child) th {
   border-bottom-color: $gray !important;
 }
 
-tr:first-child th:first-child,
 tr:not(:first-child) th {
   color: $black;
   background: $gray-light;
-  text-transform: none;
 }
 
 caption {

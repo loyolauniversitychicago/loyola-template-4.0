@@ -1222,11 +1222,20 @@ button.modaal-close {
 /* video embed */
 
 #panel-video-embed {
+  position: relative;
+  aspect-ratio: 4 / 3;
   background: $brick;
   overflow: hidden;
   @include phone-portrait {
     .container {
       width: 100%;
+    }
+  }
+  .grid-wrapper-min-max {
+    width: 80%;
+    .two-columns {
+      position: relative;
+      aspect-ratio: 16 / 9;
     }
   }
   .grid-item {
@@ -1245,9 +1254,20 @@ button.modaal-close {
       margin: 0;
       padding: 0;
       object-fit: cover;
+      &before {
+        display: table;
+        padding-top: 56%;
+        width: 100% !important;
+      }
     }
   }
+  .container &:before {
+    padding-top: 56%;
+    width: 100%;
+  }
 }
+
+
 
 /* background image - display none */
 #panel-video-embed.hide-background-image {
