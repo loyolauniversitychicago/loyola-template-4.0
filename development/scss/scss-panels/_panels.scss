@@ -55,6 +55,15 @@
   }
 }
 
+/* aspect-ratio */
+
+.aspect-ratio-sixteen-nine { aspect-ratio: 16/9; } /* 1000 x 560 image interior inline - video */
+.aspect-ratio-four-one { aspect-ratio: 4/1; } /* 1800 x 450 - hero shallow - interior */
+.aspect-ratio-three-one { aspect-ratio: 3/1; } /* 1800 x 600 - hero standard - homepage */
+.aspect-ratio-ten-four { aspect-ratio: 10/4; } /* 1800 x 720 - hero standard - homepage */
+.aspect-ratio-four-three { aspect-ratio: 4/3; } /* 1000 x 750 - old video */
+.aspect-ratio-one-one { aspect-ratio: 1/1; } /* 1000 x 1000 - portraits - profiles */
+
 /* panel banner */
 
 #panel-banner .page-banner {
@@ -234,6 +243,16 @@ tr:nth-child(odd) { background: $gray-extra-light; }
       }
     }
   }
+}
+
+#panel-image.full-overlay {
+  position: relative;
+}
+
+#panel-image.full-overlay > div.grid-wrapper-min-max {
+  position: absolute !important;
+  top: 0;
+  height: 100%;
 }
 
 #panel-image.hero-image-lead.full-overlay .hero-image-content {
@@ -1211,6 +1230,7 @@ button.modaal-close {
     background: $gold;
   }
 }
+
 .modaal-close:before, .modaal-close:after,
 .modaal-close:focus:before, .modaal-close:focus:after,
 .modaal-close:hover:before, .modaal-close:hover:after {
@@ -1223,7 +1243,6 @@ button.modaal-close {
 
 #panel-video-embed {
   position: relative;
-  aspect-ratio: 4 / 3;
   background: $brick;
   overflow: hidden;
   @include phone-portrait {
@@ -1233,9 +1252,10 @@ button.modaal-close {
   }
   .grid-wrapper-min-max {
     width: 80%;
+    justify-content: center;
+    align-items: center;
     .two-columns {
       position: relative;
-      aspect-ratio: 16 / 9;
     }
   }
   .grid-item {
@@ -1243,6 +1263,9 @@ button.modaal-close {
   }
   .content-image-overlay {
     padding: 0;
+    .container {
+      height: 100%;
+    }
   }
   .background-image {
     position: absolute;
@@ -1254,20 +1277,9 @@ button.modaal-close {
       margin: 0;
       padding: 0;
       object-fit: cover;
-      &before {
-        display: table;
-        padding-top: 56%;
-        width: 100% !important;
-      }
     }
   }
-  .container &:before {
-    padding-top: 56%;
-    width: 100%;
-  }
 }
-
-
 
 /* background image - display none */
 #panel-video-embed.hide-background-image {
