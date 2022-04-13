@@ -64,6 +64,26 @@
 .aspect-ratio-four-three { aspect-ratio: 4/3; } /* 1000 x 750 - old video */
 .aspect-ratio-one-one { aspect-ratio: 1/1; } /* 1000 x 1000 - portraits - profiles */
 
+.aspect-ratio-sixteen-nine,
+.aspect-ratio-four-one,
+.aspect-ratio-three-one,
+.aspect-ratio-ten-four,
+.aspect-ratio-four-three,
+.aspect-ratio-one-one {
+  aspect-ratio: 1/1;
+  height: 100%;
+  min-height: 0;
+  overflow: visible;
+}
+
+/* introduction paragraph */
+
+.intro-paragraph.sans-serif {
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+}
+
 /* panel banner */
 
 #panel-banner .page-banner {
@@ -1254,12 +1274,21 @@ button.modaal-close {
     width: 80%;
     justify-content: center;
     align-items: center;
+    @include phone-landscape {
+      display: block;
+    }
     .two-columns {
       position: relative;
     }
   }
   .grid-item {
     z-index: 1;
+    .content-caption h4 {
+      margin-top: 0;
+    }
+    .cta {
+      margin-bottom: 0;
+    }
   }
   .content-image-overlay {
     padding: 0;
@@ -1279,6 +1308,7 @@ button.modaal-close {
       object-fit: cover;
     }
   }
+
 }
 
 /* background image - display none */
