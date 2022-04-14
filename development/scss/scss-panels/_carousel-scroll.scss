@@ -151,6 +151,7 @@
   justify-content: center;
   @include tablet-portrait {
     padding: rvr(2);
+    height: auto;
   }
 }
 

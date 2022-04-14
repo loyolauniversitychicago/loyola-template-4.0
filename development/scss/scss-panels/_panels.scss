@@ -57,24 +57,26 @@
 
 /* aspect-ratio */
 
-.aspect-ratio-sixteen-nine { aspect-ratio: 16/9; } /* 1000 x 560 image interior inline - video */
-.aspect-ratio-four-one { aspect-ratio: 4/1; } /* 1800 x 450 - hero shallow - interior */
-.aspect-ratio-three-one { aspect-ratio: 3/1; } /* 1800 x 600 - hero standard - homepage */
-.aspect-ratio-ten-four { aspect-ratio: 10/4; } /* 1800 x 720 - hero standard - homepage */
-.aspect-ratio-four-three { aspect-ratio: 4/3; } /* 1000 x 750 - old video */
-.aspect-ratio-one-one { aspect-ratio: 1/1; } /* 1000 x 1000 - portraits - profiles */
-
-.aspect-ratio-sixteen-nine,
-.aspect-ratio-four-one,
-.aspect-ratio-three-one,
-.aspect-ratio-ten-four,
-.aspect-ratio-four-three,
-.aspect-ratio-one-one {
-  aspect-ratio: 1/1;
-  height: 100%;
-  min-height: 0;
-  overflow: visible;
-}
+// .aspect-ratio-sixteen-nine { aspect-ratio: 16/9; } /* 1000 x 560 image interior inline - video */
+// .aspect-ratio-four-one { aspect-ratio: 4/1; } /* 1800 x 450 - hero shallow - interior */
+// .aspect-ratio-three-one { aspect-ratio: 3/1; } /* 1800 x 600 - hero standard - homepage */
+// .aspect-ratio-ten-four { aspect-ratio: 10/4; } /* 1800 x 720 - hero standard - homepage */
+// .aspect-ratio-four-three { aspect-ratio: 4/3; } /* 1000 x 750 - old video */
+// .aspect-ratio-one-one { aspect-ratio: 1/1; } /* 1000 x 1000 - portraits - profiles */
+//
+//
+// .aspect-ratio-sixteen-nine,
+// .aspect-ratio-four-one,
+// .aspect-ratio-three-one,
+// .aspect-ratio-ten-four,
+// .aspect-ratio-four-three,
+// .aspect-ratio-one-one {
+//   @include tablet-portrait {
+//     height: 100%;
+//     min-height: 0;
+//     overflow: visible;
+//   }
+// }
 
 /* introduction paragraph */
 
@@ -1265,33 +1267,21 @@ button.modaal-close {
   position: relative;
   background: $brick;
   overflow: hidden;
-  @include phone-portrait {
-    .container {
-      width: 100%;
-    }
-  }
   .grid-wrapper-min-max {
+    position: relative;
+    margin: 2rem auto;
+    padding: 0;
     width: 80%;
     justify-content: center;
     align-items: center;
-    @include phone-landscape {
-      display: block;
-    }
-    .two-columns {
-      position: relative;
-    }
   }
   .grid-item {
+    margin: 0;
     z-index: 1;
-    .content-caption h4 {
-      margin-top: 0;
-    }
-    .cta {
-      margin-bottom: 0;
-    }
   }
   .content-image-overlay {
     padding: 0;
+    background: $bg-overlay-extra-dark;
     .container {
       height: 100%;
     }
@@ -1319,14 +1309,15 @@ button.modaal-close {
   }
 }
 
-#panel-video-embed .container {
-  box-shadow: 0px 0px 15px rgba(0,0,0,.75);
-}
-
 #panel-video-embed .content-caption {
+  display: block;
   padding: 2rem;
   background: $gray-extra-dark;
+    @include tablet-portrait {
+      padding: 1.5rem;
+    }
   h4 {
+    margin-top: 0;
     margin-bottom: rvr(.5);
     font-size: 1.65rem;
     line-height: rvr(1.65);
@@ -1339,6 +1330,8 @@ button.modaal-close {
     font-size: 1.135rem;
   }
   a {
+    margin-bottom: .25rem;
+    font-size: 80%;
     color: $gold;
     &:hover {
       color: lighten($gold,10%);
