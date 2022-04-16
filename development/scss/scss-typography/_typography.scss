@@ -342,10 +342,16 @@ a.cta {
 
 small { font-size: 0.7rem; }
 
-footnote {
+footnote, .footnote p {
+  display: block;
+  margin: 1rem 0 0 0;
+  padding: .75rem 0 0 0;
+  width: 100%;
   font-style: italic;
-  line-height: 1.45;
-  line-height: rvr(1.45);
+  font-size: .875rem;
+  line-height: 1.25;
+  line-height: rvr(1.25);
+  border-top: solid 1px $gray;
 }
 
 /* typographic specific */
