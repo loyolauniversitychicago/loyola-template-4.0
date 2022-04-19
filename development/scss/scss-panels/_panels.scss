@@ -212,7 +212,7 @@ tr:nth-child(odd) { background: $gray-extra-light; }
   margin: 0;
 }
 
-#panel-image.hero-image-lead, #panel-image-lead-resize {
+#panel-image, #panel-image-lead-resize {
   @include tablet-portrait {
     .grid-item {
       margin: 0;
@@ -223,10 +223,13 @@ tr:nth-child(odd) { background: $gray-extra-light; }
     bottom: 0;
     left: 0;
     margin: 0;
-    padding: 2rem 10%;
+    padding: 2rem 10% 2.25rem;
     width: 100%;
     color: $white;
     background: $bg-overlay;
+    h1, h2, h3, p {
+      color: $white;
+    }
     @include tablet-portrait {
       position: relative;
       padding: 2rem 5%;
@@ -234,13 +237,16 @@ tr:nth-child(odd) { background: $gray-extra-light; }
       background: $gray-extra-light;
     }
     h1, h2 {
-      margin-bottom: 0;
+      margin-bottom: .25rem;
       @include tablet-portrait {
         margin-bottom: .5rem;
         font-family: 'Antenna Condensed Bold', sans-serif;
         font-size: 2.5rem;
         line-height: rvr(2.35);
       }
+    }
+    h3 {
+      margin-top: .5rem;
     }
     p {
       margin-bottom: 0;
@@ -255,13 +261,15 @@ tr:nth-child(odd) { background: $gray-extra-light; }
         color: $black;
       }
     }
-    a.cta {
+    a.cta, p a.cta {
       display: inline;
-      color: $gold;
+      color: $gold !important;
+      font-size: 85%;
+      text-transform: uppercase;
       @include tablet-portrait {
         margin-top: .75rem;
         display: block;
-        color: $maroon;
+        color: $maroon !important;
       }
     }
   }
@@ -382,8 +390,12 @@ tr:nth-child(odd) { background: $gray-extra-light; }
     margin-bottom: 0;
   }
   .hero-image-content {
+    position: relative;
     padding: 2rem;
     background: $gray-extra-light;
+    h4, h6, p {
+      color: $black;
+    }
     h4 {
     margin-bottom: .65rem;
     font-size: 1.65rem;
@@ -393,6 +405,12 @@ tr:nth-child(odd) { background: $gray-extra-light; }
       font-family: 'Open Sans', sans-serif;
       font-size: 1.25rem;
     }
+    a.cta {
+      color: $maroon !important;
+      &:hover {
+        color: $brick !important;
+      }
+    }
     @include tablet-portrait {
       h4 {
         font-size: 1.75rem;
@@ -401,6 +419,17 @@ tr:nth-child(odd) { background: $gray-extra-light; }
         font-size: 1.125rem;
         line-height: 1.85rem;
       }
+    }
+  }
+}
+
+#panel-image.hero-image-lead,
+#panel-image-caption-resize.hero-image-lead {
+  .hero-image-content {
+    p a, p a.cta {
+      font-size: 85%;
+      color: $gold;
+      text-transform: uppercase;
     }
   }
 }
@@ -550,9 +579,9 @@ grid-area: 1 / 3 / span 1 / span 2;
     color: $gray-light;
   }
   a.cta {
-    color: $gold;
+    color: $gold !important;
     &:hover {
-      color: $gold-light;
+      color: $gold-light !important;
     }
   }
   @include phone-portrait {
@@ -692,12 +721,14 @@ button.content-activate-symbol.activate-symbol-close {
 
 /* center alignment of symbol */
 
-#panel-image-highlights .content-activate-symbol {
+#panel-image-highlights .content-activate-symbol,
+#panel-image-grid.image-grid-highlights .content-activate-symbol {
   left: calc(50% - 1.125rem);
   cursor: default;
 }
 
-#panel-image-highlights .content-activate-symbol.activate-symbol-plus {
+#panel-image-highlights .content-activate-symbol.activate-symbol-plus,
+#panel-image-grid.image-grid-highlights .content-activate-symbol.activate-symbol-plus {
   margin-bottom: .75rem;
   left: calc(50% - 1rem);
   cursor: default;
@@ -802,7 +833,7 @@ button.content-activate-symbol.activate-symbol-close {
   .grid-item {
     position: relative;
     margin: 0 !important;
-    border: solid 1px red;
+    border: none;
   }
   img {
     margin: 0;
@@ -824,6 +855,69 @@ button.content-activate-symbol.activate-symbol-close {
     h6 {
       text-align: center;
       margin: 0;
+    }
+  }
+}
+
+/* image grid - highlights */
+
+#panel-image-grid.image-grid-highlights {
+  .grid-wrapper-min-max {
+    grid-template-columns: 1fr 1fr 1fr;
+    .grid-item {
+      display: none;
+      .content-image-overlay {
+        h6, h4, h3, p, a {
+          text-align: center;
+        }
+      }
+    }
+    .grid-item:nth-child(1),
+    .grid-item:nth-child(2),
+    .grid-item:nth-child(3) {
+      display: block;
+    }
+  }
+  p.caption-overlay {
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    padding: .5rem .5rem .5rem .5rem;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .75rem;
+    color: $gray-extra-light;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px $bg-overlay;
+    text-align: center;
+    border-radius: 0;
+    background: none;
+    span {
+      position: absolute;
+      top: 4rem;
+      margin: 0 10%;
+      width: 80%;
+      font-family: 'Antenna Condensed Bold', sans-serif;
+      font-size: 2.5rem;
+      line-height: 1.25;
+      color: $gray-extra-light;
+      text-align: center;
+      text-shadow: 0 0 .5rem rgba(0,0,0,.35);
+      text-transform: uppercase;
+      @include tablet-portrait {
+        font-size: 1.85rem;
+      }
+      @include phone-landscape {
+        font-size: 1.75rem;
+      }
+      @include phone-portrait {
+        font-size: 2rem;
+      }
+    }
+    span.caption-overlay-name {
+      display: none;
     }
   }
 }
@@ -858,7 +952,7 @@ button.content-activate-symbol.activate-symbol-close {
 /* image - grid */
 
 #panel-image-grid {
-  background-image: url('http://via.placeholder.com/1800x1000');
+  background-image: none;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;

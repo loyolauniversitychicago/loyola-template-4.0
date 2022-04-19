@@ -209,8 +209,13 @@ p strong, .standard-paragraph p strong, li strong, li a strong, ol strong, ol a 
 
 li a {
   font-weight: 400;
-  color: $gray-dark;
 }
+
+p a, a.cta, li a, li em a, li a em {
+  color: $maroon;
+}
+
+/* cards */
 
 /* paragraph styling - grouping */
 
