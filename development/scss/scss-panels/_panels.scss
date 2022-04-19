@@ -866,6 +866,10 @@ button.content-activate-symbol.activate-symbol-close {
     grid-template-columns: 1fr 1fr 1fr;
     .grid-item {
       display: none;
+      .caption-overlay {
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.55) 85%);
+      }
       .content-image-overlay {
         padding: 2.5rem;
         h6, h4, h3, p, a {

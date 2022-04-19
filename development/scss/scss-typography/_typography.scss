@@ -215,6 +215,19 @@ p a, a.cta, li a, li em a, li a em {
   color: $maroon;
 }
 
+#panel-intro.bg-maroon .intro-paragraph > p,
+#panel-intro.bg-maroon .intro-paragraph > p strong,
+#panel-intro.bg-maroon .caption p,
+#panel-table-accordion.bg-maroon p {
+  color: $white;
+  a, a.cta, li a, li em a, li a em {
+    color: $gold;
+    &:hover {
+      color: $opus;
+    }
+  }
+}
+
 /* cards */
 
 /* paragraph styling - grouping */
