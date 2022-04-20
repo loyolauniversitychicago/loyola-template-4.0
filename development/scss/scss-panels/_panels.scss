@@ -781,14 +781,20 @@ button.content-activate-symbol.activate-symbol-close {
       width: 300%;
     }
   }
-  blockquote {
-    @include tablet-portrait {
-      margin: 1rem auto;
-    }
-    @include phone-portrait {
+  .content-image-overlay {
+    display: flex;
+    align-items: center;
+    blockquote {
+      align-content: center;
       margin: 0 auto;
-      font-size: 1.25rem;
-      line-height: 2;
+      padding: 0;
+      width: 60%;
+      height: auto;
+      border: none;
+      @include phone-portrait {
+        font-size: 1.25rem;
+        line-height: 2;
+      }
     }
   }
 }
