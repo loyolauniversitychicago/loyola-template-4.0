@@ -593,20 +593,20 @@ grid-area: 1 / 3 / span 1 / span 2;
   }
 }
 
-#panel-image-overlay .content-image-overlay.content-image-overlay-40 {
-  background: $bg-overlay-light;
+.content-image-overlay.content-image-overlay-40 {
+  background: $bg-overlay-light !important;
 }
 
-#panel-image-overlay .content-image-overlay.content-image-overlay-50 {
-  background: $bg-overlay;
+.content-image-overlay.content-image-overlay-50 {
+  background: $bg-overlay !important;
 }
 
-#panel-image-overlay .content-image-overlay.content-image-overlay-60 {
-  background: $bg-overlay-dark;
+.content-image-overlay.content-image-overlay-60 {
+  background: $bg-overlay-dark !important;
 }
 
-#panel-image-overlay .content-image-overlay.content-image-overlay-70 {
-  background: $bg-overlay-extra-dark;
+.content-image-overlay.content-image-overlay-70 {
+  background: $bg-overlay-extra-dark !important;
 }
 
 /* image - overlay - symbol is arrow up */
