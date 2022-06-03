@@ -71,8 +71,19 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3.25rem;
-  line-height: 3.75;
-  line-height: rvr(3.75);
+  line-height: 3.5;
+  line-height: rvr(3.5);
+  @include phone-portrait {
+    font-size: 3rem;
+    line-height: 3;
+    line-height: rvr(3);
+  }
+}
+
+.display h1 {
+  font-size: 4.25rem;
+  line-height: 4.125;
+  line-height: rvr(4.125);
   @include phone-portrait {
     font-size: 3rem;
     line-height: 3;
@@ -81,9 +92,10 @@ h1 {
 }
 
 h2 {
-  font-size: 2.65rem;
+  font-size: 1.85rem;
   line-height: 2.75;
   line-height: rvr(2.75);
+  text-transform: uppercase;
   @include phone-portrait {
     font-size: 2.25rem;
     line-height: 2.35;
