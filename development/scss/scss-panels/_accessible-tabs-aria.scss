@@ -56,12 +56,15 @@
     margin: 0;
     margin-bottom: .5rem !important;
     width: 100%;
-    font-size: 1.65rem !important;
+    font-size: 1.45rem !important;
   }
   p {
     margin: .5rem 0 1rem;
-    font-size: 1.125rem !important;
-    line-height: 1.65;
+    font-size: 1.025rem !important;
+  }
+  .sans-serif p {
+    line-height: 1.45;
+    line-height: rvr(1.45);
   }
   a {
     font-size: .85em !important;
