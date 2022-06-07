@@ -211,7 +211,7 @@ p strong, .standard-paragraph p strong, li strong, li a strong, ol strong, ol a 
   line-height: rvr(1.65);
   letter-spacing: -.025rem;
   word-spacing: .075rem;
-  color: $gray-dark;
+  color: $black;
   @include phone-portrait {
     font-size: 1.125rem;
     line-height: 1.65;
@@ -251,7 +251,11 @@ p, .explainer p .standard-paragraph p {
 }
 
 p strong, .standard-paragraph p strong,
-li strong, li a strong {
+li strong, li a strong, ol strong, ol a strong,
+#panel-intro .intro-paragraph > p strong,
+.intro-paragraph > p strong, #panel-intro.bg-maroon {
+  font-size: inherit;
+  font-family: 'open-sans', sans-serif;
   font-weight: 800;
 }
 
