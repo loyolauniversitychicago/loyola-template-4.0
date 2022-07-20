@@ -229,6 +229,9 @@ tr:nth-child(odd) { background: $gray-extra-light; }
     background: $bg-overlay;
     h1, h2, h3, p {
       color: $white;
+      @include tablet-portrait {
+        color: $black;
+      }
     }
     @include tablet-portrait {
       position: relative;
@@ -331,6 +334,9 @@ tr:nth-child(odd) { background: $gray-extra-light; }
   h3, p {
     color: $black;
   }
+  h3 {
+    margin-top: 0;
+  }
   h5 {
     display: inline;
     margin: 0 1rem 0 0;
@@ -355,6 +361,9 @@ tr:nth-child(odd) { background: $gray-extra-light; }
   .bg-gray-extra-light p,
   .bg-terracotta-extra-light p {
     color: $black !important;
+  }
+  p:last-of-type {
+    margin-bottom: 0;
   }
 }
 #panel-button-cta.bg-maroon h5,
