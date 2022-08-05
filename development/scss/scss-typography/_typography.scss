@@ -746,13 +746,13 @@ p span.highlight.bg-warning,
 p span.highlight.bg-danger {
   color: $maroon;
   font-family: 'Open Sans', sans-serif;
-  background-image: linear-gradient(120deg, $maroon 0%, $maroon 100%);
+  background-image: linear-gradient(120deg, $gray-light 0%, $gray-light 100%);
   background-repeat: no-repeat;
-  background-size: 100% 0.075rem;
-  background-position: 0 103%;
+  background-size: 106% 0.075rem;
+  background-position: -3% 103%;
   transition: all 0.25s ease-in;
   &:hover {
-    color: $white;
+    color: #000000;
     background-size: 100% 106%;
   }
 }

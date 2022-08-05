@@ -38,7 +38,7 @@
     $navmain.querySelectorAll('.multi-level-sliding-navigation-menu').forEach(($list, i) => {
       $list.setAttribute('aria-hidden', String(i !== 0));
       $navmain
-        .querySelectorAll(`[aria-controls="${$list.id}"]`)
+        .querySelectorAll('[aria-controls="${$list.id}"]')
         .forEach(($el) => $el.setAttribute('aria-expanded', String(i === 0)));
     });
     $navmain.scrollLeft = 0;
@@ -155,10 +155,10 @@
 
     $to.setAttribute('aria-hidden', 'false');
     $navmain
-      .querySelectorAll(`[aria-controls="${$from.id}"]`)
+      .querySelectorAll('[aria-controls="${$from.id}"]')
       .forEach(($el) => $el.setAttribute('aria-expanded', 'false'));
     $navmain
-      .querySelectorAll(`[aria-controls="${$to.id}"]`)
+      .querySelectorAll('[aria-controls="${$to.id}"]')
       .forEach(($el) => $el.setAttribute('aria-expanded', 'true'));
 
     // Enable parallax effect
@@ -208,16 +208,16 @@
     });
     setStyleProps($navbody, {
       opacity: '0',
-      transform: `translateX(${tX()})`,
+      transform: 'translateX(${tX()})',
       'will-change': 'opacity, transform'
     });
     window.requestAnimationFrame(() => {
       setStyleProps($nav, {
-        transition: `background-color ${animateDuration}ms`,
+        transition: 'background-color ${animateDuration}ms',
         'background-color': false
       });
       setStyleProps($navbody, {
-        transition: `opacity ${animateDuration}ms, transform ${animateDuration}ms`,
+        transition: 'opacity ${animateDuration}ms, transform ${animateDuration}ms',
         transform: 'translateZ(0)',
         opacity: 1
       });
@@ -241,12 +241,12 @@
     });
     window.requestAnimationFrame(() => {
       setStyleProps($nav, {
-        transition: `background-color ${animateDuration}ms`,
+        transition: 'background-color ${animateDuration}ms',
         'background-color': 'transparent'
       });
       setStyleProps($navbody, {
-        transition: `opacity ${animateDuration}ms, transform ${animateDuration}ms`,
-        transform: `translateX(${tX()})`,
+        transition: 'opacity ${animateDuration}ms, transform ${animateDuration}ms',
+        transform: 'translateX(${tX()})',
         opacity: 0
       });
       setTimeout(() => {
