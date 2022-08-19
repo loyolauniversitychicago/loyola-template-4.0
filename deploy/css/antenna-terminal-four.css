@@ -1,0 +1,81 @@
+/*
+This CSS resource incorporates links to font software which is
+the valuable copyrighted property of WebType LLC, The Font Bureau
+and/or their suppliers. You may not
+attempt to copy, install, redistribute, convert, modify or reverse
+engineer this font software. Please contact WebType with any
+questions: https://www.webtype.com
+*/
+
+/* Antenna - Menu - Graphics */
+
+@font-face {
+  font-family: "Antenna";
+  src: url("https://luc.edu/media/luc.edu/fonts/antenna_regular/476def8b-6379-4133-9503-ca290c126397-4.svg");
+  src: url("https://luc.edu/media/luc.edu/fonts/antenna_regular/476def8b-6379-4133-9503-ca290c126397-2.eot") format("embedded-opentype"),
+      url("https://luc.edu/media/luc.edu/fonts/antenna_regular/476def8b-6379-4133-9503-ca290c126397-3.woff") format("woff"),
+      url("https://luc.edu/media/luc.edu/fonts/antenna_regular/476def8b-6379-4133-9503-ca290c126397-1.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Antenna Bold";
+  src: url("https://luc.edu/media/luc.edu/fonts/antenna_bold/692e9d98-a1c5-4d26-9831-b7f258241cdf-4.svg");
+  src: url("https://luc.edu/media/luc.edu/fonts/antenna_bold/692e9d98-a1c5-4d26-9831-b7f258241cdf-2.eot") format("embedded-opentype"),
+    url("https://luc.edu/media/luc.edu/fonts/antenna_bold/692e9d98-a1c5-4d26-9831-b7f258241cdf-3.woff") format("woff"),
+    url("https://luc.edu/media/luc.edu/fonts/antenna_bold/692e9d98-a1c5-4d26-9831-b7f258241cdf-1.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold; }
+
+@font-face {
+  font-family: "Antenna Black";
+  src: url("https://luc.edu/media/luc.edu/fonts/antenna_black/6620971b-19a1-4157-9796-83671a1c7836-4.svg");
+  src: url("https://luc.edu/media/luc.edu/fonts/antenna_black/6620971b-19a1-4157-9796-83671a1c7836-2.eot") format("embedded-opentype"),
+    url("https://luc.edu/media/luc.edu/fonts/antenna_black/6620971b-19a1-4157-9796-83671a1c7836-3.woff") format("woff"),
+    url("https://luc.edu/media/luc.edu/fonts/antenna_black/6620971b-19a1-4157-9796-83671a1c7836-1.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* Antenna Condensed - Headlines */
+
+@font-face {
+  font-family: "Antenna Condensed Light";
+  src: url("https://luc.edu/media/luc.edu/fonts/antenna_condensed_light/antenna-condensed-light.eot") format("embedded-opentype"),
+    url("https://luc.edu/media/luc.edu/fonts/antenna_light/antenna-condensed-light.woff") format("woff"),
+    url("https://luc.edu/media/luc.edu/fonts/antenna_light/antenna-condensed-light.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Antenna Condensed Bold";
+  src: url("https://luc.edu/media/luc.edu/fonts/antenna_condensed_bold/antenna-condensed-bold.eot") format("embedded-opentype"),
+    url("https://luc.edu/media/luc.edu/fonts/antenna_thin/antenna-condensed-bold.woff") format("woff"),
+    url("https://luc.edu/media/luc.edu/fonts/antenna_thin/antenna-condensed-bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal; }
+
+  @font-face {
+    font-family: "Antenna Condensed Bold";
+    src: url("https://luc.edu/media/luc.edu/fonts/antenna_condensed_black/antenna-condensed-black.eot") format("embedded-opentype"),
+      url("https://luc.edu/media/luc.edu/fonts/antenna_thin/antenna-condensed-black.woff") format("woff"),
+      url("https://luc.edu/media/luc.edu/fonts/antenna_thin/ntenna-condensed-black.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal; }
+
+/* Antenna Compressed - We Are Called - Only */
+
+  @font-face {
+    font-family: "Antenna Comp Bold";
+    src: url("https://luc.edu/media/luc.edu/fonts/antenna_compressed_bold/	id:435719ef5900d9-cbb9-4435-a9e8-bb47afc557c3-2.eot") format("embedded-opentype"),
+      url("https://luc.edu/media/luc.edu/fonts/antenna_compressed_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-3.woff") format("woff");
+    font-style: normal;
+    font-weight: normal; }
+
+  @font-face {
+    font-family: "Antenna Comp Black";
+    src: url("https://luc.edu/media/luc.edu/fonts/antenna_compressed_black/antenna-compressed black.eot") format("embedded-opentype"),
+      url("https://luc.edu/media/luc.edu/fonts/antenna_compressed_black/antenna-compressed black.woff") format("woff");
+    font-style: normal;
+    font-weight: normal; }
+
+/* END - ANTENNA */
