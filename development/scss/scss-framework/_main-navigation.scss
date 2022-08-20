@@ -113,6 +113,16 @@ ul#site-nav button:hover {
 	background-repeat: no-repeat !important;
 }
 
+ul#site-nav li.hassub {
+	button {
+		padding: 1.25rem 1.25rem 1rem 1.25rem;
+		background-image: none !important;
+		&:hover {
+			padding: 1.25rem 1.25rem 1rem 1.25rem;
+		}
+	}
+}
+
 /* rotate menu item caret
 nav#main ul#site-nav button[aria-expanded="true"]::after {
 	line-height: 0;
