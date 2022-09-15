@@ -168,7 +168,7 @@ h6 {
   margin-bottom: .5rem;
   margin-bottom: rvr(.75);
   font-family: 'Antenna Condensed Light', sans-serif;
-  font-size: 1.125rem;
+  font-size: .95rem;
   line-height: 1.25;
   line-height: rvr(1.25);
   letter-spacing: 0rem;
@@ -206,12 +206,12 @@ p strong, .standard-paragraph p strong, li strong, li a strong, ol strong, ol a 
 #panel-intro .caption p, .caption p, .leadin, .caption .leadin,
 #panel-table-accordion p {
   font-family: 'Open Sans', sans-serif !important;
-  font-size: 1.125rem;
+  font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.65;
   line-height: rvr(1.65);
-  letter-spacing: -.025rem;
-  word-spacing: .075rem;
+  letter-spacing: -.045rem;
+  word-spacing: .125rem;
   color: $black;
   @include phone-portrait {
     font-size: 1.125rem;
@@ -453,8 +453,12 @@ ol li::before {
 
 #main-content-wrapper img {
   margin: 0 0 1.5rem;
-  width: 100%;
+  width: auto;
   height: auto;
+}
+
+.grid-item img {
+  width: 100%;
 }
 
 /* unique typographic patterns */
