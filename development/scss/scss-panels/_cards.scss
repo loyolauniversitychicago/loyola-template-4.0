@@ -99,17 +99,21 @@
   overflow: hidden;
 }
 
-.grid-wrapper-min-max .grid-item .image-wrapper.image-wrapper-circle a {
+#panel-cards .grid-wrapper-min-max .grid-item .image-wrapper.image-wrapper-circle a {
+  display: block !important;
   outline: none;
   outline-offset: 0;
 }
 
 .grid-wrapper-min-max .grid-item .image-wrapper.image-wrapper-circle a img {
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .content-grid-wrapper.image-wrapper-circle {
   padding: 2rem 2rem 3rem;
+  overflow: visible;
   .flex-item.content {
     margin: 0 auto;
     width: 80%;
