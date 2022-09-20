@@ -196,6 +196,16 @@ body.active {
   }
 */
 
+body.active {
+  height: 50% !important;
+  min-height: 50% !important;
+  overflow: hidden !important;
+}
+
+body.active #main-content-start {
+  overflow: hidden;
+}
+
 body.active #side-nav {
   display: none;
   @include tablet-portrait {
@@ -204,6 +214,8 @@ body.active #side-nav {
     -ms-transform: translateX(85vw);
     -webkit-transform: translateX(85vw);
     transform: translateX(85vw);
+    height: 100vh;
+    overflow: scroll;
   }
   @include phone-portrait {
     -moz-transform: translateX(70vw);

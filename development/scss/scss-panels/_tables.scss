@@ -10,6 +10,9 @@ tbody, th, tr {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: auto;
+  @include phone-landscape {
+    float: left;
+  }
 }
 
 table, tbody, th, tr, td, tr.column, .column {
@@ -30,6 +33,20 @@ table {
   width: 100%;
   max-width: 100%;
   border-collapse: collapse;
+  @include phone-landscape {
+    margin: 20px 0 0 0;
+    span {
+      display: block;
+      margin: -.5rem -.5rem .5rem;
+      padding: .5rem;
+      width: calc(100% + 1rem);
+      font-family: 'Antenna Condensed Bold', sans-serif;
+      font-size: 1rem;
+      color: #ffffff;
+      text-transform: uppercase;
+      background-color: #bbbbbb;
+    }
+  }
 }
 
 th, td {
@@ -38,7 +55,15 @@ th, td {
   padding: 0.75rem;
   font-family: 'Open Sans', sans-serif;
   text-align: left;
+  @include phone-landscape {
+    display: block;
+    box-sizing: border-box;
+    padding: .5rem;
+    width: 100%;
+    background: #eeeeee;
+  }
 }
+
 th {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
@@ -53,6 +78,18 @@ th {
   &:nth-child(7) {
     border-left: none;
     border-left: solid 1px $gray-extra-light;
+  }
+}
+
+tr {
+  @include phone-landscape {
+    &:first-of-type {
+      display: none;
+    }
+    display: block;
+    margin: 1.5rem 0;
+    float: left;
+    width: 100%;
   }
 }
 
@@ -89,6 +126,26 @@ caption {
   text-align: left;
 }
 
+td {
+@include phone-landscape {
+  margin: 0;
+  }
+}
+
+table > tbody > tr > td:nth-child(1) {
+@include phone-landscape {
+  padding: .5rem;
+  background: #5d0024;
+  color: #ffffff;
+    span {
+      background: #8d0034;
+      color: #eeeeee;
+    }
+  }
+}
+
+/* table accordion */
+
 td ul, #panel-table-accordion ul {
   margin: 1rem 0 !important;
 }
@@ -110,104 +167,6 @@ td ul li, #panel-table-accordion ul li {
   list-style-type: square;
   list-style-position: inside;
 }
-
-/* table stack */
-
-@media only screen and (max-width: 600px) {
-
-	/* force table to display block - stack */
-	table, thead, tbody, th, td, tr, h4.table-accordion-header span {
-		display: block;
-    position: relative;
-	}
-
-	/* hides table headers (but not display: none; for accessibility) */
-	th {
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
-
-  tr th:first-child {
-    position: relative;
-    left: 0;
-    top: 0;
-  }
-
-  tr:first-child {
-    margin-bottom: 0;
-  }
-
-  tr:first-child td:first-child {
-    display: none;
-  }
-
-  tr:first-child th:first-child {
-    display: none;
-  }
-
-  th.sub-category,
-  th.span.sub-category,
-  tr:first-child th.span.sub-category {
-    display: block;
-    position: relative !important;
-    margin: 0;
-    font-size: 1.125rem;
-    color: $black !important;
-    border: none;
-    background: $gray-light !important;
-  }
-
-	tr {
-    margin: 2rem 0;
-    border: 1px solid $gray-light; }
-
-	td {
-		/* make a row */
-    position: relative;
-    padding: 1rem;
-    line-height: rvr(1.65);
-		border: none;
-		border-bottom: 1px solid $gray-light;
-    &:last-of-type {
-      border-bottom: none;
-    }
-	}
-
-  td:before {
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    top: -1rem;
-    left: -1rem;
-    padding: 1rem;
-    width: calc(100% + 2rem);
-    height: 100%;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    color: $gray-extra-light;
-    text-align: left;
-    text-transform: uppercase;
-		white-space: nowrap;
-    background: $gray-dark;
-  }
-
-	/* Label the data */
-
-	td:nth-of-type(1):before, #panel-table-accordion h4 span:nth-of-type(1):before { content: "Header 01"; }
-	td:nth-of-type(2):before, #panel-table-accordion h4 span:nth-of-type(2):before { content: "Header 02"; }
-	td:nth-of-type(3):before, #panel-table-accordion h4 span:nth-of-type(3):before { content: "Header 03"; }
-	td:nth-of-type(4):before, #panel-table-accordion h4 span:nth-of-type(4):before { content: "Header 04"; }
-	td:nth-of-type(5):before, #panel-table-accordion h4 span:nth-of-type(5):before { content: "Header 06"; }
-	td:nth-of-type(6):before, #panel-table-accordion h4 span:nth-of-type(6):before { content: "Header 07"; }
-	td:nth-of-type(7):before, #panel-table-accordion h4 span:nth-of-type(7):before { content: "Header 08"; }
-	td:nth-of-type(8):before, #panel-table-accordion h4 span:nth-of-type(8):before { content: "Header 09"; }
-	td:nth-of-type(9):before, #panel-table-accordion h4 span:nth-of-type(9):before { content: "Header 10"; }
-
-  caption { display: block; }
-}
-
-/* table accordion */
 
 #panel-table-accordion {
   @include phone-portrait {
@@ -324,7 +283,6 @@ td ul li, #panel-table-accordion ul li {
      height: 2rem;
    }
  }
-
 
 #panel-table-accordion h4.table-accordion-header span {
   font-family: 'Open Sans', sans-serif;
