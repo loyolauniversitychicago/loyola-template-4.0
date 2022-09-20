@@ -699,7 +699,8 @@ blockquote p cite:before {
   font-size: 1.125rem;
 }
 
-.flex-item.content h6 {
+.card .flex-item.content h6 {
+  margin-top: calc(var(--baseline) * 0.5 * 1rem);
   font-family: 'Antenna Condensed Light', sans-serif;
 }
 

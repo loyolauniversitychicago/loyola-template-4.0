@@ -12,7 +12,15 @@
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
-  display: flex;
+}
+
+#panel-text .flex-item h6,
+#panel-cards .flex-item h6 {
+  margin-top: calc(var(--baseline) * 0.75 * 1rem);
+}
+
+#panel-cards .card .flex-item.content h6 {
+  margin-top: 0;
 }
 
 /* cards horizontal */
@@ -64,13 +72,22 @@
   display: none;
 }
 
+.grid-wrapper-min-max .image-wrapper a,
 .grid-wrapper-min-max.card-horizontal .grid-item .image-wrapper a {
+  display: inline-block !important;
+  margin: 0;
   width: 100%;
   height: 100%;
+  line-height: 0;
+}
+
+.grid-wrapper-min-max .image-wrapper a img {
+  margin: 0;
 }
 
 .grid-wrapper-min-max.card-horizontal .grid-item img {
   display: none;
+  margin: 0;
 }
 
 /* card image-wrapper-circle */
@@ -149,6 +166,9 @@
   height: 100%;
   background: $bg-overlay !important;
   z-index: 0;
+  a {
+    line-height: 1.125rem;
+  }
 }
 
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
@@ -172,6 +192,7 @@
   vertical-align: middle;
   h4, p, a {
     width: 100%;
+    height: auto;
     color: $gray-extra-light !important;
     text-align: center;
   }
@@ -258,6 +279,7 @@
 #main-content-wrapper .card .image-wrapper img,
 .card .image-wrapper img {
   margin: 0;
+  width: 100%;
 }
 
 /* backgrounds - typography - see panels scss */

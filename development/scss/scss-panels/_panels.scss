@@ -140,9 +140,12 @@
 
 /* cards */
 
-#panel-cards .grid-wrapper-min-max .grid-item,
+#panel-cards .grid-wrapper-min-max .grid-item {
+  margin: .75rem;
+}
+
 #panel-numbers .grid-wrapper-min-max .grid-item {
-  margin: .75rem 0;
+  margin: 0;
 }
 
 /* card-image-overlay bg-maroon added */
@@ -751,15 +754,19 @@ button.content-activate-symbol.activate-symbol-close {
 
 /* image - overlay */
 
-#panel-image-overlay img {
-  margin: 0;
-}
 
 #panel-image-overlay, #panel-image-overlay-resize, #panel-video-embed {
   .grid-wrapper-min-max {
     position: absolute;
     top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     height: 100%;
+    .grid-item {
+      height: 100%;
+    }
   }
   img {
     object-fit: cover;
