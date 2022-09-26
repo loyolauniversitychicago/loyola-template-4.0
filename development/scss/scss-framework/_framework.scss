@@ -289,6 +289,7 @@ header #brand {
 #main-section-wrapper {
   grid-area: main-section-wrapper;
   min-height: 500px;
+  overflow: scroll;
   @include phone-landscape {
     display: block;
     margin: 0;

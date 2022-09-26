@@ -93,8 +93,8 @@ h1 {
 
 h2 {
   font-size: 1.85rem;
-  line-height: 2.75;
-  line-height: rvr(2.75);
+  line-height: 2;
+  line-height: rvr(2);
   text-transform: uppercase;
   @include phone-portrait {
     font-size: 2.25rem;
@@ -344,6 +344,10 @@ a {
   }
 }
 
+table tr a {
+  color: $gray-extra-light;
+}
+
 p a {
   text-decoration: none;
   font-size: inherit;
@@ -451,9 +455,9 @@ ol li::before {
   font-weight: 700;
 }
 
-#main-content-wrapper img {
+#main-section-wrapper .grid-wrapper-min-max img {
   margin: 0 0 1.5rem;
-  width: auto;
+  width: 100%;
   height: auto;
 }
 
