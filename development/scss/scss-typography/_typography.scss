@@ -345,7 +345,9 @@ a {
 }
 
 table tr a {
-  color: $gray-extra-light;
+  @include phone-portrait {
+    color: $gray-extra-light;
+  }
 }
 
 p a {
@@ -459,6 +461,10 @@ ol li::before {
   margin: 0 0 1.5rem;
   width: 100%;
   height: auto;
+}
+
+#main-section-wrapper .grid-wrapper-min-max.card img {
+  margin: 0;
 }
 
 .grid-item img {

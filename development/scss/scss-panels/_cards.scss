@@ -23,6 +23,14 @@
   margin-top: 0;
 }
 
+#panel-cards .grid-wrapper-min-max.card .flex-item.content h4 {
+  margin-top: calc(var(--baseline) * 0 * 1rem);
+}
+
+#panel-cards .grid-wrapper-min-max.card .flex-item.content h5 {
+  margin-top: 1rem;
+}
+
 /* cards horizontal */
 
 .grid-wrapper-min-max.card-horizontal {
