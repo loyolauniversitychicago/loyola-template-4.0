@@ -457,9 +457,10 @@ ol li::before {
   font-weight: 700;
 }
 
-#main-section-wrapper .grid-wrapper-min-max img {
+#main-section-wrapper #panel-intro img,
+#main-section-wrapper .container .grid-wrapper-min-max img {
   margin: 0 0 1.5rem;
-  width: 100%;
+  width: 100% !important;
   height: auto;
 }
 
