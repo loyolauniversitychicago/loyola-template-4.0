@@ -64,6 +64,26 @@ th, td {
   }
 }
 
+td:has(img) {
+  padding: 1rem;
+}
+
+table td {
+  img {
+    display: block;
+    margin: 0 !important;
+    width: auto;
+    height: auto;
+    max-width: 8rem;
+  }
+  span {
+    display: none;
+    @include tablet-portrait {
+      display: block;
+    }
+  }
+}
+
 th {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
