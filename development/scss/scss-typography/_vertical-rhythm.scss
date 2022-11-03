@@ -24,9 +24,67 @@
 
 .m-b-0, p.m-b-0  { margin-bottom: 0; }
 
+/* margin large */
+/* top */
+.m-t-lg { margin-top: 2.5rem;
+  @include tablet-landscape {
+    margin-top: 2rem;
+  }
+  @include phone-landscape {
+    margin-top: 1.5rem;
+  }
+}
+/* bottom */
+.m-b-lg { margin-top: 2.5rem;
+  @include tablet-landscape {
+    margin-bottom: 2rem;
+  }
+  @include phone-landscape {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* margin medium */
+/* top */
+.m-t-md { margin-top: 1.5rem;
+  @include phone-landscape {
+    margin-top: 1rem;
+  }
+}
+/* bottom */
+.m-b-md { margin-bottom: 1.5rem;
+  @include phone-landscape {
+    margin-top: 1rem;
+  }
+}
+
+/* margin small */
+/* top */
+.m-t-sm {
+  margin-top: .75rem;
+}
+/* bottom */
+.m-b-sm {
+  margin-bottom: .75rem;
+}
+
+/* margin extra small */
+/* top */
+.m-t-xsm {
+  margin-top: .5rem;
+}
+/* bottom */
+.m-b-xsm {
+  margin-top: .5rem;
+}
+
 p.m-t-0, a.m-t-0 { margin-top: 0 !important; }
 
 p.m-b-0, a.m-b-0  { margin-bottom: 0 !important; }
+
+p.m-t-0, a.m-t-0 { margin-top: 0 !important; }
+
+p.m-b-0, a.m-b-0 { margin-bottom: 0 !important; }
 
 /* line-height baseline */
 :root body {

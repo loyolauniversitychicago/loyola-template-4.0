@@ -95,11 +95,6 @@
 .grid-wrapper-min-max.three-column-nine-column,
 .grid-wrapper-min-max.nine-column-three-column {
   grid-gap: 2rem;
-  .grid-item {
-    :last-of-type {
-      margin-bottom: 0 !important;
-    }
-  }
   @include phone-portrait {
     .grid-item {
       margin: 1rem 0 !important;
