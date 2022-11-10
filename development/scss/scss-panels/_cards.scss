@@ -89,10 +89,12 @@
   line-height: 0;
 }
 
-.grid-wrapper-min-max .image-wrapper a img {
+#panel-cards .grid-wrapper-min-max .image-wrapper img,
+.grid-wrapper-min-max .image-wrapper img {
   margin: 0;
 }
 
+#panel-cards .grid-wrapper-min-max.card-horizontal .grid-item img,
 .grid-wrapper-min-max.card-horizontal .grid-item img {
   display: none;
   margin: 0;

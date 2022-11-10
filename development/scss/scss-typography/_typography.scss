@@ -459,13 +459,14 @@ ol li::before {
 
 #main-section-wrapper #panel-intro img,
 #main-section-wrapper .container .grid-wrapper-min-max img {
-  margin: 0 0 1.5rem;
+  /* margin: 0 0 1.5rem; */
   width: 100%;
   height: auto;
 }
 
-#main-section-wrapper .grid-wrapper-min-max.card img {
-  margin: 0;
+#main-section-wrapper .grid-wrapper-min-max.card img,
+#main-section-wrapper .grid-wrapper-min-max .image-wrapper img {
+  margin: 0 0 -25rem;
 }
 
 .grid-item img {
