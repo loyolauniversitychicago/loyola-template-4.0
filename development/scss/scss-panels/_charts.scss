@@ -77,3 +77,52 @@
 	footnote { line-height: 1.25;
 	}
 }
+
+#panel-charts {
+	.grid-item #fifteen-percent.pie-chart {
+	background:
+		radial-gradient(
+			circle closest-side,
+			transparent 50%,
+			white 0
+		),
+		conic-gradient(
+			#8d0034 0,
+			#8d0034 15%,
+			#cccccc 0,
+			#cccccc 100%
+		);
+	}
+}
+#panel-charts {
+	.grid-item #sixty-five-percent.pie-chart {
+	background:
+		radial-gradient(
+			circle closest-side,
+			transparent 50%,
+			white 0
+		),
+		conic-gradient(
+			#8d0034 0,
+			#8d0034 65%,
+			#cccccc 0,
+			#cccccc 100%
+		);
+	}
+}
+#panel-charts {
+	.grid-item #eighty-five-percent.pie-chart {
+	background:
+		radial-gradient(
+			circle closest-side,
+			transparent 50%,
+			white 0
+		),
+		conic-gradient(
+			#8d0034 0,
+			#8d0034 85%,
+			#cccccc 0,
+			#cccccc 100%
+		);
+	}
+}
