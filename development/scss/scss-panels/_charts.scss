@@ -2,51 +2,78 @@
 
 /* pie-chart */
 
-.pie-chart {
-	background:
-		radial-gradient(
-			circle closest-side,
-			transparent 50%,
-			white 0
-		),
-		conic-gradient(
-			#59a14f 0,
-			#59a14f 77.3%,
-			#f28e2c 0,
-			#f28e2c 100%
-	);
-	position: relative;
-	width: auto;
-	height: auto;
-	min-height: 350px;
-	margin: 0;
-	outline: 1px solid #ccc;
-}
-.pie-chart h2 {
-	position: absolute;
-	margin: 1rem;
-}
-.pie-chart cite {
-	position: absolute;
-	bottom: 0;
-	font-size: 80%;
-	padding: 1rem;
-	color: gray;
-}
-.pie-chart figcaption {
-	position: absolute;
-	bottom: 1em;
-	right: 1em;
-	font-size: smaller;
-	text-align: right;
-}
-.pie-chart span:after {
-	display: inline-block;
-	content: "";
-	width: 0.8em;
-	height: 0.8em;
-	margin-left: 0.4em;
-	height: 0.8em;
-	border-radius: 0.2em;
-	background: currentColor;
+#panel-charts {
+	.grid-item {
+		position: relative;
+	}
+	.pie-chart {
+		position: relative;
+		margin: 0;
+		width: 100%;
+		height: auto;
+		min-height: 350px;
+		outline: 0;
+		background:
+			radial-gradient(
+				circle closest-side,
+				transparent 50%,
+				white 0
+			),
+			conic-gradient(
+				#8d0034 0,
+				#8d0034 77.3%,
+				#cccccc 0,
+				#cccccc 100%
+			);
+			h2, h4, h5, h6, h7 {
+				position: relative;
+				top: 0;
+				margin: 0;
+				padding: 0;
+			}
+			h4 {
+				margin: 0 0 .25rem;
+			}
+			figure {
+				background: none;
+			}
+			figcaption {
+				position: absolute;
+				bottom: 1rem;
+				text-align: left;
+				&:first-of-type {
+					top: 0;
+					p {
+						font-size: 1rem;
+						line-height: 1.45;
+						text-transform: none;
+					}
+				}
+			}
+			figcaption span {
+				display: block;
+				margin: -.35rem 0 0.125rem;
+				padding: 0;
+				width: 100%;
+			}
+			figcaption span:before {
+				display: inline-block;
+				content: "";
+				margin: 0 0.75rem -.25rem 0;
+				width: 1rem;
+				height: 1rem;
+				border-radius: 0.125rem;
+				background: currentColor;
+			}
+			p {
+				display: inline;
+				margin: 0;
+				font-family: 'Open Sans', sans-serif;
+				font-size: .8rem;
+				text-transform: uppercase;
+				color: #000000 !important;
+			}
+	}
+	footnote { line-height: 1.25;
+	}
 }
