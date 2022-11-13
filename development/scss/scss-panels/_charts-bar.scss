@@ -1,0 +1,367 @@
+/* wrappers */
+#charts-grid-wrapper {
+  display: block;
+  margin: 2em 1.5em;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  background: none;
+}
+#charts-grid {
+  position: relative;
+  display: inline;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+/* single bar chart wrappers - button hide */
+#charts-grid-wrapper.charts-grid-wrapper-padding { padding: 0 1.5em; }
+#charts-grid-wrapper.charts-grid-wrapper-padding .chart-button { display: none; }
+
+/* chart group sections */
+#charts-labels-wrapper,
+#charts-wrapper,
+#charts-durations-wrapper,
+#charts-buttons-wrapper {
+  display: inline-block;
+  position: relative;
+  top: -.5em;
+  bottom: -.5em;
+  left: 0;
+  margin: 0;
+  background: none;
+}
+
+#charts-labels-wrapper {
+  width: 8%;
+}
+#charts-wrapper {
+  width: 65%;
+  margin: 0 2%;
+}
+#charts-durations-wrapper {
+  width: 8%;
+}
+#charts-buttons-wrapper {
+  width: 12%;
+}
+
+/* month markers */
+#marker-one,
+#marker-two,
+#marker-three,
+#marker-four {
+  position: absolute;
+  top: 0em;
+  bottom: 0em;
+  width: .25em;
+  background: rgba(255,255,255,.25);
+  z-index: +2;
+}
+.marker-top, .marker-bottom {
+  position: absolute;
+  width: 100%;
+  height: 1em;
+  background: #cccccc;
+  z-index: +2;
+}
+.marker-top { top: 0; }
+.marker-bottom { bottom: 0; }
+
+#marker-one { left: 0%; }
+#marker-two { left: 31%; }
+#marker-three { left: 62%; }
+#marker-four { left: 93%; }
+
+#marker-one p,
+#marker-two p,
+#marker-three p,
+#marker-four p {
+  position: relative;
+  left: 1em;
+  font-family: 'Antenna Bold', sans-serif;
+  font-size: .65em;
+  color: #888888;
+  text-transform: uppercase;
+}
+#marker-one .marker-top p,
+#marker-two .marker-top p,
+#marker-three .marker-top p,
+#marker-four .marker-top p {
+  top: -.125em;
+}
+#marker-one .marker-bottom p,
+#marker-two .marker-bottom p,
+#marker-three .marker-bottom p,
+#marker-four .marker-bottom p {
+  top: -.125em;
+}
+
+/* chart group and group wrappers - labels - charts - durations - buttons */
+.chart-group, .chart-label, .chart-duration, .chart-button {
+  display: block;
+  margin: 2em 0;
+  width: 100%;
+  height: 3.5em;
+  font-family: 'Antenna Bold', sans-serif;
+  font-size: .85em;
+  line-height: 1.25;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.chart-bar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #cccccc;
+}
+.chart-label {
+  background: #525252;
+}
+.chart-label p,
+#session-early p,
+#session-a p,
+#session-b p,
+#session-c p,
+#session-full p,
+.chart-duration p {
+  position: relative;
+  top: 28%;
+  margin: 0;
+  width: 100%;
+  height: 33%;
+  font-family: 'Antenna Bold', sans-serif;
+  z-index: +3;
+}
+.chart-duration p {
+  color: #525252;
+  font-family: 'Antenna', sans-serif;
+  font-style: italic;
+  text-align: left;
+  text-transform: none;
+}
+/* button */
+.chart-button {
+  margin: 2em 0;
+  width: 100%;
+  height: 3.5em;
+  box-shadow: inset 0px 0px 0px 2px #8D0034;
+  border-radius: .5em;
+}
+.chart-button a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Antenna Bold', sans-serif;
+  color: #8D0034 !important;
+  text-decoration: none;
+  border-radius: .5em;
+  transition: .3s;
+}
+.chart-button a:hover {
+  background: #8D0034;
+}
+.chart-button a:hover p {
+  color: #ffffff;
+}
+.chart-button a p {
+  display: inline-block;
+  position: relative;
+  top: 30%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 33%;
+  font-family: 'Antenna Bold', sans-serif;
+  color: #8D0034;
+  text-decoration: none;
+  background-image: none;
+}
+/* sessions */
+#session-early,
+#session-a,
+#session-b,
+#session-c,
+#session-full {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: auto;
+  background: #0096A0;
+  z-index: +1;
+}
+#charts-grid-wrapper.single-chart-session .chart-button { display: none; }
+/* date markers */
+.session-date-marker {
+  position: absolute;
+  width: .33em;
+  top: 0;
+  bottom: 0;
+  background: #00495C;
+  z-index: +1;
+}
+.session-date-marker.gray {
+  background: #959595;
+}
+/* session menu */
+.session-menu {
+  margin: 0;
+  width: 100%;
+}
+.session-menu h5 {
+  display: inline;
+  position: relative;
+  top: 0;
+  margin: 0 .75em 0 0;
+  padding: 0;
+  width: auto;
+  height: 100%;
+  font-family: "Antenna Bold", sans-serif;
+  font-size: .95em;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+}
+.session-menu span {
+  display: inline-block;
+  margin: 0 .25em 0 0;
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  border: solid 2px #0096A0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0,0,0,.35);
+  background: #525252;
+  transition: background .3s;
+}
+.session-menu span:hover {
+  background: rgba(0,0,0,.65);
+  background: #8D0034;
+}
+.session-menu span.button-auto-width {
+  padding: 0 1em;
+  width: auto;
+  border-radius: 1em;
+}
+.session-menu span a {
+  display: inline-block !important;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.session-menu span a p {
+  display: inline-block !important;
+  position: relative;
+  margin: .5em 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Antenna Bold", sans-serif;
+  font-size: .9em;
+  text-align: center;
+  color: #eeeeee;
+  text-transform: uppercase;
+}
+.content-columns-varied .col-flex.card .session-menu span a p {
+  margin: .5em 0;
+}
+/* session specific - duration bars */
+#session-early  { left: 19%; width: 24%; }
+#session-a      { left: 19%; width: 39%; }
+#session-b      { left: 61%; width: 39%; }
+#session-c      { left: 31.5%; width: 54%; }
+#session-full   { left: 19%; width: 81%; }
+
+/* session specific - marker */
+#charts-grid-wrapper.charts-grid-wrapper-padding #marker-one .marker-top p,
+#charts-grid-wrapper.charts-grid-wrapper-padding #marker-two .marker-top p,
+#charts-grid-wrapper.charts-grid-wrapper-padding #marker-three .marker-top p,
+#charts-grid-wrapper.charts-grid-wrapper-padding #marker-four .marker-top p {
+  top: 0em;
+}
+
+/* SESSION SPECIFIC - ANCHORS - WRAPPERS */
+
+#early-session-anchor #charts-wrapper,
+#early-session-anchor #charts-wrapper,
+#a-session-anchor #charts-wrapper,
+#a-session-anchor #charts-wrapper,
+#b-session-anchor #charts-wrapper { margin: 0; width: 100%; }
+#b-session-anchor #session-early p,
+#c-session-anchor #session-early p,
+#c-session-anchor #session-early p,
+#full-session-anchor #session-early p,
+#full-session-anchor #session-early p { display: none; }
+
+/* EARLY SESSION SPECIFIC */
+
+/* early session specific - date markers */
+#early-date-one { left: 0; }
+#early-date-two { left: 3%; }
+#early-date-three { left: 28%; }
+#early-date-four { left: 55%; }
+#early-date-five { left: 70%; }
+#early-date-six { left: 100%; }
+
+/* A SESSION SPECIFIC */
+
+/* a session specific - date markers */
+#a-date-one { left: 0; }
+#a-date-two { left: 2%; }
+#a-date-three { left: 10%; }
+#a-date-four { left: 16%; }
+#a-date-five { left: 29%; }
+#a-date-six { left: 83%; }
+#a-date-seven { left: 100%; }
+
+/* B SESSION SPECIFIC */
+
+/* b session specific - date markers */
+#b-date-one { left: 0; }
+#b-date-two { left: 2%; }
+#b-date-three { left: 11%; }
+#b-date-four { left: 13%; }
+#b-date-five { left: 29%; }
+#b-date-six { left: 80%; }
+#b-date-seven { left: 100%; }
+
+
+/* C SESSION SPECIFIC */
+
+/* c session specific - date markers */
+#c-date-one { left: 0; }
+#c-date-two { left: 1.5%; }
+#c-date-three { left: 7%; }
+#c-date-four { left: 60%; }
+#c-date-five { left: 69%; }
+#c-date-six { left: 100%; }
+
+/* FULL SESSION SPECIFIC */
+
+/* full session specific - date markers */
+#full-date-one { left: 0; }
+#full-date-two { left: 1%; }
+#full-date-three { left: 9%; }
+#full-date-four { left: 14%; }
+#full-date-five { left: 57%; }
+#full-date-six { left: 57%; }
+#full-date-seven { left: 92%; }
+#full-date-eight { left: 100%; }
+
+
+/* MEDIA QUERIES */
+
+/* 768PX */
+@media only screen and (max-width: 768px) {
+
+#summer-sessions-complete-schedule { display: none; }
+
+}
