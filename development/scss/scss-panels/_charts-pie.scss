@@ -2,7 +2,7 @@
 
 /* pie-chart */
 
-#panel-charts {
+#panel-pie-chart {
 	.grid-item {
 		position: relative;
 	}
@@ -77,6 +77,8 @@
 	footnote { line-height: 1.25;
 	}
 }
+
+/* specific per pie chart */
 
 #panel-charts {
 	.grid-item #fifteen-percent.pie-chart {
