@@ -1,4 +1,11 @@
+/* charts */
+
+/* bar chart */
 /* wrappers */
+#panel-bar-chart .grid-wrapper-min-max {
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  grid-gap: .5rem;
+}
 
 /* chart group sections */
 #chart-bar-labels-wrapper,
@@ -18,7 +25,7 @@
 }
 #chart-bar-wrapper {
   width: 65%;
-  margin: 0 2%;
+  margin: 0;
 }
 #chart-bar-durations-wrapper {
   width: 8%;
@@ -336,8 +343,50 @@
 #full-date-seven { left: 92%; }
 #full-date-eight { left: 100%; }
 
-#chart-bar-value-a { width: 70%; height: 100%; background: $maroon; }
+.chart-bar.background-none {
+  background: none;
+}
 
+/* chart-bar-wrapper override */
+#chart-bar-wrapper.chart-bar-override #marker-one {
+  width: 1px;
+  background: $gray;
+  p {
+    top: -.75rem;
+    left: .5rem;
+  }
+}
+#chart-bar-wrapper.chart-bar-override .chart-bar-group {
+  .session-date-marker {
+    background: none;
+  }
+  p {
+    position: absolute;
+    right: .5rem;
+    top: 50%;
+    margin: 0;
+    font-family: 'Antenna Condensed Bold', sans-serif !important;
+    letter-spacing: .025rem;
+    line-height: 0;
+    color: $white;
+  }
+  margin: 1rem 0 0;
+}
+.chart-bar-value {
+  position: relative;
+  width: 72.5%;
+  height: 100%;
+  background: $maroon;
+}
+#chart-bar-value-a {
+  width: 72.5%;
+}
+#chart-bar-value-b {
+  width: 54%;
+}
+#chart-bar-value-c {
+  width: 36%;
+}
 
 /* MEDIA QUERIES */
 
