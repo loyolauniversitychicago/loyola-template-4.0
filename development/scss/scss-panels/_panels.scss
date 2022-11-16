@@ -236,17 +236,17 @@ tr:nth-child(odd) { background: $gray-extra-light; }
     width: 100%;
     color: $white;
     background: $bg-overlay;
-    h1, h2, h3, p {
+    h1, h2, h3, p, .intro-paragraph p {
       color: $white;
       @include tablet-portrait {
-        color: $black;
+        color: $white;
       }
     }
     @include tablet-portrait {
       position: relative;
       padding: 2rem 5%;
-      color: $black;
-      background: $gray-extra-light;
+      color: $white;
+      background: $maroon;
     }
     h1, h2 {
       margin-bottom: .25rem;
@@ -281,19 +281,30 @@ tr:nth-child(odd) { background: $gray-extra-light; }
       @include tablet-portrait {
         margin-top: .75rem;
         display: block;
-        color: $maroon !important;
       }
     }
   }
 }
 
 #panel-image.full-overlay {
-  position: relative;
+  display: grid;
+  height: 100%;
+  overflow: hidden;
+  img {
+    display: flex;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    height: 100%;
+    max-height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+  }
 }
 
 #panel-image.full-overlay > div.grid-wrapper-min-max {
-  position: absolute !important;
-  top: 0;
+  display: flex;
+  grid-row-start: 1;
+  grid-column-start: 1;
   height: 100%;
 }
 
@@ -306,6 +317,7 @@ tr:nth-child(odd) { background: $gray-extra-light; }
   height: 100%;
   align-items: start;
   justify-content: start;
+  background: rgba(0,0,0,.7);
   h1, h3, h6, p, a {
     width: 100%;
     text-align: center;
@@ -754,8 +766,8 @@ button.content-activate-symbol.activate-symbol-close {
 
 /* image - overlay */
 
-
 #panel-image-overlay, #panel-image-overlay-resize, #panel-video-embed {
+  overflow: hidden;
   .grid-wrapper-min-max {
     position: absolute;
     top: 0;
