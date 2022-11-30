@@ -191,6 +191,7 @@ header #brand {
   margin: 0 auto;
   padding: 0;
   width: 80%;
+  overflow: hidden;
 }
 .grid-item.container.container-100,
 .container.container-100 {
@@ -289,7 +290,7 @@ header #brand {
 #main-section-wrapper {
   grid-area: main-section-wrapper;
   min-height: 500px;
-  overflow: scroll;
+  overflow: hidden;
   @include phone-landscape {
     display: block;
     margin: 0;
@@ -312,7 +313,11 @@ header #brand {
 
 /* footer */
 
-footer#footer-fixed { display: block; position: fixed; bottom: 0; padding-bottom: 2em;
+footer#footer-fixed {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 2em;
   @include phone-portrait {
     display: none;
   }
@@ -389,13 +394,18 @@ footer p {
 }
 
 footer#footer-not-fixed {
+  margin-bottom: -2rem;
   padding: 1rem 1rem 1.5rem;
+  height: 100%;
   .container-fluid {
     display: -ms-grid;
     display: grid;
+    padding: 0 !important;
     width: 100%;
     @include tablet-portrait {
       grid-template-columns: 1fr;
+      padding: 1rem 1rem 2rem;
+      height: 100%;
     }
     .span {
       display: block;
@@ -407,6 +417,12 @@ footer#footer-not-fixed {
       color: lighten($gray-extra-light,5%);
       font: inherit;
       text-decoration: none;
+      img {
+        margin: .5rem 0 0 0;
+        @include phone-landscape {
+          margin: 1rem 0 0 0;
+        }
+      }
     }
   }
 }

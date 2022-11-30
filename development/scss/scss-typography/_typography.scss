@@ -261,6 +261,7 @@ li strong, li a strong, ol strong, ol a strong,
 
 p em, .standard-paragraph p em,
 li em, li em a, li a em, {
+  font-size: inherit;
   font-style: italic !important;
   margin: 0 .125rem 0 0;
 }
@@ -467,7 +468,7 @@ ol li::before {
   margin: 0 0 .5rem 0;
 }
 
-.grid-item img {
+img, .grid-item img {
   width: 100%;
 }
 
