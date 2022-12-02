@@ -187,6 +187,18 @@ header #brand {
   width: 100% !important;
 }
 
+#main-section-wrapper.container:first-of-type {
+  @include phone-landscape {
+    width: 100%;
+  }
+}
+
+#main-section-wrapper .container:first-of-type {
+  @include phone-landscape {
+    width: 100%;
+  }
+}
+
 .container {
   margin: 0 auto;
   padding: 0;

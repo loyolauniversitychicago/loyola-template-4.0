@@ -9,8 +9,12 @@
 
 /* just for example as nested accordion */
 [data-accordion-prefix-classes="minimalist-css"] {
-  margin-top: 1em;
+  margin-top: 1rem;
   width: 100%;
+}
+
+#js-accordion__panel .minimalist-accordion__panel [data-accordion-prefix-classes="minimalist-css"] {
+  margin-top: 1rem;
 }
 
 h4.minimalist-accordion__title,
@@ -226,4 +230,17 @@ nav#secondary [aria-hidden=true].minimalist-accordion__panel {
 
 [aria-hidden=true].minimalist-noanim-accordion__panel {
   display: none;
+}
+
+/* Panel portrait images - need image-portrait-class */
+
+#panel-accordion .js-accordion__panel img.image-portrait,
+#panel-accordion .js-accordion__panel img.image-portrait[style] {
+  margin: 0 0 1rem;
+  width: 16.875rem !important;
+  max-width: 16.875rem !important;
+  height: auto;
+  @include phone-landscape {
+    width: 100% !important;
+  }
 }
