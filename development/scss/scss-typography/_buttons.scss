@@ -69,7 +69,7 @@ button.center {
 .button-maroon button { background-color: $maroon; }
 .button-brick button { background-color: $brick; }
 .button-patina button { background-color: $patina; }
-.button-gold button { background-color: desaturate($gold,10%); }
+.button-gold button { background-color: desaturate($gold,5%); color: $black !important; }
 
 .bg-maroon button,
 .bg-brick button { background-color: $gold; }
