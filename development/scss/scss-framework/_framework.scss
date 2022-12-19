@@ -317,6 +317,9 @@ header #brand {
     display: block;
     margin: 0;
   }
+  .grid-wrapper-min-max {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
 }
 
 #main-aside-wrapper[style] {
