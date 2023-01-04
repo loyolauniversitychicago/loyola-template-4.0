@@ -250,6 +250,11 @@ header #brand {
   padding: 0;
   width: 100%;
   overflow: hidden;
+  /*
+  @include phone-portrait {
+    padding: 0 2rem;
+  }
+  */
 }
 
 #main-content-wrapper-full-width aside {
