@@ -182,12 +182,13 @@ header #brand {
 
 .container-fluid { width: 100%; }
 
-#main-section-wrapper.container:first-of-type,
-#main-section-wrapper.container.container-100:first-of-type {
+#main-section-wrapper.container:first-of-type:not(.container.container-80),
+#main-section-wrapper .container:first-of-type:not(.container, .container-80) {
   width: 100% !important;
 }
 
-#main-section-wrapper.container:first-of-type {
+#main-section-wrapper.container:first-of-type:not(.container.container-80),
+#main-section-wrapper .container:first-of-type:not(.container, .container-80) {
   @include phone-landscape {
     width: 100%;
   }
