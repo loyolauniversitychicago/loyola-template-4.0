@@ -1,5 +1,12 @@
 /* PADDING */
 
+.padding-top-xlg {
+  padding-top: 4rem;
+  @include phone-portrait {
+    padding-top: 2rem;
+  }
+}
+
 .padding-lg, .padding-md, .padding-sm, .padding-xsm {
   background: none;
 }
