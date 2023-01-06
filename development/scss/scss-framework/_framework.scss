@@ -185,16 +185,6 @@ header #brand {
 #main-section-wrapper.container:first-of-type:not(.container.container-80),
 #main-section-wrapper .container:first-of-type:not(.container, .container-80) {
   width: 100% !important;
-}
-
-#main-section-wrapper.container:first-of-type:not(.container.container-80),
-#main-section-wrapper .container:first-of-type:not(.container, .container-80) {
-  @include phone-landscape {
-    width: 100%;
-  }
-}
-
-#main-section-wrapper .container:first-of-type {
   @include phone-landscape {
     width: 100%;
   }

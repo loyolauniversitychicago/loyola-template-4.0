@@ -1,1 +1,1 @@
-$("ul#site-nav li:not(:has(>ul))").addClass('hassub');
+$("ul#site-nav li:not(:has(>ul li))").addClass('hassub');

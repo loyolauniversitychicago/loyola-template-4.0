@@ -1,9 +1,9 @@
 /* PADDING */
 
 .padding-top-xlg {
-  padding-top: 4rem;
+  padding-top: 4rem !important;
   @include phone-portrait {
-    padding-top: 2rem;
+    padding-top: 2rem !important;
   }
 }
 
