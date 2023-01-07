@@ -5,6 +5,7 @@
 * LINK: https://www.w3.org/TR/wai-aria-practices/examples/disclosure/disclosure-navigation.html
 */
 
+$("ul#site-nav li:not(:has(>ul li))").addClass('hassub');
 
 var DisclosureNav = function (domNode) {
   this.rootNode = domNode;
