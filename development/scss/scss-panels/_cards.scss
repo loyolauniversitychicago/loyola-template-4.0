@@ -1,5 +1,9 @@
 /* cards */
 
+.grid-wrapper-min-max.card {
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+}
+
 .grid-wrapper-min-max .grid-item,
 .grid-wrapper-min-max.card .grid-item {
   position: relative;
@@ -98,6 +102,9 @@
 #main-section-wrapper .grid-wrapper-min-max.card img,
 #main-section-wrapper .grid-wrapper-min-max .image-wrapper img {
   margin: 0 0 -.25rem;
+  @include phone-portrait {
+    width: 100%;
+  }
 }
 
 /* card image-wrapper-circle */
