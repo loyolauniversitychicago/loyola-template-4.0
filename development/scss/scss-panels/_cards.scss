@@ -1,7 +1,10 @@
 /* cards */
 
 .grid-wrapper-min-max.card {
-  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    @include phone-portrait {
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
 }
 
 .grid-wrapper-min-max .grid-item,
