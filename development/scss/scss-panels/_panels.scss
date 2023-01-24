@@ -140,8 +140,11 @@
 
 /* cards */
 
-#panel-cards .grid-wrapper-min-max .grid-item {
-  margin: .75rem;
+#panel-cards .grid-wrapper-min-max {
+  grid-gap: 1rem;
+  .grid-item {
+    margin: 0.75rem 0;
+  }
 }
 
 #panel-numbers .grid-wrapper-min-max .grid-item {
@@ -214,6 +217,12 @@ tr:nth-child(odd) { background: $gray-extra-light; }
 /* image - lead */
 /* image - lead - RESIZE */
 /* h1 styled as h4 in mobile */
+
+#panel-image {
+  @include phone-landscape {
+    height: 100%;
+  }
+}
 
 #panel-image.hero-image-lead img {
   display: block;
