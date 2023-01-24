@@ -1748,6 +1748,9 @@ button.modaal-close {
     text-transform: uppercase;
     border-radius: .25rem .25rem 0 0;
     background: $maroon;
+    h6 {
+      color: $gray-extra-light !important;
+    }
   }
   .calendar-card-date-number {
     padding: .125rem 0 .125rem;
