@@ -21,7 +21,7 @@
   grid-template-rows: auto;
   grid-auto-flow: row;
   grid-auto-rows: auto;
-  grid-gap: rem;
+  grid-gap: 1.5rem;
   width: 100%;
 }
 @media (max-width: 735px) {
