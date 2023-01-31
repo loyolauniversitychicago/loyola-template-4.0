@@ -31,9 +31,16 @@ table, tbody, th, tr, td, tr.column, .column {
 table {
   margin: 1rem 0 2rem 0;
   width: 100%;
+  min-width: 100%;
   max-width: 100%;
   border-collapse: collapse;
+  overflow: scroll;
+  caption {
+    display: block;
+    width: 100%;
+  }
   @include phone-landscape {
+    display: block;
     margin: 20px 0 0 0;
     span {
       display: block;
@@ -45,6 +52,9 @@ table {
       color: #ffffff;
       text-transform: uppercase;
       background-color: $gray-dark;
+    }
+    td:last-of-type span:last-of-type {
+      margin: .5rem 0 -.5rem -.5rem;
     }
   }
 }
