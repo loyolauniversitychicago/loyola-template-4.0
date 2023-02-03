@@ -42,6 +42,11 @@ table {
   @include phone-landscape {
     display: block;
     margin: 20px 0 0 0;
+    height: 100%;
+    overflow: visible;
+    tbody {
+      width: 100%;
+    }
     span {
       display: block;
       margin: -.5rem -.5rem .5rem;
