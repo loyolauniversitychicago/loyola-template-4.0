@@ -64,6 +64,10 @@ table {
   }
 }
 
+.grid-item:has(table) {
+  overflow-x: scroll;
+}
+
 th, td {
   border: solid 1px $gray;
   border-collapse: collapse;
