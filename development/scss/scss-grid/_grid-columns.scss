@@ -247,3 +247,25 @@
 .grid-wrapper-min-max.grid-gap-md.grid-row-gap-sm,
 .grid-wrapper-min-max.grid-gap-sm.grid-row-gap-sm,
 .grid-wrapper-min-max.grid-gap-none.grid-row-gap-sm { grid-row-gap: 1rem; }
+
+#panel-cards .grid-wrapper-min-max.column-min-100 {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+#panel-cards .grid-wrapper-min-max.column-min-150 {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+#panel-cards .grid-wrapper-min-max.column-min-200 {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+#panel-cards .grid-wrapper-min-max.column-min-250 {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+#panel-cards .grid-wrapper-min-max.column-min-300 {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+#panel-cards .grid-wrapper-min-max.column-min-350 {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+#panel-cards .grid-wrapper-min-max.column-min-400 {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
