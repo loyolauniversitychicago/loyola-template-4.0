@@ -242,5 +242,6 @@ nav#secondary [aria-hidden=true].minimalist-accordion__panel {
   height: auto;
   @include phone-landscape {
     width: 100% !important;
+    max-width: 100% !important;
   }
 }
