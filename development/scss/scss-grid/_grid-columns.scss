@@ -219,13 +219,13 @@
 
 /* grid gap */
 
-.grid-wrapper-min-max.grid-gap-lg { grid-gap: 3rem; }
+.grid-wrapper-min-max.grid-gap-lg { grid-gap: 3rem !important; }
 
-.grid-wrapper-min-max.grid-gap-md { grid-gap: 2rem; }
+.grid-wrapper-min-max.grid-gap-md { grid-gap: 2rem !important; }
 
-.grid-wrapper-min-max.grid-gap-sm { grid-gap: 1rem; }
+.grid-wrapper-min-max.grid-gap-sm { grid-gap: 1rem !important; }
 
-.grid-wrapper-min-max.grid-gap-none { grid-gap: 0rem; }
+.grid-wrapper-min-max.grid-gap-none { grid-gap: 0rem !important; }
 
 /* no gap - optional - use for image grids */
 

@@ -1,26 +1,30 @@
 /* CUSTOM VARIABLES */
 
-$maroon:			#8D0034;
-$brick:       #5d0024;
-$gold:				#febc18;
-$patina:			#0096a0;
-$terracotta:  #b68967;
-$opus:				#f98e2b;
-$gray:				#888888;
-$copper:      #b4af95;
-$black:       #000000;
-$white:	      #ffffff;
-$bg-overlay:	rgba(0,0,0,.5);
+$maroon:        #8D0034;
+$brick:         #5d0024;
+$gold:			#febc18;
+$gold-premiere:	#cba052;
+$patina:        #0096a0;
+$terracotta:    #b68967;
+$opus:			#f98e2b;
+$pine:          #777e39;
+$water:         #4876a2;
+$gray:			#888888;
+$copper:        #b4af95;
+$black:         #000000;
+$white:	        #00b7ff;
+$blue:          #00FFFF;
+$bg-overlay:    rgba(0,0,0,.5);
 
 $bg-overlay: $bg-overlay;
-$bg-overlay-dark: rgba($bg-overlay, .7);
-$bg-overlay-extra-dark: rgba($bg-overlay, .9);
-$bg-overlay-light: rgba($bg-overlay, .3);
+$bg-overlay-dark: rgba($bg-overlay, .6);
+$bg-overlay-extra-dark: rgba($bg-overlay, .7);
+$bg-overlay-light: rgba($bg-overlay, .4);
 $bg-overlay-extra-light: rgba($bg-overlay, .1);
 
 /* MAROON */
 $maroon: lighten($maroon, 0%);
-$maroon-dark: darken($maroon, 20%);
+$maroon-dark: darken($maroon, 10%);
 $maroon-extra-dark: darken($maroon, 40%);
 $maroon-light: lighten($maroon, 20%);
 $maroon-extra-light: lighten($maroon, 40%);
@@ -39,9 +43,16 @@ $gold-extra-dark: darken($gold, 40%);
 $gold-light: lighten($gold, 20%);
 $gold-extra-light: lighten($gold, 40%);
 
+/* GOLD - PREMIERE */
+$gold-premiere: lighten($gold-premiere, 0%);
+$gold-premiere-dark: darken($gold-premiere, 20%);
+$gold-premiere-extra-dark: darken($gold-premiere, 40%);
+$gold-premiere-light: lighten($gold-premiere, 15%);
+$gold-premiere-extra-light: lighten($gold-premiere, 30%);
+
 /* PATINA */
 $patina: lighten($patina, 0%);
-$patina-dark: darken($patina, 20%);
+$patina-dark: darken($patina, 15%);
 $patina-extra-dark: darken($patina, 40%);
 $patina-light: lighten($patina, 20%);
 $patina-extra-light: lighten($patina, 40%);
@@ -50,15 +61,29 @@ $patina-extra-light: lighten($patina, 40%);
 $terracotta: lighten($terracotta, 0%);
 $terracotta-dark: darken($terracotta, 20%);
 $terracotta-extra-dark: darken($terracotta, 40%);
-$terracotta-light: lighten($terracotta, 20%);
-$terracotta-extra-light: lighten($terracotta, 40%);
+$terracotta-light: lighten($terracotta, 25%);
+$terracotta-extra-light: lighten($terracotta, 35%);
 
 /* OPUS */
 $opus: lighten($opus, 0%);
 $opus-dark: darken($opus, 20%);
-$opus-extra-dark: darken( $opus, 40% );
-$opus-light: lighten( $opus, 20% );
-$opus-extra-light: lighten( $opus, 40% );
+$opus-extra-dark: darken($opus, 40% );
+$opus-light: lighten($opus, 20% );
+$opus-extra-light: lighten($opus, 40% );
+
+/* PINE */
+$pine: lighten($pine, 0%);
+$pine-dark: darken($pine, 20%);
+$pine-extra-dark: darken($pine, 40% );
+$pine-light: lighten($pine, 20% );
+$pine-extra-light: lighten($pine, 40% );
+
+/* WATER */
+$water: lighten($water, 0%);
+$water-dark: darken($water, 20%);
+$water-extra-dark: darken($water, 40% );
+$water-light: lighten($water, 20% );
+$water-extra-light: lighten($water, 40% );
 
 /* GRAY */
 $gray: lighten($gray, 0%);
