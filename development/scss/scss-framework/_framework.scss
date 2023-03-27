@@ -332,6 +332,7 @@ footer#footer-fixed {
   position: fixed;
   bottom: 0;
   padding-bottom: 1.125em;
+  height: auto;
   @include phone-portrait {
     display: none;
   }

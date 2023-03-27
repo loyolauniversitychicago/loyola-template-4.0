@@ -107,7 +107,7 @@ th {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   color: $gray-extra-light;
-  text-transform: uppercase;
+  text-transform: none;
   background: $gray-dark;
   &:nth-child(2),
   &:nth-child(3),
@@ -190,18 +190,24 @@ table > tbody > tr > td:nth-child(1) {
 
 /* table accordion */
 
-td ul, #panel-table-accordion ul {
-  margin: 1rem 0 !important;
+td p, td ul, #panel-table-accordion ul, #panel-table-accordion p {
+  margin: .5rem 0 !important;
 }
 
-td, td p, td ul li, #panel-table-accordion ul li {
-  font-size: 1.065rem !important;
+td p, #panel-table-accordion p {
+  &:first-of-type { margin-top: 0 !important; }
+  &:last-of-type { margin-bottom: 0 !important; }
+}
+
+td, td p, td ul li, #panel-table-accordion ul li, #panel-table-accordion p {
+  font-size: .85rem !important;
   letter-spacing: -.025rem;
   text-align: left;
-  line-height: rvr(1.35);
+  line-height: rvr(1.125) !important;
+  a { line-height: rvr(1.125) !important; }
 }
 
-td p, td ul li, #panel-table-accordion ul li {
+td ul li, #panel-table-accordion ul li {
   margin: .5rem 0 !important;
 }
 

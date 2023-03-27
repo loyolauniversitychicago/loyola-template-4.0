@@ -236,17 +236,22 @@
 .grid-wrapper-min-max.grid-gap-lg.grid-row-gap-lg,
 .grid-wrapper-min-max.grid-gap-md.grid-row-gap-lg,
 .grid-wrapper-min-max.grid-gap-sm.grid-row-gap-lg,
-.grid-wrapper-min-max.grid-gap-none.grid-row-gap-lg { grid-row-gap: 3rem; }
+.grid-wrapper-min-max.grid-gap-none.grid-row-gap-lg { grid-row-gap: 3rem !important; }
 
 .grid-wrapper-min-max.grid-gap-lg.grid-row-gap-md,
 .grid-wrapper-min-max.grid-gap-md.grid-row-gap-md,
 .grid-wrapper-min-max.grid-gap-sm.grid-row-gap-md,
-.grid-wrapper-min-max.grid-gap-none.grid-row-gap-md { grid-row-gap: 2rem; }
+.grid-wrapper-min-max.grid-gap-none.grid-row-gap-md { grid-row-gap: 2rem !important; }
 
 .grid-wrapper-min-max.grid-gap-lg.grid-row-gap-sm,
 .grid-wrapper-min-max.grid-gap-md.grid-row-gap-sm,
 .grid-wrapper-min-max.grid-gap-sm.grid-row-gap-sm,
-.grid-wrapper-min-max.grid-gap-none.grid-row-gap-sm { grid-row-gap: 1rem; }
+.grid-wrapper-min-max.grid-gap-none.grid-row-gap-sm { grid-row-gap: 1rem !important; }
+
+.grid-wrapper-min-max.grid-gap-lg.grid-row-gap-none,
+.grid-wrapper-min-max.grid-gap-md.grid-row-gap-none,
+.grid-wrapper-min-max.grid-gap-sm.grid-row-gap-none,
+.grid-wrapper-min-max.grid-gap-none.grid-row-gap-none { grid-row-gap: 0rem !important; }
 
 /* grid-min-max - override */
 

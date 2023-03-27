@@ -1516,6 +1516,7 @@ button.modaal-close {
   display: block;
   padding: 2rem;
   background: $gray-extra-dark;
+  height: 100%;
     @include tablet-portrait {
       padding: 1.5rem;
     }
