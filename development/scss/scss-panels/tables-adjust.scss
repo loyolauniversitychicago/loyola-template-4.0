@@ -1,0 +1,27 @@
+table {
+  display: block;
+  float: left;
+  margin: 0 0 20px;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+tbody, thead, tr { width: 100%; }
+
+@media only screen and (max-width: 736px) {
+  .grid-wrapper-min-max .grid-item .tabs button {
+    width: 100%;
+    margin: 0;
+  }
+  table {
+    display: block;
+    margin: 1.5rem 0;
+    height: auto;
+    overflow: visible;
+  }
+  table tr {
+    margin: .5rem 0;
+  }
+}
+}
