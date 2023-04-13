@@ -1,2 +1,7 @@
-body { margin: 0 !important; }
+body {
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
 body, p { color: red !important; }
