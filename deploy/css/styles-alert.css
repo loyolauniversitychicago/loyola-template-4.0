@@ -4,17 +4,17 @@ body {
   margin-right: 0px;
   margin-bottom: 0px;
 }
-#main-content-wrapper {
+#main-section-wrapper {
   margin: 0;
   padding: 0;
   width: 100%;
   overflow: hidden;
 }
-#main-content-wrapper .container {
+#main-section-wrapper .container {
   margin: 0 auto;
   padding: 3rem 0;
   width: 80%;
 }
-#main-content-wrapper .container.container-50 {
+#main-section-wrapper .container.container-50 {
   width: 50%;
 }
