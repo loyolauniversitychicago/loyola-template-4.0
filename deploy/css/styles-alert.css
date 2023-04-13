@@ -4,4 +4,14 @@ body {
   margin-right: 0px;
   margin-bottom: 0px;
 }
-body, p { color: red !important; }
+#main-content-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+#main-content-wrapper .container {
+  margin: 0 auto;
+  padding: 3rem 0;
+  width: 80%;
+}
