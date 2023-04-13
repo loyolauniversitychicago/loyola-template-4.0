@@ -16,6 +16,6 @@ body {
   padding: 3rem 0;
   width: 80%;
 }
-#main-section-wrapper .container.container-50 {
-  width: 50%;
+#main-section-wrapper .container.container-80 {
+  width: 100%;
 }
