@@ -8,7 +8,8 @@ span.phonehyphen {
     margin: 0 .5rem;
 }
 form.luc-form .phonerow label {
-    color: red;
+    margin: 0 0 .25rem;
+    padding: 0;
     width: 100%;
 }
 form.luc-form .phonerow input[type=text],
