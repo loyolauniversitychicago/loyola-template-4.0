@@ -19,143 +19,141 @@ body {
   width: 100%;
 }
 
-/* FORM */
-
 /* FORMS */
 
 form.luc-form {
-  display: block;
-  margin: 0 0 2rem 0;
-  padding: 2em;
-  width: 100%;
-  font-size: 1rem;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  line-height: rvr(2.25);
-  letter-spacing: -.0125em;
-  border-radius: .75rem;
-  background: $gray-extra-light;
+display: block;
+margin: 0 0 2rem 0;
+padding: 2em;
+width: 100%;
+font-size: 1rem;
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
+line-height: rvr(2.25);
+letter-spacing: -.0125em;
+border-radius: .75rem;
+background: $gray-extra-light;
 }
 form.luc-form:focus {
-  outline-color: $patina;
-  outline-width: 2px;
+    outline-color: $patina;
+    outline-width: 2px;
 }
 form.luc-form fieldset {
-  margin: 0 0 2rem 0;
-  padding: 2rem;
-  border: solid 1px $gray-light;
-  border-radius: .5rem;
-  background: $gray-extra-light;
+    margin: 0 0 2rem 0;
+    padding: 2rem;
+    border: solid 1px $gray-light;
+    border-radius: .5rem;
+    background: $gray-extra-light;
 }
 form.luc-form fieldset p {
-  margin: 0;
-  width: 100%;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.125rem;
-  text-transform: none;
- }
+    margin: 0;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125rem;
+    text-transform: none;
+}
 form.luc-form fieldset li {
-  text-indent: 0 !important;
-  list-style: none;
-  margin: .5rem 0 !important;
+    text-indent: 0 !important;
+    list-style: none;
+    margin: .5rem 0 !important;
 }
 #main-content-wrapper form.luc-form fieldset ul {
-  margin-left: 0;
+    margin-left: 0;
 }
 form.luc-form legend {
-  margin: 0 -1rem;
-  margin-bottom: 0 !important;
-  padding: 0 1rem;
-  display: block;
-  margin-bottom: rvr(.5);
-  font-size: 1.275rem;
-  line-height: rvr(1.5);
-  text-transform: uppercase;
+    margin: 0 -1rem;
+    margin-bottom: 0 !important;
+    padding: 0 1rem;
+    display: block;
+    margin-bottom: rvr(.5);
+    font-size: 1.275rem;
+    line-height: rvr(1.5);
+    text-transform: uppercase;
 }
 form.luc-form label {
-  margin: 0;
-  display: block;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  line-height: rvr(1.35);
-  text-transform: uppercase;
+    margin: 0;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: rvr(1.35);
+    text-transform: uppercase;
 }
 form.luc-form labelspan {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  text-transform: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-transform: none;
 }
 form.luc-form input,
 form.luc-form textarea,
 form.luc-form select {
-  margin: .75rem 0 1rem;
-  padding: .75rem;
-  width: 100%;
-  font-family: 'Open Sans', sans-serif;
-  text-transform: none;
-  border: solid 1px $gray-light;
-  border-radius: .25rem;
-  resize: vertical;
+    margin: .75rem 0 1rem;
+    padding: .75rem;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: none;
+    border: solid 1px $gray-light;
+    border-radius: .25rem;
+    resize: vertical;
 }
 form.luc-form input:focus,
 form.luc-form textarea:focus,
 form.luc-form select:focus {
-  outline-color: $gold;
-  border-color: $gold;
-  border-width: .25em;
+    outline-color: $gold;
+    border-color: $gold;
+    border-width: .25em;
 }
-#panel-form form.luc-form  fieldset ul li label {
-  font-size: 1rem;
+#panel-form form.luc-form    fieldset ul li label {
+    font-size: 1rem;
 }
-#panel-form form.luc-form  fieldset ul li label h6 {
-  margin: -.125rem 0 .25rem 0;
+#panel-form form.luc-form    fieldset ul li label h6 {
+    margin: -.125rem 0 .25rem 0;
 }
 form.luc-form textarea {
-  min-height: 10rem;
+    min-height: 10rem;
 }
 form.luc-form select {
-  margin: 1rem 0 !important;
+    margin: 1rem 0 !important;
 }
 form.luc-form ::placeholder {
-  font-size: .875rem;
-  line-height: .875rem;
-  color: lighten($gray, 15%);
-  text-transform: uppercase;
+    font-size: .875rem;
+    line-height: .875rem;
+    color: lighten($gray, 15%);
+    text-transform: uppercase;
 }
 form.luc-form .select-css {
-  box-sizing: border-box;
-	display: block;
-  padding: .5rem 1.5rem .5rem 1rem;
-  width: 100%;
-  max-width: 100%;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-	font-size: 1rem;
-	line-height: 1.3;
-	border: 1px solid $gray-light;
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	appearance: none;
-  background: white url('data:image/gif;base64,R0lGODlhBgAGAKEDAFVVVX9/f9TU1CgmNyH5BAEKAAMALAAAAAAGAAYAAAIODA4hCDKWxlhNvmCnGwUAOw==') right center no-repeat !important;
-  background-position: calc(100% - 1rem) center !important;
+display: block;
+    box-sizing: border-box;
+    padding: .5rem 1.5rem .5rem 1rem;
+    width: 100%;
+    max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.3;
+    border: 1px solid $gray-light;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    background-position: calc(100% - 1rem) center !important;
 }
 form.luc-form .select-css::-ms-expand {
-	display: none;
+    display: none;
 }
 form.luc-form .select-css:hover {
-	border-color: $gray-dark;
+    border-color: $gray-dark;
 }
 form.luc-form .select-css:focus {
-	color: $gray;
-	border-color: $gold;
-	box-shadow: none;
-	outline: $gold;
+    color: $gray;
+    border-color: $gold;
+    box-shadow: none;
+    outline: $gold;
 }
 form.luc-form .select-css option {
-	font-weight: normal;
+    font-weight: normal;
 }
 form.luc-form select option {
-  font-weight: normal;
+    font-weight: normal;
 }
 form.luc-form input[type=text],
 form.luc-form input[type=email],
@@ -166,62 +164,62 @@ form.luc-form input[type=phone],
 form.luc-form input[type=text],
 form.luc-form select,
 form.luc-form textarea {
-  width: 100%;
-  background: $white;
+    width: 100%;
+    background: $white;
 }
 form.luc-form form > input:invalid {
-  border-color: $maroon;
+    border-color: $maroon;
 }
 form.luc-form span.required,
 form.luc-form span.error-message {
-  color: $maroon;
-  font-family: 'Open Sans', sans-serif;
-  font-style: italic;
+    color: $maroon;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
 }
 form.luc-form legend span.required,
 form.luc-form legend span.error-message {
-  font-size: 1rem;
-  text-transform: none;
+    font-size: 1rem;
+    text-transform: none;
 }
 > input:valid {
-  border-color: $gold;
+    border-color: $gold;
 }
 form.luc-form input:-internal-autofill-selected {
-  background-color: $gray-extra-light;
-  color: $gray-light;
+    background-color: $gray-extra-light;
+    color: $gray-light;
 }
 form.luc-form input[type="radio"],
 form.luc-form input[type="checkbox"] {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: .5rem;
-  display: inline;
-  width: 18px;
-  height: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: .5rem;
+    display: inline;
+    width: 18px;
+    height: 18px;
 }
 
 /* button */
 
 form.luc-form form button {
-  display: block;
-  font-family: "Antenna Condensed Bold", sans-serif;
-  text-transform: uppercase;
+    display: block;
+    font-family: "Antenna Condensed Bold", sans-serif;
+    text-transform: uppercase;
 }
 form.luc-form form button:hover {
-  background: $maroon;
-  color: $gray-extra-light !important;
+    background: $maroon;
+    color: $gray-extra-light !important;
 }
 
 /* disabled styles */
 
 form.luc-form select:disabled,
 form.luc-form select[aria-disabled=true] {
-  color: $gray;
+    color: $gray;
 }
 form.luc-form select:disabled:hover,
 form.luc-form select[aria-disabled=true] {
-  border-color: #aaa;
+    border-color: #aaa;
 }
 
 /* support for rtl text, explicit support for Arabic and Hebrew */
@@ -229,62 +227,62 @@ form.luc-form select[aria-disabled=true] {
 form.luc-form *[dir="rtl"] select,
 form.luc-form :root:lang(ar) select,
 form.luc-form :root:lang(iw) select {
-  background-position: left 0.7em top 50%, 0 0;
-  padding: 0.6em 0.8em 0.5em 1.4em;
+    background-position: left 0.7em top 50%, 0 0;
+    padding: 0.6em 0.8em 0.5em 1.4em;
 }
 form.luc-form .checkbox,
 form.luc-form .radiobox {
-  position: relative;
-  display: inline-flex;
-  width: 100%;
-  cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    cursor: pointer;
 }
 form.luc-form .checkbox > span,
 form.luc-form .radiobox > span {
-  color: #34495E;
-  padding: 0;
+    color: #34495E;
+    padding: 0;
 }
 form.luc-form .checkbox > input,
 form.luc-form .radiobox > input {
-  margin-top: .025rem;
-  padding: .5rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  border: 1px solid $gray;
-  border-radius: .25rem;
-  outline: none;
-  transition-duration: 0.3s;
-  background-color: $white;
-  cursor: pointer;
+    margin-top: .025rem;
+    padding: .5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 1px solid $gray;
+    border-radius: .25rem;
+    outline: none;
+    transition-duration: 0.3s;
+    background-color: $white;
+    cursor: pointer;
 }
 form.luc-form .checkbox > input h6,
 form.luc-form .radiobox > input h6 {
-  width: 100% !important;
+    width: 100% !important;
 }
 form.luc-form .radiobox > input {
-  border-radius: .5rem;
+    border-radius: .5rem;
 }
-form.luc-form .radiobox > input:checked  {
-  background-color: $maroon;
+form.luc-form .radiobox > input:checked    {
+    background-color: $maroon;
 }
 form.luc-form .checkbox > input:checked {
-  background-color: $maroon;
-  color: $white;
+    background-color: $maroon;
+    color: $white;
 }
 form.luc-form .checkbox > input:checked::before {
-  content: '\2714';
-  display: block;
-  font-size: .125rem;
-  text-align: center;
-  color: $white;
-  position: absolute;
-  left: .25rem;
-  top: .25rem;
+    content: '\2714';
+    display: block;
+    font-size: .125rem;
+    text-align: center;
+    color: $white;
+    position: absolute;
+    left: .25rem;
+    top: .25rem;
 }
 form.luc-form .checkbox > input:active {
-  border: 2px solid #34495E;
+    border: 2px solid #34495E;
 }
 
 /* CSS - END */
