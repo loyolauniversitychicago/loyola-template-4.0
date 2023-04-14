@@ -1,4 +1,28 @@
-/* FORM ADJUST */
+
+/* GENERAL */
+
+body {
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+#main-section-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+#main-section-wrapper .container {
+  margin: 0 auto;
+  padding: 3rem 0;
+  width: 80%;
+}
+#main-section-wrapper .container.container-80 {
+  width: 100%;
+}
+
+/* FORMS ADJUST - ONLY FOR LUC-FORM */
 
 .phonerow {
     margin: 1rem 0;
@@ -26,43 +50,21 @@ form.luc-form .phonerow select {
     width: 100%;
 }
 
-/* GENERAL */
-
-body {
-  margin-left: 0px;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-}
-#main-section-wrapper {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow: hidden;
-}
-#main-section-wrapper .container {
-  margin: 0 auto;
-  padding: 3rem 0;
-  width: 80%;
-}
-#main-section-wrapper .container.container-80 {
-  width: 100%;
-}
-
 /* FORMS */
 
 form.luc-form {
-display: block;
-margin: 0 0 2rem 0;
-padding: 2em;
-width: 100%;
-font-size: 1rem;
-font-family: 'Open Sans', sans-serif;
-font-weight: 600;
-line-height: rvr(2.25);
-letter-spacing: -.0125em;
-border-radius: .75rem;
-background: #e1e1e1;
+    display: block;
+    box-sizing: border-box;
+    margin: 0 0 2rem 0;
+    padding: 2em;
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: rvr(2.25);
+    letter-spacing: -.0125em;
+    border-radius: .75rem;
+    background: #e1e1e1;
 }
 form.luc-form:focus {
     outline-color: #0096a0;
