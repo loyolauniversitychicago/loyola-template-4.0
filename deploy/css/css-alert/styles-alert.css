@@ -326,8 +326,11 @@ form.luc-form .checkbox > input:active {
 
 /* FORMS ADJUST - ONLY FOR LUC-FORM */
 
+form.luc-form fieldset {
+    border-color: #cccccc
+}
 .phonerow {
-    margin: 1rem 0;
+    margin: 0 0 1.5rem 0;
     width: 100%;
 }
 span.phonehyphen {
