@@ -72,6 +72,7 @@ form.luc-form .phonerow textarea {
 }
 form.luc-form .phonerow select {
     width: 100%;
+    text-transform: uppercase;   
 }
 
 /* FORMS */
