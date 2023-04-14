@@ -1,7 +1,14 @@
 /* FORM ADJUST */
 
+.phonerow {
+    margin: 1rem 0;
+    width: 100%;
+}
 span.phonehyphen {
-    margin: 0 3rem;
+    margin: 0 .5rem;
+}
+.phonerow input, .phonerow select {
+    width: calc(33% - .5rem);
 }
 
 /* GENERAL */
