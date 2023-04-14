@@ -343,7 +343,7 @@ form.luc-form .phonerow select {
 form.luc-form input,
 form.luc-form textarea,
 form.luc-form select {
-    margin: .25rem 0;
+    margin: .25rem 0 !important;
 }
 form.luc-form input [type=submit] {
     width: auto;
