@@ -20,7 +20,7 @@ form.luc-form .phonerow input[type=zip],
 form.luc-form .phonerow input[type=phone],
 form.luc-form .phonerow input[type=text],
 form.luc-form .phonerow textarea {
-    width: calc(33% - .5rem);
+    width: calc(33% - 1.125rem);
 }
 form.luc-form .phonerow select {
     width: 100%;
