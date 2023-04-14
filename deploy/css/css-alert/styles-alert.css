@@ -2,48 +2,48 @@
 /* GENERAL */
 
 body {
-  margin-left: 0px;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
 }
 #main-section-wrapper {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
 }
 #main-section-wrapper .container {
-  margin: 0 auto;
-  padding: 3rem 0;
-  width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    width: 80%;
 }
 #main-section-wrapper .container.container-80 {
-  width: 100%;
+    width: 100%;
 }
 #main-section-wrapper ol,
 #main-section-wrapper ul,
 #main-section-wrapper-full-width ol,
 #main-section-wrapper-full-width ul {
-  margin: 0 0 1rem 1.5rem;
-  line-height: 1.45;
-  line-height: calc(var(--baseline) * 1.45 * 1rem);
-  list-style-position: inside;
+    margin: 0 0 1rem 1.5rem;
+    line-height: 1.45;
+    line-height: calc(var(--baseline) * 1.45 * 1rem);
+    list-style-position: inside;
 }
 #main-section-wrapper ul li {
-  margin: 0 0 0.65rem;
-  padding: 0;
-  border: 0;
-  font-family: "Open Sans", sans-serif !important;
-  font-size: 1.1rem;
-  font-weight: 400;
-  line-height: 1.65;
-  line-height: calc(var(--baseline) * 1.65 * 1rem);
-  letter-spacing: -0.045rem;
-  word-spacing: 0.125rem;
-  color: #000000;
-  text-indent: -1.35rem;
-  vertical-align: baseline;
+    margin: 0 0 0.65rem;
+    padding: 0;
+    border: 0;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.65;
+    line-height: calc(var(--baseline) * 1.65 * 1rem);
+    letter-spacing: -0.045rem;
+    word-spacing: 0.125rem;
+    color: #000000;
+    text-indent: -1.35rem;
+    vertical-align: baseline;
 }
 h1 {
     font-size: 1.5rem;
@@ -350,7 +350,7 @@ form.luc-form .phonerow textarea {
 }
 form.luc-form .phonerow select {
     width: 100%;
-      font-weight: bold;
+    font-weight: bold;
     text-transform: uppercase; 
 }
 form.luc-form input,
