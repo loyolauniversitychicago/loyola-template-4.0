@@ -7,6 +7,10 @@
 span.phonehyphen {
     margin: 0 .5rem;
 }
+form.luc-form .phonerow label {
+    color: red;
+    width: 100%;
+}
 form.luc-form .phonerow input[type=text],
 form.luc-form .phonerow input[type=email],
 form.luc-form .phonerow input[type=address],
