@@ -350,7 +350,8 @@ form.luc-form .phonerow textarea {
 }
 form.luc-form .phonerow select {
     width: 100%;
-    text-transform: uppercase;   
+      font-weight: bold;
+    text-transform: uppercase; 
 }
 form.luc-form input,
 form.luc-form textarea,
@@ -360,6 +361,5 @@ form.luc-form select {
 form.luc-form input [type=submit] {
     width: auto !important;
 }
-
 
 /* CSS - END */
