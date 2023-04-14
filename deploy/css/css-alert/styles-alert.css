@@ -24,10 +24,6 @@ form.luc-form .phonerow textarea {
     width: calc(33% - .5rem);
 }
 
-form.luc-form .phonerow select {
-    background: #8d0034;
-}
-
 /* GENERAL */
 
 body {
@@ -194,7 +190,6 @@ form.luc-form input[type=city],
 form.luc-form input[type=zip],
 form.luc-form input[type=phone],
 form.luc-form input[type=text],
-form.luc-form select,
 form.luc-form textarea {
     width: 100%;
     background: #ffffff;
