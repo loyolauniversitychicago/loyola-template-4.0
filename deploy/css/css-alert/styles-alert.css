@@ -45,6 +45,18 @@ body {
   text-indent: -1.35rem;
   vertical-align: baseline;
 }
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+#main-section-wrapper .container.container-50 nav a {
+    margin: 0 125rem;
+    text-transform: uppercase;
+}
 
 /* FORMS */
 
