@@ -345,7 +345,7 @@ form.luc-form textarea,
 form.luc-form select {
     margin: .25rem 0;
 }
-form.luc-form input ["type=sumit"] {
+form.luc-form input [type=submit] {
     width: auto;
 }
 
