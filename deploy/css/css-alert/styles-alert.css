@@ -46,35 +46,6 @@ body {
   vertical-align: baseline;
 }
 
-/* FORMS ADJUST - ONLY FOR LUC-FORM */
-
-.phonerow {
-    margin: 1rem 0;
-    width: 100%;
-}
-span.phonehyphen {
-    margin: 0 .5rem;
-}
-form.luc-form .phonerow label {
-    margin: 0 0 .25rem;
-    padding: 0;
-    width: 100%;
-}
-form.luc-form .phonerow input[type=text],
-form.luc-form .phonerow input[type=email],
-form.luc-form .phonerow input[type=address],
-form.luc-form .phonerow input[type=city],
-form.luc-form .phonerow input[type=zip],
-form.luc-form .phonerow input[type=phone],
-form.luc-form .phonerow input[type=text],
-form.luc-form .phonerow textarea {
-    width: calc(33% - 1.125rem);
-}
-form.luc-form .phonerow select {
-    width: 100%;
-    text-transform: uppercase;   
-}
-
 /* FORMS */
 
 form.luc-form {
@@ -339,6 +310,40 @@ form.luc-form .checkbox > input:checked::before {
 }
 form.luc-form .checkbox > input:active {
     border: 2px solid #34495E;
+}
+
+/* FORMS ADJUST - ONLY FOR LUC-FORM */
+
+.phonerow {
+    margin: 1rem 0;
+    width: 100%;
+}
+span.phonehyphen {
+    margin: 0 .5rem;
+}
+form.luc-form .phonerow label {
+    margin: 0 0 .25rem;
+    padding: 0;
+    width: 100%;
+}
+form.luc-form .phonerow input[type=text],
+form.luc-form .phonerow input[type=email],
+form.luc-form .phonerow input[type=address],
+form.luc-form .phonerow input[type=city],
+form.luc-form .phonerow input[type=zip],
+form.luc-form .phonerow input[type=phone],
+form.luc-form .phonerow input[type=text],
+form.luc-form .phonerow textarea {
+    width: calc(33% - 1.125rem);
+}
+form.luc-form .phonerow select {
+    width: 100%;
+    text-transform: uppercase;   
+}
+form.luc-form input,
+form.luc-form textarea,
+form.luc-form select {
+    margin: .25rem 0;
 }
 
 /* CSS - END */
