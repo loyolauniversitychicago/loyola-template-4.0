@@ -361,8 +361,9 @@ form.luc-form textarea,
 form.luc-form select {
     margin: .25rem 0 !important;
 }
-form.luc-form input [type=submit] {
+form.luc-form input.button {
     width: auto !important;
+    text-transform: uppercase;
 }
 
 /* CSS - END */
