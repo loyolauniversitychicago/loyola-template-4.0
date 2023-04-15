@@ -360,7 +360,8 @@ form.luc-form input,
 form.luc-form textarea,
 form.luc-form select {
     margin: .25rem 0 !important;
-    border-radius: 0.25rem;
+    padding: .5rem;
+    border-radius: 0.35rem;
 }
 form.luc-form input.button {
     width: auto !important;
