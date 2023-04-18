@@ -9,18 +9,23 @@ body {
 }
 #brand-logo-top,
 #brand-logo-bottom {
-    margin: 0 10%;
+    margin: 0;
+    padding: 0;
     width: 80%;
+}
+#brand-logo-top {
+    margin: 0 10% 3rem;
+}
+#brand-logo-bottom {
+    margin: 3rem 10% 0;
 }
 #brand-logo-top img,
 #brand-logo-bottom img {
-    margin: 0 0 2rem;
+    margin: 0;
     padding: 0;
     width: 35%;
 }
 #brand-logo-bottom img {
-    margin: 2rem 0 0;
-    padding: 0;
     float: right;
 }
 #main-section-wrapper {
