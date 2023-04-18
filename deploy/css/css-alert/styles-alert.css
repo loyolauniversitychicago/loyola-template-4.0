@@ -10,10 +10,10 @@ body {
 #brand-logo-top,
 #brand-logo-bottom {
   margin: 0 0 2rem;
-  width: 30%;
+  width: 35%;
 }
 #brand-logo-bottom {
-  margin: 2rem 0 0;
+  margin: 0 10% 2rem 0;
   float: right;
 }
 #main-section-wrapper {
