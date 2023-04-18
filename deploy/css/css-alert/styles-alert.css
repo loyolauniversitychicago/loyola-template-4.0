@@ -7,12 +7,12 @@ body {
     margin-right: 0px;
     margin-bottom: 0px;
 }
-#brand-logo-top.brand-logo,
-#brand-logo-bottom.brand-logo {
+#brand-logo-top,
+#brand-logo-bottom {
   width: 30%;
   margin: 0 0 2rem;
 }
-#brand-logo-bottom.brand-logo {
+#brand-logo-bottom {
   width: 30%;
   margin: 2rem 0 0;
   float: right;
