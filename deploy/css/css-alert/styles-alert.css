@@ -15,10 +15,12 @@ body {
 #brand-logo-top img,
 #brand-logo-bottom img {
     margin: 0 0 2rem;
+    padding: 0;
     width: 35%;
 }
 #brand-logo-bottom img {
-    margin: 0;
+    margin: 2rem 0 0;
+    padding: 0;
     float: right;
 }
 #main-section-wrapper {
