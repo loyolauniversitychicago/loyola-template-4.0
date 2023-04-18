@@ -9,11 +9,16 @@ body {
 }
 #brand-logo-top,
 #brand-logo-bottom {
+  margin: 0 10%;
+  width: 80%;
+}
+#brand-logo-top img,
+#brand-logo-bottom img {
   margin: 0 0 2rem;
   width: 35%;
 }
-#brand-logo-bottom {
-  margin: 0 10% 2rem 0;
+#brand-logo-bottom img {
+  margin: 0;
   float: right;
 }
 #main-section-wrapper {
