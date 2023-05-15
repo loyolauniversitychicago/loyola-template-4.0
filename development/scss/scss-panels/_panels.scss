@@ -392,9 +392,20 @@ tr:nth-child(odd) { background: $gray-extra-light; }
   .bg-terracotta-extra-light p {
     color: $black !important;
   }
+  p a {
+    color: $gold !important;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, #5d0024 0%, #5d0024 100%);
+    &:hover {
+      color: $opus;
+    }
+  }
   p:last-of-type {
     margin-bottom: 0;
   }
+}
+#panel-button-cta .container {
+  padding: 0;
 }
 #panel-button-cta.bg-maroon h5,
 #panel-button-cta.bg-maroon h3,
@@ -421,9 +432,9 @@ tr:nth-child(odd) { background: $gray-extra-light; }
 }
 
 #panel-links .container {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  width: 100%;
+  width: 80%;
 }
 
 #panel-links {
