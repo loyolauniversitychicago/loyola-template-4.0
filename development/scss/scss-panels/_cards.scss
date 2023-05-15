@@ -14,6 +14,10 @@
   flex-direction: column;
 }
 
+.grid-wrapper-min-max .grid-item .image-wrapper {
+  line-height: 0;
+}
+
 .grid-wrapper-min-max .content-grid-wrapper {
   display: flex;
   flex-direction: column;
