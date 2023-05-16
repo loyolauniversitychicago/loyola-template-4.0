@@ -257,36 +257,43 @@
 
 #panel-cards .grid-wrapper-min-max.column-min-100,
 #panel-image-grid .grid-wrapper-min-max.column-min-100,
-#panel-video-embed .grid-wrapper-min-max.column-min-100 {
+#panel-video-embed .grid-wrapper-min-max.column-min-100,
+#panel-tabs-images .grid-wrapper-min-max.column-min-100 {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 #panel-cards .grid-wrapper-min-max.column-min-150,
 #panel-image-grid .grid-wrapper-min-max.column-min-150,
-#panel-video-embed .grid-wrapper-min-max.column-min-150 {
+#panel-video-embed .grid-wrapper-min-max.column-min-150,
+#panel-tabs-images .grid-wrapper-min-max.column-min-150 {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 #panel-cards .grid-wrapper-min-max.column-min-200,
 #panel-image-grid .grid-wrapper-min-max.column-min-200,
-#panel-video-embed .grid-wrapper-min-max.column-min-200 {
+#panel-video-embed .grid-wrapper-min-max.column-min-200,
+#panel-tabs-images .grid-wrapper-min-max.column-min-200 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 #panel-cards .grid-wrapper-min-max.column-min-250,
 #panel-image-grid .grid-wrapper-min-max.column-min-250,
-#panel-video-embed .grid-wrapper-min-max.column-min-250 {
+#panel-video-embed .grid-wrapper-min-max.column-min-250,
+#panel-tabs-images .grid-wrapper-min-max.column-min-250 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 #panel-cards .grid-wrapper-min-max.column-min-300,
 #panel-image-grid .grid-wrapper-min-max.column-min-300,
-#panel-video-embed .grid-wrapper-min-max.column-min-300 {
+#panel-video-embed .grid-wrapper-min-max.column-min-300,
+#panel-tabs-images .grid-wrapper-min-max.column-min-300 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 #panel-cards .grid-wrapper-min-max.column-min-350,
 #panel-image-grid .grid-wrapper-min-max.column-min-350,
-#panel-video-embed .grid-wrapper-min-max.column-min-350 {
+#panel-video-embed .grid-wrapper-min-max.column-min-350,
+#panel-tabs-images .grid-wrapper-min-max.column-min-350 {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 #panel-cards .grid-wrapper-min-max.column-min-400,
 #panel-image-grid .grid-wrapper-min-max.column-min-400,
-#panel-video-embed .grid-wrapper-min-max.column-min-400 {
+#panel-video-embed .grid-wrapper-min-max.column-min-400,
+#panel-tabs-images .grid-wrapper-min-max.column-min-400 {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }

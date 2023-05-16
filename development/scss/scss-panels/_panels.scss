@@ -531,6 +531,15 @@ tr:nth-child(odd) { background: $gray-extra-light; }
   }
 }
 
+/* text - button height - justify */
+
+/*
+#panel-text .flex-item {
+  display: flex;
+  height: 100%;
+}
+*/
+
 /* text - called */
 
 #panel-text.called-banner {
@@ -1770,6 +1779,7 @@ button.modaal-close {
     border-radius: .25rem .25rem 0 0;
     background: $maroon;
     h6 {
+      font-family: 'Antenna Condensed Light', sans-serif;
       color: $gray-extra-light !important;
     }
   }
