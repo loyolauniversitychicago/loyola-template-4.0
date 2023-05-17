@@ -322,14 +322,32 @@ tr:nth-child(odd) { background: $gray-extra-light; }
   flex-direction: column;
   flex: 1;
   top: 0;
-  padding-top: 5rem !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
   height: 100%;
   align-items: start;
   justify-content: start;
   background: rgba(0,0,0,.7);
+  @include tablet-landscape {
+    position: flex !important;
+  }
+  @include tablet-portrait {
+    position: relative !important;
+    padding: 2rem !important;
+    background: $maroon;
+  }
   h1, h3, h6, p, a {
     width: 100%;
     text-align: center;
+  }
+  h1 {
+    margin-top: 5rem;
+    @include tablet-portrait {
+      margin-top: 0;
+    }
+  }
+  h2, h3, p {
+    margin-bottom: 0;
   }
 }
 
@@ -470,6 +488,8 @@ tr:nth-child(odd) { background: $gray-extra-light; }
 
 #panel-image.hero-image-content img {
   margin: 0;
+  width: 100%;
+  object-fit: cover;
 }
 
 #panel-image.hero-image-caption,
