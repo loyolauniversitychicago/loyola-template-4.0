@@ -432,7 +432,14 @@ footnote, .footnote p {
 
 #main-content-wrapper ul li,
 #main-content-wrapper-full-width ul li {
-  text-indent: -1.35rem;
+  text-indent: -1.5rem;
+}
+
+#main-content-wrapper ol li ul,
+#main-content-wrapper ul li ul,
+#main-content-wrapper-full-width ol li ul,
+#main-content-wrapper-full-width ul li ul {
+  margin-top: .5rem;
 }
 
 #main-content-wrapper #content-pagination-breadcrumbs ul {
