@@ -134,7 +134,7 @@ tr {
 
 th.span.sub-category,
 tr:first-child th.span.sub-category {
-  color: $gray-extra-light !important;
+  color: inherit !important;
   background: darken($gray,1%) !important;
 }
 
@@ -143,9 +143,9 @@ tr:first-child th:first-child,
   letter-spacing: -.025rem;
 }
 
-tr:first-child th:first-child {
-  color: $gray-extra-light !important;
-  background: $gray-dark !important;
+tbody tr:first-child th:first-child {
+  color: $black;
+  background: $gray-light;
 }
 
 tr:first-child th:first-child,

@@ -27,12 +27,12 @@
 
 /* bg-maroon added - nested elements */
 
-.bg-maroon h6, .bg-maroon h5, .bg-maroon h4, .bg-maroon h3, .bg-maroon p, .bg-maroon p strong, .bg-maroon p em,
-.bg-brick h6, .bg-brick h5, .bg-brick h4, .bg-brick h3, .bg-brick p, .bg-brick p strong, .bg-brick p em,
-.bg-gray h6, .bg-gray h5, .bg-gray h4, .bg-gray h3, .bg-gray p, .bg-gray p strong, .bg-gray p em,
-.bg-gray-dark h6, .bg-gray-dark h5, .bg-gray-dark h4, .bg-gray-dark h3, .bg-gray-dark p, .bg-gray-dark p strong, .bg-gray-dark p em,
-.bg-patina h6, .bg-patina h6, .bg-patina h6, .bg-patina h6, .bg-patina p, .bg-patina p strong, .bg-patina p em,
-.bg-overlay h6, .bg-overlay h6, .bg-overlay h6, .bg-overlay h6, .bg-overlay p, .bg-overlay p strong, .bg-overlay p em { color: $gray-extra-light; }
+.bg-maroon h6, .bg-maroon h5, .bg-maroon h4, .bg-maroon h3, .bg-maroon p,
+.bg-brick h6, .bg-brick h5, .bg-brick h4, .bg-brick h3, .bg-brick p,
+.bg-gray h6, .bg-gray h5, .bg-gray h4, .bg-gray h3, .bg-gray p,
+.bg-gray-dark h6, .bg-gray-dark h5, .bg-gray-dark h4, .bg-gray-dark h3, .bg-gray-dark p,
+.bg-patina h6, .bg-patina h6, .bg-patina h6, .bg-patina h6, .bg-patina p,
+.bg-overlay h6, .bg-overlay h6, .bg-overlay h6, .bg-overlay h6, .bg-overlay p  { color: $gray-extra-light; }
 
 .bg-maroon a.cta, .bg-brick a.cta, .bg-gray a.cta, .bg-gray-dark a.cta, .bg-patina a.cta, .bg-overlay a.cta  {
   color: $gold !important;
@@ -322,32 +322,14 @@ tr:nth-child(odd) { background: $gray-extra-light; }
   flex-direction: column;
   flex: 1;
   top: 0;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  padding-top: 5rem !important;
   height: 100%;
   align-items: start;
   justify-content: start;
   background: rgba(0,0,0,.7);
-  @include tablet-landscape {
-    position: flex !important;
-  }
-  @include tablet-portrait {
-    position: relative !important;
-    padding: 2rem !important;
-    background: $maroon;
-  }
   h1, h3, h6, p, a {
     width: 100%;
     text-align: center;
-  }
-  h1 {
-    margin-top: 5rem;
-    @include tablet-portrait {
-      margin-top: 0;
-    }
-  }
-  h2, h3, p {
-    margin-bottom: 0;
   }
 }
 
@@ -410,20 +392,9 @@ tr:nth-child(odd) { background: $gray-extra-light; }
   .bg-terracotta-extra-light p {
     color: $black !important;
   }
-  p a {
-    color: $gold !important;
-    text-transform: uppercase;
-    background-image: linear-gradient(120deg, #5d0024 0%, #5d0024 100%);
-    &:hover {
-      color: $opus;
-    }
-  }
   p:last-of-type {
     margin-bottom: 0;
   }
-}
-#panel-button-cta .container {
-  padding: 0;
 }
 #panel-button-cta.bg-maroon h5,
 #panel-button-cta.bg-maroon h3,
@@ -450,9 +421,9 @@ tr:nth-child(odd) { background: $gray-extra-light; }
 }
 
 #panel-links .container {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  width: 80%;
+  width: 100%;
 }
 
 #panel-links {
@@ -488,8 +459,6 @@ tr:nth-child(odd) { background: $gray-extra-light; }
 
 #panel-image.hero-image-content img {
   margin: 0;
-  width: 100%;
-  object-fit: cover;
 }
 
 #panel-image.hero-image-caption,
@@ -550,15 +519,6 @@ tr:nth-child(odd) { background: $gray-extra-light; }
     display: none;
   }
 }
-
-/* text - button height - justify */
-
-/*
-#panel-text .flex-item {
-  display: flex;
-  height: 100%;
-}
-*/
 
 /* text - called */
 
@@ -655,40 +615,6 @@ grid-area: 1 / 3 / span 1 / span 2;
 #panel-image-text .content-image-text-image img::before {
   height: 100%;
 }
-
-#panel-image-text.bg-maroon .content-image-text { background: $maroon !important; }
-
-#panel-image-text.bg-brick .content-image-text { background: $brick !important; }
-
-#panel-image-text.bg-gold .content-image-text { background: $gold !important; }
-
-#panel-image-text.bg-gray-extra-light .content-image-text { background: $gray-extra-light !important; }
-
-#panel-image-text.bg-gray-light .content-image-text { background: $gray-light !important; }
-
-#panel-image-text.bg-gray .content-image-text { background: $gray !important; }
-
-#panel-image-text.bg-gray-dark .content-image-text { background: $gray-dark !important; }
-
-#panel-image-text.bg-gray-extra-dark .content-image-text { background: $gray-dark !important;
-  h4, p { color: $gray-extra-light; }
-  a { color: $gold;
-    &:hover { color: $opus; }
-  }
-}
-
-#panel-image-text.bg-patina .content-image-text { background: darken($patina,10%) !important;
-  h4, p, p strong, p em { color: $white; }
-}
-
-#panel-image-text.bg-patina-dark .content-image-text { background: $patina-dark !important;
-  h4, p, p strong, p em { color: $white !important; }
-  a { color: $gold;
-    &:hover { color: $opus; }
-  }
-}
-
-#panel-image-text.bg-terracotta-extra-light .content-image-text { background: $terracotta-extra-light !important; }
 
 /* image-overlay - used on image grid - image highlights - image-overlay > blockquote */
 
@@ -1352,8 +1278,6 @@ button.content-activate-symbol.activate-symbol-close {
     position: absolute;
     top: 20%;
     margin: 0;
-    padding: 0 1rem;
-    width: calc(100%-2rem);
     font-size: 1.75rem;
     line-height: rvr(1.6);
     text-align: center;
@@ -1548,7 +1472,7 @@ button.modaal-close {
   overflow: hidden;
   .grid-wrapper-min-max {
     position: relative;
-    margin: 5rem auto;
+    margin: 2rem auto;
     padding: 0;
     width: 80%;
     justify-content: center;
@@ -1743,7 +1667,7 @@ button.modaal-close {
       padding: 0;
       font-family: 'Antenna', sans-serif;
       font-size: .75rem;
-      color: $gray-dark;
+      color: $gray;
       text-transform: uppercase;
       border: none;
       background: none;
@@ -1835,7 +1759,6 @@ button.modaal-close {
     border-radius: .25rem .25rem 0 0;
     background: $maroon;
     h6 {
-      font-family: 'Antenna Condensed Light', sans-serif;
       color: $gray-extra-light !important;
     }
   }
