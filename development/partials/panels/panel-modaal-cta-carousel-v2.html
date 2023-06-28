@@ -1,0 +1,64 @@
+<!-- modaal-cta -->
+<section id="panel-modaal" class="container-fluid">
+  <div class="container">
+    <!-- column-build -->
+    <div class="grid-wrapper-min-max two-column">
+      <div class="grid-item">
+        <img src="http://via.placeholder.com/1000x560" />
+        <div class="caption">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non.</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <h6>Category label</h6>
+        <h4>H4 Headline lorem ipsum herum</h4>
+        <div class="introduction-paragraph">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non.</p>
+        </div>
+        <a class="modaal cta" href="#modaal-content-carousel" data-modaal-type="inline" data-modaal-animation="fade">Show Content Here</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="modaal-content-carousel" style="display: none;">
+      <div class="grid-wrapper-min-max">
+        <div class="grid-item">
+          <!-- content -->
+          <!-- carousel -->
+          @@include('./panel-carousel-t4.html')
+          <!-- content end -->
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+      <script type="text/javascript">
+        // const carouselId = document.querySelector('#carousel-2').parentElement.parentElement.parentElement.id;
+
+        $(document).ready(function(){
+          $('.slides').slick({
+            slidesToShow: 1,
+            dots: true,
+            infinite: true,
+            fade: true,
+            speed: 500,
+            arrows: true,
+            adaptiveHeight: false
+          })
+        })
+        // $('.modaal.cta').click(function() {
+        //   var id = $(this).attr('href');
+        //   if (id === `#${carouselId}`) {  
+        //     $(window).trigger("resize");
+        //     const carousels = document.querySelectorAll('.panel-carousel');
+        //     carousels.forEach(carousel => {
+        //       const slides = carousel.querySelectorAll('.slide');
+        //       const slidesQty = slides.length;
+        //       slides.forEach(slide => {
+        //         const index = parseInt(slide.getAttribute('data-slick-index')) + 1;
+        //         slide.querySelector('.numbertext').innerHTML = `${index} / ${slidesQty}`;
+        //       })
+        //     })
+        //   }
+        // });
+
+      </script>
+</section>

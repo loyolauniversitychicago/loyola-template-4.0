@@ -14,14 +14,21 @@ body#pattern-library {
       font-family: 'Open Sans', sans-serif;
       font-size: 1.275em;
     }
+    li h5 {
+      color: $gray-extra-light;
+    }
     li a {
-      font-weight: 100;
-      color: $gray-light;
+      font-weight: 400;
+      color: $gray-extra-light;
       text-decoration: none;
       transition: .2s;
       &:hover {
         color: $white;
       }
+    }
+    li.divider-bullets {
+      letter-spacing: .125rem;
+      color: $gold;
     }
   }
 }

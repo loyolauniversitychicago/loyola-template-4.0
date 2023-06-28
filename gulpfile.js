@@ -13,9 +13,9 @@ const inject = require('gulp-inject');
 const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('autoprefixer');
 // const postcss = require('gulp-postcss')
-// const concat = require('gulp-concat');
+const concat = require('gulp-concat');
 // const rename = require('gulp-rename');
-// const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify');
 // const cssnano = require('gulp-cssnano');
 // const gulpSequence = require('gulp-sequence');
 
@@ -92,14 +92,33 @@ function referencePaths() {
     cb();
 };
 
-function indexBuild() {
+// function indexBuild() {
+//   var target = gulp.src('./development/*.html');
+//   var sources = gulp.src(['./deploy/js/**/*.js', './deploy/css/**/*.css'], {read: false});
+//  	return target.pipe(inject(sources, {ignorePath: 'deploy/', addRootSlash: false}))
+//  	.pipe(gulpIf('*.html', fileinclude({prefix: '@@', basepath: '@file'})))
+// 	.pipe(gulp.dest(config.deployDir));
+//   cb();
+// };
+
+function indexBuild(cb) {
   var target = gulp.src('./development/*.html');
-  var sources = gulp.src(['./deploy/js/**/*.js', './deploy/css/**/*.css'], {read: false});
- 	return target.pipe(inject(sources, {ignorePath: 'deploy/', addRootSlash: false}))
- 	.pipe(gulpIf('*.html', fileinclude({prefix: '@@', basepath: '@file'})))
-	.pipe(gulp.dest(config.deployDir));
+
+  var jsSources = gulp.src(['./deploy/js/**/*.js', '!./deploy/js/bundle.js'])
+    .pipe(concat('bundle.js')) // concatenate all JS files into bundle.js
+    .pipe(uglify()) // minify bundle.js
+    .pipe(gulp.dest('./deploy/js')); // Save the bundle.js file in the ./deploy/js directory
+
+  var cssSources = gulp.src('./deploy/css/**/*.css');
+
+  return target
+    .pipe(inject(jsSources, { ignorePath: 'deploy/', addRootSlash: false }))
+    .pipe(inject(cssSources, { ignorePath: 'deploy/', addRootSlash: false }))
+    .pipe(gulpIf('*.html', fileinclude({ prefix: '@@', basepath: '@file' })))
+    .pipe(gulp.dest(config.deployDir));
+
   cb();
-};
+}
 
 function browserSyncReload(cb) {
   browserSync.reload();
