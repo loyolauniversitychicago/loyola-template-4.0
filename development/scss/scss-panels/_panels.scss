@@ -380,6 +380,9 @@ tr:nth-child(odd) { background: $gray-extra-light; }
     max-width: 50%;
     color: $gray-extra-dark !important;
   }
+  .button-maroon button {
+    color: $white !important
+  }
   h6 {
     display: none;
     line-height: 1;
