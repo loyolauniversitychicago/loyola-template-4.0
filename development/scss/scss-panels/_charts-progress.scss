@@ -9,12 +9,14 @@
 .progress-chart-wrapper {
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
   padding: 4rem 0;
   width: 80vw;
   height: 100%;
-  background: blue;
+  background: none;
   @include tablet-portrait {
     display: block;
     width: 100vw;
@@ -38,11 +40,10 @@
 }
 .progress-chart-title {
   position: absolute;
-  top: calc(50% - 4rem);
-  left: calc(25% + 3rem);
-  right: calc(25% + 3rem);
-  padding: 0 3rem;
-  width: calc(50% - 6rem);
+  top: center;
+  left: calc(50% - 10%);
+  padding: 0;
+  width: 20%;
   height: auto;
   text-align: center;
   color: #ffffff;
@@ -54,6 +55,8 @@
   }
   h2 {
     margin: 0;
+    font-size: 1.75vw;
+    line-height: 1.75rem !important;
   }
 }
 .progress-chart-stat {
@@ -64,7 +67,7 @@
   width: 20vmin;
   height: 20vmin;
   border-radius: 50%;
-  background: #febc18;
+  background: #8d0034;
   @include phone-portrait {
     display: block;
     box-sizing: border-box;
@@ -84,13 +87,17 @@
   }
 }
 .progress-chart-stat h5 {
-  color: #8d0035;
+  width: 50%;
+  line-height: 1.05;
+  color: $gray-extra-light;
   text-align: center;
 }
 .progress-chart-stat a.cta {
   display: block;
   width: 100%;
   font-size: 60%;
+  line-height: 1.125;
+  color: $gold;
   text-transform: uppercase;
 }
 /* Decimal value, 0-1 based on the child's index */
@@ -107,9 +114,12 @@
   transition: transform 1.5s ease-in-out;
 }
 .progress-chart-stat:nth-child(even) { --transform: rotate(var(--r)) translate(var(--radius)) rotate(calc(0 * var(--r)));
-  padding: 1rem;
+  padding: .5rem;
   transform: var(--transform);
   transition: transform 1.5s ease-in-out;
+  background: $gold;
+  z-index: +1;
+  box-shadow: 0 0 .5rem rgba(0,0,0,.35);
   @include phone-portrait {
     transform: rotate(0);
   }
