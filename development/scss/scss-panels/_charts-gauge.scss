@@ -1,0 +1,67 @@
+.gauge-chart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 2rem;
+  border-radius: 100%;
+  background: $gray-extra-light;
+}
+p.center {
+  background: $white;
+  position: absolute;
+  top:0;left:0;bottom:0;right:0;
+  width: 130px;
+  height: 130px;
+  margin: auto;
+  border-radius: 50%;
+  padding: 15% 0 0;
+}	
+.portion-block {
+  border-radius: 50%;
+  clip: rect(0px, 200px, 200px, 100px);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.circle {
+  border-radius: 50%;
+  clip: rect(0px, 100px, 200px, 0px);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  font-size: 1.5rem;
+}
+#gauge-section-one {
+  transform: rotate(0deg);
+}
+#gauge-section-one .circle {
+  background-color: $maroon;
+  animation: first 1s 1 forwards;
+}
+#gauge-section-two {
+  transform: rotate(100deg);
+}
+#gauge-section-two .circle {
+  background-color: $gray;
+  animation: second 1s 1 forwards 1s;
+}
+#gauge-section-three {
+  transform: rotate(250deg);
+}
+#gauge-section-three .circle {
+  background-color: $gray-light;
+  animation: third 0.5s 1 forwards 2s;
+}
+/* animation */
+@keyframes first {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(100deg);}
+}	
+@keyframes second {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(150deg);}
+}	
+@keyframes third {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(111deg);}
+}
