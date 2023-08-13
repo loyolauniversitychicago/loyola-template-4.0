@@ -20,12 +20,18 @@
 		border-radius: 0.125rem;
 		background: currentColor;
 	}
-	p {
+	.explainer p {
+		line-height: 1.45;
+	}
+	span p {
 		display: inline;
 		margin: 0;
 		font-family: 'Open Sans', sans-serif;
 		font-size: .8rem;
 		text-transform: uppercase;
 		color: $black !important;
+	}
+	h5 {
+		font-size: 1.85rem;
 	}
 }

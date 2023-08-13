@@ -1,11 +1,14 @@
 .donut-chart,
 .gauge-chart {
   position: relative;
-  margin: 2rem auto;
+  margin: 0;
   width: 200px;
   height: 200px;
   border-radius: 100%;
   background: $gray-extra-light;
+    figure .donut-chart > h5 {
+      font-size: 1.85rem !important;
+    }
     .center {
       position: absolute;
       top:0;
@@ -45,7 +48,7 @@
     }
     #gauge-section-two,
     #donut-section-two {
-      transform: rotate(100deg);
+      transform: rotate(125deg);
     }
     #donut-section-two .circle,
     #gauge-section-two .circle {
@@ -64,14 +67,44 @@
     /* animation */
     @keyframes first {
       from {transform: rotate(0deg);}
-      to {transform: rotate(100deg);}
+      to {transform: rotate(125deg);}
     }	
     @keyframes second {
       from {transform: rotate(0deg);}
-      to {transform: rotate(150deg);}
+      to {transform: rotate(125deg);}
     }	
     @keyframes third {
       from {transform: rotate(0deg);}
-      to {transform: rotate(111deg);}
+      to {transform: rotate(110deg);}
     }
+}
+/* donut-chart-one */
+#donut-chart-one #donut-section-one {
+  transform: rotate(0deg);
+}
+#donut-chart-one #donut-section-two {
+  transform: rotate(125deg);
+}
+#donut-chart-one #donut-section-three {
+  transform: rotate(250deg);
+}
+/* donut-chart-two */
+#donut-chart-two #donut-section-one {
+  transform: rotate(0deg);
+}
+#donut-chart-two #donut-section-two {
+  transform: rotate(125deg);
+}
+#donut-chart-two #donut-section-three {
+  transform: rotate(250deg);
+}
+/* donut-chart-three */
+#donut-chart-three #donut-section-one {
+  transform: rotate(0deg);
+}
+#donut-chart-three #donut-section-two {
+  transform: rotate(125deg);
+}
+#donut-chart-three #donut-section-three {
+  transform: rotate(250deg);
 }
