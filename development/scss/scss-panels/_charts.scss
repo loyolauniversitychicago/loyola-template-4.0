@@ -1,0 +1,31 @@
+/* charts base */
+#panel-pie-chart .grid-item .pie-chart,
+#panel-donut-chart .grid-item,
+#panel-gauge-chart .grid-item  {
+	figure {
+		margin: 0;
+	}
+	figcaption span {
+		display: block;
+		margin: -.35rem 0 0.125rem;
+		padding: 0;
+		width: 100%;
+	}
+	figcaption span:before {
+		display: inline-block;
+		content: "";
+		margin: 0 0.75rem -.25rem 0;
+		width: 1rem;
+		height: 1rem;
+		border-radius: 0.125rem;
+		background: currentColor;
+	}
+	p {
+		display: inline;
+		margin: 0;
+		font-family: 'Open Sans', sans-serif;
+		font-size: .8rem;
+		text-transform: uppercase;
+		color: $black !important;
+	}
+}
