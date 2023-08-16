@@ -35,7 +35,7 @@
   };
 
   // Bind listeners
-  for (i = 0; i < tabs.length; ++i) {
+  for (var i = 0; i < tabs.length; ++i) {
     addListeners(i);
   };
 
@@ -99,7 +99,9 @@
   // In all other cases only left and right arrow function.
   function determineOrientation (event) {
     var key = event.keyCode;
-    var vertical = tablist.getAttribute('aria-orientation') == 'vertical';
+    if (tablist) {
+      var vertical = tablist.getAttribute('aria-orientation') == 'vertical';
+    } 
     var proceed = false;
 
     if (vertical) {
@@ -124,7 +126,7 @@
   function switchTabOnArrowPress (event) {
     var pressed = event.keyCode;
 
-    for (x = 0; x < tabs.length; x++) {
+    for (var x = 0; x < tabs.length; x++) {
       tabs[x].addEventListener('focus', focusEventHandler);
     };
 
@@ -146,9 +148,10 @@
 
   // Activates any given tab panel
   function activateTab (tab, setFocus) {
+
     setFocus = setFocus || true;
     // Deactivate all other tabs
-    deactivateTabs();
+    deactivateTabs(tab);
 
     // Remove tabindex attribute
     tab.removeAttribute('tabindex');
@@ -169,16 +172,17 @@
   };
 
   // Deactivate all tabs and tab panels
-  function deactivateTabs () {
-    for (t = 0; t < tabs.length; t++) {
-      tabs[t].setAttribute('tabindex', '-1');
-      tabs[t].setAttribute('aria-selected', 'false');
-      tabs[t].removeEventListener('focus', focusEventHandler);
-    };
-
-    for (p = 0; p < panels.length; p++) {
-      panels[p].setAttribute('hidden', 'hidden');
-    };
+  function deactivateTabs (tab) {
+    var buttons = tab.parentElement.querySelectorAll('button');
+    buttons.forEach(btn => {
+      btn.setAttribute('tabindex', '-1');
+      btn.setAttribute('aria-selected', 'false');
+      btn.removeEventListener('focus', focusEventHandler);
+    })
+    var panels = tab.parentElement.parentElement.querySelectorAll('[role="tabpanel"]');
+    panels.forEach(panel => {
+      panel.setAttribute('hidden', 'hidden');
+    })
   };
 
   // Make a guess
@@ -224,7 +228,9 @@
   // Determine whether there should be a delay
   // when user navigates with the arrow keys
   function determineDelay () {
-    var hasDelay = tablist.hasAttribute('data-delay');
+    if (tablist) {
+      var hasDelay = tablist.hasAttribute('data-delay');
+    }
     var delay = 0;
 
     if (hasDelay) {
@@ -250,10 +256,30 @@
 
   // Only activate tab on focus if it still has focus after the delay
   function checkTabFocus (target) {
-    focused = document.activeElement;
+    var focused = document.activeElement;
 
     if (target === focused) {
       activateTab(target, false);
     };
   };
 }());
+
+// T4 Tab Images
+const tabImages = document.querySelectorAll('.panel-tabs-images');
+const toggleLink = (link, tab) => {
+  document.getElementById(tab).style.display = 'block';
+  link ? link.classList.add('active') : null
+}
+if (tabImages) {
+  tabImages.forEach(tabImage => {
+    const tabContent = tabImage.querySelectorAll('.tabcontent');
+    const tabLinks = tabImage.querySelectorAll('.tablinks');
+    tabLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        tabContent.forEach(content => content.style.display = "none")
+        tabLinks.forEach(link => link.classList.remove("active"))
+        toggleLink(link, link.getAttribute('data-tab'));
+      })
+    })
+  })
+}

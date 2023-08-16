@@ -787,13 +787,13 @@
 						<div class="container"><h5>Tabs - Images</h5></div>
 					</div>
 					<!-- image tabs -->
-<section id="panel-tabs-images" class="container-fluid">
+<section id="panel-tabs-images" class="panel-tabs-images container-fluid">
 	<div class="container">
-		<div id="tabs-images">
+		<div class="tabs-images">
 			<div class="grid-wrapper-min-max three-column">
 				<div class="grid-item">
 					<div class="tab">
-						<div class="tablinks" onclick="openTab(event, 'tabImageOne')">
+						<div class="tablinks" data-tab="tabImageOne">
 							<!-- <h6>Recipe for success</h6> -->
 							<img src="http://via.placeholder.com/1000x1000">
 						</div>
@@ -801,7 +801,7 @@
 				</div>
 				<div class="grid-item">
 					<div class="tab">
-						<div class="tablinks" onclick="openTab(event, 'tabImageTwo')">
+						<div class="tablinks" data-tab="tabImageTwo">
 							<!-- <h6>Creating solutions</h6> -->
 							<img src="http://via.placeholder.com/1000x1000">
 						</div>
@@ -809,7 +809,7 @@
 				</div>
 				<div class="grid-item">
 					<div class="tab">
-						<div class="tablinks" onclick="openTab(event, 'tabImageThree')">
+						<div class="tablinks" data-tab="tabImageThree">
 							<!-- <h6>Right skills, right time</h6> -->
 							<img src="http://via.placeholder.com/1000x1000">
 						</div>
@@ -841,7 +841,7 @@
 					</blockquote>
 				</div>
 			</div>
-			<script>
+			<!-- <script>
 				openTab(event, "Tab")
 				function openTab(evt, tabName) {
 					var i, tabcontent, tablinks;
@@ -862,7 +862,7 @@
 			<script>
 				var tabButton = document.getElementsByClassName("tablinks")[1];
 				tabButton.click();
-			</script>
+			</script> -->
 		</div>
 	</div>
 </section>

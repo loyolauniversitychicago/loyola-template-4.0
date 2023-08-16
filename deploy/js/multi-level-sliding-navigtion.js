@@ -4,6 +4,134 @@
     '(prefers-reduced-motion: reduce)'
   ).matches;
 
+  // T4 - updates
+
+  const mobileNavigation = document.querySelector('.multi-level-sliding-navigation-main');
+  if (mobileNavigation) {
+
+    // Adding attributes to ul tags
+    for (let i = 0; i < mobileNavigation.querySelectorAll('ul').length; ++i) {
+      const list = mobileNavigation.querySelectorAll('ul')[i];
+      list.classList.add('multi-level-sliding-navigation-menu');
+      list.id = `menu-${i}`;
+      list.setAttribute('aria-hidden', 'true');
+    }
+
+    // Adding attributes to anchor tags
+    mobileNavigation.querySelectorAll('a').forEach(li => li.classList.add('multi-level-sliding-navigation-link'));
+
+    // Adding back button to ul
+    const addBackBtn = el => {
+      const btn = document.createElement('li');
+      btn.innerHTML = '<i class="fa fa-chevron-left"></i>' + document.querySelector(`[data-target=${el.id}]`).getAttribute('btn-content');
+      btn.classList.add('back-btn');
+      btn.classList.add('multi-level-sliding-navigation-item');
+      btn.setAttribute('data-prev-menu', el.id);
+      btn.setAttribute('tabindex', '0');
+      btn.setAttribute('role', 'button');
+      el.firstElementChild.parentNode.insertBefore(btn, el.firstElementChild.nextElementSibling);
+    }
+
+    // Adding attributest to li tags
+    mobileNavigation.querySelectorAll('li').forEach(li => {
+      li.classList.add('multi-level-sliding-navigation-item');
+      if (li.lastElementChild.tagName === 'UL') {
+        const anchor = li.firstElementChild;
+        const button = document.createElement('button');
+        const id = li.lastElementChild.id;
+        const dataLevel = anchor.innerHTML;
+        li.lastElementChild.setAttribute('data-level', dataLevel)
+        button.classList.add('mobile-nav-btn');
+        button.setAttribute('role', 'button');
+        button.setAttribute('aria-haspopup', 'menu');
+        button.setAttribute('btn-content', li.parentElement.getAttribute('data-level'));
+        button.setAttribute('data-target', id);
+        button.innerHTML = `<i class="fa fa-chevron-right"></i>`;
+        anchor.parentNode.insertBefore(button, anchor.nextElementSibling);
+
+        const heading = document.createElement('li');
+        heading.classList.add('heading');
+        heading.innerHTML = `<span>${dataLevel}</span>`;
+        li.lastElementChild.insertAdjacentElement('afterbegin', heading);
+
+        if (li.lastElementChild.classList.contains('multilevel-linkul-0')) {
+          addBackBtn(li.lastElementChild);
+        } else if (li.lastElementChild.classList.contains('multilevel-linkul-1')) {
+          addBackBtn(li.lastElementChild);
+        } else if (li.lastElementChild.classList.contains('multilevel-linkul-2')) {
+          addBackBtn(li.lastElementChild);
+        }
+      }
+    });
+
+    // Adding heading to ul
+    // const addHeading = (el, i) => {
+    //   const heading = document.createElement('li');
+    //   i === 0 ? heading.innerHTML = `Main Menu` : heading.innerHTML = `Sub Menu 0${i}`;
+    //   heading.classList.add('heading');
+    //   el.insertAdjacentElement('afterbegin', heading);
+    // }
+
+    
+    // List opening handler
+    const navigationBtns = mobileNavigation.querySelectorAll('.mobile-nav-btn');
+    navigationBtns.forEach(btn => {
+      const targetList = document.querySelector(`#${btn.getAttribute('data-target')}`);
+      const parentLiElement = btn.parentElement;
+      btn.addEventListener('click', () => {
+        menuToggleHandler(parentLiElement.parentElement.classList[0], true);
+        parentLiElement.firstElementChild.classList.add('hide');
+        parentLiElement.classList.remove('hide');
+        btn.classList.add('hide-btn');
+        targetList.setAttribute('aria-hidden', false);
+        targetList.classList.add('show');
+      })
+    })
+
+    // List closing handler
+    const navigationBackBtns = mobileNavigation.querySelectorAll('.back-btn');
+    navigationBackBtns.forEach(btn => {
+      const targetList = document.querySelector(`#${btn.getAttribute('data-prev-menu')}`);
+      const prevMenuBtn = document.querySelector(`button[data-target=${btn.getAttribute('data-prev-menu')}]`);
+      const trigerClosing = () => {
+        targetList.classList.remove('show');
+        targetList.setAttribute('aria-hidden', true);
+        prevMenuBtn.classList.remove('hide-btn');
+        prevMenuBtn.parentElement.firstElementChild.classList.remove('hide');
+        menuToggleHandler(prevMenuBtn.parentElement.parentElement.classList[0], false);
+      }
+      btn.addEventListener('click', () => {
+        trigerClosing();
+      })
+      btn.addEventListener('keydown', e => {
+        if (e.key === 'Enter') {
+          trigerClosing();
+        }
+      })
+    })
+  }
+
+  // List elements opening/closing handler
+  const menuToggleHandler = (classValue, state) => {
+    const element = document.querySelectorAll(`.${classValue} > li`);
+    switch (classValue) {
+      case 't4-mobile-navigation':
+        state ? element.forEach(li => li.classList.add('hide')) : element.forEach(li => li.classList.remove('hide'));
+        break;
+      case 'multilevel-linkul-0':
+        state ? element.forEach(li => li.classList.add('hide')) : element.forEach(li => li.classList.remove('hide'))
+        break;
+      case 'multilevel-linkul-1':
+        state ? element.forEach(li => li.classList.add('hide')) : element.forEach(li => li.classList.remove('hide'))
+        break;
+      case 'multilevel-linkul-2':
+        state ? element.forEach(li => li.classList.add('hide')) : element.forEach(li => li.classList.remove('hide'))
+        break;
+    }
+  }
+
+
+
   // Helper to apply inline CSS
   const setStyleProps = ($el, styles) => {
     for (const [key, value] of Object.entries(styles)) {
@@ -16,8 +144,8 @@
   };
 
   const $nav = document.querySelector('.multi-level-sliding-navigation');
-  const $navbody = $nav.querySelector('.multi-level-sliding-navigation-body');
-  const $navmain = $nav.querySelector('.multi-level-sliding-navigation-main');
+  const $navbody = $nav ? $nav.querySelector('.multi-level-sliding-navigation-body') : null
+  const $navmain = $nav ? $nav.querySelector('.multi-level-sliding-navigation-main') : null
   const $toggles = new Set([
     ...document.querySelectorAll('[href="#nav"]'),
     ...document.querySelectorAll('[aria-controls="nav"]')
@@ -327,7 +455,10 @@
 
 (() => {
   // Toggle right-to-left for demo purposes
-  document.querySelector('#toggle-rtl').addEventListener('change', (ev) => {
-    document.dir = ev.target.checked ? 'rtl' : 'ltr';
-  });
+  if (document.querySelector('#toggle-rtl')) {
+    document.querySelector('#toggle-rtl').addEventListener('change', (ev) => {
+      document.dir = ev.target.checked ? 'rtl' : 'ltr';
+    });
+  }
+  
 })();
