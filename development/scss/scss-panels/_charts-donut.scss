@@ -51,8 +51,6 @@
 #donut-section-four .circle {
   background-color: $gray-extra-light;
 }
-
-/* donut chart one */
 #donut-chart-one #donut-section-one .circle {
   animation: donut-one-first 1s 1 forwards;
 }
@@ -65,7 +63,6 @@
 #donut-chart-one #donut-section-four .circle {
   animation: donut-one-fourth 0.5s 1 forwards 3s;
 }
-
 #donut-chart-one #donut-section-one {
   transform: rotate(0deg);
 }
@@ -94,4 +91,92 @@
 @keyframes donut-one-fourth {
   from {transform: rotate(0deg);}
   to {transform: rotate(55deg);}
+}
+
+/* donut chart - two */
+
+#donut-chart-two #donut-section-one .circle {
+  animation: donut-two-first 1s 1 forwards;
+}
+#donut-chart-two #donut-section-two .circle {
+  animation: donut-two-second 1s 1 forwards 1s;
+}
+#donut-chart-two #donut-section-three .circle {
+  animation: donut-two-third 1s 1 forwards 2s;
+}
+#donut-chart-two #donut-section-four .circle {
+  animation: donut-two-fourth 0.5s 1 forwards 3s;
+}
+#donut-chart-two #donut-section-one {
+  transform: rotate(0deg);
+}
+#donut-chart-two #donut-section-two {
+  transform: rotate(130deg);
+}
+#donut-chart-two #donut-section-three {
+  transform: rotate(230deg);
+}
+#donut-chart-two #donut-section-four {
+  transform: rotate(305deg);
+}
+/* animation */
+@keyframes donut-two-first {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(130deg);}
+}	
+@keyframes donut-two-second {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(100deg);}
+}	
+@keyframes donut-two-third {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(75deg);}
+}
+@keyframes donut-two-fourth {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(55deg);}
+}
+
+/* donut chart - three */
+
+#donut-chart-three #donut-section-one .circle {
+  animation: donut-three-first 1s 1 forwards;
+}
+#donut-chart-three #donut-section-two .circle {
+  animation: donut-three-second 1s 1 forwards 1s;
+}
+#donut-chart-three #donut-section-three .circle {
+  animation: donut-three-third 1s 1 forwards 2s;
+}
+#donut-chart-three #donut-section-four .circle {
+  animation: donut-three-fourth 0.5s 1 forwards 3s;
+}
+#donut-chart-three #donut-section-one {
+  transform: rotate(0deg);
+}
+#donut-chart-three #donut-section-two {
+  transform: rotate(140deg);
+}
+#donut-chart-three #donut-section-three {
+  transform: rotate(255deg);
+}
+#donut-chart-three #donut-section-four {
+  transform: rotate(325deg);
+}
+/* animation */
+@keyframes donut-three-first {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(140deg);}
+}	
+@keyframes donut-three-second {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(115deg);}
+}	
+@keyframes donut-three-third {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(70deg);}
+}
+@keyframes donut-three-fourth {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(35deg);}
 }
