@@ -13,10 +13,14 @@ body#pattern-library {
       margin: 1.5em 0;
       font-family: 'Open Sans', sans-serif;
       font-size: 1.275em;
+      a {
+        cursor: pointer;
+      }
       span {
         font-weight: 700;
         color: $gold-light;
         text-transform: uppercase;
+        cursor: pointer;
       }
     }
     li h5 {
