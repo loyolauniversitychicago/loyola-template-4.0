@@ -947,3 +947,17 @@ td ul li, .panel-table-accordion ul li {
 .panel-table-accordion .caption p {
   margin-bottom: 1rem !important;
 }
+
+/* added for interim - remove for new page layout */
+
+ul#site-nav button, ul#site-nav button:hover {
+  padding: 1.25rem 3.25rem 1rem 1.25rem;
+  background-image: url(https://www.luc.edu/media/luc-template-2020/images/ui-menu-arrow-down@2x.png) !important;
+  /* background-image: url(https://www.luc.edu/media/luc-template-2020/images/ui-menu-arrow-down@2x.png) !important; */
+  background-size: 2.5rem !important;
+  background-position: 101% center !important;
+  background-repeat: no-repeat !important;
+}
+#site-nav li a {
+  padding: 0;
+}

@@ -98,7 +98,8 @@ ul[role="menubar"] {
 
 ul#site-nav button,
 ul#site-nav button:hover {
-	padding: 1.25rem 3.25rem 1rem 1.25rem;
+	/* padding: 1.25rem 3.25rem 1rem 1.25rem; T4 DEV FIX */
+	padding: 0;
 	/*
 	background-image: url('/images/ui-arrow-down@2x.png') !important;
 	background-size: 6% !important;
