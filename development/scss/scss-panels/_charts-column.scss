@@ -7,8 +7,8 @@
     .container {
         position: relative;
         overflow: visible;
-        left: 2rem;
-        width: calc(100% - 2rem);
+        left: .5rem;
+        width: calc(80% - 2.5rem) !important;
         height: 100%;
         min-height: 30vh;
             #marker-one,
@@ -27,6 +27,7 @@
             border-bottom: solid 1px $gray;
             overflow: visible;
             background: none;
+            z-index: -1;
             span {
                 display: block;
                 p {
@@ -45,20 +46,21 @@
         }
     }
 }
+/* scale */
 #panel-column-chart .container #marker-one { top: 100%; }
 #panel-column-chart .container #marker-two { top: 75%; }
 #panel-column-chart .container #marker-three { top: 50%; }
 #panel-column-chart .container #marker-four { top: 25%; }
 #panel-column-chart .container #marker-five { top: 0%; }
-/* all this to calculate column width */
+/* calculate column width */
 #panel-column-chart .grid-wrapper-min-max {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
     grid-gap: var(--grid-layout-gap);
     /* input values */
-    --grid-layout-gap: 10px;
-    --grid-column-count: 10; /* This gets overridden by an inline style. */
-    --grid-item--min-width: 200px; /* This gets overridden by an inline style. */
+    --grid-layout-gap: 1rem;
+    --grid-column-count: 10; /* overridden by an inline style. */
+    --grid-item--min-width: 3rem; /* overridden by an inline style. */
     /* calculated values */
     --gap-count: calc(var(--grid-column-count) - 1);
     --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
@@ -70,14 +72,14 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: red;
+    background: $gray-extra-light;
 }
-/* chart wrapper */
+/* column wrapper */
 #chart-column-wrapper {
     width: 100%;
     height: 100%;
 }
-/* chart group */
+/* column group */
 .chart-column-group {
   position: relative;
   top: 0;
@@ -89,17 +91,31 @@
   padding: 0;
   width: 100%;
   height: 100%;
-  background: yellow;
+  background: none;
+  overflow: visible;
   p {
     position: absolute;
     top: 1rem;
     margin: 0;
     width: 100%;
-    font-family: 'Antenna Condensed Bold', sans-serif !important;
+    font-family: 'Antenna Condensed', sans-serif !important;
+    font-size: .85rem;
     letter-spacing: .025rem;
     line-height: 0;
     color: $white;
     text-align: center;
+  }
+  h5, h6 {
+    position: absolute !important;
+    top: -.125rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: .85rem;
+    text-align: center;
+  }
+  h6 {
+    top: calc(100% + .125rem);
   }
 }
 .chart-column {
@@ -107,7 +123,7 @@
   position: relative;
   width: 100%;
   height:  100%;
-  background: #cccccc;
+  background: none;
 }
 .chart-column-label {
   background: #525252;
@@ -121,9 +137,7 @@
   font-family: 'Antenna Condensed Bold', sans-serif !important;
   z-index: +3;
 }
-.chart-column.background-none {
-  background: none;
-}
+/* set all columns - position absolute - height 100% */
 .chart-column-value-1,
 .chart-column-value-2,
 .chart-column-value-3,
@@ -140,6 +154,7 @@
   height: 100%;
   background: $maroon;
 }
+/* set all columns stack - color brick */
 #chart-column-value-a2,
 #chart-column-value-b2,
 #chart-column-value-c2,
@@ -152,18 +167,38 @@
 #chart-column-value-j2 {
   background: $brick;
 }
-/* a adjusts height */
-/* value adjusts position */
-/* chart one */
-#chart-column-value-a1 {
-  height: 40%;
-}
-#chart-column-value-a2 {
-  height: 20%;
-}
-.chart-column-value-2 {
-  bottom: 40%;
-}
+/* letter-number - adjusts height */
+/* value-number - adjusts position */
+/* column one */
+  #chart-column-value-a1 {
+    height: 20%;
+  }
+  #chart-column-value-a2 {
+    height: 15%;
+  }
+  #chart-column-value-a2.chart-column-value-2 {
+    bottom: 20%;
+  }
+/* column two */
+  #chart-column-value-b1 {
+    height: 40%;
+  }
+  #chart-column-value-b2 {
+    height: 20%;
+  }
+  #chart-column-value-b2.chart-column-value-2 {
+    bottom: 40%;
+  }
+/* column two */
+  #chart-column-value-c1 {
+    height: 60%;
+  }
+  #chart-column-value-c2 {
+    height: 30%;
+  }
+  #chart-column-value-c2.chart-column-value-2 {
+    bottom: 60%;
+  }
 /* key */
 .chart-key-wrapper {
   height: 100%;
