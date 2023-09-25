@@ -1,20 +1,73 @@
 <script
 src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 </script>
+<section id="panel-bar-chart" class="container-fluid">
+  <div class="container">
+    <div class="grid-wrapper-min-max">
+      <!-- chart one -->
+      <div class="grid-item">
+        <canvas id="myChart" style="width:100%;max-width:100%;" aria-label="Headline Lorem Ipsum" role="img"></canvas>
+      </div>
+    </div>
+  </div>
+</section>
 <script>
-var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
-var yValues = [55, 49, 44, 24, 15];
-var barColors = ["red", "green","blue","orange","brown"];
-
-new Chart("myChart", {
-  type: "bar",
-  data: {
-    labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      data: yValues
-    }]
-  },
-  options: {...}
-});
-</script>
+  var xValues = ["Italy", "France", "Spain", "USA"];
+  var yValues = [55, 49, 44, 24];
+  var barColors = [
+    "rgba(0,0,255,1.0)",
+    "rgba(0,0,255,0.8)",
+    "rgba(0,0,255,0.6)",
+    "rgba(0,0,255,0.4)",
+  ];
+  new Chart("myChart", {
+    type: "bar",
+    data: {
+      labels: xValues,
+      datasets: [{
+        /* variable */
+        backgroundColor: barColors,
+        /* specific */
+        backgroundColor: ['#8d0034', '#888888', '#888888', '#888888', '#888888', '#888888'],
+        borderColor: ['rgba(0,0,0,0)'],
+        borderWidth: 0,
+        data: yValues
+      }]
+    },
+    options: {
+      plugins: {
+        tooltip: {
+          enabled: true,
+          backgroundColor: 'red',
+        },
+        legend: {
+          display: false
+        },
+        title: {
+          display: true,
+          text: 'Title of Chart',
+          padding: 10,
+          fontSize: 24,
+        },
+        scales: {
+          xAxes: [{
+            ticks: {
+              padding: 5,
+              fontFamily: 'Helvetica',
+              fontSize: 16,
+              fontStyle: 'bold',
+            }
+          }],
+          yAxes: [{
+            ticks: {
+              padding: 10,
+              fontFamily: 'Helvetica',
+              fontSize: 14,
+              fontStyle: 'bold',
+            }
+          }],
+        },
+      },
+    },
+  });
+  </script>
