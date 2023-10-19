@@ -151,6 +151,11 @@
   }
 }
 
+#panel-cards #facultyList.grid-wrapper-min-max .grid-item.filterRow,
+#panel-cards #facultyList.grid-wrapper-min-max .grid-item.category {
+  display: flex !important;
+}
+
 #panel-numbers .grid-wrapper-min-max .grid-item {
   margin: 0;
 }
@@ -517,6 +522,14 @@ tr:nth-child(odd) { background: $gray-extra-light; }
       font-size: 85%;
       color: $gold;
       text-transform: uppercase;
+      background-image: linear-gradient(120deg, #000000 0%, #000000 100%);
+      background-repeat: no-repeat;
+      background-size: 106% 0.075rem;
+      background-position: -3% 103%;
+      transition: all 0.25s ease-in;
+      &:hover {
+        background-size: 100% 106%;
+      }
     }
   }
 }

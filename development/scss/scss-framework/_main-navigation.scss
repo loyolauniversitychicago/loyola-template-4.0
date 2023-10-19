@@ -84,12 +84,14 @@ ul[role="menubar"] {
 			letter-spacing: .025rem;
 			color: $gray-extra-light;
 			text-transform: uppercase;
-			text-decoration: none;
+			text-decoration: none !important;
 			border: 0 none;
 			background-color: darken($gray,20%);
 			transition: background-color .3s;
+			background-image: none;
 			&:hover, &:focus {
 				background-color: darken($gray,30%);
+				background-image: none;
 			}
 		}
 	}

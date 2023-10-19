@@ -219,12 +219,12 @@ p strong, .standard-paragraph p strong, li strong, li a strong, ol strong, ol a 
   }
 }
 
-li a {
-  font-weight: 400;
-}
-
-p a, a.cta, li a, li em a, li a em {
+p a, a.cta, li a, p a strong, li a strong, a.cta, strong a.cta {
   color: $maroon;
+  text-decoration: none;
+  &:hover, &:visited {
+    color: $brick;
+  }
 }
 
 #panel-intro.bg-maroon .intro-paragraph > p,
@@ -250,13 +250,19 @@ p, .explainer p .standard-paragraph p {
   margin-bottom: rvr(1.5);
 }
 
+/* strong */
+
 p strong, .standard-paragraph p strong,
+p a strong, li a strong, strong a.cta,
 li strong, li a strong, ol strong, ol a strong,
 #panel-intro .intro-paragraph > p strong,
 .intro-paragraph > p strong, #panel-intro.bg-maroon {
   font-size: inherit;
   font-family: 'open-sans', sans-serif;
   font-weight: 800;
+  &:hover, &:visited {
+    font-weight: 800;
+  }
 }
 
 p em, .standard-paragraph p em,
@@ -758,7 +764,7 @@ p span.highlight.bg-success { color: $white; background: lighten($patina,5%); }
 p span.highlight.bg-warning { color: $white; background: lighten($opus,5%); }
 p span.highlight.bg-danger { color: $white; background: $maroon; }
 */
-p a,
+p a, a.cta, li a, p a strong, li a strong, a.cta, strong a.cta,
 p span.highlight.bg-info,
 p span.highlight.bg-success,
 p span.highlight.bg-warning,
@@ -862,6 +868,8 @@ blockquote cite { line-height: 1.35; }
 #main-aside-wrapper .card a.cta,
 .flex-item.content a.cta {
   margin-bottom: 0;
+  text-decoration: none;
+  background-image: none;
 }
 
 
