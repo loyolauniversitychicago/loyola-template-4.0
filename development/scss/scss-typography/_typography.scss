@@ -397,7 +397,7 @@ footnote, .footnote p {
   font-style: italic;
   font-size: .875rem;
   line-height: 1.25;
-  line-height: rvr(1.25);
+  line-height: rvr(1.25) !important;
   border-top: solid 1px $gray;
 }
 
