@@ -401,6 +401,10 @@ footnote, .footnote p {
   border-top: solid 1px $gray;
 }
 
+.footnote p strong {
+  line-height: calc(var(--baseline) * 1.25 * 1rem) !important;
+}
+
 /* typographic specific */
 
 #home h1 {
@@ -748,7 +752,7 @@ blockquote p cite:before {
   background-color: lighten($gray-light,15%);
 }
 
-.infobox h4 {
+.infobox h4:first-of-type {
   margin-top: 0;
 }
 
