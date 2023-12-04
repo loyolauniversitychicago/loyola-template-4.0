@@ -50,13 +50,16 @@
         text-decoration: none;
         border: 0 none;
         border-bottom: solid 1px #888888;
+        background-color: darken($gray,20%);
         transition: background-color .3s;
+        &:hover, &:focus {
+          background-color: darken($gray,30%);
+          background-image: none;
+        }
       }
     }
   } 
-  ul.multilevel-linkul-0 
-  ul.multilevel-linkul-0 li 
-  ul.multilevel-linkul-1 {
+  ul.multilevel-linkul-0 ul.multilevel-linkul-0 li ul.multilevel-linkul-1 {
     display: none;
   }
   li {

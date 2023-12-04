@@ -34,7 +34,7 @@
       margin: 0;
       padding: 0;
       list-style: none;
-      border-left: solid 1px #2f2f2f;
+      border-left: 0;
       a {
         float: left;
         display: block;
@@ -51,12 +51,14 @@
         border: 0 none;
         border-bottom: solid 1px #888888;
         transition: background-color .3s;
+        &:hover {
+          background-color: darken($gray,20%);
+          background-size: 0 0;
+        }
       }
     }
-  } 
-  ul.multilevel-linkul-0 
-  ul.multilevel-linkul-0 li 
-  ul.multilevel-linkul-1 {
+  }
+  ul.multilevel-linkul-0 ul.multilevel-linkul-0 li ul.multilevel-linkul-1 {
     display: none;
   }
   li {
