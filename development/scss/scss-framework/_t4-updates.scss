@@ -61,6 +61,9 @@
   }
   li {
     display: flex;
+    ul li button {
+      display: none; /* only for repo */
+    }
     a {
       // width: fit-content;
       padding: 1.25rem 1.25rem 1rem 1.25rem !important;
