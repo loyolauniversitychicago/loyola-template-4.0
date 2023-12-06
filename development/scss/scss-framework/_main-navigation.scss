@@ -90,9 +90,9 @@ ul[role="menubar"] {
 			background-color: darken($gray,20%);
 			transition: background-color .3s;
 			background-image: none;
+			background-size: 100 100 !important;
 			&:hover, &:focus {
-				background-color: darken($gray,30%);
-				background-image: none;
+				background: darken($gray,30%) !important;
 			}
 		}
 	}

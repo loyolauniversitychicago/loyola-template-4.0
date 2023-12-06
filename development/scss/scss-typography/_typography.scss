@@ -227,6 +227,7 @@ p a, a.cta, li a, p a strong, li a strong, a.cta, strong a.cta {
   }
 }
 
+#panel-intro.bg-maroon .intro-paragraph > h1,
 #panel-intro.bg-maroon .intro-paragraph > p,
 #panel-intro.bg-maroon .intro-paragraph > p strong,
 #panel-intro.bg-maroon .caption p,
@@ -768,21 +769,23 @@ p span.highlight.bg-success { color: $white; background: lighten($patina,5%); }
 p span.highlight.bg-warning { color: $white; background: lighten($opus,5%); }
 p span.highlight.bg-danger { color: $white; background: $maroon; }
 */
-p a, a.cta, li a, p a strong, li a strong, a.cta, strong a.cta,
-p span.highlight.bg-info,
-p span.highlight.bg-success,
-p span.highlight.bg-warning,
-p span.highlight.bg-danger {
-  color: $maroon;
-  font-family: 'Open Sans', sans-serif;
-  background-image: linear-gradient(120deg, $gray-light 0%, $gray-light 100%);
-  background-repeat: no-repeat;
-  background-size: 106% 0.075rem;
-  background-position: -3% 103%;
-  transition: all 0.25s ease-in;
-  &:hover {
-    color: #000000;
-    background-size: 100% 106%;
+#main-section-wrapper {
+  p a, a.cta, li a, p a strong, li a strong, a.cta, strong a.cta,
+  p span.highlight.bg-info,
+  p span.highlight.bg-success,
+  p span.highlight.bg-warning,
+  p span.highlight.bg-danger {
+    color: $maroon;
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(120deg, $gray-light 0%, $gray-light 100%);
+    background-repeat: no-repeat;
+    background-size: 106% 0.075rem;
+    background-position: -3% 103%;
+    transition: all 0.25s ease-in;
+    &:hover {
+      color: #000000;
+      background-size: 100% 106%;
+    }
   }
 }
 
