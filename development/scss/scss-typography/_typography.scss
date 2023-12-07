@@ -218,6 +218,10 @@ p strong, .standard-paragraph p strong, li strong, li a strong, ol strong, ol a 
     line-height: rvr(1.65);
   }
 }
+a.cta {
+  line-height: 1.65;
+  line-height: rvr(1.65);
+}
 
 p a, a.cta, li a, p a strong, li a strong, a.cta, strong a.cta {
   color: $maroon;
@@ -382,10 +386,14 @@ a.cta {
   }
 }
 
-.card a.cta {
+#main-section-wrapper a.cta {
   font-family: 'Antenna Condensed Bold', sans-serif;
   margin-bottom: 1.5rem;
   margin-bottom: rvr(1.5);
+  background-image: none !important;
+  &:hover {
+    background-image: none;
+  }
 }
 
 small { font-size: 0.7rem; }
@@ -738,6 +746,13 @@ blockquote p cite:before {
   font-style: italic;
 }
 
+.flex-item.content ul li {
+  margin: 0 .125rem;
+  .flex-item.content ul li strong {
+    line-height: 1.125;
+  }
+}
+
 .card a.cta,
 .flex-item.content a.cta {
   font-family: 'Antenna Condensed Bold', sans-serif;
@@ -779,7 +794,7 @@ p span.highlight.bg-danger { color: $white; background: $maroon; }
     font-family: 'Open Sans', sans-serif;
     background-image: linear-gradient(120deg, $gray-light 0%, $gray-light 100%);
     background-repeat: no-repeat;
-    background-size: 106% 0.075rem;
+    background-size: 106% 0.1rem;
     background-position: -3% 103%;
     transition: all 0.25s ease-in;
     &:hover {
