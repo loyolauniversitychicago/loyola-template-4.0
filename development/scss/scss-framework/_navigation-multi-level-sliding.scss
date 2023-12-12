@@ -70,7 +70,7 @@
   left: 0;
   list-style: none;
   margin: 0;
-  padding: 1rem 1rem 1.25rem;
+  padding: 1rem 0 1.25rem;
   position: relative;
   scroll-snap-align: start;
   overflow-x: hidden;
@@ -110,35 +110,29 @@
   padding: 0.5rem;
   text-decoration: none;
   font-weight: 400;
-
   span.menu-return {
     color: $gold;
     text-transform: uppercase;
   }
-
   & > * {
     display: inline-block;
     flex-grow: 1;
     width: 80%;
     text-transform: none;
   }
-
   &[aria-controls] {
     font-weight: 600;
   }
-
   .multi-level-sliding-navigation-icon {
     flex-grow: 0;
     margin-inline: 0.5rem 0;
     float: right;
     width: 1rem;
-
     &:first-child {
       float: left;
       margin-inline: 0 0.5rem;
       color: $gold;
     }
-
     [dir='rtl'] & {
       transform: scaleX(-1);
     }

@@ -337,6 +337,7 @@ footer#footer-fixed {
     display: none;
   }
 }
+
 footer#footer-fixed img { display: none; margin: 0; }
 footer#footer-fixed.footer-fixed-show { display: block; }
 footer#footer-fixed.footer-fixed-hide { display: none; }
@@ -354,10 +355,12 @@ footer {
     height: 75px;
   }
   a, p a {
-  color: $gray-extra-light;
+  color: $gray-extra-light !important;
+  text-decoration: underline !important;
+  background-image: none !important;
     &:hover {
       display: inline-block;
-      color: $gold-light;
+      color: $gold-light !important;
     }
   }
 }

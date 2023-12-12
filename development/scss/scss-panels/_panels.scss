@@ -760,7 +760,7 @@ button.content-activate-symbol {
   border: solid 3px $gray-extra-light !important;
   border-radius: 1.5em;
   background-color: $bg-overlay;
-  background-image: url('../images/ui-arrow-up@2x.png');
+  background-image: url('https://www.luc.edu/media/luc-template-2020/images/ui-arrow-up@2x.png');
   background-repeat: no-repeat;
   background-position: .5rem .5rem;
   background-size: 1.125rem;
@@ -772,7 +772,7 @@ button.content-activate-symbol {
     transform: rotate(180deg);
     color: $gray-extra-light;
     background-color: $bg-overlay-dark !important;
-    background-image: url('../images/ui-arrow-up@2x.png');
+    background-image: url('https://www.luc.edu/media/luc-template-2020/images/ui-arrow-up@2x.png');
     background-repeat: no-repeat;
     background-position: .5rem .5rem;
     background-size: 1.125rem;
@@ -785,7 +785,7 @@ button.content-activate-symbol {
   }
 button#content-activate-symbol-overlay.content-activate-symbol.active {
   transform: rotate(180deg) !important;
-  background-image: url('../images/ui-arrow-up@2x.png') !important;
+  background-image: url('https://www.luc.edu/media/luc-template-2020/images/ui-arrow-up@2x.png');
   background-position: .5rem .5rem;
   background-size: 1.125rem;
 }
@@ -825,7 +825,7 @@ button.content-activate-symbol.active {
   transition: transform .5s;
   transform: rotate(180deg);
   background-color: rgba(0,0,0,.85);
-  background-image: url('../images/ui-arrow-up@2x.png');
+  background-image: url('https://www.luc.edu/media/luc-template-2020/images/ui-arrow-up@2x.png');
   background-repeat: no-repeat;
   background-position: .5rem .5rem;
   background-size: 1.125rem;
@@ -838,7 +838,7 @@ button.content-activate-symbol.active.activate-symbol-plus {
 button.content-activate-symbol.activate-symbol-plus {
   width: 2rem !important;
   height: 2rem !important;
-  background-image: url('../images/ui-plus@2x.png');
+  background-image: url('https://www.luc.edu/media/luc-template-2020/images/ui-plus@2x.png');
   background-position: .5rem .5rem;
   background-size: 1rem;
   background-color: $maroon;
@@ -846,7 +846,7 @@ button.content-activate-symbol.activate-symbol-plus {
 }
 /* specifically for x close symbol */
 button.content-activate-symbol.activate-symbol-close {
-  background-image: url('../images/ui-plus@2x.png');
+  background-image: url('https://www.luc.edu/media/luc-template-2020/images/ui-plus@2x.png');
   background-position: .5rem .5rem;
   background-size: 1rem;
 }

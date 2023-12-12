@@ -8,6 +8,9 @@
   }
   &.container-50 {
     width: 50%;
+    @include phone-portrait {
+      width: 80%;
+    }
   }
 }
 
@@ -100,9 +103,8 @@
     }
   }
 }
-
 ul#site-nav button, ul#site-nav button:hover {
-  background-image: url('../../../images/ui-menu-arrow-down@2x.png') !important;
+  background-image: url('https://www.luc.edu/media/luc-template-2020/images/ui-menu-arrow-down@2x.png');
 }
 
 // mobile main navigation
@@ -118,7 +120,14 @@ ul#site-nav button, ul#site-nav button:hover {
       &.multilevel-linkul-2 {
         padding: 0;
       }
+      &.multilevel-linkul-0 {
+        top: 0;
+        li a {
+          width: 100%;
+        }
+      }
       &.show {
+        display: block;
         animation: slideLeft .3s ease-in-out;
         transform: translateX(0);
         opacity: 1;
@@ -127,6 +136,7 @@ ul#site-nav button, ul#site-nav button:hover {
     .multi-level-sliding-navigation-item {
       display: grid;
       grid-template-columns: auto 50px;
+      width: 100%;
       border-bottom: solid 1px #555555;
       &.heading {
         border: none;
@@ -923,7 +933,7 @@ td ul li, .panel-table-accordion ul li {
   width: 1.125rem;
   height: 1.125rem;
   content: '';
-  background-image: url(../images/ui-arrow-carrousel-next-dark@2x.png);
+  background-image: url('https://www.luc.edu/media/luc-template-2020/images/ui-arrow-carrousel-next-dark@2x.png');
   background-repeat: no-repeat;
   background-position: 100% 100%;
   background-size: 80%;
@@ -959,8 +969,7 @@ td ul li, .panel-table-accordion ul li {
 
 ul#site-nav button, ul#site-nav button:hover {
   padding: 1.25rem 3.25rem 1rem 1.25rem;
-  background-image: url(https://www.luc.edu/media/luc-template-2020/images/ui-menu-arrow-down@2x.png) !important;
-  /* background-image: url(https://www.luc.edu/media/luc-template-2020/images/ui-menu-arrow-down@2x.png) !important; */
+  background-image: url('https://www.luc.edu/media/luc-template-2020/images/ui-menu-arrow-down@2x.png');
   background-size: 2.5rem !important;
   background-position: 101% center !important;
   background-repeat: no-repeat !important;

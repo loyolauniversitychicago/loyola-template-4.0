@@ -108,8 +108,6 @@ button.minimalist-css-accordion__header:focus {
   outline: solid $gold;
 }
 
-
-
 .minimalist-accordion__header::after,
 .minimalist-noanim-accordion__header::after,
 .minimalist-css-accordion__header::after,
@@ -120,7 +118,7 @@ button.minimalist-css-accordion__header:focus {
   width: 1.125rem;
   height: 1.125rem;
   content: '';
-  background-image: url(../images/ui-arrow-carrousel-next-dark@2x.png);
+  background-image: url('https://www.luc.edu/media/luc-template-2020/images/ui-arrow-carrousel-next-dark@2x.png');
   background-repeat: no-repeat;
   background-position: 100% 100%;
   background-size: 80%;
