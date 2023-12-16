@@ -42,6 +42,17 @@
   margin-top: 1rem;
 }
 
+
+/* cards - staff profile */
+
+#facultyList.grid-wrapper-min-max {
+  .content-grid-wrapper {
+    p, p em {
+    line-height: 1.45;
+    }
+  }
+}
+
 /* cards - no image - maroon-top-border */
 
 .grid-wrapper-min-max.card-no-image-top-border .content-grid-wrapper,
