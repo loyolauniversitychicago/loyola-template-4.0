@@ -48,7 +48,13 @@
 #facultyList.grid-wrapper-min-max {
   .content-grid-wrapper {
     p, p em {
-    line-height: 1.45;
+      line-height: 1.45;
+    }
+    ul li {
+      margin: 0 0 .5rem 0;
+      text-indent: -1.5rem !important;
+      line-height: 1.35 !important;
+      line-height: rvr(1.35) !important;
     }
   }
 }

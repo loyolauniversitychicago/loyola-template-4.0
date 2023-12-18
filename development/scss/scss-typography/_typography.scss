@@ -465,15 +465,6 @@ footnote, .footnote p {
   margin: 0;
 }
 
-/* overide */
-
-ol li, ul li {
-  margin: 0 0 0.6125rem !important;
-  text-indent: -1.5rem !important;
-  line-height: 1.45 !important;
-  line-height: rvr(1.45) !important;
-}
-
 ol li {
   counter-increment: circle-numbers;
 }
