@@ -781,6 +781,11 @@ blockquote p cite:before {
   margin-bottom: rvr(0);
 }
 
+.infobox p:first-of-type {
+  margin: 0 0 1.25rem;
+  margin-bottom: calc(var(--baseline) * 1.25 * 1rem);
+}
+
 /* hightlights */
 /*
 p span.highlight.bg-info { background: lighten($gold,20%) }
