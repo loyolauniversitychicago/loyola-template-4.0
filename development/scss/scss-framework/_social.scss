@@ -65,7 +65,10 @@
 
 #social-icon-bar.social-not-fixed a  {
   float: left;
-  width: 20%;
+  width: 3rem;
+  min-width: 3rem;
+  max-width: 3rem;
+  height: 3rem;
   border-top: none;
   border-left: solid 1px $gray-extra-light;
   &:first-of-type {
