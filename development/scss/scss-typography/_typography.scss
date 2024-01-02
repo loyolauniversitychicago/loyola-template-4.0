@@ -266,7 +266,7 @@ li strong, li a strong, ol strong, ol a strong,
   font-family: 'open-sans', sans-serif;
   font-weight: 800;
   &:hover, &:visited {
-    font-weight: 800;
+    font-weight: 700;
   }
 }
 
@@ -768,8 +768,11 @@ blockquote p cite:before {
 /* infobox */
 
 .infobox {
-  padding: 2em;
+  padding: 3.5rem;
   background-color: lighten($gray-light,15%);
+  @include phone-portrait {
+    padding:2.5rem;
+  }
 }
 
 .infobox h4:first-of-type {
