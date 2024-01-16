@@ -161,6 +161,18 @@
   margin: 0;
 }
 
+#main-section-wrapper #panel-numbers {
+  .container.container-100 {
+    width: 100% !important;
+  }
+  .container.container-80 {
+    width: 80% !important;
+  }
+  .container.container-50 {
+    width: 50% !important;
+  }
+}
+
 /* card-image-overlay bg-maroon added */
 
 #card-image-overlay .content-grid-wrapper.bg-maroon .flex-item.links { background: $maroon !important; }
