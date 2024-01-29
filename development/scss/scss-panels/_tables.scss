@@ -120,11 +120,14 @@ th {
   }
 }
 
-tr {
-  @include phone-landscape {
+/* desktop maybe - 012923
     &:first-of-type {
       display: none;
     }
+*/
+
+tr {
+  @include phone-landscape {
     display: block;
     margin: 1.5rem 0;
     float: left;

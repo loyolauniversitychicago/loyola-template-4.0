@@ -549,18 +549,6 @@ button:focus {
   background-color: $bg-overlay;
 }
 
-#main-section-wrapper #panel-numbers {
-  .container.container-100 {
-    width: 100%;
-  }
-  .container.container-80 {
-    width: 80%;
-  }
-  .container.container-50 {
-    width: 50%;
-  }
-}
-
 #panel-numbers.container-fluid.bg-overlay .grid-wrapper-min-max.number .flex-item.content h4,
 #panel-numbers.container-fluid.bg-overlay .grid-wrapper-min-max.number .flex-item.content h5,
 #panel-numbers.container-fluid.bg-overlay .grid-wrapper-min-max.number .flex-item.content p {
