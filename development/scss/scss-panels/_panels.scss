@@ -1202,6 +1202,9 @@ button.content-activate-symbol.activate-symbol-close {
 @media only screen and (max-width: 1200px) {
   .grid-item.hide-1200 { display: none; }
 }
+@media only screen and (max-width: 736px) {
+  .grid-item.hide-736 { display: none; }
+}
 
 /* image-grid - image only - responsive grid-item */
 
