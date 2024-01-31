@@ -815,6 +815,26 @@ p span.highlight.bg-danger { color: $white; background: $maroon; }
     }
   }
 }
+#main-section-wrapper {
+  .bg-maroon p a,
+  .bg-maroon a.cta,
+  .bg-maroon li a,
+  .bg-maroon p a strong,
+  .bg-maroon li a strong,
+  .bg-maroon a.cta,
+  .bg-maroon strong a.cta {
+    color: $gold;
+    background-image: linear-gradient(120deg, $brick 0%, $brick 100%);
+    background-repeat: no-repeat;
+    background-size: 106% 0.1rem;
+    background-position: -3% 103%;
+    transition: all 0.25s ease-in;
+    &:hover {
+      color: #ffffff !important;
+      background-size: 100% 106%;
+    }
+  }
+}
 
 /* MS - IE11 */
 
