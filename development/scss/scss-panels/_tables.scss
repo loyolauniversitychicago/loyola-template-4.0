@@ -120,11 +120,11 @@ th {
   }
 }
 
-/* desktop maybe - 012923
-    &:first-of-type {
-      display: none;
-    }
-*/
+thead tr {
+  @include phone-landscape {
+    display: none;
+  }
+}
 
 tr {
   @include phone-landscape {
@@ -132,6 +132,9 @@ tr {
     margin: 1.5rem 0;
     float: left;
     width: 100%;
+  }
+  a {
+    color: $maroon;
   }
 }
 
@@ -174,10 +177,18 @@ td {
   }
 }
 
+table > tbody > tr > td {
+  a {
+    color: $maroon;
+    font-weight: 700;
+  }
+}
+
 table > tbody > tr > td:nth-child(1) {
 @include phone-landscape {
   padding: .5rem;
-  background: #5d0024;
+  background: $brick;
+  font-weight: 700;
   color: #ffffff;
   border: none;
   border-top: 0;
@@ -187,6 +198,10 @@ table > tbody > tr > td:nth-child(1) {
     span {
       background: #8d0034;
       color: #eeeeee;
+    }
+    a {
+      color: #ffffff;
+      font-weight: 700;
     }
   }
 }
