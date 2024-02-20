@@ -1593,7 +1593,7 @@ button.modaal-close {
     font-size: 1.65rem;
     line-height: rvr(1.65);
   }
-  h4, p {
+  h4, p, p strong, p em, p em strong {
     color: $gray-light;
   }
   p {
