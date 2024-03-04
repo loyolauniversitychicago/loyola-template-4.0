@@ -15,13 +15,16 @@
     "gulp-file-include": "^2.3.0",
     "gulp-if": "^3.0.0",
     "gulp-inject": "^5.0.5",
+    "gulp-install": "^1.1.0",
     "gulp-jshint": "^2.1.0",
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-useref": "^5.0.0",
     "latest": "^0.2.0",
-    "sass": "^1.38.1"
+    "npm": "^10.2.5",
+    "sass": "^1.38.1",
+    "yarn": "^1.22.21"
   },
   "devDependencies": {
     "gulp": "^4.0.2"
