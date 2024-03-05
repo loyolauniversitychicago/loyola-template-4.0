@@ -575,7 +575,7 @@ ul.multilevel-linkul-0 li {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	border-left: solid 1px #2f2f2f;
+	border-left: solid 1px $gray-extra-dark;
 }
 ul.multilevel-linkul-0 li a {
   float: left;
@@ -586,12 +586,12 @@ ul.multilevel-linkul-0 li a {
   font-family: 'Antenna', sans-serif;
   font-size: .8rem;
   letter-spacing: .025rem;
-  color: #eeeeee;
+  color: $gray-extra-light;
 	text-align: left;
   text-transform: none;
   text-decoration: none;
   border: 0 none;
-	border-bottom: solid 1px #888888;
+	border-bottom: solid 1px $gray;
   transition: background-color .3s;
 }
 ul.multilevel-linkul-1 {

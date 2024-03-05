@@ -12,11 +12,11 @@ text-transform: none !important;
 text-decoration: none !important;
 font-family: 'Antenna', sans-serif !important;
 font-size: .95rem !important !important;
-color: #bbbbbb !important;
+color: darken($gray-extra-light,3%) !important;
 transition: 0.3s !important;
 }
 
 #secondary .currentbranch0 a, #secondary .multilevel-linkdiv-0 .currentbranch0 a, #secondary .multilevel-linkdiv-0 .currentbranch1 a {
-color: #eeeeee !important;
+color: $gray-extra-light !important;
 background: none !important;
 }

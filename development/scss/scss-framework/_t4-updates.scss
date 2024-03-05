@@ -37,7 +37,7 @@
       margin: 0;
       padding: 0;
       list-style: none;
-      border-left: solid 1px #2f2f2f;
+      border-left: solid 1px $gray-extra-dark;
       a {
         float: left;
         display: block;
@@ -52,7 +52,7 @@
         text-transform: none;
         text-decoration: none;
         border: 0 none;
-        border-bottom: solid 1px #888888;
+        border-bottom: solid 1px $gray-light;
         background-color: darken($gray,20%);
         transition: background-color .3s;
         &:hover, &:focus {
@@ -137,7 +137,7 @@ ul#site-nav button, ul#site-nav button:hover {
       display: grid;
       grid-template-columns: auto 50px;
       width: 100%;
-      border-bottom: solid 1px #555555;
+      border-bottom: solid 1px $gray-dark;
       &.heading {
         border: none;
       }
@@ -147,8 +147,8 @@ ul#site-nav button, ul#site-nav button:hover {
     }
     .mobile-nav-btn {
       transition: 0.3s;
-      background-color: #131313;
-      color: #bbbbbb;
+      background-color: $black;
+      color: $gray-light;
       width: 100%;
       height: auto;
       padding: 0 !important;
@@ -157,13 +157,13 @@ ul#site-nav button, ul#site-nav button:hover {
         cursor: pointer;
       }
       &:hover {
-        background: #8D0034;
+        background: $maroon;
       }
     }
     li.heading {
       margin: 0.5rem 0;
       font-size: 1.125rem;
-      color: #eeeeee;
+      color: $gray-extra-light;
       line-height: calc(var(--baseline) * 1.3 * 1rem);
       letter-spacing: 0rem;
       text-transform: uppercase;
@@ -175,7 +175,7 @@ ul#site-nav button, ul#site-nav button:hover {
       }
     }
     li.back-btn {
-      color: #febc18;
+      color: $gold;
       text-transform: uppercase;
       display: block;
       padding: 1rem 0.75rem 0.95rem !important;
@@ -183,14 +183,14 @@ ul#site-nav button, ul#site-nav button:hover {
       font-family: "Antenna", sans-serif;
       font-size: 0.95rem !important;
       text-transform: uppercase;
-      border-bottom: solid 1px #555555;
+      border-bottom: solid 1px $gray-dark;
       transition: 0.3s;
       font-weight: 600;
       width: 100%;
       cursor: pointer;
       &:focus {
         outline-offset: -3px;
-        outline: 3px solid #febc18;
+        outline: 3px solid $gold;
       }
       .fa {
         padding-right: 0.5rem;
@@ -198,7 +198,7 @@ ul#site-nav button, ul#site-nav button:hover {
     }
     li {
       &:hover {
-        background: #131313 !important;
+        background: $black !important;
         transition: .3s;
       }
       a {
@@ -222,7 +222,7 @@ ul#site-nav button, ul#site-nav button:hover {
       border: none;
       border-radius: 0;
       &:hover {
-        // background: #131313 !important;
+        // background: $black !important;
       }
       &.show {
         width: 100%;
@@ -279,9 +279,9 @@ ul#site-nav button, ul#site-nav button:hover {
         display: none;
       }
       &.show {
-        // background: #fff;
-        // color: #8d0034;
-        // border: 1px solid #8d0034;
+        // background: $white;
+        // color: #maroon;
+        // border: 1px solid $maroon;
         .fa-chevron-right {
           transform: rotate(90deg);
         }
@@ -290,7 +290,7 @@ ul#site-nav button, ul#site-nav button:hover {
     &-wrapper {
       padding: 1.5em;
       border-radius: 0.75rem;
-      background: #eeeeee !important;
+      background: $gray-extra-light !important;
       ul {
         list-style-type: none;
         padding: 0;
@@ -306,7 +306,7 @@ ul#site-nav button, ul#site-nav button:hover {
           &:after {
             content: '';
             position: absolute;
-            border-bottom: solid 1px #bbbbbb;
+            border-bottom: solid 1px $gray-light;
             width: 100%;
             // width: calc(100% - 2rem);
             // margin-left: 1rem;
@@ -326,7 +326,7 @@ ul#site-nav button, ul#site-nav button:hover {
             border: none;
           }
           &:hover {
-            background: #cccccc;
+            background: $gray-light;
             transition: .3s;
           }
         }
@@ -347,11 +347,11 @@ ul#site-nav button, ul#site-nav button:hover {
           font-size: 0.725rem;
           font-weight: 700;
           line-height: 1.45;
-          color: #000000;
+          color: $black;
           text-indent: 0 !important;
           text-transform: uppercase;
           text-decoration: none;
-          // border-bottom: solid 1px #bbbbbb;
+          // border-bottom: solid 1px $gray-light;
           transition: 0.2s;
           &.hide {
             display: none;
@@ -362,25 +362,25 @@ ul#site-nav button, ul#site-nav button:hover {
         }
         li.heading span {
           grid-column: 1/3;
-          background: #888888;
-          color: #eeeeee;
+          background: $gray;
+          color: $gray-extra-light;
           font-weight: bold;
         }
         li button {
           border-radius: unset;
           margin: 0;
           background: inherit;
-          color: black;
+          color: $black;
           border: none;
           font-size: 18px;
           padding: 0;
-          background: #ccc;
+          background: $gray-light;
           &:hover {
-            background: #ababab;
+            background: darken($gray-light,5%);
           }
           &.currentsection-btn {
-            background: #8d0034;
-            color: #fff;
+            background: $maroon;
+            color: $white;
           }
           &.show {
             width: 100%;
@@ -388,8 +388,8 @@ ul#site-nav button, ul#site-nav button:hover {
             margin: 0;
             grid-column: 1 / 3;
             text-align: left;
-            background-color: #8d0034;
-            color: #febc18;
+            background-color: $maroon;
+            color: $gold;
             &::after {
               content: attr(btn-content);
               padding-left: .5rem;
@@ -398,7 +398,7 @@ ul#site-nav button, ul#site-nav button:hover {
               font-size: 0.725rem;
             }
             &:hover {
-              background-color: #5a0021;
+              background-color: $brick;
             }
           &.hide-btn {
             display: none;
@@ -416,11 +416,11 @@ ul#site-nav button, ul#site-nav button:hover {
           }
         }
         li .currentsection {
-          background: #8d0034;
-          color: #eeeeee;
+          background: $maroon;
+          color: $gray-extra-light;
           &:focus {
             outline-offset: -3px;
-            outline: 3px solid #febc18;
+            outline: 3px solid $gold;
           }
         }
       }
@@ -454,15 +454,15 @@ ul#site-nav button, ul#site-nav button:hover {
 }
 
 #t4-navigation nav.t4-navigation-wrapper {
-  background: #222222 !important;
-  color: #bbbbbb !important;
-  border-bottom: solid 1px #bbbbbb;
+  background: $black !important;
+  color: $gray-light !important;
+  border-bottom: solid 1px $gray-light;
   border-radius: 0;
   border-bottom-left-radius: 1rem;
 }
 
 #t4-navigation .t4-navigation-current p {
-  color: #bbbbbb;
+  color: $gray-light;
   font-weight: bold;
   margin: 0;
   padding: 1rem;
@@ -477,7 +477,7 @@ ul#site-nav button, ul#site-nav button:hover {
 
 #t4-navigation ul.t4-navigation-list {
   padding: 0;
-  background: #eeeeee !important;
+  background: $gray-extra-light !important;
 }
 #t4-navigation .t4-navigation-wrapper ul li a,
 #t4-navigation .t4-navigation-wrapper ul li span {
@@ -518,7 +518,7 @@ ul#site-nav button, ul#site-nav button:hover {
   }
   .animationOverlay {
     position: absolute;
-    background-color: #fff;
+    background-color: $white;
     animation: internalNavReveal .5s ease-in-out;
     width: 100%;
     height: 100%;
@@ -560,7 +560,7 @@ ul#site-nav button, ul#site-nav button:hover {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      background: #272727;
+      background: $black;
       height: 100vh !important;
       img {
         display: block;
@@ -681,8 +681,8 @@ ul#site-nav button, ul#site-nav button:hover {
         position: fixed;
         top: 0;
         th {
-          color: #eeeeee !important;
-          background: #555555 !important;
+          color: $gray-extra-light !important;
+          background: $gray-dark !important;
         }
       }
     }
@@ -901,12 +901,12 @@ td ul li, .panel-table-accordion ul li {
     left: 0;
     padding: 1rem 1rem .75rem;
     width: 50%;
-    color: #eeeeee;
+    color: $gray-extra-light;
     text-align: left;
     text-transform: uppercase;
     white-space: nowrap;
     border-bottom: solid 1px $gray-light;
-    background: #555555;
+    background: $gray-dark;
   }
 }
 
@@ -946,7 +946,7 @@ td ul li, .panel-table-accordion ul li {
 
 .panel-table-header-column thead tr:first-of-type td,
 .panel-table-mutiple-headers thead tr:first-of-type td {
-    background: #555555 !important;
+    background: $gray-dark !important;
 }
 
 .panel-table-header-column tbody tr th,

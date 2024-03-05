@@ -26,7 +26,7 @@ nav#secondary {
 		&:focus {
 			outline-style: solid;
 	    outline-offset: -3px;
-	    outline: 3px solid #febc18;
+	    outline: 3px solid $gold;
 		}
 	}
 	h4 {
@@ -55,7 +55,7 @@ nav#secondary {
 			border: none;
 			&:hover {
 				color: $black !important;
-				background: darken($gray-extra-light, 15%) !important;
+				background: darken($gray-extra-light,15%) !important;
 			}
 		}
 	}
