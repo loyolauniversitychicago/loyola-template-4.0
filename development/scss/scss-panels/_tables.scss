@@ -189,18 +189,18 @@ table > tbody > tr > td:nth-child(1) {
   padding: .5rem;
   background: $brick;
   font-weight: 700;
-  color: #ffffff;
+  color: $white;
   border: none;
   border-top: 0;
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
     span {
-      background: #8d0034;
-      color: #eeeeee;
+      background: $maroon;
+      color: $gray-extra-light;
     }
     a {
-      color: #ffffff;
+      color: $white;
       font-weight: 700;
     }
   }

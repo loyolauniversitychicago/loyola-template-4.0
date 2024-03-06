@@ -351,7 +351,7 @@ a {
   &:focus {
     outline-style: solid;
     outline-offset: -3px;
-    outline: 3px solid #febc18;
+    outline: 3px solid $gold;
   }
 }
 
@@ -535,8 +535,8 @@ img, .grid-item img {
   line-height: 1.25;
   line-height: rvr(1.25);
   text-align: center;
-  color: #ffffff;
-  background-color: #000;
+  color: $white;
+  background-color: $black;
   border-radius: 50%;
 }
 
@@ -556,7 +556,7 @@ img, .grid-item img {
   line-height: 1.25;
   line-height: rvr(1.25);
   text-align: center;
-  color: #ffffff;
+  color: $white;
   background-color: #000;
   border-radius: 50%;
 }
@@ -810,7 +810,7 @@ p span.highlight.bg-danger { color: $white; background: $maroon; }
     background-position: -3% 103%;
     transition: all 0.25s ease-in;
     &:hover {
-      color: #000000;
+      color: $black;
       background-size: 100% 106%;
     }
   }
@@ -830,7 +830,7 @@ p span.highlight.bg-danger { color: $white; background: $maroon; }
     background-position: -3% 103%;
     transition: all 0.25s ease-in;
     &:hover {
-      color: #ffffff !important;
+      color: $white !important;
       background-size: 100% 106%;
     }
   }
