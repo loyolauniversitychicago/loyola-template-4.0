@@ -1,0 +1,59 @@
+/* UAO Image Quote */
+
+#panel-image-text.panel-uao-image-quote .content-image-text h4 {
+    font-size: 3.5rem; line-height: calc(var(--baseline) * 1.75 * 2rem);
+}
+
+#panel-image-text.panel-uao-image-quote .content-image-text blockquote {
+    font-size: 1.75rem; color: $white; text-align: left; border: none; padding: 0; margin: 1.5rem 0;
+}
+
+#panel-image-text.panel-uao-image-quote .content-image-text p {
+    font-size: 1.5rem; line-height: calc(var(--baseline) * 1.75 * 1.25rem);
+}
+
+#panel-image-text.panel-uao-image-quote .content-image-text cite {
+   color: $white; font-family: "Open Sans", sans-serif; font-size: 1.25rem; text-transform: uppercase; line-height: calc(var(--baseline) * 1.75 * 1.25rem); margin-bottom: 1.5rem;
+}
+
+#panel-image-text.panel-uao-image-quote .content-image-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#panel-image-text.panel-uao-image-quote .content-image-text.bg-maroon {
+    background: $maroon;
+}
+
+#panel-image-text.panel-uao-image-quote .content-image-text.bg-maroon h4, #panel-image-text.panel-uao-image-quote .content-image-text.bg-maroon p  {
+    color: $white !important;
+}
+
+#panel-image-text.panel-uao-image-quote .content-image-text.bg-maroon button {
+    color: black;
+}
+
+#panel-image-text.panel-uao-image-quote .content-image-text button {
+    width: auto;
+    padding-inline: 2rem;
+}
+
+#panel-image-text.panel-uao-image-quote .content-image-text.bg-brick {
+    background: $brick;
+}
+
+
+#panel-image-text.panel-uao-image-quote .content-image-text.bg-gold {
+    background: $gold;
+}
+
+@media only screen and (max-width: 480px) {
+    #panel-image-text.panel-uao-image-quote .content-image-text h4 {
+        font-size: 2rem; line-height: calc(var(--baseline) * 1.75 * 2rem);
+    }
+    
+    #panel-image-text.panel-uao-image-quote .content-image-text p {
+        font-size: 1rem; line-height: calc(var(--baseline) * 1.75 * 1rem);
+    }
+}

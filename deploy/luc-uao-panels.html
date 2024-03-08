@@ -587,57 +587,133 @@
 							<div class="padding-md"></div>
 						</div>
 					</div>
-					<!-- panel-uao-hero -->
+                    <!-- panel-uao-hero video -->
 					<div id="panel-top" class="container-fluid">
-						<div class="container"><h5>Panel UAO - Hero</h5></div>
+						<div class="container"><h5>Panel UAO - Hero Video</h5></div>
 					</div>
-					<!-- tabs -->
-<section id="panel-tabs" class="container-fluid">
-	<div class="container">
-			<div class="grid-wrapper-min-max">
-				<div class="grid-item">
-					<div class="tabs">
-						<div role="tablist" aria-label="tab-aria-label">
-							<button role="tab" aria-selected="true" aria-controls="tab-01-tab" id="tab-aria-01">
-								Tab 01
-							</button>
-							<button role="tab" aria-selected="false" aria-controls="tab-02-tab" id="tab-aria-02" tabindex="-1">
-								Tab 02
-							</button>
-							<button role="tab" aria-selected="false" aria-controls="tab-03-tab" id="tab-aria-03" tabindex="-1" data-deletable="">
-								Tab 03
-							</button>
-						</div>
-						<div class="tab-panel" tabindex="0" role="tabpanel" id="tab-01-tab" aria-labelledby="tab-aria-01">
-							<img src="http://via.placeholder.com/1800x500"/>
-							<h4>Content for tab 01 is here</h4>
-							<div class="sans-serif">
-								<p><span class="leadin">Tab 01lorem ipsum dolor</span> sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Vestibulum quis sapien metus. (Photo by Someone Namehere)</p>
-								<p><a class="cta" href="###">CTA link here</a></p>
-							</div>
-						</div>
-						<div class="tab-panel" tabindex="0" role="tabpanel" id="tab-02-tab" aria-labelledby="tab-aria-02" hidden="">
-							<img src="http://via.placeholder.com/1800x500"/>
-							<h4>Content for tab 02 is here</h4>
-							<div class="sans-serif">
-								<p><span class="leadin">Tab 01lorem ipsum dolor</span> sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Vestibulum quis sapien metus. (Photo by Someone Namehere)</p>
-								<p><a class="cta" href="###">CTA link here</a></p>
-							</div>
-						</div>
-						<div class="tab-panel" tabindex="0" role="tabpanel" id="tab-03-tab" aria-labelledby="tab-aria-03" hidden="">
-							<img src="http://via.placeholder.com/1800x500"/>
-							<h4>Content for tab 03 is here</h4>
-							<div class="sans-serif">
-								<p><span class="leadin">Tab 01lorem ipsum dolor</span> sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Vestibulum quis sapien metus. (Photo by Someone Namehere)</p>
-								<p><a class="cta" href="###">CTA link here</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-</section>
+					<!-- image-lead - full-overlay -->
+<section id="panel-image" class="container-fluid hero-image-lead full-overlay panel-uao-hero-video">
+    <video
+    class="full-width-video hero-video" id="hero-video"
+    playsinline muted loop autoplay
+    src="../../videos/uao-hero-video-720.mp4"
+    data-src-mobile="mobile.mp4"
+    data-src-desktop="desktop.mp4">
+      <div class="video-error">Uhoh, no video for you.</div>
+  </video>
+    <div class="grid-wrapper-min-max">
+        <div class="grid-item">
+            <div class="hero-image-content">
+                <div class="headline-buttons">
+                    <!-- <h6 class="center">Category label</h6> -->
+                    <h1>Headline here lorem ipsum unum dolar sit amet</h1>
+                    <div class="intro-paragraph sans-serif">
+                        <div class="grid-wrapper-min-max three-column">
 
+                            <div class="grid-item">
+                                <button class="container-100"
+                                    onclick="window.open('https://cms4.luc.edu/terminalfour/preview/8/en/163373','_blank')">Button
+                                    1 Title Here</button>
+                            </div>
+
+                            <div class="grid-item">
+                                <button class="container-100"
+                                    onclick="window.open('https://www.luc.edu','_blank')">Button 2 Title Here</button>
+
+                            </div>
+
+                            <div class="grid-item">
+                                <button class="container-100"
+                                    onclick="window.open('https://cms4.luc.edu/terminalfour/preview/8/en/161422','_blank')">Button
+                                    3 Title Here</button>
+
+                            </div>
+
+                            <div class="grid-item">
+                                <button class="container-100"
+                                    onclick="window.open('https://www.luc.edu','_blank')">Button 4 Title Here</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="slides slick-initialized slick-slider uao-scroll-arrow">
+                    <h6>Explore</h6>
+                <button type="button" data-role="none" class="slick-next slick-arrow bounce">Explore</button>
+                </div>
+                    <button id="video-control" class="video-control playing">
+                        <div class="play-pause-container">
+                        <span class="video-control-play">
+                             <span class="video-control-symbol" aria-hidden="true"></span>
+                            <!--<span class="video-control-label">Play</span> -->
+                        </span>
+                        <span class="video-control-pause">
+                            <span class="video-control-symbol" aria-hidden="true"></span>
+                            <!-- <span class="video-control-label">Pause</span> -->
+                        </span>
+                        </div>
+                    </button>
+            </div>
+        </div>
+    </div>
+</section>
+					<div class="container">
+						<hr class="padding-divider"></hr>
+						<footnote>Documentation for panel here. Must include for each panel.</footnote>
+					</div>
+					<!-- panel-uao-hero image -->
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Panel UAO - Hero Image</h5></div>
+					</div>
+					<!-- image-lead - full-overlay -->
+<section id="panel-image" class="container-fluid hero-image-lead full-overlay panel-uao-hero-image">
+    <img src="http://via.placeholder.com/1800x1000" />
+    <div class="grid-wrapper-min-max">
+        <div class="grid-item">
+            <div class="hero-image-content">
+                <div class="headline-buttons">
+                    <!-- <h6 class="center">Category label</h6> -->
+                    <h1>Headline here lorem ipsum unum dolar sit amet</h1>
+                    <div>
+                        <div class="grid-wrapper-min-max three-column">
+
+                            <div class="grid-item">
+                                <button class="container-100"
+                                    onclick="window.open('https://cms4.luc.edu/terminalfour/preview/8/en/163373','_blank')">Button
+                                    1 Title Here</button>
+                            </div>
+
+                            <div class="grid-item">
+                                <button class="container-100"
+                                    onclick="window.open('https://www.luc.edu','_blank')">Button 2 Title Here</button>
+
+                            </div>
+
+                            <div class="grid-item">
+                                <button class="container-100"
+                                    onclick="window.open('https://cms4.luc.edu/terminalfour/preview/8/en/161422','_blank')">Button
+                                    3 Title Here</button>
+
+                            </div>
+
+                            <div class="grid-item">
+                                <button class="container-100"
+                                    onclick="window.open('https://www.luc.edu','_blank')">Button 4 Title Here</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="slides slick-initialized slick-slider uao-scroll-arrow">
+                    <h6>Explore</h6>
+                <button type="button" data-role="none" class="slick-next slick-arrow bounce">Explore</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 					<div class="container">
 						<hr class="padding-divider"></hr>
 						<footnote>Documentation for panel here. Must include for each panel.</footnote>
@@ -647,20 +723,20 @@
 						<div class="container"><h5>Panel UAO - Tabs</h5></div>
 					</div>
 					<!-- tabs -->
-<section id="panel-tabs" class="container-fluid">
+<section id="panel-tabs" class="container-fluid uao-tabs bg-gray-extra-light">
 	<div class="container">
 			<div class="grid-wrapper-min-max">
 				<div class="grid-item">
 					<div class="tabs">
-						<div role="tablist" aria-label="tab-aria-label">
-							<button role="tab" aria-selected="true" aria-controls="tab-01-tab" id="tab-aria-01">
-								Tab 01
+						<div role="tablist" aria-label="tab-aria-label" class="tab-list">
+							<button class="tab-button" role="tab" aria-selected="true" aria-controls="tab-01-tab" id="tab-aria-01">
+								<img src="https://raw.githubusercontent.com/mmorrison6/Exposure-Files/main/Mobile-Pres-Medallion-2022-Portraits-Sarah-Pericich_1000x1000.jpg"/>
 							</button>
-							<button role="tab" aria-selected="false" aria-controls="tab-02-tab" id="tab-aria-02" tabindex="-1">
-								Tab 02
+							<button class="tab-button" role="tab" aria-selected="false" aria-controls="tab-02-tab" id="tab-aria-02" tabindex="-1">
+								<img src="https://raw.githubusercontent.com/mmorrison6/Exposure-Files/main/Mobile-Pres-Medallion-2022-Portraits-Iliana-Monarrez_1000x1000.jpg"/>
 							</button>
-							<button role="tab" aria-selected="false" aria-controls="tab-03-tab" id="tab-aria-03" tabindex="-1" data-deletable="">
-								Tab 03
+							<button class="tab-button" role="tab" aria-selected="false" aria-controls="tab-03-tab" id="tab-aria-03" tabindex="-1" data-deletable="">
+								<img src="https://raw.githubusercontent.com/mmorrison6/Exposure-Files/main/Mobile-Pres-Medallion-2022-Portraits-Seth-Hawkins-Huisenga_1000x1000.jpg"/>
 							</button>
 						</div>
 						<div class="tab-panel" tabindex="0" role="tabpanel" id="tab-01-tab" aria-labelledby="tab-aria-01">
@@ -701,51 +777,48 @@
 					<div id="panel-top" class="container-fluid">
 						<div class="container"><h5>Panel UAO - Image Text</h5></div>
 					</div>
-					<!-- tabs -->
-<section id="panel-tabs" class="container-fluid">
-	<div class="container">
-			<div class="grid-wrapper-min-max">
-				<div class="grid-item">
-					<div class="tabs">
-						<div role="tablist" aria-label="tab-aria-label">
-							<button role="tab" aria-selected="true" aria-controls="tab-01-tab" id="tab-aria-01">
-								Tab 01
-							</button>
-							<button role="tab" aria-selected="false" aria-controls="tab-02-tab" id="tab-aria-02" tabindex="-1">
-								Tab 02
-							</button>
-							<button role="tab" aria-selected="false" aria-controls="tab-03-tab" id="tab-aria-03" tabindex="-1" data-deletable="">
-								Tab 03
-							</button>
-						</div>
-						<div class="tab-panel" tabindex="0" role="tabpanel" id="tab-01-tab" aria-labelledby="tab-aria-01">
-							<img src="http://via.placeholder.com/1800x500"/>
-							<h4>Content for tab 01 is here</h4>
-							<div class="sans-serif">
-								<p><span class="leadin">Tab 01lorem ipsum dolor</span> sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Vestibulum quis sapien metus. (Photo by Someone Namehere)</p>
-								<p><a class="cta" href="###">CTA link here</a></p>
-							</div>
-						</div>
-						<div class="tab-panel" tabindex="0" role="tabpanel" id="tab-02-tab" aria-labelledby="tab-aria-02" hidden="">
-							<img src="http://via.placeholder.com/1800x500"/>
-							<h4>Content for tab 02 is here</h4>
-							<div class="sans-serif">
-								<p><span class="leadin">Tab 01lorem ipsum dolor</span> sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Vestibulum quis sapien metus. (Photo by Someone Namehere)</p>
-								<p><a class="cta" href="###">CTA link here</a></p>
-							</div>
-						</div>
-						<div class="tab-panel" tabindex="0" role="tabpanel" id="tab-03-tab" aria-labelledby="tab-aria-03" hidden="">
-							<img src="http://via.placeholder.com/1800x500"/>
-							<h4>Content for tab 03 is here</h4>
-							<div class="sans-serif">
-								<p><span class="leadin">Tab 01lorem ipsum dolor</span> sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Vestibulum quis sapien metus. (Photo by Someone Namehere)</p>
-								<p><a class="cta" href="###">CTA link here</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
+					<!-- image-text -->
+<section id="panel-image-text" class="container-fluid">
+	<div class="grid-wrapper-grid-area">
+		<div class="grid-area grid-area-image">
+			<div class="content-image-text-image">
+				<img src="https://raw.githubusercontent.com/mmorrison6/Exposure-Files/main/Mobile-Pres-Medallion-2022-Portraits-Amali-Fernando_1000x1000.jpg"/>
 			</div>
 		</div>
+		<div class="grid-area grid-area-content">
+			<div class="content-image-text">
+				<h4>Headline lorem ipsum hereum</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Vestibulum quis sapien metus. Morbi in purus id erat sollicitudin pulvinar. Donec a consequat magna.</p>
+                <div class="grid-item  button-maroon">       
+                        <button class="container-50" onclick="window.open('/soc/about/newsevents/','_blank')">Read More</button>
+                    </div>
+				<a class="cta" href="#">Link here</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="padding-md"></div>
+
+<section id="panel-image-text" class="container-fluid panel-uao-image-quote">
+	<div class="grid-wrapper-grid-area toggle-grid-area">
+		<div class="grid-area grid-area-image">
+			<div class="content-image-text-image">
+				<img src="https://raw.githubusercontent.com/mmorrison6/Exposure-Files/main/Mobile-Pres-Medallion-2022-Portraits-Amali-Fernando_1000x1000.jpg"/>
+			</div>
+		</div>
+		<div class="grid-area grid-area-content">
+			<div class="content-image-text bg-maroon">
+				<h4>Firstname Lastname</h4>
+				<blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Vestibulum quis sapien metus. Morbi in purus id erat sollicitudin pulvinar. Donec a consequat magna. Excepteur sint occaecat cupidatat non proident."</blockquote>
+				<cite>— Firstname Lastname, Associate Dean</cite>
+                <div class="grid-item button-gold">     
+                        <button class="container-100" onclick="window.open('/soc/about/newsevents/','_blank')">Read More</button>
+                    </div>
+				<!-- <a class="cta" href="#">Link here</a> -->
+			</div>
+		</div>
+	</div>
 </section>
 
 					<div class="container">
