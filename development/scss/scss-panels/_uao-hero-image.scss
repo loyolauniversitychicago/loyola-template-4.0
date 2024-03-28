@@ -42,7 +42,6 @@
     background-color: rgba(0, 0, 0, 0);
     transform: rotateZ(90deg);
     right: auto;
-
 }
 
 div.slides.slick-initialized.slick-slider.uao-scroll-arrow {
@@ -92,6 +91,7 @@ button.slick-arrow.slick-next.bounce:hover {
     #panel-image.panel-uao-hero-image.hero-image-lead.full-overlay {
       aspect-ratio: 1280 / 720;
     }
+    
     #panel-image.panel-uao-hero-image.hero-image-lead.full-overlay .hero-image-content h1 {
         font-size: 2rem; padding-bottom: 1.5rem; text-align: center; line-height: 1.25;
     }
