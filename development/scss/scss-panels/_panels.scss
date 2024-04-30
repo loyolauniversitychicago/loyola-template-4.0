@@ -423,7 +423,8 @@ tr:nth-child(odd) { background: $gray-extra-light; }
 }
 #panel-button-cta.bg-maroon h5,
 #panel-button-cta.bg-maroon h3,
-#panel-button-cta.bg-maroon p {
+#panel-button-cta.bg-maroon p,
+#panel-button-cta.bg-maroon p strong {
   color: $white !important;
 }
 #panel-button-cta.bg-gold button,
