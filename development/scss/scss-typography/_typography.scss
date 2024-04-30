@@ -218,10 +218,6 @@ p strong, .standard-paragraph p strong, li strong, li a strong, ol strong, ol a 
     line-height: rvr(1.65);
   }
 }
-a.cta {
-  line-height: 1.65;
-  line-height: rvr(1.65);
-}
 
 p a, a.cta, li a, p a strong, li a strong, a.cta, strong a.cta {
   color: $maroon;
@@ -231,6 +227,23 @@ p a, a.cta, li a, p a strong, li a strong, a.cta, strong a.cta {
   }
 }
 
+/* bg-maroon */
+/* paragraphs */
+.bg-maroon p strong, .bg-maroon .standard-paragraph p strong,
+/* list items */
+.bg-maroon li, .bg-maroon ol,
+#main-content-wrapper .bg-maroon ol li,
+#main-content-wrapper .bg-maroon ul li,
+#main-content-wrapper-full-width .bg-maroon ol li,
+#main-content-wrapper-full-width .bg-maroon ul li,
+.bg-maroon li strong, .bg-maroon ol strong,
+#main-content-wrapper .bg-maroon ol li strong,
+#main-content-wrapper .bg-maroon ul li strong,
+#main-content-wrapper-full-width .bg-maroon ol li strong,
+#main-content-wrapper-full-width .bg-maroon ul li strong,
+/* cards */
+.bg-maroon .flex-item.content p, .bg-maroon .flex-item.content p.explainer,
+/* panels */
 #panel-intro.bg-maroon .intro-paragraph > h1,
 #panel-intro.bg-maroon .intro-paragraph > p,
 #panel-intro.bg-maroon .intro-paragraph > p strong,
