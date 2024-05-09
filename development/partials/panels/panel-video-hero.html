@@ -1,0 +1,69 @@
+<!-- video-lead - full-overlay -->
+<section class="container-fluid hero-video-lead full-overlay">
+    <video
+    class="full-width-video hero-video" id="hero-video"
+    playsinline muted loop autoplay
+    src="https://loyolauniversitychicago.github.io/loyola-template-4.0/deploy/videos/uao-hero-video-720.mp4"
+    data-src-mobile="mobile.mp4"
+    data-src-desktop="desktop.mp4">
+      <div class="video-error">Uhoh, no video for you.</div>
+    </video>
+    <div class="grid-wrapper-min-max">
+        <div class="grid-item">
+            <!-- position-center = modifying class -->
+            <div class="hero-video-content">
+                <div class="headline-buttons">
+                    <h6 class="center">Loyola University Chicago</h6>
+                    <h1>Welcome to Loyola</h1>
+                    <div class="intro-paragraph sans-serif">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="grid-wrapper-min-max three-columns">
+                        <!-- button-01 -->
+                        <div class="grid-item">
+                            <button onclick="window.open('https://www.luc.edu','_blank')">
+                                Apply now
+                            </button>
+                        </div>
+                        <!-- button-02 -->
+                        <div class="grid-item">
+                            <button onclick="window.open('https://www.luc.edu','_blank')">
+                                Visit campus
+                            </button>
+                        </div>
+                        <!-- button-03 -->
+                        <div class="grid-item">
+                            <button onclick="window.open('https://www.luc.edu','_blank')">
+                                Request info
+                            </button>
+                        </div>
+                        <!-- button-04 -->
+                        <!--
+                        <div class="grid-item">
+                            <button class="container-100" onclick="window.open('https://www.luc.edu','_blank')">
+                                Button 4 Title Here
+                            </button>
+                        </div>
+                        -->
+                    </div>
+                </div>
+                <div class="slides slick-initialized slick-slider uao-scroll-arrow">
+                    <h6>Explore</h6>
+                    <button type="button" data-role="none" class="slick-next slick-arrow bounce">Explore</button>
+                </div>
+                <button id="video-control" class="video-control playing">
+                    <div class="play-pause-container">
+                        <span class="video-control-play">
+                            <span class="video-control-symbol" aria-hidden="true"></span>
+                            <!--<span class="video-control-label">Play</span> -->
+                        </span>
+                        <span class="video-control-pause">
+                            <span class="video-control-symbol" aria-hidden="true"></span>
+                            <!-- <span class="video-control-label">Pause</span> -->
+                        </span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
