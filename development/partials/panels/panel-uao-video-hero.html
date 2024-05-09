@@ -1,67 +1,68 @@
 <!-- video-lead - full-overlay -->
-<section class="container-fluid hero-image-lead full-overlay hero-video-lead ">
-    <img src="https://raw.githubusercontent.com/mmorrison6/Exposure-Files/main/Mobile-Pres-Medallion-2022-Portraits-Amali-Fernando_1000x1000.jpg"/>
+<section class="container-fluid hero-video-lead full-overlay">
     <video
     class="full-width-video hero-video" id="hero-video"
     playsinline muted loop autoplay
-    src="../../videos/uao-hero-video-720.mp4"
+    src="https://loyolauniversitychicago.github.io/loyola-template-4.0/deploy/videos/uao-hero-video-720.mp4"
     data-src-mobile="mobile.mp4"
     data-src-desktop="desktop.mp4">
       <div class="video-error">Uhoh, no video for you.</div>
     </video>
     <div class="grid-wrapper-min-max">
         <div class="grid-item">
-            <div class="hero-image-content">
+            <!-- position-center = modifying class -->
+            <div class="hero-video-content position-center">
                 <div class="headline-buttons">
-                    <!-- <h6 class="center">Category label</h6> -->
-                    <h1>Headline here lorem ipsum unum dolar sit amet</h1>
+                    <h6 class="center">Loyola University Chicago</h6>
+                    <h1>Welcome to Loyola</h1>
                     <div class="intro-paragraph sans-serif">
-                        <div class="grid-wrapper-min-max three-column">
-
-                            <div class="grid-item">
-                                <button class="container-100"
-                                    onclick="window.open('https://cms4.luc.edu/terminalfour/preview/8/en/163373','_blank')">Button
-                                    1 Title Here</button>
-                            </div>
-
-                            <div class="grid-item">
-                                <button class="container-100"
-                                    onclick="window.open('https://www.luc.edu','_blank')">Button 2 Title Here</button>
-
-                            </div>
-
-                            <div class="grid-item">
-                                <button class="container-100"
-                                    onclick="window.open('https://cms4.luc.edu/terminalfour/preview/8/en/161422','_blank')">Button
-                                    3 Title Here</button>
-
-                            </div>
-
-                            <div class="grid-item">
-                                <button class="container-100"
-                                    onclick="window.open('https://www.luc.edu','_blank')">Button 4 Title Here</button>
-
-                            </div>
-
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="grid-wrapper-min-max three-columns">
+                        <!-- button-01 -->
+                        <div class="grid-item">
+                            <button onclick="window.open('https://www.luc.edu','_blank')">
+                                Apply now
+                            </button>
                         </div>
+                        <!-- button-02 -->
+                        <div class="grid-item">
+                            <button onclick="window.open('https://www.luc.edu','_blank')">
+                                Visit campus
+                            </button>
+                        </div>
+                        <!-- button-03 -->
+                        <div class="grid-item">
+                            <button onclick="window.open('https://www.luc.edu','_blank')">
+                                Request info
+                            </button>
+                        </div>
+                        <!-- button-04 -->
+                        <!--
+                        <div class="grid-item">
+                            <button class="container-100" onclick="window.open('https://www.luc.edu','_blank')">
+                                Button 4 Title Here
+                            </button>
+                        </div>
+                        -->
                     </div>
                 </div>
                 <div class="slides slick-initialized slick-slider uao-scroll-arrow">
                     <h6>Explore</h6>
-                <button type="button" data-role="none" class="slick-next slick-arrow bounce">Explore</button>
+                    <button type="button" data-role="none" class="slick-next slick-arrow bounce">Explore</button>
                 </div>
-                    <button id="video-control" class="video-control playing">
-                        <div class="play-pause-container">
+                <button id="video-control" class="video-control playing">
+                    <div class="play-pause-container">
                         <span class="video-control-play">
-                             <span class="video-control-symbol" aria-hidden="true"></span>
+                            <span class="video-control-symbol" aria-hidden="true"></span>
                             <!--<span class="video-control-label">Play</span> -->
                         </span>
                         <span class="video-control-pause">
                             <span class="video-control-symbol" aria-hidden="true"></span>
                             <!-- <span class="video-control-label">Pause</span> -->
                         </span>
-                        </div>
-                    </button>
+                    </div>
+                </button>
             </div>
         </div>
     </div>

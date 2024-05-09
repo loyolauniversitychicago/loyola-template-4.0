@@ -1,39 +1,140 @@
-/* UAO Hero Video */
+/* UAO Video Hero */
 
-.hero-video-lead.hero-image-lead.full-overlay {
+.hero-video-lead.full-overlay {
+    height: 80vh;
     min-height: 800px;
+    min-height: 80vh;
     aspect-ratio: 1280 / 720;
 }
 
-.hero-video-lead.hero-image-lead.full-overlay .hero-image-content {
-    position: relative;
+.hero-video-lead.full-overlay .grid-wrapper-min-max {
+    display: flex;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    height: 100%;
 }
 
-.full-overlay.hero-video-lead video.hero-video {
+.hero-video-lead.full-overlay video.hero-video {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.hero-video-lead.hero-image-lead.full-overlay .hero-image-content {
-    justify-content: center;
-    padding: 2rem 5% 2.25rem;
+.hero-video-lead.full-overlay .hero-video-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    align-items: start;
+    justify-content: start;
     background: rgba(0, 0, 0, 0.7);
+    h1, h6, p {
+        color: $white;
+    }
 }
 
-.hero-video-lead.hero-image-lead.full-overlay .hero-image-content h1 {
-    font-size: 3.5rem; padding-bottom: 1.5rem; text-align: left; line-height: 1.25;
+/* additional overlay - content readability */
+.hero-video-lead.full-overlay .hero-video-content:before {
+    display: block;
+    position: absolute;
+    top: calc(50% - 25%);
+    left: 0;
+    width: 50%;
+    height: 50%;
+    content: "";
+    border-radius: 50%;
+    background: rgba(0,0,0,.35);
+    filter: blur(5rem);
 }
 
-.hero-video-lead.hero-image-lead.full-overlay .hero-image-content .headline-buttons {
+/* sets up button wrapper */
+.hero-video-lead.full-overlay .hero-video-content .headline-buttons {
+    position: relative;
+}
+
+.hero-video-lead .headline-buttons .grid-wrapper-min-max  {
+    margin: 0;
+    grid-gap: 2rem;
+}
+
+/* button group - adjusts width - button count variations */
+.hero-video-lead .hero-video-content .headline-buttons .grid-wrapper-min-max.three-columns  {
+    grid-template-columns: 1fr 1fr 1fr !important;
+    width: 100%;
+    @include phone-portrait {
+        display: block;
+    }
+}
+
+.hero-video-lead .hero-video-content .headline-buttons .grid-wrapper-min-max.two-columns  {
+    grid-template-columns: 1fr 1fr !important;
+    width: 80%;
+}
+
+.hero-video-lead .hero-video-content .headline-buttons .grid-wrapper-min-max.one-column  {
+    grid-template-columns: 1fr !important;
     width: 50%;
 }
 
-.hero-video-lead.hero-image-lead.full-overlay .hero-image-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow {
+.hero-video-lead.full-overlay .hero-video-content {
+    position: relative;
+    justify-content: center;
+    padding: 2rem 5% 2.25rem;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* default override - content - text align left */
+.hero-video-lead.full-overlay .hero-video-content h1,
+.hero-video-lead.full-overlay .hero-video-content h6,
+.hero-video-lead.full-overlay .hero-video-content p {
+    margin-bottom: calc(var(--baseline)* .5* 1rem);
+    text-align: left;
+}
+
+.hero-video-lead.full-overlay .hero-video-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.25;
+}
+
+/* default override - button */
+.hero-video-lead .headline-buttons .grid-wrapper-min-max button {
+    width: 100%;
+    border: solid .125rem #ffffff;
+}
+
+/* default override - add class - position-center - all variations */
+/* additional overlay - position */
+.hero-video-lead.full-overlay .hero-video-content.position-center:before {
+    left: calc(50% - 25%);
+}
+
+.hero-video-lead .hero-video-content.position-center .headline-buttons .grid-wrapper-min-max {
+    margin: 0 auto;
+}
+
+.hero-video-lead.full-overlay .hero-video-content.position-center .headline-buttons {
+    margin: 0 auto;
+    width: 65%;
+}
+
+.hero-video-lead.full-overlay .hero-video-content.position-center .headline-buttons button {
+    margin: 0.75rem auto;
+}
+
+/* additional overlay - text align center */
+.hero-video-lead.full-overlay .hero-video-content.position-center h1,
+.hero-video-lead.full-overlay .hero-video-content.position-center h6,
+.hero-video-lead.full-overlay .hero-video-content.position-center p {
+    text-align: center;
+}
+
+/* explore */
+.hero-video-lead.full-overlay .hero-video-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow {
     display: flex;
     position: absolute;
-    left: 50%;
+    left: calc(50% - 5rem); /* accounts for width of element */
+    width: 10rem;
     bottom: 8%;
     align-items: center;
     justify-content: center;
@@ -41,11 +142,16 @@
     background-color: rgba(0, 0, 0, 0);
 }
 
-.hero-video-lead.hero-image-lead.full-overlay .hero-image-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow h6 {
+/* default override - explore position */
+.hero-video-lead.full-overlay .hero-video-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow {
+    bottom: 15%;
+}
+
+.hero-video-lead.full-overlay .hero-video-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow h6 {
     text-align: center;
 }
 
-.hero-video-lead.hero-image-lead.full-overlay .hero-image-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow button.slick-arrow.slick-next {
+.hero-video-lead.full-overlay .hero-video-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow button.slick-arrow.slick-next {
     background-color: rgba(0, 0, 0, 0);
     transform: rotateZ(90deg);
     right: auto;
@@ -95,22 +201,42 @@ button.slick-arrow.slick-next.bounce:hover {
 }
 
 /* Play and Pause Button */
+/* added button.video-control to override button base CSS */
 
-.video-control {position: absolute; bottom: 0; right: 0;}
+.video-control,
+button.video-control {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    border-radius: .25rem 0 0 0;
+    border-top: solid .125rem #ffffff;
+    border-left: solid .125rem #ffffff;
+}
 
 .video-control:not(.playing) .video-control-pause,
 .video-control.playing .video-control-play {
-	opacity: 0;
+    opacity: 0;
 }
 
-.video-control {height: 50px; width: 50px; margin: 0; padding: 0; border-radius: 0%;}
-.video-control span {display: flex; transition: 500ms all ease;}
+.video-control span {
+    display: flex;
+    transition: 500ms all ease;
+}
 
-.play-pause-container {position: relative; width: 100%; height: 100%;}
+.play-pause-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 
 .video-control-pause {
     position: absolute;
-    left: 35%; top: 30%;
+    left: 35%;
+    top: 30%;
     box-sizing: border-box;
     width: 20px;
     height: 20px;
@@ -121,7 +247,8 @@ button.slick-arrow.slick-next.bounce:hover {
 
 .video-control-play {
     position: absolute;
-    left: 35%; top: 30%;
+    left: 35%;
+    top: 30%;
     box-sizing: border-box;
     width: 20px;
     height: 20px;
@@ -130,19 +257,31 @@ button.slick-arrow.slick-next.bounce:hover {
     border-color: transparent transparent transparent $white;
 }
 
-@media only screen and (max-width: 480px) {
-    .hero-video-lead.hero-image-lead.full-overlay {
-      aspect-ratio: 1280 / 720;
-    }
-    .hero-video-lead.hero-image-lead.full-overlay .hero-image-content h1 {
-        font-size: 2rem; padding-bottom: 1.5rem; text-align: center; line-height: 1.25;
-    }
+/* media queries */
 
-    .hero-video-lead.hero-image-lead.full-overlay .hero-image-content .headline-buttons {
+@media only screen and (max-width: 480px) {
+/* phone - column width variations */
+    .hero-video-lead .hero-video-content .headline-buttons .grid-wrapper-min-max.two-columns,
+    .hero-video-lead .hero-video-content .headline-buttons .grid-wrapper-min-max.one-column {
         width: 100%;
     }
 
-    .hero-video-lead.hero-image-lead.full-overlay .hero-image-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow {
+    .hero-video-lead.full-overlay {
+        aspect-ratio: 1280 / 720;
+    }
+
+    .hero-video-lead.full-overlay .hero-video-content h1 {
+        font-size: 3rem;
+        padding-bottom: 1.5rem;
+        text-align: center;
+        line-height: 1.25;
+    }
+
+    .hero-video-lead.full-overlay .hero-video-content .headline-buttons {
+        width: 100%;
+    }
+
+    .hero-video-lead.full-overlay .hero-video-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow {
         display: flex;
         position: absolute;
         left: auto;
@@ -153,5 +292,4 @@ button.slick-arrow.slick-next.bounce:hover {
         background-color: rgba(0, 0, 0, 0);
         width: -webkit-fill-available;
     }
-
-  }
+}
