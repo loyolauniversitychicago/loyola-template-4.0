@@ -1,6 +1,44 @@
 /* UAO Hero Video */
 
-#panel-image.panel-uao-hero-video.hero-image-lead.full-overlay {
+.hero-video-lead.full-overlay {
+    display: grid;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero-video-lead.full-overlay img {
+    display: flex;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    height: 100%;
+    max-height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.hero-video-lead.full-overlay .grid-wrapper-min-max {
+    display: flex;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    height: 100%;
+}
+
+.hero-video-lead.full-overlay .hero-video-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    top: 0;
+    padding-top: 5rem !important;
+    height: 100%;
+    align-items: start;
+    justify-content: start;
+    background: rgba(0, 0, 0, 0.7);
+    h1, h6, p {
+        color: $white;
+    }
+}
+
+.hero-video-lead.full-overlay {
     height: 80vh;
     min-height: 800px;
     min-height: 80vh;
@@ -8,7 +46,7 @@
 }
 
 /* additional overlay - content readability */
-#panel-image.panel-uao-hero-video.hero-image-lead.full-overlay .hero-image-content:before {
+.hero-video-lead.full-overlay .hero-video-content:before {
     display: block;
     position: absolute;
     top: calc(50% - 25%);
@@ -22,39 +60,42 @@
 }
 
 /* sets up button wrapper */
-#panel-image.panel-uao-hero-video.hero-image-lead.full-overlay .hero-image-content .headline-buttons {
+.hero-video-lead.full-overlay .hero-video-content .headline-buttons {
     position: relative;
 }
 
-#panel-image .headline-buttons .grid-wrapper-min-max  {
+.hero-video-lead .headline-buttons .grid-wrapper-min-max  {
     margin: 0;
     grid-gap: 2rem;
 }
 
 /* button group - adjusts width - button count variations */
-#panel-image .hero-image-content .headline-buttons .grid-wrapper-min-max.three-columns  {
+.hero-video-lead .hero-video-content .headline-buttons .grid-wrapper-min-max.three-columns  {
     grid-template-columns: 1fr 1fr 1fr !important;
     width: 100%;
+    @include phone-portrait {
+        display: block;
+    }
 }
 
-#panel-image .hero-image-content .headline-buttons .grid-wrapper-min-max.two-columns  {
+.hero-video-lead .hero-video-content .headline-buttons .grid-wrapper-min-max.two-columns  {
     grid-template-columns: 1fr 1fr !important;
     width: 80%;
 }
 
-#panel-image .hero-image-content .headline-buttons .grid-wrapper-min-max.one-column  {
+.hero-video-lead .hero-video-content .headline-buttons .grid-wrapper-min-max.one-column  {
     grid-template-columns: 1fr !important;
     width: 50%;
 }
 
-#panel-image.full-overlay.panel-uao-hero-video video.hero-video {
+.hero-video-lead.full-overlay video.hero-video {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-#panel-image.panel-uao-hero-video.hero-image-lead.full-overlay .hero-image-content {
+.hero-video-lead.full-overlay .hero-video-content {
     position: relative;
     justify-content: center;
     padding: 2rem 5% 2.25rem;
@@ -62,52 +103,52 @@
 }
 
 /* default override - content - text align left */
-#panel-image.panel-uao-hero-video.hero-image-lead.full-overlay .hero-image-content h1,
-#panel-image.panel-uao-hero-video.hero-image-lead.full-overlay .hero-image-content h6,
-#panel-image.panel-uao-hero-video.hero-image-lead.full-overlay .hero-image-content p {
+.hero-video-lead.full-overlay .hero-video-content h1,
+.hero-video-lead.full-overlay .hero-video-content h6,
+.hero-video-lead.full-overlay .hero-video-content p {
     margin-bottom: calc(var(--baseline)* .5* 1rem);
     text-align: left;
 }
 
-#panel-image.panel-uao-hero-video.hero-image-lead.full-overlay .hero-image-content h1 {
+.hero-video-lead.full-overlay .hero-video-content h1 {
     font-size: 3.5rem;
     line-height: 1.25;
 }
 
 /* default override - button */
-#panel-image .headline-buttons .grid-wrapper-min-max button {
+.hero-video-lead .headline-buttons .grid-wrapper-min-max button {
     width: 100%;
     border: solid .125rem #ffffff;
 }
 
 /* default override - add class - position-center - all variations */
 /* additional overlay - position */
-#panel-image.panel-uao-hero-video.hero-image-lead.full-overlay .hero-image-content.position-center:before {
+.hero-video-lead.full-overlay .hero-video-content.position-center:before {
     left: calc(50% - 25%);
 }
 
-#panel-image .hero-image-content.position-center .headline-buttons .grid-wrapper-min-max {
+.hero-video-lead .hero-video-content.position-center .headline-buttons .grid-wrapper-min-max {
     margin: 0 auto;
 }
 
-#panel-image.panel-uao-hero-video.hero-image-lead.full-overlay .hero-image-content.position-center .headline-buttons {
+.hero-video-lead.full-overlay .hero-video-content.position-center .headline-buttons {
     margin: 0 auto;
     width: 65%;
 }
 
-#panel-image.panel-uao-hero-video.hero-image-lead.full-overlay .hero-image-content.position-center .headline-buttons button {
+.hero-video-lead.full-overlay .hero-video-content.position-center .headline-buttons button {
     margin: 0.75rem auto;
 }
 
 /* additional overlay - text align center */
-#panel-image.panel-uao-hero-video.hero-image-lead.full-overlay .hero-image-content.position-center h1,
-#panel-image.panel-uao-hero-video.hero-image-lead.full-overlay .hero-image-content.position-center h6,
-#panel-image.panel-uao-hero-video.hero-image-lead.full-overlay .hero-image-content.position-center p {
+.hero-video-lead.full-overlay .hero-video-content.position-center h1,
+.hero-video-lead.full-overlay .hero-video-content.position-center h6,
+.hero-video-lead.full-overlay .hero-video-content.position-center p {
     text-align: center;
 }
 
 /* explore */
-#panel-image.panel-uao-hero-video.hero-image-lead.full-overlay .hero-image-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow {
+.hero-video-lead.full-overlay .hero-video-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow {
     display: flex;
     position: absolute;
     left: calc(50% - 5rem); /* accounts for width of element */
@@ -120,15 +161,15 @@
 }
 
 /* default override - explore position */
-#panel-image.panel-uao-hero-video.hero-image-lead.full-overlay .hero-image-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow {
+.hero-video-lead.full-overlay .hero-video-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow {
     bottom: 15%;
 }
 
-#panel-image.panel-uao-hero-video.hero-image-lead.full-overlay .hero-image-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow h6 {
+.hero-video-lead.full-overlay .hero-video-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow h6 {
     text-align: center;
 }
 
-#panel-image.panel-uao-hero-video.hero-image-lead.full-overlay .hero-image-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow button.slick-arrow.slick-next {
+.hero-video-lead.full-overlay .hero-video-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow button.slick-arrow.slick-next {
     background-color: rgba(0, 0, 0, 0);
     transform: rotateZ(90deg);
     right: auto;
@@ -238,27 +279,27 @@ button.video-control {
 
 @media only screen and (max-width: 480px) {
 /* phone - column width variations */
-    #panel-image .hero-image-content .headline-buttons .grid-wrapper-min-max.two-columns,
-    #panel-image .hero-image-content .headline-buttons .grid-wrapper-min-max.one-column {
+    .hero-video-lead .hero-video-content .headline-buttons .grid-wrapper-min-max.two-columns,
+    .hero-video-lead .hero-video-content .headline-buttons .grid-wrapper-min-max.one-column {
         width: 100%;
     }
 
-    #panel-image.panel-uao-hero-video.hero-image-lead.full-overlay {
+    .hero-video-lead.full-overlay {
         aspect-ratio: 1280 / 720;
     }
 
-    #panel-image.panel-uao-hero-video.hero-image-lead.full-overlay .hero-image-content h1 {
-        font-size: 2rem;
+    .hero-video-lead.full-overlay .hero-video-content h1 {
+        font-size: 3rem;
         padding-bottom: 1.5rem;
         text-align: center;
         line-height: 1.25;
     }
 
-    #panel-image.panel-uao-hero-video.hero-image-lead.full-overlay .hero-image-content .headline-buttons {
+    .hero-video-lead.full-overlay .hero-video-content .headline-buttons {
         width: 100%;
     }
 
-    #panel-image.panel-uao-hero-video.hero-image-lead.full-overlay .hero-image-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow {
+    .hero-video-lead.full-overlay .hero-video-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow {
         display: flex;
         position: absolute;
         left: auto;
