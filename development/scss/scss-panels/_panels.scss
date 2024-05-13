@@ -941,10 +941,11 @@ button.content-activate-symbol.activate-symbol-close {
       align-content: center;
       margin: 0 auto;
       padding: 0;
-      width: 60%;
+      width: 70%;
       height: auto;
       border: none;
       @include phone-portrait {
+        width: 100%;
         font-size: 1.25rem;
         line-height: 2;
       }
