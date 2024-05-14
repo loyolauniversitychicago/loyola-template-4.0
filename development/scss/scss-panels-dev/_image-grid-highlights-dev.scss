@@ -1,68 +1,85 @@
-/* image grid highlights */
+/* image grid only */
 
-/* specifically for image-grid-highlights - panel - height 50 */
-.image-grid-highlights .grid-item .content-image-overlay.active,
-.image-grid-highlights .grid-area .content-image-overlay.active {
-  height: 50%;
-  opacity: 1;
-}
-
-.image-grid-highlights {
+.image-grid {
+  background-image: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   .grid-wrapper-min-max {
-    grid-template-columns: 1fr 1fr 1fr;
-    .grid-item {
-      display: none;
-      .caption-overlay {
-        background: rgb(0,0,0);
-        background: linear-gradient(0deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.55) 85%);
-      }
-      .content-image-overlay {
-        padding: 2.5rem;
-        h6, h4, h3, p, a {
-          text-align: center;
-        }
-      }
-    }
-    .grid-item:nth-child(1),
-    .grid-item:nth-child(2),
-    .grid-item:nth-child(3) {
-      display: block;
-    }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    grid-auto-rows: auto;
+    grid-row-gap: .25em;
+    width: 100%;
+    grid-gap: 0;
+  }
+  .grid-item {
+    position: relative;
+    margin: 0 !important;
+    border: solid none;
   }
   img {
-    display: block;
     margin: 0;
-    width: 100%;
   }
   p.caption-overlay {
     position: absolute;
     bottom: -29px;
     left: 0px;
     padding: .5rem .5rem .5rem .5rem;
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
+    width: 70%;
+    height: auto;
+    min-height: 75px;
     font-family: 'Open Sans', sans-serif;
     font-size: .75rem;
     color: $gray-extra-light;
     text-transform: uppercase;
     text-shadow: 0 0 15px $bg-overlay;
+    border-radius: 0 10px 0 0;
+    background: rgba(0,0,0,.35);
+    span {
+      display: block;
+      width: 100%;
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.75;
+    }
+    span.caption-overlay-name {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: .85rem;
+    }
+  }
+}
+
+/* image grid highlights */
+
+/* specifically for image-grid-highlights - panel - height 50 */
+.image-grid-highlights .grid-item .content-image-overlay.active,
+.image-grid-highlights .grid-area .content-image-overlay.active {
+  height: 80%;
+  opacity: 1;
+}
+
+.image-grid-highlights {
+  p.caption-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
     text-align: center;
     border-radius: 0;
-    background: none;
+    background: rgba(0, 0, 0, 0.5);
     span {
       position: absolute;
       top: 4rem;
       left: 0;
       margin: 0 10%;
-      width: calc(80% - 1rem);
+      width: calc(100% - 20%);
       font-family: 'Antenna Condensed Bold', sans-serif;
       font-size: 2.5rem;
       line-height: 1.25;
-      color: $gray-extra-light;
-      text-align: center;
       text-shadow: 0 0 .5rem rgba(0,0,0,.35);
-      text-transform: uppercase;
       @include tablet-portrait {
         font-size: 1.85rem;
       }
@@ -82,25 +99,19 @@
 /* gradient overlay */
 
 .image-grid-highlights .grid-item .content-image-overlay {
-  padding: 40% 2em 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.7)));
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 10%);
 }
-.image-grid.image-grid-highlights h2 {
-  position: absolute;
-  top: 4rem;
-  font-size: 2.5rem;
-  color: $gray-extra-light;
-  text-align: center;
-  text-shadow: 0 0 .5rem rgba(0,0,0,.35);
-  text-transform: uppercase;
-  @include tablet-portrait {
-    font-size: 1.85rem;
-  }
-  @include phone-landscape {
-    font-size: 1.75rem;
-  }
-  @include phone-portrait {
-    font-size: 2rem;
-  }
+
+/* center alignment of symbol */
+
+.image-grid.image-grid-highlights .content-activate-symbol {
+  left: calc(50% - 1.125rem);
+  cursor: default;
+}
+
+.image-grid.image-grid-highlights .content-activate-symbol.activate-symbol-plus {
+  margin-bottom: .75rem;
+  left: calc(50% - 1rem);
+  cursor: default;
 }
