@@ -1,59 +1,171 @@
-/* UAO Image Quote */
+/* image - text */
 
-#panel-image-text.panel-uao-image-quote .content-image-text h4 {
-    font-size: 3.5rem; line-height: calc(var(--baseline) * 1.75 * 2rem);
+.panel-image-text .grid-wrapper-grid-area {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr !important;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    -ms-grid-rows: auto;
+    grid-auto-rows: auto;
+    grid-row-gap: 0;
+    width: 100%;
+    grid-gap: 0;
+    .grid-area {
+    position: relative;
+    }
+    img {
+      margin: 0 !important;
+    }
+  }
+  .grid-area-image {
+  grid-area: 1 / 1 / span 1 / span 2;
+  @include tablet-portrait {
+    grid-area: 1 / 1 / span 1 / span 4;
+  }
+  }
+  .grid-area-content {
+  grid-area: 1 / 3 / span 1 / span 2;
+  @include tablet-portrait {
+    grid-area: 2 / 1 / span 1 / span 4;
+  }
+  }
+  
+  .panel-image-text .grid-wrapper-grid-area.toggle-grid-area {
+    .grid-area-image {
+    grid-area: 1 / 3 / span 1 / span 2;
+    @include tablet-portrait {
+      grid-area: 1 / 1 / span 1 / span 4;
+    }
+    }
+    .grid-area-content {
+    grid-area: 1 / 1 / span 1 / span 2;
+    @include tablet-portrait {
+      grid-area: 2 / 1 / span 1 / span 4;
+    }
+    }
+  }
+  
+  .panel-image-text img {
+    margin: 0;
+  }
+  
+  .panel-image-text {
+    .grid-wrapper-grid-area {
+      grid-gap: 0;
+      .grid-area {
+        margin: 0;
+        @include phone-portrait {
+          margin: 0 !important;
+        }
+      }
+    }
+    .content-image-text-image {
+        padding-top: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-image: url('https://source.unsplash.com/1000x1000/?portrait-01');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        img {
+        display: none;
+        }
+    }
+    .content-image-text {
+        padding: 4rem;
+        height: 100%;
+        background: $gray-light;
+        h6, h4, p, p em, p strong, blockquote, cite {
+            color: $black;
+        }
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.125rem;
+        }
+        blockquote, cite {
+            text-align: left;
+            display: none;
+        }
+        cite {
+            text-transform: uppercase;
+        }
+    }
+}
+  
+.panel-image-text.bg-maroon,
+.panel-image-text.bg-gray,
+.panel-image-text.bg-gray-dark,
+.panel-image-text.bg-patina,
+.panel-image-text.bg-patina-dark {
+.content-image-text {
+        h6, h4, p, p em, p strong, blockquote, cite {
+            color: $white !important;
+        }
+    }
 }
 
-#panel-image-text.panel-uao-image-quote .content-image-text blockquote {
-    font-size: 1.75rem; color: $white; text-align: left; border: none; padding: 0; margin: 1.5rem 0;
+.panel-image-text.bg-maroon .content-image-text {
+    background: $maroon !important;
+}
+.panel-image-text.bg-gray .content-image-text {
+    background: $gray !important;
+}
+.panel-image-text.bg-gray-dark .content-image-text {
+    background: $gray-dark !important;
+}
+.panel-image-text.bg-patina .content-image-text {
+    background: $patina !important;
+}
+.panel-image-text.bg-patina-dark .content-image-text {
+    background: $patina-dark !important;
 }
 
-#panel-image-text.panel-uao-image-quote .content-image-text p {
-    font-size: 1.5rem; line-height: calc(var(--baseline) * 1.75 * 1.25rem);
+.panel-image-text .content-image-text-image img::before {
+    height: 100%;
 }
+  
 
-#panel-image-text.panel-uao-image-quote .content-image-text cite {
-   color: $white; font-family: "Open Sans", sans-serif; font-size: 1.25rem; text-transform: uppercase; line-height: calc(var(--baseline) * 1.75 * 1.25rem); margin-bottom: 1.5rem;
+/* image-text-blockquote */
+
+.panel-image-text .content-image-text-image {
+    background-image: url('https://source.unsplash.com/1000x1000/?portrait-01');
 }
-
-#panel-image-text.panel-uao-image-quote .content-image-text {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#panel-image-text.panel-uao-image-quote .content-image-text.bg-maroon {
-    background: $maroon;
-}
-
-#panel-image-text.panel-uao-image-quote .content-image-text.bg-maroon h4, #panel-image-text.panel-uao-image-quote .content-image-text.bg-maroon p  {
-    color: $white !important;
-}
-
-#panel-image-text.panel-uao-image-quote .content-image-text.bg-maroon button {
-    color: black;
-}
-
-#panel-image-text.panel-uao-image-quote .content-image-text button {
-    width: auto;
-    padding-inline: 2rem;
-}
-
-#panel-image-text.panel-uao-image-quote .content-image-text.bg-brick {
-    background: $brick;
-}
-
-
-#panel-image-text.panel-uao-image-quote .content-image-text.bg-gold {
-    background: $gold;
+.panel-image-text.panel-image-text-blockquote .content-image-text {
+    h6, p, a {
+        display: none;
+    }
+    h4 {
+        font-size: 1.25rem;
+        line-height: calc(var(--baseline) * 1.75 * 1rem);
+        text-transform: uppercase;
+    }
+    blockquote, cite {
+        display: block;
+    }
+    blockquote {
+        margin: 1.5rem 0;
+        padding: 0;
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: left;
+        border: none;
+    }
+    cite {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        text-transform: uppercase;
+        line-height: calc(var(--baseline) * 1.75 * 1.25rem);
+        margin-bottom: 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 480px) {
-    #panel-image-text.panel-uao-image-quote .content-image-text h4 {
+    .panel-image-text.panel-image-text-blockquote .content-image-text h4 {
         font-size: 2rem; line-height: calc(var(--baseline) * 1.75 * 2rem);
     }
-    
-    #panel-image-text.panel-uao-image-quote .content-image-text p {
+    .panel-image-text.panel-image-text-blockquote .content-image-text p {
         font-size: 1rem; line-height: calc(var(--baseline) * 1.75 * 1rem);
     }
 }
