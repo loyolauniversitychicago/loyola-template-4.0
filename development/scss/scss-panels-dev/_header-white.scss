@@ -1,0 +1,116 @@
+/* header - update - 051624 */
+
+header {
+    #header-white {
+        #site-brand-wrapper {
+        padding: 1.75rem 1rem .75rem;
+        background: $white !important;
+        border-bottom: solid .25rem $gray;
+        box-shadow: 0 0 .5rem $bg-overlay;
+        #brand {
+                display: block;
+                float: left !important; /* template override */
+                width: auto !important;
+                img {
+                    opacity: 1;
+                }
+            }
+            #loyola-university-chicago {
+                display: none;
+            }
+            #site-name {
+                display: inline;
+                width: auto;
+                font-size : 1.85rem;
+                > a {
+                    display: inline;
+                    position: relative;
+                    top: -.45rem;
+                    margin: 0 0 0 1rem;
+                    padding: 0 0 0 1rem;
+                    width: auto;
+                    color: #000000 !important;
+                    letter-spacing: -.075rem;
+                    border-left: solid 1px #000000;
+                }
+            }
+        }
+    }
+}
+nav#audience-directory {
+    display: block !important;
+    @include tablet-portrait {
+        display: none !important;
+    }
+}
+/* audience navigation */
+nav, #site-brand-wrapper, #audience-navigation, #directory-navigation,
+ul#audience-nav[role=menubar] li a[role=menuitem],
+ul#audience-nav[role=menubar] li button,
+ul#directory-nav[role=menubar] li a[role=menuitem],
+ul#directory-nav[role=menubar] li button {
+    background-color: $maroon !important;
+    color: $white !important;
+}
+ul[role=menubar] li a:hover, ul[role=menubar] li a[role=menuitem]:hover {
+    color: $white;
+    background-color: $maroon !important;
+}
+/* hover */
+/* navigation */
+nav#main {
+    background-color: #555555 !important;
+}
+#site-nav ul[role=menubar] li a[role=menuitem]:hover,
+#site-nav ul[role=menubar] li a[role=menuitem]:focus,
+#site-nav ul[role=menubar] li a:hover, ul[role=menubar] li a:focus {
+    color: #ffffff !important;
+    background-color: #8d0024 !important;
+}
+#site-nav ul[role=menubar] li a[role=menuitem]:hover,
+#site-nav ul[role=menubar] li a[role=menuitem]:focus,
+#site-nav ul[role=menubar] li a:hover, #site-nav ul[role=menubar] li a:focus,
+ul#audience-nav[role=menubar] li a[role=menuitem]:hover,
+ul#audience-nav[role=menubar] li a[role=menuitem]:focus,
+ul#audience-nav[role=menubar] li button:hover,
+ul#audience-nav[role=menubar] li button:focus,
+ul#directory-nav[role=menubar] li a[role=menuitem]:hover,
+ul#directory-nav[role=menubar] li a[role=menuitem]:focus,
+ul#directory-nav[role=menubar] li button:hover,
+ul#directory-nav[role=menubar] li button:focus {
+    color: #eeeeee !important;
+    background: #5d0034 !important;
+    background-color: #5d0034 !important;
+}
+
+#social-icon-bar a {
+    background: #555555 !important;
+}
+ul[role=menubar] li a:hover,
+#site-nav #social-icon-bar a:hover {
+    background-color: #5d0024 !important;
+}
+
+/* site nav */
+
+#site-nav li a {
+    padding: 1.25rem 1.25rem 1rem 1.25rem !important;
+}
+nav#main-mobile {
+    display: inline-block;
+    position: relative;
+    top: -.35rem;
+    background: none !important;
+    #menu-button-mobile {
+        width: 2.25rem;
+        opacity: 1;
+        span.menu-bar-one, span.menu-bar-two, span.menu-bar-three, span.menu-bar-four {
+        background: lighten($black, 70%);
+        }
+        span.menu-text {
+            bottom: 0;
+            font-size: .75rem;
+            color: lighten($black, 70%);
+        }
+    }
+}
