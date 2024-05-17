@@ -38,6 +38,25 @@ header {
     }
 }
 
+nav#main-mobile {
+    display: inline-block;
+    position: relative;
+    top: -.35rem;
+    background: none !important;
+    #menu-button-mobile {
+        width: 2.25rem;
+        opacity: 1;
+        span.menu-bar-one, span.menu-bar-two, span.menu-bar-three, span.menu-bar-four {
+        background: lighten($black, 70%);
+        }
+        span.menu-text {
+            bottom: 0;
+            font-size: .75rem;
+            color: $maroon;
+        }
+    }
+}
+
 // nav#audience-directory {
 //     display: block !important;
 //     @include tablet-portrait {
