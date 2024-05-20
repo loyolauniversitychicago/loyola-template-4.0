@@ -7,15 +7,29 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
 <body>
+<style>
+	#site-nav li a {padding: .85rem 1rem !important; background: #777777;}
+	#site-nav button.main-navigation-btn {height: 2.5rem;}
+	#cta-nav {display: none;}
+	#site-nav > li > button {background-color: $maroon;}
+	#site-nav button.main-navigation-btn,
+	#site-nav button.main-navigation-btn:hover {height: 2.75rem;}
+	#site-nav .multilevel-linkul-0 {top: 44px;}
+</style>
 	<!-- HEADER -->
+	@@include('./partials/framework/luc-search-overlay.html')
+	@@include('./partials/framework/luc-sliding-menu.html')
 	<header>
-	@@include('./partials/framework/luc-header-white.html')
+		@@include('./partials/framework/luc-header-white.html')
 	</header>
-	@@include('./partials/panels/panel-image-text-blockquote.html')
-	<div class="padding-md"></div>
-	@@include('./partials/panels/panel-image-grid-dev.html')
-	<div class="padding-md"></div>
-	@@include('./partials/panels/panel-image-grid-highlights-dev.html')
+		@@include('./partials/framework/luc-nav-desktop-accessible-V2.html')
+	<main id="main-content-start" alt="This is the beginning of the main content of the page">
+		@@include('./partials/panels/panel-image-text-blockquote.html')
+		<div class="padding-md"></div>
+		@@include('./partials/panels/panel-image-grid-dev.html')
+		<div class="padding-md"></div>
+		@@include('./partials/panels/panel-image-grid-highlights-dev.html')
+	</main>
 </script>
 <!-- inject:js -->
 <!-- endinject -->
