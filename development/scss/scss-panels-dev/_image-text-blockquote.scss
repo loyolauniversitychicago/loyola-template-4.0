@@ -133,7 +133,7 @@
     background-image: url('https://source.unsplash.com/1000x1000/?portrait-01');
 }
 .panel-image-text.panel-image-text-blockquote .content-image-text {
-    h6, p, a {
+    h6, p {
         display: none;
     }
     h4 {
@@ -167,5 +167,31 @@
     }
     .panel-image-text.panel-image-text-blockquote .content-image-text p {
         font-size: 1rem; line-height: calc(var(--baseline) * 1.75 * 1rem);
+    }
+}
+.panel-image-text.panel-image-text-blockquote.grid-area-content-only {
+    .grid-area.grid-area-image {
+        display: none;
+    }
+    .grid-area-content {
+        grid-area: 1 / 1 / span 1 / span 4;
+        @include tablet-portrait {
+          grid-area: 2 / 1 / span 1 / span 4;
+        }
+        .content-image-text {
+            background: $white;
+        }
+        h6, h4, blockquote, cite, a {
+            width: 100%;
+            text-align: center;
+        }
+        blockquote {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+        button {
+            margin: 0 auto;
+        }
     }
 }

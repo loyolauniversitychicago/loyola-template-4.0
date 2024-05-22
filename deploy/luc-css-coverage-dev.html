@@ -15,15 +15,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
 <body>
-<style>
-	#site-nav li a {padding: .85rem 1rem !important; background: #777777;}
-	#site-nav button.main-navigation-btn {height: 2.5rem;}
-	#cta-nav {display: none;}
-	#site-nav > li > button {background-color: $maroon;}
-	#site-nav button.main-navigation-btn,
-	#site-nav button.main-navigation-btn:hover {height: 2.75rem;}
-	#site-nav .multilevel-linkul-0 {top: 44px;}
-</style>
 	<!-- HEADER -->
 	<div id="search-overlay-wrapper">
   <div id="search-overlay" class="overlay">
@@ -481,7 +472,7 @@
 
 <div class="padding-md"></div>
 
-<!-- image-text -->
+<!-- image-text-blockquote -->
 <section class="container-fluid panel-image-text panel-image-text-blockquote bg-maroon">
 	<div class="grid-wrapper-grid-area">
 		<div class="grid-area grid-area-image">
@@ -504,7 +495,32 @@
 		</div>
 	</div>
 </section>
-		<div class="padding-md"></div>
+
+<!-- image-text-blockquote - no-image -->
+<section class="container-fluid panel-image-text panel-image-text-blockquote bg-white grid-area-content-only">
+	<div class="grid-wrapper-grid-area">
+		<div class="grid-area grid-area-image">
+			<div class="content-image-text-image">
+				<img src="https://source.unsplash.com/1000x1000/?portrait-01"/>
+			</div>
+		</div>
+		<div class="grid-area grid-area-content">
+			<div class="content-image-text">
+				<h6>Label here</h6>
+				<h4>Headline lorem ipsum hereum</h4>
+				<blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Vestibulum quis sapien metus. Morbi in purus id erat sollicitudin pulvinar. Donec a consequat magna. Excepteur sint occaecat cupidatat non proident."</blockquote>
+				<cite>— Firstname Lastname, Title Goeshere</cite>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Vestibulum quis sapien metus. Morbi in purus id erat sollicitudin pulvinar. Donec a consequat magna.</p>
+                <a class="cta" href="######">Link here</a>
+				<div class="grid-item button-maroon">       
+					<button class="container-50" onclick="window.open('localhost:3000/luc-css-coverage-dev.html','_blank')">Read More</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+		<div class="padding-sm"></div>
 		<!-- image-grid -->
 
 <section class="container-fluid container container-100 image-grid">
