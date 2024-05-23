@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title> A page to test and compile CSS usage</title>
+<head>
+	<!-- inject:css -->
+	<link rel="stylesheet" href="css/antenna-terminal-four.css">
+	<link rel="stylesheet" href="css/styles-documentation.css">
+	<link rel="stylesheet" href="css/styles-framework.css">
+	<link rel="stylesheet" href="css/styles-grid.css">
+	<link rel="stylesheet" href="css/styles-panels-dev.css">
+	<link rel="stylesheet" href="css/styles-panels.css">
+	<link rel="stylesheet" href="css/styles-typography.css">
+	<link rel="stylesheet" href="css/css-alert/styles-alert.css">
+	<!-- endinject -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+	<!-- HEADER -->
+	<div id="search-overlay-wrapper">
+  <div id="search-overlay" class="overlay">
+    <div class="container">
+      <form class="form-group" role="search">
+        <input id="global-search-input" type="search" class="search-input" placeholder="Search LUC.EDU" name="global-search" aria-labelledby="global-search-input">
+        <button id="gloabal-search-submit" type="submit">Search</button>
+      </form>
+      <span id="search-close" title="Close Overlay">×</span>
+    </div>
+  </div>
+</div>
+
+	<!-- nav-sliding-menu -->
+<nav id="side-nav" aria-label="Main navigation" class="sidenav">
+	<div id="sidenav-inner-wrapper">
+		<div id="side-nav-search-wrapper">
+			<form class="form-group" role="search">
+				<input id="global-search-input" type="search" class="search-input" placeholder="Search LUC.EDU" name="search" aria-labelledby="search">
+				<button id="gloabal-search-submit" type="submit" aria-labelledby="search"><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+		<section>
+  <nav class="multi-level-sliding-navigation" id="nav" aria-labelledby="multi-level-sliding-navigation-heading">
+    <div class="multi-level-sliding-navigation-body">
+      <div class="multi-level-sliding-navigation-main">
+        <ul class="multi-level-sliding-navigation-menu" id="menu-0">
+        <h5>Main Menu</h5>
+          <!-- menu 01-01 -->
+          <li class="multi-level-sliding-navigation-item">
+            <a href="#menu-1" class="multi-level-sliding-navigation-link" aria-controls="menu-1">
+              <span id="menu-1-heading">Sub Menu 01</span>
+              <svg class="multi-level-sliding-navigation-icon" width="16" height="16" viewBox="0 0 16 16" aria-role="presentation">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </a>
+          </li>
+          <!-- menu 01-02 -->
+          <li class="multi-level-sliding-navigation-item">
+            <a href="#menu-2" class="multi-level-sliding-navigation-link" aria-controls="menu-2">
+              <span id="menu-2-heading">Sub Menu 02</span>
+              <svg class="multi-level-sliding-navigation-icon" width="16" height="16" viewBox="0 0 16 16" aria-role="presentation">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </a>
+          </li>
+          <!-- menu 01-03 -->
+          <li class="multi-level-sliding-navigation-item">
+            <a href="#" class="multi-level-sliding-navigation-link">Menu Item 03</a>
+          </li>
+        </ul>
+        <!-- sub menu 01 -->
+        <ul class="multi-level-sliding-navigation-menu" id="menu-1" aria-labelledby="menu-1-heading">
+        <h5 style="margin: .5rem 0;">Sub Menu 01</h5>
+          <li class="multi-level-sliding-navigation-item">
+            <!-- back 01 - main -->
+            <a href="#menu-0" class="multi-level-sliding-navigation-link" aria-controls="menu-1">
+              <svg class="multi-level-sliding-navigation-icon" width="16" height="16" viewBox="0 0 16 16" aria-role="presentation">
+                <path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+              </svg>
+              <span class="menu-return">Back MAIN</span>
+              <span class="Hidden menu-return">to main menu</span>
+            </a>
+          </li>
+          <!-- sub menu 01-01 -->
+          <li class="multi-level-sliding-navigation-item">
+            <a href="#menu-3" class="multi-level-sliding-navigation-link" aria-controls="menu-3">
+              <span id="menu-3-heading">Menu Item 01-01 - To Sub 03</span>
+              <svg class="multi-level-sliding-navigation-icon" width="16" height="16" viewBox="0 0 16 16" aria-role="presentation">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </a>
+          </li>
+          <!-- sub menu 01-02 -->
+          <li class="multi-level-sliding-navigation-item">
+            <a href="#" class="multi-level-sliding-navigation-link">Menu Item 01-02</a>
+          </li>
+          <!-- sub menu 01-03 -->
+          <li class="multi-level-sliding-navigation-item">
+            <a href="#" class="multi-level-sliding-navigation-link">Menu Item 01-03</a>
+          </li>
+          <!-- sub menu 01-04 -->
+          <li class="multi-level-sliding-navigation-item">
+            <a href="#" class="multi-level-sliding-navigation-link">Menu Item 01-04</a>
+          </li>
+        </ul>
+        <!-- sub menu 02 -->
+        <ul class="multi-level-sliding-navigation-menu" id="menu-2" aria-labelledby="menu-2-heading">
+        <h5 style="margin: .5rem 0;">Sub Menu 02</h5>
+          <li class="multi-level-sliding-navigation-item">
+            <!-- back 01 - main -->
+            <a href="#menu-0" class="multi-level-sliding-navigation-link" aria-controls="menu-2">
+              <svg class="multi-level-sliding-navigation-icon" width="16" height="16" viewBox="0 0 16 16" aria-role="presentation">
+                <path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+              </svg>
+              <span class="menu-return">Back MAIN</span>
+              <span class="Hidden">to main menu</span>
+            </a>
+          </li>
+          <!-- sub menu 02-01 -->
+          <li class="multi-level-sliding-navigation-item">
+            <a href="#" class="multi-level-sliding-navigation-link">Menu Item 02-01</a>
+          </li>
+          <!-- sub menu 02-02 -->
+          <li class="multi-level-sliding-navigation-item">
+            <a href="#" class="multi-level-sliding-navigation-link">Menu Item 02-02</a>
+          </li>
+          <!-- sub menu 02-03 -->
+          <li class="multi-level-sliding-navigation-item">
+            <a href="#" class="multi-level-sliding-navigation-link">Menu Item 02-03</a>
+          </li>
+          <!-- sub menu 02-04 -->
+          <li class="multi-level-sliding-navigation-item">
+            <a href="#" class="multi-level-sliding-navigation-link">Menu Item 02-04</a>
+          </li>
+          <!-- sub menu 02-05 -->
+          <li class="multi-level-sliding-navigation-item">
+            <a href="#" class="multi-level-sliding-navigation-link">Menu Item 02-05</a>
+          </li>
+          <!-- sub menu 02-06 -->
+          <li class="multi-level-sliding-navigation-item">
+            <a href="#" class="multi-level-sliding-navigation-link">Menu Item 02-06</a>
+          </li>
+        </ul>
+        <!-- sub menu 03 -->
+        <ul class="multi-level-sliding-navigation-menu" id="menu-3" aria-labelledby="menu-3-heading">
+        <h5 style="margin: .5rem 0;">Sub Menu 03</h5>
+          <li class="multi-level-sliding-navigation-item">
+            <!-- back 02 -->
+            <a href="#menu-1" class="multi-level-sliding-navigation-link" aria-controls="menu-3">
+              <svg class="multi-level-sliding-navigation-icon" width="16" height="16" viewBox="0 0 16 16" aria-role="presentation">
+                <path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+              </svg>
+              <span class="menu-return">Back Sub 01</span>
+              <span class="Hidden">to parent menu</span>
+            </a>
+          </li>
+          <!-- sub menu 03-01 -->
+          <li class="multi-level-sliding-navigation-item">
+            <a href="#menu-4" class="multi-level-sliding-navigation-link" aria-controls="menu-4">
+              <span id="menu-4-heading">Menu Item 03-01 - To Sub 04</span>
+              <svg class="multi-level-sliding-navigation-icon" width="16" height="16" viewBox="0 0 16 16" aria-role="presentation">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </a>
+          </li>
+          <!-- sub menu 03-02 -->
+          <li class="multi-level-sliding-navigation-item">
+            <a href="#" class="multi-level-sliding-navigation-link">Menu Item 03-02</a>
+          </li>
+          <!-- sub menu 03-03 -->
+          <li class="multi-level-sliding-navigation-item">
+            <a href="#" class="multi-level-sliding-navigation-link">Menu Item 03-03</a>
+          </li>
+        </ul>
+        <!-- nested sub menu 03 > nested sub menu 04 -->
+        <ul class="multi-level-sliding-navigation-menu" id="menu-4" aria-labelledby="menu-4-heading">
+        <h5 style="margin: .5rem 0;">Sub Menu 04</h5>
+          <li class="multi-level-sliding-navigation-item">
+            <!-- back 03 -->
+            <a href="#menu-3" class="multi-level-sliding-navigation-link" aria-controls="menu-4">
+              <svg class="multi-level-sliding-navigation-icon" width="16" height="16" viewBox="0 0 16 16" aria-role="presentation">
+                <path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+              </svg>
+              <span class="menu-return">Back Sub 03</span>
+              <span class="Hidden">to menu 03</span>
+            </a>
+          </li>
+          <!-- sub menu 04-01 -->
+          <li class="multi-level-sliding-navigation-item">
+            <a href="#" class="multi-level-sliding-navigation-link">Menu Item 04-01</a>
+          </li>
+          <!-- sub menu 04-02 -->
+          <li class="multi-level-sliding-navigation-item">
+            <a href="#" class="multi-level-sliding-navigation-link">Menu Item 04-02</a>
+          </li>
+          <!-- sub menu 04-03 -->
+          <li class="multi-level-sliding-navigation-item">
+            <a href="#" class="multi-level-sliding-navigation-link">Menu Item 04-03</a>
+          </li>
+        </ul>
+      </div>
+      <!--/Nav__main-->
+    </div>
+    <!--/Nav__body-->
+  </nav>
+  <!--/Nav-->
+</section>
+
+		<div id="global-ctas" class="button-maroon">
+			<button>Apply now</button>
+			<button>Get info</button>
+			<button>Come visit</button>
+		</div>
+		<!--
+		<a href="https://www.luc.edu/">Item 01</a>
+		<a href="https://www.luc.edu/">Item 02</a>
+		<a href="https://www.luc.edu/">Item 03</a>
+		<div class="js-accordion" data-accordion-prefix-classes="minimalist" data-accordion-cool-selectors="1">
+			<h4 class="js-accordion__header">Item 04</h4>
+			<div class="js-accordion__panel">
+				<a href="https://www.luc.edu/">Link one</a>
+				<a href="https://www.luc.edu/">Link two</a>
+				<a href="https://www.luc.edu/">Link three</a>
+			</div>
+		</div>
+		<div class="js-accordion" data-accordion-prefix-classes="minimalist" data-accordion-cool-selectors="1">
+			<h4 class="js-accordion__header">Item 05</h4>
+			<div class="js-accordion__panel">
+				<a href="https://www.luc.edu/">Link one</a>
+				<a href="https://www.luc.edu/">Link two</a>
+				<a href="https://www.luc.edu/">Link three</a>
+			</div>
+		</div>
+		-->
+		<!--
+		<div class="side-nav-text sans-serif" style="margin: 20px 0">
+			<p style="font-size: .95em; line-height: 1.5; color: #aaaaaa;">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae feugiat velit. Aliquam ut nisi sagittis, cursus leo at, auctor diam. Ut ut odio non massa consequat porta eget vel ligula. Cras vitae vulputate justo. In et orci justo.
+				Donec vel nulla eu leo ultricies rhoncus non ultrices ante. Morbi blandit cursus ex, ac gravida purus venenatis et.
+			</p>
+		</div>
+		<div id="footer-address" class="vcard">
+			<div id="footercard">
+				<span id="fnorg">
+					School of Law
+				</span>
+				<span id="adr">
+					<span id="name">
+						Philip H. Corboy Law Center
+					</span>
+					<span id="street-address">
+						25 E. Pearson Street
+					</span>
+					<span id="locality">
+						Chicago
+					</span>,
+					<span class="region">
+						Il
+					</span>,
+					<span class="postal-code">
+						60611
+					</span>
+				</span>
+				<span class="tel">
+					312.915.7120
+				</span>
+				<a class="email" href="mailto:umc@luc.edu.com">Contact Us</a>
+			</div>
+			<div class="copyright">
+				<p>&copy; Copyright &amp; Disclaimer 20XX</p>
+			</div>
+		</div>
+		-->
+	</div>
+</nav>
+
+	<header>
+		<!-- header - nav -->
+<div id="header-white">
+  <a class="skip-main" href="#main-content-start">Skip to main content</a>
+  <!-- audience directory -->
+<nav id="audience-directory">
+  <div class="container-fluid">
+    <nav>
+      <ul id="audience-nav" class="disclosure-nav" role="menubar" aria-controls="menu-items">
+        <li role="menuitem">
+          <button type="button" aria-label="prospective students"
+                  onclick="location.href='http://www.luc.edu.com'">
+            Prospective students
+          </button>
+        </li>
+        <li role="menuitem">
+          <button type="button" aria-label="current students"
+                  onclick="location.href='http://www.luc.edu.com'">
+            Current students
+          </button>
+        </li>
+        <li role="menuitem">
+          <button type="button" aria-label="alumni"
+                  role="menuitem"
+                  onclick="location.href='http://www.luc.edu.com'">
+            Alumni
+          </button>
+        </li>
+      </ul>
+      <ul id="directory-nav" role="menubar">
+        <li role="menuitem">
+          <button type="button" aria-label="glossary"
+                  onclick="location.href='http://www.luc.edu.com'">
+            A-Z
+          </button>
+        </li>
+        <li role="menuitem">
+          <button type="button" aria-label="contact us"
+                  onclick="location.href='http://www.luc.edu.com'">
+            Contact
+          </button>
+        </li>
+        <li role="menuitem">
+          <button type="button" aria-label="directory"
+                  onclick="location.href='http://www.luc.edu.com'">
+            Directory
+          </button>
+        </li>
+        <li role="menuitem">
+          <button type="button" aria-label="locus"
+                  onclick="location.href='http://www.luc.edu.com'">
+            Locus
+          </button>
+        </li>
+        <li role="menuitem">
+          <button type="button" aria-label="support the university"
+                  onclick="location.href='http://www.luc.edu.com'">
+            Support LUC
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</nav>
+<script type="text/javascript">
+  var menubar = new Menubar(document.getElementById('audience-nav'));
+  menubar.init();
+</script>
+<script type="text/javascript">
+  var menubar = new Menubar(document.getElementById('directory-nav'));
+  menubar.init();
+</script>
+
+  <!-- brand -->
+  <div id="site-brand-wrapper" class="container-fluid">
+    <span id="brand">
+      <a href="https://www.luc.edu/">
+        <img src="images/01-LOY_horz-main.svg" alt="Loyola University Chicago logo">
+      </a>
+    </span>
+    <span id="loyola-university-chicago">
+      <a href="https://www.luc.edu/">
+        Loyola University Chicago
+      </a>
+    </span>
+    <span id="site-name">
+      <a href="https://www.luc.edu/">
+        School of Continuing and Professional Studies
+      </a>
+    </span>
+    <nav id="main-mobile" aria-label="Menu" role="menu">
+      <button id="menu-button-mobile" aria-label="Menu Item" aria-controls="side-nav" aria-haspopup="true" tabindex="0" type="button" role="menuitem">
+        <span class="menu-bar menu-bar-one"></span>
+        <span class="menu-bar menu-bar-two"></span>
+        <span class="menu-bar menu-bar-three"></span>
+        <span class="menu-bar menu-bar-four"></span>
+        <span class="menu-text">Menu</span>
+      </button>
+    </nav>
+  </div>
+</div>
+	</header>
+		<!-- nav-accessible -->
+<nav id="main">
+  <!-- site menu -->
+  <ul id="site-nav" class="disclosure-nav" role="menubar">
+    <li>
+      <a href="#####">About</a>
+      <ul class="multilevel-linkul-0">
+        <li><a href="#####">Link One</a></li>
+        <li><a href="#####">Link Two</a></li>
+        <li><a href="#####">Link Three</a></li>
+        <li><a href="#####">Link Four</a></li>
+      </ul>
+    </li>
+    <li>
+        <a href="#####">Academics</a>
+      <ul class="multilevel-linkul-0">
+        <li><a href="#####">Link One</a></li>
+        <li><a href="#####">Link Two</a></li>
+        <li><a href="#####">Link Three</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#####">Admissions</a>
+      <ul class="multilevel-linkul-0">
+        <li><a href="#####">Link One</a></li>
+        <li><a href="#####">Link Two</a></li>
+        <li><a href="#####">Link Three</a></li>
+        <li><a href="#####">Link Four</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#####">Alumni</a>
+      <ul class="multilevel-linkul-0">
+        <li><a href="#####">Link One</a></li>
+        <li><a href="#####">Link Two</a></li>
+        <li><a href="#####">Link Three</a></li>
+        <li><a href="#####">Link Four</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Campus Life</a>
+    </li>
+  </ul>
+  <!-- cta menu -->
+  <ul id="cta-nav" class="disclosure-nav" role="menubar">
+    <li><button type="button" role="button">Apply</button></li>
+    <li><button type="button" role="button">Info</button></li>
+    <li><button type="button" role="button">Visit</button></li>
+    <li id="information" role="none">
+      <button id="information-button" type="button" aria-expanded="true" aria-controls="information-nav">i</button>
+      <ul role="menu" id="information-nav">
+        <li role="menuitem">
+          <a href="#####">Link One</a>
+        </li>
+        <li role="menuitem">
+          <a href="#####">Link Two</a>
+        </li>
+      </ul>
+    </li>
+    <li id="search" role="none">
+      <button id="search-button" type="button" aria-expanded="true">
+        <i class="fa fa-search"></i>
+      </button>
+    </li>
+  </ul>
+</nav>
+
+
+
+
+
+	<main id="main-content-start" alt="This is the beginning of the main content of the page">
+		<section>
+	<h3 id="documentation-typography-headlines">
+		Headlines
+	</h3>
+	<div class="padding-xsm"></div>
+	<div class="display">
+	<h1>
+		H1 hedgeline used as a first-level headline
+	</h1>
+	</div>
+	<h1>
+		H1 hedgeline used as a first-level headline
+	</h1>
+	<h2>
+		H2 headline used as a first-level headline
+	</h2>
+	<div class="intro-paragraph">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur <strong>strong tag here</strong> elit. Etiam gravida leo massa, at elementum orci consequat non. Vestibulum quis sapien metus. Nam porta est in metus imperdiet, nec finibus enim viverra. Ut ultricies orci vel dapibus pharetra. Morbi in purus id erat sollicitudin pulvinar. <span><a class="cta" href="#">Link</a></span>
+		</p>
+	</div>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Vestibulum quis sapien metus. Nam porta est in metus imperdiet, nec finibus <a href="javascript:void(0);" title="link">vel magna pharetra</a> enim viverra. Ut ultricies orci vel dapibus pharetra. Morbi in purus id erat sollicitudin pulvinar. <span><a class="cta" href="#">Link</a></span>
+	</p>
+	<hr class="padding-divider">
+	</hr>
+	<footnote>Use on lede story, overview or announcement</footnote>
+	<div class="padding-sm"></div>
+	<h2>
+		H2 headline used as a first-level headline
+	</h2>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec posuere odio. Phasellus odio lectus, ultrices non pretium ac, mollis id elit. Fusce tempor tellus non felis tempus vestibulum. Donec <em>molestie purus sem guspendisse</em> at placerat turpis. Duis luctus erat <a href="javascript:void(0);" title="link">vel magna pharetra</a> aliquet. Maecenas tincidunt feugiat ultricies. Phasellus et dui risus. Vestibulum adipiscing, eros quis lobortis dictum.
+	</p>
+	<hr class="padding-divider">
+	</hr>
+	<footnote>Use on lede story, overview or announcement</footnote>
+	<div class="padding-sm"></div>
+	<h3>
+		H3 hedgeline used as a second-level headline
+	</h3>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec posuere odio. Phasellus odio lectus, ultrices non pretium ac, mollis id elit. Fusce tempor tellus non felis tempus vestibulum. Donec molestie purus sem. Suspendisse at placerat turpis. Duis luctus erat <a href="javascript:void(0);" title="link">vel magna pharetra</a> aliquet. Maecenas tincidunt feugiat ultricies. Phasellus et dui risus. Vestibulum adipiscing, eros quis lobortis dictum.
+	</p>
+	<hr class="padding-divider">
+	</hr>
+	<footnote>Use to organize page content into sections</footnote>
+	<div class="padding-sm"></div>
+	<h4>
+		H4 hedgeline used as a subhead
+	</h4>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec posuere odio. Phasellus odio lectus, ultrices non pretium ac, mollis id elit. Fusce tempor tellus non felis tempus vestibulum. Donec molestie purus sem. Suspendisse at placerat turpis. Duis luctus erat <a href="javascript:void(0);" title="link">vel magna pharetra</a> aliquet. Maecenas tincidunt feugiat ultricies. Phasellus et dui risus. Vestibulum adipiscing, eros quis lobortis dictum.
+	</p>
+	<hr class="padding-divider">
+	</hr>
+	<footnote>Use to organize sections and narrative into segments</footnote>
+	<div class="padding-sm"></div>
+	<h5 class="label">
+		H5 used as a headline or label
+	</h5>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	</p>
+		<ul>
+			<li>List item one lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
+			<li>List item one lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
+			<li>List item one lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
+		</ul>
+	<hr class="padding-divider">
+	</hr>
+	<footnote>Use as a headline on sidebars, subsections, and modules</footnote>
+	<div class="padding-md"></div>
+	<h6>
+		H6 used as a category
+	</h6>
+	<div class="sans-serif">
+		<p>
+			Lorem ipsum dolor sit amet, suspendisse at placerat turpis. Duis luctus erat <a href="javascript:void(0);" title="link">vel magna pharetra</a> aliquet.
+		</p>
+	</div>
+	<hr class="padding-divider">
+	</hr>
+	<footnote>Use for overline and underline labels to give context and to clarify</footnote>
+	<div class="padding-sm"></div>
+</section>
+)
+	</main>
+</script>
+<!-- inject:js -->
+<script src="js/bundle.js"></script>
+<!-- endinject -->
+</div>
+</body>
+</html>
