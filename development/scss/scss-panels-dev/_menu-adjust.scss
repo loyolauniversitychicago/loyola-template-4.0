@@ -7,3 +7,63 @@
 #site-nav button.main-navigation-btn,
 #site-nav button.main-navigation-btn:hover {height: 2.75rem;}
 #site-nav .multilevel-linkul-0 {top: 44px;}
+
+nav#main-mobile {
+/*  display: inline-block; - to style */
+    position: relative;
+    top: -.35rem;
+    background: none !important;
+    #menu-button-mobile {
+        width: 2.25rem;
+        opacity: 1;
+        span.menu-bar-one, span.menu-bar-two, span.menu-bar-three, span.menu-bar-four {
+        background: lighten($black, 70%);
+        }
+        span.menu-text {
+            bottom: 0;
+            font-size: .75rem;
+            color: $maroon;
+        }
+    }
+}
+
+aside#cta-menu-search-navigation {
+    float: right;
+    position: fixed;
+    top: 30%;
+    right: 0;
+    width: 10rem;
+    z-index: 10000;
+    ul[role=menubar] li {
+        float: right;
+        display: block;
+        width: 100%;
+        border: none;
+        background: $maroon;
+        button {
+            float: right;
+            width: 100%;
+            background: $maroon;
+            &:hover {
+                background: darken($maroon, 10%) !important;
+                width: 105%;
+            }
+            &::before {
+                display: inline;
+                top: calc(50% - 5px);
+                margin: 0 1rem 0 0;
+                padding: .5rem;
+                width: 1rem;
+                height: 1rem;
+                content: 'N';
+                font-family: 'Open Sans', 'Arial', Helvetica, sans-serif;
+                font-size: 1rem;
+                font-weight: 700;
+                line-height: 0;
+                background: $gold !important;
+                border-radius: 50%;
+            }
+        }
+    }
+
+}

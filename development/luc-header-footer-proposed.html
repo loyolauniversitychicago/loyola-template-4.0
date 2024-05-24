@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title> A page to develop the header, footer, and navigation updates</title>
+<head>
+	<!-- inject:css -->
+	<!-- endinject -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+	<!-- HEADER -->
+	@@include('./partials/framework/luc-search-overlay.html')
+	@@include('./partials/framework/luc-sliding-menu.html')
+	<header>
+		@@include('./partials/framework/luc-header-proposed.html')
+	</header>
+		@@include('./partials/framework/luc-nav-desktop-accessible-V2.html')
+	<main id="main-content-start" alt="This is the beginning of the main content of the page">
+		<div id="main-content-wrapper-full-width"></div>
+			<section>
+				<div class="container-fluid">
+					<div class="container container-100">
+						@@include('./partials/panels/panel-video-hero-content-centered.html')
+					</div>
+				</div>
+			</section>
+			<aside id="cta-menu-search-navigation">
+				<nav>
+					<!-- cta menu -->
+					<ul role="menubar">
+						<li><button type="button" role="button">Apply</button></li>
+						<li><button type="button" role="button">Info</button></li>
+						<li><button type="button" role="button">Visit</button></li>
+						<li id="search" role="none">
+						<button id="search-button" type="button" aria-expanded="true">
+							<i class="fa fa-search"></i>Search
+						</button>
+						</li>
+						<nav id="main-mobile" aria-label="Menu" role="menu">
+							<button id="menu-button-mobile" aria-label="Menu collapsed" aria-controls="side-nav" aria-haspopup="true" tabindex="0" type="button" role="menuitem">
+							<span class="menu-bar menu-bar-one"></span>
+							<span class="menu-bar menu-bar-two"></span>
+							<span class="menu-bar menu-bar-three"></span>
+							<span class="menu-bar menu-bar-four"></span>
+							<span class="menu-text">Menu</span>
+							</button>
+						</nav>
+					</ul>
+				</nav>
+			</aside>
+		</div>
+	</main>
+    <footer>
+        @@include('./partials/framework/luc-footer-proposed.html')
+    </footer>
+</script>
+<!-- inject:js -->
+<!-- endinject -->
+</div>
+</body>
+</html>

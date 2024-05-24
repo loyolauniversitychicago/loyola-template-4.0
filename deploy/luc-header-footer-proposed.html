@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	<title> A page to test and compile CSS usage</title>
+	<title> A page to develop the header, footer, and navigation updates</title>
 <head>
 	<!-- inject:css -->
 	<link rel="stylesheet" href="css/antenna-terminal-four.css">
@@ -446,93 +446,107 @@
 
 
 	<main id="main-content-start" alt="This is the beginning of the main content of the page">
-		<section>
-	<h3 id="documentation-typography-headlines">
-		Headlines
-	</h3>
-	<div class="padding-xsm"></div>
-	<div class="display">
-	<h1>
-		H1 hedgeline used as a first-level headline
-	</h1>
-	</div>
-	<h1>
-		H1 hedgeline used as a first-level headline
-	</h1>
-	<h2>
-		H2 headline used as a first-level headline
-	</h2>
-	<div class="intro-paragraph">
-		<p>
-			Lorem ipsum dolor sit amet, consectetur <strong>strong tag here</strong> elit. Etiam gravida leo massa, at elementum orci consequat non. Vestibulum quis sapien metus. Nam porta est in metus imperdiet, nec finibus enim viverra. Ut ultricies orci vel dapibus pharetra. Morbi in purus id erat sollicitudin pulvinar. <span><a class="cta" href="#">Link</a></span>
-		</p>
-	</div>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa, at elementum orci consequat non. Vestibulum quis sapien metus. Nam porta est in metus imperdiet, nec finibus <a href="javascript:void(0);" title="link">vel magna pharetra</a> enim viverra. Ut ultricies orci vel dapibus pharetra. Morbi in purus id erat sollicitudin pulvinar. <span><a class="cta" href="#">Link</a></span>
-	</p>
-	<hr class="padding-divider">
-	</hr>
-	<footnote>Use on lede story, overview or announcement</footnote>
-	<div class="padding-sm"></div>
-	<h2>
-		H2 headline used as a first-level headline
-	</h2>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec posuere odio. Phasellus odio lectus, ultrices non pretium ac, mollis id elit. Fusce tempor tellus non felis tempus vestibulum. Donec <em>molestie purus sem guspendisse</em> at placerat turpis. Duis luctus erat <a href="javascript:void(0);" title="link">vel magna pharetra</a> aliquet. Maecenas tincidunt feugiat ultricies. Phasellus et dui risus. Vestibulum adipiscing, eros quis lobortis dictum.
-	</p>
-	<hr class="padding-divider">
-	</hr>
-	<footnote>Use on lede story, overview or announcement</footnote>
-	<div class="padding-sm"></div>
-	<h3>
-		H3 hedgeline used as a second-level headline
-	</h3>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec posuere odio. Phasellus odio lectus, ultrices non pretium ac, mollis id elit. Fusce tempor tellus non felis tempus vestibulum. Donec molestie purus sem. Suspendisse at placerat turpis. Duis luctus erat <a href="javascript:void(0);" title="link">vel magna pharetra</a> aliquet. Maecenas tincidunt feugiat ultricies. Phasellus et dui risus. Vestibulum adipiscing, eros quis lobortis dictum.
-	</p>
-	<hr class="padding-divider">
-	</hr>
-	<footnote>Use to organize page content into sections</footnote>
-	<div class="padding-sm"></div>
-	<h4>
-		H4 hedgeline used as a subhead
-	</h4>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec posuere odio. Phasellus odio lectus, ultrices non pretium ac, mollis id elit. Fusce tempor tellus non felis tempus vestibulum. Donec molestie purus sem. Suspendisse at placerat turpis. Duis luctus erat <a href="javascript:void(0);" title="link">vel magna pharetra</a> aliquet. Maecenas tincidunt feugiat ultricies. Phasellus et dui risus. Vestibulum adipiscing, eros quis lobortis dictum.
-	</p>
-	<hr class="padding-divider">
-	</hr>
-	<footnote>Use to organize sections and narrative into segments</footnote>
-	<div class="padding-sm"></div>
-	<h5 class="label">
-		H5 used as a headline or label
-	</h5>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-	</p>
-		<ul>
-			<li>List item one lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
-			<li>List item one lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
-			<li>List item one lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
-		</ul>
-	<hr class="padding-divider">
-	</hr>
-	<footnote>Use as a headline on sidebars, subsections, and modules</footnote>
-	<div class="padding-md"></div>
-	<h6>
-		H6 used as a category
-	</h6>
-	<div class="sans-serif">
-		<p>
-			Lorem ipsum dolor sit amet, suspendisse at placerat turpis. Duis luctus erat <a href="javascript:void(0);" title="link">vel magna pharetra</a> aliquet.
-		</p>
-	</div>
-	<hr class="padding-divider">
-	</hr>
-	<footnote>Use for overline and underline labels to give context and to clarify</footnote>
-	<div class="padding-sm"></div>
+		<div id="main-content-wrapper-full-width"></div>
+			<section>
+				<div class="container-fluid">
+					<div class="container container-100">
+						<!-- video-lead - full-overlay -->
+<section class="container-fluid hero-video-lead full-overlay">
+    <video
+    class="full-width-video hero-video" id="hero-video"
+    playsinline muted loop autoplay
+    src="https://loyolauniversitychicago.github.io/loyola-template-4.0/deploy/videos/uao-hero-video-720.mp4"
+    data-src-mobile="mobile.mp4"
+    data-src-desktop="desktop.mp4">
+      <div class="video-error">Uhoh, no video for you.</div>
+    </video>
+    <div class="grid-wrapper-min-max">
+        <div class="grid-item">
+            <!-- position-center = modifying class -->
+            <div class="hero-video-content position-center">
+                <div class="headline-buttons">
+                    <h6 class="center">Loyola University Chicago</h6>
+                    <h1>Welcome to Loyola</h1>
+                    <div class="intro-paragraph sans-serif">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="grid-wrapper-min-max three-columns">
+                        <!-- button-01 -->
+                        <div class="grid-item">
+                            <button onclick="window.open('https://www.luc.edu','_blank')">
+                                Apply now
+                            </button>
+                        </div>
+                        <!-- button-02 -->
+                        <div class="grid-item">
+                            <button onclick="window.open('https://www.luc.edu','_blank')">
+                                Visit campus
+                            </button>
+                        </div>
+                        <!-- button-03 -->
+                        <div class="grid-item">
+                            <button onclick="window.open('https://www.luc.edu','_blank')">
+                                Request info
+                            </button>
+                        </div>
+                        <!-- button-04 -->
+                        <!--
+                        <div class="grid-item">
+                            <button class="container-100" onclick="window.open('https://www.luc.edu','_blank')">
+                                Button 4 Title Here
+                            </button>
+                        </div>
+                        -->
+                    </div>
+                </div>
+                <div class="slides slick-initialized slick-slider uao-scroll-arrow">
+                    <h6>Explore</h6>
+                    <button type="button" data-role="none" class="slick-next slick-arrow bounce">Explore</button>
+                </div>
+                <button id="video-control" class="video-control playing">
+                    <div class="play-pause-container">
+                        <span class="video-control-play">
+                            <span class="video-control-symbol" aria-hidden="true"></span>
+                            <!--<span class="video-control-label">Play</span> -->
+                        </span>
+                        <span class="video-control-pause">
+                            <span class="video-control-symbol" aria-hidden="true"></span>
+                            <!-- <span class="video-control-label">Pause</span> -->
+                        </span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
 </section>
-)
+					</div>
+				</div>
+			</section>
+			<aside id="cta-menu-search-navigation">
+				<nav>
+					<!-- cta menu -->
+					<ul role="menubar">
+						<li><button type="button" role="button">Apply</button></li>
+						<li><button type="button" role="button">Info</button></li>
+						<li><button type="button" role="button">Visit</button></li>
+						<li id="search" role="none">
+						<button id="search-button" type="button" aria-expanded="true">
+							<i class="fa fa-search"></i>Search
+						</button>
+						</li>
+						<nav id="main-mobile" aria-label="Menu" role="menu">
+							<button id="menu-button-mobile" aria-label="Menu collapsed" aria-controls="side-nav" aria-haspopup="true" tabindex="0" type="button" role="menuitem">
+							<span class="menu-bar menu-bar-one"></span>
+							<span class="menu-bar menu-bar-two"></span>
+							<span class="menu-bar menu-bar-three"></span>
+							<span class="menu-bar menu-bar-four"></span>
+							<span class="menu-text">Menu</span>
+							</button>
+						</nav>
+					</ul>
+				</nav>
+			</aside>
+		</div>
 	</main>
     <footer>
         <!-- footer -->
