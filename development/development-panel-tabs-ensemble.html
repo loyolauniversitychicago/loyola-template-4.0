@@ -10,17 +10,7 @@
 
 <body>
 	<div id="main-wrapper">
-		@@include('./partials/framework/luc-search-overlay.html')
-		@@include('./partials/framework/luc-sliding-menu.html')
-		<!-- HEADER -->
-		<header id="luc-header">
-			@@include('./partials/framework/luc-header.html')
-		</header>
-		@@include('./partials/framework/luc-nav-desktop-accessible.html')
 		<main id="main-content-start" alt="This is the beginning of the main content of the page">
-			<aside id="social-icon-bar">
-				<!-- sidebar content here -->
-			</aside>
 			<!-- main content here
 			by ID
 			span9 (main-content-wrapper)
@@ -30,60 +20,44 @@
 					<div class="container-fluid">
 						<div class="container">
 							<div class="padding-md"></div>
-							<h2>Panels</h2>
-							<h5>UAO</h5>
+							<h2>Panels - Development</h2>
+							<h5>Tabs Ensemble - Variations</h5>
 							<div class="padding-md"></div>
 						</div>
 					</div>
-                    <!-- panel-video-hero - content centered -->
+                    <!-- tabs ensemble - profile -->
 					<div id="panel-top" class="container-fluid">
-						<div class="container"><h5>Panel - Video Hero - Default</h5></div>
+						<div class="container"><h5>Panel - Tabs Ensemble - Profile</h5></div>
 					</div>
-					@@include('./partials/panels/panel-video-hero.html')
+					@@include('./partials/panels/development/panel-tabs-ensemble-profile.html')
 					<div class="container">
 						<hr class="padding-divider"></hr>
 						<footnote>Documentation for panel here. Must include for each panel.</footnote>
 					</div>
-					<!-- panel-video-hero - content left -->
+					<!-- tabs ensemble - profile blockquote -->
 					<div id="panel-top" class="container-fluid">
-						<div class="container"><h5>Panel - Video Hero - Content Centered</h5></div>
+						<div class="container"><h5>Panel - Tabs Ensemble - Profile Blockquote </h5></div>
 					</div>
-					@@include('./partials/panels/panel-video-hero-content-centered.html')
+					@@include('./partials/panels/development/panel-tabs-ensemble-profile-blockquote.html')
 					<div class="container">
 						<hr class="padding-divider"></hr>
 						<footnote>Documentation for panel here. Must include for each panel.</footnote>
 					</div>
-					<!-- panel-uao-tabs -->
+					<!-- tabs ensemble - blockquote -->
 					<div id="panel-top" class="container-fluid">
-						<div class="container"><h5>Panel - Tabs Ensemble</h5></div>
+						<div class="container"><h5>Panel - Tabs Ensemble - Blockquote </h5></div>
 					</div>
-					@@include('./partials/panels/panel-tabs-ensemble.html')
+					@@include('./partials/panels/development/panel-tabs-ensemble-blockquote.html')
 					<div class="container">
 						<hr class="padding-divider"></hr>
 						<footnote>Documentation for panel here. Must include for each panel.</footnote>
 					</div>
-					<!-- panel-button-image-text -->
-					<div id="panel-top" class="container-fluid">
-						<div class="container"><h5>Panel - Image Text Blockquote</h5></div>
-					</div>
-					@@include('./partials/panels/panel-image-text-blockquote.html')
-					<div class="container">
-						<hr class="padding-divider"></hr>
-						<footnote>Documentation for panel here. Must include for each panel.</footnote>
-					</div>
-					<div class="padding-lg"></div>
 				</section>
 				<aside id="main-aside-wrapper-navigation">
 					<h3>Aside</h3>
 					<!-- sidebar content here -->
 				</aside>
 			</div>
-			<aside id="social-icon-bar" class="social-not-fixed">
-				@@include('./partials/framework/luc-social-media-bar.html')
-			</aside>
-			<footer id="footer-not-fixed">
-				@@include('./partials/framework/luc-footer.html')
-			</footer>
 			<footer id="footer-fixed">
 				@@include('./partials/framework/luc-footer.html')
 			</footer>
