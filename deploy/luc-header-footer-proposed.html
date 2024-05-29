@@ -273,6 +273,75 @@
 </nav>
 
 	<header>
+		<!-- audience directory -->
+<nav id="audience-directory">
+  <div class="container-fluid">
+    <nav>
+      <ul id="audience-nav" class="disclosure-nav" role="menubar" aria-controls="menu-items">
+        <li role="menuitem">
+          <button type="button" aria-label="prospective students"
+                  onclick="location.href='http://www.luc.edu.com'">
+            Prospective students
+          </button>
+        </li>
+        <li role="menuitem">
+          <button type="button" aria-label="current students"
+                  onclick="location.href='http://www.luc.edu.com'">
+            Current students
+          </button>
+        </li>
+        <li role="menuitem">
+          <button type="button" aria-label="alumni"
+                  role="menuitem"
+                  onclick="location.href='http://www.luc.edu.com'">
+            Alumni
+          </button>
+        </li>
+      </ul>
+      <ul id="directory-nav" role="menubar">
+        <li role="menuitem">
+          <button type="button" aria-label="glossary"
+                  onclick="location.href='http://www.luc.edu.com'">
+            A-Z
+          </button>
+        </li>
+        <li role="menuitem">
+          <button type="button" aria-label="contact us"
+                  onclick="location.href='http://www.luc.edu.com'">
+            Contact
+          </button>
+        </li>
+        <li role="menuitem">
+          <button type="button" aria-label="directory"
+                  onclick="location.href='http://www.luc.edu.com'">
+            Directory
+          </button>
+        </li>
+        <li role="menuitem">
+          <button type="button" aria-label="locus"
+                  onclick="location.href='http://www.luc.edu.com'">
+            Locus
+          </button>
+        </li>
+        <li role="menuitem">
+          <button type="button" aria-label="support the university"
+                  onclick="location.href='http://www.luc.edu.com'">
+            Support LUC
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</nav>
+<script type="text/javascript">
+  var menubar = new Menubar(document.getElementById('audience-nav'));
+  menubar.init();
+</script>
+<script type="text/javascript">
+  var menubar = new Menubar(document.getElementById('directory-nav'));
+  menubar.init();
+</script>
+
 		<!-- header - nav -->
 <div id="header-white">
   <a class="skip-main" href="#main-content-start">Skip to main content</a>

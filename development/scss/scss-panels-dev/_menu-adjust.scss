@@ -43,11 +43,13 @@ aside#cta-menu-search-navigation {
         button {
             float: right;
             width: 100%;
+            text-align: left;
             background: $maroon;
             &:hover {
                 background: darken($maroon, 10%) !important;
                 width: 105%;
             }
+            /*
             &::before {
                 display: inline;
                 top: calc(50% - 5px);
@@ -63,6 +65,7 @@ aside#cta-menu-search-navigation {
                 background: $gold !important;
                 border-radius: 50%;
             }
+            */
         }
     }
 
