@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	@@include('./partials/framework/luc-head.html')
+	<!-- inject:css -->
+	<!-- endinject -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div id="main-wrapper">
+		<main id="main-content-start" alt="This is the beginning of the main content of the page">
+			<!-- main content here
+			by ID
+			span9 (main-content-wrapper)
+			span12 (main-content-wrapper-full-width) -->
+			<div id="main-content-wrapper-full-width">
+				<section id="main-section-wrapper">
+					<div class="container-fluid">
+						<div class="container">
+							<div class="padding-md"></div>
+							<h2>Panels - Development</h2>
+							<h5>Video Hero - Variations</h5>
+							<div class="padding-md"></div>
+						</div>
+					</div>
+                    <!-- image-lead-random-image - content centered -->
+					<div id="panel-top" class="container-fluid">
+						<div class="container"><h5>Panel - Image Lead - Hero - Random Image</h5></div>
+					</div>
+					@@include('./partials/panels/development/panel-image-lead-random-image.html')
+					<div class="container">
+						<hr class="padding-divider"></hr>
+						<footnote>Documentation for panel here. Must include for each panel.</footnote>
+					</div>
+				</section>
+				<aside id="main-aside-wrapper-navigation">
+					<h3>Aside</h3>
+					<!-- sidebar content here -->
+				</aside>
+			</div>
+			<footer id="footer-fixed">
+				@@include('./partials/framework/luc-footer.html')
+			</footer>
+		</main>
+		<!-- inject:js -->
+		<!-- endinject -->
+	</div>
+</body>
+
+</html>
