@@ -88,37 +88,7 @@
 					<div id="panel-top" class="container-fluid">
 						<div class="container"><h5>Panel - Image Lead - Random Image</h5></div>
 					</div>
-					<!-- image-lead - hero - random image -->
-<section id="panel-image" class="container-fluid hero-image-lead">
-	<img id="random-image" src="" alt=""/>
-	<div class="grid-wrapper-min-max">
-		<div class="grid-item">
-			<div class="hero-image-content">
-				<h6>Category label</h6>
-				<h1>Headline here lorem ipsum unum</h1>
-				<div class="intro-paragraph sans-serif">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa. <a class="cta" href="###">CTA here here</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<script>
-const imgEl = document.getElementById('random-image');
-const btn = document.getElementById('btn');
-const srcArray = ['./images/images-image-lead-random/1800x800_1.jpg', '/images/images-image-lead-random/1800x800_2.jpg', '/images/images-image-lead-random/1800x800_3.jpg', '/images/images-image-lead-random/1800x800_4.jpg', '/images/images-image-lead-random/1800x800_5.jpg', '/images/images-image-lead-random/1800x800_6.jpg', '/images/images-image-lead-random/1800x800_7.jpg', '/images/images-image-lead-random/1800x800_8.jpg'];
-randomImage();
-window.onload=randomImage;
-function randomImage() {
-	const randomIndex = Math.floor(Math.random()*srcArray.length);
-	if (randomIndex !== Number(localStorage.getItem('index'))) {
-	imgEl.src = srcArray[randomIndex];
-	localStorage.setItem('index', randomIndex);
-	} else {
-		randomImage();
-	}
-}
-</script>
+					
 					<div class="container">
 						<hr class="padding-divider"></hr>
 						<footnote>Documentation for panel here. Must include for each panel.</footnote>
