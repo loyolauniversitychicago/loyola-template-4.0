@@ -518,6 +518,14 @@ tr:nth-child(odd) { background: $gray-extra-light; }
   }
 }
 
+#main-section-wrapper #panel-links .container {
+  width: 100% !important;
+  ul li a {
+    font-size: 1.05rem;
+    line-height: 1.35;
+  }
+}
+
 /* image - caption */
 /* image - caption - RESIZE */
 

@@ -19,17 +19,23 @@
 
 #social-icon-bar.social-not-fixed {
   display: block;
-  float: left;
+  margin: auto;
+  padding: auto;
   box-sizing: border-box;
   position: relative;
   bottom: -1.095rem;
   padding: 0;
   width: 100%;
+  text-align: center;
   article {
-    display: inline-block;
-    float: left;
-    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: -1px;
+    padding: 0;
+    width: auto;
     height: 100%;
+    text-align: center;
   }
 }
 
@@ -40,7 +46,7 @@
   box-sizing: border-box;
   text-align: center;
   margin: 0;
-  padding: 10px 14px;
+  padding: .75rem 1rem;
   font-size: 20px;
   color: $white;
   border: none;
@@ -51,7 +57,6 @@
     border-top: none;
   }
   @include tablet-portrait {
-    float: left;
     box-sizing: border-box;
     padding: 10px 0;
     width: 20%;
@@ -64,7 +69,7 @@
 }
 
 #social-icon-bar.social-not-fixed a  {
-  float: left;
+  display: inline-block;
   width: 3rem;
   min-width: 3rem;
   max-width: 3rem;
