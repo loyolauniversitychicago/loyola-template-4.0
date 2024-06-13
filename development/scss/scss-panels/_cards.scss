@@ -111,7 +111,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   @include phone-portrait {
-    min-height: auto;
+    min-height: 200px;
   }
 }
 
@@ -133,6 +133,9 @@
 .grid-wrapper-min-max.card-horizontal .grid-item img {
   display: none;
   margin: 0;
+  @include tablet-portrait {
+    display: block;
+  }
 }
 
 #main-section-wrapper .grid-wrapper-min-max.card img,
