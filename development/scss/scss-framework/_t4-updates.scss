@@ -329,11 +329,9 @@ ul#site-nav button, ul#site-nav button:hover {
             background: darken($gray-extra-light, 10%);
             transition: .3s;
           }
-          &:hover a:not(ul ul li a) {
-              background: darken($gray-extra-light, 10%);
-          }
-          ul li:hover a {
-            background: darken($gray-extra-light, 10%);
+          &:hover a {
+              background-image: none;
+              background: none;
           }
         }
         li:has(button.show) {
