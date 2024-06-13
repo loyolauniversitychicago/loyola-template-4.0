@@ -203,42 +203,97 @@
   <!-- site menu -->
   <ul id="site-nav" class="disclosure-nav" role="menubar">
     <li>
-      <a href="#####">About</a>
-      <ul class="multilevel-linkul-0">
-        <li><a href="#####">Link One</a></li>
-        <li><a href="#####">Link Two</a></li>
-        <li><a href="#####">Link Three</a></li>
-        <li><a href="#####">Link Four</a></li>
+      <button type="button"
+              role="button"
+              aria-expanded="false"
+              aria-controls="id_item_one_menu">
+        Item One
+      </button>
+      <ul role="menu" id="id_item_one_menu">
+        <li role="menuitem">
+          <a href="#####">Link One</a>
+        </li>
+        <li role="menuitem">
+          <a href="#####">Link Two</a>
+        </li>
+        <li role="menuitem">
+          <a href="#####">Link Three</a>
+        </li>
+        <li role="menuitem">
+          <a href="#####">Link Four</a>
+        </li>
       </ul>
     </li>
     <li>
-        <a href="#####">Academics</a>
-      <ul class="multilevel-linkul-0">
-        <li><a href="#####">Link One</a></li>
-        <li><a href="#####">Link Two</a></li>
-        <li><a href="#####">Link Three</a></li>
+      <button type="button"
+              role="button"
+              aria-expanded="false"
+              aria-controls="id_item_two_menu">
+        Item One
+      </button>
+      <ul role="menu" id="id_item_two_menu">
+        <li role="menuitem">
+          <a href="#####">Link One</a>
+        </li>
+        <li role="menuitem">
+          <a href="#####">Link Two</a>
+        </li>
+        <li role="menuitem">
+          <a href="#####">Link Three</a>
+        </li>
+        <li role="menuitem">
+          <a href="#####">Link Four</a>
+        </li>
       </ul>
     </li>
     <li>
-      <a href="#####">Admissions</a>
-      <ul class="multilevel-linkul-0">
-        <li><a href="#####">Link One</a></li>
-        <li><a href="#####">Link Two</a></li>
-        <li><a href="#####">Link Three</a></li>
-        <li><a href="#####">Link Four</a></li>
+      <button type="button"
+              role="button"
+              aria-expanded="false"
+              aria-controls="id_item_three_menu">
+        Item Three
+      </button>
+      <ul role="menu" id="id_item_three_menu">
+        <li role="menuitem">
+          <a href="#####">Link One</a>
+        </li>
+        <li role="menuitem">
+          <a href="#####">Link Two</a>
+        </li>
+        <li role="menuitem">
+          <a href="#####">Link Three</a>
+        </li>
+        <li role="menuitem">
+          <a href="#####">Link Four</a>
+        </li>
       </ul>
     </li>
     <li>
-      <a href="#####">Alumni</a>
-      <ul class="multilevel-linkul-0">
-        <li><a href="#####">Link One</a></li>
-        <li><a href="#####">Link Two</a></li>
-        <li><a href="#####">Link Three</a></li>
-        <li><a href="#####">Link Four</a></li>
+      <button type="button"
+              role="button"
+              aria-expanded="false"
+              aria-controls="id_item_four_menu">
+        Item Four
+      </button>
+      <ul role="menu" id="id_item_four_menu">
+        <li role="menuitem">
+          <a href="#####">Link One</a>
+        </li>
+        <li role="menuitem">
+          <a href="#####">Link Two</a>
+        </li>
+        <li role="menuitem">
+          <a href="#####">Link Three</a>
+        </li>
+        <li role="menuitem">
+          <a href="#####">Link Four</a>
+        </li>
       </ul>
     </li>
     <li>
-      <a href="#">Campus Life</a>
+      <button type="button" role="button" aria-expanded="false" aria-controls="">
+        <a href="https://cms4.luc.edu/terminalfour/preview/8/en/161392">Item Five No Child</a>
+      </button>
     </li>
   </ul>
   <!-- cta menu -->
@@ -247,7 +302,12 @@
     <li><button type="button" role="button">Info</button></li>
     <li><button type="button" role="button">Visit</button></li>
     <li id="information" role="none">
-      <button id="information-button" type="button" aria-expanded="true" aria-controls="information-nav">i</button>
+      <button id="information-button"
+              type="button"
+              aria-expanded="true"
+              aria-controls="information-nav">
+          i
+      </button>
       <ul role="menu" id="information-nav">
         <li role="menuitem">
           <a href="#####">Link One</a>
@@ -258,16 +318,22 @@
       </ul>
     </li>
     <li id="search" role="none">
-      <button id="search-button" type="button" aria-expanded="true">
+      <button id="search-button"
+              type="button"
+              aria-expanded="true">
         <i class="fa fa-search"></i>
       </button>
     </li>
   </ul>
 </nav>
-
-
-
-
+<script type="text/javascript">
+  var menubar = new Menubar(document.getElementById('site-nav'));
+  menubar.init();
+</script>
+<script type="text/javascript">
+  var menubar = new Menubar(document.getElementById('cta-nav'));
+  menubar.init();
+</script>
 
 	<main id="main-content-start" alt="This is the beginning of the main content of the page">
 		<div id="main-content-wrapper-full-width"></div>
@@ -350,9 +416,9 @@
 				<nav>
 					<!-- cta menu -->
 					<ul role="menubar">
-						<li><button type="button" role="button">Apply</button></li>
-						<li><button type="button" role="button">Info</button></li>
-						<li><button type="button" role="button">Visit</button></li>
+						<li id="cta-apply"><button type="button" role="button">Apply</button></li>
+						<li id="cta-info"><button type="button" role="button">Info</button></li>
+						<li id="cta-visit"><button type="button" role="button">Visit</button></li>
 						<li id="search" role="none">
 						<button id="search-button" type="button" aria-expanded="true">
 							<i class="fa fa-search"></i>Search
@@ -360,11 +426,11 @@
 						</li>
 						<nav id="main-mobile" aria-label="Menu" role="menu">
 							<button id="menu-button-mobile" aria-label="Menu collapsed" aria-controls="side-nav" aria-haspopup="true" tabindex="0" type="button" role="menuitem">
-							<span class="menu-bar menu-bar-one"></span>
-							<span class="menu-bar menu-bar-two"></span>
-							<span class="menu-bar menu-bar-three"></span>
-							<span class="menu-bar menu-bar-four"></span>
-							<span class="menu-text">Menu</span>
+								<span class="menu-bar menu-bar-one"></span>
+								<span class="menu-bar menu-bar-two"></span>
+								<span class="menu-bar menu-bar-three"></span>
+								<span class="menu-bar menu-bar-four"></span>
+								<span class="menu-text">Menu</span>
 							</button>
 						</nav>
 					</ul>

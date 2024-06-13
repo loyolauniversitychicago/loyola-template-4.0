@@ -14,7 +14,7 @@
 		@@include('./partials/framework/luc-audience-directory.html')
 		@@include('./partials/panels/proposed/luc-header-proposed.html')
 	</header>
-		@@include('./partials/framework/luc-nav-desktop-accessible-V2.html')
+		@@include('./partials/framework/luc-nav-desktop-accessible.html')
 	<main id="main-content-start" alt="This is the beginning of the main content of the page">
 		<div id="main-content-wrapper-full-width"></div>
 			<section>
@@ -28,9 +28,9 @@
 				<nav>
 					<!-- cta menu -->
 					<ul role="menubar">
-						<li><button type="button" role="button">Apply</button></li>
-						<li><button type="button" role="button">Info</button></li>
-						<li><button type="button" role="button">Visit</button></li>
+						<li id="cta-apply"><button type="button" role="button">Apply</button></li>
+						<li id="cta-info"><button type="button" role="button">Info</button></li>
+						<li id="cta-visit"><button type="button" role="button">Visit</button></li>
 						<li id="search" role="none">
 						<button id="search-button" type="button" aria-expanded="true">
 							<i class="fa fa-search"></i>Search
@@ -38,11 +38,11 @@
 						</li>
 						<nav id="main-mobile" aria-label="Menu" role="menu">
 							<button id="menu-button-mobile" aria-label="Menu collapsed" aria-controls="side-nav" aria-haspopup="true" tabindex="0" type="button" role="menuitem">
-							<span class="menu-bar menu-bar-one"></span>
-							<span class="menu-bar menu-bar-two"></span>
-							<span class="menu-bar menu-bar-three"></span>
-							<span class="menu-bar menu-bar-four"></span>
-							<span class="menu-text">Menu</span>
+								<span class="menu-bar menu-bar-one"></span>
+								<span class="menu-bar menu-bar-two"></span>
+								<span class="menu-bar menu-bar-three"></span>
+								<span class="menu-bar menu-bar-four"></span>
+								<span class="menu-text">Menu</span>
 							</button>
 						</nav>
 					</ul>

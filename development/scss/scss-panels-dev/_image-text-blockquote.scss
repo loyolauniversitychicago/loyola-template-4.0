@@ -65,7 +65,7 @@
         padding-top: 100%;
         height: 100%;
         overflow: hidden;
-        background-image: url('https://source.unsplash.com/1000x1000/?portrait-01');
+        background-image: url('../images/images-portraits-1000x1000/medallion-2023-grace-nelson-nursing-1000x1000.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% 50%;
@@ -129,8 +129,8 @@
 
 /* image-text-blockquote */
 
-.panel-image-text .content-image-text-image {
-    background-image: url('https://source.unsplash.com/1000x1000/?portrait-01');
+.panel-image-text.panel-image-text-blockquote .content-image-text-image {
+    background-image: url('../images/images-portraits-1000x1000/medallion-2023-jonathan-larbi-arrupe-1000x1000.jpg');
 }
 .panel-image-text.panel-image-text-blockquote .content-image-text {
     h6, p {
