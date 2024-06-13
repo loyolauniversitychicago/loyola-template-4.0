@@ -326,8 +326,14 @@ ul#site-nav button, ul#site-nav button:hover {
             border: none;
           }
           &:hover {
-            background: $gray-light;
+            background: darken($gray-extra-light, 10%);
             transition: .3s;
+          }
+          &:hover a:not(ul ul li a) {
+              background: darken($gray-extra-light, 10%);
+          }
+          ul li:hover a {
+            background: darken($gray-extra-light, 10%);
           }
         }
         li:has(button.show) {
@@ -362,9 +368,10 @@ ul#site-nav button, ul#site-nav button:hover {
         }
         li.heading span {
           grid-column: 1/3;
-          background: $gray;
+          background: $maroon;
           color: $gray-extra-light;
           font-weight: bold;
+          border-top: solid 2px $white;
         }
         li button {
           border-radius: unset;
