@@ -1,29 +1,49 @@
 <!-- image-lead - hero - random image -->
-<section id="panel-image-caption" class="container-fluid bg-maroon">
+<section id="panel-image" class="container-fluid hero-image-lead hero-image-only">
 	<div class="container container-100">
+		<img id="random-image" src="" alt=""/>
 		<div class="grid-wrapper-min-max">
-			<div class="grid-item margin-none image-resize-background-image hero-wrap">
-				<img src=""
-					id="random-image"
-					class=""
-					alt=""
-					title="">
+			<div class="grid-item">
+				<div class="hero-image-content">
+					<h6>Category label</h6>
+					<h1>Headline here lorem ipsum unum</h1>
+					<div class="intro-paragraph sans-serif">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa. <a class="cta" href="###">CTA here here</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="padding-md"></div>
+<section id="panel-image" class="container-fluid hero-image-lead hero-image-only">
+	<div class="container container-100">
+		<img src="./images/images-image-lead-random/1800x800_1.jpg" alt=""/>
+		<div class="grid-wrapper-min-max">
+			<div class="grid-item">
+				<div class="hero-image-content">
+					<h6>Category label</h6>
+					<h1>Headline here lorem ipsum unum</h1>
+					<div class="intro-paragraph sans-serif">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida leo massa. <a class="cta" href="###">CTA here here</a></p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
 <script>
-	const imgRandomElement = document.getElementById('random-image');
-	const imgArray = ['./images/images-image-hero-random/1800x450_1.jpg', './images/images-image-hero-random/1800x450_2.jpg', './images/images-image-hero-random/1800x450_3.jpg', './images/images-image-hero-random/1800x450_4.jpg', './images/images-image-hero-random/1800x450_5.jpg', './images/images-image-hero-random/1800x450_6.jpg', './images/images-image-hero-random/1800x450_7.jpg'];
-	randomImage();
-	window.onload = randomImage;
-	function randomImage() {
-		const randomIndex = Math.floor(Math.random() * imgArray.length);
-		if (randomIndex !== Number(localStorage.getItem('index'))) {
-			imgRandomElement.src = imgArray[randomIndex];
-			localStorage.setItem('index', randomIndex);
-		} else {
-			randomImage();
-		}
+const imgRandomElement = document.getElementById('random-image');
+const imgArray = ['./images/images-image-lead-random/1800x800_1.jpg', './images/images-image-lead-random/1800x800_2.jpg', './images/images-image-lead-random/1800x800_3.jpg', './images/images-image-lead-random/1800x800_4.jpg', './images/images-image-lead-random/1800x800_5.jpg', './images/images-image-lead-random/1800x800_6.jpg', './images/images-image-lead-random/1800x800_7.jpg', './images/images-image-lead-random/1800x800_8.jpg'];
+randomImage();
+window.onload=randomImage;
+function randomImage() {
+	const randomIndex = Math.floor(Math.random()*imgArray.length);
+	if (randomIndex !== Number(localStorage.getItem('index'))) {
+	imgRandomElement.src = imgArray[randomIndex];
+	localStorage.setItem('index', randomIndex);
+	} else {
+		randomImage();
 	}
+}
 </script>

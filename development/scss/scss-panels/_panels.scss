@@ -355,6 +355,12 @@ tr:nth-child(odd) { background: $gray-extra-light; }
   }
 }
 
+#panel-image.hero-image-lead.hero-image-only {
+  .grid-wrapper-min-max .grid-item {
+    display: none;
+  }
+}
+
 #panel-image.full-overlay {
   display: grid;
   height: 100%;
