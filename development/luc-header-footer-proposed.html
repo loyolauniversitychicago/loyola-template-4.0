@@ -16,10 +16,13 @@
 	</header>
 		@@include('./partials/framework/luc-nav-desktop-accessible.html')
 	<main id="main-content-start" alt="This is the beginning of the main content of the page">
+		<aside id="social-icon-bar">
+			@@include('./partials/panels/proposed/luc-social-media-bar-proposed.html')
+		</aside>
 		<div id="main-content-wrapper-full-width"></div>
 			<section>
 				<div class="container-fluid">
-					<div class="container container-100">
+					<div class="container container-100">	
 						@@include('./partials/panels/development/panel-video-hero-content-centered.html')
 					</div>
 				</div>
@@ -56,6 +59,7 @@
 </script>
 <!-- inject:js -->
 <!-- endinject -->
+<script src="https://kit.fontawesome.com/4d537b50e0.js" crossorigin="anonymous"></script>
 </div>
 </body>
 </html>
