@@ -40,7 +40,7 @@
 					<div id="panel-top" class="container-fluid">
 						<div class="container"><h5>Carousel</h5></div>
 					</div>
-					@@include('./partials/panels/panel-carousel-t4.html')
+					@@include('./partials/panels/panel-carousel.html')
 					<div class="container">
 						<hr class="padding-divider"></hr>
 						<footnote>Documentation for panel here. Must include for each panel.</footnote>
@@ -114,6 +114,17 @@
 			</footer>
 		</main>
 		<script src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+		<script>
+		  $('.slides').slick({
+			slidesToShow: 1,
+			dots: true,
+			infinite: true,
+			fade: true,
+			speed: 500,
+			arrows: true,
+			adaptiveHeight: false
+		  }) 
+		</script>
 		<!-- inject:js -->
 		<!-- endinject -->
 	</div>

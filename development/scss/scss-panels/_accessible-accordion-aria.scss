@@ -93,24 +93,27 @@ h4.js-accordion-no-panel,
   font-size: 1.75em;
 }
 
+button.minimalist-accordion__header,
+button.minimalist-noanim-accordion__header,
+button.minimalist-css-accordion__header {
+  &:hover {
+    background: $gray-extra-light !important;
+  }
+  &:focus {
+    outline: solid $maroon;
+    color: #ffffff;
+  }
+}
+
 #panel-accordion [aria-expanded=true].minimalist-accordion__header,
 #panel-accordion [aria-expanded=true].minimalist-noanim-accordion__header,
 #panel-accordion [aria-expanded=true].minimalist-css-accordion__header {
   color: $white !important;
   background: $maroon !important;
-}
-
-button.minimalist-accordion__header:hover,
-button.minimalist-noanim-accordion__header:hover,
-button.minimalist-css-accordion__header:hover {
-  background: $gray-extra-light !important;
-}
-
-button.minimalist-accordion__header:focus,
-button.minimalist-noanim-accordion__header:focus,
-button.minimalist-css-accordion__header:focus {
-  outline: solid $maroon;
-  color: #ffffff;
+  &:hover {
+    color: $white;
+    background: $gray !important;
+  }
 }
 
 #side-nav button.minimalist-accordion__header:focus,

@@ -321,6 +321,9 @@ li em, li em a, li a em, {
 }
 
 .caption p {
+  margin: .75rem 0;
+  font-size: 1.05rem;
+  font-style: italic;
   line-height: 1.35;
   line-height: rvr(1.35);
   a { cursor: pointer;
@@ -853,6 +856,10 @@ p span.highlight.bg-danger { color: $white; background: $maroon; }
   }
 }
 
+#panel-modaal h4 {
+  margin-top: 0;
+}
+
 /* MS - IE11 */
 
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
@@ -942,7 +949,6 @@ blockquote cite { line-height: 1.35; }
   text-decoration: none;
   background-image: none;
 }
-
 
 #main-aside-wrapper {
   p a, a.cta, p.open-sans, p em, p,
