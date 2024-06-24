@@ -26,8 +26,6 @@ h3.minimalist-css-accordion__title {
   margin: 0 !important;
   padding: 0;
   width: 100%;
-  font-family: 'Antenna Condensed Light', sans-serif;
-  line-height: 0;
 }
 
 h4.js-accordion-no-panel,
@@ -38,9 +36,11 @@ button.minimalist-css-accordion__header {
   padding: 1rem 2rem 1rem 1rem;
 /* padding: .85rem 2rem 1rem 1rem; Sentence Case */
   color: $black !important;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.25rem;
+  letter-spacing: -.05rem !important;
   text-transform: none;
-  border-radius: 0;
+  border-radius: 0 !important;
   border: none !important;
   border-bottom: solid 1px $gray !important;
   outline: none;
@@ -80,6 +80,10 @@ h4.js-accordion-no-panel,
   border: 0;
   background: none;
   cursor: pointer;
+  a.cta {
+    font-size: 85%;
+    font-weight: 800;
+  }
   @include phone-portrait {
     font-size: 1.125rem;
   }
@@ -89,10 +93,17 @@ h4.js-accordion-no-panel,
   font-size: 1.75em;
 }
 
+#panel-accordion [aria-expanded=true].minimalist-accordion__header,
+#panel-accordion [aria-expanded=true].minimalist-noanim-accordion__header,
+#panel-accordion [aria-expanded=true].minimalist-css-accordion__header {
+  color: $white !important;
+  background: $maroon !important;
+}
+
 button.minimalist-accordion__header:hover,
 button.minimalist-noanim-accordion__header:hover,
 button.minimalist-css-accordion__header:hover {
-  background: $white !important;
+  background: $gray-extra-light !important;
 }
 
 button.minimalist-accordion__header:focus,
@@ -107,6 +118,8 @@ button.minimalist-css-accordion__header:focus {
 #side-nav button.minimalist-css-accordion__header:focus {
   outline: solid $gold;
 }
+
+/* state of accordion header - caret image */
 
 .minimalist-accordion__header::after,
 .minimalist-noanim-accordion__header::after,
@@ -135,6 +148,7 @@ button.minimalist-css-accordion__header:focus {
   margin: .4rem -1.25rem 0 0;
   transform: rotate(90deg);
   transform-origin: 50% 50%;
+  filter: invert(1);
 }
 
 /* accordion panel - content */
