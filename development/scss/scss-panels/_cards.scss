@@ -42,6 +42,14 @@
   margin-top: 1rem;
 }
 
+.grid-wrapper-min-max.card .flex-item.content ul li {
+  margin: 0 0 .5rem 0 !important;
+}
+
+.grid-wrapper-min-max.card .flex-item.content ul li, .card ul li strong {
+  line-height: 1.5 !important;
+  line-height: rvr(1.5) !important;
+}
 
 /* cards - staff profile */
 
