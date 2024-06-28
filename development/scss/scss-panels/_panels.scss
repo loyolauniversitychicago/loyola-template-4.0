@@ -190,13 +190,13 @@
 }
 
 #main-section-wrapper #panel-numbers {
-  .container.container-100 {
+  .container.container-100 .grid-wrapper-min-max {
     width: 100% !important;
   }
-  .container.container-80 {
+  .container.container-80 .grid-wrapper-min-max {
     width: 80% !important;
   }
-  .container.container-50 {
+  .container.container-50 .grid-wrapper-min-max {
     width: 50% !important;
   }
 }
