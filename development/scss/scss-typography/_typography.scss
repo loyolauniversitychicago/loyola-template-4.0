@@ -802,6 +802,10 @@ blockquote p cite:before {
   margin-bottom: calc(var(--baseline) * 1.25 * 1rem);
 }
 
+.infobox button {
+  margin: 2rem auto;
+}
+
 /* hightlights */
 /*
 p span.highlight.bg-info { background: lighten($gold,20%) }

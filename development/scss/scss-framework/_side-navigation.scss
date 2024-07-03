@@ -168,7 +168,7 @@ span.menu-text {
   height: auto;
   min-height: 100vh;
   overflow: auto;
-	background-color: lighten($gray-extra-dark,5%);
+	background-color: $gray-extra-light;
   overflow-x: hidden; /* Disable horizontal scroll */
 	z-index: 10002;
   -moz-transition: all 300ms;
@@ -226,12 +226,12 @@ body.active #side-nav {
 }
 
 #sidenav-inner-wrapper {
-	padding: 20px 20px 150px 20px; /* V1 menu */
-  padding: 20px; /* V2 layered menu */
+	padding: 2rem 2rem 150px 2rem; /* V1 menu */
+  padding: 2rem; /* V2 layered menu */
 }
 
 #global-ctas {
-  padding: 1rem;
+  padding: 2rem 0 0;
 }
 
 #global-ctas > button {

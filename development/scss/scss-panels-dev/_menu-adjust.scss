@@ -1,9 +1,7 @@
 /* menu */
 
-// #site-nav li a {padding: 1.25rem 1.25rem 1rem !important;}
-#site-nav li a {padding: 1rem 1rem .85rem 1rem !important;}
 #site-nav button.main-navigation-btn {height: 2.5rem;}
-#cta-nav {display: none;}
+// #cta-nav {display: none;}
 #site-nav > li > button {background-color: none !important;}
 #site-nav button.main-navigation-btn,
 #site-nav button.main-navigation-btn:hover {height: 2.75rem;}
@@ -18,17 +16,17 @@ nav#main-mobile {
         width: 2.25rem;
         opacity: 1;
         span.menu-bar-one, span.menu-bar-two, span.menu-bar-three, span.menu-bar-four {
-        background: lighten($black, 70%);
+        background: $maroon;
         }
         span.menu-text {
             bottom: 0;
             font-size: .75rem;
-            color: $gray-light;
+            color: $maroon;
             // this is for the white header color: $maroon;
         }
     }
 }
-
+/*
 aside#cta-menu-search-navigation {
     float: right;
     position: fixed;
@@ -94,3 +92,4 @@ aside#cta-menu-search-navigation {
         }
     }
 }
+*/

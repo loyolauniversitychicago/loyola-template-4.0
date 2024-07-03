@@ -107,11 +107,11 @@
 
 @keyframes tabFadeEffect { from {opacity: 0;} to {opacity: 1;} }
 
-.tabs-images .tab { position: relative; background: #0096A0; }
+.tabs-images .tab { position: relative; background: $maroon; }
 
 .tabs-images .tab img { margin: 0; }
 
-.tabs-images .tab .active img { padding: 0 0 2.35em 0; border: solid .35em #0096A0; }
+.tabs-images .tab .active img { padding: 0 0 2.35em 0; border: solid .35em $maroon; }
 .tabs-images .tab .active::before,
 .tabs-images .tab .active::after {
     position: absolute;
