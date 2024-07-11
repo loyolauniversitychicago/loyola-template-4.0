@@ -120,6 +120,9 @@
 
 .hero-video-lead.full-overlay .hero-video-content.position-center .headline-buttons button {
     margin: 0.75rem auto;
+    @include phone-portrait {
+        margin: 0.5rem auto;
+    }
 }
 
 /* additional overlay - text align center */
@@ -140,6 +143,9 @@
     justify-content: center;
     justify-items: center;
     background-color: rgba(0, 0, 0, 0);
+    @include phone-portrait {
+        display: none;
+    }
 }
 
 /* default override - explore position */
@@ -272,24 +278,11 @@ button.video-control {
 
     .hero-video-lead.full-overlay .hero-video-content h1 {
         font-size: 3rem;
-        padding-bottom: 1.5rem;
-        text-align: center;
-        line-height: 1.25;
+        line-height: 1.125;
     }
 
     .hero-video-lead.full-overlay .hero-video-content .headline-buttons {
         width: 100%;
     }
 
-    .hero-video-lead.full-overlay .hero-video-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow {
-        display: flex;
-        position: absolute;
-        left: auto;
-        bottom: 5%;
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
-        background-color: rgba(0, 0, 0, 0);
-        width: -webkit-fill-available;
-    }
 }

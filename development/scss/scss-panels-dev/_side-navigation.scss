@@ -1,0 +1,49 @@
+#side-nav {
+    @include phone-portrait {
+        background-color: $gray-dark;
+        left: -80vw;
+        width: 80vw;
+        max-width: 80vw;
+        box-shadow: 0 0 2rem $bg-overlay-extra-dark;
+    }
+    .multi-level-sliding-navigation-main .multi-level-sliding-navigation-menu {
+        padding: 0;
+    }
+    .multi-level-sliding-navigation-main li.heading {
+        margin: 0;
+        padding: .75rem 1rem .75rem;
+        width: auto;
+        background: $maroon;
+    }
+}
+#global-ctas > button {
+    border: solid .125rem $white !important;
+}
+
+body.active #side-nav {
+    @include phone-portrait {
+        transform: translateX(80vw);
+    }
+}
+
+/* MENU */
+
+nav#main-mobile {
+    /*  display: inline-block; - to style */
+        position: relative;
+        top: -.65rem;
+        background: none !important;
+        #menu-button-mobile {
+            width: 2.25rem;
+            opacity: 1;
+            span.menu-bar-one, span.menu-bar-two, span.menu-bar-three, span.menu-bar-four {
+            background: $maroon;
+            }
+            span.menu-text {
+                bottom: 0;
+                font-size: .75rem;
+                color: $maroon;
+                // this is for the white header color: $maroon;
+            }
+        }
+    }

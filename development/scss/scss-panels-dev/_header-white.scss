@@ -1,11 +1,15 @@
 /* header - update - 051624 */
 
+ul#directory-nav[role=menubar] li:last-of-type button {
+    color: $black !important;
+    background-color: $gold;
+}
 header {
     #header-white {
         #site-brand-wrapper {
-        padding: 1.75rem 1rem .75rem;
+        padding: 1.125rem 1rem .75rem;
         background: $white !important;
-        border-bottom: solid .25rem $gray;
+        border-bottom: solid .25rem $gold;
         box-shadow: 0 0 .5rem $bg-overlay;
         #brand {
                 display: block;
@@ -14,25 +18,59 @@ header {
                 img {
                     opacity: 1;
                 }
+                @include phone-portrait {
+                    display: none;
+                }
             }
             #loyola-university-chicago {
                 display: none;
+                @include phone-portrait {
+                    display: block;
+                }
             }
             #site-name {
                 display: inline;
                 width: auto;
                 font-size : 1.85rem;
+                @include phone-portrait {
+                    display: block;
+                    width: 80%;
+                }
                 > a {
-                    display: inline;
+                    display: block;
                     position: relative;
-                    top: -.45rem;
+                    top: -.35rem;
                     margin: 0 0 0 1rem;
                     padding: 0 0 0 1rem;
                     width: auto;
-                    color: #000000 !important;
+                    color: $black !important;
                     letter-spacing: -.075rem;
+                    line-height: 1.25;
                     border-left: solid 1px #000000;
+                    @include phone-portrait {
+                        margin: 0;
+                        padding: 0;
+                        font-size: 1.5rem;
+                        border-left: 0;
+                    }
                 }
+            }
+        }
+    }
+}
+header #loyola-university-chicago a {
+    color: $black;
+}
+footer {
+    height: 100%;
+    @include phone-portrait {
+        span#brand {
+            display: block;
+            margin: 1rem 10%;
+            width: 80%;
+            img {
+                width: 100%;
+                height: auto;
             }
         }
     }

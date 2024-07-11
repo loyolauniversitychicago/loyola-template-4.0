@@ -2,14 +2,16 @@
 <html lang="en">
 	<title> A page to develop the header, footer, and navigation updates</title>
 <head>
+	@@include('./partials/framework/luc-head.html')
 	<!-- inject:css -->
 	<!-- endinject -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
 <body>
 	<!-- HEADER -->
 	@@include('./partials/framework/luc-search-overlay.html')
-	@@include('./partials/framework/luc-sliding-menu.html')
+	@@include('./partials/framework/luc-sliding-menu-V2.html')
 	<header>
 		@@include('./partials/framework/luc-audience-directory.html')
 		@@include('./partials/panels/proposed/luc-header-proposed.html')
