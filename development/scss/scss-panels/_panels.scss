@@ -1072,6 +1072,9 @@ button.content-activate-symbol.activate-symbol-close {
 #panel-image-grid.image-grid-highlights {
   .grid-wrapper-min-max {
     grid-template-columns: 1fr 1fr 1fr;
+    @include tablet-portrait {
+      display: block;
+    }
     .grid-item {
       display: none;
       .caption-overlay {
