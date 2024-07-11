@@ -1,29 +1,46 @@
 /* UAO - Tabs */
 
-.uao-tabs .tabs {
+.tabs-ensemble .tabs {
     display: flex;
-    flex-direction: column-reverse;
+    flex-flow: column;
 }
 
-.uao-tabs .tabs .tab-list {
-    margin: 0 auto 4rem;
+.tabs-ensemble .tabs.reverse-order {
+    display: flex;
+    flex-flow: column-reverse;
 }
 
-.uao-tabs .tabs .tab-list .tab-button {
+.tabs-ensemble .tabs .tablist-container {
+    display: flex;
+    height: 9rem;
+    align-items: center;
+}
+
+.tabs-ensemble .tabs .tab-list {
+    margin: 2rem auto;
+    display: inline-block;
+}
+
+.tabs-ensemble .tabs .tab-list .tab-button {
     border-radius: 100% !important;
     width: 5.5rem;
     height: 5.5rem;
     padding: 0;
     border: none;
     transition: 500ms all ease;
-    margin: 0 1rem;
+    margin: 0 1.25rem;
+    filter: saturate(0);
+    opacity: 0.5;
 }
 
-.uao-tabs .tabs .tab-list .tab-button[aria-selected="true"] {
+.tabs-ensemble .tabs .tab-list .tab-button[aria-selected="true"] {
  scale: 1.25;
+ outline: solid 5px $maroon;
+ filter: saturate(1);
+ opacity: 1;
 }
 
-.uao-tabs .tabs .tab-list img {
+.tabs-ensemble .tabs .tab-list img {
     border-radius: 100% !important;
     width: 100%;
     height: 100%;
@@ -32,6 +49,31 @@
     pointer-events: none;
 }
 
-.uao-tabs .tabs .tab-panel {
+.tabs-ensemble .tabs .tab-panel {
     background-color: transparent;
+}
+
+.arrow-navigation {
+    width: fit-content; 
+    display: none;
+}
+
+.tabs-ensemble .grid-wrapper-min-max .grid-item .tabs .tab-panel button {
+    border-radius: 0.33rem !important;
+}
+
+.tabs-ensemble .grid-wrapper-min-max .grid-item .tabs .tab-panel .panel-image-text button {
+    color: white;
+    background-color: $maroon;
+}
+
+.tabs-ensemble .grid-wrapper-min-max .grid-item .tabs .tab-panel .panel-image-text.bg-maroon button {
+    color: white;
+    background-color: $gold;
+}
+
+/* UAO Tabs Blockquote Specific */
+
+.tabs .tab-panel .panel-image-text.panel-image-text-blockquote.grid-area-content-only .grid-area-content .content-image-text {
+    padding: 0 2rem;
 }
