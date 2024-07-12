@@ -37,7 +37,7 @@
   width: 100vw;
   height: auto;
   font-size: 3rem;
-  color: #ffffff;
+  color: $white;
   background: $gray-dark;
   outline: 0 !important;
 }
@@ -79,7 +79,7 @@ button.slick-next, button.slick-prev {
   &:focus {
     outline-color: none;
     outline-width: 0;
-    background-color: #febc18;
+    background-color: $gold;
     border: 0;
   }
 }
@@ -92,7 +92,8 @@ button.slick-prev {
   }
   &:hover, &:focus {
     border-radius: .25rem 0 0 .25rem !important;
-    background-color: #febc18;
+    background-color: lighten($maroon, 10%);
+    outline: solid .125rem $gold;       
   }
 }
 button.slick-next {
@@ -101,7 +102,8 @@ button.slick-next {
   background-image: url('https://www.luc.edu/media/luc-template-2020/images/ui-arrow-carrousel-next@2x.png');
   &:hover, &:focus {
     border-radius: 0 !important;
-    background-color: #febc18;
+    background-color: lighten($maroon, 10%);
+    outline: solid .125rem $gold;
   }
 }
 .slick-sr-only {
@@ -211,30 +213,29 @@ button.slick-next {
   line-height: 0;
   text-align: center;
   color: transparent;
-  border: 0 !important;
+  border: solid .125rem $white;
   border-radius: 50%;
-  background: #ffffff;
+  background: none;
   cursor: pointer;
 }
 .slick-dots li button:after {
   clear: both;
 }
 .slick-dots li button:hover {
-  background: #febc18;
+  background: lighten($maroon, 10%);
 }
 .slick-dots li button:focus {
-  outline: none;
-  outline-width: 0;
-  background-color: #febc18;
+outline: solid .25rem $gold;
+  background: lighten($maroon, 10%);
 }
 
 /* indicator - active */
 
 .slick-dots li[aria-hidden="false"] button {
-  background: #febc18;
+  background: $white;
 }
 .slick-dots li[aria-hidden="false"] button:hover {
-  background: #f5c95c;
+  background: lighten(maroon, 10%);
 }
 
 .slick-frame {
