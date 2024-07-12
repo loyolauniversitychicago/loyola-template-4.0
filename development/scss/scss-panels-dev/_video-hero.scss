@@ -97,10 +97,14 @@
     line-height: 1.25;
 }
 
+.hero-video-lead.full-overlay .hero-video-content h6 {
+    font-family: 'Antenna Condensed Bold', sans-serif;
+}
+
 /* default override - button */
 .hero-video-lead .headline-buttons .grid-wrapper-min-max button {
     width: 100%;
-    border: solid .125rem #ffffff;
+    border: solid .125rem $white;
 }
 
 /* default override - add class - position-center - all variations */

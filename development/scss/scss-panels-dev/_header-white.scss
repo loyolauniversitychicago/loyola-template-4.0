@@ -31,7 +31,7 @@ header {
             #site-name {
                 display: inline;
                 width: auto;
-                font-size : 1.85rem;
+                font-size : 1.75rem;
                 @include phone-portrait {
                     display: block;
                     width: 80%;
@@ -43,10 +43,11 @@ header {
                     margin: 0 0 0 1rem;
                     padding: 0 0 0 1rem;
                     width: auto;
+                    height: auto;
                     color: $black !important;
                     letter-spacing: -.075rem;
                     line-height: 1.25;
-                    border-left: solid 1px #000000;
+                    border-left: solid 1px $black;
                     @include phone-portrait {
                         margin: 0;
                         padding: 0;
@@ -58,19 +59,59 @@ header {
         }
     }
 }
+
 header #loyola-university-chicago a {
     color: $black;
 }
+
+/* framework - aside */
+#social-icon-bar {
+    top: 45% !important;
+    margin: 0 0 0 1.5rem;
+    opacity: 1 !important;
+    background: none !important;
+}
+#social-icon-bar a {
+    margin: .75rem 0 !important;
+    padding: .5rem !important;
+    font-size: 1.5rem;
+    border: solid .125rem $white !important;
+    border-radius: 50% !important;
+    background: $gray-dark !important;
+    transition: all .3s;
+}
+
+/* framework */
 footer {
+    padding: 1rem 2rem;
     height: 100%;
-    @include phone-portrait {
+    border-top: solid .25rem $gold;
+    @include phone-landscape {
         span#brand {
-            display: block;
-            margin: 1rem 10%;
-            width: 80%;
+        display: block;
+        margin: 1rem 30%;
+        width: 40%;
+        max-width: 40%;
             img {
                 width: 100%;
                 height: auto;
+            }
+        }
+    }
+    @include phone-portrait {
+        span#brand {
+            margin: 1rem 15%;
+            width: 70%;
+            max-width: 70%;
+        }
+    }
+    #footer-icon-bar {
+        display: block;
+        margin: 0 0 .5rem;
+        a {
+            margin: 0 .25rem;
+            i  {
+                font-size: 1.5rem;
             }
         }
     }
