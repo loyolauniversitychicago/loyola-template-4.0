@@ -53,14 +53,15 @@ ul[role="menubar"] {
 	button  {
 		margin: 0;
 		padding: 1.25rem 1.25rem 1rem 1.25rem;
-		font-family: 'Antenna', sans-serif;
-		font-size: .8rem;
+		font-family: 'OpenSans', sans-serif;
+		font-size: .85rem;
+		font-weight: bold;
 		color: $gray-extra-light !important;
 		border: none !important;
 		border-radius: 0;
 		background-color: $gray-dark;
 		&:hover, &:focus {
-			background: darken($gray,30%) !important;
+			background: $maroon !important;
 		}
 	}
 	li  {
@@ -80,8 +81,9 @@ ul[role="menubar"] {
 			margin: 0;
 			padding: 0;
 			width: auto;
-			font-family: 'Antenna', sans-serif;
-			font-size: .8rem;
+			font-family: 'OpenSans', sans-serif;
+			font-size: .85rem;
+			font-weight: bold;
 			letter-spacing: .025rem;
 			color: $gray-extra-light;
 			text-transform: uppercase;
@@ -92,7 +94,7 @@ ul[role="menubar"] {
 			background-image: none;
 			background-size: 100 100 !important;
 			&:hover, &:focus {
-				background: darken($gray,30%) !important;
+				background-color: $maroon !important;
 			}
 		}
 	}
@@ -143,15 +145,16 @@ ul#directory-nav[role="menubar"] li {
 	border-left: 0 none;
 	a[role="menuitem"],
 	button {
-    padding: 12px 20px 8px;
-		font-family: 'Antenna Bold', sans-serif;
-		font-size: .65em;
+    padding: .75rem 1.25rem;
+		font-family: 'OpenSans', sans-serif;
+		font-weight: bold;
+		font-size: .7em;
 		color: $gray-light;
 		border: 0 none;
 		background-color: $maroon;
 		&:hover, &:focus {
 			color: $gray-extra-light;
-			background-color: darken($maroon,10%) !important;
+			background-color: lighten($maroon,10%) !important;
 		}
 	}
 }
@@ -263,7 +266,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]::after {
 	height: 52px;
 	background: darken($gray,20%);
 	&:hover, &:focus {
-		background: darken($gray,30%);
+		background: $maroon;
 	}
 	transition: background-color .2s;
 }
@@ -373,12 +376,13 @@ i.fa.fa-search {
 
 /* search overlay close button */
 #search-overlay.overlay #search-close {
-  position: relative;
-  top: 10rem;
-	left: 50%;
-  right: 50%;
+  display: block;
+  float: left;
+  margin: 1rem auto 0;
+  width: 100%;
   font-size: 4em;
-	line-height: 1;
+  line-height: 1;
+  text-align: center;
   cursor: pointer;
   color: $gray-extra-light;
 }
@@ -389,14 +393,15 @@ i.fa.fa-search {
 
 /* search form */
 #search-overlay form {
-	font-family: 'Antenna', sans-serif;
+  font-family: 'Antenna Condensed Bold', sans-serif;
   font-size: 1em;
   line-height: 0;
   color: $white;
-	-webkit-text-stroke: 0 none !important;
+  -webkit-text-stroke: 0 none !important;
 }
 
 #search-overlay-wrapper .form-group {
+	float: left;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -427,12 +432,13 @@ i.fa.fa-search {
 	padding: 20px;
   width: 80%;
   height: 70px;
-	font-family: 'Antenna', sans-serif;
+	font-family: 'Antenna Condensed Bold', sans-serif;
   font-size: 1.5rem;
 	color: $gray-dark;
 	text-transform: none;
-  border: 0;
-	border-radius: 10px 0 0 10px !important;
+	border: solid .125rem $white;
+	border-right: none;
+	border-radius: .25rem 0 0 .25rem;
 	background: $gray-light;
 	transition: 0.1s linear all;
 	@include tablet-landscape {
@@ -450,32 +456,38 @@ i.fa.fa-search {
 	background: $gray-extra-light;
 }
 
+#search-overlay form input#global-search-input:focus-visible {
+	outline: none;
+}
+
 #search-overlay form input#global-search-input::placeholder {
-	font-family: 'Antenna', sans-serif;
-  font-size: 1rem;
+	font-family: 'Antenna Condensed Bold', sans-serif;
+  	font-size: 1rem;
 	color: $maroon;
 	text-transform: uppercase;
 }
 
 #search-overlay form button {
 	position: relative;
-  float: right;
+  	float: right;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 8px 12px;
-  width: 20%;
+  	width: 20%;
 	height: 70px;
-	font-family: 'Antenna Bold', sans-serif;
-  font-size: 1.5em;
+	font-family: 'Antenna Condensed Bold', sans-serif;
+  	font-size: 1.5em;
 	color: $gray-light !important;
 	outline: 0 none;
-	border-radius: 0 10px 10px 0;
+	border: solid .125rem $white;
+	border-left: none;
+	border-radius: 0 .25rem .25rem 0;
 	background-color: $maroon;
 	cursor: pointer;
 	transition: all .2s;
 		&:hover {
 			color: darken($gray-light, 10%);
-			background-color: darken($maroon, 10%);
+			background-color: lighten($maroon, 10%);
 		}
 	@include tablet-landscape {
 		height: 50px;
@@ -583,7 +595,7 @@ ul.multilevel-linkul-0 li a {
   margin: 0;
 	padding: 1rem 1.25rem 1rem;
 	width: 20rem;
-  font-family: 'Antenna', sans-serif;
+  font-family: 'Antenna Condensed Bold', sans-serif;
   font-size: .8rem;
   letter-spacing: .025rem;
   color: $gray-extra-light;

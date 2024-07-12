@@ -30,7 +30,7 @@ button, .button {
   transition: .3s;
   &:hover {
     color: $white;
-    background-color: $brick;
+    background-color: lighten($maroon, 10%);
   }
   :focus {
     outline: 3px solid $white;
@@ -84,11 +84,11 @@ button.center {
 
 .button-open button {
   color: $maroon;
-  border: solid 1px $maroon;
+  border: solid .125rem $maroon;
   background: none;
   &:hover {
     color: $white;
-    border: solid 1px $maroon;
+    border: solid .125rem $maroon;
     background: $maroon;
   }
 }
