@@ -1,10 +1,10 @@
 #side-nav {
     @include phone-portrait {
-        background-color: $gray-dark;
         left: -80vw;
         width: 80vw;
         max-width: 80vw;
         box-shadow: 0 0 2rem $bg-overlay-extra-dark;
+        background-color: $gray-extra-light;
     }
     .multi-level-sliding-navigation-main .multi-level-sliding-navigation-menu {
         padding: 0;
