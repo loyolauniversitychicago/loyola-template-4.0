@@ -3,7 +3,6 @@
         left: -80vw;
         width: 80vw;
         max-width: 80vw;
-        box-shadow: 0 0 2rem $bg-overlay-extra-dark;
         background-color: $gray-extra-light;
     }
     .multi-level-sliding-navigation-main .multi-level-sliding-navigation-menu {
@@ -20,6 +19,11 @@
         }
     }
 }
+
+body.active #side-nav {
+    box-shadow: 0 0 2rem $bg-overlay-extra-dark;
+}
+
 #global-ctas > button {
     border: solid .125rem $gold !important;
 }
