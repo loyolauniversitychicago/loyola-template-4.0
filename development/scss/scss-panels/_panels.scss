@@ -1828,10 +1828,15 @@ button.modaal-close {
   margin: 0 !important;
   padding: 0 2em;
   border-left: solid 1px $gray;
+  @include phone-portrait {
+    border: none;
+  }
 }
+
 #panel-events-news .grid-wrapper-min-max .grid-item:first-of-type {
   border-left: none !important;
 }
+
 #panel-events-news {
   h6 {
     margin-bottom: .25rem;
