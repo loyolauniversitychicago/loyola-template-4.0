@@ -1,5 +1,16 @@
 /* UAO - Tabs */
 
+/* image display */
+
+.tabs-ensemble .panel-image-text .content-image-text-image {
+    padding-top: 0;
+    background-image: none;
+}
+
+.tabs-ensemble .panel-image-text .content-image-text-image img {
+    display: block;
+}
+
 .tabs-ensemble .tabs {
     display: flex;
     flex-flow: column;
