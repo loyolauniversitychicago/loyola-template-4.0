@@ -76,7 +76,7 @@
     .content-image-text {
         padding: 4rem;
         height: 100%;
-        background: $gray-light;
+        background: lighten($gray-light, 10%);
         h6, h4, p, p em, p strong, blockquote, cite {
             color: $black;
         }
@@ -115,13 +115,6 @@
 .panel-image-text.bg-gray-dark .content-image-text {
     background: $gray-dark !important;
 }
-.panel-image-text.bg-patina .content-image-text {
-    background: $patina !important;
-}
-.panel-image-text.bg-patina-dark .content-image-text {
-    background: $patina-dark !important;
-}
-
 .panel-image-text .content-image-text-image img::before {
     height: 100%;
 }
@@ -149,26 +142,22 @@
         padding: 0;
         width: 100%;
         font-size: 1.5rem;
+        line-height: calc(var(--baseline) * 2.5 * 1rem);
         text-align: left;
         border: none;
     }
     cite {
         font-family: "Open Sans", sans-serif;
-        font-size: 1rem;
+        font-size: .95rem;
         text-transform: uppercase;
-        line-height: calc(var(--baseline) * 1.75 * 1.25rem);
+        line-height: calc(var(--baseline) * 1.5 * 1rem);
         margin-bottom: 1.5rem;
+    }
+    .bg-maroon .button-white button {
+        background-color: $white !important;
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .panel-image-text.panel-image-text-blockquote .content-image-text h4 {
-        font-size: 2rem; line-height: calc(var(--baseline) * 1.75 * 2rem);
-    }
-    .panel-image-text.panel-image-text-blockquote .content-image-text p {
-        font-size: 1rem; line-height: calc(var(--baseline) * 1.75 * 1rem);
-    }
-}
 .panel-image-text.panel-image-text-blockquote.grid-area-content-only {
     .grid-area.grid-area-image {
         display: none;

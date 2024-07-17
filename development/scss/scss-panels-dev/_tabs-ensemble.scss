@@ -3,13 +3,50 @@
 /* image display */
 
 .tabs-ensemble .panel-image-text .content-image-text-image {
-    padding-top: 0;
+    padding: 0;
     background-image: none;
+    background: $gray-extra-dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tabs-ensemble .panel-image-text .content-image-text-image img {
     display: block;
+    margin: auto auto;
 }
+
+/* panel background color - default */
+
+.tabs-ensemble .tabs .tab-panel .panel-image-text .content-image-text {
+    padding: 2rem;
+    background: $gray-extra-light;
+    h4 {
+        font-size: 1.25rem !important;
+        line-height: calc(var(--baseline) * 1.35 * 1rem);
+        text-transform: uppercase;
+        @include phone-landscape {
+            font-size: 1rem !important;
+        }
+    }
+}
+
+.tabs-ensemble .panel-image-text.panel-image-text-blockquote .content-image-text blockquote {
+    @include phone-landscape {
+        font-size: 1.25rem !important;
+        line-height: calc(var(--baseline) * 1.75 * 1rem);
+    }
+}
+
+.tabs-ensemble .panel-image-text.panel-image-text-blockquote .content-image-text cite {
+    @include phone-landscape { 
+        font-size: .75rem !important;
+        line-height: calc(var(--baseline) * 1.125 * 1rem);
+    }
+}
+
+
+/* tabs */
 
 .tabs-ensemble .tabs {
     display: flex;
@@ -28,27 +65,42 @@
 }
 
 .tabs-ensemble .tabs .tab-list {
-    margin: 2rem auto;
+    margin: 1.25rem auto;
     display: inline-block;
 }
 
 .tabs-ensemble .tabs .tab-list .tab-button {
-    border-radius: 100% !important;
+    margin: 0 1.25rem;
+    padding: 0;
     width: 5.5rem;
     height: 5.5rem;
-    padding: 0;
     border: none;
+    border-radius: 100% !important;
     transition: 500ms all ease;
-    margin: 0 1.25rem;
     filter: saturate(0);
     opacity: 0.5;
+    @include phone-landscape {
+        display: inline;
+        margin: 0 .5rem;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    @include phone-portrait {
+        display: inline;
+        margin: 0 .35rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
 }
 
 .tabs-ensemble .tabs .tab-list .tab-button[aria-selected="true"] {
- scale: 1.25;
- outline: solid 5px $maroon;
- filter: saturate(1);
- opacity: 1;
+    scale: 1.25;
+    outline: solid 5px $maroon;
+    filter: saturate(1);
+    opacity: 1;
+    @include phone-portrait {
+        scale: 1.125;
+    }
 }
 
 .tabs-ensemble .tabs .tab-list img {
@@ -62,11 +114,9 @@
 
 .tabs-ensemble .tabs .tab-panel {
     background-color: transparent;
-}
-
-.arrow-navigation {
-    width: fit-content; 
-    display: none;
+    @include phone-landscape {
+        padding: 0;
+    }
 }
 
 .tabs-ensemble .grid-wrapper-min-max .grid-item .tabs .tab-panel button {
@@ -79,12 +129,8 @@
 }
 
 .tabs-ensemble .grid-wrapper-min-max .grid-item .tabs .tab-panel .panel-image-text.bg-maroon button {
-    color: white;
-    background-color: $gold;
+    color: $maroon !important;
+    background-color: $white;
 }
 
-/* UAO Tabs Blockquote Specific */
-
-.tabs .tab-panel .panel-image-text.panel-image-text-blockquote.grid-area-content-only .grid-area-content .content-image-text {
-    padding: 0 2rem;
-}
+/* tabs-ensemble */ 

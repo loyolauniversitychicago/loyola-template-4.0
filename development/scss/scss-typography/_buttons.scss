@@ -58,12 +58,17 @@ button.center {
 
 .button-maroon button,
 .button-patina button,
-.button-gold button,
 .bg-maroon button,
 .bg-brick button,
 .bg-gray button {
   color: $white !important;
   border: none !important;
+}
+
+
+.button-gold button,
+.bg-maroon .button-gold button {
+  color: $black !important;
 }
 
 .button-maroon button { background-color: $maroon; }

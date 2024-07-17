@@ -840,14 +840,14 @@ p span.highlight.bg-danger { color: $white; background: $maroon; }
   .bg-maroon li a strong,
   .bg-maroon a.cta,
   .bg-maroon strong a.cta {
-    color: $gold;
+    color: lighten($gold, 20%);
     background-image: linear-gradient(120deg, $brick 0%, $brick 100%);
     background-repeat: no-repeat;
     background-size: 106% 0.1rem;
     background-position: -3% 103%;
     transition: all 0.25s ease-in;
     &:hover {
-      color: $white !important;
+      color: lighten($gold, 20%) !important;
       background-size: 100% 106%;
     }
   }

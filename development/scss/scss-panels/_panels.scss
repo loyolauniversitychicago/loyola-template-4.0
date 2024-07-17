@@ -36,7 +36,7 @@
 .bg-overlay h6, .bg-overlay h6, .bg-overlay h6, .bg-overlay h6, .bg-overlay p  { color: $gray-extra-light; }
 
 .bg-maroon a.cta, .bg-brick a.cta, .bg-gray a.cta, .bg-gray-dark a.cta, .bg-patina a.cta, .bg-patina-dark a.cta, .bg-overlay a.cta  {
-  color: $gold !important;
+  color: lighten($gold, 15%);
   &:hover {
     color: $opus !important;
   }
