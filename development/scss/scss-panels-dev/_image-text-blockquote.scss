@@ -1,4 +1,4 @@
-/* image - text */
+/* image text */
 
 .panel-image-text .grid-wrapper-grid-area {
     display: -ms-grid;
@@ -148,12 +148,12 @@
     }
     cite {
         font-family: "Open Sans", sans-serif;
-        font-size: .95rem;
+        font-size: .85rem;
         text-transform: uppercase;
         line-height: calc(var(--baseline) * 1.5 * 1rem);
         margin-bottom: 1.5rem;
     }
-    .bg-maroon .button-white button {
+    .bg-maroon button {
         background-color: $white !important;
     }
 }

@@ -65,7 +65,6 @@ button.center {
   border: none !important;
 }
 
-
 .button-gold button,
 .bg-maroon .button-gold button {
   color: $black !important;
@@ -83,9 +82,9 @@ button.center {
 .bg-gray button,
 .bg-terracotta-extra-light button { background-color: $maroon; }
 
-.button-maroon button:hover { background-color: $brick !important; }
+.button-maroon button:hover { background-color: lighten($maroon, 10%) !important; }
 .button-patina button:hover { background-color: $patina-dark !important; }
-.button-gold button:hover { background-color: $opus !important; }
+.button-gold button:hover { background-color: lighten($gold,10%) !important; }
 
 .button-open button {
   color: $maroon;

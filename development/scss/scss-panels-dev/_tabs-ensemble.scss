@@ -1,4 +1,4 @@
-/* UAO - Tabs */
+/* tabs ensemble */
 
 /* image display */
 
@@ -16,19 +16,31 @@
     margin: auto auto;
 }
 
-/* panel background color - default */
+/* panel background color - default - typography */
 
 .tabs-ensemble .tabs .tab-panel .panel-image-text .content-image-text {
     padding: 2rem;
     background: $gray-extra-light;
     h4 {
-        font-size: 1.25rem !important;
         line-height: calc(var(--baseline) * 1.35 * 1rem);
-        text-transform: uppercase;
-        @include phone-landscape {
-            font-size: 1rem !important;
-        }
+        text-transform: none;
     }
+    cite {
+        font-size: .85rem;
+    }
+}
+
+.tabs-ensemble .tabs .tab-panel .panel-image-text.panel-image-text-blockquote .content-image-text {
+    h4 {
+        font-size: 1.125rem !important;
+        text-transform: uppercase;
+    }
+}
+
+/* panel image text - blockquote only */
+
+.tabs-ensemble .panel-image-text.panel-image-text-blockquote.grid-area-content-only .content-image-text {
+    background: $white;
 }
 
 .tabs-ensemble .panel-image-text.panel-image-text-blockquote .content-image-text blockquote {
@@ -45,8 +57,13 @@
     }
 }
 
+/* content - buttons */
 
-/* tabs */
+.tabs-ensemble .panel-image-text.panel-image-text-blockquote .bg-maroon button {
+    background: $gold !important;
+}
+
+/* tabs list - tabs - buttons */
 
 .tabs-ensemble .tabs {
     display: flex;
@@ -55,7 +72,7 @@
 
 .tabs-ensemble .tabs.reverse-order {
     display: flex;
-    flex-flow: column-reverse;
+
 }
 
 .tabs-ensemble .tabs .tablist-container {
@@ -119,18 +136,19 @@
     }
 }
 
+/* overrides tabs default - button */
+
 .tabs-ensemble .grid-wrapper-min-max .grid-item .tabs .tab-panel button {
+    background: $maroon;
     border-radius: 0.33rem !important;
 }
 
-.tabs-ensemble .grid-wrapper-min-max .grid-item .tabs .tab-panel .panel-image-text button {
-    color: white;
-    background-color: $maroon;
-}
+/* specific - content - bg-maroon - button */
 
-.tabs-ensemble .grid-wrapper-min-max .grid-item .tabs .tab-panel .panel-image-text.bg-maroon button {
-    color: $maroon !important;
-    background-color: $white;
+.tabs-ensemble .grid-wrapper-min-max .grid-item .tabs .tab-panel .bg-maroon button {
+    color: $black !important;
+    background: $gold;
+    &:hover {
+        background: lighten($gold, 10%) !important;
+    }
 }
-
-/* tabs-ensemble */ 
