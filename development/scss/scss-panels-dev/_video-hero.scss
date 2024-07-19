@@ -14,10 +14,19 @@
     height: 100%;
 }
 
+/* show hide variations */
+
 .hero-video-lead.full-overlay img.hero-image,
+.hero-video-lead.full-overlay.hero-image video.hero-video,
 .hero-video-lead.full-overlay.video-only img.hero-image {
     display: none;
 }
+
+.hero-video-lead.full-overlay.hero-image img.hero-image {
+    display: block;
+}
+
+/* display */
 
 .hero-video-lead.full-overlay video.hero-video,
 .hero-video-lead.full-overlay.hero-image img.hero-image {
