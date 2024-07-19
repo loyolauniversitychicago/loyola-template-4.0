@@ -542,7 +542,8 @@ footer #search-button i.fa.fa-search {
 
 footer span#brand {
   float: right;
-  width: 250px;
+  width: auto;
+  max-width: 220px;
   background: none;
   img {
     float: right;
