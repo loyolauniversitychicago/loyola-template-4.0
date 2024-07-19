@@ -1,4 +1,4 @@
-/* UAO Video Hero */
+/* video hero */
 
 .hero-video-lead.full-overlay {
     height: 80vh;
@@ -14,7 +14,13 @@
     height: 100%;
 }
 
-.hero-video-lead.full-overlay video.hero-video {
+.hero-video-lead.full-overlay img.hero-image,
+.hero-video-lead.full-overlay.video-only img.hero-image {
+    display: none;
+}
+
+.hero-video-lead.full-overlay video.hero-video,
+.hero-video-lead.full-overlay.hero-image img.hero-image {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -82,6 +88,30 @@
     justify-content: center;
     padding: 2rem 5% 2.25rem;
     background: rgba(0, 0, 0, 0.5);
+}
+
+/* video only */
+
+.hero-video-lead.full-overlay.video-only {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    aspect-ratio: auto;
+}
+
+.hero-video-lead.full-overlay.video-only .hero-video-content {
+    display: none;
+}
+
+.hero-video-lead.full-overlay.video-only video.hero-video {
+    position: relative;
+    object-fit: contain;
+    .grid-wrapper-min-max {
+        display: block;
+        .grid-item {
+            display: block;
+        }
+    }
 }
 
 /* default override - content - text align left */
@@ -225,6 +255,10 @@ button.video-control {
     border-radius: .25rem 0 0 0;
     border-top: solid .125rem $gold;
     border-left: solid .125rem $gold;
+}
+
+.hero-video-lead.full-overlay.hero-image .video-control {
+    display: none;
 }
 
 .video-control:not(.playing) .video-control-pause,
