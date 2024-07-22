@@ -786,6 +786,9 @@ blockquote p cite:before {
   @include phone-portrait {
     padding:2.5rem;
   }
+  h4 {
+    margin-bottom: calc(var(--baseline)* 1.125* 1rem);
+  }
 }
 
 .infobox h4:first-of-type {
