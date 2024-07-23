@@ -733,12 +733,12 @@ grid-area: 1 / 3 / span 1 / span 2;
   width: 100%;
   height: 0;
   padding: 2rem;
-  color: $gray-extra-light !important;
+  color: $white !important;
   background: $bg-overlay-extra-dark;
   opacity: 0;
   transition: .35s ease;
   overflow: hidden;
-  h3.teaser {
+  h3.teaser, p {
     margin: auto;
     width: 80%;
     height: auto;
@@ -1035,6 +1035,10 @@ button.content-activate-symbol.activate-symbol-close {
     width: 100%;
     grid-gap: 0;
     background: $maroon;
+    @include phone-portrait {
+      display: block;
+      width: 100%;
+    }
   }
   .grid-item {
     position: relative;
@@ -1121,20 +1125,20 @@ button.content-activate-symbol.activate-symbol-close {
       margin: 0 10%;
       width: 80%;
       font-family: 'Antenna Condensed Bold', sans-serif;
-      font-size: 2.5rem;
+      font-size: 1.75rem;
       line-height: 1.25;
       color: $gray-extra-light;
       text-align: center;
       text-shadow: 0 0 .5rem rgba(0,0,0,.35);
       text-transform: none;
       @include tablet-portrait {
-        font-size: 1.85rem;
+        font-size: 1.5rem;
       }
       @include phone-landscape {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
       }
       @include phone-portrait {
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
     }
     span.caption-overlay-name {
