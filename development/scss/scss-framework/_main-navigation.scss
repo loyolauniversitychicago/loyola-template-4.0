@@ -52,7 +52,7 @@ ul[role="menubar"] {
 	background: none;
 	button  {
 		margin: 0;
-		padding: 1.25rem 1.25rem 1rem 1.25rem;
+		padding: 1rem 1.25rem .75rem 1.25rem;
 		font-family: 'OpenSans', sans-serif;
 		font-size: .85rem;
 		font-weight: bold;
@@ -219,7 +219,7 @@ ul[role="menubar"] ul#information-nav[role="menu"] {
 }
 
 ul[role="menubar"] ul[role="menu"][style] {
-	top: 53px !important;
+	top: 45px !important;
 	outline: none;
 	z-index: 0;
 }
@@ -262,8 +262,8 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]::after {
 #information, #search {
 	margin: 0;
 	padding: 0;
-	width: 52px;
-	height: 52px;
+	width: 46px;
+	height: 46px;
 	background: darken($gray,20%);
 	&:hover, &:focus {
 		background: $maroon;
@@ -275,7 +275,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]::after {
 #search-button {
 	display: block;
 	position: relative;
-	top: 15%;
+	top: 18%;
 	margin: 0 auto;
 	width: 70%;
 	height: 70%;
@@ -335,7 +335,7 @@ i.fa.fa-search {
   position: absolute;
   content: "\f002";
   left: 20%;
-  top: 25%;
+  top: 30%;
   width: 60%;
   height: 60%;
   text-align: center;

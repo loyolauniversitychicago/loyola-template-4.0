@@ -680,7 +680,7 @@ grid-area: 1 / 3 / span 1 / span 2;
   .content-image-text {
     padding: 4rem;
     height: 100%;
-    background: $gray-light;
+    background: $gray-extra-light;
     h6, h4, p, p em, p strong {
       color: $black !important;
     }
@@ -1147,6 +1147,15 @@ button.content-activate-symbol.activate-symbol-close {
   }
 }
 
+#panel-image-grid.image-grid-highlights {
+  .grid-wrapper-min-max.two-column {
+    grid-template-columns: 1fr 1fr;
+    .grid-item:nth-child(3) {
+      display: none;
+    }
+  }
+}
+
 /* gradient overlay */
 
 #panel-image-highlights .grid-item .content-image-overlay {
@@ -1181,6 +1190,7 @@ button.content-activate-symbol.activate-symbol-close {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-color: $gray-extra-light;
   .grid-wrapper-min-max {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
