@@ -163,9 +163,8 @@ nav#secondary .minimalist-accordion__panel,
   margin: 2em;
   padding: 0;
   height: auto;
-  max-height: 100em;
   visibility: visible;
-  overflow: scroll;
+  overflow: hidden;
   opacity: 1;
   /* animation */
   -webkit-transition: visibility 0s ease, max-height 1s ease, opacity 1s ease;
