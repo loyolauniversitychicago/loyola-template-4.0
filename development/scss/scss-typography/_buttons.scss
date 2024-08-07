@@ -80,7 +80,7 @@ button.center {
 
 .bg-gold button,
 .bg-gray button,
-.bg-terracotta-extra-light button { background-color: $maroon; }
+.bg-terracotta-extra-light button { background-color: $maroon; color: #000000 !important }
 
 .button-maroon button:hover { background-color: lighten($maroon, 10%) !important; }
 .button-patina button:hover { background-color: $patina-dark !important; }
@@ -92,8 +92,8 @@ button.center {
   background: none;
   &:hover {
     color: $white;
-    border: solid .125rem $maroon;
-    background: $maroon;
+    border: solid .125rem lighten($maroon, 10%);
+    background: lighten($maroon, 10%);
   }
 }
 

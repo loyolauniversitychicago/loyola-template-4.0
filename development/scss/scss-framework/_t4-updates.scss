@@ -89,6 +89,9 @@
     display: none;
     &.show {
       display: block;
+      height: 20rem !important;
+      max-height: 20rem !important;
+      overflow: scroll !important;
     }
   }
 }

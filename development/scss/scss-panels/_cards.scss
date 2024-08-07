@@ -568,7 +568,7 @@ button:focus {
 
 #panel-numbers.container-fluid.bg-overlay .grid-wrapper-min-max.number .flex-item.content a.cta {
   margin-bottom: 0;
-  color: $gold;
+  color: lighten($gold, 10%);
   background-image: none;
 }
 
