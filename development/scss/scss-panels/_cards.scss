@@ -560,6 +560,14 @@ button:focus {
   background-color: $bg-overlay;
 }
 
+#panel-numbers.container-fluid.bg-overlay .container.padding-md {
+  padding: 10rem 3rem;
+}
+
+#panel-numbers.container-fluid.bg-overlay .container.padding-lg {
+  padding: 15rem 3rem;
+}
+
 #panel-numbers.container-fluid.bg-overlay .grid-wrapper-min-max.number .flex-item.content h4,
 #panel-numbers.container-fluid.bg-overlay .grid-wrapper-min-max.number .flex-item.content h5,
 #panel-numbers.container-fluid.bg-overlay .grid-wrapper-min-max.number .flex-item.content p {
