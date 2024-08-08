@@ -136,12 +136,13 @@
 /* announcement */
 
 .panel-announcement {
+  float: left;
   margin: 0;
   padding: 1rem;
   width: 100%;
   height: auto;
   animation-delay: 0;
-  background: linear-gradient(180deg, $black 0%, $maroon-dark 2%, $maroon 10%);
+  background: $maroon;
   p {
     margin: .25rem 0 0 0;
     padding: 0;

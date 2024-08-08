@@ -1,4 +1,5 @@
 /* header - update - 051624 */
+/* move to main-navigation.scss */
 
 ul#directory-nav[role=menubar] li:last-of-type button {
     color: $black !important;
@@ -43,7 +44,7 @@ header {
                     display: block;
                     position: relative;
                     top: -.35rem;
-                    margin: 0 0 0 1rem;
+                    margin: .125rem 0 0 1rem;
                     padding: 0 0 0 1rem;
                     width: auto;
                     height: auto;
@@ -76,7 +77,7 @@ header #loyola-university-chicago a {
 }
 #social-icon-bar a {
     margin: .75rem 0 !important;
-    padding: .5rem !important;
+    padding: .5rem .6rem !important;
     font-size: 1.5rem;
     border: solid .125rem $white !important;
     border-radius: 50% !important;
@@ -91,10 +92,16 @@ footer {
     border-top: solid .25rem $gold;
     @include phone-landscape {
         span#brand {
-        display: block;
-        margin: 1rem 30%;
-        width: 40%;
-        max-width: 40%;
+            display: block;
+            margin: 1rem 30%;
+            width: 40%;
+            max-width: 40%;
+            a {
+                display: inline-block;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 100%;
+            }
             img {
                 margin: .5rem auto;
                 width: 100%;
@@ -109,12 +116,6 @@ footer {
             max-width: 100%;
             @include phone-portrait {
                 margin: 0 auto;
-            }
-            a {
-                display: inline-block;
-                margin: 0 auto;
-                width: 100%;
-                max-width: 100%;
                 img {
                     margin: 1rem 15%;
                     width: 70%;
