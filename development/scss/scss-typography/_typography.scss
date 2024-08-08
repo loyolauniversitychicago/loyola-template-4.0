@@ -76,7 +76,7 @@ h1 {
   line-height: 3.25;
   line-height: rvr(3.25);
   @include phone-portrait {
-    font-size: 3rem;
+    font-size: 2.75rem;
     line-height: 3;
     line-height: rvr(3);
   }
@@ -94,22 +94,25 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 1.5rem;
-  margin-bottom: rvr(1.5);
-  font-size: 1.85rem;
-  line-height: 2.45;
-  line-height: rvr(2.45);
+  margin-bottom: 1rem;
+  margin-bottom: rvr(1);
+  font-size: 2.25rem;
+  line-height: 2.5;
+  line-height: rvr(2.5);
   text-transform: none;
+  @include phone-portrait {
+    font-size: 2rem;
+    line-height: 2.125;
+    line-height: rvr(2.125);
+  }
 }
 
 h3 {
-  margin-top: rvr(1.25);
   font-family: 'Antenna Condensed Light', sans-serif;
   font-size: 2.25rem;
   line-height: 2.5;
   line-height: rvr(2.5);
   @include phone-portrait {
-    margin-top: rvr(1.5);
     font-size: 2rem;
     line-height: 2.125;
     line-height: rvr(2.125);
@@ -117,8 +120,7 @@ h3 {
 }
 
 h4 {
-  margin-top: rvr(1.25);
-  font-size: 1.75rem;
+  font-size: 1.625rem;
   line-height: 1.75;
   line-height: rvr(1.75);
   @include phone-portrait {
@@ -130,7 +132,7 @@ h4 {
 
 .content-columns-varied.four-column-build h4,
 .content-columns-varied.one-column-build.media-cards h4 {
-  font-size: 1.75rem;
+  font-size: 1.625rem;
   line-height: 1.75;
   line-height: rvr(1.75);
   @include phone-portrait {
@@ -145,7 +147,6 @@ h4 {
 }
 
 h5, details summary {
-  margin-top: rvr(1.25);
   margin-bottom: rvr(.35);
   font-size: 1.35rem;
   line-height: 1.75;
@@ -276,7 +277,7 @@ li strong, li a strong, ol strong, ol a strong,
 #panel-intro .intro-paragraph > p strong,
 .intro-paragraph > p strong, #panel-intro.bg-maroon {
   font-size: inherit;
-  font-family: 'open-sans', sans-serif;
+  font-family: 'open-sans', 'Arial', sans-serif;
   font-weight: 700;
   &:hover, &:visited {
     font-weight: 700;
@@ -604,10 +605,10 @@ blockquote, blockquote p {
   padding: 2em 0;
   width: 80%;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.85rem;
+  font-size: 1.5rem;
   font-weight: 700 !important;
-  line-height: 2.85;
-  line-height: rvr(2.85);
+  line-height: 2.5;
+  line-height: rvr(2.5);
   letter-spacing: -0.075rem;
   text-align: center;
   border-top: solid 1px $gray;
@@ -616,9 +617,9 @@ blockquote, blockquote p {
     margin: 1em auto;
     padding: 0;
     width: 90%;
-    font-size: 1.45rem;
-    line-height: 2.25;
-    line-height: rvr(2.25);
+    font-size: 1.25rem;
+    line-height: 1.75;
+    line-height: rvr(1.75);
     border: 0;
   }
 }
@@ -645,14 +646,17 @@ blockquote p cite {
   margin: 1em auto;
   padding: 0;
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: .875rem;
   font-weight: 400;
-  line-height: 1.35;
-  line-height: rvr(1.35);
+  line-height: 1.125;
+  line-height: rvr(1.125);
   letter-spacing: -.0125em;
   text-align: center;
   text-transform: uppercase;
+  @include phone-portrait {
+    font-size: .75rem;
+  }
 }
 
 blockquote cite:before,

@@ -53,7 +53,7 @@ ul[role="menubar"] {
 	button  {
 		margin: 0;
 		padding: 1rem 1.25rem .75rem 1.25rem;
-		font-family: 'OpenSans', sans-serif;
+		font-family: 'OpenSans', 'Arial', sans-serif;
 		font-size: .85rem;
 		font-weight: bold;
 		color: $gray-extra-light !important;
@@ -81,7 +81,7 @@ ul[role="menubar"] {
 			margin: 0;
 			padding: 0;
 			width: auto;
-			font-family: 'OpenSans', sans-serif;
+			font-family: 'OpenSans', 'Arial', sans-serif;
 			font-size: .85rem;
 			font-weight: bold;
 			letter-spacing: .025rem;
@@ -146,7 +146,7 @@ ul#directory-nav[role="menubar"] li {
 	a[role="menuitem"],
 	button {
     padding: .75rem 1.25rem;
-		font-family: 'OpenSans', sans-serif;
+		font-family: 'OpenSans', 'Arial', sans-serif;
 		font-weight: bold;
 		font-size: .7em;
 		color: $gray-light;
