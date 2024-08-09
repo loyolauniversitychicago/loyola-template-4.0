@@ -38,7 +38,10 @@
 .bg-maroon a.cta, .bg-brick a.cta, .bg-gray a.cta, .bg-gray-dark a.cta, .bg-patina a.cta, .bg-patina-dark a.cta, .bg-overlay a.cta  {
   color: lighten($gold, 15%);
   &:hover {
-    color: $opus !important;
+    color: lighten($gold, 30%) !important;
+  }
+  &:visited {
+    color: $gold !important;
   }
 }
 
@@ -52,7 +55,7 @@
 .bg-gold a.cta, .bg-terracotta-extra-light a.cta  {
   color: $maroon !important;
   &:hover {
-    color: $brick !important;
+    color: lighten($maroon, 10%) !important;
   }
 }
 

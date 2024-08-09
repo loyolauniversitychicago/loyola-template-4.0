@@ -99,6 +99,17 @@ button.center {
   }
 }
 
+.card .content-grid-wrapper.bg-maroon .button-open button {
+  color: lighten($gold, 10%) !important;
+  border: solid .125rem lighten($gold, 10%) !important;
+  background: none;
+  &:hover {
+    color: lighten($gold, 10%);
+    border: solid .125rem lighten($gold, 10%);
+    background: lighten($maroon, 10%);
+  }
+}
+
 .flex-item button {
   width: 100%;
 }
