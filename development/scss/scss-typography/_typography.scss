@@ -786,7 +786,7 @@ blockquote p cite:before {
 
 .infobox {
   padding: 3.5rem;
-  background-color: lighten($gray-light,15%);
+  background-color: $gray-extra-light;
   @include phone-portrait {
     padding:2.5rem;
   }
@@ -799,14 +799,14 @@ blockquote p cite:before {
   margin-top: 0;
 }
 
-.infobox p:last-of-type {
-  margin-bottom: 0;
-  margin-bottom: rvr(0);
-}
-
 .infobox p:first-of-type {
   margin: 0 0 1.25rem;
   margin-bottom: calc(var(--baseline) * 1.25 * 1rem);
+}
+
+.infobox p:last-of-type {
+  margin-bottom: 0;
+  margin-bottom: rvr(0);
 }
 
 .infobox button {

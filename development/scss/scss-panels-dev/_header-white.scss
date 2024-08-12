@@ -132,6 +132,7 @@ footer {
             }
         }
         @include phone-portrait {
+            margin: .5rem auto .5rem;
             width: fit-content;
         }
     }
