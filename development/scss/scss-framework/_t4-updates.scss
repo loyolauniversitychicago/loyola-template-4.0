@@ -89,9 +89,10 @@
     display: none;
     &.show {
       display: block;
-      height: 20rem !important;
-      max-height: 20rem !important;
-      overflow: scroll !important;
+      height: auto !important;
+      max-height: 90vh !important;
+      overflow-y: scroll !important;
+      overflow-x: hidden;
     }
   }
 }

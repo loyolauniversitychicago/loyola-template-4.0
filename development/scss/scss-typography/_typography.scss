@@ -11,7 +11,7 @@
 html { font-size: 100%; } /* matches browsers default */
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   color: $black;
   background-color: none;
 }
@@ -35,7 +35,7 @@ h2.antenna-compressed-headline,
 h3.antenna-compressed-headline,
 h4.antenna-compressed-headline,
 h5.antenna-compressed-headline {
-  font-family: 'Antenna Comp Bold', sans-serif !important;
+  font-family: 'Antenna Comp Bold', 'Arial', sans-serif !important;
   letter-spacing: .0125rem;
   word-spacing: .1rem;
   text-transform: uppercase;
@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 1rem;
   margin-bottom: rvr(1);
   width: 100%;
-  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-family: 'Antenna Condensed Bold', 'Arial', sans-serif;
   font-weight: 400;
   letter-spacing: -.02rem;
   word-spacing: .125rem;
@@ -108,7 +108,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Antenna Condensed Light', sans-serif;
+  font-family: 'Antenna Condensed Light', 'Arial', sans-serif;
   font-size: 2.25rem;
   line-height: 2.5;
   line-height: rvr(2.5);
@@ -161,13 +161,13 @@ h5, details summary {
 }
 
 h5 span[style] {
-  font-family: 'Antenna Condensed Light', sans-serif !important;
+  font-family: 'Antenna Condensed Light', 'Arial', sans-serif !important;
 }
 
 h6 {
   margin-bottom: .5rem;
   margin-bottom: rvr(.75);
-  font-family: 'Antenna Condensed Light', sans-serif;
+  font-family: 'Antenna Condensed Light', 'Arial', sans-serif;
   font-size: .95rem;
   line-height: 1.25;
   line-height: rvr(1.25);
@@ -181,7 +181,7 @@ h6 {
 }
 
 h6.category-bold {
-  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-family: 'Antenna Condensed Bold', 'Arial', sans-serif;
 }
 
 /* paragraphs */
@@ -205,7 +205,7 @@ p strong, .standard-paragraph p strong, li strong, li a strong, ol strong, ol a 
 #panel-intro .intro-paragraph > p strong, .intro-paragraph > p strong,
 #panel-intro .caption p, .caption p, .leadin, .caption .leadin,
 #panel-table-accordion p {
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Open Sans', 'Arial', sans-serif !important;
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.65;
@@ -228,7 +228,6 @@ p a, a.cta, li a, p a strong, li a strong, a.cta, strong a.cta {
   }
 }
 
-/* bg-maroon */
 /* paragraphs */
 .bg-maroon p strong, .bg-maroon .standard-paragraph p strong,
 /* list items */
@@ -249,7 +248,7 @@ p a, a.cta, li a, p a strong, li a strong, a.cta, strong a.cta {
 #panel-intro.bg-maroon .intro-paragraph > p,
 #panel-intro.bg-maroon .intro-paragraph > p strong,
 #panel-intro.bg-maroon .caption p,
-#panel-table-accordion.bg-maroon p {
+#panel-table-accordion.bg-maroon p{
   color: $white;
   a, a.cta, li a, li em a, li a em {
     color: $gold;
@@ -257,6 +256,10 @@ p a, a.cta, li a, p a strong, li a strong, a.cta, strong a.cta {
       color: $opus;
     }
   }
+}
+/* bg-maroon - global */
+.bg-maroon a {
+  color: lighten($gold, 10%);
 }
 
 /* cards */
@@ -388,7 +391,7 @@ a.cta {
   display: block;
   margin: .25rem auto 1.5rem;
   width: 100%;
-  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-family: 'Antenna Condensed Bold', 'Arial', sans-serif;
   font-size: 1.05rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -404,7 +407,7 @@ a.cta {
 }
 
 #main-section-wrapper a.cta {
-  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-family: 'Antenna Condensed Bold', 'Arial', sans-serif;
   margin-bottom: 1.5rem;
   margin-bottom: rvr(1.5);
   background-image: none !important;
@@ -540,7 +543,7 @@ img, .grid-item img {
   padding: 0;
   width: 24px;
   height: 24px;
-  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-family: 'Antenna Condensed Bold', 'Arial', sans-serif;
   font-size: .85rem;
   line-height: 1.25;
   line-height: rvr(1.25);
@@ -561,7 +564,7 @@ img, .grid-item img {
   padding: 0;
   width: 24px;
   height: 24px;
-  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-family: 'Antenna Condensed Bold', 'Arial', sans-serif;
   font-size: .85rem;
   line-height: 1.25;
   line-height: rvr(1.25);
@@ -580,7 +583,7 @@ img, .grid-item img {
 /* details - summary */
 
 details summary {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 700;
   color: $maroon;
   text-decoration: underline;
@@ -604,7 +607,7 @@ blockquote, blockquote p {
   margin: 2em auto;
   padding: 2em 0;
   width: 80%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 1.5rem;
   font-weight: 700 !important;
   line-height: 2.5;
@@ -693,7 +696,7 @@ blockquote p cite:before {
 .number-md h2,
 .number-sm h3 {
   margin: 0 0 .125em 0;
-  font-family: 'Antenna Condensed Bold', sans-serif !important;
+  font-family: 'Antenna Condensed Bold', 'Arial', sans-serif !important;
   letter-spacing: -.0125em;
   text-transform: uppercase;
 }
@@ -776,7 +779,7 @@ blockquote p cite:before {
 
 .card a.cta,
 .flex-item.content a.cta {
-  font-family: 'Antenna Condensed Bold', sans-serif;
+  font-family: 'Antenna Condensed Bold', 'Arial', sans-serif;
   font-size: 1.05rem;
   margin-top: rvr(.75) !important;
   margin-bottom: rvr(1.125);
@@ -827,7 +830,7 @@ p span.highlight.bg-danger { color: $white; background: $maroon; }
   p span.highlight.bg-warning,
   p span.highlight.bg-danger {
     color: $maroon;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     background-image: linear-gradient(120deg, $gray-extra-light 0%, $gray-extra-light 100%);
     background-repeat: no-repeat;
     background-size: 106% 0.1rem;
