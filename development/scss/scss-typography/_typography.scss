@@ -382,7 +382,7 @@ table tr a {
 }
 
 p a {
-  text-decoration: none;
+  text-decoration: underline;
   font-size: inherit;
   font-weight: 700;
 }
@@ -450,7 +450,9 @@ footnote, .footnote p {
 #main-content-wrapper ol,
 #main-content-wrapper ul,
 #main-content-wrapper-full-width ol,
-#main-content-wrapper-full-width ul {
+#main-content-wrapper-full-width ul,
+.modaal-content ul,
+.modaal-content ol {
   margin: 0 0 1rem 1.5rem;
   line-height: 1.45;
   line-height: rvr(1.45);
@@ -460,12 +462,14 @@ footnote, .footnote p {
 #main-content-wrapper ol li,
 #main-content-wrapper ul li,
 #main-content-wrapper-full-width ol li,
-#main-content-wrapper-full-width ul li {
+#main-content-wrapper-full-width ul li,
+.modaal-content ul li {
   margin: 0 0 .65rem;
 }
 
 #main-content-wrapper ol li,
-#main-content-wrapper-full-width ol li {
+#main-content-wrapper-full-width ol li
+.modaal-content ol li {
   text-indent: -1.5rem;
   &::marker {
     font-weight: 700;
@@ -473,14 +477,16 @@ footnote, .footnote p {
 }
 
 #main-content-wrapper ol li ol li,
-#main-content-wrapper-full-width ol li ol li {
+#main-content-wrapper-full-width ol li ol li,
+.modaal-content ol li ol li {
   &::marker {
     font-weight: 400;
   }
 }
 
 #main-content-wrapper ul li,
-#main-content-wrapper-full-width ul li {
+#main-content-wrapper-full-width ul li,
+.modaal-content ul li {
   text-indent: -1.5rem;
 }
 
@@ -491,7 +497,9 @@ footnote, .footnote p {
 #main-content-wrapper ol li ol,
 #main-content-wrapper ul li ol,
 #main-content-wrapper-full-width ol li ol,
-#main-content-wrapper-full-width ul li ol  {
+#main-content-wrapper-full-width ul li ol
+.modaal-content ul li ul,
+.modaal-content ol li ul {
   margin: .75rem 0 .75rem 1.5rem;
   margin-top: .75rem !important;
 }
