@@ -127,6 +127,12 @@ th {
     border-left: none;
     border-left: solid 1px $gray-extra-light;
   }
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    color: $gray-extra-light;
+  }
 }
 
 thead tr {

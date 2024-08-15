@@ -1,0 +1,78 @@
+/* ANTENNA - http://www.webtype.com */
+
+@font-face {
+  font-family: "Antenna Condensed Light";
+  src: url("../fonts/antennacondensedlight/antenna-condensed-light.eot") format("embedded-opentype"),
+       url("../fonts/antennacondensedlight/antenna-condensed-light.woff") format("woff"),
+       url("../fonts/antennacondensedbold/antenna-condensed-bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Antenna Condensed Bold";
+  src: url("../fonts/antennacondensedbold/antenna-condensed-bold.eot") format("embedded-opentype"),
+       url("../fonts/antennacondensedbold/antenna-condensed-bold.woff") format("woff"),
+       url("../fonts/antennacondensedbold/antenna-condensed-bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Antenna Condensed Black";
+  src: url("../fonts/antennacondensedblack/antenna-condensed-black.eot") format("embedded-opentype"),
+       url("../fonts/antennacondensedblack/antenna-condensed-black.woff") format("woff"),
+       url("../fonts/antennacondensedblack/antenna-condensed-black.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* legacy fonts */
+
+@font-face {
+  font-family: "Antenna";
+  src: url("../fonts/antennaregular/476def8b-6379-4133-9503-ca290c126397-4.svg");
+  src: url("../fonts/antennaregular/476def8b-6379-4133-9503-ca290c126397-2.eot") format("embedded-opentype"),
+       url("../fonts/antennaregular/476def8b-6379-4133-9503-ca290c126397-3.woff") format("woff"),
+       url("../fonts/antennaregular/476def8b-6379-4133-9503-ca290c126397-1.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Antenna Bold";
+  src: url("../fonts/antennabold/692e9d98-a1c5-4d26-9831-b7f258241cdf-4.svg");
+  src: url("../fonts/antennabold/692e9d98-a1c5-4d26-9831-b7f258241cdf-2.eot") format("embedded-opentype"),
+       url("../fonts/antennabold/692e9d98-a1c5-4d26-9831-b7f258241cdf-3.woff") format("woff"),
+       url("../fonts/antennabold/692e9d98-a1c5-4d26-9831-b7f258241cdf-1.ttf") format("truetype");
+	font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Antenna Black";
+  src: url("../fonts/antennablack/6620971b-19a1-4157-9796-83671a1c7836-4.svg");
+  src: url("../fonts/antennablack/6620971b-19a1-4157-9796-83671a1c7836-2.eot") format("embedded-opentype"),
+       url("../fonts/antennablack/6620971b-19a1-4157-9796-83671a1c7836-3.woff") format("woff"),
+       url("../fonts/antennablack/6620971b-19a1-4157-9796-83671a1c7836-1.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Antenna Comp Bold";
+  src: url("../fonts/antennacompbold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-2.eot") format("embedded-opentype"),
+       url("../fonts/antennacompbold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-3.woff") format("woff"),
+       url("../fonts/antennacompbold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-1.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Antenna Comp Black";
+  src: url("../fonts/antennacompblack/antenna-compressed-black.eot") format("embedded-opentype"),
+       url("../fonts/antennacompblack/antenna-compressed-black.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* end -fonts - css */
