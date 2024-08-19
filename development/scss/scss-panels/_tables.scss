@@ -63,6 +63,11 @@ table {
     }
     tr td:first-of-type p {
       color: $white;
+      font-weight: 700;
+    }
+    tr td:first-of-type p strong {
+      color: $white;
+      font-weight: 700;
     }
     td a {
       word-wrap: break-word;
@@ -127,12 +132,21 @@ th {
     border-left: none;
     border-left: solid 1px $gray-extra-light;
   }
-  p {
+  p, p strong {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
     font-weight: 600;
+    line-height: 1.35;
+    line-height: rvr(1.35) !important;
     margin: 0;
     color: $gray-extra-light;
   }
+}
+
+tr th:nth-child(1),
+tr th:nth-child(1) p,
+tr th:nth-child(1) p strong {
+  color: $black;
 }
 
 thead tr {

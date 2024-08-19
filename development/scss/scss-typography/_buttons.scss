@@ -78,13 +78,20 @@ button.center {
 .button-gold button { background-color: desaturate($gold,5%); color: $black !important; }
 
 .bg-maroon button,
-.bg-brick button { background-color: $gold; }
+.bg-brick button { background-color: $gold;
+  &:hover {
+    color: $white;
+    border: none;
+    background: lighten($gold, 10%) !important;
+  }
+}
 
 .bg-gold button,
 .bg-gray button,
 .bg-terracotta-extra-light button { background-color: $maroon; color: #000000 !important }
 
 .button-maroon button:hover { background-color: lighten($maroon, 10%) !important; }
+.bg-maroon .button-maroon button:hover { background-color: lighten($gold, 10%) !important; }
 .button-patina button:hover { background-color: $patina-dark !important; }
 .button-gold button:hover { background-color: lighten($gold,10%) !important; }
 
