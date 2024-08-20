@@ -110,6 +110,7 @@ button.minimalist-css-accordion__header {
 #panel-accordion [aria-expanded=true].minimalist-css-accordion__header {
   color: $white !important;
   background: $maroon !important;
+  font-weight: 600;
   &:hover {
     color: $white;
     background: $gray !important;
