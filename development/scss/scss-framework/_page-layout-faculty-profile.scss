@@ -1,0 +1,76 @@
+body#page-layout-faculty-profile #main-content-wrapper.grid-wrapper-min-max {
+    grid-gap: 1rem;
+    grid-row-gap: 1rem;
+    @include phone-portrait {
+        grid-template-columns: 1fr !important;
+        grid-auto-rows: 1fr 1fr 1fr;
+        grid-gap: 0;
+        grid-row-gap: 1rem;
+        margin: 0;
+        padding: 2rem;
+        width: 100%;
+    }
+}
+body#page-layout-faculty-profile #main-content-wrapper.grid-wrapper-min-max #main-section-wrapper {
+    grid-column-start: auto;
+    grid-column: 1 / span 8 !important;
+    grid-row: 1 / span 4;
+    grid-row-start: 1;
+    grid-row-end: span 100%;
+    @include phone-portrait {
+        margin: 0;
+        grid-column: 1 / 1 !important;
+        grid-row: 3 / span 6 !important;
+    }
+}
+body#page-layout-faculty-profile #main-content-wrapper.grid-wrapper-min-max #main-aside-wrapper-navigation {
+    grid-column: 9 / span 4 !important;
+    margin: 0 0 2rem 0;
+    @include phone-portrait {
+        margin: 0;
+        grid-column: 1 / span 1 !important;
+        grid-row: 1 / span 2;
+    }
+}
+body#page-layout-faculty-profile #main-content-wrapper.grid-wrapper-min-max #main-aside-wrapper-content {
+    grid-column: 9 / span 4 !important;
+    @include phone-portrait {
+        margin: 0;
+        margin: 0;
+        grid-column: 1 / span 1 !important;
+        grid-row: 9 / span 1;
+    }
+}
+body#page-layout-faculty-profile #main-content-wrapper.grid-wrapper-min-max #main-section-wrapper,
+body#page-layout-faculty-profile #main-content-wrapper.grid-wrapper-min-max #main-aside-wrapper-navigation .container,
+body#page-layout-faculty-profile #main-content-wrapper.grid-wrapper-min-max #main-aside-wrapper-content .container {
+    margin: 0 5%;
+    width: 90%;
+    @include phone-portrait {
+
+    }
+}
+body#page-layout-faculty-profile #main-content-wrapper.grid-wrapper-min-max #main-aside-wrapper-navigation .grid-wrapper-min-max .content-grid-wrapper {
+    display: block;
+}
+body#page-layout-faculty-profile #main-content-wrapper.grid-wrapper-min-max #main-aside-wrapper-navigation #social-icon-bar {
+    position: relative;
+    top: 0 !important;
+    left: 0;
+    display: inline;
+    margin: 0;
+}
+body#page-layout-faculty-profile #main-content-wrapper.grid-wrapper-min-max #main-aside-wrapper-navigation #social-icon-bar a {
+    display: inline-block;
+    margin: 1rem .125rem 0 !important;
+    padding: 0 !important;
+    background: none !important;
+    border-radius: 0 !important;
+    border: 0 none !important;
+}
+body#page-layout-faculty-profile #main-content-wrapper.grid-wrapper-min-max #main-aside-wrapper-navigation #social-icon-bar article a i {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 0;
+    color: $maroon;
+}

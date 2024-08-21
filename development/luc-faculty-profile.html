@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	@@include('./partials/framework/luc-head.html')
+	<!-- inject:css -->
+	<!-- endinject -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="page-layout-faculty-profile">
+	<div id="main-wrapper">
+		@@include('./partials/framework/luc-search-overlay.html')
+		@@include('./partials/framework/luc-sliding-menu.html')
+		<!-- HEADER -->
+		<header id="luc-header">
+			@@include('./partials/panels/proposed/luc-header-proposed.html')
+		</header>
+		@@include('./partials/framework/luc-nav-desktop-accessible.html')
+		<main id="main-content-start" alt="This is the beginning of the main content of the page">
+			<aside id="social-icon-bar">
+				@@include('./partials/framework/luc-social-media-bar.html')
+			</aside>
+			<!-- main content here
+			by ID
+			span9 (main-content-wrapper)
+			span12 (main-content-wrapper-full-width) -->
+			<div id="main-content-wrapper" class="grid-wrapper-min-max">
+				<section id="main-section-wrapper">
+					@@include('./partials/panels/panel-faculty-profile-main.html')
+				</section>
+				<aside id="main-aside-wrapper-navigation">
+					@@include('./partials/panels/panel-faculty-profile-card-aside.html')
+				</aside>
+				<aside id="main-aside-wrapper-content">
+					@@include('./partials/panels/panel-faculty-profile-content-aside.html')
+				</aside>
+			</div>
+			<footer id="footer-not-fixed">
+				@@include('./partials/framework/luc-footer.html')
+			</footer>
+			<footer id="footer-fixed">
+				@@include('./partials/framework/luc-footer.html')
+			</footer>
+		</main>
+		<!-- inject:js -->
+		<!-- endinject -->
+	</div>
+</body>
+
+</html>
