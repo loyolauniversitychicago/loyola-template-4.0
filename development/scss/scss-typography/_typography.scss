@@ -14,6 +14,7 @@ body {
   font-family: 'Open Sans', 'Arial', sans-serif;
   color: $black;
   background-color: none;
+  overflow-wrap: break-word;
 }
 
 p, ul, ol {
