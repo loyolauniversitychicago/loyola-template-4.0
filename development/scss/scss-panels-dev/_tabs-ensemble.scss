@@ -40,7 +40,12 @@
 /* panel image text - blockquote only */
 
 .tabs-ensemble .panel-image-text.panel-image-text-blockquote.grid-area-content-only .content-image-text {
+    padding: 0;
     background: $white;
+}
+
+.tabs-ensemble .tabs .tab-panel .panel-image-text-blockquote.grid-area-content-only .content-image-text h4 {
+    font-size: 1.75rem !important;
 }
 
 .tabs-ensemble .panel-image-text.panel-image-text-blockquote .content-image-text blockquote {
@@ -82,12 +87,12 @@
 }
 
 .tabs-ensemble .tabs .tab-list {
-    margin: 1.25rem auto;
+    margin: 0 auto 1.25rem auto;
     display: inline-block;
 }
 
 .tabs-ensemble .tabs .tab-list .tab-button {
-    margin: 0 1.25rem;
+    margin: 1.25rem;
     padding: 0;
     width: 5.5rem;
     height: 5.5rem;
