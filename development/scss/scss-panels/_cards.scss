@@ -545,6 +545,11 @@ button:focus {
   grid-gap: 3rem;
 }
 
+#panel-numbers.container-fluid.bg-overlay .container.container-50 .grid-wrapper-min-max {
+  margin: 0 auto;
+  width: 70%;
+}
+
 #panel-numbers.container-fluid.bg-overlay {
   background-color: $gray-dark;
   background-image: url('../images/images-resize/resize-cudahy-rainbow-1800-800.jpg');
