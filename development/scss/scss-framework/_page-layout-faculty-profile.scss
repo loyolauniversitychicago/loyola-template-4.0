@@ -4,7 +4,7 @@ body#page-layout-faculty-profile #social-icon-bar {
 /* wrapper - grid - container - adjustments */
 body#page-layout-faculty-profile #main-content-wrapper {
     grid-gap: 0;
-    grid-row-gap: 1rem;
+    grid-row-gap: 2rem;
     @include phone-portrait {
         grid-auto-rows: auto;
         grid-gap: 0;
@@ -71,7 +71,7 @@ body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards #
     margin: 0;
 }
 body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards #social-icon-bar a {
-    display: inline-block;
+    display: inline;
     margin: 1rem .125rem 0 !important;
     padding: 0 !important;
     background: none !important;
