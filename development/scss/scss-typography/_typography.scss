@@ -527,14 +527,18 @@ img, .grid-item img {
 /* unique typographic patterns */
 
 #main-content-wrapper .circle-number ol,
-#main-section-wrapper .circle-number ol {
+#main-section-wrapper .circle-number ol,
+#main-content-wrapper .grid-area-content .circle-number ol,
+#main-section-wrapper .grid-area-content .circle-number ol {
   list-style: none;
   counter-reset: circle-numbers;
   margin: 0 0 1rem 0;
 }
 
 #main-content-wrapper .circle-number ol li,
-#main-section-wrapper .circle-number ol li {
+#main-section-wrapper .circle-number ol li,
+#main-content-wrapper .grid-area-content .circle-number ol li,
+#main-section-wrapper .grid-area-content .circle-number ol li {
   counter-increment: circle-numbers;
   margin: 0 0 1.25rem 2.25rem;
   font-size: 1.1rem;
@@ -544,7 +548,9 @@ img, .grid-item img {
 }
 
 #main-content-wrapper .circle-number ol li::before,
-#main-section-wrapper .circle-number ol li::before {
+#main-section-wrapper .circle-number ol li::before,
+#main-content-wrapper .grid-area-content .circle-number ol li::before,
+#main-section-wrapper .grid-area-content .circle-number ol li::before {
   content: counter(circle-numbers);
   display: inline-block;
   float: left;
@@ -562,8 +568,18 @@ img, .grid-item img {
   border-radius: 50%;
 }
 
+#main-content-wrapper .circle-number.circle-number-gold ol li::before,
+#main-section-wrapper .circle-number.circle-number-gold ol li::before,
+#main-content-wrapper .grid-area-content .circle-number.circle-number-gold ol li::before,
+#main-section-wrapper .grid-area-content .circle-number.circle-number-gold ol li::before {
+  color: $black;
+  background-color: $gold;
+}
+
 #main-content-wrapper .circle-number.circle-number-patina ol li::before,
-#main-section-wrapper .circle-number.circle-number-patina ol li::before {
+#main-section-wrapper .circle-number.circle-number-patina ol li::before,
+#main-content-wrapper .grid-area-content .circle-number.circle-number-patina ol li::before,
+#main-section-wrapper .grid-area-content .circle-number.circle-number-patina ol li::before {
   background-color: $patina;
 }
 

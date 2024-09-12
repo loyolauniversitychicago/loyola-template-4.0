@@ -693,6 +693,8 @@ grid-area: 1 / 3 / span 1 / span 2;
   .content-image-text {
     padding: 4rem;
     height: 100%;
+    contain: size;
+    overflow: auto;
     background: $gray-extra-light;
     h6, h4, p, p em, p strong {
       color: $black !important;
@@ -710,7 +712,7 @@ grid-area: 1 / 3 / span 1 / span 2;
 #panel-image-text.bg-patina,
 #panel-image-text.bg-patina-dark {
   .content-image-text {
-    h6, h4, p, p em, p strong {
+    h6, h4, p, p em, p strong, li, li strong {
       color: $gray-extra-light !important;
     }
   }
@@ -718,6 +720,15 @@ grid-area: 1 / 3 / span 1 / span 2;
 
 #panel-image-text.bg-maroon .content-image-text {
   background: $maroon !important;
+}
+#panel-image-text.bg-white .content-image-text {
+  background: $white !important;
+}
+#panel-image-text.bg-gray-extra-light .content-image-text {
+  background: $gray-extra-light !important;
+}
+#panel-image-text.bg-gray-light .content-image-text {
+  background: $gray-light !important;
 }
 #panel-image-text.bg-gray .content-image-text {
   background: $gray !important;
@@ -734,6 +745,13 @@ grid-area: 1 / 3 / span 1 / span 2;
 
 #panel-image-text .content-image-text-image img::before {
   height: 100%;
+}
+#panel-image-text .content-image-text-image.show-full-image {
+  background-image: none !important;
+  padding-top: 0;
+  img {
+    display: block !important;
+  }
 }
 
 /* image-overlay - used on image grid - image highlights - image-overlay > blockquote */

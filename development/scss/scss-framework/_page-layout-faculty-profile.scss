@@ -79,6 +79,12 @@ body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards u
 body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards ul {
     margin: 0 0 1rem 2.5rem;
 }
+body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards ul li {
+    text-indent: -1.35rem;
+    a {
+        font-weight: 600;
+    }
+}
 body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards #social-icon-bar {
     position: relative;
     left: 0;
