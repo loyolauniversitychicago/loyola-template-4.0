@@ -149,9 +149,12 @@ button.slick-next {
   padding: 1.5rem 1.5rem 4rem;
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
+  font-weight: 700;
   line-height: 1.75;
+  letter-spacing: -.0125rem;
+  word-spacing: .075rem;
   outline: 0 !important;
-  background: $bg-overlay;
+  background: $bg-overlay-extra-dark;
 }
 .controls .slick-slider .slick-list,
 .controls .slick-slider .slick-track {
