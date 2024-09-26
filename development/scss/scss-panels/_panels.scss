@@ -998,8 +998,8 @@ button.content-activate-symbol.activate-symbol-close {
     }
   }
 }
-
-#panel-image-overlay {
+#panel-image-overlay,
+#panel-image-overlay-resize {
   img {
     display: block;
     margin: 0;
@@ -1021,7 +1021,7 @@ button.content-activate-symbol.activate-symbol-close {
     align-content: center;
     blockquote {
       align-content: center;
-      margin: 0 auto;
+      margin: 0 auto !important;
       padding: 0;
       width: 70%;
       height: auto;
