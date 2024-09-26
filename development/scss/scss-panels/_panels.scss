@@ -1016,13 +1016,16 @@ button.content-activate-symbol.activate-symbol-close {
   }
   .content-image-overlay {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    align-content: center;
     blockquote {
       align-content: center;
       margin: 0 auto;
       padding: 0;
       width: 70%;
       height: auto;
+      text-transform: none;
       border: none;
       @include phone-portrait {
         width: 100%;
