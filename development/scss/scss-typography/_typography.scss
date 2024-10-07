@@ -996,5 +996,22 @@ blockquote cite { line-height: 1.35; }
   }
 }
 
+/* specicic application */
+
+#faculty-box {
+  .center {
+    margin-bottom: calc(var(--baseline) * 1 * 1rem) !important;
+    img {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+  }
+  .info {
+  margin-bottom: calc(var(--baseline) * 1.25 * 1rem) !important;
+    p {
+      margin-bottom: calc(var(--baseline) * .125 * 1rem) !important;
+    }
+  }
+}
 
 /* END - TYPOGRAPHY - CSS */
