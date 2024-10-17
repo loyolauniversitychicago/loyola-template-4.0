@@ -696,6 +696,9 @@ grid-area: 1 / 3 / span 1 / span 2;
     contain: size;
     overflow: auto;
     background: $gray-extra-light;
+    @include phone-portrait {
+      contain: content;
+    }
     h6, h4, p, p em, p strong {
       color: $black !important;
     }
