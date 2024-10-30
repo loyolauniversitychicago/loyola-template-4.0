@@ -73,11 +73,11 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   margin-bottom: 1rem;
   margin-bottom: rvr(1);
-  font-size: 3.125rem !important;
-  line-height: 3.25;
-  line-height: rvr(3.25);
+  font-size: 3.5rem;
+  line-height: 3.5;
+  line-height: rvr(3.5);
   @include phone-portrait {
-    font-size: 2.75rem;
+    font-size: clamp(1em, 1em + 9vw, 3em);
     line-height: 3;
     line-height: rvr(3);
   }
@@ -88,7 +88,7 @@ h1 {
   line-height: 4.125;
   line-height: rvr(4.125);
   @include phone-portrait {
-    font-size: 3rem;
+    font-size: clamp(1em, 1em + 5.5vw, 3em);
     line-height: 3;
     line-height: rvr(3);
   }

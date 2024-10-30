@@ -66,11 +66,11 @@ body {
     vertical-align: baseline;
 }
 h1 {
-    font-size: 2.75rem;
+/*  font-size: 2.75rem; */
     font-weight: bold;
 }
 h2 {
-    font-size: 2.25rem;
+/*  font-size: 2.25rem; */
     font-weight: bold;
 }
 #main-section-wrapper .container.container-50 nav a {
