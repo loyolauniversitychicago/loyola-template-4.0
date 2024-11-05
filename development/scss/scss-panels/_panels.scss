@@ -1034,6 +1034,8 @@ button.content-activate-symbol.activate-symbol-close {
         width: 100%;
         font-size: 1.25rem;
         line-height: 2;
+        max-height: 300px;
+        overflow: scroll;
       }
     }
   }
