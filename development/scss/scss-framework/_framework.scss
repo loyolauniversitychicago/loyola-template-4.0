@@ -394,7 +394,7 @@ footer span#brand img {
 
 footer p {
   @include tablet-portrait {
-    display: none;
+    display: block;
   }
 }
 
