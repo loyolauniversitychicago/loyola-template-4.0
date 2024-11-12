@@ -119,7 +119,8 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   @include phone-portrait {
-    min-height: 200px;
+    min-height: auto;
+    height: auto;
   }
 }
 
