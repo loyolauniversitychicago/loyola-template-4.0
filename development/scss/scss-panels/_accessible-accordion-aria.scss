@@ -226,7 +226,7 @@ nav#secondary [aria-hidden=true].minimalist-accordion__panel {
 }
 
 /* This is the hidden state */
-
+/*
 [aria-hidden=true].minimalist-css-accordion__panel {
   display: block;
   margin: 0;
@@ -238,6 +238,7 @@ nav#secondary [aria-hidden=true].minimalist-accordion__panel {
   -webkit-transition-delay: 1s, 0s, 0s, 0s;
   transition-delay: 1s, 0s, 0s, 0s;
 }
+*/
 
 .minimalist-noanim-accordion__panel {
   display: block;

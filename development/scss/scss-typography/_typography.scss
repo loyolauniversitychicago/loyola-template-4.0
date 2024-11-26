@@ -876,7 +876,7 @@ p span.highlight.bg-danger { color: $white; background: $maroon; }
   .bg-maroon li a strong,
   .bg-maroon a.cta,
   .bg-maroon strong a.cta {
-    color: lighten($gold, 20%);
+    color: $gold;
     background-image: linear-gradient(120deg, $brick 0%, $brick 100%);
     background-repeat: no-repeat;
     background-size: 106% 0.1rem;
@@ -885,6 +885,18 @@ p span.highlight.bg-danger { color: $white; background: $maroon; }
     &:hover {
       color: lighten($gold, 20%) !important;
       background-size: 100% 106%;
+    }
+    &:visited {
+      color: $gold;
+    }
+  }
+}
+
+#main-section-wrapper {
+  .bg-maroon h4 a {
+    color: $gray-extra-light;
+    &:hover {
+      color: $white;
     }
   }
 }

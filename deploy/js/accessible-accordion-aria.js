@@ -247,7 +247,7 @@ var plugin = function plugin() {
       if (accordion_node.getAttribute(CONFIG.ACCORDION_DATA_MULTISELECTABLE) === 'none') {
         accordion_node.setAttribute(CONFIG.ATTR_MULTISELECTABLE, 'false');
       } else {
-        accordion_node.setAttribute(CONFIG.ATTR_MULTISELECTABLE, 'true');
+        accordion_node.setAttribute(CONFIG.ATTR_MULTISELECTABLE, 'false');
       }
       accordion_node.setAttribute(CONFIG.ATTR_ROLE, CONFIG.ACCORDION_ROLE_TABLIST);
       accordion_node.setAttribute('id', iLisible);
