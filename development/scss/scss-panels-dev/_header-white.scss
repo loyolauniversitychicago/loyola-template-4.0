@@ -40,6 +40,27 @@ header {
                     display: block;
                     width: 80%;
                 }
+                h6 {
+                    display: block;
+                    position: relative;
+                    top: -.35rem;
+                    margin: 0 0 -.125rem 1rem;
+                    padding: 0 0 0 1rem;
+                    width: auto;
+                    height: auto;
+                    font-size: .775rem;
+                    color: $black !important;
+                    letter-spacing: -.0125rem;
+                    line-height: 1.25;
+                    border-left: solid 1px $black;
+                    @include phone-landscape {
+                        top: 0;
+                        margin: .25rem 0 .35rem;
+                        padding: 0;
+                        letter-spacing: 0rem;
+                        border-left: none;
+                    }
+                }
                 > a {
                     display: block;
                     position: relative;
@@ -52,7 +73,7 @@ header {
                     letter-spacing: -.075rem;
                     line-height: 1.25;
                     border-left: solid 1px $black;
-                    @include phone-portrait {
+                    @include phone-landscape {
                         margin: 0;
                         padding: 0;
                         font-size: 1.5rem;
