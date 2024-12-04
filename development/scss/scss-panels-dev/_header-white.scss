@@ -40,7 +40,7 @@ header {
                     display: block;
                     width: 80%;
                 }
-                h6.subsite-label {
+                span.subsite-label {
                     display: block;
                     position: relative;
                     top: -.35rem;
@@ -48,10 +48,13 @@ header {
                     padding: 0 0 0 1rem;
                     width: auto;
                     height: auto;
+                    font-family: 'Antenna Condensed Light';
                     font-size: .775rem !important;
                     color: $black !important;
-                    letter-spacing: -.0125rem;
+                    letter-spacing: 0;
+                    word-spacing: .075rem;
                     line-height: 1.25;
+                    text-transform: uppercase;
                     border-left: solid 1px $black;
                     @include phone-landscape {
                         top: 0;
