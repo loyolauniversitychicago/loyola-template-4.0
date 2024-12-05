@@ -524,6 +524,22 @@ img, .grid-item img {
   width: 100%;
 }
 
+img.image-xsm, .grid-item img.image-xsm,
+#main-section-wrapper .container .grid-wrapper-min-max img.image-xsm {
+  width: 25%;
+  height: auto;
+}
+img.image-sm, .grid-item img.image-sm,
+#main-section-wrapper .container .grid-wrapper-min-max img.image-sm {
+  width: 50%;
+  height: auto;
+}
+img.image-md, .grid-item img.image-md,
+#main-section-wrapper .container .grid-wrapper-min-max img.image-md {
+  width: 75%;
+  height: auto;
+}
+
 /* unique typographic patterns */
 
 #main-content-wrapper .circle-number ol,
