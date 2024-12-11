@@ -40,6 +40,11 @@ button, .button {
   }
 }
 
+a button,
+a button.button {
+  height: auto !important;
+}
+
 button.container-100 {
   width: 100%;
 }
