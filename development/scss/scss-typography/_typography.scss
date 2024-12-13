@@ -78,8 +78,8 @@ h1 {
   line-height: rvr(3.5);
   @include phone-portrait {
     font-size: clamp(1em, 1em + 9vw, 3em);
-    line-height: 3;
-    line-height: rvr(3);
+    line-height: 2.75;
+    line-height: rvr(2.75);
   }
 }
 
@@ -102,9 +102,9 @@ h2 {
   line-height: rvr(2.5);
   text-transform: none;
   @include phone-portrait {
-    font-size: 2rem;
-    line-height: 2.125;
-    line-height: rvr(2.125);
+    font-size: clamp(1em, 1em + 5.5vw, 2.125em);
+    line-height: 2.25;
+    line-height: rvr(2.25);
   }
 }
 
@@ -114,9 +114,9 @@ h3 {
   line-height: 2.5;
   line-height: rvr(2.5);
   @include phone-portrait {
-    font-size: 2rem;
-    line-height: 2.125;
-    line-height: rvr(2.125);
+    font-size: clamp(1em, 1em + 5.5vw, 2.125em);
+    line-height: 2.25;
+    line-height: rvr(2.25);
   }
 }
 
@@ -125,7 +125,7 @@ h4 {
   line-height: 1.75;
   line-height: rvr(1.75);
   @include phone-portrait {
-    font-size: 1.6rem;
+    font-size: clamp(1em, 1em + 3.5vw, 1.75em);
     line-height: 1.75;
     line-height: rvr(1.75);
   }
@@ -137,9 +137,9 @@ h4 {
   line-height: 1.75;
   line-height: rvr(1.75);
   @include phone-portrait {
-    font-size: 1.6rem;
-    line-height: 1.7;
-    line-height: rvr(1.7);
+    font-size: clamp(1em, 1em + 2.75vw, 1.6em);
+    line-height: 1.6;
+    line-height: rvr(1.6);
   }
 }
 
@@ -155,9 +155,9 @@ h5, details summary {
   letter-spacing: 0rem;
   text-transform: uppercase;
   @include phone-portrait {
-    font-size: 1.125rem;
-    line-height: 1.65;
-    line-height: rvr(1.65);
+    font-size: clamp(1em, 1em + 1.5vw, 1.25em);
+    line-height: 1.25;
+    line-height: rvr(1.25);
   }
 }
 
@@ -175,9 +175,9 @@ h6 {
   letter-spacing: 0rem;
   text-transform: uppercase;
   @include phone-portrait {
-    font-size: 1rem;
-    line-height: 1;
-    line-height: rvr(1);
+    font-size: clamp(1em, 1em + 1vw, 1.125em);
+    line-height: 1.125;
+    line-height: rvr(1.125);
   }
 }
 
@@ -528,16 +528,25 @@ img.image-xsm, .grid-item img.image-xsm,
 #main-section-wrapper .container .grid-wrapper-min-max img.image-xsm {
   width: 25%;
   height: auto;
+  @include phone-portrait {
+    width: 50%;
+  }
 }
 img.image-sm, .grid-item img.image-sm,
 #main-section-wrapper .container .grid-wrapper-min-max img.image-sm {
   width: 50%;
   height: auto;
+  @include phone-portrait {
+    width: 100%;
+  }
 }
 img.image-md, .grid-item img.image-md,
 #main-section-wrapper .container .grid-wrapper-min-max img.image-md {
   width: 75%;
   height: auto;
+  @include phone-portrait {
+    width: 100%;
+  }
 }
 
 /* unique typographic patterns */
@@ -792,6 +801,11 @@ blockquote p cite:before {
     font-size: 1.75rem;
     line-height: 1.85;
     line-height: rvr(1.85) !important;
+  }
+  @include phone-portrait {
+  font-size: clamp(1em, 1em + 2.75vw, 1.6em);
+  line-height: 1.6;
+  line-height: rvr(1.6);
   }
 }
 
