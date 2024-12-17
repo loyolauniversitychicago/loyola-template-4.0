@@ -247,7 +247,7 @@ td p, #panel-table-accordion p {
   &:last-of-type { margin-bottom: 0 !important; }
 }
 
-td, td p, td ul li, #panel-table-accordion ul li, #panel-table-accordion p {
+td, td strong, td p, td p strong, td ul li, td ul li strong, #panel-table-accordion ul li, #panel-table-accordion p {
   font-size: .85rem !important;
   letter-spacing: -.025rem;
   text-align: left;

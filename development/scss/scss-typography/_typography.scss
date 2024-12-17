@@ -77,7 +77,7 @@ h1 {
   line-height: 3.5;
   line-height: rvr(3.5);
   @include phone-portrait {
-    font-size: clamp(1em, 1em + 9vw, 3em);
+    font-size: clamp(1em, 1em + 9vw, 2.85em);
     line-height: 2.75;
     line-height: rvr(2.75);
   }
@@ -88,9 +88,9 @@ h1 {
   line-height: 4.125;
   line-height: rvr(4.125);
   @include phone-portrait {
-    font-size: clamp(1em, 1em + 5.5vw, 3em);
-    line-height: 3;
-    line-height: rvr(3);
+    font-size: clamp(1em, 1em + 5.5vw, 2.85em);
+    line-height: 2.75;
+    line-height: rvr(2.75);
   }
 }
 
@@ -102,9 +102,9 @@ h2 {
   line-height: rvr(2.5);
   text-transform: none;
   @include phone-portrait {
-    font-size: clamp(1em, 1em + 5.5vw, 2.125em);
-    line-height: 2.25;
-    line-height: rvr(2.25);
+    font-size: clamp(1em, 1em + 5.5vw, 1.85em);
+    line-height: 2;
+    line-height: rvr(2);
   }
 }
 
@@ -114,9 +114,9 @@ h3 {
   line-height: 2.5;
   line-height: rvr(2.5);
   @include phone-portrait {
-    font-size: clamp(1em, 1em + 5.5vw, 2.125em);
-    line-height: 2.25;
-    line-height: rvr(2.25);
+    font-size: clamp(1em, 1em + 5.5vw, 1.85em);
+    line-height: 1.9;
+    line-height: rvr(1.9);
   }
 }
 
@@ -125,9 +125,9 @@ h4 {
   line-height: 1.75;
   line-height: rvr(1.75);
   @include phone-portrait {
-    font-size: clamp(1em, 1em + 3.5vw, 1.75em);
-    line-height: 1.75;
-    line-height: rvr(1.75);
+    font-size: clamp(1em, 1em + 2.75vw, 1.5em);
+    line-height: 1.65;
+    line-height: rvr(1.65);
   }
 }
 
@@ -137,9 +137,9 @@ h4 {
   line-height: 1.75;
   line-height: rvr(1.75);
   @include phone-portrait {
-    font-size: clamp(1em, 1em + 2.75vw, 1.6em);
-    line-height: 1.6;
-    line-height: rvr(1.6);
+    font-size: clamp(1em, 1em + 2.75vw, 1.5em);
+    line-height: 1.65;
+    line-height: rvr(1.65);
   }
 }
 
@@ -155,9 +155,9 @@ h5, details summary {
   letter-spacing: 0rem;
   text-transform: uppercase;
   @include phone-portrait {
-    font-size: clamp(1em, 1em + 1.5vw, 1.25em);
-    line-height: 1.25;
-    line-height: rvr(1.25);
+    font-size: clamp(1em, 1em + 1.5vw, 1.125em);
+    line-height: 1.35;
+    line-height: rvr(1.35);
   }
 }
 
@@ -175,7 +175,7 @@ h6 {
   letter-spacing: 0rem;
   text-transform: uppercase;
   @include phone-portrait {
-    font-size: clamp(1em, 1em + 1vw, 1.125em);
+    font-size: clamp(1em, 1em + 1vw, 1em);
     line-height: 1.125;
     line-height: rvr(1.125);
   }
@@ -215,7 +215,7 @@ p strong, .standard-paragraph p strong, li strong, li a strong, ol strong, ol a 
   word-spacing: .125rem;
   color: $black;
   @include phone-portrait {
-    font-size: 1.125rem;
+    font-size: 1rem;
     line-height: 1.65;
     line-height: rvr(1.65);
   }
@@ -793,6 +793,12 @@ blockquote p cite:before {
   margin-top: rvr(.5);
   margin-bottom: rvr(.5);
   font-size: 1.75rem;
+  @include phone-portrait {
+    font-size: 1.6rem;
+    font-size: clamp(1em, 1em + 2.75vw, 1.6em);
+    line-height: 1.6;
+    line-height: rvr(1.6);
+  }
 }
 
 .flex-item.content.uppercase h4 {
@@ -803,6 +809,7 @@ blockquote p cite:before {
     line-height: rvr(1.85) !important;
   }
   @include phone-portrait {
+  font-size: 1.6rem;
   font-size: clamp(1em, 1em + 2.75vw, 1.6em);
   line-height: 1.6;
   line-height: rvr(1.6);
@@ -813,6 +820,10 @@ blockquote p cite:before {
   margin-top: rvr(.5);
   margin-bottom: rvr(.5);
   font-size: 1.125rem;
+  @include phone-portrait {
+  font-size: clamp(1em, 1em + 2.75vw, 1em);
+  line-height: 1.125;
+  }
 }
 
 .flex-item.content p, .flex-item.content p.explainer {
