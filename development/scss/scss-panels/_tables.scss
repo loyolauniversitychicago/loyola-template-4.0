@@ -236,7 +236,7 @@ table > tbody > tr > td:nth-child(1) {
 }
 
 
-/* table accordion */
+/* table accordion and accordion with nested table */
 
 td p, td ul, #panel-table-accordion ul, #panel-table-accordion p {
   margin: .5rem 0 !important;
@@ -247,7 +247,11 @@ td p, #panel-table-accordion p {
   &:last-of-type { margin-bottom: 0 !important; }
 }
 
-td, td strong, td p, td p strong, td ul li, td ul li strong, #panel-table-accordion ul li, #panel-table-accordion p {
+table tbody th, table tbody th strong,
+td, td strong, td p, td p strong, td ul li, td ul li strong,
+#panel-table-accordion ul li, #panel-table-accordion p, #panel-table-accordion ul li strong, #panel-table-accordion p strong,
+.minimalist-accordion__panel table tbody th, .minimalist-accordion__panel table tbody th strong,
+.minimalist-accordion__panel table tbody tr td p, .minimalist-accordion__panel table tbody tr td p strong {
   font-size: .85rem !important;
   letter-spacing: -.025rem;
   text-align: left;
