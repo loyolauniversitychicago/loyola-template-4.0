@@ -125,9 +125,9 @@ h4 {
   line-height: 1.75;
   line-height: rvr(1.75);
   @include phone-portrait {
-    font-size: clamp(1em, 1em + 2.75vw, 1.5em);
-    line-height: 1.65;
-    line-height: rvr(1.65);
+    font-size: clamp(1em, 1em + 2.75vw, 1.35em);
+    line-height: 1.45;
+    line-height: rvr(1.45);
   }
 }
 
@@ -137,9 +137,9 @@ h4 {
   line-height: 1.75;
   line-height: rvr(1.75);
   @include phone-portrait {
-    font-size: clamp(1em, 1em + 2.75vw, 1.5em);
-    line-height: 1.65;
-    line-height: rvr(1.65);
+    font-size: clamp(1em, 1em + 2.75vw, 1.35em);
+    line-height: 1.45;
+    line-height: rvr(1.45);
   }
 }
 
@@ -795,9 +795,9 @@ blockquote p cite:before {
   font-size: 1.75rem;
   @include phone-portrait {
     font-size: 1.6rem;
-    font-size: clamp(1em, 1em + 2.75vw, 1.6em);
-    line-height: 1.6;
-    line-height: rvr(1.6);
+    font-size: clamp(1em, 1em + 2.75vw, 1.35em);
+    line-height: 1.45;
+    line-height: rvr(1.45);
   }
 }
 

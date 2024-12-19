@@ -22,7 +22,7 @@
     padding: 2rem;
     background: $gray-extra-light;
     h4 {
-        line-height: calc(var(--baseline) * 1.35 * 1rem);
+        line-height: calc(var(--baseline) * 1.65 * 1rem);
         text-transform: none;
     }
     cite {
@@ -87,7 +87,7 @@
 }
 
 .tabs-ensemble .tabs .tab-list {
-    margin: 0 auto 1.25rem auto;
+    margin: 1.5rem auto 1.25rem auto;
     display: inline-block;
 }
 

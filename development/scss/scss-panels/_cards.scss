@@ -418,6 +418,12 @@
 
 .card .content-grid-wrapper.bg-maroon {
   background: $maroon !important;
+  h4 a {
+    color: $gray-extra-light;
+    &:hover {
+      color: $white;
+    }
+  }
 }
 
 .card .content-grid-wrapper.bg-brick {

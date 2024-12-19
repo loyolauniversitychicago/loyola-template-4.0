@@ -1,0 +1,628 @@
+/* framework SCSS - START = = = = = = = = = = = = = = = = = =  */
+
+a.skip-main,
+a.skip-main:focus,
+a.skip-main:active  {
+    font-size: .75rem;
+}
+header #site-name,
+header #loyola-university-chicago {
+    font-size: 2.25rem;
+    @include desktop-small {
+		font-size: 1.65em;
+    }
+    @include phone-portrait {
+        font-size: 1.5em;
+    }
+}
+header #loyola-university-chicago {
+    font-size: .95em;
+    @include phone-portrait {
+        font-size: .75em;
+    }
+}
+footer span, footer p,
+footer#footer-fixed span, footer#footer-fixed p {
+    font-size: 1em;
+}
+#footercard,
+#footercard a,
+#footercard #street-address,
+#footercard #locality,
+#footercard .region,
+#footercard .postal-code {
+  font-size: 1em;
+}
+
+/* grid SCSS - variables - REVIEW  = = = = = = = = = = = =  */
+
+/* panels SCSS - START = = = = = = = = = = = = = = = = = =  */
+
+/* _accessible-accordion-aria.scss */
+
+h4.js-accordion-no-panel,
+button.minimalist-accordion__header,
+button.minimalist-noanim-accordion__header,
+button.minimalist-css-accordion__header {
+    font-size: 1.25rem;
+    @include phone-portrait {
+        font-size: 1.125em;
+    }
+}
+h4.js-accordion-no-panel,
+.minimalist-accordion__header,
+.minimalist-noanim-accordion__header,
+.minimalist-css-accordion__header {
+    font-size: 1.25rem;
+    a.cta {
+        font-size: 85%;
+    }
+    @include phone-portrait {
+        font-size: 1.125em;
+    }
+}
+.minimalist-css-accordion__header {
+    font-size: 1.75em;
+}
+
+/* _accessible-modaal-aria.scss */
+
+.modaal-confirm-wrap {
+	font-size: 0;
+}
+.modaal-confirm-btn {
+	font-size: 14px;
+}
+.modaal-gallery-label {
+    font-size: 1.25em
+}
+
+/* _accessible-tabs-aria.scss */
+
+.grid-wrapper-min-max .grid-item .tabs button {
+    font-size: .85rem
+}
+.tab-panel {
+    h4 {
+        font-size: 1.45rem !important;
+    }
+    p {
+        font-size: 1.025rem !important;
+    }
+    a {
+        font-size: .85em !important;
+    }
+}
+
+/* _audio.scss */
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    font-size: .85rem;
+}
+
+/* _cards.scss */
+
+.content-grid-wrapper.image-wrapper-circle {
+    p {
+        font-size: 1.125rem;
+    }
+}
+#card-image-overlay .image-wrapper-overlay-content {
+    p {
+        font-size: 1.125rem;
+    }
+}
+#card-image-overlay .content-grid-wrapper {
+    h4 {
+        font-size: 1.75rem;
+    }
+}
+#card-image-overlay .content-grid-wrapper .flex-item.links {
+    h5 {
+        font-size: 1.125rem;
+    }
+}
+
+/* button */
+
+button {
+    font-size: .925rem;
+}
+
+/* numbers */
+
+.grid-wrapper-min-max.number .flex-item.content h4,
+.grid-wrapper-min-max.number-lg .flex-item.content h4 {
+    font-size: 4.5rem;
+}
+.grid-wrapper-min-max.number h5,
+.grid-wrapper-min-max.number-lg h5 {
+    font-size: 1.05rem !important;
+}
+.grid-wrapper-min-max.number.numbers-lg .flex-item.content h4,
+.bg-overlay .grid-wrapper-min-max.number.numbers-lg .flex-item.content h4 {
+  font-size: 4.75rem;
+}
+.grid-wrapper-min-max.number.numbers-md .flex-item.content h4,
+.bg-overlay .grid-wrapper-min-max.number.numbers-md .flex-item.content h4 {
+  font-size: 3.5rem;
+  @include phone-portrait {
+    font-size: 3.5rem !important;
+  }
+}
+.grid-wrapper-min-max.number.numbers-sm .flex-item.content h4,
+.bg-overlay .grid-wrapper-min-max.number.numbers-sm .flex-item.content h4 {
+  font-size: 2.5rem;
+  @include phone-portrait {
+    font-size: 3.5rem !important;
+  }
+}
+
+/* _carousel.scss */
+
+.slide {
+    font-size: 3rem;
+}
+button.slick-next, button.slick-prev {
+    font-size: 0;
+}
+.numbertext {
+    font-size: 1rem;
+    @include phone-portrait {
+        font-size: .85rem !important;
+    }
+}
+.slick-slide .caption {
+    font-size: 1rem;
+}
+.slick-dots li button {
+    font-size: 0;
+}
+
+/* _charts-bar */
+
+#marker-one p,
+#marker-two p,
+#marker-three p,
+#marker-four p {
+  font-size: .75rem;
+}
+.chart-bar-group {
+    font-size: .85rem;
+}
+p.chart-key,
+#chart-key-01,
+#chart-key-02 {
+    font-size: .8rem;
+}
+
+/* _charts-column */
+
+#panel-column-chart {
+    .container {
+        span {
+            p {
+                font-size: .75rem;
+            }
+        }
+    }
+}
+.chart-column-group {
+    p {
+        font-size: .85rem;  
+    }
+    h5, h6 {
+        font-size: .85rem;
+    }
+}
+p.chart-key,
+#chart-key-01,
+#chart-key-02 {
+    font-size: .8rem;
+}
+
+/* _charts-donut */
+
+.donut-chart {
+    figure .donut-chart > h5 {
+        font-size: 1.85rem !important;
+    }
+    .circle {
+        font-size: 1.5rem;
+    }
+}
+
+/* _charts-pie */
+
+#panel-pie-chart {
+	.pie-chart {
+        figcaption {
+            a   {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+/* _charts.scss */
+
+#panel-pie-chart .grid-item .pie-chart,
+#panel-donut-chart .grid-item,
+#panel-gauge-chart .grid-item {
+    h5 {
+        font-size: 1.85rem;
+    }
+}
+
+/* _forms.scss */
+
+form.luc-form {
+    font-size: 1rem;
+}
+form.luc-form fieldset {
+    p {
+    font-size: 1.125rem;
+    }
+}
+form.luc-form legend {
+    font-size: 1.275rem; 
+}
+#panel-form form.luc-form  fieldset ul li label {
+    font-size: 1rem;
+}
+form.luc-form ::placeholder {
+    font-size: .875rem;
+}
+form.luc-form .select-css {
+    font-size: 1rem;
+}
+form.luc-form legend span.required,
+form.luc-form legend span.error-message {
+  font-size: 1rem;
+}
+form.luc-form .checkbox > input:checked::before {
+    font-size: .125rem;
+}
+
+/* _tables.scss */
+
+table {
+    @include phone-landscape {
+        span {
+            font-size: 1rem;
+        }
+    }
+}
+th {
+    p, p strong {
+        font-size: 1rem;
+    }
+}
+td, td p, td ul li, #panel-table-accordion ul li, #panel-table-accordion p {
+    font-size: .85rem;
+}
+#panel-table-accordion .caption > p {
+    font-size: 1rem;
+}
+#panel-table-accordion h4.table-accordion-header {
+    font-size: inherit;
+}
+#panel-table-accordion h4 span,
+#panel-table-accordion h4.table-accordion-header span,
+#panel-table-accordion .minimalist-accordion__header::after,
+#panel-table-accordion .minimalist-noanim-accordion__header::after,
+#panel-table-accordion .minimalist-css-accordion__header::after {
+    font-size: 1rem;
+}
+
+/* _panels.scss */
+
+#panel-banner .page-banner .page-banner-bullets {
+    font-size: 1.75rem;
+}
+#panel-banner .page-banner h4 {
+    font-size: 2.25rem;
+}
+.panel-announcement {
+    p {
+        a.cta {
+            font-size: 85%;
+        }
+    }
+}
+#panel-image, #panel-image-lead-resize {
+    .hero-image-content {
+        h1, h2 {
+            @include tablet-portrait {
+                font-size: 2.5rem;
+            }
+        }
+        p {
+            font-size: 1.5rem;
+            @include tablet-portrait {
+                font-size: 1.25rem;
+            }
+        }
+        a.cta, p a.cta {
+            fon-size: 85%;
+        }
+    }
+}
+#panel-links {
+    ul {
+        li {
+            a {
+                font-zize: 1.15rem;
+            }
+        }
+    }
+}
+#main-section-wrapper #panel-links .container {
+    ul li a {
+        font-size: 1.05rem;
+    }
+}
+#panel-image.hero-image-caption,
+#panel-image-caption-resize.hero-image-caption {
+  .hero-image-content {
+    h4 {
+        font-size: 1.65rem;
+    }
+    p {
+      font-size: 1.25rem;
+    }
+    @include tablet-portrait {
+      h4 {
+        font-size: 1.75rem;
+      }
+      p {
+        font-size: 1.125rem;
+      }
+    }
+  }
+}
+#panel-image.hero-image-lead,
+#panel-image-caption-resize.hero-image-lead {
+  .hero-image-content {
+    p a, p a.cta {
+        font-size: 80%;
+    }
+  }
+}
+#panel-image-text {
+    p {
+        font-size: 1.125rem;
+    }
+}
+.grid-item .content-image-overlay {
+    h3.teaser, p {
+      font-size: 1.5rem;
+        @include tablet-portrait {
+            font-size: 1.5rem;
+        }
+    }
+    h4 {
+        font-size: 1.85rem;
+        @include tablet-portrait {
+            h4 {
+                font-size: 1.75rem;
+            }
+        }
+    }
+}
+#panel-image-overlay,
+#panel-image-overlay-resize {
+    blockquote {
+        @include phone-portrait {
+            font-size: 1.25rem;
+        }
+    }
+}
+#panel-image-overlay-resize {
+    .content-image-overlay blockquote {
+        display: block;
+        margin: 4em 10%;
+        padding: 0;
+        width: 80%;
+        font-size: 1.85rem;
+        @include tablet-portrait {
+            font-size: 1.5rem;
+        }
+    }
+}
+#panel-image-grid.image-grid-highlights {
+    .grid-wrapper-min-max {
+        p.caption-overlay {
+            font-size: .75rem;
+            span {
+                font-size: 1.75rem;
+                @include tablet-portrait {
+                    font-size: 1.5rem;
+                }
+                @include phone-landscape {
+                    font-size: 1.5rem;
+                }
+                @include phone-portrait {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+#panel-image-highlights h2 {
+    font-size: 2.5rem;
+        @include tablet-portrait {
+            font-size: 1.85rem;
+        }
+        @include phone-landscape {
+            font-size: 1.75rem;
+        }
+        @include phone-portrait {
+            font-size: 2rem;
+        }
+}
+#panel-image-grid {
+p.caption-overlay {
+    font-size: .75rem;
+        span.caption-overlay-name {
+            font-size: .85rem;
+        }
+    }
+}
+.gallery-item {
+    h5 {
+      font-size: 1.125rem;
+    }
+    .caption {
+      font-size: 1rem;
+    }
+}
+#panel-video-embed .content-caption {
+    h4 {
+      font-size: 1.65rem;
+    }
+    p {
+      font-size: 1.135rem;
+    }
+    a, a.cta {
+      font-size: 80%;
+    }
+}
+#panel-pagination #content-pagination-breadcrumbs {
+    .grid-wrapper-min-max {
+        a {
+            font-size: .75rem;
+        }
+    }
+}
+#panel-events-news {
+    h4 {
+      font-size: 1.45rem;
+    }
+    h5 {
+      font-size: 1.45rem;
+    }
+    a.cta {
+      font-size: .95rem;
+    }
+}
+.calendar-card-date {
+    h6 small {
+      font-size: 1rem;
+    }
+}
+
+/* panels-dev SCSS - DEVELOPMENT START = = = = = = = = = = = = = = = = = =  */
+
+/* _header-white */
+
+header {
+    #site-name {
+        font-size : 1.75rem;
+            span.subsite-label {
+                font-size: .75rem !important;
+            }
+            > a {
+                @include phone-landscape {
+                    font-size: 1.5rem;
+                }
+            }
+    }
+}
+#social-icon-bar a {
+    font-size: 1.5rem;
+}
+footer {
+    #footer-icon-bar {
+        a {
+            i  {
+                font-size: 1.75rem;
+            }
+        }
+    }
+}
+#footercard, #footercard a, #footercard #street-address,
+#footercard #locality, #footercard .region, #footercard .postal-code {
+    font-size: .85rem;
+}
+
+/* _image-text-blockquote */
+
+.panel-image-text {
+    .content-image-text {
+        p {
+
+        }
+    }
+}
+.panel-image-text.panel-image-text-blockquote .content-image-text {
+    h4 {
+        font-size: 1.25rem;
+    }
+    blockquote {
+        font-size: 1.5rem;
+    }
+    cite {
+        font-size: .85rem;
+    }
+}
+
+/* _side-navigation */
+
+nav#main-mobile {
+    #menu-button-mobile {
+        span.menu-text {
+            font-size: .75rem;
+        }
+    }
+}
+
+/* _tabs-ensemble */
+
+.tabs-ensemble .tabs .tab-panel .panel-image-text .content-image-text {
+    cite {
+        font-size: .85rem;
+    }
+}
+.tabs-ensemble .tabs .tab-panel .panel-image-text.panel-image-text-blockquote .content-image-text {
+    h4 {
+        font-size: 1.125rem !important;
+    }
+}
+.tabs-ensemble .tabs .tab-panel .panel-image-text-blockquote.grid-area-content-only .content-image-text h4 {
+    font-size: 1.75rem !important;
+}
+.tabs-ensemble .panel-image-text.panel-image-text-blockquote .content-image-text blockquote {
+    @include phone-landscape {
+        font-size: 1.25rem !important;
+    }
+}
+.tabs-ensemble .panel-image-text.panel-image-text-blockquote .content-image-text cite {
+    @include phone-landscape { 
+        font-size: .75rem !important;
+    }
+}
+
+/* _video-hero */
+
+.hero-video-lead.full-overlay .hero-video-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.25;
+}
+.hero-video-lead.full-overlay .hero-video-content h1 {
+    @include phone-portrait { 
+        font-size: 3rem;
+    }
+}
+
+/* typography SCSS - START = = = = = = = = = = = = = = = = = =  */
+
+/* buttons */
+
+button, .button {
+    font-size: 1rem;
+}
+
+
+/* _typography.scss */
