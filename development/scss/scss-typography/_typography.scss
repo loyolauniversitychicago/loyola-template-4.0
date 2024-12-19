@@ -65,6 +65,35 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* universal font-sizes */
+
+h1, .display h1 {
+  font-size: clamp(#{$font-step-2}, #{$font-step-2} + 5vw, #{$font-step-3-5});
+  line-height: clamp(#{$line-step-2}, #{$line-step-2} + 5vw, #{$line-step-3-5});
+}
+h2 {
+  font-size: clamp(#{$font-step-1-5}, #{$font-step-1-5} + 3.5vw, #{$font-step-2-5});
+  line-height: clamp(#{$line-step-1-5}, #{$line-step-1-5} + 3.5vw, #{$line-step-2-5});
+}
+h3 {
+  font-size: clamp(#{$font-step-1-5}, #{$font-step-1-5} + 3.5vw, #{$font-step-2-5});
+  line-height: clamp(#{$line-step-1-5}, #{$line-step-1-5} + 3.5vw, #{$line-step-2-5});
+}
+h4 {
+  font-size: clamp(#{$font-step-1-25}, #{$font-step-1-25} + 3.5vw, #{$font-step-1-75});
+  line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-75});
+}
+h5 {
+  font-size: clamp(#{$font-step-1}, #{$font-step-1} + 3.5vw, #{$font-step-1-25});
+  line-height: clamp(#{$line-step-1}, #{$line-step-1} + 3.5vw, #{$line-step-1-25});
+}
+h6 {
+  font-size: clamp(#{$font-step-075}, #{$font-step-1} + 3.5vw, #{$font-step-1});
+  line-height: clamp(#{$line-step-075}, #{$line-step-1} + 3.5vw, #{$line-step-1});
+}
+
+/* headlines margins and other unique values */
+
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .65rem;
   margin-bottom: rvr(.65);
@@ -73,74 +102,16 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   margin-bottom: 1rem;
   margin-bottom: rvr(1);
-  font-size: 3.5rem;
-  line-height: 3.5;
-  line-height: rvr(3.5);
-  @include phone-portrait {
-    font-size: clamp(1em, 1em + 9vw, 2.85em);
-    line-height: 2.75;
-    line-height: rvr(2.75);
-  }
-}
-
-.display h1 {
-  font-size: 4.25rem;
-  line-height: 4.125;
-  line-height: rvr(4.125);
-  @include phone-portrait {
-    font-size: clamp(1em, 1em + 5.5vw, 2.85em);
-    line-height: 2.75;
-    line-height: rvr(2.75);
-  }
 }
 
 h2 {
   margin-bottom: 1rem;
   margin-bottom: rvr(1);
-  font-size: 2.25rem;
-  line-height: 2.5;
-  line-height: rvr(2.5);
   text-transform: none;
-  @include phone-portrait {
-    font-size: clamp(1em, 1em + 5.5vw, 1.85em);
-    line-height: 2;
-    line-height: rvr(2);
-  }
 }
 
 h3 {
   font-family: 'Antenna Condensed Light', 'Arial', sans-serif;
-  font-size: 2.25rem;
-  line-height: 2.5;
-  line-height: rvr(2.5);
-  @include phone-portrait {
-    font-size: clamp(1em, 1em + 5.5vw, 1.85em);
-    line-height: 1.9;
-    line-height: rvr(1.9);
-  }
-}
-
-h4 {
-  font-size: 1.625rem;
-  line-height: 1.75;
-  line-height: rvr(1.75);
-  @include phone-portrait {
-    font-size: clamp(1em, 1em + 2.75vw, 1.35em);
-    line-height: 1.45;
-    line-height: rvr(1.45);
-  }
-}
-
-.content-columns-varied.four-column-build h4,
-.content-columns-varied.one-column-build.media-cards h4 {
-  font-size: 1.625rem;
-  line-height: 1.75;
-  line-height: rvr(1.75);
-  @include phone-portrait {
-    font-size: clamp(1em, 1em + 2.75vw, 1.35em);
-    line-height: 1.45;
-    line-height: rvr(1.45);
-  }
 }
 
 .uppercase h2, .uppercase h3, .uppercase h4 {
@@ -149,16 +120,8 @@ h4 {
 
 h5, details summary {
   margin-bottom: rvr(.35);
-  font-size: 1.35rem;
-  line-height: 1.75;
-  line-height: rvr(1.75);
   letter-spacing: 0rem;
   text-transform: uppercase;
-  @include phone-portrait {
-    font-size: clamp(1em, 1em + 1.5vw, 1.125em);
-    line-height: 1.35;
-    line-height: rvr(1.35);
-  }
 }
 
 h5 span[style] {
@@ -169,16 +132,8 @@ h6 {
   margin-bottom: .5rem;
   margin-bottom: rvr(.75);
   font-family: 'Antenna Condensed Light', 'Arial', sans-serif;
-  font-size: .95rem;
-  line-height: 1.25;
-  line-height: rvr(1.25);
   letter-spacing: 0rem;
   text-transform: uppercase;
-  @include phone-portrait {
-    font-size: clamp(1em, 1em + 1vw, 1em);
-    line-height: 1.125;
-    line-height: rvr(1.125);
-  }
 }
 
 h6.category-bold {
@@ -207,18 +162,12 @@ p strong, .standard-paragraph p strong, li strong, li a strong, ol strong, ol a 
 #panel-intro .caption p, .caption p, .leadin, .caption .leadin,
 #panel-table-accordion p {
   font-family: 'Open Sans', 'Arial', sans-serif !important;
-  font-size: 1.1rem;
+  font-size: clamp(#{$font-step-075}, #{$font-step-1} + 3.5vw, #{$font-step-1});
+  line-height: clamp(#{$line-step-1-5}, #{$line-step-1-75} + 3.5vw, #{$line-step-1-75});
   font-weight: 400;
-  line-height: 1.65;
-  line-height: rvr(1.65);
   letter-spacing: -.045rem;
   word-spacing: .125rem;
   color: $black;
-  @include phone-portrait {
-    font-size: 1rem;
-    line-height: 1.65;
-    line-height: rvr(1.65);
-  }
 }
 
 p a, a.cta, li a, p a strong, li a strong, a.cta, strong a.cta {
@@ -308,36 +257,23 @@ li em, li em a, li a em, {
 .modaal-content-container .intro-paragraph > p {
   margin: 0;
   margin-bottom: rvr(1.5);
-  font-size: 1.3rem;
-  line-height: 1.85;
-  line-height: rvr(1.85);
-  @include phone-portrait {
-    font-size: 1.25rem;
-    line-height: 1.65;
-    line-height: rvr(1.65);
-  }
+  font-size: clamp(#{$font-step-1-25}, #{$font-step-1-25} + 3.5vw, #{$font-step-1-25});
+  line-height: clamp(#{$line-step-2}, #{$line-step-2} + 3.5vw, #{$line-step-2});
 }
 
 #panel-intro .caption p {
-  line-height: 1.35;
-  line-height: rvr(1.35);
+  line-height: clamp(#{$line-step-1}, #{$line-step-1-5} + 3.5vw, #{$line-step-1-5});
   a { cursor: pointer;
   }
 }
 
 .caption p {
   margin: .75rem 0;
-  font-size: 1.05rem;
+  font-size: clamp(#{$font-step-1}, #{$font-step-1} + 3.5vw, #{$font-step-1});
+  line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
   font-style: italic;
-  line-height: 1.35;
-  line-height: rvr(1.35);
   a { cursor: pointer;
   }
-}
-
-.line-height-tight p {
-  line-height: 1.45;
-  line-height: rvr(1.45);
 }
 
 #panel-table-accordion p {
@@ -393,7 +329,8 @@ a.cta {
   margin: .25rem auto 1.5rem;
   width: 100%;
   font-family: 'Antenna Condensed Bold', 'Arial', sans-serif;
-  font-size: 1.05rem;
+  font-size: clamp(#{$font-step-1}, #{$font-step-1} + 3.5vw, #{$font-step-1});
+  line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
   font-weight: 800;
   text-transform: uppercase;
   background-size: 0 0;
@@ -424,24 +361,17 @@ footnote, .footnote p {
   margin: 1rem 0 0 0;
   padding: .75rem 0 0 0;
   width: 100%;
+  font-size: clamp(#{$font-step-075}, #{$font-step-1} + 3.5vw, #{$font-step-1});
+  line-height: clamp(#{$line-step-1}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
   font-style: italic;
-  font-size: .875rem;
-  line-height: 1.25;
-  line-height: rvr(1.25) !important;
   border-top: solid 1px $gray;
 }
 
 .footnote p strong {
-  line-height: calc(var(--baseline) * 1.25 * 1rem) !important;
+  line-height: clamp(#{$line-step-1}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
 }
 
 /* typographic specific */
-
-#home h1 {
-  font-size: 4.5rem;
-  line-height: 4.5;
-  line-height: rvr(4.5);
-}
 
 .panel-label {
   margin-bottom: 2rem;
@@ -455,8 +385,7 @@ footnote, .footnote p {
 .modaal-content ul,
 .modaal-content ol {
   margin: 0 0 1rem 1.5rem;
-  line-height: 1.45;
-  line-height: rvr(1.45);
+  line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
   list-style-position: inside;
 }
 
@@ -566,10 +495,9 @@ img.image-md, .grid-item img.image-md,
 #main-section-wrapper .grid-area-content .circle-number ol li {
   counter-increment: circle-numbers;
   margin: 0 0 1.25rem 2.25rem;
-  font-size: 1.1rem;
   text-indent: 0;
-  line-height: 1.35;
-  line-height: rvr(1.35);
+  font-size: clamp(#{$font-step-075}, #{$font-step-1} + 3.5vw, #{$font-step-1});
+  line-height: clamp(#{$line-step-1}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
 }
 
 #main-content-wrapper .circle-number ol li::before,
@@ -658,10 +586,9 @@ blockquote, blockquote p {
   padding: 2em 0;
   width: 80%;
   font-family: 'Open Sans', 'Arial', sans-serif;
-  font-size: 1.5rem;
   font-weight: 700 !important;
-  line-height: 2.5;
-  line-height: rvr(2.5);
+  font-size: clamp(#{$font-step-1-25}, #{$font-step-1-5} + 3.5vw, #{$font-step-1-5});
+  line-height: clamp(#{$line-step-2}, #{$line-step-2-5} + 3.5vw, #{$line-step-2-5});
   letter-spacing: -0.075rem;
   text-align: center;
   border-top: solid 1px $gray;
@@ -670,9 +597,8 @@ blockquote, blockquote p {
     margin: 1em auto;
     padding: 0;
     width: 90%;
-    font-size: 1.25rem;
-    line-height: 1.75;
-    line-height: rvr(1.75);
+    font-size: clamp(#{$font-step-1}, #{$font-step-1-25} + 3.5vw, #{$font-step-1-25});
+    line-height: clamp(#{$line-step-1-5}, #{$line-step-1-75} + 3.5vw, #{$line-step-1-75});
     border: 0;
   }
 }
@@ -700,10 +626,9 @@ blockquote p cite {
   padding: 0;
   width: 100%;
   font-family: 'Open Sans', 'Arial', sans-serif;
-  font-size: .875rem;
   font-weight: 400;
-  line-height: 1.125;
-  line-height: rvr(1.125);
+  font-size: clamp(#{$font-step-075}, #{$font-step-1} + 3.5vw, #{$font-step-1});
+  line-height: clamp(#{$line-step-075}, #{$line-step-1} + 3.5vw, #{$line-step-1});
   letter-spacing: -.0125em;
   text-align: center;
   text-transform: uppercase;
@@ -717,25 +642,39 @@ blockquote p cite:before {
   content: "— ";
 }
 
-#panel-intro .grid-area-three blockquote {
+#panel-intro .grid-area-three blockquote,
+#panel-intro .intro-grid-area-aside-content blockquote {
   margin: 0;
   padding: 0;
-  font-size: 1.235rem;
-  line-height: 1.85;
-  line-height: rvr(1.85);
+  font-size: clamp(#{$font-step-1}, #{$font-step-1-25} + 3.5vw, #{$font-step-1-25});
+  line-height: clamp(#{$line-step-1-5}, #{$line-step-1-75} + 3.5vw, #{$line-step-1-75});
   text-align: left;
   border: 0;
-  @include phone-portrait {
-    font-size: 1.75rem;
-    line-height: 2.125;
-    line-height: rvr(2.125);
-  }
   cite {
-    font-size: .975rem;
+    font-size: clamp(#{$font-step-05}, #{$font-step-05} + 3.5vw, #{$font-step-075});
     text-align: left;
-    @include phone-portrait {
-      font-size: 1rem;
-    }
+  }
+}
+
+#panel-intro .intro-grid-area-aside-content .number-lg h1 {
+  font-size: clamp(#{$font-step-3-5}, #{$font-step-4-5} + 3.5vw, #{$font-step-4-5});
+  line-height: clamp(#{$line-step-3}, #{$line-step-3} + 3.5vw, #{$line-step-3});
+}
+#panel-intro .intro-grid-area-aside-content .number-md h2 {
+  font-size: clamp(#{$font-step-3}, #{$font-step-3} + 3.5vw, #{$font-step-3});
+  line-height: clamp(#{$line-step-2}, #{$line-step-2} + 3.5vw, #{$line-step-2});
+}
+#panel-intro .intro-grid-area-aside-content .number-sm h3 {
+  font-size: clamp(#{$font-step-1-75}, #{$font-step-1-75} + 3.5vw, #{$font-step-2});
+  line-height: clamp(#{$line-step-2}, #{$line-step-2} + 3.5vw, #{$line-step-2});
+}
+#panel-intro .intro-grid-area-aside-content .number-lg,
+#panel-intro .intro-grid-area-aside-content .number-md,
+#panel-intro .intro-grid-area-aside-content .number-sm,
+#panel-intro .intro-grid-area-aside-content {
+  h6 {
+    font-size: clamp(#{$font-step-085}, #{$font-step-085} + 3.5vw, #{$font-step-085});
+    line-height: clamp(#{$line-step-075}, #{$line-step-075} + 3.5vw, #{$line-step-1});
   }
 }
 

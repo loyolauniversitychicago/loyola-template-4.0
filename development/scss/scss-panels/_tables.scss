@@ -190,7 +190,7 @@ tr:not(:first-child):not(:last-child) th {
 
 tr:not(:first-child) th {
   color: $black;
-  background: $gray-light;
+  background: darken($gray,5%);
 }
 
 caption {
