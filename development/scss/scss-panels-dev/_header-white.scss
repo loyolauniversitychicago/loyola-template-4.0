@@ -163,5 +163,5 @@ footer {
 }
 #footercard, #footercard a, #footercard #street-address,
 #footercard #locality, #footercard .region, #footercard .postal-code {
-
+    font-size: clamp(#{$font-step-085}, #{$font-step-085} + 3.5vw, #{$font-step-});
 }
