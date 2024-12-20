@@ -55,7 +55,7 @@ nav#main-mobile {
             }
             span.menu-text {
                 bottom: 0;
-                font-size: .75rem;
+                font-size: clamp(#{$font-step-075}, #{$font-step-075} + 3.5vw, #{$font-step-075});
                 color: $maroon;
                 // this is for the white header color: $maroon;
             }

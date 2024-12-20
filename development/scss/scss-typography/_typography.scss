@@ -162,8 +162,8 @@ p strong, .standard-paragraph p strong, li strong, li a strong, ol strong, ol a 
 #panel-intro .caption p, .caption p, .leadin, .caption .leadin,
 #panel-table-accordion p {
   font-family: 'Open Sans', 'Arial', sans-serif !important;
-  font-size: clamp(#{$font-step-075}, #{$font-step-1} + 3.5vw, #{$font-step-1});
-  line-height: clamp(#{$line-step-1-5}, #{$line-step-1-75} + 3.5vw, #{$line-step-1-75});
+  font-size: clamp(#{$font-step-1}, #{$font-step-1-125} + 3.5vw, #{$font-step-1-125});
+  line-height: clamp(#{$line-step-1-75}, #{$line-step-1-75} + 3.5vw, #{$line-step-1-75});
   font-weight: 400;
   letter-spacing: -.045rem;
   word-spacing: .125rem;
@@ -400,7 +400,7 @@ footnote, .footnote p {
 #main-content-wrapper ol li,
 #main-content-wrapper-full-width ol li
 .modaal-content ol li {
-  text-indent: -1.5rem;
+  text-indent: -1.25rem;
   &::marker {
     font-weight: 700;
   }
@@ -417,7 +417,7 @@ footnote, .footnote p {
 #main-content-wrapper ul li,
 #main-content-wrapper-full-width ul li,
 .modaal-content ul li {
-  text-indent: -1.5rem;
+  text-indent: -1.25rem;
 }
 
 #main-content-wrapper ol li ul,
@@ -496,8 +496,8 @@ img.image-md, .grid-item img.image-md,
   counter-increment: circle-numbers;
   margin: 0 0 1.25rem 2.25rem;
   text-indent: 0;
-  font-size: clamp(#{$font-step-075}, #{$font-step-1} + 3.5vw, #{$font-step-1});
-  line-height: clamp(#{$line-step-1}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
+  font-size: clamp(#{$font-step-1}, #{$font-step-1-125} + 3.5vw, #{$font-step-1-125});
+  line-height: clamp(#{$line-step-1-25}, #{$line-step-1-5} + 3.5vw, #{$line-step-1-5});
 }
 
 #main-content-wrapper .circle-number ol li::before,
@@ -512,9 +512,8 @@ img.image-md, .grid-item img.image-md,
   width: 24px;
   height: 24px;
   font-family: 'Antenna Condensed Bold', 'Arial', sans-serif;
-  font-size: .85rem;
-  line-height: 1.25;
-  line-height: rvr(1.25);
+  font-size: clamp(#{$font-step-1}, #{$font-step-1} + 3.5vw, #{$font-step-1});
+  line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
   text-align: center;
   color: $white;
   background-color: $black;
@@ -543,9 +542,8 @@ img.image-md, .grid-item img.image-md,
   width: 24px;
   height: 24px;
   font-family: 'Antenna Condensed Bold', 'Arial', sans-serif;
-  font-size: .85rem;
-  line-height: 1.25;
-  line-height: rvr(1.25);
+  font-size: clamp(#{$font-step-085}, #{$font-step-085} + 3.5vw, #{$font-step-085});
+  line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
   text-align: center;
   color: $white;
   background-color: #000;
@@ -691,29 +689,23 @@ blockquote p cite:before {
 }
 
 .number-lg h1 {
-  font-size: 4.5rem;
-  @include phone-portrait {
-    font-size: 3.5rem !important;
-  }
+  font-size: clamp(#{$font-step-3-5}, #{$font-step-4-5} + 3.5vw, #{$font-step-4-5});
 }
 
 .number-md h2 {
-  font-size: 3.5rem;
+  font-size: clamp(#{$font-step-2-5}, #{$font-step-3-5} + 3.5vw, #{$font-step-3-5});
 }
 
 .number-sm h3 {
-  font-size: 2.5rem;
-  @include phone-portrait {
-    font-size: 3.5rem !important;
-  }
+  font-size: clamp(#{$font-step-2}, #{$font-step-2-5} + 3.5vw, #{$font-step-2-5});
 }
 
 .number-display h1 {
   font-size: 6.25rem;
-  line-height: 1 !important;
+  line-height: clamp(#{$line-step-1}, #{$line-step-1} + 3.5vw, #{$line-step-1});
   letter-spacing: -.025em;
   @include phone-portrait {
-    font-size: 3.5rem;
+    font-size: clamp(#{$font-step-2-5}, #{$font-step-3-5} + 3.5vw, #{$font-step-3-5});
   }
 }
 
@@ -721,48 +713,26 @@ blockquote p cite:before {
 
 .flex-item.content h1 {
   margin-bottom: rvr(.5);
-  line-height: 1.125;
+  line-height: clamp(#{$line-step-1-5}, #{$line-step-1-5} + 3.5vw, #{$line-step-1-75});
 }
 
 .flex-item.content h2 {
   line-height: 1.125;
 }
 
-.flex-item.content h4 {
+.flex-item.content h4,
+.flex-item.content.uppercase h4 {
   margin-top: rvr(.5);
   margin-bottom: rvr(.5);
-  font-size: 1.75rem;
-  @include phone-portrait {
-    font-size: 1.6rem;
-    font-size: clamp(1em, 1em + 2.75vw, 1.35em);
-    line-height: 1.45;
-    line-height: rvr(1.45);
-  }
-}
-
-.flex-item.content.uppercase h4 {
-  font-size: 2.5rem;
-  @include tablet-landscape {
-    font-size: 1.75rem;
-    line-height: 1.85;
-    line-height: rvr(1.85) !important;
-  }
-  @include phone-portrait {
-  font-size: 1.6rem;
-  font-size: clamp(1em, 1em + 2.75vw, 1.6em);
-  line-height: 1.6;
-  line-height: rvr(1.6);
-  }
+  font-size: clamp(#{$font-step-1-25}, #{$font-step-1-5} + 3.5vw, #{$font-step-1-5});
+  line-height: clamp(#{$line-step-1-5}, #{$line-step-1-75} + 3.5vw, #{$line-step-1-75});
 }
 
 .flex-item.content h5 {
   margin-top: rvr(.5);
   margin-bottom: rvr(.5);
-  font-size: 1.125rem;
-  @include phone-portrait {
-  font-size: clamp(1em, 1em + 2.75vw, 1em);
-  line-height: 1.125;
-  }
+  font-size: clamp(#{$font-step-1}, #{$font-step-1-125} + 3.5vw, #{$font-step-1-125});
+  line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
 }
 
 .flex-item.content p, .flex-item.content p.explainer {
@@ -784,11 +754,11 @@ blockquote p cite:before {
 
 .card a.cta,
 .flex-item.content a.cta {
-  font-family: 'Antenna Condensed Bold', 'Arial', sans-serif;
-  font-size: 1.05rem;
   margin-top: rvr(.75) !important;
   margin-bottom: rvr(1.125);
-  line-height: rvr(1.125);
+  font-family: 'Antenna Condensed Bold', 'Arial', sans-serif;
+  font-size: clamp(#{$font-step-075}, #{$font-step-1} + 3.5vw, #{$font-step-1});
+  line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
 }
 
 /* infobox */
@@ -947,9 +917,8 @@ blockquote cite { line-height: 1.35; }
 #main-aside-wrapper blockquote {
   margin: 0 auto;
   padding: 0 auto;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  line-height: calc(var(--baseline) * 1.5 * 1rem);
+  font-size: clamp(#{$font-step-1-25}, #{$font-step-1-25} + 3.5vw, #{$font-step-1-25});
+  line-height: clamp(#{$line-step-1-5}, #{$line-step-1-5} + 3.5vw, #{$line-step-1-5});
   letter-spacing: -0.05rem;
   border: none !important;
 }
@@ -964,7 +933,7 @@ blockquote cite { line-height: 1.35; }
 #main-aside-wrapper a.cta,
 #main-aside-wrapper .card a.cta,
 .flex-item.content a.cta {
-  font-size: 0.825rem !important;
+  font-size: clamp(#{$font-step-1}, #{$font-step-1} + 3.5vw, #{$font-step-1});
 }
 
 #main-aside-wrapper a.cta,
@@ -983,9 +952,8 @@ blockquote cite { line-height: 1.35; }
   li strong, li a strong, ol strong, ol a strong,
   .flex-item.content p, .flex-item.content p.explainer,
   .caption p, .leadin, .caption .leadin {
-    font-size: .95rem;
-    line-height: 1.125;
-    line-height: calc(var(--baseline) * 1.125 * 1rem);
+    font-size: clamp(#{$font-step-1}, #{$font-step-1} + 3.5vw, #{$font-step-1});
+    line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
   }
 }
 

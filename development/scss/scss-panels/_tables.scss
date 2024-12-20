@@ -169,7 +169,7 @@ tr {
 
 th.span.sub-category,
 tr:first-child th.span.sub-category {
-  color: inherit !important;
+  color: $white !important;
   background: darken($gray,1%) !important;
 }
 
@@ -180,7 +180,7 @@ tr:first-child th:first-child,
 
 tbody tr:first-child th:first-child {
   color: $black;
-  background: $gray-light;
+  background: lighten($gray-light,5%);
 }
 
 tr:first-child th:first-child,
@@ -190,7 +190,7 @@ tr:not(:first-child):not(:last-child) th {
 
 tr:not(:first-child) th {
   color: $black;
-  background: darken($gray,5%);
+  background: lighten($gray-light,5%);
 }
 
 caption {

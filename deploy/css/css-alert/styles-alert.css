@@ -41,30 +41,6 @@ body {
 #main-section-wrapper .container.container-80 {
     width: 100%;
 }
-#main-section-wrapper ol,
-#main-section-wrapper ul,
-#main-section-wrapper-full-width ol,
-#main-section-wrapper-full-width ul {
-    margin: 0 0 1rem 1.5rem;
-    line-height: 1.45;
-    line-height: calc(var(--baseline) * 1.45 * 1rem);
-    list-style-position: inside;
-}
-#main-section-wrapper ul li {
-    margin: 0 0 0.65rem;
-    padding: 0;
-    border: 0;
-    font-family: "Open Sans", sans-serif !important;
-    font-size: 1.1rem;
-    font-weight: 400;
-    line-height: 1.65;
-    line-height: calc(var(--baseline) * 1.65 * 1rem);
-    letter-spacing: -0.045rem;
-    word-spacing: 0.125rem;
-    color: #000000;
-    text-indent: -1.35rem;
-    vertical-align: baseline;
-}
 h1 {
 /*  font-size: 2.75rem; */
     font-weight: bold;

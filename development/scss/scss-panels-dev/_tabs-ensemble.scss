@@ -26,13 +26,13 @@
         text-transform: none;
     }
     cite {
-        font-size: .85rem;
+        font-size: clamp(#{$font-step-1}, #{$font-step-1} + 3.5vw, #{$font-step-1});
     }
 }
 
 .tabs-ensemble .tabs .tab-panel .panel-image-text.panel-image-text-blockquote .content-image-text {
     h4 {
-        font-size: 1.125rem !important;
+        font-size: clamp(#{$font-step-1-125}, #{$font-step-1-125} + 3.5vw, #{$font-step-1-125}) !important;
         text-transform: uppercase;
     }
 }
@@ -45,20 +45,20 @@
 }
 
 .tabs-ensemble .tabs .tab-panel .panel-image-text-blockquote.grid-area-content-only .content-image-text h4 {
-    font-size: 1.75rem !important;
+    font-size: clamp(#{$font-step-1-75}, #{$font-step-1-75} + 3.5vw, #{$font-step-1-75});
 }
 
 .tabs-ensemble .panel-image-text.panel-image-text-blockquote .content-image-text blockquote {
     @include phone-landscape {
-        font-size: 1.25rem !important;
-        line-height: calc(var(--baseline) * 1.75 * 1rem);
+        font-size: clamp(#{$font-step-1-25}, #{$font-step-1-25} + 3.5vw, #{$font-step-1-25}) !important;
+        line-height: clamp(#{$line-step-1-75}, #{$line-step-1-75} + 3.5vw, #{$line-step-1-75});
     }
 }
 
 .tabs-ensemble .panel-image-text.panel-image-text-blockquote .content-image-text cite {
     @include phone-landscape { 
-        font-size: .75rem !important;
-        line-height: calc(var(--baseline) * 1.125 * 1rem);
+        font-size: clamp(#{$font-step-075}, #{$font-step-075} + 3.5vw, #{$font-step-075}) !important;
+        line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
     }
 }
 

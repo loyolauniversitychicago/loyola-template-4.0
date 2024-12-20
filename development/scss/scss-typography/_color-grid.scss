@@ -25,7 +25,8 @@
 	width: 100%;
 	font-family: 'Antenna', sans-serif;
 	color: $white;
-	font-size: .75rem;
+	font-size: clamp(#{$font-step-075}, #{$font-step-075} + 3.5vw, #{$font-step-075}) !important;
+	line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
 	line-height: 1.35;
 	text-transform: uppercase;
 }
