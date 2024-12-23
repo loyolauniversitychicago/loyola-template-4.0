@@ -11,7 +11,7 @@ transition: visibility 0s ease, max-height 1s ease, opacity 1s ease !important;
 text-transform: none !important;
 text-decoration: none !important;
 font-family: 'Antenna', sans-serif !important;
-font-size: .95rem !important !important;
+font-size: clamp(#{$font-step-095}, #{$font-step-095} + 3.5vw, #{$font-step-095}) !important;
 color: darken($gray-extra-light,3%) !important;
 transition: 0.3s !important;
 }

@@ -12,8 +12,8 @@ nav#secondary {
 		padding: 1.25rem .5rem 1rem;
 		width: 100%;
 		font-family: 'Antenna', sans-serif;
-		font-size: .725rem;
-		line-height: 1.45;
+		font-size: clamp(#{$font-step-075}, #{$font-step-075} + 3.5vw, #{$font-step-075});
+		line-height: clamp(#{$line-step-1-5}, #{$line-step-1-5} + 3.5vw, #{$line-step-1-5}) !important;
 		color: $black;
 		text-indent: 0 !important;
 		text-transform: uppercase;
@@ -36,7 +36,7 @@ nav#secondary {
 		button.minimalist-noanim-accordion__header,
 		button.minimalist-css-accordion__header, {
 			padding: 1.125rem .5rem 1rem;
-			font-size: .75rem;
+			font-size: clamp(#{$font-step-075}, #{$font-step-075} + 3.5vw, #{$font-step-075});
 			text-transform: uppercase;
 			border: none;
 			border-bottom-color: $gray-light !important;
@@ -51,7 +51,7 @@ nav#secondary {
 		.minimalist-noanim-accordion__header,
 		.minimalist-css-accordion__header, {
 			padding: 1.125rem .5rem 1rem;
-			font-size: .85rem;
+			font-size: clamp(#{$font-step-085}, #{$font-step-085} + 3.5vw, #{$font-step-085});
 			border: none;
 			&:hover {
 				color: $black !important;
@@ -110,7 +110,7 @@ nav#secondary a {
 		padding: 0;
 		margin: 0;
 		font-family: 'Antenna', sans-serif;
-		font-size: .85rem;
+		font-size: clamp(#{$font-step-085}, #{$font-step-085} + 3.5vw, #{$font-step-085});
 		text-align: left;
 		color: $black !important;
 		border: 0 !important;

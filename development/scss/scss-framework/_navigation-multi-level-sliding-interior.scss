@@ -34,8 +34,8 @@ nav#sliding-menu-interior {
 #menu li.sub-heading,
 #menu li a {
   font-family: 'Antenna Condensed Light', sans-serif;
-  font-size: .8rem;
-  line-height: 1.35;
+  font-size: clamp(#{$font-step-085}, #{$font-step-085} + 3.5vw, #{$font-step-085});
+  line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
   color: $gray-extra-dark;
   text-transform: uppercase;
 }
@@ -134,7 +134,7 @@ nav#sliding-menu-interior {
 #menu ul {
   margin: 0 !important;
   padding: 0;
-  line-height: 2.75em;
+  line-height: clamp(#{$line-step-2-75}, #{$line-step-2-75} + 3.5vw, #{$line-step-2-75});
   list-style: none;
   text-decoration: none;
   border-top: solid 1px $gray-light;

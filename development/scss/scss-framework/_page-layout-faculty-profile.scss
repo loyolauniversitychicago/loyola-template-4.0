@@ -66,15 +66,15 @@ body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards h
     padding-bottom: calc(var(--baseline)* 0.75* 1rem);
     margin-top: 0 !important;
     margin-bottom: calc(var(--baseline)* 0.75* 1rem);
-    font-size: 1.25rem;
+    font-size: clamp(#{$font-step-1-25}, #{$font-step-1-25} + 3.5vw, #{$font-step-1-25});
     text-transform: none;
     border-bottom: solid 1px $black;
 }
 body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards p,
 body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards ul li {
     margin: 0 0 .35rem !important;
-    font-size: .95rem;
-    line-height: 1.35 !important;
+    font-size: clamp(#{$font-step-095}, #{$font-step-095} + 3.5vw, #{$font-step-095});
+    line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25}) !important;
 }
 body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards ul {
     margin: 0 0 1rem 2.5rem;
@@ -105,7 +105,7 @@ body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards #
 }
 body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards #social-icon-bar a i {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: clamp(#{$font-step-1-5}, #{$font-step-1-5} + 3.5vw, #{$font-step-1-5});
     line-height: 0;
     color: $maroon;
     cursor: pointer;

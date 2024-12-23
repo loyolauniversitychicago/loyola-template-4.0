@@ -136,7 +136,7 @@ nav#main-mobile .menu-bar {
 span.menu-text, span.search-text {
   display: block;
   margin-top: 0.5em;
-  font-size: .9em;
+  font-size: clamp(#{$font-step-095}, #{$font-step-095} + 3.5vw, #{$font-step-095});
   text-transform: uppercase;
   text-align: center;
 }
@@ -145,7 +145,7 @@ span.menu-text {
   position: absolute;
   bottom: -4px;
   width: 100%;
-  font-size: .725em;
+  font-size: clamp(#{$font-step-075}, #{$font-step-075} + 3.5vw, #{$font-step-075});
 }
 
 .visuallyhidden {
@@ -250,15 +250,15 @@ body.active #side-nav {
 	display: block;
   padding: .75rem;
   text-decoration: none;
-	font-family: 'Antenna', sans-serif;
-  font-size: .95rem !important;
+	font-family: 'Antenna Condensed Light', sans-serif;
+  font-size: clamp(#{$font-step-1-125}, #{$font-step-1-125} + 3.5vw, #{$font-step-1-125}) !important;
   color: $gray-light;
 	text-transform: uppercase;
 	border-bottom: solid 1px $gray-dark;
   transition: 0.3s;
   button {
     padding: .75rem;
-    font-size: .95rem !important;
+    font-size: clamp(#{$font-step-095}, #{$font-step-095} + 3.5vw, #{$font-step-095});
     color: $gray-light !important;
     border-bottom: none !important;
     width: 100%;
@@ -291,10 +291,10 @@ body.active #side-nav {
     right: 1.5rem;
     width: 0.5rem;
     height: 0.5rem;
-    content: ">";
+    font-size: clamp(#{$font-step-1}, #{$font-step-1} + 3.5vw, #{$font-step-1});
     line-height: 0;
-    font-size: 1rem;
-    font-family: 'Antenna Bold';
+    content: ">";
+    font-family: 'Antenna Condensed Bold';
     color: $gray-light !important;
     transform-origin: center center;
     transform: rotate(90deg);
@@ -310,7 +310,7 @@ body.active #side-nav {
 #side-nav .minimalist-accordion__panel {
   margin: 0;
   padding: 0;
-  font-size: 1rem !important;
+  font-size: clamp(#{$font-step-1}, #{$font-step-1} + 3.5vw, #{$font-step-1}) !important;
   a {
     text-transform: none;
     background: darken($gray-extra-dark,3%);
@@ -340,7 +340,7 @@ body.active #side-nav {
 change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   #side-nav {padding-top: 15px;}
-  #side-nav a {font-size: 1.5em;}
+  #side-nav a {font-size: clamp(#{$font-step-1-5}, #{$font-step-1-5} + 3.5vw, #{$font-step-1-5}) !important;}
 }
 
 /* side nav - footer address */
@@ -348,7 +348,7 @@ change the style of the sidenav (less padding and a smaller font size) */
 	display: block;
 	margin: 20px 0;
 	font-family: 'Arial', sans-serif;
-	font-size: .95em;
+	font-size: clamp(#{$font-step-095}, #{$font-step-095} + 3.5vw, #{$font-step-095});
 	color: $gray;
 }
 
@@ -374,7 +374,7 @@ change the style of the sidenav (less padding and a smaller font size) */
 	margin: 20px 0;
 	padding: 5px 10px;
 	height: 30px;
-	font-size: .85em;
+	font-size: clamp(#{$font-step-085}, #{$font-step-085} + 3.5vw, #{$font-step-085});
 	text-align: center;
 	color: $gray-light;
 	border: solid 1px $gray;
@@ -387,7 +387,7 @@ change the style of the sidenav (less padding and a smaller font size) */
 }
 
 .copyright p {
-	font-size: 1em;
+  font-size: clamp(#{$font-step-1}, #{$font-step-1} + 3.5vw, #{$font-step-1});
   color: $gray-light;
 }
 
@@ -419,7 +419,7 @@ change the style of the sidenav (less padding and a smaller font size) */
 }
 
 #side-nav-search-wrapper form input {
-	font-size: 1.15em;
+  font-size: clamp(#{$font-step-1-125}, #{$font-step-1-125} + 3.5vw, #{$font-step-1-125});
 	text-transform: uppercase;
   border-radius: .33rem 0 0 .33rem;
   ::placeholder {
@@ -439,7 +439,7 @@ change the style of the sidenav (less padding and a smaller font size) */
 	padding: 8px 12px;
   width: 15%;
 	height: 40px;
-  font-size: 1.15em;
+  font-size: clamp(#{$font-step-1-125}, #{$font-step-1-125} + 3.5vw, #{$font-step-1-125});
 	outline: 0 none;
 	border-radius: 0 .33rem .33rem 0;
 	background-color: $maroon;
@@ -449,6 +449,9 @@ change the style of the sidenav (less padding and a smaller font size) */
 			color: darken($gray-light, 10%);
 			background-color: darken($maroon, 10%);
 		}
+    i.fa-search:before {
+      top: 30 !important;
+    }
 }
 
 #side-nav-search-wrapper #search-label { font-size: .015em; }

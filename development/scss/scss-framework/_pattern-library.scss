@@ -12,7 +12,7 @@ body#pattern-library {
     li {
       margin: 1.5em 0;
       font-family: 'Open Sans', sans-serif;
-      font-size: 1.275em;
+      font-size: clamp(#{$font-step-1-25}, #{$font-step-1-25} + 3.5vw, #{$font-step-1-25});
       a {
         cursor: pointer;
       }
@@ -27,6 +27,7 @@ body#pattern-library {
       color: $gray-extra-light;
     }
     li a {
+      font-size: clamp(#{$font-step-095}, #{$font-step-1} + 3.5vw, #{$font-step-1-125});
       font-weight: 400;
       color: $gray-extra-light;
       text-decoration: none;
