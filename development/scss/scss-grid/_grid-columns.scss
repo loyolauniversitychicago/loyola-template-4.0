@@ -61,13 +61,12 @@
     grid-column: 10 / span 3;
     grid-row: 2;
   }
-  @include tablet-portrait {
+  @include phone-landscape {
     grid-template-columns: 1fr;
     grid-template-areas:
     "main-section-wrapper"
     "main-aside-wrapper-navigation"
     "main-aside-wrapper-content";
-    grid-template-columns: 1fr;
     grid-row-gap: 2rem;
     margin: 0 auto;
     padding: 0;

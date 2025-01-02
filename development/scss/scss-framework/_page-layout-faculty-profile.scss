@@ -6,10 +6,6 @@ body#page-layout-faculty-profile #social-icon-bar {
 body#page-layout-faculty-profile #main-content-wrapper #main-section-wrapper {
     margin: 0 2.5%;
     width: 95%;
-    @include phone-portrait {
-        margin: 0 5%;
-        width: 90%;
-    }
 }
 body#page-layout-faculty-profile #main-content-wrapper #main-aside-wrapper-navigation .container,
 body#page-layout-faculty-profile #main-content-wrapper #main-aside-wrapper-content .container {
@@ -22,7 +18,7 @@ body#page-layout-faculty-profile #main-content-wrapper #main-aside-wrapper-conte
 }
 /* wrapper - grid - container - adjustments */
 body#page-layout-faculty-profile #main-content-wrapper.grid-wrapper-min-max {
-    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-template-columns: repeat(12, [col-start] 1fr) !important;
     grid-template-areas:
         "main-section-wrapper"
         "main-aside-wrapper-navigation"
@@ -32,7 +28,7 @@ body#page-layout-faculty-profile #main-content-wrapper.grid-wrapper-min-max {
     grid-row-gap: 2rem;
     padding: 4rem 10%;
     @include phone-portrait {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         grid-auto-rows: auto;
         grid-gap: 0;
         grid-row-gap: 2rem;
@@ -79,9 +75,9 @@ body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards .
 body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards .flex-item.content h4,
 body#page-layout-faculty-profile #main-content-wrapper #main-aside-wrapper-content h4 {
     margin-top: 0;
-    margin-bottom: calc(var(--baseline)* 0.125* 1rem);
+    margin-bottom: calc(var(--baseline)* 0.5* 1rem);
     font-size: clamp(#{$font-step-1-25}, #{$font-step-1-5} + 3.5vw, #{$font-step-1-5});
-    line-height: clamp(#{$line-step-1-75}, #{$line-step-2} + 3.5vw, #{$line-step-2});
+    line-height: clamp(#{$line-step-1-25}, #{$line-step-1-5} + 3.5vw, #{$line-step-1-5});
 }
 body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards h5 {
     padding-bottom: calc(var(--baseline)* 0.75* 1rem);
