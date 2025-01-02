@@ -1,11 +1,38 @@
+/* PAGE LAYOUT - FACULTY PROFILE */
+
 body#page-layout-faculty-profile #social-icon-bar {
     display: none;
 }
+body#page-layout-faculty-profile #main-content-wrapper #main-section-wrapper {
+    margin: 0 2.5%;
+    width: 95%;
+    @include phone-portrait {
+        margin: 0 5%;
+        width: 90%;
+    }
+}
+body#page-layout-faculty-profile #main-content-wrapper #main-aside-wrapper-navigation .container,
+body#page-layout-faculty-profile #main-content-wrapper #main-aside-wrapper-content .container {
+    margin: 0 5%;
+    width: 90%;
+    @include phone-portrait {
+        margin: 0 5%;
+        width: 90%;
+    }
+}
 /* wrapper - grid - container - adjustments */
-body#page-layout-faculty-profile #main-content-wrapper {
+body#page-layout-faculty-profile #main-content-wrapper.grid-wrapper-min-max {
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-template-areas:
+        "main-section-wrapper"
+        "main-aside-wrapper-navigation"
+        "main-aside-wrapper-content";
+    grid-rows: repeat(4, [col-start] 1fr);
     grid-gap: 0;
     grid-row-gap: 2rem;
+    padding: 4rem 10%;
     @include phone-portrait {
+        grid-template-columns: 1fr;
         grid-auto-rows: auto;
         grid-gap: 0;
         grid-row-gap: 2rem;
@@ -16,39 +43,30 @@ body#page-layout-faculty-profile #main-content-wrapper {
 }
 body#page-layout-faculty-profile #main-content-wrapper #main-section-wrapper {
     grid-column: 1 / span 8;
+    grid-row: 1 / span 4 ;
     @include phone-portrait {
-        margin: 0;
-        grid-column: 1 / 1 !important;
-        grid-row: 2 / span 1 !important;
-    }
-}
-body#page-layout-faculty-profile #main-content-wrapper #main-section-wrapper .padding-sm {
-    @include phone-portrait {
-        padding: .5rem;
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
     }
 }
 body#page-layout-faculty-profile #main-content-wrapper #main-aside-wrapper-navigation {
     grid-column: 9 / span 4;
+    grid-row: 1;
     @include phone-portrait {
-        grid-column: 1 / span 1 !important;
+        grid-column: 1 / span 1;
         grid-row: 1 / span 1;
     }
 }
 body#page-layout-faculty-profile #main-content-wrapper #main-aside-wrapper-content {
     grid-column: 9 / span 4;
     @include phone-portrait {
-        grid-column: 1 / span 1 !important;
+        grid-column: 1 / span 1;
         grid-row: 3 / span 1;
     }
 }
-body#page-layout-faculty-profile #main-content-wrapper #main-section-wrapper,
-body#page-layout-faculty-profile #main-content-wrapper #main-aside-wrapper-navigation .container,
-body#page-layout-faculty-profile #main-content-wrapper #main-aside-wrapper-content .container {
-    margin: 0 5%;
-    width: 90%;
+body#page-layout-faculty-profile #main-content-wrapper #main-section-wrapper .padding-sm {
     @include phone-portrait {
-        margin: 0 5%;
-        width: 90%;
+        padding: .5rem;
     }
 }
 /* card styling */
@@ -58,28 +76,34 @@ body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards .
 body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards .content-grid-wrapper {
     display: block;
 }
-body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards .flex-item.content h4 {
+body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards .flex-item.content h4,
+body#page-layout-faculty-profile #main-content-wrapper #main-aside-wrapper-content h4 {
     margin-top: 0;
-    margin-bottom: calc(var(--baseline)* 0.25* 1rem);
+    margin-bottom: calc(var(--baseline)* 0.125* 1rem);
+    font-size: clamp(#{$font-step-1-25}, #{$font-step-1-5} + 3.5vw, #{$font-step-1-5});
+    line-height: clamp(#{$line-step-1-75}, #{$line-step-2} + 3.5vw, #{$line-step-2});
 }
 body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards h5 {
     padding-bottom: calc(var(--baseline)* 0.75* 1rem);
     margin-top: 0 !important;
     margin-bottom: calc(var(--baseline)* 0.75* 1rem);
+    font-family: 'Antenna Condensed Light', sans-serif;
     font-size: clamp(#{$font-step-1-25}, #{$font-step-1-25} + 3.5vw, #{$font-step-1-25});
     text-transform: none;
     border-bottom: solid 1px $black;
 }
 body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards p,
-body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards ul li {
-    margin: 0 0 .35rem !important;
+body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards ul li,
+body#page-layout-faculty-profile #main-content-wrapper #main-aside-wrapper-content li {
+    margin: 0 0 .25rem !important;
     font-size: clamp(#{$font-step-095}, #{$font-step-095} + 3.5vw, #{$font-step-095});
     line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25}) !important;
 }
 body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards ul {
-    margin: 0 0 1rem 2.5rem;
+    margin: 0 0 1rem 1.5rem;
 }
-body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards ul li {
+body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards ul li,
+body#page-layout-faculty-profile #main-content-wrapper #main-aside-wrapper-content li {
     text-indent: -1.35rem;
     a {
         font-weight: 600;
@@ -110,4 +134,3 @@ body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards #
     color: $maroon;
     cursor: pointer;
 }
-
