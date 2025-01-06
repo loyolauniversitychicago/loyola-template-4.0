@@ -68,8 +68,8 @@ h1, h2, h3, h4, h5, h6 {
 /* universal font-sizes */
 
 h1, .display h1 {
-  font-size: clamp(#{$font-step-2}, #{$font-step-2} + 5vw, #{$font-step-3-5});
-  line-height: clamp(#{$line-step-2}, #{$line-step-2} + 5vw, #{$line-step-3-5});
+  font-size: clamp(#{$font-step-1}, #{$font-step-1} + 5vw, #{$font-step-3-5});
+  line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 5vw, #{$line-step-3-5});
 }
 h2 {
   font-size: clamp(#{$font-step-1-5}, #{$font-step-1-5} + 3.5vw, #{$font-step-2-5});
