@@ -1,5 +1,34 @@
 /* TYPOGRAPHY */
 
+@use 'sass:math';
+
+$default-min-bp: 320px;
+$default-max-bp: 960px;
+
+@function round($number, $decimals: 0) {
+    $n: 1;
+    @if $decimals > 0 {
+        @for $i from 1 through $decimals {
+            $n: $n * 10;
+        }
+    }
+    @return math.div(math.round($number * $n), $n);
+}
+
+@function px-to-rem($px) {
+    $rems: math.div($px, 16px) * 1rem;
+    @return $rems;
+}
+
+@function fluid($min-size, $max-size, $min-breakpoint: $default-min-bp, $max-breakpoint: $default-max-bp, $unit: vw) {
+    $slope: math.div($max-size - $min-size, $max-breakpoint - $min-breakpoint);
+    $slope-to-unit: round($slope * 100, 2);
+    $intercept-rem: round(px-to-rem($min-size - $slope * $min-breakpoint), 2);
+    $min-size-rem: round(px-to-rem($min-size), 2);
+    $max-size-rem: round(px-to-rem($max-size), 2);
+    @return clamp(#{$min-size-rem}, #{$slope-to-unit}#{$unit} + #{$intercept-rem}, #{$max-size-rem});
+}
+
 /* overrides */
 
 .center { text-align: center; }
@@ -68,28 +97,28 @@ h1, h2, h3, h4, h5, h6 {
 /* universal font-sizes */
 
 h1, .display h1 {
-  font-size: clamp(#{$font-step-1}, #{$font-step-1} + 5vw, #{$font-step-3-5});
-  line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 5vw, #{$line-step-3-5});
+  font-size: #{fluid(32px, 56px)};
+  line-height: #{fluid(36px, 62px)};
 }
 h2 {
-  font-size: clamp(#{$font-step-1-5}, #{$font-step-1-5} + 3.5vw, #{$font-step-2-5});
-  line-height: clamp(#{$line-step-1-5}, #{$line-step-1-5} + 3.5vw, #{$line-step-2-5});
+  font-size: #{fluid(22px, 38px)};
+  line-height: #{fluid(30px, 42px)};
 }
 h3 {
-  font-size: clamp(#{$font-step-1-5}, #{$font-step-1-5} + 3.5vw, #{$font-step-2-5});
-  line-height: clamp(#{$line-step-1-5}, #{$line-step-1-5} + 3.5vw, #{$line-step-2-5});
+  font-size: #{fluid(22px, 38px)};
+  line-height: #{fluid(30px, 42px)};
 }
 h4 {
-  font-size: clamp(#{$font-step-1-25}, #{$font-step-1-25} + 3.5vw, #{$font-step-1-75});
-  line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-75});
+  font-size: #{fluid(20px, 32px)};
+  line-height: #{fluid(26px, 38px)};
 }
 h5 {
-  font-size: clamp(#{$font-step-1}, #{$font-step-1} + 3.5vw, #{$font-step-1-25});
-  line-height: clamp(#{$line-step-1}, #{$line-step-1} + 3.5vw, #{$line-step-1-25});
+  font-size: #{fluid(16px, 22px)};
+  line-height: #{fluid(22px, 28px)};
 }
 h6 {
-  font-size: clamp(#{$font-step-075}, #{$font-step-1} + 3.5vw, #{$font-step-1});
-  line-height: clamp(#{$line-step-075}, #{$line-step-1} + 3.5vw, #{$line-step-1});
+  font-size: #{fluid(14px, 16px)};
+  line-height: #{fluid(20px, 24px)};
 }
 
 /* headlines margins and other unique values */
@@ -162,8 +191,8 @@ p strong, .standard-paragraph p strong, li strong, li a strong, ol strong, ol a 
 #panel-intro .caption p, .caption p, .leadin, .caption .leadin,
 #panel-table-accordion p {
   font-family: 'Open Sans', 'Arial', sans-serif !important;
-  font-size: clamp(#{$font-step-1}, #{$font-step-1-125} + 3.5vw, #{$font-step-1-125});
-  line-height: clamp(#{$line-step-1-75}, #{$line-step-1-75} + 3.5vw, #{$line-step-1-75});
+  font-size: #{fluid(14px, 16px)};
+  line-height: #{fluid(22px, 28px)};
   font-weight: 400;
   letter-spacing: -.045rem;
   word-spacing: .125rem;
@@ -257,20 +286,20 @@ li em, li em a, li a em, {
 .modaal-content-container .intro-paragraph > p {
   margin: 0;
   margin-bottom: rvr(1.5);
-  font-size: clamp(#{$font-step-1-25}, #{$font-step-1-25} + 3.5vw, #{$font-step-1-25});
-  line-height: clamp(#{$line-step-2}, #{$line-step-2} + 3.5vw, #{$line-step-2});
+  font-size: #{fluid(16px, 20px)};
+  line-height: #{fluid(26px, 34px)};
 }
 
 #panel-intro .caption p {
-  line-height: clamp(#{$line-step-1}, #{$line-step-1-5} + 3.5vw, #{$line-step-1-5});
+  line-height: #{fluid(22px, 28px)};
   a { cursor: pointer;
   }
 }
 
 .caption p {
   margin: .75rem 0;
-  font-size: clamp(#{$font-step-1}, #{$font-step-1} + 3.5vw, #{$font-step-1});
-  line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
+  font-size: #{fluid(14px, 16px)};
+  line-height: #{fluid(22px, 28px)};
   font-style: italic;
   a { cursor: pointer;
   }
@@ -280,7 +309,7 @@ li em, li em a, li a em, {
   @include phone-portrait {
     margin-bottom: 1.25rem;
     margin-bottom: rvr(1.25);
-    font-size: 1.125rem;
+    font-size: #{fluid(14px, 16px)};
   }
 }
 
@@ -289,8 +318,7 @@ li em, li em a, li a em, {
 .leadin, .caption .leadin {
   font-weight: 700;
   letter-spacing: -.05rem;
-  line-height: 1;
-  line-height: rvr(1);
+  line-height: #{fluid(22px, 28px)};
   text-transform: uppercase;
 }
 
@@ -329,18 +357,14 @@ a.cta {
   margin: .25rem auto 1.5rem;
   width: 100%;
   font-family: 'Antenna Condensed Bold', 'Arial', sans-serif;
-  font-size: clamp(#{$font-step-1}, #{$font-step-1} + 3.5vw, #{$font-step-1});
-  line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
+  font-size: #{fluid(14px, 16px)};
+  line-height: inherit;
   font-weight: 800;
   text-transform: uppercase;
   background-size: 0 0;
   &:hover {
     background: none !important;
     color: $brick;
-  }
-  @include phone-portrait {
-    line-height: 1.125;
-    line-height: rvr(1.125);
   }
 }
 
@@ -361,14 +385,14 @@ footnote, .footnote p {
   margin: 1rem 0 0 0;
   padding: .75rem 0 0 0;
   width: 100%;
-  font-size: clamp(#{$font-step-075}, #{$font-step-1} + 3.5vw, #{$font-step-1});
-  line-height: clamp(#{$line-step-1}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
+  font-size: #{fluid(13px, 15px)};
+  line-height: #{fluid(18px, 20px)};
   font-style: italic;
   border-top: solid 1px $gray;
 }
 
 .footnote p strong {
-  line-height: clamp(#{$line-step-1}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
+  line-height: #{fluid(18px, 20px)};
 }
 
 /* typographic specific */
@@ -385,7 +409,7 @@ footnote, .footnote p {
 .modaal-content ul,
 .modaal-content ol {
   margin: 0 0 1rem 1.5rem;
-  line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
+  line-height: #{fluid(22px, 24px)};
   list-style-position: inside;
 }
 
@@ -401,6 +425,9 @@ footnote, .footnote p {
 #main-content-wrapper-full-width ol li
 .modaal-content ol li {
   text-indent: -1.25rem;
+  @include phone-portrait {
+    text-indent: -1rem;
+  }
   &::marker {
     font-weight: 700;
   }
@@ -496,8 +523,9 @@ img.image-md, .grid-item img.image-md,
   counter-increment: circle-numbers;
   margin: 0 0 1.25rem 2.25rem;
   text-indent: 0;
-  font-size: clamp(#{$font-step-1}, #{$font-step-1-125} + 3.5vw, #{$font-step-1-125});
-  line-height: clamp(#{$line-step-1-25}, #{$line-step-1-5} + 3.5vw, #{$line-step-1-5});
+  font-size: #{fluid(14px, 16px)};
+  line-height: #{fluid(22px, 28px)};
+  
 }
 
 #main-content-wrapper .circle-number ol li::before,
@@ -512,8 +540,8 @@ img.image-md, .grid-item img.image-md,
   width: 24px;
   height: 24px;
   font-family: 'Antenna Condensed Bold', 'Arial', sans-serif;
-  font-size: clamp(#{$font-step-1}, #{$font-step-1} + 3.5vw, #{$font-step-1});
-  line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
+  line-height: #{fluid(16px, 16px)};
+  line-height: #{fluid(20px, 20px)};
   text-align: center;
   color: $white;
   background-color: $black;
@@ -542,8 +570,8 @@ img.image-md, .grid-item img.image-md,
   width: 24px;
   height: 24px;
   font-family: 'Antenna Condensed Bold', 'Arial', sans-serif;
-  font-size: clamp(#{$font-step-085}, #{$font-step-085} + 3.5vw, #{$font-step-085});
-  line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
+  font-size: #{fluid(14px, 16px)};
+  line-height: #{fluid(16px, 18px)};
   text-align: center;
   color: $white;
   background-color: #000;
@@ -585,8 +613,8 @@ blockquote, blockquote p {
   width: 80%;
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 700 !important;
-  font-size: clamp(#{$font-step-1-25}, #{$font-step-1-5} + 3.5vw, #{$font-step-1-5});
-  line-height: clamp(#{$line-step-2}, #{$line-step-2-5} + 3.5vw, #{$line-step-2-5});
+  font-size: #{fluid(18px, 24px)};
+  line-height: #{fluid(36px, 40px)};
   letter-spacing: -0.075rem;
   text-align: center;
   border-top: solid 1px $gray;
@@ -595,8 +623,6 @@ blockquote, blockquote p {
     margin: 1em auto;
     padding: 0;
     width: 90%;
-    font-size: clamp(#{$font-step-1}, #{$font-step-1-25} + 3.5vw, #{$font-step-1-25});
-    line-height: clamp(#{$line-step-1-5}, #{$line-step-1-75} + 3.5vw, #{$line-step-1-75});
     border: 0;
   }
 }
@@ -625,14 +651,11 @@ blockquote p cite {
   width: 100%;
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 400;
-  font-size: clamp(#{$font-step-075}, #{$font-step-1} + 3.5vw, #{$font-step-1});
-  line-height: clamp(#{$line-step-075}, #{$line-step-1} + 3.5vw, #{$line-step-1});
+  font-size: #{fluid(12px, 16px)};
+  line-height: #{fluid(16px, 20px)};
   letter-spacing: -.0125em;
   text-align: center;
   text-transform: uppercase;
-  @include phone-portrait {
-    font-size: .75rem;
-  }
 }
 
 blockquote cite:before,
@@ -644,35 +667,36 @@ blockquote p cite:before {
 #panel-intro .intro-grid-area-aside-content blockquote {
   margin: 0;
   padding: 0;
-  font-size: clamp(#{$font-step-1}, #{$font-step-1-25} + 3.5vw, #{$font-step-1-25});
-  line-height: clamp(#{$line-step-1-5}, #{$line-step-1-75} + 3.5vw, #{$line-step-1-75});
+  font-size: #{fluid(16px, 18px)};
+  line-height: #{fluid(22px, 26px)};
   text-align: left;
   border: 0;
   cite {
-    font-size: clamp(#{$font-step-05}, #{$font-step-05} + 3.5vw, #{$font-step-075});
+    font-size: #{fluid(10px, 12px)};
+    line-height: #{fluid(12px, 14px)};
     text-align: left;
   }
 }
 
 #panel-intro .intro-grid-area-aside-content .number-lg h1 {
-  font-size: clamp(#{$font-step-3-5}, #{$font-step-4-5} + 3.5vw, #{$font-step-4-5});
-  line-height: clamp(#{$line-step-3}, #{$line-step-3} + 3.5vw, #{$line-step-3});
+  font-size: #{fluid(56px, 64px)};
+  line-height: #{fluid(48px, 48px)};
 }
 #panel-intro .intro-grid-area-aside-content .number-md h2 {
-  font-size: clamp(#{$font-step-3}, #{$font-step-3} + 3.5vw, #{$font-step-3});
-  line-height: clamp(#{$line-step-2}, #{$line-step-2} + 3.5vw, #{$line-step-2});
+  font-size: #{fluid(42px, 48px)};
+  line-height: #{fluid(32px, 32px)};
 }
 #panel-intro .intro-grid-area-aside-content .number-sm h3 {
-  font-size: clamp(#{$font-step-1-75}, #{$font-step-1-75} + 3.5vw, #{$font-step-2});
-  line-height: clamp(#{$line-step-2}, #{$line-step-2} + 3.5vw, #{$line-step-2});
+  font-size: #{fluid(28px, 32px)};
+  line-height: #{fluid(32px, 32px)};
 }
 #panel-intro .intro-grid-area-aside-content .number-lg,
 #panel-intro .intro-grid-area-aside-content .number-md,
 #panel-intro .intro-grid-area-aside-content .number-sm,
 #panel-intro .intro-grid-area-aside-content {
   h6 {
-    font-size: clamp(#{$font-step-085}, #{$font-step-085} + 3.5vw, #{$font-step-085});
-    line-height: clamp(#{$line-step-075}, #{$line-step-075} + 3.5vw, #{$line-step-1});
+    font-size: #{fluid(11px, 13px)};
+    line-height: #{fluid(12px, 14px)};
   }
 }
 
@@ -689,56 +713,56 @@ blockquote p cite:before {
 }
 
 .number-lg h1 {
-  font-size: clamp(#{$font-step-3-5}, #{$font-step-4-5} + 3.5vw, #{$font-step-4-5});
+  font-size: #{fluid(56px, 64px)};
+  line-height: #{fluid(48px, 48px)};
 }
 
 .number-md h2 {
-  font-size: clamp(#{$font-step-2-5}, #{$font-step-3-5} + 3.5vw, #{$font-step-3-5});
+  font-size: #{fluid(42px, 48px)};
+  line-height: #{fluid(32px, 32px)};
 }
 
 .number-sm h3 {
-  font-size: clamp(#{$font-step-2}, #{$font-step-2-5} + 3.5vw, #{$font-step-2-5});
+  font-size: #{fluid(28px, 32px)};
+  line-height: #{fluid(32px, 32px)};
 }
 
 .number-display h1 {
-  font-size: 6.25rem;
-  line-height: clamp(#{$line-step-1}, #{$line-step-1} + 3.5vw, #{$line-step-1});
+  font-size: #{fluid(80px, 90px)};
+  line-height: #{fluid(50px, 70px)};
   letter-spacing: -.025em;
-  @include phone-portrait {
-    font-size: clamp(#{$font-step-2-5}, #{$font-step-3-5} + 3.5vw, #{$font-step-3-5});
-  }
 }
 
 /* cards */
 
 .flex-item.content h1 {
   margin-bottom: rvr(.5);
-  line-height: clamp(#{$line-step-1-5}, #{$line-step-1-5} + 3.5vw, #{$line-step-1-75});
+  line-height: #{fluid(24px, 28px)};
 }
 
 .flex-item.content h2 {
-  line-height: 1.125;
+  line-height: #{fluid(20px, 24px)};
 }
 
 .flex-item.content h4,
 .flex-item.content.uppercase h4 {
   margin-top: rvr(.5);
   margin-bottom: rvr(.5);
-  font-size: clamp(#{$font-step-1-25}, #{$font-step-1-5} + 3.5vw, #{$font-step-1-5});
-  line-height: clamp(#{$line-step-1-5}, #{$line-step-1-75} + 3.5vw, #{$line-step-1-75});
+  font-size: #{fluid(18px, 22px)};
+  line-height: #{fluid(22px, 26px)};
 }
 
 .flex-item.content h5 {
   margin-top: rvr(.5);
   margin-bottom: rvr(.5);
-  font-size: clamp(#{$font-step-1}, #{$font-step-1-125} + 3.5vw, #{$font-step-1-125});
-  line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
+  font-size: #{fluid(14px, 16px)};
+  line-height: #{fluid(22px, 22px)};
 }
 
 .flex-item.content p, .flex-item.content p.explainer {
   margin-top: rvr(0) !important;
   margin-bottom: rvr(.25) !important;
-  line-height: 1.45;
+  line-height: #{fluid(22px, 26px)};
 }
 
 .flex-item.content p.explainer {
@@ -748,7 +772,7 @@ blockquote p cite:before {
 .flex-item.content ul li {
   margin: 0 .125rem;
   .flex-item.content ul li strong {
-    line-height: 1.125;
+    line-height: #{fluid(22px, 26px)};
   }
 }
 
@@ -757,8 +781,8 @@ blockquote p cite:before {
   margin-top: rvr(.75) !important;
   margin-bottom: rvr(1.125);
   font-family: 'Antenna Condensed Bold', 'Arial', sans-serif;
-  font-size: clamp(#{$font-step-075}, #{$font-step-1} + 3.5vw, #{$font-step-1});
-  line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
+  font-size: #{fluid(14px, 16px)};
+  line-height: #{fluid(16px, 18px)};
 }
 
 /* infobox */
@@ -781,15 +805,6 @@ blockquote p cite:before {
 .infobox p:first-of-type {
   margin: 0 0 1.25rem;
   margin-bottom: calc(var(--baseline) * 1.25 * 1rem);
-}
-
-.infobox p:last-of-type {
-  margin-bottom: 0;
-  margin-bottom: rvr(0);
-}
-
-.infobox button {
-  margin: 2rem auto 0;
 }
 
 /* hightlights */
@@ -917,8 +932,8 @@ blockquote cite { line-height: 1.35; }
 #main-aside-wrapper blockquote {
   margin: 0 auto;
   padding: 0 auto;
-  font-size: clamp(#{$font-step-1-25}, #{$font-step-1-25} + 3.5vw, #{$font-step-1-25});
-  line-height: clamp(#{$line-step-1-5}, #{$line-step-1-5} + 3.5vw, #{$line-step-1-5});
+  font-size: #{fluid(16px, 20px)};
+  line-height: #{fluid(20px, 24px)};
   letter-spacing: -0.05rem;
   border: none !important;
 }
@@ -931,9 +946,9 @@ blockquote cite { line-height: 1.35; }
 #main-aside-wrapper .grid-wrapper-min-max.number-lg h5,
 #main-aside-wrapper h6,
 #main-aside-wrapper a.cta,
-#main-aside-wrapper .card a.cta,
-.flex-item.content a.cta {
-  font-size: clamp(#{$font-step-1}, #{$font-step-1} + 3.5vw, #{$font-step-1});
+#main-aside-wrapper .card a.cta {
+  font-size: #{fluid(14px, 16px)};
+  line-height: #{fluid(16px, 18px)};
 }
 
 #main-aside-wrapper a.cta,
@@ -952,8 +967,8 @@ blockquote cite { line-height: 1.35; }
   li strong, li a strong, ol strong, ol a strong,
   .flex-item.content p, .flex-item.content p.explainer,
   .caption p, .leadin, .caption .leadin {
-    font-size: clamp(#{$font-step-1}, #{$font-step-1} + 3.5vw, #{$font-step-1});
-    line-height: clamp(#{$line-step-1-25}, #{$line-step-1-25} + 3.5vw, #{$line-step-1-25});
+    font-size: #{fluid(14px, 16px)};
+    line-height: #{fluid(16px, 18px)};
   }
 }
 
