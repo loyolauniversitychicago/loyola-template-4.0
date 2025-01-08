@@ -109,8 +109,8 @@ h3 {
   line-height: #{fluid(30px, 42px)};
 }
 h4 {
-  font-size: #{fluid(20px, 32px)};
-  line-height: #{fluid(26px, 38px)};
+  font-size: #{fluid(20px, 28px)};
+  line-height: #{fluid(26px, 36px)};
 }
 h5 {
   font-size: #{fluid(16px, 22px)};
@@ -735,21 +735,12 @@ blockquote p cite:before {
 
 /* cards */
 
-.flex-item.content h1 {
-  margin-bottom: rvr(.5);
-  line-height: #{fluid(24px, 28px)};
-}
-
-.flex-item.content h2 {
-  line-height: #{fluid(20px, 24px)};
-}
-
 .flex-item.content h4,
 .flex-item.content.uppercase h4 {
   margin-top: rvr(.5);
   margin-bottom: rvr(.5);
-  font-size: #{fluid(18px, 22px)};
-  line-height: #{fluid(22px, 26px)};
+  font-size: #{fluid(20px, 28px)};
+  line-height: #{fluid(26px, 36px)};
 }
 
 .flex-item.content h5 {
