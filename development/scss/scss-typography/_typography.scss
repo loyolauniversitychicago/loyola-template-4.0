@@ -97,8 +97,8 @@ h1, h2, h3, h4, h5, h6 {
 /* universal font-sizes */
 
 h1, .display h1 {
-  font-size: #{fluid(32px, 56px)};
-  line-height: #{fluid(36px, 62px)};
+  font-size: #{fluid(36px, 58px)};
+  line-height: #{fluid(42px, 64px)};
 }
 h2 {
   font-size: #{fluid(22px, 38px)};
