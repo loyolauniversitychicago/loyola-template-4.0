@@ -67,7 +67,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body id="page-layout-faculty-profile">
 	<div id="main-wrapper">
 		<div id="search-overlay-wrapper">
   <div id="search-overlay" class="overlay">
@@ -362,12 +362,24 @@
 			by ID
 			span9 (main-content-wrapper)
 			span12 (main-content-wrapper-full-width) -->
-			<div id="main-content-wrapper">
-				<section id="main-section-wrapper" class="bg-gray-extra-light">
+			<div id="main-content-wrapper" class="grid-wrapper-min-max">
+				<section id="main-section-wrapper" style="background: green;">
 					<h2>Main content</h2>
 				</section>
-				<aside id="main-aside-wrapper-navigation" class="bg-gray-extra-light">
-					<h2>Aside</h2>
+				<aside id="main-aside-wrapper-navigation">
+					<section class="container-fluid">
+						<div class="container" style="background: green;">
+							<h2>Aside A</h2>
+						</div>
+					</section>
+					<!-- sidebar content here -->
+				</aside>
+				<aside id="main-aside-wrapper-content">
+					<section class="container-fluid">
+						<div class="container" style="background: green;">
+							<h2>Aside B</h2>
+						</div>
+					</section>
 					<!-- sidebar content here -->
 				</aside>
 			</div>
