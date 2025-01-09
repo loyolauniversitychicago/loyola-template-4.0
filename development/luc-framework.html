@@ -8,7 +8,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body id="page-layout-faculty-profile">
+<body>
+<!-- <body id="page-layout-faculty-profile"> -->
 	<div id="main-wrapper">
 		@@include('./partials/framework/luc-search-overlay.html')
 		@@include('./partials/framework/luc-sliding-menu.html')
@@ -34,7 +35,7 @@
 					</div>
 				</div>
 			</section>
-			<div id="main-content-wrapper" class="grid-wrapper-min-max">
+			<div id="main-content-wrapper" class="grid-wrapper-min-max" style="grid-gap: 1rem;">
 				<section id="main-section-wrapper" style="background: green;">
 					<h2>Main content</h2>
 				</section>
@@ -103,14 +104,39 @@
 						  </div>
 						</div>
 					</section>
-					<!-- sidebar content here -->
 				</aside>
 				<aside id="main-aside-wrapper-content">
-					<section class="container-fluid">
-						<div class="container" style="background: green;">
-							<h2>Aside B</h2>
-						</div>
+					<section class="container-fluid" class="grid-wrapper-min-max">
+						<section id="panel-buttons" class="container-fluid ">
+							<div class="grid-item">
+								<button class="container-100" onclick="window.open('https://google.com', '_self')" title="Link to Google">Link to Google</button>
+							</div>  
+						</section>
+						<div id="918432" class="padding-sm "></div>
+						<section class="container-fluid " id="panel-cards">
+							<div class="container container-100">
+								<div class="grid-wrapper-min-max ">
+							  		<div class="grid-item">
+							  			<div class="image-wrapper" https:="" cms4.luc.edu="" terminalfour="" sitemanager?ctfn="download&amp;fnno=60&amp;ceid=3d1e55c8cc632711b87f2cbf572fc5d4e6be5db9">
+											<img src="http://via.placeholder.com/1000x560" alt="Alternate description goes here" title="Title goes here">
+							  			</div>
+										<div class="content-grid-wrapper ">
+											<div class="flex-item content">
+												<h6>Category Label</h6>
+												<div class="explainer">
+													<p>Explainer or Lead In Text Here</p>
+												</div>
+												<p>This is the readout Lorem ipsum lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+												<a class="cta" alt="Read Story" title="Read Story" href="https://cms4.luc.edu/terminalfour/preview/8/en/122439">Read Story</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
 					</section>
+				</div>
+	</section>
 					<!-- sidebar content here -->
 				</aside>
 			</div>
