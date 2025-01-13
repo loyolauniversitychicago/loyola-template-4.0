@@ -71,6 +71,10 @@
 .hero-video-lead .headline-buttons .grid-wrapper-min-max  {
     margin: 0;
     grid-gap: 2rem;
+    height: auto;
+    .grid-item {
+        display:grid;
+    }
 }
 
 /* button group - adjusts width - button count variations */
