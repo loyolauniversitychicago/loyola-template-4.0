@@ -109,12 +109,6 @@ table td {
     height: auto;
     max-width: 8rem;
   }
-  span {
-    display: none;
-    @include tablet-portrait {
-      display: block;
-    }
-  }
 }
 
 th {
@@ -235,6 +229,13 @@ table > tbody > tr > td:nth-child(1) {
   }
 }
 
+/* table link fix - span */
+.panel-table span {
+  display: none;
+  @include phone-landscape {
+    display: block;
+  }
+}
 
 /* table accordion and accordion with nested table */
 
