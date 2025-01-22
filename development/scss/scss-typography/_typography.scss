@@ -400,6 +400,10 @@ footnote, .footnote p {
 .panel-label {
   margin-bottom: 2rem;
   margin-bottom: rvr(2);
+  @include phone-portrait {
+    margin-bottom: 1.5rem;
+    margin-bottom: rvr(1.5);
+  }
 }
 
 #main-content-wrapper ol,
