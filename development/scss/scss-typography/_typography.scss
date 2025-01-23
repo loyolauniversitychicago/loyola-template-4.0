@@ -752,6 +752,10 @@ blockquote p cite:before {
   margin-bottom: rvr(.5);
   font-size: #{fluid(14px, 16px)};
   line-height: #{fluid(22px, 22px)};
+  @include phone-portrait {
+    font-size: #{fluid(14px, 14px)} !important;
+    line-height: #{fluid(20px, 20px)};
+  }
 }
 
 .flex-item.content p, .flex-item.content p.explainer {
