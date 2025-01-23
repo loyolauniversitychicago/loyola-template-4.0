@@ -1045,7 +1045,7 @@ button.content-activate-symbol.activate-symbol-close {
       border: none;
       @include phone-portrait {
         width: 100%;
-        font-size: clamp(#{$font-step-1-25}, #{$font-step-1-5} + 3.5vw, #{$font-step-1-5});
+        font-size: clamp(#{$font-step-1-125}, #{$font-step-1-125} + 3.5vw, #{$font-step-1-125});
         line-height: 2;
         max-height: 300px;
         overflow: scroll;
