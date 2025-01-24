@@ -1908,6 +1908,10 @@ img.inline-icon {
   margin: 0 !important;
   padding: 0 2em;
   border-left: solid 1px $gray;
+  img {
+    margin: 0 .5rem -1rem 0;
+    width: 2.5rem;
+  }
   @include phone-portrait {
     float: left;
     margin: 1.5rem 0 !important;
