@@ -365,6 +365,9 @@ footer {
     background: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @include phone-portrait {
+      display: block;
+    }
   }
   p {
     font-family: 'Open Sans', sans-serif;
@@ -376,6 +379,9 @@ footer {
     margin-bottom: 0;
     @include tablet-portrait {
       display: block;
+    }
+    @include phone-portrait {
+      text-align: center;
     }
     &:first-of-type {
       font-weight: 700;
@@ -390,9 +396,12 @@ footer {
   #footer-address {
     margin: 0;
     width: auto;
+    @include phone-portrait {
+      margin: 1.5rem 0 0 0;
+    }
   } 
   #footer-copyright {
-    margin: 2rem 0 0 0;
+    margin: 1.5rem 0 0 0;
     p {
       font-size: .85rem;
     }
@@ -409,6 +418,10 @@ footer {
         width: auto;
         &:hover {
           cursor: pointer;
+        }
+        @include phone-portrait {
+          margin: 1.5rem auto;
+          width: 100%;
         }
       }
     }
