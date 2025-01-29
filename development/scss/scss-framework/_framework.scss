@@ -318,24 +318,8 @@ header #brand {
 
 /* footer */
 
-footer#footer-fixed {
-  display: block;
-  position: fixed;
-  bottom: 0;
-  padding-bottom: 1.125em;
-  height: auto;
-  @include phone-portrait {
-    display: none;
-  }
-}
-
-footer#footer-fixed img { display: none; margin: 0; }
-footer#footer-fixed.footer-fixed-show { display: block; }
-footer#footer-fixed.footer-fixed-hide { display: none; }
-
 footer {
   display: grid;
-  float: left;
   margin: 0;
   padding: 1rem 1.125rem 1.125rem;
   width: 100%;
@@ -345,110 +329,85 @@ footer {
     padding: 15px 10px;
     height: 75px;
   }
+  .container-fluid {
+    background: none;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .width-50 {
+    box-sizing: border-box;
+    width: 50%;
+  }
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(#{$font-step-1}, #{$font-step-1} + 3.5vw, #{$font-step-1});
+    line-height: clamp(#{$line-step-1-5}, #{$line-step-1-5} + 3.5vw, #{$line-step-1-5});
+    font-weight: 300;
+    letter-spacing: -.015em;
+    color: $white;
+    margin-bottom: 0;
+    @include tablet-portrait {
+      display: block;
+    }
+  }
   a, p a {
   color: $gray-extra-light !important;
   text-decoration: underline !important;
   background-image: none !important;
     &:hover {
-      display: inline-block;
       color: $gold-light !important;
     }
   }
 }
 
-footer .container-fluid {
-  background: none;
-  display: block;
-}
-
-footer span, footer p,
-footer#footer-fixed span, footer#footer-fixed p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: clamp(#{$font-step-1}, #{$font-step-1} + 3.5vw, #{$font-step-1});
-  line-height: clamp(#{$line-step-1-5}, #{$line-step-1-5} + 3.5vw, #{$line-step-1-5});
-  font-weight: 300;
-  letter-spacing: -.015em;
-  color: $white;
-  margin-bottom: 0;
-}
-
-footer span#brand img {
-  a {
-    display: inline-block;
-    float: right;
-  }
-  height: 45px;
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-footer p {
-  @include tablet-portrait {
-    display: block;
-  }
-}
-
-#footer-address {
-  margin-top: 0;
-}
-
-#footercard,
-#footercard a,
-#footercard #street-address,
-#footercard #locality,
-#footercard .region,
-#footercard .postal-code {
-  font-size: clamp(#{$font-step-1}, #{$font-step-1} + 3.5vw, #{$font-step-1});
-  color: lighten($gray-extra-light,5%) !important;
-}
-
-footer#footer-not-fixed {
-  margin-bottom: 0;
-  padding: 1rem;
-  height: 100%;
+footer {
   .container-fluid {
-    display: -ms-grid;
+    background: none;
     display: grid;
-    padding: 0 !important;
-    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(#{$font-step-1}, #{$font-step-1} + 3.5vw, #{$font-step-1});
+    line-height: clamp(#{$line-step-1-5}, #{$line-step-1-5} + 3.5vw, #{$line-step-1-5});
+    font-weight: 300;
+    letter-spacing: -.015em;
+    color: $white;
+    margin-bottom: 0;
     @include tablet-portrait {
-      grid-template-columns: 1fr;
-      padding: 1rem 1rem 1.25rem;
-      height: 100%;
-    }
-    .span {
       display: block;
-      box-sizing: border-box;
-      width: 100%;
-      color: lighten($gray-extra-light,5%);
+    }
+    &:first-of-type {
+      font-weight: 700;
     }
     a {
-      color: $white;
-      font: inherit;
-      font-weight: bold;
-      text-decoration: none;
+      font-weight: 400;
+    }
+  }
+  #footer-icon-bar {
+    margin: 0.5rem auto 1rem;
+  }
+  #footer-address {
+    margin: 0;
+    width: auto;
+  } 
+  #footer-copyright {
+    margin: 2rem 0 0 0;
+    p {
+      font-size: .85rem;
+    }
+  }
+  #brand {
+      a {
       img {
+        float: right;
         margin: .5rem 0 0 0;
-        @include phone-landscape {
-          margin: 1rem 0 0 0;
+        height: 45px;
+        width: auto;
+        &:hover {
+          cursor: pointer;
         }
       }
     }
   }
-}
-
-footer#footer-not-fixed #brand {
-  grid-area: 1 / 2 / span 1 / span 1;
-  display: block;
-  width: 100%;
-  @include tablet-portrait {
-    grid-area: 3 / 1 / span 2 / span 1;
-  }
-}
-footer#footer-not-fixed img {
-  display: none;
-  float: right;
-  margin: 0;
-  width: auto;
 }
