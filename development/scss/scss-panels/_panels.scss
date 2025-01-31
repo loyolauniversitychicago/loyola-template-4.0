@@ -187,6 +187,9 @@ $default-max-bp: 960px;
     animation-delay: 0;
     -webkit-animation: slide-in 1.5s;
     -moz-animation: slide-in 1.5s;
+    @include phone-portrait {
+      margin: 0 0 .5rem;
+    }
   }
   p {
     margin: .25rem 0 0 0;
