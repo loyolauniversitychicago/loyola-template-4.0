@@ -170,13 +170,24 @@ $default-max-bp: 960px;
 /* announcement */
 
 .panel-announcement {
-  float: left;
   margin: 0;
-  padding: 1rem;
+  padding: 1.75rem 2rem 2rem;
   width: 100%;
   height: auto;
   animation-delay: 0;
   background: $maroon;
+  -webkit-box-shadow: inset 0px -.5rem .5rem 0px rgba(15,0,25,0.3);
+  -moz-box-shadow: inset 0px -.5rem .5rem 0px rgba(15,0,25,0.3);
+  box-shadow: inset 0px -.5rem .5rem 0px rgba(15,0,25,0.3);
+  h2 {
+    margin: 0 0 .125rem;
+    font-size: 1.85rem;
+    text-align: center;
+    color: $white;
+    animation-delay: 0;
+    -webkit-animation: slide-in 1.5s;
+    -moz-animation: slide-in 1.5s;
+  }
   p {
     margin: .25rem 0 0 0;
     padding: 0;
