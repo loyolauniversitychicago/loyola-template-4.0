@@ -1931,6 +1931,9 @@ img.inline-icon {
     margin: 1.5rem 0 !important;
     border: none;
   }
+  img {
+    margin: 0 0 1rem !important;
+  }
 }
 
 #panel-events-news .grid-wrapper-min-max .grid-item:first-of-type {
@@ -1944,7 +1947,7 @@ img.inline-icon {
   h4 {
     margin: 0 0 .25rem;
     font-size: clamp(#{$font-step-1}, #{$font-step-1} + 3.5vw, #{$font-step-1-25});
-    line-height: clamp(#{$line-step-1-5}, #{$line-step-1-5} + 3.5vw, #{$line-step-1-75});
+    line-height: clamp(#{$line-step-1-5}, #{$line-step-1-5} + 3.5vw, #{$line-step-1-5});
     a {
       text-decoration: none;
     }
