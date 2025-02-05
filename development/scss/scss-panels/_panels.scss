@@ -171,7 +171,7 @@ $default-max-bp: 960px;
 
 .panel-announcement {
   margin: 0;
-  padding: 1.75rem 2rem 2rem;
+  padding: 10rem 2rem 2rem;
   width: 100%;
   height: auto;
   animation-delay: 0;
@@ -179,6 +179,9 @@ $default-max-bp: 960px;
   -webkit-box-shadow: inset 0px -.5rem .5rem 0px rgba(15,0,25,0.3);
   -moz-box-shadow: inset 0px -.5rem .5rem 0px rgba(15,0,25,0.3);
   box-shadow: inset 0px -.5rem .5rem 0px rgba(15,0,25,0.3);
+  @include phone-portrait {
+    padding: 8rem 2rem 2rem;
+  }
   h2 {
     margin: 0 0 .125rem;
     font-size: 1.85rem;
