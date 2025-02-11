@@ -77,6 +77,11 @@ button.center {
   color: $black !important;
 }
 
+.grid-item button,
+.grid-item .button {
+  height: 100%;
+}
+
 .button-maroon button { background-color: $maroon; }
 .button-brick button { background-color: $brick; }
 .button-patina button { background-color: $patina; }
