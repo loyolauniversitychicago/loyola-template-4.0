@@ -10,7 +10,7 @@
     </video>
     <img class="hero-image" src="./images/images-image-lead-random/1800x800_10.jpg">
     <div class="grid-wrapper-min-max">
-        <div class="grid-item">
+        <div id="video-underlay" class="grid-item">
             <!-- position-center = modifying class -->
             <div class="hero-video-content">
                 <div class="headline-buttons">
@@ -47,11 +47,15 @@
                 <button id="video-control" class="video-control playing">
                     <div class="play-pause-container">
                         <span class="video-control-play">
-                            <span class="video-control-symbol" aria-hidden="true"></span>
+                            <span class="video-control-symbol" aria-hidden="true">
+                                <span class="invis">Toggle</span>
+                            </span>
                             <!--<span class="video-control-label">Play</span> -->
                         </span>
                         <span class="video-control-pause">
-                            <span class="video-control-symbol" aria-hidden="true"></span>
+                            <span class="video-control-symbol" aria-hidden="true">
+                                <span class="invis">Toggle</span>
+                            </span>
                             <!-- <span class="video-control-label">Pause</span> -->
                         </span>
                     </div>

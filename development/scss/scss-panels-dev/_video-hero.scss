@@ -12,6 +12,9 @@
     grid-row-start: 1;
     grid-column-start: 1;
     height: 100%;
+    @include phone-portrait {
+        display: block;
+    }
 }
 
 /* show hide variations */
@@ -74,6 +77,8 @@
     height: auto;
     .grid-item {
         display: grid;
+        margin: .125rem 0;
+        height: auto;
     }
 }
 
@@ -159,6 +164,9 @@
 
 .hero-video-lead .hero-video-content.position-center .headline-buttons .grid-wrapper-min-max {
     margin: 0 auto;
+    @include phone-portrait {
+        display: block;
+    }
 }
 
 .hero-video-lead.full-overlay .hero-video-content.position-center .headline-buttons {
@@ -167,7 +175,7 @@
 }
 
 .hero-video-lead.full-overlay .hero-video-content.position-center .headline-buttons button {
-    margin: 0.75rem auto;
+    margin: .25rem auto;
     @include phone-portrait {
         margin: 0.5rem auto;
     }
@@ -178,6 +186,10 @@
 .hero-video-lead.full-overlay .hero-video-content.position-center h6,
 .hero-video-lead.full-overlay .hero-video-content.position-center p {
     text-align: center;
+}
+
+.hero-video-lead.full-overlay .hero-video-content.position-center p {
+    margin-bottom: 1.25rem;
 }
 
 /* explore */
@@ -258,8 +270,9 @@ button.slick-arrow.slick-next.bounce:hover {
 /* added button.video-control to override button base CSS */
 
 .video-control,
-button.video-control {
+.grid-item button.video-control {
     position: absolute;
+    aspect-ratio: 1 / 1;
     bottom: 0;
     right: 0;
     height: 50px;
@@ -269,6 +282,10 @@ button.video-control {
     border-radius: .25rem 0 0 0;
     border-top: solid .125rem $gold;
     border-left: solid .125rem $gold;
+}
+
+button#video-control.video-control {
+    height: 50px !important;
 }
 
 .hero-video-lead.full-overlay.hero-image .video-control {
@@ -283,6 +300,16 @@ button.video-control {
 .video-control span {
     display: flex;
     transition: 500ms all ease;
+    .invis, .screen-reader-text {
+        &:not(:active, :focus, :focus-within) {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            clip-path: inset(50%);
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
 }
 
 .play-pause-container {
@@ -313,6 +340,12 @@ button.video-control {
     border-style: solid;
     border-width: 10px 0px 10px 16px;
     border-color: transparent transparent transparent $white;
+}
+
+/* grid-item adjustment */
+
+.hero-video-lead.full-overlay .grid-wrapper-min-max #video-underlay.grid-item {
+    height: 100%;
 }
 
 /* media queries */
