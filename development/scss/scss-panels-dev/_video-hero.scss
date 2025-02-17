@@ -282,6 +282,13 @@ button.slick-arrow.slick-next.bounce:hover {
     border-radius: .25rem 0 0 0;
     border-top: solid .125rem $gold;
     border-left: solid .125rem $gold;
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+    &:focus {
+        border-right: 0 !important;
+        border-bottom: 0 !important;
+        outline: 0;
+    }
 }
 
 button#video-control.video-control {
