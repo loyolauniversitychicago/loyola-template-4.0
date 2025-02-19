@@ -69,6 +69,15 @@ body#page-layout-faculty-profile #main-content-wrapper #main-section-wrapper .pa
 body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards .image-wrapper {
     margin-bottom: -.25rem;
 }
+body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards .image-wrapper.luc-avatar {
+    background: lighten($gray-extra-light, 10%);
+}
+body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards .image-wrapper.luc-avatar img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .1;
+}
 body#page-layout-faculty-profile #main-aside-wrapper-navigation .profile-cards .content-grid-wrapper {
     display: block;
 }
