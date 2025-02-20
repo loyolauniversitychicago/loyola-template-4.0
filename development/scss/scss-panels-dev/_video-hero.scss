@@ -40,13 +40,16 @@
 }
 
 .hero-video-lead.full-overlay .hero-video-content {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex: 1;
+    padding: 2rem 5% 2.25rem;
     height: 100%;
+    width: 100%;
     align-items: start;
-    justify-content: start;
-    background: rgba(0, 0, 0, 0.7);
+    justify-content: center !important;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 25%, rgba(0, 0, 0, 0.22) 60%, rgba(0, 0, 0, 0.70)) !important;
     h1, h6, p {
         color: $white;
     }
@@ -77,7 +80,7 @@
     height: auto;
     .grid-item {
         display: grid;
-        margin: .125rem 0;
+        margin: .125rem 0 !important;
         height: auto;
     }
 }
@@ -101,20 +104,13 @@
     width: 50%;
 }
 
-.hero-video-lead.full-overlay .hero-video-content {
-    position: relative;
-    justify-content: center;
-    padding: 2rem 5% 2.25rem;
-    background: rgba(0, 0, 0, 0.5);
-}
-
 /* video only */
 
 .hero-video-lead.full-overlay.video-only {
     width: 100%;
-    height: auto;
-    min-height: auto;
-    aspect-ratio: auto;
+    height: 100%;
+    min-height: 100%;
+    aspect-ratio: 1800 / 450;
 }
 
 .hero-video-lead.full-overlay.video-only .hero-video-content {
@@ -122,14 +118,19 @@
 }
 
 .hero-video-lead.full-overlay.video-only video.hero-video {
+    display: block;
     position: relative;
-    object-fit: contain;
+    object-fit: cover;
     .grid-wrapper-min-max {
         display: block;
         .grid-item {
             display: block;
         }
     }
+}
+
+.hero-video-lead.full-overlay.video-only img.hero-image {
+    display: none;
 }
 
 /* default override - content - text align left */
@@ -151,6 +152,7 @@
 
 /* default override - button */
 .hero-video-lead .headline-buttons .grid-wrapper-min-max button {
+    margin: .5rem 0;
     width: 100%;
     height: auto;
     border: solid .125rem $gold;
@@ -171,7 +173,7 @@
 
 .hero-video-lead.full-overlay .hero-video-content.position-center .headline-buttons {
     margin: 0 auto;
-    width: 65%;
+    width: 90%;
 }
 
 .hero-video-lead.full-overlay .hero-video-content.position-center .headline-buttons button {
@@ -186,6 +188,14 @@
 .hero-video-lead.full-overlay .hero-video-content.position-center h6,
 .hero-video-lead.full-overlay .hero-video-content.position-center p {
     text-align: center;
+}
+
+.hero-video-lead.full-overlay .hero-video-content.position-center h1 {
+    margin: 0 auto 1rem;
+    width: 65%;
+    @include tablet-portrait {
+        width: 80%;
+    }
 }
 
 .hero-video-lead.full-overlay .hero-video-content.position-center p {
