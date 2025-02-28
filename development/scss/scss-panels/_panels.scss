@@ -1681,7 +1681,7 @@ button.modaal-close {
 
 #panel-video-embed {
   position: relative;
-  background: $brick;
+  background: $gray-light;
   overflow: hidden;
   .grid-wrapper-min-max {
     position: relative;
@@ -1698,7 +1698,7 @@ button.modaal-close {
   }
   .content-image-overlay {
     padding: 0;
-    background: $bg-overlay-light;
+    background: $bg-overlay;
     .container {
       height: 100%;
     }
@@ -1713,6 +1713,11 @@ button.modaal-close {
       margin: 0;
       padding: 0;
       object-fit: cover;
+      -webkit-filter: blur(.75rem) grayscale(80%);
+      -moz-filter: blur(.75rem) grayscale(80%);
+      -o-filter: blur(.75rem) grayscale(80%);
+      -ms-filter: blur(.75rem) grayscale(80%);
+      filter: blur(.75rem) grayscale(80%);
     }
   }
 }
@@ -1728,7 +1733,7 @@ button.modaal-close {
 #panel-video-embed .content-caption {
   display: block;
   padding: 2rem;
-  background: $gray-extra-dark;
+  background: $gray-extra-light;
   height: 100%;
     @include tablet-portrait {
       padding: 1.5rem;
@@ -1740,7 +1745,7 @@ button.modaal-close {
     line-height: clamp(#{$line-step-1-75}, #{$line-step-1-75} + 3.5vw, #{$line-step-1-75});
   }
   h4, p, p strong, p em, p em strong {
-    color: $gray-light;
+    color: $black;
   }
   p {
     font-family: 'Open Sans', sans-serif;
@@ -1749,7 +1754,7 @@ button.modaal-close {
   a, a.cta {
     margin-bottom: .25rem;
     font-size: clamp(#{$font-step-095}, #{$font-step-095} + 3.5vw, #{$font-step-095});
-    color: $gold;
+    color: $maroon;
     &:hover {
       color: lighten($gold,10%);
     }
