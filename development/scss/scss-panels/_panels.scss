@@ -1761,6 +1761,19 @@ button.modaal-close {
   }
 }
 
+#panel-video-embed.hide-background-image.bg-maroon .content-caption {
+  background: $maroon;
+  h4, p, p strong, p em, p em strong {
+    color: $white;
+  }
+  a, a.cta {
+    color: $gold;
+    &:hover {
+      color: lighten($gold,10%);
+    }
+  }
+}
+
 .video-wrapper {
     position: relative;
     display: block;
