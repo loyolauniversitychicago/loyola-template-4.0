@@ -245,7 +245,7 @@ var plugin = function plugin() {
 
       // Init attributes accordion
       if (accordion_node.getAttribute(CONFIG.ACCORDION_DATA_MULTISELECTABLE) === 'none') {
-        accordion_node.setAttribute(CONFIG.ATTR_MULTISELECTABLE, 'false');
+        accordion_node.setAttribute(CONFIG.ATTR_MULTISELECTABLE, 'true');
       } else {
         accordion_node.setAttribute(CONFIG.ATTR_MULTISELECTABLE, 'false');
       }
