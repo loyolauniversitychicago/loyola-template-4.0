@@ -185,26 +185,10 @@
     }
 }
 
-/* lead - presentation */
+/* lead - presentation - base */
 
-.panel-image-text.lead-presentation .grid-wrapper-grid-area .grid-area-content {
+.panel-image-text.lead-presentation .grid-area-content {
     padding: 4rem;
-    h1 {
-        font-size: #{fluid(14px, 26px)};
-        line-height: #{fluid(18px, 32px)};
-        span {
-            color: $gold;
-        }
-    }
-    h2 {
-        font-size: #{fluid(14px, 26px)};
-        line-height: #{fluid(18px, 32px)}; 
-    }
-}
-
-.panel-image-text.lead-presentation .content-image-text {
-    padding: 2.5rem;
-    border: solid .25rem $white;
 }
 
 .panel-image-text.lead-presentation .content-image-text-image {
@@ -218,6 +202,9 @@
         width: 60%;
         text-transform: uppercase;
         text-shadow: 0 0 1.5rem rgba(0, 0, 0, .35);
+        @include phone-portrait {
+            width: 100%;
+        }
         span {
             color: lighten($gold, 10%);
         }
@@ -226,7 +213,7 @@
     bottom: 0;
     left: 0;
     margin: 0;
-    padding: 6rem 10% 2.25rem;
+    padding: 4rem 4rem 3.5rem;
     width: 100%;
     height: calc(auto + 30%);
     color: #ffffff;
@@ -236,37 +223,160 @@
         rgba(0, 0, 0, 0.22) 20%,
         rgba(0, 0, 0, 0.7)
         );
-    // background: linear-gradient(red, green, blue);
     z-index: +1;
 }
 
-.panel-image-text.lead-presentation.magazine .grid-wrapper-grid-area .grid-area-content {
-    h1, h2, a, button {
-        display: none;
+h1 {
+    font-size: #{fluid(36px, 58px)};
+    line-height: #{fluid(42px, 64px)};
+    span {
+        color: $gold;
+    }
+}
+h2 {
+    font-size: #{fluid(22px, 38px)};
+    line-height: #{fluid(30px, 42px)}; 
+}
+p {
+    padding: 0 1rem;
+    font-size: #{fluid(16px, 16px)};
+    line-height: #{fluid(36px, 36px)};
+    text-transform: uppercase;
+}
+
+.panel-image-text.lead-presentation .content-image-text {
+    padding: 2.5rem;
+    border: solid .25rem $white;
+    h1 {
+        font-size: #{fluid(36px, 58px)};
+        line-height: #{fluid(42px, 64px)};
+        span {
+            color: $gold;
+        }
+    }
+    h2 {
+        font-size: #{fluid(22px, 38px)};
+        line-height: #{fluid(30px, 42px)}; 
     }
     h5 {
         text-align: center;
         text-indent: 0 !important;
     }
-    ul {
-        margin: 2rem auto 0 !important;
-        width: 60%;
+    p {
+        display: block;
+        padding: 0 1rem;
+        font-size: #{fluid(15px, 15px)};
+        line-height: #{fluid(28px, 28px)};
+        text-align: left;
+        text-transform: none;
     }
-    li {
-        margin: 0 0 .875rem !important;
-        padding: 0 0 .85rem;
-        font-family: 'Antenna Condensed Bold', sans-serif;
-        letter-spacing: .025rem;
-        list-style: none;
-        text-align: center;
-        text-indent: 0 !important;
-        text-transform: uppercase;
-        border: none;
-        border-bottom: solid 1px $white;
+}
+
+/* magazine - annual report */
+
+.panel-image-text.lead-presentation.magazine .grid-wrapper-grid-area,
+.panel-image-text.lead-presentation.annual-report .grid-wrapper-grid-area {
+    .grid-area-content {
+        h1, h2, ul, a, button {
+            display: none;
+        }
+        h5 {
+            margin: 0 auto 1.5rem;
+        }
+        p {
+            line-height: #{fluid(36px, 36px)};
+            text-align: center;
+            text-transform: uppercase;
+        }
     }
-    a {
-        margin: 0;
-        text-transform: uppercase;
+}
+
+
+/* magazine */
+
+.panel-image-text.lead-presentation.magazine .grid-wrapper-grid-area {
+    .grid-area-content .content-image-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem auto !important;
+            width: 100%;
+            li {
+                margin: 0 0 .9rem !important;
+                padding: 0 0 .85rem;
+                font-family: 'Antenna Condensed Bold', sans-serif;
+                letter-spacing: .025rem;
+                list-style: none;
+                text-align: center;
+                text-indent: 0 !important;
+                text-transform: uppercase;
+                border: none;
+                border-bottom: solid 1px $gray-light;
+                width: 60%;
+                @include phone-portrait {
+                    width: 80%;
+                }
+                &:last-of-type {
+                    border-bottom: none;
+                }
+            }
+        }
+        h5, p {
+            display: none;
+        }
+    }
+}
+
+/* annual-report */
+
+.panel-image-text.lead-presentation.annual-report .grid-wrapper-grid-area {
+    .grid-area-content {
+        p {
+            margin: 0 auto;
+            padding: 0;
+            width: 80%;
+            @include phone-portrait {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* story */
+
+.panel-image-text.lead-presentation.story .grid-wrapper-grid-area {
+    .grid-area-image .bg-overlay {
+        display: none;
+    }
+    .grid-area-content {
+        a, ul, button {
+            display: none;
+        }
+        h5 {
+            font-family: 'Antenna Condensed Light', sans-serif;
+            font-size: #{fluid(12px, 14px)};
+            line-height: #{fluid(16px, 20px)};
+            text-align: left;
+            text-transform: uppercase;
+        }
+        p {
+            display: flex;
+            margin: 3rem -2.5rem -2.5rem;
+            padding: 2rem 3rem;
+            height: auto;
+            // font-size: #{fluid(14px, 14px)};
+            // line-height: #{fluid(24px, 24px)};
+            background: $bg-overlay;
+            @include phone-portrait {
+                margin: 3rem -2.5rem -3.5rem;
+            }
+        }
     }
 }
   
