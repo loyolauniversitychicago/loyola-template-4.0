@@ -499,7 +499,7 @@ img.image-md, .grid-item img.image-md,
   margin: 0 0 1.25rem 2.25rem;
   text-indent: 0;
   font-size: #{fluid(14px, 16px)};
-  line-height: #{fluid(22px, 28px)};
+  line-height: #{fluid(28px, 28px)};
   
 }
 
@@ -515,8 +515,7 @@ img.image-md, .grid-item img.image-md,
   width: 24px;
   height: 24px;
   font-family: 'Antenna Condensed Bold', 'Arial', sans-serif;
-  line-height: #{fluid(16px, 16px)};
-  line-height: #{fluid(20px, 20px)};
+  line-height: #{fluid(22px, 26px)};
   text-align: center;
   color: $white;
   background-color: $black;
