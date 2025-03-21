@@ -92,23 +92,36 @@
 }
 
 .tabs-ensemble .tabs .tab-list .tab-button {
-    margin: 1.25rem;
+    margin: 0 1.25rem;
     padding: 0;
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 6.5rem;
+    height: 6.5rem;
     border: none;
     border-radius: 100% !important;
-    transition: 500ms all ease;
+    outline: solid 0rem $maroon;
     filter: saturate(0);
     opacity: 0.5;
-    @include phone-landscape {
+    transition: scale .5s, outline 3s;
+    @include tablet-portrait {
+        position: relative;
         display: inline;
-        margin: 0 .5rem;
+        margin: 0 .35rem;
         width: 3.5rem;
         height: 3.5rem;
+
     }
-    @include phone-portrait {
-        display: inline;
+}
+
+.tabs-ensemble .tabs .tab-list .tab-button[aria-selected=false] {
+    outline: solid 0 $maroon;
+    transition-timing-function: ease;
+    transition: .125s;
+    &:hover {
+        outline: solid .25rem $maroon;
+        filter: saturate(.75);
+        opacity: 0.5;
+    }
+    @include tablet-portrait {
         margin: 0 .35rem;
         width: 2.5rem;
         height: 2.5rem;
@@ -116,12 +129,13 @@
 }
 
 .tabs-ensemble .tabs .tab-list .tab-button[aria-selected="true"] {
+    position: relative;
     scale: 1.25;
-    outline: solid 5px $maroon;
+    outline: solid .275rem $maroon;
     filter: saturate(1);
     opacity: 1;
-    @include phone-portrait {
-        scale: 1.125;
+    @include tablet-portrait {
+        top: .5rem;
     }
 }
 
