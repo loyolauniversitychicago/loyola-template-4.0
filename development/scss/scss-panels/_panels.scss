@@ -1951,11 +1951,13 @@ img.inline-icon {
   img {
     margin: 0 0 1rem !important;
   }
-  p:has(> img.programming-contact-icon) {
+  p:has(> img.programming-contact-icon),
+  p a:has(> img.programming-contact-icon) {
     float: left;
     margin: 0 0 1rem !important;
     width: 100%;
-    img.programming-contact-icon {
+    img.programming-contact-icon,
+    a img.programming-contact-icon {
       float: left;
       position: relative;
       display: inline-block;
@@ -1994,6 +1996,13 @@ img.inline-icon {
   }
   .grid-wrapper-min-max .grid-item .cta:last-of-type {
     margin-bottom: 0;
+  }
+  .grid-item button,
+  .grid-item .button {
+    height: auto !important;
+    &:first-of-type {
+      margin-top: 0;
+    }
   }
 }
 
