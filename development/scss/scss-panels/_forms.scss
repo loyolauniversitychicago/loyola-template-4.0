@@ -195,10 +195,6 @@ form.luc-form input:-internal-autofill-selected {
 
 form.luc-form input[type="radio"],
 form.luc-form input[type="checkbox"] {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: .5rem;
   display: inline;
   width: 18px;
   height: 18px;
@@ -214,6 +210,10 @@ form.luc-form form button {
     background: $maroon;
     color: $gray-extra-light !important;
   }
+}
+
+.grid-item form.luc-form button {
+  height: auto !important;
 }
 
 /* disabled styles */
@@ -253,7 +253,7 @@ form.luc-form .radiobox > span {
 
 form.luc-form .checkbox > input,
 form.luc-form .radiobox > input {
-  margin-top: .025rem;
+  margin: .025rem .5rem 0 0 !important; /* necessary because of styles-alert.css */
   padding: .5rem;
   -webkit-appearance: none;
   -moz-appearance: none;
