@@ -43,15 +43,20 @@
             width: 100%;
             min-width: 80%;
             li {
-                display: inline;
                 margin: 0 auto;
-                padding: 1rem;
+                padding: 0;
                 width: 100%;
                 text-indent: unset;
                 text-align: center;
                 background: $gray-extra-light;
                 a {
+                    display: block;
                     margin: 0;
+                    padding: 1rem;
+                    background: $gray-extra-light;
+                    &:hover {
+                        background: darken($gray-extra-light,10%);
+                    }
                 }
             }
         }
@@ -60,17 +65,12 @@
 #main-content-wrapper #pagination ul li.previous,
 #main-content-wrapper #pagination ul li.next,
 #main-content-wrapper-full-width #pagination ul li.previous,
-#main-content-wrapper-full-width #pagination ul li.next {
-    text-transform: uppercase;
-    color: $white;
-    background: $maroon;
-
-    a {
-        color: $white;
-        background: none;
-    }
-}
+#main-content-wrapper-full-width #pagination ul li.next,
 #main-content-wrapper #pagination ul li.selected,
 #main-content-wrapper-full-width #pagination ul li.selected {
-    background: $maroon !important;
+    a {
+        text-transform: uppercase;
+        color: $white;
+        background: $maroon;
+    }
 }
