@@ -39,25 +39,33 @@
                         text-transform: uppercase;
                         background: $maroon;
                         &:hover {
-                            background: lighten($maroon, 10%);
+                            background: lighten($maroon,10%);
                         }
                     }
                 }
                 &:first-of-type a {
                     border-radius: 1rem 0 0 1rem;
                     &:before {
-                        margin: 0 .75rem 0 0;
+                        margin: 0;
                         content: '<';
                     }
                 }
                 &:last-of-type a {
                     border-radius: 0 1rem 1rem 0;
                     &:after {
-                        margin: 0 0 0 .75rem;
+                        margin: 0;
                         content: '>';
                     }
                 }
             }
         }
+    }
+}
+#main-content-wrapper #pagination ul li.selected a,
+#main-content-wrapper-full-width #pagination ul li.selected a {
+    color: white;
+    background: $maroon ;
+    &:hover {
+        background: lighten($maroon,10%);
     }
 }
