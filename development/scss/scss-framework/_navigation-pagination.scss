@@ -2,8 +2,9 @@
 #main-content-wrapper-full-width {
     #pagination {
         width: 100%;
-        nav {
-            background: none;
+        nav, .container {
+            border-radius: 1rem;
+            background: red;
         }
         ul {
             display: flex;
@@ -16,6 +17,8 @@
                 margin: 0 auto;
                 padding: 0;
                 width: 100%;
+                font-family:'OpenSans', Arial, Helvetica, sans-serif;
+                color: #000000;
                 list-style: none;
                 text-indent: unset;
                 text-align: center;
@@ -24,6 +27,7 @@
                     display: block;
                     margin: 0;
                     padding: 1rem;
+                    font-family:'OpenSans', Arial, Helvetica, sans-serif;
                     background: $gray-extra-light;
                     &:hover {
                         background: darken($gray-extra-light,10%);
