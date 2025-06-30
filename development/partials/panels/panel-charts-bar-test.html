@@ -2,7 +2,7 @@
 src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 </script>
 <section id="panel-bar-chart" class="container-fluid">
-  <div class="container">
+  <div class="container container-50">
     <div class="grid-wrapper-min-max">
       <!-- chart one -->
       <div class="grid-item">
@@ -13,7 +13,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 </section>
 <script>
   var xValues = ["Italy", "France", "Spain", "USA"];
-  var yValues = [55, 49, 44, 24];
+  var yValues = [50, 40, 32, 24];
   var barColors = [
     "rgba(0,0,255,1.0)",
     "rgba(0,0,255,0.8)",
@@ -28,7 +28,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
         /* variable */
         backgroundColor: barColors,
         /* specific */
-        backgroundColor: ['#8d0034', 'red', '#888888', '#888888', '#888888', '#888888'],
+        backgroundColor: ['#8d0034', '#eaaa00', '#888888', '#888888', '#888888', '#888888'],
         borderColor: ['rgba(0,0,0,0)'],
         borderWidth: 0,
         data: yValues
@@ -54,7 +54,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
             ticks: {
               padding: 5,
               fontFamily: 'Helvetica',
-              fontSize: 16,
+              fontSize: 32,
               fontStyle: 'bold',
             }
           }],
