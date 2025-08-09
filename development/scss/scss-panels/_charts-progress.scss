@@ -23,6 +23,7 @@
   }
 }
 .progress-chart-circle {
+  position: relative;
   display: grid;
   grid-template-areas: "layer";
   place-items: center;
@@ -41,12 +42,12 @@
 .progress-chart-title {
   position: absolute;
   top: center;
-  left: calc(50% - 10%);
+  left: calc(50% - 15%);
   padding: 0;
-  width: 20%;
+  width: 30%;
   height: auto;
   text-align: center;
-  color: #ffffff;
+  color: $black;
   @include tablet-portrait {
     position: relative;
     top: 0;
@@ -55,8 +56,9 @@
   }
   h2 {
     margin: 0;
-    font-size: 1.75vw;
-    line-height: 1.75rem !important;
+    font-size: 3.5vw;
+    line-height: 3.25rem !important;
+    text-transform: uppercase;
   }
 }
 .progress-chart-stat {
@@ -67,7 +69,8 @@
   width: 20vmin;
   height: 20vmin;
   border-radius: 50%;
-  background: #8d0034;
+  background: $maroon;
+  box-shadow: 0 0 1rem rgba(0,0,0,.35);
   @include phone-portrait {
     display: block;
     box-sizing: border-box;
@@ -87,18 +90,46 @@
   }
 }
 .progress-chart-stat h5 {
-  width: 50%;
-  line-height: 1.05;
+  margin: -.25rem 0 0 !important;
+  width: 80%;
+  font-size: 1.125rem;
+  line-height: 1.25;
   color: $gray-extra-light;
   text-align: center;
+  text-transform: uppercase;
 }
+.progress-chart-stat h5 span {
+  display: block;
+  margin: 0 auto .5rem;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  font-family: 'Antenna Condensed Bold', 'Arial', sans-serif;
+  line-height: #{fluid(22px, 26px)};
+  text-align: center;
+  color: $white;
+  background-color: $gold;
+  border-radius: 50%;
+}
+.progress-chart-title a.cta,
 .progress-chart-stat a.cta {
   display: block;
+  margin: .5rem 0 .25rem !important;
   width: 100%;
-  font-size: 60%;
-  line-height: 1.125;
-  color: $gold;
+  font-size: 70%;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: .01rem;
+  color: lighten($gold,25%) !important;
   text-transform: uppercase;
+}
+.progress-chart-title a.cta {
+  margin: .75rem 0 .25rem !important;
+  font-size: 100%;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -.025rem;
+  color: $maroon !important;
 }
 /* Decimal value, 0-1 based on the child's index */
 .progress-chart-stat { --d: calc(var(--i) / var(--total));}
@@ -115,11 +146,12 @@
 }
 .progress-chart-stat:nth-child(even) { --transform: rotate(var(--r)) translate(var(--radius)) rotate(calc(0 * var(--r)));
   padding: .5rem;
+  color: $white;
   transform: var(--transform);
   transition: transform 1.5s ease-in-out;
-  background: $gold;
+  background: lighten($gray,10%);
   z-index: +1;
-  box-shadow: 0 0 .5rem rgba(0,0,0,.35);
+  box-shadow: none;
   @include phone-portrait {
     transform: rotate(0);
   }
