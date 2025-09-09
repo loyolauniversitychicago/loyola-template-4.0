@@ -5,6 +5,14 @@
     min-height: 800px;
     min-height: 80vh;
     aspect-ratio: 1280 / 720;
+    @include tablet-portrait {
+        height: 100vh;
+        min-height: 100vh;
+    }
+    @include phone-portrait {
+        height: 80vh;
+        min-height: 80vh;
+    }
 }
 
 .hero-video-lead.full-overlay .grid-wrapper-min-max {
@@ -111,6 +119,9 @@
     height: 100%;
     min-height: 100%;
     aspect-ratio: 1800 / 450;
+    @include phone-portrait {
+        aspect-ratio: 1800 / 1000;
+    }
 }
 
 .hero-video-lead.full-overlay.video-only .hero-video-content {
@@ -221,6 +232,9 @@
 /* default override - explore position */
 .hero-video-lead.full-overlay .hero-video-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow {
     bottom: 15%;
+    @include tablet-portrait {
+        display: none;
+    }
 }
 
 .hero-video-lead.full-overlay .hero-video-content div.slides.slick-initialized.slick-slider.uao-scroll-arrow h6 {
