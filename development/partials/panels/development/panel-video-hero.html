@@ -43,7 +43,7 @@
                 </div>
             </div>
         </div>
-        <button id="playPauseButton" aria-controls="mediaElementId" aria-pressed="false">&#x25BA;</button>
+        <button id="playPauseButton" aria-controls="mediaElementId" aria-pressed="false" aria-label="play">&#x25BA;</button>
     </div>
 <script>
 // toggle play and pause //
@@ -60,11 +60,19 @@
     }
     });
 // toggle aria-pressed state //
-    const toggle = document.querySelector('[aria-pressed]');
+  const button = document.getElementById('playPauseButton');
+  
+  button.addEventListener('click', () => {
+    // Check the current state or use another variable to determine the new label
+    const currentStateIsOn = button.getAttribute('aria-pressed') === 'true'; // Example: toggling a pressed state
 
-    toggle.addEventListener('click', (e) => {  
-    let pressed = e.target.getAttribute('aria-pressed') === 'true';
-    e.target.setAttribute('aria-pressed', String(!pressed));
-    });    
+    if (currentStateIsOn) {
+      button.setAttribute('aria-label', 'Pause');
+      button.setAttribute('aria-pressed', 'false'); // Also update state if it's a toggle button
+    } else {
+      button.setAttribute('aria-label', 'Play');
+      button.setAttribute('aria-pressed', 'true');
+    }
+  });
 </script>
 </section>
