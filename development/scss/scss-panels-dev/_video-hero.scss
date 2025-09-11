@@ -294,7 +294,8 @@ button.slick-arrow.slick-next.bounce:hover {
 /* added button.video-control to override button base CSS */
 
 .video-control,
-.grid-item button.video-control {
+.grid-item button.video-control,
+button#playPauseButton {
     position: absolute;
     aspect-ratio: 1 / 1;
     bottom: 0;
@@ -308,15 +309,24 @@ button.slick-arrow.slick-next.bounce:hover {
     border-left: solid .125rem $gold;
     border-right: 0 !important;
     border-bottom: 0 !important;
-    &:focus {
+    &:hover, &:focus {
+        border-top: solid .125rem $gold;
+        border-left: solid .125rem $gold;
         border-right: 0 !important;
         border-bottom: 0 !important;
-        outline: 0;
+        background: $gold;
+        color: $maroon
     }
 }
 
-button#video-control.video-control {
+button#video-control.video-control,
+button#playPauseButton {
     height: 50px !important;
+}
+
+button#playPauseButton {
+    text-indent: .05rem;
+    font-size: 1.25rem;
 }
 
 .hero-video-lead.full-overlay.hero-image .video-control {

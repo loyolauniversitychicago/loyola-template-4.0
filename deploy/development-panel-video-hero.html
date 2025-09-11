@@ -65,8 +65,6 @@
 	<link rel="stylesheet" href="css/css-alert/styles-alert.css">
 	<!-- endinject -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="//vjs.zencdn.net/8.23.4/video-js.min.css" rel="stylesheet">
-	<script src="//vjs.zencdn.net/8.23.4/video.min.js"></script>
 </head>
 
 <body>
@@ -90,15 +88,11 @@
 					<div id="panel-top" class="container-fluid">
 						<div class="container"><h5>Panel - Video Hero - Default</h5></div>
 					</div>
-					<div style="width: 100%;" class="splash__video-container">
-					<video muted="" loop="" autoplay="" playsinline="" style="width: 100%;">
-						<source data-src="file:///Users/sravenscraft/Sites/loyola-template-4.0/development/videos/GettyImages-1865501901.mp4" type="video/mp4" src="file:///Users/sravenscraft/Sites/loyola-template-4.0/development/videos/GettyImages-1865501901.mp4">
-					</video>
-					</div>
 					<!-- video-lead - full-overlay -->
 <section class="container-fluid hero-video-lead full-overlay">
     <video
-    class="full-width-video hero-video" id="hero-video"
+    id="mediaElementId"
+    class="full-width-video hero-video"
     playsinline muted loop autoplay
     src="https://loyolauniversitychicago.github.io/loyola-template-4.0/deploy/videos/umc-hero-video-720.mp4"
     data-src-mobile="mobile.mp4"
@@ -137,23 +131,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="slides slick-initialized slick-slider uao-scroll-arrow">
-                    <h6>Explore</h6>
-                    <button type="button" data-role="none" class="slick-next slick-arrow bounce">Explore</button>
-                </div>
-                <button id="video-control" class="video-control">
-                    <div class="play-pause-container">
-                        <span class="video-control-play">
-                            <span class="video-control-symbol" aria-hidden="true"></span>
-                        </span>
-                        <span class="video-control-pause">
-                            <span class="video-control-symbol" aria-hidden="true"></span>
-                        </span>
-                    </div>
-                </button>
             </div>
         </div>
+        <button id="playPauseButton" aria-controls="mediaElementId" aria-pressed="false">&#x25BA;</button>
     </div>
+<script>
+// toggle play and pause //
+    const playPauseButton = document.getElementById('playPauseButton');
+    const mediaElement = document.getElementById('mediaElementId');
+
+    playPauseButton.addEventListener('click', () => {
+    if (mediaElement.paused) {
+        mediaElement.play();
+        playPauseButton.textContent = '\u25BA';
+    } else {
+        mediaElement.pause();
+        playPauseButton.textContent = '\u23F8';
+    }
+    });
+// toggle aria-pressed state //
+    const toggle = document.querySelector('[aria-pressed]');
+
+    toggle.addEventListener('click', (e) => {  
+    let pressed = e.target.getAttribute('aria-pressed') === 'true';
+    e.target.setAttribute('aria-pressed', String(!pressed));
+    });    
+</script>
 </section>
 					<div class="container">
 						<hr class="padding-divider"></hr>
@@ -166,7 +169,8 @@
 					<!-- video-lead - full-overlay -->
 <section class="container-fluid hero-video-lead full-overlay">
     <video
-    class="full-width-video hero-video" id="hero-video"
+    id="mediaElementId"
+    class="full-width-video hero-video"
     playsinline muted loop autoplay
     src="https://loyolauniversitychicago.github.io/loyola-template-4.0/deploy/videos/umc-hero-video-720.mp4"
     data-src-mobile="mobile.mp4"
@@ -205,20 +209,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="slides slick-initialized slick-slider uao-scroll-arrow">
-                    <h6>Explore</h6>
-                    <button type="button" data-role="none" class="slick-next slick-arrow bounce">Explore</button>
-                </div> -->
-                <button id="video-control" class="video-control">
-                    <div class="play-pause-container">
-                        <span class="video-control-play">
-                            <span class="video-control-symbol" aria-hidden="true"></span>
-                        </span>
-                        <span class="video-control-pause">
-                            <span class="video-control-symbol" aria-hidden="true"></span>
-                        </span>
-                    </div>
-                </button>
             </div>
         </div>
     </div>
@@ -234,7 +224,8 @@
 					<!-- video-lead - video-only -->
 <section class="container-fluid hero-video-lead full-overlay video-only">
     <video
-    class="full-width-video hero-video" id="hero-video"
+    id="mediaElementId"
+    class="full-width-video hero-video"
     playsinline muted loop autoplay
     src="./videos/chicago-bean-video.mp4"
     data-src-mobile="mobile.mp4"
@@ -273,20 +264,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="slides slick-initialized slick-slider uao-scroll-arrow">
-                    <h6>Explore</h6>
-                    <button type="button" data-role="none" class="slick-next slick-arrow bounce">Explore</button>
-                </div>
-                <button id="video-control" class="video-control">
-                    <div class="play-pause-container">
-                        <span class="video-control-play">
-                            <span class="video-control-symbol" aria-hidden="true"></span>
-                        </span>
-                        <span class="video-control-pause">
-                            <span class="video-control-symbol" aria-hidden="true"></span>
-                        </span>
-                    </div>
-                </button>
             </div>
         </div>
     </div>
@@ -302,12 +279,17 @@
 					<!-- video-lead - full-overlay -->
 <section class="container-fluid hero-video-lead full-overlay hero-image">
     <video
-    class="full-width-video hero-video" id="hero-video"
-    playsinline muted loop autoplay
+    id="mediaElementId"
+    class="full-width-video hero-video"
     src="https://loyolauniversitychicago.github.io/loyola-template-4.0/deploy/videos/umc-hero-video-720.mp4"
     data-src-mobile="mobile.mp4"
-    data-src-desktop="desktop.mp4">
-      <div class="video-error">Sorry, video is not available.</div>
+    data-src-desktop="desktop.mp4"
+    controls
+    playsinline
+    muted
+    loop
+    autoplay>
+    <div class="video-error">Sorry, video is not available.</div>
     </video>
     <img class="hero-image" src="./images/images-image-lead-random/1800x800_10.jpg">
     <div class="grid-wrapper-min-max">
@@ -339,23 +321,8 @@
                                 CTA Here
                             </button>
                         </div>
-
                     </div>
                 </div>
-                <!-- <div class="slides slick-initialized slick-slider uao-scroll-arrow">
-                    <h6>Explore</h6>
-                    <button type="button" data-role="none" class="slick-next slick-arrow bounce">Explore</button>
-                </div> -->
-                <button id="video-control" class="video-control">
-                    <div class="play-pause-container">
-                        <span class="video-control-play">
-                            <span class="video-control-symbol" aria-hidden="true"></span>
-                        </span>
-                        <span class="video-control-pause">
-                            <span class="video-control-symbol" aria-hidden="true"></span>
-                        </span>
-                    </div>
-                </button>
             </div>
         </div>
     </div>

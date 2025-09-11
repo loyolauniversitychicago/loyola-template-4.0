@@ -1,16 +1,12 @@
-const videoElement = document.querySelector('video');
-const playPauseButton = document.querySelector('#video-control');
+const playPauseButton = document.getElementById('playPauseButton');
+const mediaElement = document.getElementById('mediaElementId');
 
 playPauseButton.addEventListener('click', () => {
-	playPauseButton.classList.toggle('playing');
-	if (playPauseButton.classList.contains('playing')) {
-		videoElement.play();
-	}
-	else {
-		videoElement.pause();
-	}
-});
-
-videoElement.addEventListener('ended', () => {
-	playPauseButton.classList.remove('playing');
+  if (mediaElement.paused) {
+    mediaElement.play();
+    playPauseButton.textContent = 'Pause';
+  } else {
+    mediaElement.pause();
+    playPauseButton.textContent = 'Play';
+  }
 });
