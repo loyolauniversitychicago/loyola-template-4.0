@@ -1465,7 +1465,7 @@ button.content-activate-symbol.activate-symbol-close {
 #panel-image-grid-mason-gallery .grid-wrapper-grid-wrapper {
   display: grid;
   grid-template-columns: repeat(6,1fr);
-  grid-auto-rows: 20vw;
+  grid-auto-rows: 10vw;
   grid-gap: .5rem;
   grid-auto-flow: dense;
   @include tablet-portrait {
