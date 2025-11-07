@@ -1,0 +1,153 @@
+/* image group */
+
+.panel-image-group {
+  display: block;
+  padding: 0;
+  text-align: center;
+}
+
+.panel-image-group .grid-wrapper-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: 12.5vw;
+  grid-gap: .5rem;
+  grid-auto-flow: dense;
+  @include tablet-portrait {
+    grid-template-columns: repeat(4,1fr);
+  }
+  @include phone-portrait {
+    grid-template-columns: repeat(1,1fr);
+    grid-auto-rows: 25vw;
+  }
+}
+.gallery-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: $gray-extra-dark;
+  h5 {
+    display: none;
+    position: absolute;
+    top: 10%;
+    margin: 0;
+    font-size: clamp(#{$font-step-1-125}, #{$font-step-1-125} + 3.5vw, #{$font-step-1-125});
+    line-height: clamp(#{$line-step-1-75}, #{$line-step-1-75} + 3.5vw, #{$line-step-1-75});
+    text-align: center;
+    text-shadow: 0 0 3rem rgba(0,0,0,1);
+    color: $white;
+    text-transform: none;
+  }
+  .image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    img {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+      cursor: pointer;
+    }
+  }
+  .caption {
+    display: absolute;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(#{$font-step-1-125}, #{$font-step-1-125} + 3.5vw, #{$font-step-1-125});
+    line-height: clamp(#{$line-step-1-75}, #{$line-step-1-75} + 3.5vw, #{$line-step-1-75});
+    color: $gray-extra-light;
+    pointer-events: none;
+    opacity: 0;
+    z-index: +4;
+    p {
+      position: absolute;
+      top: 40%;
+      margin: 0 0 .75rem;
+      padding: 0 1rem;
+      width: 100%;
+      font-family: 'Open Sans', sans-serif;
+      letter-spacing: .0125rem;
+      word-spacing: .0125rem;
+      text-align: center;
+      text-shadow: 0 0 20px rgba(0,0,0,.35);
+      color: $white;
+      span {
+        display: block;
+        margin: 0;
+        padding: 0 1rem;
+        width: 100%;
+        a {
+          color: $gold;
+        }
+      }
+    }
+  }
+  /* all hover is through gallery-item */
+  &:hover {
+    .image
+    img {
+        display: block;
+        margin: 0;
+        width: 100%;
+        opacity: 1 !important;
+        -webkit-filter: grayscale(0%) !important;
+        -moz-filter:    grayscale(0%) !important;
+        -ms-filter:     grayscale(0%) !important;
+        -o-filter:      grayscale(0%) !important;
+        cursor: pointer;
+        }
+    }
+}
+
+.panel-image-group {
+    .w-1 {
+    grid-column: span 1;
+    }
+    .w-2 {
+    grid-column: span 2;
+    }
+    .w-3 {
+    grid-column: span 3;
+    }
+    .w-4 {
+    grid-column: span 4;
+    }
+    .w-1, .w-2, .w-3, .w-4 {
+        @include phone-portrait {
+            grid-column: span 1;
+        }
+    }
+    .h-0 {
+        grid-row: span 1;
+    }
+    .h-1 {
+        grid-row: span 2;
+    }
+    .h-2 {
+        grid-row: span 4;
+    }
+    .h-3 {
+        grid-row: span 6;
+    }
+    .h-0, .h-1, .h-2, .h-3 {
+        @include phone-portrait {
+            grid-row: span 2;
+        }
+    }
+}
+
+@keyframes caption-fade-in {
+  0% {
+    top: 25%;
+    opacity: 0;
+  }
+  100% {
+    top: 40%;
+    opacity: 1;
+  }
+}
