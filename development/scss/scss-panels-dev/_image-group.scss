@@ -6,6 +6,11 @@
   text-align: center;
 }
 
+
+.panel-image-group .container-100 { width: 100%; }
+.panel-image-group .container-80 { width: 80% !important; }
+.panel-image-group .container-50 { width: 50% !important; }
+
 .panel-image-group .grid-wrapper-grid-wrapper {
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -17,8 +22,16 @@
   }
   @include phone-portrait {
     grid-template-columns: repeat(1,1fr);
-    grid-auto-rows: 25vw;
   }
+}
+.panel-image-group .container-100 .grid-wrapper-grid-wrapper {
+  grid-auto-rows: 12.5vw;
+}
+.panel-image-group .container-80 .grid-wrapper-grid-wrapper {
+  grid-auto-rows: 10.5vw;
+}
+.panel-image-group .container-50 .grid-wrapper-grid-wrapper {
+  grid-auto-rows: 6.5vw;
 }
 .gallery-item {
   position: relative;
@@ -134,10 +147,10 @@
     .h-3 {
         grid-row: span 6;
     }
-    .h-0, .h-1, .h-2, .h-3 {
-        @include phone-portrait {
-            grid-row: span 2;
-        }
+    @include phone-portrait {
+      .h-0, .h-1, .h-2, .h-3 {
+          grid-row: span ;
+      }
     }
 }
 

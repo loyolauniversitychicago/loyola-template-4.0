@@ -140,6 +140,23 @@ h6.category-bold {
   font-family: 'Antenna Condensed Bold', 'Arial', sans-serif;
 }
 
+/* section label */
+
+#panel-text h2.section-label {
+  margin: 0 auto;
+  padding: 1rem 0;
+  width: 65%;
+  font-size: clamp(1.25rem, 1.125rem + 0.6667vw, 1.75rem);
+  color: #ffffff;
+  border-top: solid .5rem #eaaa00;
+  background: #5a0722;
+}
+@media (orientation: portrait) {
+  #panel-text h2.section-label {
+    width: 100%;
+  }
+}
+
 /* paragraphs */
 p a, a.cta,
 p.open-sans,
