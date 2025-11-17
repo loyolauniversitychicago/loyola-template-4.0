@@ -1,4 +1,141 @@
-/* tabs ensemble */
+/* tabs ensemble - image quotes */
+
+.panel-tabs-images .tabs-images .grid-wrapper-min-max .tab,
+.panel-tabs-images .tabs-images .grid-wrapper-min-max .tab .tablinks,
+.panel-tabs-images .tabs-images .grid-wrapper-min-max .tab .tablinks img {
+  height: 100%;
+}
+.panel-tabs-images .tabs-images .grid-wrapper-min-max.three-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 1.333%;
+  grid-auto-flow: dense;
+  justify-content: center;
+  align-items: center;
+}
+.panel-tabs-images .tabs-images .grid-wrapper-min-max.three-column .grid-item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+}
+.panel-tabs-images .tabs-images .grid-wrapper-min-max.three-column .tab {
+  margin: 0;
+  border: solid 1rem #ffffff;
+  border-radius: 50%;
+  background: #e1e1e1;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+.panel-tabs-images .tabs-images .grid-wrapper-min-max.three-column .grid-item .tab {
+  position: relative;
+}
+.panel-tabs-images .tabs-images .grid-wrapper-min-max.three-column {
+  grid-template-areas:
+    "a b c"
+}
+.panel-tabs-images .tabs-images .grid-wrapper-min-max.three-column .grid-item .tab:has(div.tablinks.active) {
+  border: solid .375rem #eaaa00;
+  width: 100%;
+  height: 100% !important;
+}
+.panel-tabs-images .tabs-images .grid-wrapper-min-max.three-column .grid-item:has(div.tablinks.active):after {
+  position: absolute;
+  top: 100%;
+  content: '\25BC';
+  font-size: 1.75rem;
+  color: #eaaa00;
+  animation-name: tab-pointer-animation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes tab-pointer-animation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(.5rem);
+  }
+}
+.panel-tabs-images .tabs-images .grid-wrapper-min-max.three-column .tab .tablinks img,
+.panel-tabs-images .tabs-images .grid-wrapper-min-max.three-column .tab .tablinks.active img {
+  display: block;
+  margin: 0 !important;
+  margin-top: -5% !important;
+  margin-left: -50% !important;
+  padding: 0;
+  width: 200% !important;
+  height: 115%;
+  border: 0;
+}
+.panel-tabs-images .tabs-images .grid-wrapper-min-max.three-column .tab .tablinks img {
+  filter: saturate(0);
+  opacity: .8;
+}
+.panel-tabs-images .tabs-images .grid-wrapper-min-max.three-column .tab .tablinks.active img {
+  filter: saturate(1);
+  opacity: 1;
+}
+.panel-tabs-images .tabs-images .tab .active::before,
+.panel-tabs-images .tabs-images .tab .active::after {
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0 !important;
+}
+.panel-tabs-images .tabcontent {
+  padding: 3.5rem 0 0 0;
+    @include phone-portrait {
+        .panel-tabs-images .tabcontent {  
+            padding: 2.5rem 0 0 0;
+        }
+    }
+}
+.panel-tabs-images .tabs-images {
+    h3 {
+        display: block;
+        margin: 0 auto 1.125rem;
+        width : 100%;
+        font-family: 'Antenna Condensed Light', sans-serif;
+        font-size: 2.25rem;
+        line-height: 1.75rem;
+        letter-spacing: -.0125rem;
+        word-spacing: 0.0125rem;
+        text-align: center;
+    }
+    blockquote {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        border-top: 0;
+        border-bottom: 0;
+    }
+    blockquote cite {
+        font-size: 1rem;
+        font-style: italic;
+        letter-spacing: -0.0125rem;
+        text-transform: none;
+    }
+}
+.grid-item {
+  grid-area: auto;
+}
+.panel-tabs-images .tabs-images .grid-wrapper-min-max.three-column .grid-item:has(.tab div.tablinks.active) {
+  grid-area: b;
+}
+.panel-tabs-images .tabs-images .grid-wrapper-min-max.three-column:has(.tab div.tablinks.active) ~ .grid-item:first-child {
+  grid-area: a;
+}
+.panel-tabs-images .tabs-images .grid-wrapper-min-max.three-column:has(.tab div.tablinks.active) ~ .grid-item:last-child {
+  grid-area: c;
+}
 
 /* image display */
 
