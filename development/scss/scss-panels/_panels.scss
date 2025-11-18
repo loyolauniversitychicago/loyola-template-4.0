@@ -1507,7 +1507,7 @@ button.content-activate-symbol.activate-symbol-close {
       height: 100%;
       object-fit: cover;
       object-position: 50% 50%;
-      cursor: pointer;
+      cursor: default;
     }
   }
   .caption {
@@ -1554,14 +1554,14 @@ button.content-activate-symbol.activate-symbol-close {
         display: block;
         margin: 0;
         width: 100%;
-        opacity: .7;
+        opacity: 1;
         /* transform:scale(1.0125); */
         filter: none;
-        -webkit-filter: grayscale(100%);
-        -moz-filter:    grayscale(100%);
-        -ms-filter:     grayscale(100%);
-        -o-filter:      grayscale(100%);
-        cursor: pointer;
+        -webkit-filter: grayscale(0%);
+        -moz-filter:    grayscale(0%);
+        -ms-filter:     grayscale(0%);
+        -o-filter:      grayscale(0%);
+        cursor: default;
       }
     }
     .caption {
