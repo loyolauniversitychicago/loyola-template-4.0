@@ -33,18 +33,29 @@
 }
 .panel-image-group .container-100 .grid-wrapper-grid-wrapper {
   grid-auto-rows: 10.5vw;
+    @include phone-portrait {
+      grid-auto-rows: 22vw;
+    }
 }
 .panel-image-group .container-80 .grid-wrapper-grid-wrapper {
   grid-auto-rows: 8.25vw;
     @include phone-portrait {
-      grid-auto-rows: 10.5vw;
+      grid-auto-rows: 22vw;
     }
 }
 .panel-image-group .container-50 .grid-wrapper-grid-wrapper {
   grid-auto-rows: 5vw;
     @include phone-portrait {
-      grid-auto-rows: 10.5vw;
+      grid-auto-rows: 2vw;
     }
+}
+.panel-image-group .container div.bg-gray-extra-light {
+  padding: 1rem 1.25rem 1.5rem;
+    p {
+    margin: 0;
+    font-style: italic;
+    text-align: left;
+  }
 }
 .gallery-item {
   position: relative;
@@ -113,6 +124,8 @@
       }
     }
   }
+  #main-content-wrapper-full-width div.bg-gray-extra-light.padding-sm > p,
+  #main-content-wrapper-full-width > section > div > div > section:nth-child(5) > div > div.bg-gray-extra-light.padding-sm > p
   /* all hover is through gallery-item */
   &:hover {
     .image

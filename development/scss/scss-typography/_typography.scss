@@ -147,9 +147,9 @@ h6.category-bold {
   padding: 1rem 0;
   width: 65%;
   font-size: clamp(1.25rem, 1.125rem + 0.6667vw, 1.75rem);
-  color: #ffffff;
-  border-top: solid .5rem #eaaa00;
-  background: #5a0722;
+  color: $black;
+  border-top: solid .5rem $maroon;
+  background: darken($gray-extra-light,10%);
 }
 @media (orientation: portrait) {
   #panel-text h2.section-label {
