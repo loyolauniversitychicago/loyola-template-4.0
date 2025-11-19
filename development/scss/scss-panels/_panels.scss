@@ -1928,6 +1928,11 @@ button.modaal-close {
 #content-pagination-breadcrumbs a.active {
   color: $maroon !important;
 }
+/* full width - elevated pages */
+
+#main-content-wrapper-full-width #panel-pagination #content-pagination-breadcrumbs {
+  padding: 1rem 10%;
+}
 
 /* image - inline-icon */
 
