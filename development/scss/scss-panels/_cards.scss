@@ -641,6 +641,24 @@ button:focus {
   }
 }
 
+/* accent bar */
+
+/* background - maroon > gold */
+.accent-bar {
+  position: absolute;
+  top: -0.75rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 1.25rem;
+  background: #5A0722;
+  background: linear-gradient(90deg,rgba(90, 7, 34, 1) 0%, rgba(90, 7, 34, 1) 57%, rgba(234, 170, 0, 1) 100%);
+}
+/* background - maroon > gold - white highlight */
+.accent-bar {
+  background: linear-gradient(90deg,rgba(90, 7, 34, 1) 0%, rgba(90, 7, 34, 1) 37%, rgba(234, 170, 0, 1) 79%, rgba(255, 255, 255, 1) 88%, rgba(234, 170, 0, 1) 100%, rgba(234, 170, 0, 1) 100%);
+}
+
 /* media queries ==================
 =================================*/
 
