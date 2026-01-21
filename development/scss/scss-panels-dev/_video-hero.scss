@@ -295,7 +295,8 @@ button.slick-arrow.slick-next.bounce:hover {
 
 .video-control,
 .grid-item button.video-control,
-button#playPauseButton {
+button#playPauseButton,
+#playPauseButton {
     position: absolute;
     aspect-ratio: 1 / 1;
     bottom: 0;
