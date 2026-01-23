@@ -364,7 +364,7 @@ footer {
   .container-fluid {
     background: none;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 20%;
     @include phone-portrait {
       display: block;
     }
@@ -401,7 +401,36 @@ footer {
     }
   } 
   #footer-copyright {
+    display: flex;
+    align-items: center;
     margin: 1.5rem 0 0 0;
+    @include phone-portrait {
+      display: block;
+    }
+    #footer-jesuit-icon {
+      display: inline;
+      margin: 0 1rem 0 0;
+      width: auto;
+      height: auto;
+      @include phone-portrait {
+        display: block;
+        margin: 0 auto .75rem;
+        width: 35%;
+      }
+      img {
+        width: 6.75rem;
+        @include phone-portrait {
+          width: 100%;
+        }
+      }
+    }
+    #footer-copyright-content {
+      display: inline;
+      @include phone-portrait {
+        display: block;
+        margin: 0 auto;
+      }
+    }
     p {
       font-size: .85rem;
     }
@@ -420,7 +449,7 @@ footer {
           cursor: pointer;
         }
         @include phone-portrait {
-          margin: 1.5rem auto;
+          margin: 1.75rem auto;
           width: 100%;
         }
       }
