@@ -364,10 +364,15 @@ footer {
   .container-fluid {
     background: none;
     display: grid;
-    grid-template-columns: 1fr 20%;
     @include phone-portrait {
       display: block;
     }
+  }
+  .container-fluid.footer-top {
+    grid-template-columns: 1fr 40%;
+  }
+  .container-fluid.footer-bottom {
+    grid-template-columns: 1fr;
   }
   p {
     font-family: 'Open Sans', sans-serif;
@@ -415,7 +420,7 @@ footer {
       @include phone-portrait {
         display: block;
         margin: 0 auto .75rem;
-        width: 35%;
+        width: 8rem;
       }
       img {
         width: 6.75rem;
