@@ -424,6 +424,7 @@ footer {
       }
       img {
         width: 6.75rem;
+        cursor: pointer;
         @include phone-portrait {
           width: 100%;
         }
