@@ -84,6 +84,16 @@ function sassPanelsDev() {
   cb();
 };
 
+function sassCarnegieComponents() {
+  return gulp
+  .src(config.devDir + '/scss/scss-carnegie-components/**/*.scss')
+  .pipe(sourcemaps.init())  // Process the original sources
+  .pipe(sass())
+  .pipe(sourcemaps.write()) // Add the map to modified source.
+  .pipe(gulp.dest(config.deployDir + '/css'));
+  cb();
+};
+
 function sassDocumentation() {
     return gulp
     .src(config.devDir + '/scss/scss-documentation/**/*.scss')
@@ -147,7 +157,7 @@ function watchFiles() {
 };
 
 exports.default = series(
-  parallel(sassFramework, sassGrid, sassTypography, sassPanels, sassPanelsDev, sassDocumentation),
+  parallel(sassFramework, sassGrid, sassTypography, sassPanels, sassPanelsDev, sassCarnegieComponents, sassDocumentation),
   referencePaths,
   indexBuild,
   watchFiles,
@@ -160,6 +170,7 @@ exports.sassGrid = sassGrid;
 exports.sassTypography = sassTypography;
 exports.sassPanels = sassPanels;
 exports.sassPanelsDev = sassPanelsDev;
+exports.sassPanelsDev = sassCarnegieComponents;
 exports.sassDocumentation = sassDocumentation;
 exports.watchFiles = watchFiles;
 exports.browserSync = browserSync;
