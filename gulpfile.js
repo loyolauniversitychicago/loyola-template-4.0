@@ -152,7 +152,7 @@ function watchFiles() {
     }
   });
   watch('./development/**/*.html', gulp.series('indexBuild', 'browserSyncReload'));
-  watch(config.devDir + '/scss/**/*.scss', gulp.series(parallel('sassFramework', 'sassGrid', 'sassTypography', 'sassPanels', 'sassPanelsDev', 'sassDocumentation'), 'browserSyncReload'));
+  watch(config.devDir + '/scss/**/*.scss', gulp.series(parallel('sassFramework', 'sassGrid', 'sassTypography', 'sassPanels', 'sassPanelsDev', 'sassCarnegieComponents', 'sassDocumentation'), 'browserSyncReload'));
   watch(config.devDir + '/js/**/*.js', gulp.series('browserSyncReload'));
 };
 
@@ -170,7 +170,7 @@ exports.sassGrid = sassGrid;
 exports.sassTypography = sassTypography;
 exports.sassPanels = sassPanels;
 exports.sassPanelsDev = sassPanelsDev;
-exports.sassPanelsDev = sassCarnegieComponents;
+exports.sassCarnegieComponents = sassCarnegieComponents;
 exports.sassDocumentation = sassDocumentation;
 exports.watchFiles = watchFiles;
 exports.browserSync = browserSync;
