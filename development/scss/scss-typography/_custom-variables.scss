@@ -92,6 +92,13 @@ $gray-extra-dark: darken($gray, 40%);
 $gray-light: lighten($gray, 20%);
 $gray-extra-light: lighten($gray, 40%);
 
+/* GRAY UPDATED - 031026 */
+$gray: lighten($copper, 0%);
+$gray-dark: darken($copper, 20%);
+$gray-extra-dark: darken($copper, 40%);
+$gray-light: lighten($copper, 20%);
+$gray-extra-light: lighten($copper, 30%);
+
 /* COPPER */
 $copper: lighten($copper, 0%);
 $copper-dark: darken($copper, 20%);
